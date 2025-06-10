@@ -11,7 +11,7 @@ L'objectif est de traiter les données de l'api ROR, pour les extraire sous form
 
 ### Limite de l'API
 
-Il n'est pas possible via l'API ror.org de récupérer toutes les données des entreprises, il faut passer par ce site, propre à ror, pour y accéder:
+Il n'est pas possible via l'API ror.org de récupérer toutes les données des entreprises, il faut passer par ce site, propre à ror, pour y accéder. C'est donc grâce à cela que nous allons peupler la première base de données avec toutes les informations des organisations:
 
 ```
 https://zenodo.org/records/15475023
@@ -27,4 +27,26 @@ De plus, comme depuis l'API je n'ai pas accès à toutes les données, et que da
 
 Les limites de l'API ne sont pas forcément un problème dans le sens où il n'est pas nécessaire de reprendre toutes les données de l'API à chaque fois, mais seulement les updates. Il faut faire la vérification des updates (journaliers, semaines...). 
 
-Pour faire simple, une fois avoir toutes les données, plus qu'à récupérer les updates de la base uniquement.
+Pour faire simple, une fois toutes les données récupérées, plus qu'à récupérer les updates de la base uniquement, de manière journalière, ou de la manière dont ils le font.
+
+### Updates
+
+Il y a plusieurs méthodes possibles pour acquérir les différents update de la base de données. 
+
+1- Dans un premier temps, dès que des modifications sont ajoutées ou qu'il y a eu des ajouts dans la base, il y a une release sur github : 
+
+```
+https://github.com/ror-community/ror-updates/releases
+```
+
+Il y a à la fois le résumé des changements, le nombre d'organisations ajoutées, le nombre d'organisations modifiées and la liste complète des organisations ajoutées et modifiées.
+
+2- Dans un second temps, il est possible de récupérer de nouveau toute la base de données avec les modifications et les ajouts sur:
+
+```
+https://zenodo.org/communities/ror-data/records?q=&l=list&p=1&s=10&sort=newest
+```
+
+En ce qui concerne le nombre d'update, il y en a **au moins un**, mais souvent il y en a **plutôt deux** par mois.
+
+![Update of data](/assets/update.png "Update of data")
