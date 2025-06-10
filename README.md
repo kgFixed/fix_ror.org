@@ -20,3 +20,5 @@ https://zenodo.org/records/15475023
 En effet, en allant sur la documentation de ror, il est bien expliqué qu'il y a des limites à l'utilisation de l'api.
 
 ![Limit of data](/assets/limit.png "Limit of data")
+
+De plus, comme depuis l'API je n'ai pas accès à toutes les données, et que dans les documents téléchargeable par ror.org, il n'y a pas de format jsonld, je ne suis pas en capacité de comparé les formats json et jsonld, ou encore jsonld et rdf.
