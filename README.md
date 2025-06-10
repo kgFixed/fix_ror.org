@@ -14,7 +14,7 @@ L'objectif est de traiter les données de l'api ROR, pour les extraire sous form
 Il n'est pas possible via l'API ror.org de récupérer toutes les données des entreprises, il faut passer par ce site, propre à ror, pour y accéder. C'est donc grâce à cela que nous allons peupler la première base de données avec toutes les informations des organisations:
 
 ```
-https://zenodo.org/records/15475023
+    https://zenodo.org/records/15475023
 ```
 
 En effet, en allant sur la documentation de ror, il est bien expliqué qu'il y a des limites à l'utilisation de l'api.
@@ -36,7 +36,7 @@ Il y a plusieurs méthodes possibles pour acquérir les différents update de la
 1- Dans un premier temps, dès que des modifications sont ajoutées ou qu'il y a eu des ajouts dans la base, il y a une release sur github : 
 
 ```
-https://github.com/ror-community/ror-updates/releases
+    https://github.com/ror-community/ror-updates/releases
 ```
 
 Il y a à la fois le résumé des changements, le nombre d'organisations ajoutées, le nombre d'organisations modifiées and la liste complète des organisations ajoutées et modifiées.
@@ -44,7 +44,7 @@ Il y a à la fois le résumé des changements, le nombre d'organisations ajouté
 2- Dans un second temps, il est possible de récupérer de nouveau toute la base de données avec les modifications et les ajouts sur:
 
 ```
-https://zenodo.org/communities/ror-data/records?q=&l=list&p=1&s=10&sort=newest
+    https://zenodo.org/communities/ror-data/records?q=&l=list&p=1&s=10&sort=newest
 ```
 
 En ce qui concerne le nombre d'update, il y en a **au moins un**, mais souvent il y en a **plutôt deux** par mois.
