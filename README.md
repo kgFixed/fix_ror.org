@@ -6,5 +6,17 @@ L'objectif est de traiter les données de l'api ROR, pour les extraire sous form
 
 ```
     https://api.ror.org/organizations // all the organizations
-    https://api.ror.org/organizations?query=vliz for vliz
+    https://api.ror.org/organizations?query=vliz // for vliz
 ```
+
+### Limite de l'API
+
+Il n'est pas possible via l'API ror.org de récupérer toutes les données des entreprises, il faut passer par ce site, propre à ror, pour y accéder:
+
+```
+https://zenodo.org/records/15475023
+```
+
+En effet, en allant sur la documentation de ror, il est bien expliqué qu'il y a des limites à l'utilisation de l'api.
+
+![Limit of data](/assets/limit.png "Limit of data")
