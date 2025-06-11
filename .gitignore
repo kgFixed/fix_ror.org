@@ -1,0 +1,18 @@
+# Environnement virtuel Python
+venv/
+env/
+*.pyc
+__pycache__/
+.pytest_cache/
+
+# Fichiers de dépendances (site-packages)
+site-packages/
+
+# Fichiers générés par l'IDE
+.idea/
+.vscode/
+
+# Fichiers de données temporaires
+*.csv
+*.json
+*.log
