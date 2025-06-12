@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/033cjdk78> 
+    a org:Organization ;
+    rdfs:label "Green Valley High School" ;
+    schema:name "Green Valley High School" ;
+    schema:foundingDate "1991"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Green_Valley_High_School> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-114.98194 36.0397)"^^geo:wktLiteral ;
+        schema:addressLocality "Henderson" ;
+    ] ;
+    schema:url <https://greenvalleyhs.org> ;
+    schema:sameAs <http://isni.org/isni/0000000405719102> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5603377> ;
+             .

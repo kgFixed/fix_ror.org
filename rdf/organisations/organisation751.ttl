@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01hs43g67> 
+    a org:Organization ;
+    rdfs:label "Mississippi University for Women" ;
+    schema:name "Mississippi University for Women" ;
+    schema:foundingDate "1884"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Mississippi_University_for_Women> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04kqgqa72> ;
+        rdfs:label "Mississippi Institutions of Higher Learning" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0249rpb20> ;
+        rdfs:label "Mississippi Space Grant Consortium" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-88.42726 33.49567)"^^geo:wktLiteral ;
+        schema:addressLocality "Columbus" ;
+    ] ;
+    schema:url <http://www.muw.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000104936250> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3468084> ;
+             .

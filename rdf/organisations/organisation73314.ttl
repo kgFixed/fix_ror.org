@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/014wwcs49> 
+    a org:Organization ;
+    rdfs:label "Swedish Society for Nature Conservation" ;
+    schema:name "Swedish Society for Nature Conservation" ;
+    schema:foundingDate "1909"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Swedish_Society_for_Nature_Conservation> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(18.06871 59.32938)"^^geo:wktLiteral ;
+        schema:addressLocality "Stockholm" ;
+    ] ;
+    schema:url <https://www.naturskyddsforeningen.se/in-english> ;
+    schema:sameAs <http://isni.org/isni/0000000110892573> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1434148> ;
+             .

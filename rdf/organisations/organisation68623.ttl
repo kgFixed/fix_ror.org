@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02nn1vm89> 
+    a org:Organization ;
+    rdfs:label "Workday (United States)" ;
+    schema:name "Workday (United States)" ;
+    schema:foundingDate "2005"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Workday,_Inc.> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-121.87468 37.66243)"^^geo:wktLiteral ;
+        schema:addressLocality "Pleasanton" ;
+    ] ;
+    schema:url <https://www.workday.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000460057535> ;
+             .

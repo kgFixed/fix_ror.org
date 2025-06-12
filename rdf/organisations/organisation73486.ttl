@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/033kh6571> 
+    a org:Organization ;
+    rdfs:label "National Council for the Evaluation of Social Development Policy" ;
+    schema:name "National Council for the Evaluation of Social Development Policy" ;
+    schema:foundingDate "2005"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/National_Council_for_the_Evaluation_of_Social_Development_Policy_(CONEVAL)> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-99.12766 19.42847)"^^geo:wktLiteral ;
+        schema:addressLocality "Mexico City" ;
+    ] ;
+    schema:url <https://www.coneval.org.mx/Paginas/principal.aspx> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q5783899> ;
+             .

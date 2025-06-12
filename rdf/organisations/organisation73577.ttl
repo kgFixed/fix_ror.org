@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/045dz4566> 
+    a org:Organization ;
+    rdfs:label "Submicron Heterostructures for Microelectronics Research and Engineering Center" ;
+    schema:name "Submicron Heterostructures for Microelectronics Research and Engineering Center" ;
+    schema:foundingDate "1991"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05qrfxd25> ;
+        rdfs:label "Russian Academy of Sciences" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(30.31413 59.93863)"^^geo:wktLiteral ;
+        schema:addressLocality "St Petersburg" ;
+    ] ;
+    schema:url <http://ntcm-ras.ru/en/about-us/index.php> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q57779616> ;
+             .

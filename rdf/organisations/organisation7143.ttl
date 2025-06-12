@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05em3zk56> 
+    a org:Organization ;
+    rdfs:label "National Minority AIDS Council" ;
+    schema:name "National Minority AIDS Council" ;
+    schema:foundingDate "1981"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/National_Minority_AIDS_Council> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.03637 38.89511)"^^geo:wktLiteral ;
+        schema:addressLocality "Washington" ;
+    ] ;
+    schema:url <http://nmac.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000094723955> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6974357> ;
+             .

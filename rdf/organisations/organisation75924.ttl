@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04hsrr018> 
+    a org:Organization ;
+    rdfs:label "Aichi Mizuho Junior College" ;
+    schema:name "Aichi Mizuho Junior College" ;
+    schema:foundingDate "1939"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Aichi_Mizuho_Junior_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(136.90641 35.18147)"^^geo:wktLiteral ;
+        schema:addressLocality "Nagoya" ;
+    ] ;
+    schema:url <http://www.mizuho-c.ac.jp/amjc/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q11493996> ;
+             .

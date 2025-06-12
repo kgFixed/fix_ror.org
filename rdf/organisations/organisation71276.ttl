@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01qynw361> 
+    a org:Organization ;
+    rdfs:label "Hospital Raja Perempuan Zainab II" ;
+    schema:name "Hospital Raja Perempuan Zainab II" ;
+    schema:foundingDate "1920"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(102.24333 6.12361)"^^geo:wktLiteral ;
+        schema:addressLocality "Kota Bharu" ;
+    ] ;
+    schema:url <http://hrpz2.moh.gov.my/v3/> ;
+    schema:sameAs <http://isni.org/isni/0000000417945000> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q12687866> ;
+             .

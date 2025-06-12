@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/011yqtc07> 
+    a org:Organization ;
+    rdfs:label "Turks and Caicos National Museum" ;
+    schema:name "Turks and Caicos National Museum" ;
+    schema:foundingDate "1991"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Turks_and_Caicos_National_Museum> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-71.14188 21.46122)"^^geo:wktLiteral ;
+        schema:addressLocality "Cockburn Town" ;
+    ] ;
+    schema:url <http://www.tcmuseum.org/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q13525325> ;
+             .

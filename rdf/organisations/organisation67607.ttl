@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/036rtm992> 
+    a org:Organization ;
+    rdfs:label "Taegu Science University" ;
+    schema:name "Taegu Science University" ;
+    schema:foundingDate "1960"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(128.59111 35.87028)"^^geo:wktLiteral ;
+        schema:addressLocality "Daegu" ;
+    ] ;
+    schema:url <http://www.tsu.ac.kr/> ;
+    schema:sameAs <http://isni.org/isni/000000045313087X> ;
+             .

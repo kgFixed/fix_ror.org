@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03vyhtd35> 
+    a org:Organization ;
+    rdfs:label "Bridgestone (United Kingdom)" ;
+    schema:name "Bridgestone (United Kingdom)" ;
+    schema:foundingDate "1931"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Bridgestone> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04trbvb35> ;
+        rdfs:label "Bridgestone (Japan)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.58333 52.28333)"^^geo:wktLiteral ;
+        schema:addressLocality "Warwick" ;
+    ] ;
+    schema:url <https://www.bridgestone.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q64143077> ;
+             .

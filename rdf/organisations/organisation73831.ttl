@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04aq1wg32> 
+    a org:Organization ;
+    rdfs:label "The Supreme People's Procuratorate of the People's Republic of China" ;
+    schema:name "The Supreme People's Procuratorate of the People's Republic of China" ;
+    schema:foundingDate "1988"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(116.39723 39.9075)"^^geo:wktLiteral ;
+        schema:addressLocality "Beijing" ;
+    ] ;
+    schema:url <http://www.spp.gov.cn/> ;
+    schema:sameAs <http://isni.org/isni/0000000403859523> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2682024> ;
+             .

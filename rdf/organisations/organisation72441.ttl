@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/017vsz909> 
+    a org:Organization ;
+    rdfs:label "EUC Nordvestsjaelland" ;
+    schema:name "EUC Nordvestsjaelland" ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(11.71279 55.7175)"^^geo:wktLiteral ;
+        schema:addressLocality "Holbæk" ;
+    ] ;
+    schema:url <https://eucnvs.dk/> ;
+    schema:sameAs <http://isni.org/isni/0000000404139931> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q12309280> ;
+             .

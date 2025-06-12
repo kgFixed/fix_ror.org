@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05k05ta39> 
+    a org:Organization ;
+    rdfs:label "Guidewire (United States)" ;
+    schema:name "Guidewire (United States)" ;
+    schema:foundingDate "2001"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Guidewire_Software> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-122.27108 37.55855)"^^geo:wktLiteral ;
+        schema:addressLocality "Foster City" ;
+    ] ;
+    schema:url <https://www.guidewire.com/> ;
+     .

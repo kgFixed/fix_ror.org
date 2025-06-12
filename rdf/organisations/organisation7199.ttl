@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02ved8513> 
+    a org:Organization ;
+    rdfs:label "Project HOPE" ;
+    schema:name "Project HOPE" ;
+    schema:foundingDate "1958"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Project_HOPE> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.98222 39.15177)"^^geo:wktLiteral ;
+        schema:addressLocality "Berryville" ;
+    ] ;
+    schema:url <http://www.projecthope.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000110136487> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7249127> ;
+             .

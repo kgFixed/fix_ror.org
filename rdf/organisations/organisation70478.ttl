@@ -1,0 +1,40 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/010tw2j24> 
+    a org:Organization ;
+    rdfs:label "Winnipeg Institute for Theoretical Physics" ;
+    schema:name "Winnipeg Institute for Theoretical Physics" ;
+    schema:foundingDate "1990"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02qp25a50> ;
+        rdfs:label "Brandon University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02gfys938> ;
+        rdfs:label "University of Manitoba" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02gdzyx04> ;
+        rdfs:label "University of Winnipeg" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-97.14704 49.8844)"^^geo:wktLiteral ;
+        schema:addressLocality "Winnipeg" ;
+    ] ;
+    schema:url <http://www2.physics.umanitoba.ca/u/witp/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q55239284> ;
+             .

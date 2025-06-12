@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/038sjwf38> 
+    a org:Organization ;
+    rdfs:label "Takeda (Norway)" ;
+    schema:name "Takeda (Norway)" ;
+    schema:foundingDate "1781"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04hjbmv12> ;
+        rdfs:label "Takeda (Japan)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(10.43721 59.83333)"^^geo:wktLiteral ;
+        schema:addressLocality "Asker" ;
+    ] ;
+    schema:url <http://www.takeda.no/> ;
+     .

@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/027yjc737> 
+    a org:Organization ;
+    rdfs:label "United States Preventive Services Task Force" ;
+    schema:name "United States Preventive Services Task Force" ;
+    schema:foundingDate "1984"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/United_States_Preventive_Services_Task_Force> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03jmfdf59> ;
+        rdfs:label "Agency for Healthcare Research and Quality" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.15276 39.084)"^^geo:wktLiteral ;
+        schema:addressLocality "Rockville" ;
+    ] ;
+    schema:url <https://www.uspreventiveservicestaskforce.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000122922565> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7891198> ;
+             .

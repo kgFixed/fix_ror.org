@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0509fnv64> 
+    a org:Organization ;
+    rdfs:label "League of Resident Theatres" ;
+    schema:name "League of Resident Theatres" ;
+    schema:foundingDate "2016"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/League_of_Resident_Theatres> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-75.16362 39.95238)"^^geo:wktLiteral ;
+        schema:addressLocality "Philadelphia" ;
+    ] ;
+    schema:url <http://lort.org/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q6509090> ;
+             .

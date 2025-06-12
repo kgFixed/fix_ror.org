@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05b8d3w18> 
+    a org:Organization ;
+    rdfs:label "Max Planck Institute of Molecular Cell Biology and Genetics" ;
+    schema:name "Max Planck Institute of Molecular Cell Biology and Genetics" ;
+    schema:foundingDate "1998"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Max_Planck_Institute_of_Molecular_Cell_Biology_and_Genetics> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05hrn3e05> ;
+        rdfs:label "Center for Systems Biology Dresden" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01hhn8329> ;
+        rdfs:label "Max Planck Society" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(13.73832 51.05089)"^^geo:wktLiteral ;
+        schema:addressLocality "Dresden" ;
+    ] ;
+    schema:url <http://www.mpi-cbg.de/> ;
+    schema:sameAs <http://isni.org/isni/0000000121134567> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q317361> ;
+             .

@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04pvsp066> 
+    a org:Organization ;
+    rdfs:label "Chromation (United States)" ;
+    schema:name "Chromation (United States)" ;
+    schema:foundingDate "2010"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-73.86641 40.84985)"^^geo:wktLiteral ;
+        schema:addressLocality "Bronx" ;
+    ] ;
+    schema:url <https://www.chromation.com/> ;
+     .

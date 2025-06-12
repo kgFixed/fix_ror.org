@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00wja7n54> 
+    a org:Organization ;
+    rdfs:label "Fuyao Group (China)" ;
+    schema:name "Fuyao Group (China)" ;
+    schema:foundingDate "1987"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Fuyao_Glass_Industry_Group_Co._Ltd.> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(119.30611 26.06139)"^^geo:wktLiteral ;
+        schema:addressLocality "Fuzhou" ;
+    ] ;
+    schema:url <http://www.fuyaogroup.com/en/> ;
+     .

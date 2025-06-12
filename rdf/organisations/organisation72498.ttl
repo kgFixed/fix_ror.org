@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/030qgq632> 
+    a org:Organization ;
+    rdfs:label "Her Majesty's Inspectorate of Probation" ;
+    schema:name "Her Majesty's Inspectorate of Probation" ;
+    schema:foundingDate "1936"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/HM_Inspectorate_of_Probation> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-2.23743 53.48095)"^^geo:wktLiteral ;
+        schema:addressLocality "Manchester" ;
+    ] ;
+    schema:url <https://www.justiceinspectorates.gov.uk/hmiprobation/about-hmi-probation/> ;
+    schema:sameAs <http://isni.org/isni/0000000406296615> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5635114> ;
+             .

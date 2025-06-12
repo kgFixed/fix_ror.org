@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02gmjfa08> 
+    a org:Organization ;
+    rdfs:label "Bhagat Phool Singh Mahila Vishwavidyalaya" ;
+    schema:name "Bhagat Phool Singh Mahila Vishwavidyalaya" ;
+    schema:foundingDate "2006"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Bhagat_Phool_Singh_Mahila_Vishwavidyalaya> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(76.58917 28.89447)"^^geo:wktLiteral ;
+        schema:addressLocality "Rohtak" ;
+    ] ;
+    schema:url <http://www.bpswomenuniversity.ac.in/> ;
+    schema:sameAs <http://isni.org/isni/0000000417690087> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4900600> ;
+             .

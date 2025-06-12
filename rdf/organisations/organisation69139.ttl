@@ -1,0 +1,33 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0172mzb45> 
+    a org:Organization ;
+    rdfs:label "Wellcome Centre for Integrative Neuroimaging" ;
+    schema:name "Wellcome Centre for Integrative Neuroimaging" ;
+    schema:foundingDate "1998"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/052gg0110> ;
+        rdfs:label "University of Oxford" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/029chgv08> ;
+        rdfs:label "Wellcome Trust" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.25596 51.75222)"^^geo:wktLiteral ;
+        schema:addressLocality "Oxford" ;
+    ] ;
+    schema:url <https://www.win.ox.ac.uk/> ;
+     .

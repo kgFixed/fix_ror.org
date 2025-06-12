@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/016haaa50> 
+    a org:Organization ;
+    rdfs:label "Metalgráfica Rojek (Brazil)" ;
+    schema:name "Metalgráfica Rojek (Brazil)" ;
+    schema:foundingDate "1961"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-46.87694 -23.35611)"^^geo:wktLiteral ;
+        schema:addressLocality "Cajamar" ;
+    ] ;
+    schema:url <http://www.rojek.com.br/index_english.asp> ;
+     .

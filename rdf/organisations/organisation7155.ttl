@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04wjd1a07> 
+    a org:Organization ;
+    rdfs:label "Nordland Hospital Trust" ;
+    schema:name "Nordland Hospital Trust" ;
+    schema:foundingDate "2002"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Nordland_Hospital_Trust> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05f6c0c45> ;
+        rdfs:label "Northern Norway Regional Health Authority" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(14.37513 67.28267)"^^geo:wktLiteral ;
+        schema:addressLocality "Bodø" ;
+    ] ;
+    schema:url <https://nordlandssykehuset.no/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q7050829> ;
+             .

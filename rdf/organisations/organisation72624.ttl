@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/005d5fb76> 
+    a org:Organization ;
+    rdfs:label "Kent State University Geauga" ;
+    schema:name "Kent State University Geauga" ;
+    schema:foundingDate "1964"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Kent_State_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0561zqn56> ;
+        rdfs:label "University System of Ohio" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-81.1451 41.47061)"^^geo:wktLiteral ;
+        schema:addressLocality "Burton" ;
+    ] ;
+    schema:url <https://www.kent.edu/geauga> ;
+     .

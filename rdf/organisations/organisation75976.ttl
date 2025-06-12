@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/045852a14> 
+    a org:Organization ;
+    rdfs:label "Yamagata Prefectural Shinjo Hospital" ;
+    schema:name "Yamagata Prefectural Shinjo Hospital" ;
+    schema:foundingDate "1952"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(140.30083 38.75861)"^^geo:wktLiteral ;
+        schema:addressLocality "Shinjō" ;
+    ] ;
+    schema:url <http://www.ysh.pref.yamagata.jp/> ;
+    schema:sameAs <http://isni.org/isni/0000000417623642> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q11468528> ;
+             .

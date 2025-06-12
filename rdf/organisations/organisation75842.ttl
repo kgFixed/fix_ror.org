@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01zww3c78> 
+    a org:Organization ;
+    rdfs:label "West Ridge Veterinary Practice" ;
+    schema:name "West Ridge Veterinary Practice" ;
+    schema:foundingDate "1964"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-3.49232 50.90241)"^^geo:wktLiteral ;
+        schema:addressLocality "Tiverton" ;
+    ] ;
+    schema:url <http://www.westridgevets.co.uk> ;
+    schema:sameAs <http://isni.org/isni/0000000484994339> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q64143220> ;
+             .

@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05a133z08> 
+    a org:Organization ;
+    rdfs:label "St Albans Museums" ;
+    schema:name "St Albans Museums" ;
+    schema:foundingDate "2018"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Museum_of_St_Albans> ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.33333 51.75)"^^geo:wktLiteral ;
+        schema:addressLocality "St Albans" ;
+    ] ;
+    schema:url <https://www.stalbansmuseums.org.uk/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q15260384> ;
+             .

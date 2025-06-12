@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/028mtkm91> 
+    a org:Organization ;
+    rdfs:label "San Francisco Police Department" ;
+    schema:name "San Francisco Police Department" ;
+    schema:foundingDate "1849"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/San_Francisco_Police_Department> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-122.41942 37.77493)"^^geo:wktLiteral ;
+        schema:addressLocality "San Francisco" ;
+    ] ;
+    schema:url <http://sanfranciscopolice.org/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q1320247> ;
+             .

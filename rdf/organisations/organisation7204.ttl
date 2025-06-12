@@ -1,0 +1,20 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04gsrvr64> 
+    a org:Organization ;
+    rdfs:label "Adelphi Laboratory Center" ;
+    schema:name "Adelphi Laboratory Center" ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-76.97192 39.00317)"^^geo:wktLiteral ;
+        schema:addressLocality "Adelphi" ;
+    ] ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30282409> ;
+             .

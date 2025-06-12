@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02mb9s657> 
+    a org:Organization ;
+    rdfs:label "Hampden–Sydney College" ;
+    schema:name "Hampden–Sydney College" ;
+    schema:foundingDate "1775"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Hampden%E2%80%93Sydney_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-78.45972 37.24237)"^^geo:wktLiteral ;
+        schema:addressLocality "Hampden Sydney" ;
+    ] ;
+    schema:url <http://www.hsc.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000104267392> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1797609> ;
+             .

@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04ek3zb20> 
+    a org:Organization ;
+    rdfs:label "Max Grundig Klinik" ;
+    schema:name "Max Grundig Klinik" ;
+    schema:foundingDate "1986"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(8.13523 48.69676)"^^geo:wktLiteral ;
+        schema:addressLocality "Bühl" ;
+    ] ;
+    schema:url <http://www.max-grundig-klinik.de/index.php?id=1&L=3> ;
+    schema:sameAs <http://isni.org/isni/0000000089877765> ;
+             .

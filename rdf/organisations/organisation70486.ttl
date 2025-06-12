@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/047m1md22> 
+    a org:Organization ;
+    rdfs:label "KUKA (United Kingdom)" ;
+    schema:name "KUKA (United Kingdom)" ;
+    schema:foundingDate "1898"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/KUKA> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02y22dj89> ;
+        rdfs:label "KUKA (Germany)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-2.02355 52.5514)"^^geo:wktLiteral ;
+        schema:addressLocality "Wednesbury" ;
+    ] ;
+    schema:url <https://www.kuka.com/> ;
+     .

@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04rxxfz69> 
+    a org:Organization ;
+    rdfs:label "Genomics England" ;
+    schema:name "Genomics England" ;
+    schema:foundingDate "2013"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Genomics_England> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03sbpja79> ;
+        rdfs:label "Department of Health and Social Care" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.12574 51.50853)"^^geo:wktLiteral ;
+        schema:addressLocality "London" ;
+    ] ;
+    schema:url <https://www.genomicsengland.co.uk/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q18159990> ;
+             .

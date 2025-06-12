@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05sjrzv10> 
+    a org:Organization ;
+    rdfs:label "National Deaf Children's Society" ;
+    schema:name "National Deaf Children's Society" ;
+    schema:foundingDate "1944"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/National_Deaf_Children's_Society> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.12574 51.50853)"^^geo:wktLiteral ;
+        schema:addressLocality "London" ;
+    ] ;
+    schema:url <http://www.ndcs.org.uk/> ;
+    schema:sameAs <http://isni.org/isni/0000000405569802> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6972149> ;
+             .

@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05291f140> 
+    a org:Organization ;
+    rdfs:label "Molteno Institute for Language and Literacy" ;
+    schema:name "Molteno Institute for Language and Literacy" ;
+    schema:foundingDate "1974"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Molteno_Institute_for_Language_and_Literacy> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(28.04363 -26.20227)"^^geo:wktLiteral ;
+        schema:addressLocality "Johannesburg" ;
+    ] ;
+    schema:url <http://www.molteno.co.za/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q6896863> ;
+             .

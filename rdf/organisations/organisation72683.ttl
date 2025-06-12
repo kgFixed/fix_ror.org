@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03cnz7c57> 
+    a org:Organization ;
+    rdfs:label "Ministry of Culture" ;
+    schema:name "Ministry of Culture" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Ministry_of_Culture_(Syria)> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(36.29128 33.5102)"^^geo:wktLiteral ;
+        schema:addressLocality "Damascus" ;
+    ] ;
+    schema:url <http://moc.gov.sy/switch.php?lang=english> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q4118076> ;
+             .

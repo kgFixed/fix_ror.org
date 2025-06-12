@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00xgq3z19> 
+    a org:Organization ;
+    rdfs:label "PeoplePower (United States)" ;
+    schema:name "PeoplePower (United States)" ;
+    schema:foundingDate "2009"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/People_Power_Company> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-122.23635 37.48522)"^^geo:wktLiteral ;
+        schema:addressLocality "Redwood City" ;
+    ] ;
+    schema:url <http://www.peoplepowerco.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q22078037> ;
+             .

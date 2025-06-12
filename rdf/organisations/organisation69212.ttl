@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/027m81w73> 
+    a org:Organization ;
+    rdfs:label "Barco (United Kingdom)" ;
+    schema:name "Barco (United Kingdom)" ;
+    schema:foundingDate "1934"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Barco_(manufacturer)> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05gcat543> ;
+        rdfs:label "Barco (Belgium)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.12574 51.50853)"^^geo:wktLiteral ;
+        schema:addressLocality "London" ;
+    ] ;
+    schema:url <https://www.barco.com/en/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q56583662> ;
+             .

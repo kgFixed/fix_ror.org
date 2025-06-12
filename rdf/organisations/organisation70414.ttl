@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01jttce46> 
+    a org:Organization ;
+    rdfs:label "Federal State Budget Scientific Institution Institute of Applied Mathematics and Automation" ;
+    schema:name "Federal State Budget Scientific Institution Institute of Applied Mathematics and Automation" ;
+    schema:foundingDate "1991"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(43.61889 43.49806)"^^geo:wktLiteral ;
+        schema:addressLocality "Nal'chik" ;
+    ] ;
+    schema:url <http://www.niipma.ru/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q54506208> ;
+             .

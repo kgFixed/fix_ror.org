@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/016chgx50> 
+    a org:Organization ;
+    rdfs:label "Sasaki Institute" ;
+    schema:name "Sasaki Institute" ;
+    schema:foundingDate "1894"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Sasaki_Institute> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(139.69171 35.6895)"^^geo:wktLiteral ;
+        schema:addressLocality "Tokyo" ;
+    ] ;
+    schema:url <http://www.sasaki-foundation.jp/labo/eg-top.html> ;
+    schema:sameAs <http://isni.org/isni/0000000417638692> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q11382345> ;
+             .

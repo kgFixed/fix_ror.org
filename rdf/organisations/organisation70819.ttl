@@ -1,0 +1,20 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04twq5n98> 
+    a org:Organization ;
+    rdfs:label "Beverly Hills Cardiology" ;
+    schema:name "Beverly Hills Cardiology" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-118.24368 34.05223)"^^geo:wktLiteral ;
+        schema:addressLocality "Los Angeles" ;
+    ] ;
+    schema:url <http://www.beverlyhillscardiology.com/> ;
+     .

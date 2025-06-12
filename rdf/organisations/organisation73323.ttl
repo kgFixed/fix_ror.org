@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00gwr4a27> 
+    a org:Organization ;
+    rdfs:label "Swedish Police Authority" ;
+    schema:name "Swedish Police Authority" ;
+    schema:foundingDate "2015"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Swedish_Police_Authority> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(18.04118 59.33183)"^^geo:wktLiteral ;
+        schema:addressLocality "Kungsholmen" ;
+    ] ;
+    schema:url <https://polisen.se/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q1394177> ;
+             .

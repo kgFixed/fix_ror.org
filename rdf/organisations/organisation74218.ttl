@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02s6awq69> 
+    a org:Organization ;
+    rdfs:label "Institute for Nonprofit News" ;
+    schema:name "Institute for Nonprofit News" ;
+    schema:foundingDate "2009"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Institute_for_Nonprofit_News> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-118.24368 34.05223)"^^geo:wktLiteral ;
+        schema:addressLocality "Los Angeles" ;
+    ] ;
+    schema:url <https://inn.org/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q6060703> ;
+             .

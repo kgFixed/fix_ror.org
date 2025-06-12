@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/015vve507> 
+    a org:Organization ;
+    rdfs:label "Colgate-Palmolive (India)" ;
+    schema:name "Colgate-Palmolive (India)" ;
+    schema:foundingDate "1937"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Colgate-Palmolive> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03q50jp21> ;
+        rdfs:label "Colgate-Palmolive (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(72.88261 19.07283)"^^geo:wktLiteral ;
+        schema:addressLocality "Mumbai" ;
+    ] ;
+    schema:url <https://www.colgatepalmolive.co.in/?gclid=EAIaIQobChMI1OCvlr7D2wIVRIaPCh0piwhdEAAYASAAEgJr-vD_BwE> ;
+     .

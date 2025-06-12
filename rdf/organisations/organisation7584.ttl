@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03ryhm704> 
+    a org:Organization ;
+    rdfs:label "DuPont (United Kingdom)" ;
+    schema:name "DuPont (United Kingdom)" ;
+    schema:foundingDate "1802"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/DuPont> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03g3m1w62> ;
+        rdfs:label "DuPont (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.20256 51.90224)"^^geo:wktLiteral ;
+        schema:addressLocality "Stevenage" ;
+    ] ;
+    schema:url <http://www.dupont.co.uk/> ;
+    schema:sameAs <http://isni.org/isni/0000000406007983> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30338331> ;
+             .

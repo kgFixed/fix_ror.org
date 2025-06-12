@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00ww76c39> 
+    a org:Organization ;
+    rdfs:label "National Museum in Warsaw" ;
+    schema:name "National Museum in Warsaw" ;
+    schema:foundingDate "1862"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/National_Museum,_Warsaw> ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(21.01178 52.22977)"^^geo:wktLiteral ;
+        schema:addressLocality "Warsaw" ;
+    ] ;
+    schema:url <http://www.mnw.art.pl/en/> ;
+    schema:sameAs <http://isni.org/isni/0000000122544381> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q153306> ;
+             .

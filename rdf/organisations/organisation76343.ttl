@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/031sbqx87> 
+    a org:Organization ;
+    rdfs:label "Food, Beverages and Catering Union" ;
+    schema:name "Food, Beverages and Catering Union" ;
+    schema:foundingDate "1865"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Food,_Beverages_and_Catering_Union> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(9.99302 53.55073)"^^geo:wktLiteral ;
+        schema:addressLocality "Hamburg" ;
+    ] ;
+    schema:url <http://www.ngg.net/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q896313> ;
+             .

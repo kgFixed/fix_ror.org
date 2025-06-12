@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05jskhr58> 
+    a org:Organization ;
+    rdfs:label "Global Environmental Institute" ;
+    schema:name "Global Environmental Institute" ;
+    schema:foundingDate "2003"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Global_Environmental_Institute> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(116.39723 39.9075)"^^geo:wktLiteral ;
+        schema:addressLocality "Beijing" ;
+    ] ;
+    schema:url <http://www.geichina.org/en/> ;
+    schema:sameAs <http://isni.org/isni/0000000459030095> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q16840224> ;
+             .

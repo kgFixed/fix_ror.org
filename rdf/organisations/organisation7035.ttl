@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00anm2x55> 
+    a org:Organization ;
+    rdfs:label "Ministry of Justice" ;
+    schema:name "Ministry of Justice" ;
+    schema:foundingDate "1954"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Ministry_of_Justice_of_the_People%27s_Republic_of_China> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04ry60e05> ;
+        rdfs:label "Institute of Forensic Science" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02fzqav45> ;
+        rdfs:label "State Council of the People's Republic of China" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(116.39723 39.9075)"^^geo:wktLiteral ;
+        schema:addressLocality "Beijing" ;
+    ] ;
+    schema:url <http://www.legalinfo.gov.cn/english> ;
+    schema:sameAs <http://isni.org/isni/0000000403863127> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q832422> ;
+             .

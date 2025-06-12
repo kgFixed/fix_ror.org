@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02syg0q74> 
+    a org:Organization ;
+    rdfs:label "Hirosaki University" ;
+    schema:name "Hirosaki University" ;
+    schema:foundingDate "1949"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Hirosaki_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(140.4725 40.59306)"^^geo:wktLiteral ;
+        schema:addressLocality "Hirosaki" ;
+    ] ;
+    schema:url <http://www.hirosaki-u.ac.jp/> ;
+    schema:sameAs <http://isni.org/isni/0000000106736172> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q958696> ;
+             .

@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00fsz9s67> 
+    a org:Organization ;
+    rdfs:label "Boehringer Ingelheim (Taiwan)" ;
+    schema:name "Boehringer Ingelheim (Taiwan)" ;
+    schema:foundingDate "1975"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Boehringer_Ingelheim> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00q32j219> ;
+        rdfs:label "Boehringer Ingelheim (Germany)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(121.52639 25.05306)"^^geo:wktLiteral ;
+        schema:addressLocality "Taipei" ;
+    ] ;
+    schema:url <https://www.boehringer-ingelheim.tw/our-company> ;
+    schema:sameAs <http://isni.org/isni/000000040448409X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q55454484> ;
+             .

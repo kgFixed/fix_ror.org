@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03y7ycy60> 
+    a org:Organization ;
+    rdfs:label "Norra Älvsborgs Länssjukhus" ;
+    schema:name "Norra Älvsborgs Länssjukhus" ;
+    schema:foundingDate "1988"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Norra_%C3%84lvsborgs_L%C3%A4nssjukhus> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(12.28864 58.28365)"^^geo:wktLiteral ;
+        schema:addressLocality "Trollhättan" ;
+    ] ;
+    schema:url <http://www.nusjukvarden.se/sv> ;
+    schema:sameAs <http://isni.org/isni/0000000404337743> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7053233> ;
+             .

@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02r06d562> 
+    a org:Organization ;
+    rdfs:label "National Institute of Arts" ;
+    schema:name "National Institute of Arts" ;
+    schema:foundingDate "1967"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/National_Institute_of_Arts,_Kinshasa> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(15.31357 -4.32758)"^^geo:wktLiteral ;
+        schema:addressLocality "Kinshasa" ;
+    ] ;
+    schema:url <http://afrique.arte.tv/blog/?p=3359> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q6973608> ;
+             .

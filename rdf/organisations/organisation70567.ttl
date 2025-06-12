@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05ts5ga89> 
+    a org:Organization ;
+    rdfs:label "Anton Paar (United States)" ;
+    schema:name "Anton Paar (United States)" ;
+    schema:foundingDate "1922"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Anton_Paar> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04tp44r29> ;
+        rdfs:label "Anton Paar (Austria)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.47998 37.75903)"^^geo:wktLiteral ;
+        schema:addressLocality "Ashland" ;
+    ] ;
+    schema:url <https://www.anton-paar.com/us-en/> ;
+    schema:sameAs <http://isni.org/isni/0000000405395478> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q59535998> ;
+             .

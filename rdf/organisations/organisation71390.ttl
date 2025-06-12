@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/010719r63> 
+    a org:Organization ;
+    rdfs:label "Atmospheric Observatory of Austral Patagonia" ;
+    schema:name "Atmospheric Observatory of Austral Patagonia" ;
+    schema:foundingDate "2005"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-69.21813 -51.62261)"^^geo:wktLiteral ;
+        schema:addressLocality "Río Gallegos" ;
+    ] ;
+    schema:url <http://ndacc-lidar.org/index.php?id=69/Rio+Gallegos.htm%20and%20add%20type=facility> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q54864709> ;
+             .

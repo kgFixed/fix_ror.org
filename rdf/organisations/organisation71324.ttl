@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01pg0y117> 
+    a org:Organization ;
+    rdfs:label "The Institute for Food Brain and Behaviour" ;
+    schema:name "The Institute for Food Brain and Behaviour" ;
+    schema:foundingDate "1984"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Institute_for_Food,_Brain_and_Behaviour> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.25596 51.75222)"^^geo:wktLiteral ;
+        schema:addressLocality "Oxford" ;
+    ] ;
+    schema:url <https://www.ifbb.org.uk> ;
+     .

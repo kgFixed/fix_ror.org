@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02a4rw748> 
+    a org:Organization ;
+    rdfs:label "Kosovo Telecom (Kosovo)" ;
+    schema:name "Kosovo Telecom (Kosovo)" ;
+    schema:foundingDate "1965"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Post_and_Telecom_of_Kosovo> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(21.16688 42.67272)"^^geo:wktLiteral ;
+        schema:addressLocality "Pristina" ;
+    ] ;
+    schema:url <http://www.kosovotelecom.com/tk/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q939510> ;
+             .

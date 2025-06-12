@@ -1,0 +1,49 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/032msy923> 
+    a org:Organization ;
+    rdfs:label "Santen (Japan)" ;
+    schema:name "Santen (Japan)" ;
+    schema:foundingDate "1890"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Santen_Pharmaceutical> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01mhc8r12> ;
+        rdfs:label "Santen (Finland)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00z4cj158> ;
+        rdfs:label "Santen (France)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/038kcjb09> ;
+        rdfs:label "Santen (United Kingdom)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0108v8438> ;
+        rdfs:label "Santen (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(135.50107 34.69379)"^^geo:wktLiteral ;
+        schema:addressLocality "Osaka" ;
+    ] ;
+    schema:url <http://www.santen.com/en/> ;
+    schema:sameAs <http://isni.org/isni/0000000403763871> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q16927590> ;
+             .

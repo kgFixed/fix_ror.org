@@ -1,0 +1,121 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04hjbmv12> 
+    a org:Organization ;
+    rdfs:label "Takeda (Japan)" ;
+    schema:name "Takeda (Japan)" ;
+    schema:foundingDate "1781"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Takeda_Pharmaceutical_Company> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04jfar564> ;
+        rdfs:label "Takeda (Australia)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04nm3yk20> ;
+        rdfs:label "Takeda (Austria)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/049a8xm46> ;
+        rdfs:label "Takeda (Belgium)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/056d2rn68> ;
+        rdfs:label "Takeda (Canada)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03bsswy66> ;
+        rdfs:label "Takeda (Denmark)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/048p4wq89> ;
+        rdfs:label "Takeda (France)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03xqv3p85> ;
+        rdfs:label "Takeda (Germany)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/003na7826> ;
+        rdfs:label "Takeda (Ireland)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00f2tsn51> ;
+        rdfs:label "Takeda (Italy)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00ycncb81> ;
+        rdfs:label "Takeda (Netherlands)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/038sjwf38> ;
+        rdfs:label "Takeda (Norway)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00dzggj72> ;
+        rdfs:label "Takeda (Singapore)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04pfpqx12> ;
+        rdfs:label "Takeda (Sweden)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/002ysmy84> ;
+        rdfs:label "Takeda (Switzerland)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05c0v3585> ;
+        rdfs:label "Takeda (United Kingdom)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03bygaq51> ;
+        rdfs:label "Takeda (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(135.50107 34.69379)"^^geo:wktLiteral ;
+        schema:addressLocality "Osaka" ;
+    ] ;
+    schema:url <http://www.takeda.com> ;
+    schema:sameAs <http://isni.org/isni/0000000106736017> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q899133> ;
+             .

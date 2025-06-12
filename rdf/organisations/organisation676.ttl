@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04cyk2a69> 
+    a org:Organization ;
+    rdfs:label "General de Jesus College" ;
+    schema:name "General de Jesus College" ;
+    schema:foundingDate "1946"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/General_de_Jesus_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(123.88333 9.91667)"^^geo:wktLiteral ;
+        schema:addressLocality "San Isidro" ;
+    ] ;
+    schema:url <http://gendejesus.edu.ph/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q5532333> ;
+             .

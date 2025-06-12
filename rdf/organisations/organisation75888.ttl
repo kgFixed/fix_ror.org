@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/010b0td06> 
+    a org:Organization ;
+    rdfs:label "Komatsu University" ;
+    schema:name "Komatsu University" ;
+    schema:foundingDate "2018"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Komatsu_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(140.45 37.15)"^^geo:wktLiteral ;
+        schema:addressLocality "Ishikawa" ;
+    ] ;
+    schema:url <https://www.komatsu-u.ac.jp/> ;
+    schema:sameAs <http://isni.org/isni/000000046508126X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q51707466> ;
+             .

@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00j75nc06> 
+    a org:Organization ;
+    rdfs:label "First Floor Gallery Harare" ;
+    schema:name "First Floor Gallery Harare" ;
+    schema:foundingDate "2009"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/First_Floor_Gallery_Harare> ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(31.05337 -17.82772)"^^geo:wktLiteral ;
+        schema:addressLocality "Harare" ;
+    ] ;
+    schema:url <https://www.firstfloorgalleryharare.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q5453022> ;
+             .

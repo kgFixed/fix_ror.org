@@ -1,0 +1,108 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00wqtx630> 
+    a org:Organization ;
+    rdfs:label "South Carolina Technical College System" ;
+    schema:name "South Carolina Technical College System" ;
+    schema:foundingDate "1960"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/South_Carolina_Technical_College_System> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01wk6zs95> ;
+        rdfs:label "Aiken Technical College" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01scq3556> ;
+        rdfs:label "Denmark Technical College" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00aqm2347> ;
+        rdfs:label "Florence–Darlington Technical College" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/040ztay26> ;
+        rdfs:label "Greenville Technical College" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04mfr9y95> ;
+        rdfs:label "Midlands Technical College" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0484fme70> ;
+        rdfs:label "Northeastern Technical College" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01pxzvy69> ;
+        rdfs:label "Orangeburg–Calhoun Technical College" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/039y7c549> ;
+        rdfs:label "Piedmont Technical College" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03jqk9681> ;
+        rdfs:label "Spartanburg Community College" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03w6f4808> ;
+        rdfs:label "Technical College of the Lowcountry" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/037asfw97> ;
+        rdfs:label "Tri County Technical College" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/052yz6z95> ;
+        rdfs:label "Trident Technical College" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00cdkww69> ;
+        rdfs:label "Williamsburg Technical College" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05teaww98> ;
+        rdfs:label "York Technical College" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-81.03481 34.00071)"^^geo:wktLiteral ;
+        schema:addressLocality "Columbia" ;
+    ] ;
+    schema:url <http://www.sctechsystem.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000406092700> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7566646> ;
+             .

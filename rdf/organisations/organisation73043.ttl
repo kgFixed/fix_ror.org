@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05jh28309> 
+    a org:Organization ;
+    rdfs:label "Youth Development Administration" ;
+    schema:name "Youth Development Administration" ;
+    schema:foundingDate "1966"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Youth_Development_Administration> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03m01yf64> ;
+        rdfs:label "Ministry of Education" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(121.52639 25.05306)"^^geo:wktLiteral ;
+        schema:addressLocality "Taipei" ;
+    ] ;
+    schema:url <https://www.yda.gov.tw/index.aspx?siteid=563655426603362361> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q700854> ;
+             .

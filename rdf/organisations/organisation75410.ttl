@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/036j90q35> 
+    a org:Organization ;
+    rdfs:label "Rockstep Solutions (United States)" ;
+    schema:name "Rockstep Solutions (United States)" ;
+    schema:foundingDate "2013"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-70.2589 43.65737)"^^geo:wktLiteral ;
+        schema:addressLocality "Portland" ;
+    ] ;
+    schema:url <https://www.rockstepsolutions.com/> ;
+     .

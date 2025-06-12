@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01fkztr60> 
+    a org:Organization ;
+    rdfs:label "Glasgow Women's Library" ;
+    schema:name "Glasgow Women's Library" ;
+    schema:foundingDate "1991"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Glasgow_Women%27s_Library> ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-4.25763 55.86515)"^^geo:wktLiteral ;
+        schema:addressLocality "Glasgow" ;
+    ] ;
+    schema:url <https://womenslibrary.org.uk/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q5566961> ;
+             .

@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01rt6qg79> 
+    a org:Organization ;
+    rdfs:label "Suzano (Brazil)" ;
+    schema:name "Suzano (Brazil)" ;
+    schema:foundingDate "1924"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-38.49096 -12.97563)"^^geo:wktLiteral ;
+        schema:addressLocality "Salvador" ;
+    ] ;
+    schema:url <http://www.suzano.com.br/en/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q1030695> ;
+             .

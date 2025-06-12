@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/046xx9480> 
+    a org:Organization ;
+    rdfs:label "Korea Counseling Graduate University" ;
+    schema:name "Korea Counseling Graduate University" ;
+    schema:foundingDate "2010"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(126.9784 37.566)"^^geo:wktLiteral ;
+        schema:addressLocality "Seoul" ;
+    ] ;
+    schema:url <http://www.kcgu.ac.kr/english/portal.php> ;
+    schema:sameAs <http://isni.org/isni/000000041783356X> ;
+             .

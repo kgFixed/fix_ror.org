@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/028awrr93> 
+    a org:Organization ;
+    rdfs:label "Woodbrooke" ;
+    schema:name "Woodbrooke" ;
+    schema:foundingDate "1903"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Woodbrooke_Quaker_Study_Centre> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.89983 52.48142)"^^geo:wktLiteral ;
+        schema:addressLocality "Birmingham" ;
+    ] ;
+    schema:url <https://www.woodbrooke.org.uk/> ;
+    schema:sameAs <http://isni.org/isni/000000012287468X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q8032437> ;
+             .

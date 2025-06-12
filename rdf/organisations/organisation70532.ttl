@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04dx63c61> 
+    a org:Organization ;
+    rdfs:label "Nottingham Contemporary" ;
+    schema:name "Nottingham Contemporary" ;
+    schema:foundingDate "2009"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Nottingham_Contemporary> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.15047 52.9536)"^^geo:wktLiteral ;
+        schema:addressLocality "Nottingham" ;
+    ] ;
+    schema:url <http://www.nottinghamcontemporary.org/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q7063622> ;
+             .

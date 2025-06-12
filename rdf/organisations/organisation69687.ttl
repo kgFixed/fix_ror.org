@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01ym1hq42> 
+    a org:Organization ;
+    rdfs:label "Federation of Environmental Trade Associations" ;
+    schema:name "Federation of Environmental Trade Associations" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Federation_of_Environmental_Trade_Associations> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.83565 51.4112)"^^geo:wktLiteral ;
+        schema:addressLocality "Wokingham" ;
+    ] ;
+    schema:url <https://www.feta.co.uk/> ;
+     .

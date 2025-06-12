@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00az85j53> 
+    a org:Organization ;
+    rdfs:label "Dongfang Electric Corporation (China)" ;
+    schema:name "Dongfang Electric Corporation (China)" ;
+    schema:foundingDate "1984"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Dongfang_Electric> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(103.88253 30.80993)"^^geo:wktLiteral ;
+        schema:addressLocality "Pitong" ;
+    ] ;
+    schema:url <http://www.dongfang.com.cn/> ;
+    schema:sameAs <http://isni.org/isni/0000000417769115> ;
+             .

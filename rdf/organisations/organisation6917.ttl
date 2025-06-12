@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04154pe94> 
+    a org:Organization ;
+    rdfs:label "Kanagawa Cardiovascular and Respiratory Center" ;
+    schema:name "Kanagawa Cardiovascular and Respiratory Center" ;
+    schema:foundingDate "1954"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(139.65 35.43333)"^^geo:wktLiteral ;
+        schema:addressLocality "Yokohama" ;
+    ] ;
+    schema:url <http://junko.kanagawa-pho.jp/> ;
+    schema:sameAs <http://isni.org/isni/0000000417750430> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q11589088> ;
+             .

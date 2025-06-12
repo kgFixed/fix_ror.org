@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/016nc1s82> 
+    a org:Organization ;
+    rdfs:label "British Association for Immediate Care Scotland" ;
+    schema:name "British Association for Immediate Care Scotland" ;
+    schema:foundingDate "1993"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/British_Association_for_Immediate_Care> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-3.43139 56.39522)"^^geo:wktLiteral ;
+        schema:addressLocality "Perth" ;
+    ] ;
+    schema:url <https://basics-scotland.org.uk/> ;
+     .

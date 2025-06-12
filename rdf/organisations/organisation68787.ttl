@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03tkqz180> 
+    a org:Organization ;
+    rdfs:label "Cipla (United States)" ;
+    schema:name "Cipla (United States)" ;
+    schema:foundingDate "1935"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Cipla> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02w6dqa48> ;
+        rdfs:label "Cipla (India)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-80.1131 26.13397)"^^geo:wktLiteral ;
+        schema:addressLocality "Sunrise" ;
+    ] ;
+    schema:url <http://www.ciplausa.com> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q55454374> ;
+             .

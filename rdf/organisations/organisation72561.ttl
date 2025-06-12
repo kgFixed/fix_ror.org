@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/040f8w440> 
+    a org:Organization ;
+    rdfs:label "Institute of Social Sciences" ;
+    schema:name "Institute of Social Sciences" ;
+    schema:foundingDate "1985"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Institute_of_Social_Sciences,_New_Delhi> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(77.59369 12.97194)"^^geo:wktLiteral ;
+        schema:addressLocality "Bengaluru" ;
+    ] ;
+    schema:url <http://www.issin.org> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q16254424> ;
+             .

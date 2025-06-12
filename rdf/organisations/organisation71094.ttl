@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03sz41d72> 
+    a org:Organization ;
+    rdfs:label "Südharz Klinikum" ;
+    schema:name "Südharz Klinikum" ;
+    schema:foundingDate "1976"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(10.7957 51.5018)"^^geo:wktLiteral ;
+        schema:addressLocality "Nordhausen" ;
+    ] ;
+    schema:url <http://www.suedharz-klinikum.de/> ;
+    schema:sameAs <http://isni.org/isni/0000000406364681> ;
+             .

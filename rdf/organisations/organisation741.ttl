@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01g67by91> 
+    a org:Organization ;
+    rdfs:label "Mercer University Health Sciences Center" ;
+    schema:name "Mercer University Health Sciences Center" ;
+    schema:foundingDate "2012"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Mercer_University_Health_Sciences_Center> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-81.09983 32.08354)"^^geo:wktLiteral ;
+        schema:addressLocality "Savannah" ;
+    ] ;
+    schema:url <https://hsc.mercer.edu/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q6818313> ;
+             .

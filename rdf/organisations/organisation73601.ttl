@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04q23qy39> 
+    a org:Organization ;
+    rdfs:label "Chaudhary Ranbir Singh University" ;
+    schema:name "Chaudhary Ranbir Singh University" ;
+    schema:foundingDate "2014"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Chaudhary_Ranbir_Singh_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(75.72294 29.15394)"^^geo:wktLiteral ;
+        schema:addressLocality "Hisar" ;
+    ] ;
+    schema:url <http://www.crsu.ac.in> ;
+    schema:sameAs <http://isni.org/isni/0000000464616445> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q19891144> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q59660518> ;
+             .

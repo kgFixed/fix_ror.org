@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0345vzk85> 
+    a org:Organization ;
+    rdfs:label "Equality Now" ;
+    schema:name "Equality Now" ;
+    schema:foundingDate "1992"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Equality_Now> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-74.00597 40.71427)"^^geo:wktLiteral ;
+        schema:addressLocality "New York" ;
+    ] ;
+    schema:url <https://www.equalitynow.org/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q3523207> ;
+             .

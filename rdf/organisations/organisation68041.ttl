@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03fkhvq16> 
+    a org:Organization ;
+    rdfs:label "Desh Bhagat Ayurvedic College and Hospital" ;
+    schema:name "Desh Bhagat Ayurvedic College and Hospital" ;
+    schema:foundingDate "1996"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/007n0ss86> ;
+        rdfs:label "Desh Bhagat University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(76.23199 30.60837)"^^geo:wktLiteral ;
+        schema:addressLocality "Amloh" ;
+    ] ;
+    schema:url <http://www.dbach.in/> ;
+    schema:sameAs <http://isni.org/isni/0000000418013088> ;
+             .

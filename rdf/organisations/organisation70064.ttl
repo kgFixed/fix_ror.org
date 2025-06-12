@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05113d564> 
+    a org:Organization ;
+    rdfs:label "War Studies Academy" ;
+    schema:name "War Studies Academy" ;
+    schema:foundingDate "1765"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/War_Studies_Academy> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(21.01178 52.22977)"^^geo:wktLiteral ;
+        schema:addressLocality "Warsaw" ;
+    ] ;
+    schema:url <http://www.akademia.mil.pl/en/> ;
+    schema:sameAs <http://isni.org/isni/0000000460046641> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q27061984> ;
+             .

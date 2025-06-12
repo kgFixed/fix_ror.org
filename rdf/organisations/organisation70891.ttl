@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/023a61k53> 
+    a org:Organization ;
+    rdfs:label "Centre for Excellence for Looked After Children in Scotland" ;
+    schema:name "Centre for Excellence for Looked After Children in Scotland" ;
+    schema:foundingDate "2011"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Centre_for_Excellence_for_Looked_After_Children_in_Scotland> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-4.25763 55.86515)"^^geo:wktLiteral ;
+        schema:addressLocality "Glasgow" ;
+    ] ;
+    schema:url <https://www.celcis.org/> ;
+    schema:sameAs <http://isni.org/isni/000000008828874X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q18345124> ;
+             .

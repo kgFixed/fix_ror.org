@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04hzt6a67> 
+    a org:Organization ;
+    rdfs:label "Hefei Meiling (China)" ;
+    schema:name "Hefei Meiling (China)" ;
+    schema:foundingDate "1992"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Hefei_Meiling> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(117.28083 31.86389)"^^geo:wktLiteral ;
+        schema:addressLocality "Hefei" ;
+    ] ;
+    schema:url <http://www.meiling.com/> ;
+     .

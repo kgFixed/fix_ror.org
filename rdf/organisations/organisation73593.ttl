@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03eykm948> 
+    a org:Organization ;
+    rdfs:label "Islamic Azad University, Buin-Zahra" ;
+    schema:name "Islamic Azad University, Buin-Zahra" ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(50.0578 35.7669)"^^geo:wktLiteral ;
+        schema:addressLocality "Bū’īn Zahrā" ;
+    ] ;
+    schema:url <http://buiniau.ac.ir/fa> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q57779710> ;
+             .

@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/015a03w85> 
+    a org:Organization ;
+    rdfs:label "Aero Thermo Technology (United States)" ;
+    schema:name "Aero Thermo Technology (United States)" ;
+    schema:foundingDate "1988"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-86.58594 34.7304)"^^geo:wktLiteral ;
+        schema:addressLocality "Huntsville" ;
+    ] ;
+    schema:url <https://www.aerothermo.com/> ;
+     .

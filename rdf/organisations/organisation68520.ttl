@@ -1,0 +1,59 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/006sbr164> 
+    a org:Organization ;
+    rdfs:label "Gemalto (Netherlands)" ;
+    schema:name "Gemalto (Netherlands)" ;
+    schema:foundingDate "2006"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Gemalto> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/012p54t81> ;
+        rdfs:label "Gemalto (France)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/008558y11> ;
+        rdfs:label "Gemalto (Germany)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0134cjh35> ;
+        rdfs:label "Gemalto (Israel)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03va80p69> ;
+        rdfs:label "Gemalto (Poland)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/023qkzz98> ;
+        rdfs:label "Gemalto (United Kingdom)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04emwm605> ;
+        rdfs:label "Thales (France)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(4.88969 52.37403)"^^geo:wktLiteral ;
+        schema:addressLocality "Amsterdam" ;
+    ] ;
+    schema:url <https://www.gemalto.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000405916632> ;
+             .

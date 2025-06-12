@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/046qxha37> 
+    a org:Organization ;
+    rdfs:label "Azerbaijan Genetic Resources Institute" ;
+    schema:name "Azerbaijan Genetic Resources Institute" ;
+    schema:foundingDate "2003"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/006m4q736> ;
+        rdfs:label "Azerbaijan National Academy of Sciences" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(49.89201 40.37767)"^^geo:wktLiteral ;
+        schema:addressLocality "Baku" ;
+    ] ;
+    schema:url <http://www.genres.az> ;
+    schema:sameAs <http://isni.org/isni/0000000460827181> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q12839788> ;
+             .

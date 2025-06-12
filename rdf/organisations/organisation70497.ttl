@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/011494s34> 
+    a org:Organization ;
+    rdfs:label "Large Synoptic Survey Telescope Corporation" ;
+    schema:name "Large Synoptic Survey Telescope Corporation" ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/048g3cy84> ;
+        rdfs:label "Vera C. Rubin Observatory" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-110.92648 32.22174)"^^geo:wktLiteral ;
+        schema:addressLocality "Tucson" ;
+    ] ;
+    schema:url <https://www.lsstcorporation.org/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q59535957> ;
+             .

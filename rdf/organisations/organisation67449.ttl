@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02ghs8a63> 
+    a org:Organization ;
+    rdfs:label "Federation of Busan Science and Technology" ;
+    schema:name "Federation of Busan Science and Technology" ;
+    schema:foundingDate "2004"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(129.03004 35.10168)"^^geo:wktLiteral ;
+        schema:addressLocality "Busan" ;
+    ] ;
+    schema:url <http://www.fobst.org/kor/index.php> ;
+     .

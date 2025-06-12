@@ -1,0 +1,66 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03bd8jh67> 
+    a org:Organization ;
+    rdfs:label "Vancouver Coastal Health" ;
+    schema:name "Vancouver Coastal Health" ;
+    schema:foundingDate "2001"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Vancouver_Coastal_Health> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02d4smc03> ;
+        rdfs:label "GF Strong Rehabilitation Centre" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02pyp8h55> ;
+        rdfs:label "Lions Gate Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01wm3xb93> ;
+        rdfs:label "Richmond Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00frst980> ;
+        rdfs:label "University of British Columbia Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04htzww22> ;
+        rdfs:label "Vancouver Coastal Health Research Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02zg69r60> ;
+        rdfs:label "Vancouver General Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05p83my93> ;
+        rdfs:label "Vancouver Hospital and Health Sciences Centre" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-123.11934 49.24966)"^^geo:wktLiteral ;
+        schema:addressLocality "Vancouver" ;
+    ] ;
+    schema:url <http://www.vch.ca/> ;
+    schema:sameAs <http://isni.org/isni/0000000105050734> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7914144> ;
+             .

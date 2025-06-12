@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02qyqxk84> 
+    a org:Organization ;
+    rdfs:label "Qiagen (Netherlands)" ;
+    schema:name "Qiagen (Netherlands)" ;
+    schema:foundingDate "1984"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Qiagen> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02r96rf44> ;
+        rdfs:label "Qiagen (Germany)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(6.16806 51.37)"^^geo:wktLiteral ;
+        schema:addressLocality "Venlo" ;
+    ] ;
+    schema:url <https://www.qiagen.com> ;
+    schema:sameAs <http://isni.org/isni/0000000405656893> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q55454115> ;
+             .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/009bgdw98> 
+    a org:Organization ;
+    rdfs:label "North Yorkshire County Council" ;
+    schema:name "North Yorkshire County Council" ;
+    schema:foundingDate "1972"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/North_Yorkshire_County_Council> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.43243 54.33901)"^^geo:wktLiteral ;
+        schema:addressLocality "Northallerton" ;
+    ] ;
+    schema:url <https://www.northyorks.gov.uk/> ;
+    schema:sameAs <http://isni.org/isni/0000000102203360> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q17017103> ;
+             .

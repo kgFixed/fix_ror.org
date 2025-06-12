@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01emtgd92> 
+    a org:Organization ;
+    rdfs:label "Mansfield University" ;
+    schema:name "Mansfield University" ;
+    schema:foundingDate "1857"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Mansfield_University_of_Pennsylvania> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00m2s0z68> ;
+        rdfs:label "Pennsylvania State System of Higher Education" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.07747 41.8073)"^^geo:wktLiteral ;
+        schema:addressLocality "Mansfield" ;
+    ] ;
+    schema:url <http://www.mansfield.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000106471450> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6751699> ;
+             .

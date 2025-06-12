@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0522zz544> 
+    a org:Organization ;
+    rdfs:label "Gorta Self Help Africa" ;
+    schema:name "Gorta Self Help Africa" ;
+    schema:foundingDate "1965"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Gorta> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-6.24889 53.33306)"^^geo:wktLiteral ;
+        schema:addressLocality "Dublin" ;
+    ] ;
+    schema:url <https://selfhelpafrica.org/uk/> ;
+     .

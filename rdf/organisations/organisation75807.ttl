@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0177mph94> 
+    a org:Organization ;
+    rdfs:label "New England Biolabs (United Kingdom)" ;
+    schema:name "New England Biolabs (United Kingdom)" ;
+    schema:foundingDate "1974"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/New_England_Biolabs> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04ywg3445> ;
+        rdfs:label "New England Biolabs (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.28496 51.94924)"^^geo:wktLiteral ;
+        schema:addressLocality "Hitchin" ;
+    ] ;
+    schema:url <https://www.neb.uk.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q64143175> ;
+             .

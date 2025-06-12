@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05t86wg70> 
+    a org:Organization ;
+    rdfs:label "Agartala Government Medical College" ;
+    schema:name "Agartala Government Medical College" ;
+    schema:foundingDate "2005"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Agartala_Government_Medical_College> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05xqycm14> ;
+        rdfs:label "Tripura University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(91.27939 23.83605)"^^geo:wktLiteral ;
+        schema:addressLocality "Agartala" ;
+    ] ;
+    schema:url <http://agmc.nic.in/> ;
+    schema:sameAs <http://isni.org/isni/0000000418016799> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4691382> ;
+             .

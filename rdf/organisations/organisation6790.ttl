@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04t24x986> 
+    a org:Organization ;
+    rdfs:label "Novartis (Austria)" ;
+    schema:name "Novartis (Austria)" ;
+    schema:foundingDate "1996"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Novartis> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02f9zrr09> ;
+        rdfs:label "Novartis (Switzerland)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(16.37208 48.20849)"^^geo:wktLiteral ;
+        schema:addressLocality "Vienna" ;
+    ] ;
+    schema:url <https://www.novartis.at/> ;
+    schema:sameAs <http://isni.org/isni/000000040448732X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30338507> ;
+             .

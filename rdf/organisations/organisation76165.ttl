@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04x97rq71> 
+    a org:Organization ;
+    rdfs:label "National Innovation Foundation" ;
+    schema:name "National Innovation Foundation" ;
+    schema:foundingDate "2000"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/National_Innovation_Foundation_-_India> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0101xrq71> ;
+        rdfs:label "Department of Science and Technology" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(72.68333 23.21667)"^^geo:wktLiteral ;
+        schema:addressLocality "Gandhinagar" ;
+    ] ;
+    schema:url <http://nif.org.in/> ;
+    schema:sameAs <http://isni.org/isni/0000000459442081> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6973550> ;
+             .

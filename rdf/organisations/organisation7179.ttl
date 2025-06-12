@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03jwzwq24> 
+    a org:Organization ;
+    rdfs:label "Xerox (United States)" ;
+    schema:name "Xerox (United States)" ;
+    schema:foundingDate "1906"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Xerox> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0529fxt39> ;
+        rdfs:label "Palo Alto Research Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04z9w5078> ;
+        rdfs:label "Xerox (Canada)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/033q0mv79> ;
+        rdfs:label "Xerox (France)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03c922h13> ;
+        rdfs:label "Xerox (United Kingdom)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02w528w58> ;
+        rdfs:label "Fuji Xerox (Japan)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-118.08173 33.90224)"^^geo:wktLiteral ;
+        schema:addressLocality "Norwalk" ;
+    ] ;
+    schema:url <http://www.xerox.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000113958398> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q152433> ;
+             .

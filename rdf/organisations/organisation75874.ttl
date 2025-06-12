@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04qby6e62> 
+    a org:Organization ;
+    rdfs:label "Automotive Service Excellence" ;
+    schema:name "Automotive Service Excellence" ;
+    schema:foundingDate "1972"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Automotive_Service_Excellence> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.5636 39.11566)"^^geo:wktLiteral ;
+        schema:addressLocality "Leesburg" ;
+    ] ;
+    schema:url <https://www.ase.com/Home.aspx> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q4826719> ;
+             .
