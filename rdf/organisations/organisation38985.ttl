@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0415f1661> 
+    a org:Organization ;
+    rdfs:label "Mathura Das Mathur Hospital" ;
+    schema:name "Mathura Das Mathur Hospital" ;
+    schema:foundingDate "1974"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Mathura_Das_Mathur_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(73.00594 26.26841)"^^geo:wktLiteral ;
+        schema:addressLocality "Jodhpur" ;
+    ] ;
+    schema:url <http://www.education.rajasthan.gov.in/content/raj/education/dr--sampurnanand-medical-college--jodhpur/en/about-us/hospital/mathura-das-mathur-hospital.html> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q14956847> ;
+             .

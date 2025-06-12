@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01qpf3c64> 
+    a org:Organization ;
+    rdfs:label "Waldorf College" ;
+    schema:name "Waldorf College" ;
+    schema:foundingDate "1903"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Waldorf_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-93.63716 43.26246)"^^geo:wktLiteral ;
+        schema:addressLocality "Forest City" ;
+    ] ;
+    schema:url <http://www.waldorf.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000092807506> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7961606> ;
+             .

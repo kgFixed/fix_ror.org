@@ -1,0 +1,48 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0382m3r69> 
+    a org:Organization ;
+    rdfs:label "Dr Gray's Hospital" ;
+    schema:name "Dr Gray's Hospital" ;
+    schema:foundingDate "1819"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Dr_Gray%27s_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00ma0mg56> ;
+        rdfs:label "NHS Grampian" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04f0qj703> ;
+        rdfs:label "Robert Gordon University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/016476m91> ;
+        rdfs:label "University of Aberdeen" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02s08xt61> ;
+        rdfs:label "University of the Highlands and Islands" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-3.31843 57.64947)"^^geo:wktLiteral ;
+        schema:addressLocality "Elgin" ;
+    ] ;
+    schema:url <http://www.nhsgrampian.org/nhsgrampian/gra_display_hospital.jsp?pContentID=381&p_applic=CCC&p_service=Content.show&> ;
+    schema:sameAs <http://isni.org/isni/0000000406244073> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5304529> ;
+             .

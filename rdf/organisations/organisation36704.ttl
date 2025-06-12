@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/028t3qn68> 
+    a org:Organization ;
+    rdfs:label "Meventus (Norway)" ;
+    schema:name "Meventus (Norway)" ;
+    schema:foundingDate "2006"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(7.9956 58.14671)"^^geo:wktLiteral ;
+        schema:addressLocality "Kristiansand" ;
+    ] ;
+    schema:url <http://meventus.com/> ;
+     .

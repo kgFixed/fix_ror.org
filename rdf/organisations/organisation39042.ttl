@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02a2hb496> 
+    a org:Organization ;
+    rdfs:label "Nazareth Hospital EMMS" ;
+    schema:name "Nazareth Hospital EMMS" ;
+    schema:foundingDate "1861"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/EMMS_Nazareth_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03kgsv495> ;
+        rdfs:label "Bar-Ilan University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(35.29722 32.70056)"^^geo:wktLiteral ;
+        schema:addressLocality "Nazareth" ;
+    ] ;
+    schema:url <http://www.nazarethtrust.org/about/hospital> ;
+    schema:sameAs <http://isni.org/isni/0000000405752981> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6655572> ;
+             .

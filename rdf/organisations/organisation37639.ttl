@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04yr0ey26> 
+    a org:Organization ;
+    rdfs:label "Réseau Technoscience Saguenay–Lac-Saint-Jean" ;
+    schema:name "Réseau Technoscience Saguenay–Lac-Saint-Jean" ;
+    schema:foundingDate "1981"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05w44gx91> ;
+        rdfs:label "Réseau Technoscience" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-71.6491 48.55009)"^^geo:wktLiteral ;
+        schema:addressLocality "Alma" ;
+    ] ;
+    schema:url <http://www.clssaglac.com/> ;
+     .

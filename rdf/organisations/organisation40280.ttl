@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01fryje29> 
+    a org:Organization ;
+    rdfs:label "South College" ;
+    schema:name "South College" ;
+    schema:foundingDate "1882"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/South_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-83.92074 35.96064)"^^geo:wktLiteral ;
+        schema:addressLocality "Knoxville" ;
+    ] ;
+    schema:url <http://www.southcollegetn.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000404166665> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7566876> ;
+             .

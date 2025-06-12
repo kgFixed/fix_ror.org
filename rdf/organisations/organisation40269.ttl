@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/051gp9n72> 
+    a org:Organization ;
+    rdfs:label "Santiago Canyon College" ;
+    schema:name "Santiago Canyon College" ;
+    schema:foundingDate "1985"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Santiago_Canyon_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00b5ztt43> ;
+        rdfs:label "Rancho Santiago Community College District" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-117.85311 33.78779)"^^geo:wktLiteral ;
+        schema:addressLocality "Orange" ;
+    ] ;
+    schema:url <https://www.sccollege.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000404017918> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7420231> ;
+             .

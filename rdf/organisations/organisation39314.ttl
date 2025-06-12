@@ -1,0 +1,48 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03z1ps729> 
+    a org:Organization ;
+    rdfs:label "Aga Khan Hospital Dar es Salaam" ;
+    schema:name "Aga Khan Hospital Dar es Salaam" ;
+    schema:foundingDate "1964"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Aga_Khan_Hospital,_Dar_es_Salaam> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01zv98a09> ;
+        rdfs:label "Aga Khan University Nairobi" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02wwrqj12> ;
+        rdfs:label "Aga Khan University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05xcx0k58> ;
+        rdfs:label "Aga Khan University Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03rppv730> ;
+        rdfs:label "Aga Khan University Hospital Nairobi" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(39.26951 -6.82349)"^^geo:wktLiteral ;
+        schema:addressLocality "Dar es Salaam" ;
+    ] ;
+    schema:url <http://www.agakhanhospitals.org/dar/> ;
+    schema:sameAs <http://isni.org/isni/000000040398122X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4690929> ;
+             .

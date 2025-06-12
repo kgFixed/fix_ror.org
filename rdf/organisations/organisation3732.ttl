@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0416des07> 
+    a org:Organization ;
+    rdfs:label "Hospital Universitario Lucus Augusti" ;
+    schema:name "Hospital Universitario Lucus Augusti" ;
+    schema:foundingDate "2010"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-7.55602 43.00992)"^^geo:wktLiteral ;
+        schema:addressLocality "Lugo" ;
+    ] ;
+    schema:url <http://xxilugo.sergas.es/Paxinas/web.aspx?tipo=paxtab&idLista=3&idContido=7&migt...+=&idioma=es> ;
+    schema:sameAs <http://isni.org/isni/0000000405792350> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q20544953> ;
+             .

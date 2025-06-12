@@ -1,0 +1,85 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/048xjjh50> 
+    a org:Organization ;
+    rdfs:label "Ministry of Human Resource Development" ;
+    schema:name "Ministry of Human Resource Development" ;
+    schema:foundingDate "1985"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Ministry_of_Human_Resource_Development_(India)> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0329af416> ;
+        rdfs:label "Central Institute of Technology Kokrajhar" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0218hya98> ;
+        rdfs:label "Department of Higher Education" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01wf0xv67> ;
+        rdfs:label "Eastern Command Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0198sv425> ;
+        rdfs:label "National Institute of Open Schooling" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/032twef21> ;
+        rdfs:label "National Institute of Technology Delhi" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01nc8zs04> ;
+        rdfs:label "National Institute of Technology Hamirpur" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/056wyhh33> ;
+        rdfs:label "National Institute of Technology Patna" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03sfwvw54> ;
+        rdfs:label "National Institute of Technology Srinagar" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03mj1nk45> ;
+        rdfs:label "National University of Educational Planning and Administration" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03s3x9r14> ;
+        rdfs:label "Shri Lal Bahadur Shastri Rashtriya Sanskrit Vidyapeetha" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(77.23149 28.65195)"^^geo:wktLiteral ;
+        schema:addressLocality "Delhi" ;
+    ] ;
+    schema:url <http://mhrd.gov.in/> ;
+    schema:sameAs <http://isni.org/isni/0000000404990742> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4294642> ;
+             .

@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00mkdan60> 
+    a org:Organization ;
+    rdfs:label "Volvo (United States)" ;
+    schema:name "Volvo (United States)" ;
+    schema:foundingDate "1927"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05b6ypc36> ;
+        rdfs:label "Volvo (Sweden)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-73.99736 40.9276)"^^geo:wktLiteral ;
+        schema:addressLocality "Bergenfield" ;
+    ] ;
+    schema:url <http://www.volvocars.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000404738248> ;
+             .

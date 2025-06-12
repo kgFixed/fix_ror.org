@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04gbjf340> 
+    a org:Organization ;
+    rdfs:label "Nyack College" ;
+    schema:name "Nyack College" ;
+    schema:foundingDate "1882"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Nyack_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-73.91791 41.09065)"^^geo:wktLiteral ;
+        schema:addressLocality "Nyack" ;
+    ] ;
+    schema:url <http://www.nyack.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000086872600> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7070780> ;
+             .

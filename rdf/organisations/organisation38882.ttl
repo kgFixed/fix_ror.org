@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04aenby30> 
+    a org:Organization ;
+    rdfs:label "African University College of Communications" ;
+    schema:name "African University College of Communications" ;
+    schema:foundingDate "2002"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/African_University_College_of_Communications> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.1969 5.55602)"^^geo:wktLiteral ;
+        schema:addressLocality "Accra" ;
+    ] ;
+    schema:url <http://www.aucc.edu.gh/> ;
+    schema:sameAs <http://isni.org/isni/0000000118252183> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4689946> ;
+             .

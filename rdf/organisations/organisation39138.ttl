@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04xaked44> 
+    a org:Organization ;
+    rdfs:label "Hospital San Hipólito" ;
+    schema:name "Hospital San Hipólito" ;
+    schema:foundingDate "1569"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Hospital_San_Hip%C3%B3lito,_Mexico_City> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-99.12766 19.42847)"^^geo:wktLiteral ;
+        schema:addressLocality "Mexico City" ;
+    ] ;
+    schema:url <http://www.sanatoriosanhipolito.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q16256975> ;
+             .

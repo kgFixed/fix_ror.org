@@ -1,0 +1,67 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04nxj7050> 
+    a org:Organization ;
+    rdfs:label "B. Braun (Germany)" ;
+    schema:name "B. Braun (Germany)" ;
+    schema:foundingDate "1839"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/B._Braun_Melsungen> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/041swdb02> ;
+        rdfs:label "B. Braun (Czechia)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05y8ktr97> ;
+        rdfs:label "B. Braun (France)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03nx7mw09> ;
+        rdfs:label "B. Braun (Netherlands)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04sdeyq07> ;
+        rdfs:label "B. Braun (Spain)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0552cbh05> ;
+        rdfs:label "B. Braun (Switzerland)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/039x3s865> ;
+        rdfs:label "B. Braun (United States)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02eq6ye19> ;
+        rdfs:label "B. Braun Stiftung" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(9.55236 51.13029)"^^geo:wktLiteral ;
+        schema:addressLocality "Melsungen" ;
+    ] ;
+    schema:url <https://www.bbraun.de/de.html> ;
+    schema:sameAs <http://isni.org/isni/0000000106998877> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q644835> ;
+             .

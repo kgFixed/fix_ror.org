@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/019thgp94> 
+    a org:Organization ;
+    rdfs:label "Adventist Health Community Care-Hanford" ;
+    schema:name "Adventist Health Community Care-Hanford" ;
+    schema:foundingDate "1998"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Adventist_Health_Community_Care-Hanford> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03kr0f697> ;
+        rdfs:label "Adventist Health Glendale" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-119.64568 36.32745)"^^geo:wktLiteral ;
+        schema:addressLocality "Hanford" ;
+    ] ;
+    schema:url <https://www.adventisthealth.org/hanford/> ;
+    schema:sameAs <http://isni.org/isni/0000000404353356> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5061978> ;
+             .

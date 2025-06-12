@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/029nzwk08> 
+    a org:Organization ;
+    rdfs:label "Levanger Hospital" ;
+    schema:name "Levanger Hospital" ;
+    schema:foundingDate "1844"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Levanger_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(11.29963 63.74644)"^^geo:wktLiteral ;
+        schema:addressLocality "Levanger" ;
+    ] ;
+    schema:url <https://hnt.no/steder/sykehuset-levanger> ;
+    schema:sameAs <http://isni.org/isni/0000000406273093> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6534880> ;
+             .

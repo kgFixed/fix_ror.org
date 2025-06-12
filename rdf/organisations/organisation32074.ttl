@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03mynna02> 
+    a org:Organization ;
+    rdfs:label "Centro Nacional de Análisis Genómico" ;
+    schema:name "Centro Nacional de Análisis Genómico" ;
+    schema:foundingDate "2009"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Centre_Nacional_d%27An%C3%A0lisi_Gen%C3%B2mica> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.15899 41.38879)"^^geo:wktLiteral ;
+        schema:addressLocality "Barcelona" ;
+    ] ;
+    schema:url <http://www.cnag.cat/> ;
+    schema:sameAs <http://isni.org/isni/0000000483402354> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q21730709> ;
+             .

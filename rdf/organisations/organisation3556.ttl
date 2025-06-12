@@ -1,0 +1,73 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04zjvnp94> 
+    a org:Organization ;
+    rdfs:label "Clalit Health Services" ;
+    schema:name "Clalit Health Services" ;
+    schema:foundingDate "1911"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Clalit_Health_Services> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00yfjxy10> ;
+        rdfs:label "Beit Rivka Geriatric Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02b988t02> ;
+        rdfs:label "Emek Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03tp0ty93> ;
+        rdfs:label "Geha Mental Health Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00t0n9020> ;
+        rdfs:label "Kaplan Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00b0m1444> ;
+        rdfs:label "Loewenstein Hospital Rehabilitation Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01vjtf564> ;
+        rdfs:label "Rabin Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05e1xz016> ;
+        rdfs:label "Shalvata Mental Health Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/003sphj24> ;
+        rdfs:label "Soroka Medical Center" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(34.78057 32.08088)"^^geo:wktLiteral ;
+        schema:addressLocality "Tel Aviv" ;
+    ] ;
+    schema:url <http://www.clalit-global.co.il/en/> ;
+    schema:sameAs <http://isni.org/isni/0000000405753597> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2028422> ;
+             .

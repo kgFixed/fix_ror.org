@@ -1,0 +1,20 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00201ef63> 
+    a org:Organization ;
+    rdfs:label "Stadtarchiv Grevesmühlen" ;
+    schema:name "Stadtarchiv Grevesmühlen" ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(11.1916 53.86337)"^^geo:wktLiteral ;
+        schema:addressLocality "Grevesmühlen" ;
+    ] ;
+    schema:url <http://www.grevesmuehlen.info/erfahren/stadtarchiv/> ;
+     .

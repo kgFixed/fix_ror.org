@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05akpxs80> 
+    a org:Organization ;
+    rdfs:label "Nordic Semiconductor (Norway)" ;
+    schema:name "Nordic Semiconductor (Norway)" ;
+    schema:foundingDate "1983"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Nordic_Semiconductor> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(10.39506 63.43049)"^^geo:wktLiteral ;
+        schema:addressLocality "Trondheim" ;
+    ] ;
+    schema:url <http://www.nordicsemi.com/eng/> ;
+    schema:sameAs <http://isni.org/isni/0000000463601575> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3425637> ;
+             .

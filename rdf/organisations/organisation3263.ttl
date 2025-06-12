@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05nsbhw27> 
+    a org:Organization ;
+    rdfs:label "Children's Hospital of Eastern Ontario" ;
+    schema:name "Children's Hospital of Eastern Ontario" ;
+    schema:foundingDate "1974"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Children's_Hospital_of_Eastern_Ontario> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03c4mmv16> ;
+        rdfs:label "University of Ottawa" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-75.69812 45.41117)"^^geo:wktLiteral ;
+        schema:addressLocality "Ottawa" ;
+    ] ;
+    schema:url <http://www.cheo.on.ca/> ;
+    schema:sameAs <http://isni.org/isni/0000000094026172> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2945735> ;
+             .

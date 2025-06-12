@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03df3zw56> 
+    a org:Organization ;
+    rdfs:label "Midland Regional Hospital at Tullamore" ;
+    schema:name "Midland Regional Hospital at Tullamore" ;
+    schema:foundingDate "1942"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Midland_Regional_Hospital,_Tullamore> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04zke5364> ;
+        rdfs:label "Health Service Executive" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-7.48889 53.27389)"^^geo:wktLiteral ;
+        schema:addressLocality "Tullamore" ;
+    ] ;
+    schema:url <http://www.hse.ie/eng/services/list/3/acutehospitals/hospitals/Tullamore/> ;
+    schema:sameAs <http://isni.org/isni/0000000406177181> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6842444> ;
+             .

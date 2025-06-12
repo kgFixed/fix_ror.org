@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00bkc1729> 
+    a org:Organization ;
+    rdfs:label "Ministry of Planning, Budget and Management" ;
+    schema:name "Ministry of Planning, Budget and Management" ;
+    schema:foundingDate "1962"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Ministry_of_Planning,_Budget,_and_Management> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00n0s9w57> ;
+        rdfs:label "Federal Government of Brazil" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-47.92972 -15.77972)"^^geo:wktLiteral ;
+        schema:addressLocality "Brasília" ;
+    ] ;
+    schema:url <http://www.planejamento.gov.br/> ;
+    schema:sameAs <http://isni.org/isni/0000000406153331> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q10330427> ;
+             .

@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01bfczx74> 
+    a org:Organization ;
+    rdfs:label "Washington Space Grant Consortium" ;
+    schema:name "Washington Space Grant Consortium" ;
+    schema:foundingDate "1989"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Other" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/027ka1x80> ;
+        rdfs:label "National Aeronautics and Space Administration" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00cvxb145> ;
+        rdfs:label "University of Washington" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-122.33207 47.60621)"^^geo:wktLiteral ;
+        schema:addressLocality "Seattle" ;
+    ] ;
+    schema:url <http://www.waspacegrant.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000459069993> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30297034> ;
+             .

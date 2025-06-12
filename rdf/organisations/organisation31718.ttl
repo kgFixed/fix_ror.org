@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05em4qg89> 
+    a org:Organization ;
+    rdfs:label "Piab (Sweden)" ;
+    schema:name "Piab (Sweden)" ;
+    schema:foundingDate "1951"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/User:Piab_AB/sandbox> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(18.06872 59.4439)"^^geo:wktLiteral ;
+        schema:addressLocality "Täby" ;
+    ] ;
+    schema:url <https://www.piab.com/> ;
+    schema:sameAs <http://isni.org/isni/000000040605523X> ;
+             .

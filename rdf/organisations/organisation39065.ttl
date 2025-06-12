@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05n714746> 
+    a org:Organization ;
+    rdfs:label "Burgersdorp Provincial Hospital" ;
+    schema:name "Burgersdorp Provincial Hospital" ;
+    schema:foundingDate "1881"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Burgersdorp_Provincial_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(26.32862 -30.99766)"^^geo:wktLiteral ;
+        schema:addressLocality "Burgersdorp" ;
+    ] ;
+    schema:url <http://www.echealth.gov.za/?page_id=32> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q4998569> ;
+             .

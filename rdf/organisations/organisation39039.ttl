@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02ck8dx35> 
+    a org:Organization ;
+    rdfs:label "Al-Salam Hospital" ;
+    schema:name "Al-Salam Hospital" ;
+    schema:foundingDate "1996"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Al-Salam_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(35.84415 34.43352)"^^geo:wktLiteral ;
+        schema:addressLocality "Tripoli" ;
+    ] ;
+    schema:url <http://www.hopitaldelapaix.com/Default.aspx> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q4652229> ;
+             .

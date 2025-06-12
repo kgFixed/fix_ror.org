@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05phe2d91> 
+    a org:Organization ;
+    rdfs:label "Xavier School" ;
+    schema:name "Xavier School" ;
+    schema:foundingDate "1956"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Xavier_School> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(121.0333 14.6)"^^geo:wktLiteral ;
+        schema:addressLocality "San Juan" ;
+    ] ;
+    schema:url <http://w5.xs.edu.ph/> ;
+    schema:sameAs <http://isni.org/isni/0000000404534886> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3707276> ;
+             .

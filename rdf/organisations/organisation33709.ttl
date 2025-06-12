@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03ypap427> 
+    a org:Organization ;
+    rdfs:label "Saudi Aramco (Saudi Arabia)" ;
+    schema:name "Saudi Aramco (Saudi Arabia)" ;
+    schema:foundingDate "1933"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Saudi_Aramco> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/035n7q728> ;
+        rdfs:label "Saudi Aramco (United States)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04k820v98> ;
+        rdfs:label "Saudi Aramco Medical Services Organization" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(50.11396 26.28864)"^^geo:wktLiteral ;
+        schema:addressLocality "Dhahran" ;
+    ] ;
+    schema:url <http://www.saudiaramco.com/en/home.html> ;
+    schema:sameAs <http://isni.org/isni/0000000091138494> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q679322> ;
+             .

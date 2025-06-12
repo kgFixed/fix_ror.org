@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/022ave037> 
+    a org:Organization ;
+    rdfs:label "Campbellford Memorial Hospital" ;
+    schema:name "Campbellford Memorial Hospital" ;
+    schema:foundingDate "1953"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Campbellford_Memorial_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03dbr7087> ;
+        rdfs:label "University of Toronto" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.56618 44.18342)"^^geo:wktLiteral ;
+        schema:addressLocality "Quinte West" ;
+    ] ;
+    schema:url <https://cmh.ca/> ;
+    schema:sameAs <http://isni.org/isni/0000000089965968> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5028196> ;
+             .

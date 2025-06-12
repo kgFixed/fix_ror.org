@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00qbe9m93> 
+    a org:Organization ;
+    rdfs:label "Howard College" ;
+    schema:name "Howard College" ;
+    schema:foundingDate "1945"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Howard_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-101.47874 32.2504)"^^geo:wktLiteral ;
+        schema:addressLocality "Big Spring" ;
+    ] ;
+    schema:url <http://www.howardcollege.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000096809891> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5919327> ;
+             .

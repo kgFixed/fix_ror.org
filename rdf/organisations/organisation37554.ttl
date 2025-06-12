@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03wgsrq67> 
+    a org:Organization ;
+    rdfs:label "Vestre Viken Hospital Trust" ;
+    schema:name "Vestre Viken Hospital Trust" ;
+    schema:foundingDate "2009"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Vestre_Viken_Hospital_Trust> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/010gpfc02> ;
+        rdfs:label "Bærum Sykehus" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/059yvz347> ;
+        rdfs:label "Drammen Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/039g88209> ;
+        rdfs:label "Kongsberg sykehus" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(10.20449 59.74389)"^^geo:wktLiteral ;
+        schema:addressLocality "Drammen" ;
+    ] ;
+    schema:url <http://www.vestreviken.no/> ;
+    schema:sameAs <http://isni.org/isni/0000000403897802> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q12009548> ;
+             .

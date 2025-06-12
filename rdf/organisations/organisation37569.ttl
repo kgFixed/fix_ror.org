@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00cb94380> 
+    a org:Organization ;
+    rdfs:label "Valnesfjord Helsesportssenter" ;
+    schema:name "Valnesfjord Helsesportssenter" ;
+    schema:foundingDate "1982"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(15.39181 67.25883)"^^geo:wktLiteral ;
+        schema:addressLocality "Fauske" ;
+    ] ;
+    schema:url <http://www.vhss.no/?ac_id=1&ao_name=hjem> ;
+    schema:sameAs <http://isni.org/isni/0000000404167342> ;
+             .

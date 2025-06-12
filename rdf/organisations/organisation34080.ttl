@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03h6x6x11> 
+    a org:Organization ;
+    rdfs:label "Curtiss-Wright (United States)" ;
+    schema:name "Curtiss-Wright (United States)" ;
+    schema:foundingDate "1929"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Curtiss-Wright> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05xeczx11> ;
+        rdfs:label "Curtiss-Wright (Canada)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01fykt827> ;
+        rdfs:label "Curtiss-Wright (United Kingdom)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-80.84313 35.22709)"^^geo:wktLiteral ;
+        schema:addressLocality "Charlotte" ;
+    ] ;
+    schema:url <http://www.curtisswright.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000405130162> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1138291> ;
+             .

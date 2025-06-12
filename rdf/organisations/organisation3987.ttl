@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04rx0dh54> 
+    a org:Organization ;
+    rdfs:label "Sansum Medical Clinic" ;
+    schema:name "Sansum Medical Clinic" ;
+    schema:foundingDate "1928"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Sansum_Clinic> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-119.69819 34.42083)"^^geo:wktLiteral ;
+        schema:addressLocality "Santa Barbara" ;
+    ] ;
+    schema:url <http://www.sansumclinic.org/sansum-medical-clinic> ;
+    schema:sameAs <http://isni.org/isni/0000000449034172> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q17066381> ;
+             .

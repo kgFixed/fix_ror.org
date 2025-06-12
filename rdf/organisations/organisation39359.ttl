@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/012w90b89> 
+    a org:Organization ;
+    rdfs:label "Emirates Academy of Hospitality Management" ;
+    schema:name "Emirates Academy of Hospitality Management" ;
+    schema:foundingDate "2001"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/The_Emirates_Academy_of_Hospitality_Management> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(55.30927 25.07725)"^^geo:wktLiteral ;
+        schema:addressLocality "Dubai" ;
+    ] ;
+    schema:url <http://www.emiratesacademy.edu/> ;
+    schema:sameAs <http://isni.org/isni/000000041757529X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q17156215> ;
+             .

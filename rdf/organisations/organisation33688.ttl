@@ -1,0 +1,79 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/046n57345> 
+    a org:Organization ;
+    rdfs:label "Hefei Institutes of Physical Science" ;
+    schema:name "Hefei Institutes of Physical Science" ;
+    schema:foundingDate "2001"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Hefei_Institutes_of_Physical_Science> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03bzbv419> ;
+        rdfs:label "Anhui Institute of Optics and Fine Mechanics" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04ttadj76> ;
+        rdfs:label "Collaborative Innovation Center of Advanced Microstructures" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/030ebc654> ;
+        rdfs:label "Hefei Material Science and Technology Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01gh88804> ;
+        rdfs:label "High Magnetic Field Laboratory" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01yy74248> ;
+        rdfs:label "Institute of Applied Technology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00w0qep84> ;
+        rdfs:label "Institute of Intelligent Machines" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/033cbzv42> ;
+        rdfs:label "Institute of Plasma Physics" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04j3eks61> ;
+        rdfs:label "Institute of Solid State Physics" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/034t30j35> ;
+        rdfs:label "Chinese Academy of Sciences" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(117.28083 31.86389)"^^geo:wktLiteral ;
+        schema:addressLocality "Hefei" ;
+    ] ;
+    schema:url <http://english.hf.cas.cn/> ;
+    schema:sameAs <http://isni.org/isni/0000000417927603> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q20984147> ;
+             .

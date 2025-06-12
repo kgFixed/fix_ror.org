@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/022h0tq76> 
+    a org:Organization ;
+    rdfs:label "Kanagawa Children's Medical Center" ;
+    schema:name "Kanagawa Children's Medical Center" ;
+    schema:foundingDate "1970"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Kanagawa_Children%27s_Medical_Center> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(139.65 35.43333)"^^geo:wktLiteral ;
+        schema:addressLocality "Yokohama" ;
+    ] ;
+    schema:url <http://kcmc.kanagawa-pho.jp/about/greeting_en.html> ;
+    schema:sameAs <http://isni.org/isni/0000000403777528> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q11588999> ;
+             .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01abzeb36> 
+    a org:Organization ;
+    rdfs:label "Bladen Community College" ;
+    schema:name "Bladen Community College" ;
+    schema:foundingDate "1967"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Bladen_Community_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-78.60529 34.62934)"^^geo:wktLiteral ;
+        schema:addressLocality "Elizabethtown" ;
+    ] ;
+    schema:url <http://www.bladencc.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000087361941> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4923738> ;
+             .

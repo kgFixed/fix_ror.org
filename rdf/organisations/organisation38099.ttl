@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04jvka613> 
+    a org:Organization ;
+    rdfs:label "National Institute of Technology, Toyama College" ;
+    schema:name "National Institute of Technology, Toyama College" ;
+    schema:foundingDate "2009"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Toyama_National_College_of_Technology> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02xqkcw08> ;
+        rdfs:label "National Institute of Technology" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(137.21667 36.7)"^^geo:wktLiteral ;
+        schema:addressLocality "Toyama" ;
+    ] ;
+    schema:url <http://www.nc-toyama.ac.jp/> ;
+    schema:sameAs <http://isni.org/isni/0000000107270116> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7830586> ;
+             .

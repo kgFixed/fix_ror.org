@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00jwytm78> 
+    a org:Organization ;
+    rdfs:label "Department of Primary Industries, Parks, Water and Environment" ;
+    schema:name "Department of Primary Industries, Parks, Water and Environment" ;
+    schema:foundingDate "2009"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Department_of_Primary_Industries,_Water_and_Environment_(Tasmania)> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(147.32941 -42.87936)"^^geo:wktLiteral ;
+        schema:addressLocality "Hobart" ;
+    ] ;
+    schema:url <http://dpipwe.tas.gov.au/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q16956288> ;
+             .

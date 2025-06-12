@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02ad2pb06> 
+    a org:Organization ;
+    rdfs:label "International American University" ;
+    schema:name "International American University" ;
+    schema:foundingDate "2003"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/International_American_University_College_of_Medicine> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-60.95 13.71667)"^^geo:wktLiteral ;
+        schema:addressLocality "Vieux Fort" ;
+    ] ;
+    schema:url <http://iau.edu.lc/> ;
+    schema:sameAs <http://isni.org/isni/0000000404195167> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6048175> ;
+             .

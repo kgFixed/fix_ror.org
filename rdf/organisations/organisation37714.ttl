@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00xsgfc59> 
+    a org:Organization ;
+    rdfs:label "Azienda Ospedaliera Bolognini Seriate" ;
+    schema:name "Azienda Ospedaliera Bolognini Seriate" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(9.72487 45.68532)"^^geo:wktLiteral ;
+        schema:addressLocality "Seriate" ;
+    ] ;
+    schema:url <http://www.bolognini.bg.it/user/homepage.aspx> ;
+    schema:sameAs <http://isni.org/isni/0000000417606447> ;
+             .

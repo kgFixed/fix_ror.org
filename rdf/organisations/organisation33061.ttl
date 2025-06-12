@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/023xrdj21> 
+    a org:Organization ;
+    rdfs:label "International Mental Health Research Organization" ;
+    schema:name "International Mental Health Research Organization" ;
+    schema:foundingDate "1995"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-122.47026 38.50519)"^^geo:wktLiteral ;
+        schema:addressLocality "St. Helena" ;
+    ] ;
+    schema:url <https://www.imhro.org> ;
+    schema:sameAs <http://isni.org/isni/0000000404721171> ;
+             .

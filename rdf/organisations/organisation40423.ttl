@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02j8mex09> 
+    a org:Organization ;
+    rdfs:label "Wilson Community College" ;
+    schema:name "Wilson Community College" ;
+    schema:foundingDate "1958"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Wilson_Community_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.91554 35.72127)"^^geo:wktLiteral ;
+        schema:addressLocality "Wilson" ;
+    ] ;
+    schema:url <http://www.wilsoncc.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000102901695> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q8023021> ;
+             .

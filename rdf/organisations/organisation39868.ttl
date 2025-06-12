@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05bkwxs60> 
+    a org:Organization ;
+    rdfs:label "Colorado Mountain College" ;
+    schema:name "Colorado Mountain College" ;
+    schema:foundingDate "1967"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Colorado_Mountain_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-107.32478 39.55054)"^^geo:wktLiteral ;
+        schema:addressLocality "Glenwood Springs" ;
+    ] ;
+    schema:url <http://coloradomtn.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000404738213> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5148844> ;
+             .

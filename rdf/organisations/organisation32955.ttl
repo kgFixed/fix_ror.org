@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02z681y43> 
+    a org:Organization ;
+    rdfs:label "National Rifle Association of America" ;
+    schema:name "National Rifle Association of America" ;
+    schema:foundingDate "1871"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/National_Rifle_Association> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.30637 38.84622)"^^geo:wktLiteral ;
+        schema:addressLocality "Fairfax" ;
+    ] ;
+    schema:url <http://home.nra.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000405115755> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q863259> ;
+             .

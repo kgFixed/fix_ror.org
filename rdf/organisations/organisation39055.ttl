@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01ghxpd93> 
+    a org:Organization ;
+    rdfs:label "Sir Ganga Ram Hospital" ;
+    schema:name "Sir Ganga Ram Hospital" ;
+    schema:foundingDate "1921"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Sir_Ganga_Ram_Hospital_(Pakistan)> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/051cp7s36> ;
+        rdfs:label "Fatima Jinnah Medical University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(74.35071 31.558)"^^geo:wktLiteral ;
+        schema:addressLocality "Lahore" ;
+    ] ;
+    schema:sameAs <http://isni.org/isni/0000000404855620> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7526819> ;
+             .

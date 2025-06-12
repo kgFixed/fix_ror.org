@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01r9ea713> 
+    a org:Organization ;
+    rdfs:label "Blackpool Victoria Hospital" ;
+    schema:name "Blackpool Victoria Hospital" ;
+    schema:foundingDate "1894"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Blackpool_Victoria_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03444yt49> ;
+        rdfs:label "Blackpool Teaching Hospitals NHS Foundation Trust" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04xs57h96> ;
+        rdfs:label "University of Liverpool" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-3.05 53.81667)"^^geo:wktLiteral ;
+        schema:addressLocality "Blackpool" ;
+    ] ;
+    schema:url <https://www.bfwh.nhs.uk/hospitals/blackpool-victoria/> ;
+    schema:sameAs <http://isni.org/isni/0000000404358405> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4923282> ;
+             .

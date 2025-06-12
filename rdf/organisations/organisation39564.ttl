@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0253es752> 
+    a org:Organization ;
+    rdfs:label "Martin Luther King, Jr. Community Hospital" ;
+    schema:name "Martin Luther King, Jr. Community Hospital" ;
+    schema:foundingDate "2015"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Martin_Luther_King,_Jr._Community_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/046rm7j60> ;
+        rdfs:label "University of California, Los Angeles" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-118.25507 33.91696)"^^geo:wktLiteral ;
+        schema:addressLocality "Willowbrook" ;
+    ] ;
+    schema:url <http://www.mlkcommunityhospital.org/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q14956884> ;
+             .

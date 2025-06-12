@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/017ph0934> 
+    a org:Organization ;
+    rdfs:label "University of National and World Economy" ;
+    schema:name "University of National and World Economy" ;
+    schema:foundingDate "1920"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/University_of_National_and_World_Economy> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(23.32415 42.69751)"^^geo:wktLiteral ;
+        schema:addressLocality "Sofia" ;
+    ] ;
+    schema:url <http://www.unwe.bg/en> ;
+    schema:sameAs <http://isni.org/isni/0000000122868650> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1029504> ;
+             .

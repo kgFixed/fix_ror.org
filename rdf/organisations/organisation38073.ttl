@@ -1,0 +1,20 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02nrcd067> 
+    a org:Organization ;
+    rdfs:label "Ospedale di Latisana" ;
+    schema:name "Ospedale di Latisana" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(13.00618 45.76859)"^^geo:wktLiteral ;
+        schema:addressLocality "Latisana" ;
+    ] ;
+    schema:url <http://www.latisana.com/ospedale-latisana.php> ;
+     .

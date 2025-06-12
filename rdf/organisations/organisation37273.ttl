@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05rbhea42> 
+    a org:Organization ;
+    rdfs:label "Centre for Advanced Study" ;
+    schema:name "Centre for Advanced Study" ;
+    schema:foundingDate "1989"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00g8k7g33> ;
+        rdfs:label "Norwegian Academy of Science and Letters" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(10.74609 59.91273)"^^geo:wktLiteral ;
+        schema:addressLocality "Oslo" ;
+    ] ;
+    schema:url <http://www.cas.uio.no/> ;
+    schema:sameAs <http://isni.org/isni/0000000114638281> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q11999940> ;
+             .

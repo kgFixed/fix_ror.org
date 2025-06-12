@@ -1,0 +1,26 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05tv5ra11> 
+    a org:Organization ;
+    rdfs:label "Sixth Affiliated Hospital of Kunming Medical University" ;
+    schema:name "Sixth Affiliated Hospital of Kunming Medical University" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/038c3w259> ;
+        rdfs:label "Kunming Medical University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(102.54222 24.355)"^^geo:wktLiteral ;
+        schema:addressLocality "Yuxi" ;
+    ] ;
+    schema:url <http://www.yxhospital.com/> ;
+     .

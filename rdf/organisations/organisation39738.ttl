@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04vx4mk32> 
+    a org:Organization ;
+    rdfs:label "Leibniz Institute of Surface Engineering" ;
+    schema:name "Leibniz Institute of Surface Engineering" ;
+    schema:foundingDate "1992"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01n6r0e97> ;
+        rdfs:label "Leibniz Association" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(12.37129 51.33962)"^^geo:wktLiteral ;
+        schema:addressLocality "Leipzig" ;
+    ] ;
+    schema:url <http://www.iom-leipzig.de/en/> ;
+    schema:sameAs <http://isni.org/isni/0000000087880442> ;
+             .

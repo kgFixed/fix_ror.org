@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/035yrx309> 
+    a org:Organization ;
+    rdfs:label "Norwood Hospital" ;
+    schema:name "Norwood Hospital" ;
+    schema:foundingDate "1902"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Norwood_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-71.1995 42.19454)"^^geo:wktLiteral ;
+        schema:addressLocality "Norwood" ;
+    ] ;
+    schema:url <http://www.norwood-hospital.org/Norwood-Hospital> ;
+    schema:sameAs <http://isni.org/isni/0000000404411755> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7061628> ;
+             .

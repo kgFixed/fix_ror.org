@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02pb9wz46> 
+    a org:Organization ;
+    rdfs:label "Hôpital Léon Bérard" ;
+    schema:name "Hôpital Léon Bérard" ;
+    schema:foundingDate "1897"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.48705 48.7448)"^^geo:wktLiteral ;
+        schema:addressLocality "Limeil-Brévannes" ;
+    ] ;
+    schema:url <http://www.leonberard.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000403863514> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30279929> ;
+             .

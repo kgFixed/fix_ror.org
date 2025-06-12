@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02p9e5v87> 
+    a org:Organization ;
+    rdfs:label "Concord Hospital" ;
+    schema:name "Concord Hospital" ;
+    schema:foundingDate "1891"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Concord_Hospital_(New_Hampshire)> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-71.53757 43.20814)"^^geo:wktLiteral ;
+        schema:addressLocality "Concord" ;
+    ] ;
+    schema:url <http://www.concordhospital.org/> ;
+    schema:sameAs <http://isni.org/isni/000000040438964X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5158813> ;
+             .

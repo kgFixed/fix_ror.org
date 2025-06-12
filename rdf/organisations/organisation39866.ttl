@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04rqs6380> 
+    a org:Organization ;
+    rdfs:label "College of Southern Idaho" ;
+    schema:name "College of Southern Idaho" ;
+    schema:foundingDate "1965"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/College_of_Southern_Idaho> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-114.46087 42.56297)"^^geo:wktLiteral ;
+        schema:addressLocality "Twin Falls" ;
+    ] ;
+    schema:url <http://www.csi.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000405315546> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5146837> ;
+             .

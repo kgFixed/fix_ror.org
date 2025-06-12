@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0106d7657> 
+    a org:Organization ;
+    rdfs:label "Korea International Cooperation Agency" ;
+    schema:name "Korea International Cooperation Agency" ;
+    schema:foundingDate "1991"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Korea_International_Cooperation_Agency> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(127.13778 37.43861)"^^geo:wktLiteral ;
+        schema:addressLocality "Seongnam-si" ;
+    ] ;
+    schema:url <http://www.koica.go.kr/english/main.html> ;
+    schema:sameAs <http://isni.org/isni/0000000090456079> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q625679> ;
+             .

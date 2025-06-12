@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01qrenj43> 
+    a org:Organization ;
+    rdfs:label "Örnsköldsvik Municipality" ;
+    schema:name "Örnsköldsvik Municipality" ;
+    schema:foundingDate "1971"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/%C3%96rnsk%C3%B6ldsvik_Municipality> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(18.71525 63.29091)"^^geo:wktLiteral ;
+        schema:addressLocality "Örnsköldsvik" ;
+    ] ;
+    schema:url <http://www.ornskoldsvik.se/> ;
+    schema:sameAs <http://isni.org/isni/0000000404353874> ;
+             .

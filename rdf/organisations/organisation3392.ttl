@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05fnpxf31> 
+    a org:Organization ;
+    rdfs:label "Holy Name Medical Center" ;
+    schema:name "Holy Name Medical Center" ;
+    schema:foundingDate "1925"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Holy_Name_Medical_Center> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00hj8s172> ;
+        rdfs:label "Columbia University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-74.01597 40.8976)"^^geo:wktLiteral ;
+        schema:addressLocality "Teaneck" ;
+    ] ;
+    schema:url <http://www.holyname.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000404723628> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q14705603> ;
+             .

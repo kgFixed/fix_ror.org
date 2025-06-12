@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01wn7w598> 
+    a org:Organization ;
+    rdfs:label "Affiliated Hospital of Taishan Medical University" ;
+    schema:name "Affiliated Hospital of Taishan Medical University" ;
+    schema:foundingDate "1974"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04983z422> ;
+        rdfs:label "Taishan Medical University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(117.12 36.18528)"^^geo:wktLiteral ;
+        schema:addressLocality "Tai’an" ;
+    ] ;
+    schema:url <http://www.sdtyfy.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30296436> ;
+             .

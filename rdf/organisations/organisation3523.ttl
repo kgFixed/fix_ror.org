@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05mg61p80> 
+    a org:Organization ;
+    rdfs:label "Englewood Hospital and Medical Center" ;
+    schema:name "Englewood Hospital and Medical Center" ;
+    schema:foundingDate "1888"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Englewood_Hospital_and_Medical_Center> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04a9tmd77> ;
+        rdfs:label "Icahn School of Medicine at Mount Sinai" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-73.97264 40.89288)"^^geo:wktLiteral ;
+        schema:addressLocality "Englewood" ;
+    ] ;
+    schema:url <http://www.englewoodhospital.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000090102182> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5378128> ;
+             .

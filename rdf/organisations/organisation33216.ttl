@@ -1,0 +1,49 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/036xb2667> 
+    a org:Organization ;
+    rdfs:label "Ministry of Strategy and Finance" ;
+    schema:name "Ministry of Strategy and Finance" ;
+    schema:foundingDate "2008"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Ministry_of_Strategy_and_Finance_(South_Korea)> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01rkgg256> ;
+        rdfs:label "Korea Customs Service" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04mq24005> ;
+        rdfs:label "Public Procurement Service" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/004g7jm05> ;
+        rdfs:label "Statistics Korea" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/019xm3p48> ;
+        rdfs:label "Government of the Republic of Korea" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(127.29223 36.59245)"^^geo:wktLiteral ;
+        schema:addressLocality "Sejong" ;
+    ] ;
+    schema:url <http://english.mosf.go.kr/> ;
+    schema:sameAs <http://isni.org/isni/0000000403716856> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q488486> ;
+             .

@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/012s3r374> 
+    a org:Organization ;
+    rdfs:label "Ministry of Science, Technology and Innovation" ;
+    schema:name "Ministry of Science, Technology and Innovation" ;
+    schema:foundingDate "1973"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Ministry_of_Science,_Technology_and_Innovation_(Malaysia)> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02339nw55> ;
+        rdfs:label "Academy of Sciences Malaysia" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/029dygd35> ;
+        rdfs:label "National Institutes of Biotechnology Malaysia" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(101.69112 2.93527)"^^geo:wktLiteral ;
+        schema:addressLocality "Putrajaya" ;
+    ] ;
+    schema:url <http://www.mosti.gov.my/> ;
+    schema:sameAs <http://isni.org/isni/0000000418023948> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4294467> ;
+             .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00gxg1c10> 
+    a org:Organization ;
+    rdfs:label "St. Helena Hospital" ;
+    schema:name "St. Helena Hospital" ;
+    schema:foundingDate "1968"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/St._Helena_Hospital_Clearlake> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-122.62637 38.95823)"^^geo:wktLiteral ;
+        schema:addressLocality "Clearlake" ;
+    ] ;
+    schema:url <https://www.adventisthealth.org/clear-lake/news/st-helena-hospital-clear-lake-remains-open> ;
+    schema:sameAs <http://isni.org/isni/000000040435413X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3145236> ;
+             .

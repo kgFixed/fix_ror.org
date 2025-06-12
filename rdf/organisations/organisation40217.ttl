@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04x450n10> 
+    a org:Organization ;
+    rdfs:label "Northwest Mississippi Community College" ;
+    schema:name "Northwest Mississippi Community College" ;
+    schema:foundingDate "1927"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Northwest_Mississippi_Community_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-89.9687 34.6176)"^^geo:wktLiteral ;
+        schema:addressLocality "Senatobia" ;
+    ] ;
+    schema:url <http://www.northwestms.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000090937665> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7060118> ;
+             .

@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04b6d3182> 
+    a org:Organization ;
+    rdfs:label "Západoslovenská Energetika (Slovakia)" ;
+    schema:name "Západoslovenská Energetika (Slovakia)" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Z%C3%A1padoslovensk%C3%A1_energetika> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(17.10674 48.14816)"^^geo:wktLiteral ;
+        schema:addressLocality "Bratislava" ;
+    ] ;
+    schema:url <http://www.zse.sk/sk/Domacnosti> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q246921> ;
+             .

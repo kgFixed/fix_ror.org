@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03cm42t62> 
+    a org:Organization ;
+    rdfs:label "Rajarshee Chhatrapati Shahu Maharaj Government Medical College and CPR Hospital Kolhapur" ;
+    schema:name "Rajarshee Chhatrapati Shahu Maharaj Government Medical College and CPR Hospital Kolhapur" ;
+    schema:foundingDate "2000"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/R.C.S.M._Govt_Medical_College_and_CPR_Hospital,_Kolhapur> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04grkj883> ;
+        rdfs:label "Maharashtra University of Health Sciences" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(74.23167 16.69563)"^^geo:wktLiteral ;
+        schema:addressLocality "Kolhāpur" ;
+    ] ;
+    schema:url <http://rcsmgmc.ac.in/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q7273313> ;
+             .

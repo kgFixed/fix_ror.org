@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02fkk6k65> 
+    a org:Organization ;
+    rdfs:label "Ministry of Culture, Sports and Tourism" ;
+    schema:name "Ministry of Culture, Sports and Tourism" ;
+    schema:foundingDate "2008"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Ministry_of_Culture,_Sports_and_Tourism> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/036vyg793> ;
+        rdfs:label "Korea Creative Content Agency" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/007w7dm12> ;
+        rdfs:label "Korean Studies Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/019xm3p48> ;
+        rdfs:label "Government of the Republic of Korea" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(127.29223 36.59245)"^^geo:wktLiteral ;
+        schema:addressLocality "Sejong" ;
+    ] ;
+    schema:url <http://www.mcst.go.kr/english/index.jsp> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q488744> ;
+             .

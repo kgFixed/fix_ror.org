@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04dqh1705> 
+    a org:Organization ;
+    rdfs:label "Kayros Ambiental e Agrícola (Brazil)" ;
+    schema:name "Kayros Ambiental e Agrícola (Brazil)" ;
+    schema:foundingDate "2002"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-47.15417 -22.76111)"^^geo:wktLiteral ;
+        schema:addressLocality "Paulínia" ;
+    ] ;
+    schema:url <http://www.kayrosambiental.com.br/> ;
+     .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0137p4457> 
+    a org:Organization ;
+    rdfs:label "Nashotah House Theological Seminary" ;
+    schema:name "Nashotah House Theological Seminary" ;
+    schema:foundingDate "1842"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Nashotah_House> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-88.40232 43.09779)"^^geo:wktLiteral ;
+        schema:addressLocality "Nashotah" ;
+    ] ;
+    schema:url <https://www.nashotah.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000404370690> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6966890> ;
+             .

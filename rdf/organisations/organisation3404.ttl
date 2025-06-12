@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/021959v84> 
+    a org:Organization ;
+    rdfs:label "Hôpital Saint-André" ;
+    schema:name "Hôpital Saint-André" ;
+    schema:foundingDate "1390"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01hq89f96> ;
+        rdfs:label "Centre Hospitalier Universitaire de Bordeaux" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.5805 44.84044)"^^geo:wktLiteral ;
+        schema:addressLocality "Bordeaux" ;
+    ] ;
+    schema:url <https://www.chu-bordeaux.fr/CHU-de-Bordeaux/H%C3%B4pitaux-et-sites-du-CHU/Groupe-hospitalier-Saint-Andr%C3%A9/H%C3%B4pital-Saint-Andr%C3%A9/> ;
+    schema:sameAs <http://isni.org/isni/0000000122001651> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q16508267> ;
+             .

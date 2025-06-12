@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04fe46645> 
+    a org:Organization ;
+    rdfs:label "University Hospital in Halle" ;
+    schema:name "University Hospital in Halle" ;
+    schema:foundingDate "2006"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05gqaka33> ;
+        rdfs:label "Martin Luther University Halle-Wittenberg" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(11.97947 51.48158)"^^geo:wktLiteral ;
+        schema:addressLocality "Halle" ;
+    ] ;
+    schema:url <http://www.medizin.uni-halle.de/> ;
+    schema:sameAs <http://isni.org/isni/0000000403901701> ;
+             .

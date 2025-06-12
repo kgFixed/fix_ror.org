@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03dgngj22> 
+    a org:Organization ;
+    rdfs:label "Andover College" ;
+    schema:name "Andover College" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Andover_College_(Hampshire)> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.49393 51.21135)"^^geo:wktLiteral ;
+        schema:addressLocality "Andover" ;
+    ] ;
+    schema:url <http://www.andover.ac.uk/> ;
+    schema:sameAs <http://isni.org/isni/0000000405185841> ;
+             .

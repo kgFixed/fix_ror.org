@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03jfd4440> 
+    a org:Organization ;
+    rdfs:label "Mexicali Institute of Technology" ;
+    schema:name "Mexicali Institute of Technology" ;
+    schema:foundingDate "1981"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Mexicali_Institute_of_Technology> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-115.45446 32.62781)"^^geo:wktLiteral ;
+        schema:addressLocality "Mexicali" ;
+    ] ;
+    schema:url <http://www.itmexicali.edu.mx/> ;
+    schema:sameAs <http://isni.org/isni/0000000417638465> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7692479> ;
+             .

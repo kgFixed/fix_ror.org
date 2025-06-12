@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01rabm487> 
+    a org:Organization ;
+    rdfs:label "Hospital Nossa Senhora das Graças" ;
+    schema:name "Hospital Nossa Senhora das Graças" ;
+    schema:foundingDate "1953"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-49.27306 -25.42778)"^^geo:wktLiteral ;
+        schema:addressLocality "Curitiba" ;
+    ] ;
+    schema:url <http://www.hnsg.org.br/> ;
+    schema:sameAs <http://isni.org/isni/0000000446701072> ;
+             .

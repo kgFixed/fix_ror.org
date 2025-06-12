@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/044hb6b32> 
+    a org:Organization ;
+    rdfs:label "Hôpital des Enfants" ;
+    schema:name "Hôpital des Enfants" ;
+    schema:foundingDate "1998"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/017h5q109> ;
+        rdfs:label "Centre Hospitalier Universitaire de Toulouse" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(1.44367 43.60426)"^^geo:wktLiteral ;
+        schema:addressLocality "Toulouse" ;
+    ] ;
+    schema:url <http://www.chu-toulouse.fr/-hopital-des-enfants-> ;
+    schema:sameAs <http://isni.org/isni/000000040638325X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30279855> ;
+             .

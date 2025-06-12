@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05j2c6r36> 
+    a org:Organization ;
+    rdfs:label "Virginia Theological Seminary" ;
+    schema:name "Virginia Theological Seminary" ;
+    schema:foundingDate "1823"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Virginia_Theological_Seminary> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.04692 38.80484)"^^geo:wktLiteral ;
+        schema:addressLocality "Alexandria" ;
+    ] ;
+    schema:url <https://www.vts.edu/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q7934628> ;
+             .

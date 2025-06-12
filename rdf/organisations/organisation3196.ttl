@@ -1,0 +1,35 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02ckh3s34> 
+    a org:Organization ;
+    rdfs:label "Regionshospitalet Herning" ;
+    schema:name "Regionshospitalet Herning" ;
+    schema:foundingDate "1910"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00ttqn045> ;
+        rdfs:label "Danish Ramazzini Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04p0nk708> ;
+        rdfs:label "Regional Hospital West Jutland" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(8.97662 56.13615)"^^geo:wktLiteral ;
+        schema:addressLocality "Herning" ;
+    ] ;
+    schema:url <http://www.vest.rm.dk/patienter-og-parorende/indlagte-og-besogende-i-herning/> ;
+    schema:sameAs <http://isni.org/isni/0000000406391719> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q12333112> ;
+             .

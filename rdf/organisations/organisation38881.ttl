@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04p6jw654> 
+    a org:Organization ;
+    rdfs:label "Shoalhaven District Memorial Hospital" ;
+    schema:name "Shoalhaven District Memorial Hospital" ;
+    schema:foundingDate "1951"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Shoalhaven_District_Memorial_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03r8z3t63> ;
+        rdfs:label "UNSW Sydney" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00jtmb277> ;
+        rdfs:label "University of Wollongong" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(150.60036 -34.88422)"^^geo:wktLiteral ;
+        schema:addressLocality "Nowra" ;
+    ] ;
+    schema:url <http://www.islhd.health.nsw.gov.au/SDMH/> ;
+    schema:sameAs <http://isni.org/isni/000000008966273X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q16900144> ;
+             .

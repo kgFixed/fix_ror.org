@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04d96be50> 
+    a org:Organization ;
+    rdfs:label "Parker Hannifin (United States)" ;
+    schema:name "Parker Hannifin (United States)" ;
+    schema:foundingDate "1918"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Parker_Hannifin> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02krq1637> ;
+        rdfs:label "Parker Hannifin (France)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05d6n5j65> ;
+        rdfs:label "Parker Hannifin (Germany)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02cdhc958> ;
+        rdfs:label "Parker Hannifin (United Kingdom)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-81.69541 41.4995)"^^geo:wktLiteral ;
+        schema:addressLocality "Cleveland" ;
+    ] ;
+    schema:url <http://www.parker.com> ;
+    schema:sameAs <http://isni.org/isni/0000000404373488> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1470619> ;
+             .

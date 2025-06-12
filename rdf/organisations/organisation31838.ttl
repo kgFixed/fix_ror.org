@@ -1,0 +1,20 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02r1k0x59> 
+    a org:Organization ;
+    rdfs:label "Packaging Arena" ;
+    schema:name "Packaging Arena" ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(13.50357 59.3793)"^^geo:wktLiteral ;
+        schema:addressLocality "Karlstad" ;
+    ] ;
+    schema:url <http://www.packagingarena.com/en/> ;
+     .

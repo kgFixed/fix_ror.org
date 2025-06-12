@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01bpdjm13> 
+    a org:Organization ;
+    rdfs:label "Keiser University Latin American Campus" ;
+    schema:name "Keiser University Latin American Campus" ;
+    schema:foundingDate "1993"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Keiser_University-Latin_American_Campus> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-86.20351 11.90949)"^^geo:wktLiteral ;
+        schema:addressLocality "San Marcos" ;
+    ] ;
+    schema:url <http://www.keiseruniversity.edu.ni/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q4827946> ;
+             .

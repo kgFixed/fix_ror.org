@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05a15z872> 
+    a org:Organization ;
+    rdfs:label "Samsung Medical Center" ;
+    schema:name "Samsung Medical Center" ;
+    schema:foundingDate "1994"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Samsung_Medical_Center> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04q78tk20> ;
+        rdfs:label "Sungkyunkwan University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(126.9784 37.566)"^^geo:wktLiteral ;
+        schema:addressLocality "Seoul" ;
+    ] ;
+    schema:url <http://english.samsunghospital.com/main/english.do> ;
+    schema:sameAs <http://isni.org/isni/0000000106405613> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q624119> ;
+             .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05bsmsd63> 
+    a org:Organization ;
+    rdfs:label "Central Wyoming College" ;
+    schema:name "Central Wyoming College" ;
+    schema:foundingDate "1966"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Central_Wyoming_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-108.3801 43.02496)"^^geo:wktLiteral ;
+        schema:addressLocality "Riverton" ;
+    ] ;
+    schema:url <https://www.cwc.edu/> ;
+    schema:sameAs <http://isni.org/isni/000000010242717X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5062043> ;
+             .

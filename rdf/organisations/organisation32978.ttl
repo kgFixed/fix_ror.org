@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00hwxbz16> 
+    a org:Organization ;
+    rdfs:label "Wisconsin Alumni Research Foundation" ;
+    schema:name "Wisconsin Alumni Research Foundation" ;
+    schema:foundingDate "1925"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Wisconsin_Alumni_Research_Foundation> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/032ycrz75> ;
+        rdfs:label "WiCell" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-89.40123 43.07305)"^^geo:wktLiteral ;
+        schema:addressLocality "Madison" ;
+    ] ;
+    schema:url <http://www.warf.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000405050541> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q8027106> ;
+             .

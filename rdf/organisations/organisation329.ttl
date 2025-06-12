@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05pwfyy15> 
+    a org:Organization ;
+    rdfs:label "National Centre for Research and Development" ;
+    schema:name "National Centre for Research and Development" ;
+    schema:foundingDate "2007"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/National_Centre_for_Research_and_Development_in_Poland> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05dwvd537> ;
+        rdfs:label "Ministry of Science and Higher Education" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(21.01178 52.22977)"^^geo:wktLiteral ;
+        schema:addressLocality "Warsaw" ;
+    ] ;
+    schema:url <http://www.ncbr.gov.pl/en/> ;
+    schema:sameAs <http://isni.org/isni/0000000405667496> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q11789680> ;
+             .

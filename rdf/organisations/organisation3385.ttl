@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02h905004> 
+    a org:Organization ;
+    rdfs:label "Christiana Care Health System" ;
+    schema:name "Christiana Care Health System" ;
+    schema:foundingDate "1888"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Christiana_Care_Health_System> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01gxs7p86> ;
+        rdfs:label "Christiana Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-75.54659 39.74595)"^^geo:wktLiteral ;
+        schema:addressLocality "Wilmington" ;
+    ] ;
+    schema:url <http://www.christianacare.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000404441241> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q16987253> ;
+             .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03tmst390> 
+    a org:Organization ;
+    rdfs:label "Frank R. Howard Memorial Hospital" ;
+    schema:name "Frank R. Howard Memorial Hospital" ;
+    schema:foundingDate "1927"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Frank_R._Howard_Memorial_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-123.35557 39.40961)"^^geo:wktLiteral ;
+        schema:addressLocality "Willits" ;
+    ] ;
+    schema:url <https://www.adventisthealth.org/howard-memorial/pages/default.aspx> ;
+    schema:sameAs <http://isni.org/isni/0000000404353313> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5489125> ;
+             .

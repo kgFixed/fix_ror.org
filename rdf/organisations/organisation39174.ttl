@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05cdcvx65> 
+    a org:Organization ;
+    rdfs:label "Metropolitan Hospital College of Nursing" ;
+    schema:name "Metropolitan Hospital College of Nursing" ;
+    schema:foundingDate "1976"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Metropolitan_Hospital_College_of_Nursing> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(121.4161 14.2814)"^^geo:wktLiteral ;
+        schema:addressLocality "Santa Cruz" ;
+    ] ;
+    schema:url <http://www.metro.edu.ph/> ;
+    schema:sameAs <http://isni.org/isni/0000000405414691> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3547517> ;
+             .

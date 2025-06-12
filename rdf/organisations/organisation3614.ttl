@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/032zc6m47> 
+    a org:Organization ;
+    rdfs:label "Bronson Methodist Hospital" ;
+    schema:name "Bronson Methodist Hospital" ;
+    schema:foundingDate "1900"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Bronson_Methodist_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05hs6h993> ;
+        rdfs:label "Michigan State University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04j198w64> ;
+        rdfs:label "Western Michigan University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-85.58723 42.29171)"^^geo:wktLiteral ;
+        schema:addressLocality "Kalamazoo" ;
+    ] ;
+    schema:url <https://www.bronsonhealth.com/locations/bronson-methodist-hospital/> ;
+    schema:sameAs <http://isni.org/isni/000000040437865X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4974053> ;
+             .

@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05wp4z583> 
+    a org:Organization ;
+    rdfs:label "New Amsterdam Public Hospital" ;
+    schema:name "New Amsterdam Public Hospital" ;
+    schema:foundingDate "1881"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/New_Amsterdam_Public_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-57.5171 6.24793)"^^geo:wktLiteral ;
+        schema:addressLocality "New Amsterdam" ;
+    ] ;
+    schema:url <http://www.nationaltrust.gov.gy/new/index.php?option=com_content&view=article&id=132&Itemid=167> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q7005339> ;
+             .

@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00gn3nj37> 
+    a org:Organization ;
+    rdfs:label "Binzhou Medical College Hospital" ;
+    schema:name "Binzhou Medical College Hospital" ;
+    schema:foundingDate "1977"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/008w1vb37> ;
+        rdfs:label "Binzhou Medical University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(118.01667 37.36667)"^^geo:wktLiteral ;
+        schema:addressLocality "Binzhou" ;
+    ] ;
+    schema:url <http://www.byfy.cn/> ;
+     .

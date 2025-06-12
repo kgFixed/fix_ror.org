@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00tcmr651> 
+    a org:Organization ;
+    rdfs:label "Kathmandu Medical College Teaching Hospital" ;
+    schema:name "Kathmandu Medical College Teaching Hospital" ;
+    schema:foundingDate "1997"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Kathmandu_Medical_College> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/036xnae80> ;
+        rdfs:label "Kathmandu University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(85.3206 27.70169)"^^geo:wktLiteral ;
+        schema:addressLocality "Kathmandu" ;
+    ] ;
+    schema:url <http://www.kmc.edu.np/> ;
+    schema:sameAs <http://isni.org/isni/0000000404426252> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6376961> ;
+             .

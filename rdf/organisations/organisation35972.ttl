@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03zn2vc68> 
+    a org:Organization ;
+    rdfs:label "Niko (Slovenia)" ;
+    schema:name "Niko (Slovenia)" ;
+    schema:foundingDate "1946"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(14.17205 46.22482)"^^geo:wktLiteral ;
+        schema:addressLocality "Železniki" ;
+    ] ;
+    schema:url <http://www.niko.si/en/> ;
+     .

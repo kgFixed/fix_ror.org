@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02cbfxf79> 
+    a org:Organization ;
+    rdfs:label "St Patrick's Hospital" ;
+    schema:name "St Patrick's Hospital" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/St_Patrick%27s_Hospital_(Eastern_Cape)> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(29.85384 -30.85907)"^^geo:wktLiteral ;
+        schema:addressLocality "Bizana" ;
+    ] ;
+    schema:url <http://www.ecdoh.gov.za/hospitals/86/St_Patricks_Hospital> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q14956858> ;
+             .

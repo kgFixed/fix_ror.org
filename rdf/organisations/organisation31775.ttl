@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03snrcf80> 
+    a org:Organization ;
+    rdfs:label "Staccato Technologies (Sweden)" ;
+    schema:name "Staccato Technologies (Sweden)" ;
+    schema:foundingDate "1990"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(13.43836 58.38659)"^^geo:wktLiteral ;
+        schema:addressLocality "Skara" ;
+    ] ;
+    schema:url <http://www.staccatotech.se/> ;
+     .

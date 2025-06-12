@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03r4az639> 
+    a org:Organization ;
+    rdfs:label "Sixth Affiliated Hospital of Xinjiang Medical University" ;
+    schema:name "Sixth Affiliated Hospital of Xinjiang Medical University" ;
+    schema:foundingDate "1960"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01p455v08> ;
+        rdfs:label "Xinjiang Medical University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(87.60046 43.80096)"^^geo:wktLiteral ;
+        schema:addressLocality "Ürümqi" ;
+    ] ;
+    schema:url <http://www.ykdlfy.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q7533101> ;
+             .

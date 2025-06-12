@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/046sh6j17> 
+    a org:Organization ;
+    rdfs:label "Birla Institute of Technology and Science, Pilani - Goa Campus" ;
+    schema:name "Birla Institute of Technology and Science, Pilani - Goa Campus" ;
+    schema:foundingDate "2004"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Birla_Institute_of_Technology_and_Science,_Pilani_%E2%80%93_Goa_Campus> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/001p3jz28> ;
+        rdfs:label "Birla Institute of Technology and Science, Pilani" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(73.90352 15.37794)"^^geo:wktLiteral ;
+        schema:addressLocality "Sancoale" ;
+    ] ;
+    schema:url <http://www.bits-pilani.ac.in/Goa/> ;
+    schema:sameAs <http://isni.org/isni/0000000417554149> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4916523> ;
+             .

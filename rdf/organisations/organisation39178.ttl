@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03qve6z66> 
+    a org:Organization ;
+    rdfs:label "St Lucy's Hospital" ;
+    schema:name "St Lucy's Hospital" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/St_Lucy%27s_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(28.87056 -31.16304)"^^geo:wktLiteral ;
+        schema:addressLocality "Qumbu" ;
+    ] ;
+    schema:url <http://www.ecdoh.gov.za/hospitals/58/StLucys_Hospital> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q7594036> ;
+             .

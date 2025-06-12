@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04qa0nf30> 
+    a org:Organization ;
+    rdfs:label "Desert Valley Hospital" ;
+    schema:name "Desert Valley Hospital" ;
+    schema:foundingDate "1994"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Desert_Valley_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-117.29116 34.53611)"^^geo:wktLiteral ;
+        schema:addressLocality "Victorville" ;
+    ] ;
+    schema:url <http://www.dvmc.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000404262745> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q14681826> ;
+             .

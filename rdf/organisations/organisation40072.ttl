@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01v6q6r30> 
+    a org:Organization ;
+    rdfs:label "Lackawanna College" ;
+    schema:name "Lackawanna College" ;
+    schema:foundingDate "1894"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Lackawanna_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-75.6649 41.40916)"^^geo:wktLiteral ;
+        schema:addressLocality "Scranton" ;
+    ] ;
+    schema:url <http://www.lackawanna.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000405359776> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6468687> ;
+             .

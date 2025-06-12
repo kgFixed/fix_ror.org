@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01k4cfw02> 
+    a org:Organization ;
+    rdfs:label "Mater Misericordiae Hospital" ;
+    schema:name "Mater Misericordiae Hospital" ;
+    schema:foundingDate "1945"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Mater_Hospital_Pimlico> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03mjtdk61> ;
+        rdfs:label "Mater Health Services" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(146.80569 -19.26639)"^^geo:wktLiteral ;
+        schema:addressLocality "Townsville" ;
+    ] ;
+    schema:url <https://www.matertsv.org.au/about/mater-history?searched=Mater+Hospital+Pimlico&advsearch=oneword&highlight=ajaxSearch_highlight+ajaxSearch_highlight1+ajaxSearch_highlight2+ajaxSearch_highlight3> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q14935489> ;
+             .

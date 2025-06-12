@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/030jpqj15> 
+    a org:Organization ;
+    rdfs:label "Goulburn Base Hospital" ;
+    schema:name "Goulburn Base Hospital" ;
+    schema:foundingDate "1833"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Goulburn_Base_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/019wvm592> ;
+        rdfs:label "Australian National University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(149.72086 -34.75155)"^^geo:wktLiteral ;
+        schema:addressLocality "Goulburn" ;
+    ] ;
+    schema:url <https://www.service.nsw.gov.au/nswgovdirectory/goulburn-base-hospital> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q16891798> ;
+             .

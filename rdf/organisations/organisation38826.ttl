@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02xw13d29> 
+    a org:Organization ;
+    rdfs:label "Katherine Hospital" ;
+    schema:name "Katherine Hospital" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Katherine_District_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(132.26347 -14.46517)"^^geo:wktLiteral ;
+        schema:addressLocality "Katherine" ;
+    ] ;
+    schema:url <http://www.health.nt.gov.au/Hospitals/Katherine_Hospital/index.aspx> ;
+    schema:sameAs <http://isni.org/isni/0000000406411230> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q16893192> ;
+             .

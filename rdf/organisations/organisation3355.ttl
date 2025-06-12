@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00n8yb347> 
+    a org:Organization ;
+    rdfs:label "Cho Ray Hospital" ;
+    schema:name "Cho Ray Hospital" ;
+    schema:foundingDate "1900"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Cho_Ray_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/025kb2624> ;
+        rdfs:label "Ho Chi Minh City Medicine and Pharmacy University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(106.62965 10.82302)"^^geo:wktLiteral ;
+        schema:addressLocality "Ho Chi Minh City" ;
+    ] ;
+    schema:url <http://choray.vn:81/> ;
+    schema:sameAs <http://isni.org/isni/0000000406201102> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5103381> ;
+             .

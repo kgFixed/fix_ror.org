@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00j9c2840> 
+    a org:Organization ;
+    rdfs:label "Oslo University Hospital" ;
+    schema:name "Oslo University Hospital" ;
+    schema:foundingDate "2009"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Oslo_University_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01xtthb56> ;
+        rdfs:label "University of Oslo" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(10.74609 59.91273)"^^geo:wktLiteral ;
+        schema:addressLocality "Oslo" ;
+    ] ;
+    schema:url <http://www.oslo-universitetssykehus.no/om-oss/english> ;
+    schema:sameAs <http://isni.org/isni/0000000403898485> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3111191> ;
+             .

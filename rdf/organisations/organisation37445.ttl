@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/039xdzv43> 
+    a org:Organization ;
+    rdfs:label "Norwegian Maritime Authority" ;
+    schema:name "Norwegian Maritime Authority" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Norwegian_Maritime_Authority> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02j2d2g70> ;
+        rdfs:label "Ministry of Trade, Industry and Fisheries" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(5.268 59.41378)"^^geo:wktLiteral ;
+        schema:addressLocality "Haugesund" ;
+    ] ;
+    schema:url <https://www.sjofartsdir.no/en/> ;
+    schema:sameAs <http://isni.org/isni/0000000446666553> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6514833> ;
+             .

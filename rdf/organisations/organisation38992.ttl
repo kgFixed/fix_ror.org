@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/020t0j562> 
+    a org:Organization ;
+    rdfs:label "Mahatma Gandhi Mission Medical College and Hospital" ;
+    schema:name "Mahatma Gandhi Mission Medical College and Hospital" ;
+    schema:foundingDate "1990"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(75.34226 19.87757)"^^geo:wktLiteral ;
+        schema:addressLocality "Aurangabad" ;
+    ] ;
+    schema:url <http://mgmmcha.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000417705787> ;
+             .

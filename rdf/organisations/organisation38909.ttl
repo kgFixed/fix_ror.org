@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03kjtb134> 
+    a org:Organization ;
+    rdfs:label "Tsan Yuk Hospital" ;
+    schema:name "Tsan Yuk Hospital" ;
+    schema:foundingDate "1922"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Tsan_Yuk_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05sn8t512> ;
+        rdfs:label "Hospital Authority" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02zhqgq86> ;
+        rdfs:label "University of Hong Kong" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(114.17469 22.27832)"^^geo:wktLiteral ;
+        schema:addressLocality "Hong Kong" ;
+    ] ;
+    schema:url <http://www.ha.org.hk/visitor/ha_hosp_details.asp?Content_ID=100133&Lang=ENG> ;
+    schema:sameAs <http://isni.org/isni/0000000417626827> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7849355> ;
+             .

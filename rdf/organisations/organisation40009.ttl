@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05y3c0716> 
+    a org:Organization ;
+    rdfs:label "Harrogate and District NHS Foundation Trust" ;
+    schema:name "Harrogate and District NHS Foundation Trust" ;
+    schema:foundingDate "2005"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Harrogate_and_District_NHS_Foundation_Trust> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03044am22> ;
+        rdfs:label "Harrogate District Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04d78jp86> ;
+        rdfs:label "Ripon Community Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.5373 53.99078)"^^geo:wktLiteral ;
+        schema:addressLocality "Harrogate" ;
+    ] ;
+    schema:url <http://www.hdft.nhs.uk/> ;
+    schema:sameAs <http://isni.org/isni/0000000404088513> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5666409> ;
+             .

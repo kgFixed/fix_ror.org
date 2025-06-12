@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04e98j339> 
+    a org:Organization ;
+    rdfs:label "United States-Israel Binational Agricultural Research and Development Fund" ;
+    schema:name "United States-Israel Binational Agricultural Research and Development Fund" ;
+    schema:foundingDate "1979"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(34.78939 31.97102)"^^geo:wktLiteral ;
+        schema:addressLocality "Rishon LeZiyyon" ;
+    ] ;
+    schema:url <http://www.bard-isus.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000095294013> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30296577> ;
+             .

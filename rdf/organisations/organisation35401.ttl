@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/056hxdb03> 
+    a org:Organization ;
+    rdfs:label "Griaule Biometrics (Brazil)" ;
+    schema:name "Griaule Biometrics (Brazil)" ;
+    schema:foundingDate "2002"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-47.06083 -22.90556)"^^geo:wktLiteral ;
+        schema:addressLocality "Campinas" ;
+    ] ;
+    schema:url <http://www.griaulebiometrics.com/> ;
+     .

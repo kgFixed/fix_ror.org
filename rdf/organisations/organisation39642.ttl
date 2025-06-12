@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01r70sq06> 
+    a org:Organization ;
+    rdfs:label "German Research Institute for Public Administration" ;
+    schema:name "German Research Institute for Public Administration" ;
+    schema:foundingDate "1976"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/German_Research_Institute_for_Public_Administration> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(8.43111 49.32083)"^^geo:wktLiteral ;
+        schema:addressLocality "Speyer" ;
+    ] ;
+    schema:url <http://www.foev-speyer.de/en/> ;
+    schema:sameAs <http://isni.org/isni/0000000110916758> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1205636> ;
+             .

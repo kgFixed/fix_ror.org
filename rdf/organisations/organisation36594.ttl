@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05dcmqv57> 
+    a org:Organization ;
+    rdfs:label "Inderøy Kommune" ;
+    schema:name "Inderøy Kommune" ;
+    schema:foundingDate "1838"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Inder%C3%B8y> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(11.29617 63.87163)"^^geo:wktLiteral ;
+        schema:addressLocality "Straumen" ;
+    ] ;
+    schema:url <http://www.inderoy.kommune.no/index.php?cat=152005> ;
+     .

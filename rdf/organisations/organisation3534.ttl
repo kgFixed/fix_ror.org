@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/002bjfj29> 
+    a org:Organization ;
+    rdfs:label "München Klinik Schwabing" ;
+    schema:name "München Klinik Schwabing" ;
+    schema:foundingDate "1909"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03pfshj32> ;
+        rdfs:label "München Klinik" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(11.57549 48.13743)"^^geo:wktLiteral ;
+        schema:addressLocality "Munich" ;
+    ] ;
+    schema:url <https://www.muenchen-klinik.de/krankenhaus/schwabing/> ;
+    schema:sameAs <http://isni.org/isni/0000000093313436> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1170136> ;
+             .

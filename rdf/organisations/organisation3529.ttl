@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0457avm18> 
+    a org:Organization ;
+    rdfs:label "Bishop Auckland Hospital" ;
+    schema:name "Bishop Auckland Hospital" ;
+    schema:foundingDate "2002"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Bishop_Auckland_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03vamsh08> ;
+        rdfs:label "County Durham and Darlington NHS Foundation Trust" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.67706 54.65554)"^^geo:wktLiteral ;
+        schema:addressLocality "Bishop Auckland" ;
+    ] ;
+    schema:url <https://www.cddft.nhs.uk/our-hospitals/bishop-auckland-hospital.aspx> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q4917490> ;
+             .

@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/050yqvv05> 
+    a org:Organization ;
+    rdfs:label "Fondo Nacional de Ciencia Tecnología e Innovación" ;
+    schema:name "Fondo Nacional de Ciencia Tecnología e Innovación" ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-66.87919 10.48801)"^^geo:wktLiteral ;
+        schema:addressLocality "Caracas" ;
+    ] ;
+    schema:url <http://www.fonacit.gob.ve/> ;
+    schema:sameAs <http://isni.org/isni/0000000405014233> ;
+             .

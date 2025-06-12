@@ -1,0 +1,61 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/002hsbm82> 
+    a org:Organization ;
+    rdfs:label "Tufts Medical Center" ;
+    schema:name "Tufts Medical Center" ;
+    schema:foundingDate "1796"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Tufts_Medical_Center> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02ze5w302> ;
+        rdfs:label "Tufts Children's Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/043xhwq03> ;
+        rdfs:label "Carney Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02091ng19> ;
+        rdfs:label "Lowell General Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05bpnne23> ;
+        rdfs:label "MetroWest Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05wvpxv85> ;
+        rdfs:label "Tufts University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04v00sg98> ;
+        rdfs:label "VA Boston Healthcare System" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-71.05977 42.35843)"^^geo:wktLiteral ;
+        schema:addressLocality "Boston" ;
+    ] ;
+    schema:url <https://www.tuftsmedicalcenter.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000089344045> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7851542> ;
+             .

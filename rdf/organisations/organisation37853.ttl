@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/010w37e28> 
+    a org:Organization ;
+    rdfs:label "Ghana Atomic Energy Commission" ;
+    schema:name "Ghana Atomic Energy Commission" ;
+    schema:foundingDate "2012"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Ghana_Atomic_Energy_Commission> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.1969 5.55602)"^^geo:wktLiteral ;
+        schema:addressLocality "Accra" ;
+    ] ;
+    schema:url <http://gaecgh.org/> ;
+    schema:sameAs <http://isni.org/isni/000000009905018X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5555331> ;
+             .

@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02eb31840> 
+    a org:Organization ;
+    rdfs:label "Greensboro College" ;
+    schema:name "Greensboro College" ;
+    schema:foundingDate "1838"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Greensboro_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05w72d176> ;
+        rdfs:label "The People of the United Methodist Church" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-79.79198 36.07264)"^^geo:wktLiteral ;
+        schema:addressLocality "Greensboro" ;
+    ] ;
+    schema:url <https://www.greensboro.edu/> ;
+    schema:sameAs <http://isni.org/isni/000000040406604X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5604445> ;
+             .

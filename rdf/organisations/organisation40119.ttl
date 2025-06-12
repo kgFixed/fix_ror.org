@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02kz5f065> 
+    a org:Organization ;
+    rdfs:label "Medicine Hat College" ;
+    schema:name "Medicine Hat College" ;
+    schema:foundingDate "1965"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Medicine_Hat_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-110.67661 50.03928)"^^geo:wktLiteral ;
+        schema:addressLocality "Medicine Hat" ;
+    ] ;
+    schema:url <https://www.mhc.ab.ca/> ;
+    schema:sameAs <http://isni.org/isni/0000000095371488> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6806713> ;
+             .

@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01s0phq15> 
+    a org:Organization ;
+    rdfs:label "Inverclyde Royal Hospital" ;
+    schema:name "Inverclyde Royal Hospital" ;
+    schema:foundingDate "1979"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Inverclyde_Royal_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05kdz4d87> ;
+        rdfs:label "NHS Greater Glasgow and Clyde" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00vtgdb53> ;
+        rdfs:label "University of Glasgow" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04w3d2v20> ;
+        rdfs:label "University of the West of Scotland" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-4.76121 55.94838)"^^geo:wktLiteral ;
+        schema:addressLocality "Greenock" ;
+    ] ;
+    schema:url <http://www.nhsggc.org.uk/locations/hospitals/inverclyde-royal-hospital/> ;
+    schema:sameAs <http://isni.org/isni/0000000406244890> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6060060> ;
+             .

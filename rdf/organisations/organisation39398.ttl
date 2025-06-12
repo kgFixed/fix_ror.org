@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01zq8yd65> 
+    a org:Organization ;
+    rdfs:label "ProMedica Fostoria Community Hospital" ;
+    schema:name "ProMedica Fostoria Community Hospital" ;
+    schema:foundingDate "1930"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Fostoria_Community_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-83.41687 41.157)"^^geo:wktLiteral ;
+        schema:addressLocality "Fostoria" ;
+    ] ;
+    schema:url <https://www.promedica.org/fostoria-community-hospital/Pages/default.aspx> ;
+    schema:sameAs <http://isni.org/isni/0000000404533779> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5473872> ;
+             .

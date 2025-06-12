@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05kds6518> 
+    a org:Organization ;
+    rdfs:label "Indwe Hospital" ;
+    schema:name "Indwe Hospital" ;
+    schema:foundingDate "1899"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Indwe_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(26.87533 -31.89756)"^^geo:wktLiteral ;
+        schema:addressLocality "Queenstown" ;
+    ] ;
+    schema:url <http://www.ecdoh.gov.za/hospitals/29/Indwe_Provincial_Aided_Hospital> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q14956861> ;
+             .

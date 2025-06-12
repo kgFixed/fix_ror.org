@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01c2dee93> 
+    a org:Organization ;
+    rdfs:label "Baystate Franklin Medical Center" ;
+    schema:name "Baystate Franklin Medical Center" ;
+    schema:foundingDate "1895"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-72.59953 42.58759)"^^geo:wktLiteral ;
+        schema:addressLocality "Greenfield" ;
+    ] ;
+    schema:url <https://www.baystatehealth.org/locations/franklin-medical-center> ;
+    schema:sameAs <http://isni.org/isni/0000000404338658> ;
+             .

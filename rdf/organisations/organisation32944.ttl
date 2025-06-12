@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/030fy4q75> 
+    a org:Organization ;
+    rdfs:label "Kerala State Council for Science, Technology and Environment" ;
+    schema:name "Kerala State Council for Science, Technology and Environment" ;
+    schema:foundingDate "1972"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Kerala_State_Council_for_Science,_Technology_and_Environment> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02gg6pa94> ;
+        rdfs:label "Kerala Forest Research Institute" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(76.94924 8.4855)"^^geo:wktLiteral ;
+        schema:addressLocality "Thiruvananthapuram" ;
+    ] ;
+    schema:url <http://www.kscste.kerala.gov.in/> ;
+    schema:sameAs <http://isni.org/isni/0000000103795273> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6393416> ;
+             .

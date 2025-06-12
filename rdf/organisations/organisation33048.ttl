@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03d9g2g58> 
+    a org:Organization ;
+    rdfs:label "American Association of Orthodontists" ;
+    schema:name "American Association of Orthodontists" ;
+    schema:foundingDate "1900"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/American_Association_of_Orthodontists> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-90.42262 38.66089)"^^geo:wktLiteral ;
+        schema:addressLocality "Creve Coeur" ;
+    ] ;
+    schema:url <https://mylifemysmile.org> ;
+    schema:sameAs <http://isni.org/isni/0000000109455413> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4743081> ;
+             .
