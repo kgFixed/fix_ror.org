@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0251vfx90> 
+    a org:Organization ;
+    rdfs:label "Showa Denko (Japan)" ;
+    schema:name "Showa Denko (Japan)" ;
+    schema:foundingDate "1939"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Showa_Denko> ;
+    org:status "inactive" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/01pshgb33> ;
+        rdfs:label "Resonac (Japan)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(139.69171 35.6895)"^^geo:wktLiteral ;
+        schema:addressLocality "Tokyo" ;
+    ] ;
+    schema:url <http://www.sdk.co.jp/english/> ;
+    schema:sameAs <http://isni.org/isni/0000000093400353> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q905412> ;
+             .

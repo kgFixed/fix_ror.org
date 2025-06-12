@@ -1,0 +1,91 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04chq2495> 
+    a org:Organization ;
+    rdfs:label "United States Department of Commerce" ;
+    schema:name "United States Department of Commerce" ;
+    schema:foundingDate "1903"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/United_States_Department_of_Commerce> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03b17a012> ;
+        rdfs:label "Bureau of Economic Analysis" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0486x5a41> ;
+        rdfs:label "Educause" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02an13226> ;
+        rdfs:label "International Trade Administration" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05xpvk416> ;
+        rdfs:label "National Institute of Standards and Technology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02z5nhe81> ;
+        rdfs:label "National Oceanic and Atmospheric Administration" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01p92hb48> ;
+        rdfs:label "National Technical Information Service" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00tgqzw13> ;
+        rdfs:label "NOAA National Weather Service" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01qn7cs15> ;
+        rdfs:label "United States Census Bureau" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0114yjq47> ;
+        rdfs:label "United States Patent and Trademark Office" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/032241511> ;
+        rdfs:label "National Telecommunications and Information Administration" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02rcrvv70> ;
+        rdfs:label "Government of the United States of America" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.03637 38.89511)"^^geo:wktLiteral ;
+        schema:addressLocality "Washington" ;
+    ] ;
+    schema:url <http://www.commerce.gov/> ;
+    schema:sameAs <http://isni.org/isni/0000000404786426> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q503577> ;
+             .

@@ -1,0 +1,54 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03s0pzj56> 
+    a org:Organization ;
+    rdfs:label "Station Biologique de Roscoff" ;
+    schema:name "Station Biologique de Roscoff" ;
+    schema:foundingDate "1872"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Station_biologique_de_Roscoff> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/051k70002> ;
+        rdfs:label "Biologie évolutive et écologie des algues" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/001c8pb03> ;
+        rdfs:label "Laboratoire de Biologie Intégrative des Modèles Marins" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01q76b368> ;
+        rdfs:label "Institut Écologie et Environnement" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02en5vm52> ;
+        rdfs:label "Sorbonne Université" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0038zss60> ;
+        rdfs:label "European Marine Biological Resource Centre" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-3.98709 48.72381)"^^geo:wktLiteral ;
+        schema:addressLocality "Roscoff" ;
+    ] ;
+    schema:url <https://www.sb-roscoff.fr> ;
+    schema:sameAs <http://isni.org/isni/0000000122030006> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1323056> ;
+             .

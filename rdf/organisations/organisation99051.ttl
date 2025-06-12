@@ -1,0 +1,35 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02n3j8t12> 
+    a org:Organization ;
+    rdfs:label "Office of Fusion Energy Sciences" ;
+    schema:name "Office of Fusion Energy Sciences" ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04zptmf07> ;
+        rdfs:label "DIII-D National Fusion Facility" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00mmn6b08> ;
+        rdfs:label "Office of Science" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.03637 38.89511)"^^geo:wktLiteral ;
+        schema:addressLocality "Washington" ;
+    ] ;
+    schema:url <https://science.osti.gov/fes> ;
+    schema:sameAs <http://isni.org/isni/0000000458975556> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30296540> ;
+             .

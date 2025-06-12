@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01m0z6m03> 
+    a org:Organization ;
+    rdfs:label "École normale supérieure de Fontenay-Saint-Cloud" ;
+    schema:name "École normale supérieure de Fontenay-Saint-Cloud" ;
+    schema:foundingDate "1987"^^xsd:gYear ;
+    schema:sameAs <https://fr.wikipedia.org/wiki/%C3%89cole_normale_sup%C3%A8rieure_de_Fontenay-Saint-Cloud> ;
+    org:status "inactive" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/04zmssz18> ;
+        rdfs:label "École Normale Supérieure de Lyon" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.29275 48.79325)"^^geo:wktLiteral ;
+        schema:addressLocality "Fontenay-aux-Roses" ;
+    ] ;
+    schema:sameAs <http://isni.org/isni/0000000107295890> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q273605> ;
+             .

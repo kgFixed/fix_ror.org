@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0009xxz90> 
+    a org:Organization ;
+    rdfs:label "Technological Educational Institute of Eastern Macedonia and Thrace" ;
+    schema:name "Technological Educational Institute of Eastern Macedonia and Thrace" ;
+    schema:foundingDate "1976"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Technological_Educational_Institute_of_Eastern_Macedonia_and_Thrace> ;
+    org:status "inactive" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/00708jp83> ;
+        rdfs:label "International Hellenic University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(24.40687 40.93959)"^^geo:wktLiteral ;
+        schema:addressLocality "Kavala" ;
+    ] ;
+    schema:url <http://www.teikav.edu.gr/index.php?lang=en> ;
+    schema:sameAs <http://isni.org/isni/0000000406229180> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7692470> ;
+             .

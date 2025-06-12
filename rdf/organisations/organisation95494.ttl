@@ -1,0 +1,123 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04n07f274> 
+    a org:Organization ;
+    rdfs:label "Materials Science in Extreme Environments University Research Alliance" ;
+    schema:name "Materials Science in Extreme Environments University Research Alliance" ;
+    schema:foundingDate "2020"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Other" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00za53h95> ;
+        rdfs:label "Johns Hopkins University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04tz64554> ;
+        rdfs:label "Defense Threat Reduction Agency" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/047426m28> ;
+        rdfs:label "University of Illinois Urbana-Champaign" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00ch7yk27> ;
+        rdfs:label "South Dakota School of Mines and Technology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/011hc8f90> ;
+        rdfs:label "DEVCOM Army Research Laboratory" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/053vhsf19> ;
+        rdfs:label "Combustion Research and Flow Technology (United States)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01zkghx44> ;
+        rdfs:label "Georgia Institute of Technology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05e74xb87> ;
+        rdfs:label "New Jersey Institute of Technology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/022kthw22> ;
+        rdfs:label "University of Rochester" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0168r3w48> ;
+        rdfs:label "University of California, San Diego" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02nkdxk79> ;
+        rdfs:label "Virginia Commonwealth University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05dk0ce17> ;
+        rdfs:label "Washington State University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03nawhv43> ;
+        rdfs:label "University of California, Riverside" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/017d8gk22> ;
+        rdfs:label "Morgan State University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03m2x1q45> ;
+        rdfs:label "University of Arizona" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/041nk4h53> ;
+        rdfs:label "Lawrence Livermore National Laboratory" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05h992307> ;
+        rdfs:label "Pacific Northwest National Laboratory" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-76.61219 39.29038)"^^geo:wktLiteral ;
+        schema:addressLocality "Baltimore" ;
+    ] ;
+    schema:url <https://hemi.jhu.edu/mseeura/> ;
+     .

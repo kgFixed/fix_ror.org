@@ -1,0 +1,50 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/015wtqn87> 
+    a org:Organization ;
+    rdfs:label "CRC183 - Entangled States of Matter" ;
+    schema:name "CRC183 - Entangled States of Matter" ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00rcxh774> ;
+        rdfs:label "University of Cologne" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/046ak2485> ;
+        rdfs:label "Freie Universität Berlin" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0316ej306> ;
+        rdfs:label "Weizmann Institute of Science" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/035b05819> ;
+        rdfs:label "University of Copenhagen" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/024z2rq82> ;
+        rdfs:label "Heinrich Heine University Düsseldorf" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(6.95 50.93333)"^^geo:wktLiteral ;
+        schema:addressLocality "Cologne" ;
+    ] ;
+    schema:url <https://www.crc183.uni-koeln.de> ;
+     .

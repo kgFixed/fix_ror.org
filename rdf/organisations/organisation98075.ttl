@@ -1,0 +1,49 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05w21nn13> 
+    a org:Organization ;
+    rdfs:label "Army Medical University" ;
+    schema:name "Army Medical University" ;
+    schema:foundingDate "1954"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Army_Medical_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01gynph42> ;
+        rdfs:label "State Key Laboratory of Trauma, Burns and Compound Injury Research" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00fthae95> ;
+        rdfs:label "Daping Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02jn36537> ;
+        rdfs:label "Southwest Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02d217z27> ;
+        rdfs:label "Xinqiao Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(106.55771 29.56026)"^^geo:wktLiteral ;
+        schema:addressLocality "Chongqing" ;
+    ] ;
+    schema:url <http://www.tmmu.edu.cn/default.aspx> ;
+    schema:sameAs <http://isni.org/isni/0000000417606682> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7784898> ;
+             .

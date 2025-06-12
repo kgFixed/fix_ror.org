@@ -1,0 +1,59 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02h158026> 
+    a org:Organization ;
+    rdfs:label "Institut de Recherche sur les Systèmes Atomiques et Moléculaires Complexes" ;
+    schema:name "Institut de Recherche sur les Systèmes Atomiques et Moléculaires Complexes" ;
+    schema:foundingDate "1991"^^xsd:gYear ;
+    org:status "inactive" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0416g8z79> ;
+        rdfs:label "Laboratoire Collisions Agrégats Réactivité" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/056g7f250> ;
+        rdfs:label "Laboratoire de Chimie et Physique Quantiques" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01w0hda30> ;
+        rdfs:label "Laboratoire de Physique Théorique" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/042xmz674> ;
+        rdfs:label "Laboratoire de Physique et Chimie des Nano-Objets" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02v6kpv12> ;
+        rdfs:label "Université Toulouse III - Paul Sabatier" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/02wq1s711> ;
+        rdfs:label "Fédération de recherche Matière et Interactions" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(1.44367 43.60426)"^^geo:wktLiteral ;
+        schema:addressLocality "Toulouse" ;
+    ] ;
+    schema:url <http://www.irsamc.ups-tlse.fr/> ;
+    schema:sameAs <http://isni.org/isni/0000000405870136> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q51785380> ;
+             .

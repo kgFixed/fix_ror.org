@@ -1,0 +1,78 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04fkqna53> 
+    a org:Organization ;
+    rdfs:label "University of Maryland Medical System" ;
+    schema:name "University of Maryland Medical System" ;
+    schema:foundingDate "1994"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/University_of_Maryland_Medical_System> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01h2p4517> ;
+        rdfs:label "Mt. Washington Pediatric Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/052vt9742> ;
+        rdfs:label "St. Joseph Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00jyqx898> ;
+        rdfs:label "University of Maryland Baltimore Washington Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00hncq557> ;
+        rdfs:label "University of Maryland Charles Regional Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00sde4n60> ;
+        rdfs:label "University of Maryland Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03k0fhh26> ;
+        rdfs:label "University of Maryland Medical Center Midtown Campus" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01041e172> ;
+        rdfs:label "University of Maryland Rehabilitation & Orthopaedic Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/028658z74> ;
+        rdfs:label "University of Maryland Upper Chesapeake Health" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01vft3j45> ;
+        rdfs:label "University of Maryland Marlene and Stewart Greenebaum Comprehensive Cancer Center" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-76.61219 39.29038)"^^geo:wktLiteral ;
+        schema:addressLocality "Baltimore" ;
+    ] ;
+    schema:url <http://umms.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000098880763> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7895692> ;
+             .

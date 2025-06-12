@@ -1,0 +1,101 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02hb5yj49> 
+    a org:Organization ;
+    rdfs:label "Corewell Health" ;
+    schema:name "Corewell Health" ;
+    schema:foundingDate "2022"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Corewell_Health> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05x643e19> ;
+        rdfs:label "Corewell Health Butterworth Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03bk8p931> ;
+        rdfs:label "Helen DeVos Children's Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00qy68j92> ;
+        rdfs:label "Corewell Health Blodgett Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04xcq9q51> ;
+        rdfs:label "Corewell Health Reed City Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/053jm8142> ;
+        rdfs:label "Corewell Health Zeeland Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03nr10290> ;
+        rdfs:label "Corewell Health Children's" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03x4pp342> ;
+        rdfs:label "Beaumont Hospital, Dearborn" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/058sakv40> ;
+        rdfs:label "Corewell Health William Beaumont University Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03artm726> ;
+        rdfs:label "Beaumont Hospital, Royal Oak" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05x9ffc66> ;
+        rdfs:label "Beaumont Hospital, Troy" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Predecessor" ;
+        org:member <https://ror.org/05g2hd893> ;
+        rdfs:label "Beaumont Health" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Predecessor" ;
+        org:member <https://ror.org/02ahxdd04> ;
+        rdfs:label "Spectrum Health" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Predecessor" ;
+        org:member <https://ror.org/02x3f7722> ;
+        rdfs:label "Lakeland Health" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-85.66809 42.96336)"^^geo:wktLiteral ;
+        schema:addressLocality "Grand Rapids" ;
+    ] ;
+    schema:url <https://corewellhealth.org> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q123561060> ;
+             .

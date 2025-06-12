@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00pnp4y96> 
+    a org:Organization ;
+    rdfs:label "Government of Pakistan" ;
+    schema:name "Government of Pakistan" ;
+    schema:foundingDate "1947"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Government_of_Pakistan> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02kyv4s47> ;
+        rdfs:label "Ministry of National Health Services Regulation and Coordination" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03jn2p430> ;
+        rdfs:label "Ministry of Science and Technology" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(73.04329 33.72148)"^^geo:wktLiteral ;
+        schema:addressLocality "Islamabad" ;
+    ] ;
+    schema:url <http://www.pakistan.gov.pk/> ;
+    schema:sameAs <http://isni.org/isni/0000000404337882> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3250182> ;
+             .

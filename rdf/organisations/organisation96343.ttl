@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/043ehm030> 
+    a org:Organization ;
+    rdfs:label "UNC Lineberger Comprehensive Cancer Center" ;
+    schema:name "UNC Lineberger Comprehensive Cancer Center" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/UNC_Lineberger_Comprehensive_Cancer_Center> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0130frc33> ;
+        rdfs:label "University of North Carolina at Chapel Hill" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-79.05584 35.9132)"^^geo:wktLiteral ;
+        schema:addressLocality "Chapel Hill" ;
+    ] ;
+    schema:url <https://unclineberger.org> ;
+    schema:sameAs <http://isni.org/isni/0000000404524880> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7865231> ;
+             .

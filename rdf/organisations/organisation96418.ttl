@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/045ybte48> 
+    a org:Organization ;
+    rdfs:label "Center for Nanoscale Materials" ;
+    schema:name "Center for Nanoscale Materials" ;
+    schema:foundingDate "2007"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Center_for_Nanoscale_Materials> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05gvnxz63> ;
+        rdfs:label "Argonne National Laboratory" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-88.00173 41.67364)"^^geo:wktLiteral ;
+        schema:addressLocality "Lemont" ;
+    ] ;
+    schema:url <https://www.anl.gov/cnm> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q5059786> ;
+             .

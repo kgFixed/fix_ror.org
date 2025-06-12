@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03v6m3209> 
+    a org:Organization ;
+    rdfs:label "Frederick National Laboratory for Cancer Research" ;
+    schema:name "Frederick National Laboratory for Cancer Research" ;
+    schema:foundingDate "1972"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Frederick_National_Laboratory_for_Cancer_Research> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/040gcmg81> ;
+        rdfs:label "National Cancer Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02qyzaf42> ;
+        rdfs:label "The Cancer Imaging Archive" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00bardy64> ;
+        rdfs:label "Leidos Biomedical Research Inc. (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.41054 39.41427)"^^geo:wktLiteral ;
+        schema:addressLocality "Frederick" ;
+    ] ;
+    schema:url <https://frederick.cancer.gov> ;
+    schema:sameAs <http://isni.org/isni/0000000405358394> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q28405614> ;
+             .

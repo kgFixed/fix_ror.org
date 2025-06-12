@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00yt0ea73> 
+    a org:Organization ;
+    rdfs:label "Stanford Maternal and Child Health Research Institute" ;
+    schema:name "Stanford Maternal and Child Health Research Institute" ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03mtd9a03> ;
+        rdfs:label "Stanford Medicine" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-122.16608 37.42411)"^^geo:wktLiteral ;
+        schema:addressLocality "Stanford" ;
+    ] ;
+    schema:url <https://med.stanford.edu/mchri/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q124525764> ;
+             .

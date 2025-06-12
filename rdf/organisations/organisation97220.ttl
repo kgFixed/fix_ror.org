@@ -1,0 +1,178 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/045ydbe97> 
+    a org:Organization ;
+    rdfs:label "Institutos Nacionais de Ciência e Tecnologia" ;
+    schema:name "Institutos Nacionais de Ciência e Tecnologia" ;
+    schema:foundingDate "2008"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00ps5mk11> ;
+        rdfs:label "Instituto Nacional de Ciência e Tecnologia de Adaptações da Biota Aquática da Amazônia" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01wwe2m47> ;
+        rdfs:label "Instituto Nacional de Ciência e Tecnologia de Catálise em Sistemas Moleculares e Nanoestruturados" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01zr65j15> ;
+        rdfs:label "Instituto Nacional de Ciência e Tecnologia de Ciência Animal" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05fbb1126> ;
+        rdfs:label "Instituto Nacional de Ciência e Tecnologia de Doenças Tropicais" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03cqmba17> ;
+        rdfs:label "Instituto Nacional de Ciência e Tecnologia de Neurociência Translacional" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/026n0rw09> ;
+        rdfs:label "Instituto Nacional de Ciência e Tecnologia de Obesidade e Diabetes" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02zdrev82> ;
+        rdfs:label "Instituto Nacional de Ciência e Tecnologia de Processos Redox em Biomedicina" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02z2wec49> ;
+        rdfs:label "Instituto Nacional de Ciência e Tecnologia em Eletrônica Orgânica" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03bpesm64> ;
+        rdfs:label "Instituto Nacional de Ciência e Tecnologia em Entomologia Molecular" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03tydf244> ;
+        rdfs:label "Instituto Nacional de Ciência e Tecnologia em Excitotoxicidade e Neuroproteção" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0266vkh91> ;
+        rdfs:label "Instituto Nacional de Ciência e Tecnologia em Nanomateriais de Carbono" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/026g3rz20> ;
+        rdfs:label "Instituto Nacional de Ciência e Tecnologia em Toxinas" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04d357y30> ;
+        rdfs:label "Instituto Nacional de Ciência e Tecnologia para o Controle das Intoxicações por Plantas" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00xr47e92> ;
+        rdfs:label "Instituto Nacional de Ciências dos Materiais em Nanotecnologia" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/046dyet60> ;
+        rdfs:label "Instituto Nacional de Psiquiatria do Desenvolvimento para Crianças e Adolescentes" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/001c3w852> ;
+        rdfs:label "National Institute of Aquatic Toxicology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02g9hzn44> ;
+        rdfs:label "National Institute of Science and Mathematics Technology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03xqexp83> ;
+        rdfs:label "National Institute of Science and Technology Complex Fluids" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/044x68458> ;
+        rdfs:label "National Institute of Science and Technology for Structural Biology and Bioimaging" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04m5f1j71> ;
+        rdfs:label "National Institute of Science and Technology in Regenerative Medicine" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/053efsj20> ;
+        rdfs:label "National Institute of Science and Technology of Drugs and Medicines" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02x6jsy35> ;
+        rdfs:label "National Institute on Population Medical Genetics" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00fhn5k08> ;
+        rdfs:label "Instituto Nacional de Ciência e Tecnologia em Biodiversidade e Produtos Naturais" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04qk9rk19> ;
+        rdfs:label "Instituto Nacional de Ciência e Tecnologia: Física Nuclear e Aplicações" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/037pstq92> ;
+        rdfs:label "Instituto Nacional de Ciência e Tecnologia da Criosfera" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03swz6y49> ;
+        rdfs:label "National Council for Scientific and Technological Development" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-47.92972 -15.77972)"^^geo:wktLiteral ;
+        schema:addressLocality "Brasília" ;
+    ] ;
+    schema:url <http://inct.cnpq.br/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q10302597> ;
+             .

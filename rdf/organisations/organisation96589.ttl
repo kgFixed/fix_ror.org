@@ -1,0 +1,48 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01h14ww21> 
+    a org:Organization ;
+    rdfs:label "Laboratoire Kastler Brossel" ;
+    schema:name "Laboratoire Kastler Brossel" ;
+    schema:foundingDate "1951"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Kastler-Brossel_Laboratory> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04ex24z53> ;
+        rdfs:label "Collège de France" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00z54nq84> ;
+        rdfs:label "Institut de Physique" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02en5vm52> ;
+        rdfs:label "Sorbonne Université" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05a0dhs15> ;
+        rdfs:label "École Normale Supérieure - PSL" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.3488 48.85341)"^^geo:wktLiteral ;
+        schema:addressLocality "Paris" ;
+    ] ;
+    schema:url <https://www.lkb.upmc.fr> ;
+    schema:sameAs <http://isni.org/isni/0000000403685631> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3214375> ;
+             .

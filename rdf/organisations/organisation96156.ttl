@@ -1,0 +1,79 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/055n47h92> 
+    a org:Organization ;
+    rdfs:label "National Institutes of Natural Sciences" ;
+    schema:name "National Institutes of Natural Sciences" ;
+    schema:foundingDate "2004"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/National_Institutes_of_Natural_Sciences,_Japan> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/028z8qe34> ;
+        rdfs:label "Astrobiology Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04wqh5h97> ;
+        rdfs:label "Institute for Molecular Science" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/052rrw050> ;
+        rdfs:label "National Astronomical Observatory of Japan" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05q8wtt20> ;
+        rdfs:label "National Institute for Basic Biology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01t3wyv61> ;
+        rdfs:label "National Institute for Fusion Science" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/048v13307> ;
+        rdfs:label "National Institute for Physiological Sciences" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/005t7z309> ;
+        rdfs:label "The Exploratory Research Center on Life and Living Systems" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/048rj2z13> ;
+        rdfs:label "Ministry of Education, Culture, Sports, Science and Technology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Predecessor" ;
+        org:member <https://ror.org/000d53575> ;
+        rdfs:label "Okazaki National Research Institutes" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(139.69171 35.6895)"^^geo:wktLiteral ;
+        schema:addressLocality "Tokyo" ;
+    ] ;
+    schema:url <https://www.nins.jp> ;
+    schema:sameAs <http://isni.org/isni/0000000091376732> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6973767> ;
+             .

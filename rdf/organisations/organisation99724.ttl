@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03pkrdc36> 
+    a org:Organization ;
+    rdfs:label "PacifiCan" ;
+    schema:name "PacifiCan" ;
+    org:status "active" ;
+    org:classification "Funder" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/010q4q527> ;
+        rdfs:label "Government of Canada" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-123.11934 49.24966)"^^geo:wktLiteral ;
+        schema:addressLocality "Vancouver" ;
+    ] ;
+    schema:url <https://www.canada.ca/en/pacific-economic-development.html> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q18093428> ;
+             .

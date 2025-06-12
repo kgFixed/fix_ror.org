@@ -1,0 +1,26 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01h3km103> 
+    a org:Organization ;
+    rdfs:label "State Key Laboratory of Rolling Technology and Continuous Rolling Automation" ;
+    schema:name "State Key Laboratory of Rolling Technology and Continuous Rolling Automation" ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03awzbc87> ;
+        rdfs:label "Northeastern University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(123.43278 41.79222)"^^geo:wktLiteral ;
+        schema:addressLocality "Shenyang" ;
+    ] ;
+    schema:url <https://kjt.ln.gov.cn/kjt/cxpt/zdsys/17CAA012AE65438999F5F726111F07D1/index.shtml> ;
+     .

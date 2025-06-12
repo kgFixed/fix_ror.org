@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04fm85d87> 
+    a org:Organization ;
+    rdfs:label "Brevard County Board of County Commissioners" ;
+    schema:name "Brevard County Board of County Commissioners" ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-80.60811 28.08363)"^^geo:wktLiteral ;
+        schema:addressLocality "Melbourne" ;
+    ] ;
+    schema:url <http://www.brevardcounty.us/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30284298> ;
+             .

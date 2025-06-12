@@ -1,0 +1,206 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01cwqze88> 
+    a org:Organization ;
+    rdfs:label "National Institutes of Health" ;
+    schema:name "National Institutes of Health" ;
+    schema:foundingDate "1887"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/National_Institutes_of_Health> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03jh5a977> ;
+        rdfs:label "Center for Information Technology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04r5s4b52> ;
+        rdfs:label "Center for Scientific Review" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04byxyr05> ;
+        rdfs:label "Eunice Kennedy Shriver National Institute of Child Health and Human Development" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02xey9a22> ;
+        rdfs:label "Fogarty International Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/040gcmg81> ;
+        rdfs:label "National Cancer Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04pw6fb54> ;
+        rdfs:label "National Center for Advancing Translational Sciences" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00190t495> ;
+        rdfs:label "National Center for Complementary and Integrative Health" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03wkg3b53> ;
+        rdfs:label "National Eye Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/012pb6c26> ;
+        rdfs:label "National Heart Lung and Blood Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00baak391> ;
+        rdfs:label "National Human Genome Research Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/043z4tv69> ;
+        rdfs:label "National Institute of Allergy and Infectious Diseases" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/006zn3t30> ;
+        rdfs:label "National Institute of Arthritis and Musculoskeletal and Skin Diseases" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00372qc85> ;
+        rdfs:label "National Institute of Biomedical Imaging and Bioengineering" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/004a2wv92> ;
+        rdfs:label "National Institute of Dental and Craniofacial Research" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00adh9b73> ;
+        rdfs:label "National Institute of Diabetes and Digestive and Kidney Diseases" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00j4k1h63> ;
+        rdfs:label "National Institute of Environmental Health Sciences" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04q48ey07> ;
+        rdfs:label "National Institute of General Medical Sciences" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04xeg9z08> ;
+        rdfs:label "National Institute of Mental Health" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01s5ya894> ;
+        rdfs:label "National Institute of Neurological Disorders and Stroke" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01y3zfr79> ;
+        rdfs:label "National Institute of Nursing Research" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/049v75w11> ;
+        rdfs:label "National Institute on Aging" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02jzrsm59> ;
+        rdfs:label "National Institute on Alcohol Abuse and Alcoholism" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04mhx6838> ;
+        rdfs:label "National Institute on Deafness and Other Communication Disorders" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00fq5cm18> ;
+        rdfs:label "National Institute on Drug Abuse" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0493hgw16> ;
+        rdfs:label "National Institute on Minority Health and Health Disparities" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04vfsmv21> ;
+        rdfs:label "National Institutes of Health Clinical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00fj8a872> ;
+        rdfs:label "Office of the Director" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0060t0j89> ;
+        rdfs:label "United States National Library of Medicine" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01jdyfj45> ;
+        rdfs:label "Office of Research Infrastructure Programs" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/033jnv181> ;
+        rdfs:label "United States Department of Health and Human Services" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.10026 38.98067)"^^geo:wktLiteral ;
+        schema:addressLocality "Bethesda" ;
+    ] ;
+    schema:url <http://www.nih.gov/> ;
+    schema:sameAs <http://isni.org/isni/0000000122975165> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q390551> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6973636> ;
+             .

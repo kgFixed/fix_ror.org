@@ -1,0 +1,50 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00jmxvy70> 
+    a org:Organization ;
+    rdfs:label "Délégation Régionale Nord Ouest" ;
+    schema:name "Délégation Régionale Nord Ouest" ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00dyt5s15> ;
+        rdfs:label "Center for Infection and Immunity of Lille" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01c62av11> ;
+        rdfs:label "Groupe de Recherche sur l'Alcool et les Pharmacodépendances" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03c3m6m66> ;
+        rdfs:label "Lille Inflammation Research International Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05dm3m993> ;
+        rdfs:label "Protéomique, Réponse Inflammatoire et Spectrométrie de Masse" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02vjkv261> ;
+        rdfs:label "Inserm" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(3.05858 50.63297)"^^geo:wktLiteral ;
+        schema:addressLocality "Lille" ;
+    ] ;
+    schema:url <http://www.nord-ouest.inserm.fr/> ;
+     .

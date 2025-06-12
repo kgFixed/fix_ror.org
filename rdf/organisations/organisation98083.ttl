@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/054qehp48> 
+    a org:Organization ;
+    rdfs:label "Nederlandse Onderzoekschool Voor Astronomie" ;
+    schema:name "Nederlandse Onderzoekschool Voor Astronomie" ;
+    schema:foundingDate "1992"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Netherlands_Research_School_for_Astronomy> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(4.88969 52.37403)"^^geo:wktLiteral ;
+        schema:addressLocality "Amsterdam" ;
+    ] ;
+    schema:url <https://www.astronomie.nl> ;
+    schema:sameAs <http://isni.org/isni/0000000477708373> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2277304> ;
+             .

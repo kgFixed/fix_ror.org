@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04dndfk38> 
+    a org:Organization ;
+    rdfs:label "University of Bío-Bío" ;
+    schema:name "University of Bío-Bío" ;
+    schema:foundingDate "1947"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/University_of_the_B%C3%ADo_B%C3%ADo> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-73.04977 -36.82699)"^^geo:wktLiteral ;
+        schema:addressLocality "Concepción" ;
+    ] ;
+    schema:url <https://www.ubiobio.cl> ;
+    schema:sameAs <http://isni.org/isni/0000000121632064> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q38779> ;
+             .

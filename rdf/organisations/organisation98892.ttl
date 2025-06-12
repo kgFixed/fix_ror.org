@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/013355g38> 
+    a org:Organization ;
+    rdfs:label "Dalle Molle Institute for Artificial Intelligence Research" ;
+    schema:name "Dalle Molle Institute for Artificial Intelligence Research" ;
+    schema:foundingDate "1988"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Dalle_Molle_Institute_for_Artificial_Intelligence_Research> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05ep8g269> ;
+        rdfs:label "University of Applied Sciences and Arts of Southern Switzerland" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03c4atk17> ;
+        rdfs:label "Università della Svizzera italiana" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(8.96004 46.01008)"^^geo:wktLiteral ;
+        schema:addressLocality "Lugano" ;
+    ] ;
+    schema:url <http://www.idsia.ch/> ;
+    schema:sameAs <http://isni.org/isni/0000000086425392> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5211467> ;
+             .

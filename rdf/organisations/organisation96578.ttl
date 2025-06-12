@@ -1,0 +1,85 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05h992307> 
+    a org:Organization ;
+    rdfs:label "Pacific Northwest National Laboratory" ;
+    schema:name "Pacific Northwest National Laboratory" ;
+    schema:foundingDate "1965"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Pacific_Northwest_National_Laboratory> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/058cmd703> ;
+        rdfs:label "Joint Global Change Research Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04rc0xn13> ;
+        rdfs:label "Environmental Molecular Sciences Laboratory" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03wpv8896> ;
+        rdfs:label "Bioproducts Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/039fx6g98> ;
+        rdfs:label "Nuclear Science and Technology Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/014vdsh37> ;
+        rdfs:label "Advanced Grid Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01h5tnr73> ;
+        rdfs:label "Battelle" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00mmn6b08> ;
+        rdfs:label "Office of Science" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05cwx3318> ;
+        rdfs:label "National Microbiome Data Collaborative" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01dvj3d25> ;
+        rdfs:label "Atmospheric Radiation Measurement User Facility" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04n07f274> ;
+        rdfs:label "Materials Science in Extreme Environments University Research Alliance" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-119.28446 46.28569)"^^geo:wktLiteral ;
+        schema:addressLocality "Richland" ;
+    ] ;
+    schema:url <http://www.pnnl.gov/> ;
+    schema:sameAs <http://isni.org/isni/0000000122183491> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1076890> ;
+             .

@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03493zm15> 
+    a org:Organization ;
+    rdfs:label "Universitas DIPA Makassar" ;
+    schema:name "Universitas DIPA Makassar" ;
+    schema:foundingDate "1994"^^xsd:gYear ;
+    schema:sameAs <https://id.wikipedia.org/wiki/Universitas_Dipa_Makassar> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(119.43194 -5.14861)"^^geo:wktLiteral ;
+        schema:addressLocality "Makassar" ;
+    ] ;
+    schema:url <https://site.undipa.ac.id> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q109913185> ;
+             .

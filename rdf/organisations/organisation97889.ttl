@@ -1,0 +1,41 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01a8ev928> 
+    a org:Organization ;
+    rdfs:label "Xinjiang Institute of Ecology and Geography" ;
+    schema:name "Xinjiang Institute of Ecology and Geography" ;
+    schema:foundingDate "1998"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00q2dta10> ;
+        rdfs:label "Research Center for Ecology and Environment of Central Asia" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/058nm8p51> ;
+        rdfs:label "State Key Laboratory of Desert and Oasis Ecology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/034t30j35> ;
+        rdfs:label "Chinese Academy of Sciences" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(87.60046 43.80096)"^^geo:wktLiteral ;
+        schema:addressLocality "Ürümqi" ;
+    ] ;
+    schema:url <http://english.egi.cas.cn/> ;
+    schema:sameAs <http://isni.org/isni/0000000100386319> ;
+             .

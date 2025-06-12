@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02p6wqg36> 
+    a org:Organization ;
+    rdfs:label "Uncle Kory Foundation" ;
+    schema:name "Uncle Kory Foundation" ;
+    org:status "active" ;
+    org:classification "Funder" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-118.41647 33.91918)"^^geo:wktLiteral ;
+        schema:addressLocality "El Segundo" ;
+    ] ;
+    schema:url <https://www.unclekory.org> ;
+    schema:sameAs <http://isni.org/isni/0000000507290677> ;
+             .

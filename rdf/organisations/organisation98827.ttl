@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02avhnb77> 
+    a org:Organization ;
+    rdfs:label "Emerald Group Publishing (United Kingdom)" ;
+    schema:name "Emerald Group Publishing (United Kingdom)" ;
+    schema:foundingDate "1967"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Emerald_Group_Publishing> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/031tb8x29> ;
+        rdfs:label "The Emerald Foundation" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.83857 53.84861)"^^geo:wktLiteral ;
+        schema:addressLocality "Bingley" ;
+    ] ;
+    schema:url <https://www.emeraldgrouppublishing.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000403794459> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1335379> ;
+             .

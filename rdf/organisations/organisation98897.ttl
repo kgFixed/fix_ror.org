@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00235nr42> 
+    a org:Organization ;
+    rdfs:label "Universidade Federal de Itajubá" ;
+    schema:name "Universidade Federal de Itajubá" ;
+    schema:foundingDate "1913"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Federal_University_of_Itajub%C3%A1> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-45.45278 -22.42556)"^^geo:wktLiteral ;
+        schema:addressLocality "Itajubá" ;
+    ] ;
+    schema:url <https://unifei.edu.br> ;
+    schema:sameAs <http://isni.org/isni/0000000089924656> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7894372> ;
+             .

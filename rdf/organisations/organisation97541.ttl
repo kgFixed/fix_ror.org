@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00pfxsh56> 
+    a org:Organization ;
+    rdfs:label "Institute for Cross-Disciplinary Physics and Complex Systems" ;
+    schema:name "Institute for Cross-Disciplinary Physics and Complex Systems" ;
+    schema:foundingDate "2007"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/IFISC> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02gfc7t72> ;
+        rdfs:label "Consejo Superior de Investigaciones Científicas" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03e10x626> ;
+        rdfs:label "Universitat de les Illes Balears" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.65024 39.56939)"^^geo:wktLiteral ;
+        schema:addressLocality "Palma" ;
+    ] ;
+    schema:url <https://ifisc.uib-csic.es> ;
+    schema:sameAs <http://isni.org/isni/0000000417683290> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q16847098> ;
+             .

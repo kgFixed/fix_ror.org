@@ -1,0 +1,35 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00wq3fc38> 
+    a org:Organization ;
+    rdfs:label "Institut Botànic de Barcelona" ;
+    schema:name "Institut Botànic de Barcelona" ;
+    schema:foundingDate "1934"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00zg6q231> ;
+        rdfs:label "Ajuntament de Barcelona" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02gfc7t72> ;
+        rdfs:label "Consejo Superior de Investigaciones Científicas" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.15899 41.38879)"^^geo:wktLiteral ;
+        schema:addressLocality "Barcelona" ;
+    ] ;
+    schema:url <https://www.ibb.csic.es> ;
+    schema:sameAs <http://isni.org/isni/0000000121074293> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q20105081> ;
+             .

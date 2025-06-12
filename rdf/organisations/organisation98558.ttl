@@ -1,0 +1,85 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04b6nzv94> 
+    a org:Organization ;
+    rdfs:label "Brigham and Women's Hospital" ;
+    schema:name "Brigham and Women's Hospital" ;
+    schema:foundingDate "1980"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Brigham_and_Women%27s_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00z2tp793> ;
+        rdfs:label "Center for Neuro-Oncology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05rgrbr06> ;
+        rdfs:label "Dana-Farber Brigham Cancer Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/005m2at17> ;
+        rdfs:label "Harvard Affiliated Emergency Medicine Residency" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00wtrxf04> ;
+        rdfs:label "Osher Center for Integrative Medicine" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04py2rh25> ;
+        rdfs:label "Mass General Brigham" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05a0ya142> ;
+        rdfs:label "Broad Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04yd6pw26> ;
+        rdfs:label "Cape Cod Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03vek6s52> ;
+        rdfs:label "Harvard University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04v00sg98> ;
+        rdfs:label "VA Boston Healthcare System" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/008cfmj78> ;
+        rdfs:label "Wyss Institute for Biologically Inspired Engineering" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-71.05977 42.35843)"^^geo:wktLiteral ;
+        schema:addressLocality "Boston" ;
+    ] ;
+    schema:url <http://www.brighamandwomens.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000403788294> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2900977> ;
+             .

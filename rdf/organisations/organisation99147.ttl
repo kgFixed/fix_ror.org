@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00j9bjx58> 
+    a org:Organization ;
+    rdfs:label "Clinical Research Network Thames Valley and South Midlands" ;
+    schema:name "Clinical Research Network Thames Valley and South Midlands" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0187kwz08> ;
+        rdfs:label "National Institute for Health Research" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.25596 51.75222)"^^geo:wktLiteral ;
+        schema:addressLocality "Oxford" ;
+    ] ;
+    schema:url <https://local.nihr.ac.uk/lcrn/thames-valley-and-south-midlands/> ;
+     .

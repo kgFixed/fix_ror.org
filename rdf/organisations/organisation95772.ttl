@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02vzxfs32> 
+    a org:Organization ;
+    rdfs:label "California Department of Forestry and Fire Protection" ;
+    schema:name "California Department of Forestry and Fire Protection" ;
+    schema:foundingDate "1905"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/California_Department_of_Forestry_and_Fire_Protection> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0115n5160> ;
+        rdfs:label "California Natural Resources Agency" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/030sa3819> ;
+        rdfs:label "State of California" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-121.4944 38.58157)"^^geo:wktLiteral ;
+        schema:addressLocality "Sacramento" ;
+    ] ;
+    schema:url <https://www.fire.ca.gov> ;
+    schema:sameAs <http://isni.org/isni/0000000100239677> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5020422> ;
+             .

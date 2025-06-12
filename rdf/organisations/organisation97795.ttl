@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/039mtkw55> 
+    a org:Organization ;
+    rdfs:label "Wrexham Maelor Hospital" ;
+    schema:name "Wrexham Maelor Hospital" ;
+    schema:foundingDate "1826"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Wrexham_Maelor_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03awsb125> ;
+        rdfs:label "Betsi Cadwaladr University Health Board" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/006jb1a24> ;
+        rdfs:label "Bangor University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/048kc0s52> ;
+        rdfs:label "Wrexham University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-2.99132 53.04664)"^^geo:wktLiteral ;
+        schema:addressLocality "Wrexham" ;
+    ] ;
+    schema:url <https://bcuhb.nhs.wales/patients-and-visitors/hospitals-and-health-centres/wrexham-maelor-hospital/> ;
+    schema:sameAs <http://isni.org/isni/0000000088133684> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q8038122> ;
+             .

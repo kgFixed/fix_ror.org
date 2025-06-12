@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04gjc3902> 
+    a org:Organization ;
+    rdfs:label "Associação Catarinense de Bibliotecários" ;
+    schema:name "Associação Catarinense de Bibliotecários" ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-49.16383 -28.21344)"^^geo:wktLiteral ;
+        schema:addressLocality "São José" ;
+    ] ;
+    schema:url <https://www.acbsc.org.br> ;
+    schema:sameAs <http://isni.org/isni/0000000119573819> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q124035331> ;
+             .

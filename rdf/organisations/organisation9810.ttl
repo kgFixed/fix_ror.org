@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0016z8240> 
+    a org:Organization ;
+    rdfs:label "Liminal BioSciences (Canada)" ;
+    schema:name "Liminal BioSciences (Canada)" ;
+    schema:foundingDate "1994"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Liminal_BioSciences> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00vvx9s89> ;
+        rdfs:label "Liminal BioSciences (United Kingdom)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-73.692 45.56995)"^^geo:wktLiteral ;
+        schema:addressLocality "Laval" ;
+    ] ;
+    schema:url <https://liminalbiosciences.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000404852104> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q22907960> ;
+             .

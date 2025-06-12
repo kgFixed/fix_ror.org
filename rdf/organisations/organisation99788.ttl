@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05f1nfh63> 
+    a org:Organization ;
+    rdfs:label "Pardubice Regional Library" ;
+    schema:name "Pardubice Regional Library" ;
+    schema:foundingDate "1897"^^xsd:gYear ;
+    schema:sameAs <https://cs.wikipedia.org/wiki/Krajsk%C3%A1_knihovna_v_Pardubic%C3%Adch> ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04jycch17> ;
+        rdfs:label "Pardubice Region" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(15.77659 50.04075)"^^geo:wktLiteral ;
+        schema:addressLocality "Pardubice" ;
+    ] ;
+    schema:url <https://kkpce.cz/cs> ;
+    schema:sameAs <http://isni.org/isni/0000000089651619> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q69356320> ;
+             .

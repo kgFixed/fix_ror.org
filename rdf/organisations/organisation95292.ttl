@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02fd9re36> 
+    a org:Organization ;
+    rdfs:label "Loral (United States)" ;
+    schema:name "Loral (United States)" ;
+    schema:foundingDate "1948"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Loral_Corporation> ;
+    org:status "inactive" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/0115d8s26> ;
+        rdfs:label "Loral Space & Communications (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-74.00597 40.71427)"^^geo:wktLiteral ;
+        schema:addressLocality "New York" ;
+    ] ;
+    schema:sameAs <http://www.wikidata.org/entity/Q6678757> ;
+             .

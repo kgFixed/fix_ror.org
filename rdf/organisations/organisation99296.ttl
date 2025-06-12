@@ -1,0 +1,35 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01qbsyz51> 
+    a org:Organization ;
+    rdfs:label "Ayub Agriculture Research Institute" ;
+    schema:name "Ayub Agriculture Research Institute" ;
+    schema:foundingDate "1962"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0262vjy29> ;
+        rdfs:label "Government of Punjab" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/054d77k59> ;
+        rdfs:label "University of Agriculture Faisalabad" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(73.08969 31.41554)"^^geo:wktLiteral ;
+        schema:addressLocality "Faisalabad" ;
+    ] ;
+    schema:url <https://aari.punjab.gov.pk> ;
+    schema:sameAs <http://isni.org/isni/0000000417612011> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30262796> ;
+             .

@@ -1,0 +1,133 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04d23a975> 
+    a org:Organization ;
+    rdfs:label "United States Naval Research Laboratory" ;
+    schema:name "United States Naval Research Laboratory" ;
+    schema:foundingDate "1923"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/United_States_Naval_Research_Laboratory> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03p2cen66> ;
+        rdfs:label "Naval Research Laboratory Radar Division" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04xfp8b22> ;
+        rdfs:label "Naval Research Laboratory Information Technology Division" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03j9xzm13> ;
+        rdfs:label "Naval Research Laboratory Optical Sciences Division" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01dnwt956> ;
+        rdfs:label "Naval Research Laboratory Tactical Electronic Warfare Division" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02t78x693> ;
+        rdfs:label "Naval Research Laboratory Laboratories for Computational Physics & Fluid Dynamics" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/025vw1435> ;
+        rdfs:label "Naval Research Laboratory Chemistry Division" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02n8rtn22> ;
+        rdfs:label "Naval Research Laboratory Materials Science and Technology Division" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01kg1t878> ;
+        rdfs:label "Naval Research Laboratory Plasma Physics Division" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03bra7668> ;
+        rdfs:label "Naval Research Laboratory Electronics Science and Technology Division" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/021m46s67> ;
+        rdfs:label "Naval Research Laboratory Center for Bio/Molecular Science and Engineering" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/014bhwj77> ;
+        rdfs:label "Naval Research Laboratory Acoustics Division" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0366raz47> ;
+        rdfs:label "Naval Research Laboratory Remote Sensing Division" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00nzxdq35> ;
+        rdfs:label "Naval Research Laboratory Ocean Sciences Division" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03rj0mt16> ;
+        rdfs:label "Naval Research Laboratory Marine Meteorology Division" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03hx19n93> ;
+        rdfs:label "Naval Research Laboratory Space Science Division" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05rr9sv60> ;
+        rdfs:label "Naval Research Laboratory Space Systems Development Division" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/015k93458> ;
+        rdfs:label "Naval Research Laboratory Spacecraft Engineering Division" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00rk2pe57> ;
+        rdfs:label "Office of Naval Research" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.03637 38.89511)"^^geo:wktLiteral ;
+        schema:addressLocality "Washington" ;
+    ] ;
+    schema:url <http://www.nrl.navy.mil/> ;
+    schema:sameAs <http://isni.org/isni/0000000405910193> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1499258> ;
+             .

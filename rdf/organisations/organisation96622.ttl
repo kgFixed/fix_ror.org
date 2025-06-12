@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05pyq8e17> 
+    a org:Organization ;
+    rdfs:label "General Dynamics (United States)" ;
+    schema:name "General Dynamics (United States)" ;
+    schema:foundingDate "1899"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/General_Dynamics> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0113m2308> ;
+        rdfs:label "General Dynamics (Canada)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04k0jj762> ;
+        rdfs:label "General Dynamics (United Kingdom)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.3411 38.96872)"^^geo:wktLiteral ;
+        schema:addressLocality "Reston" ;
+    ] ;
+    schema:url <https://www.gd.com> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q502940> ;
+             .

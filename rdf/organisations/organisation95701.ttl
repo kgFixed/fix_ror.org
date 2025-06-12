@@ -1,0 +1,69 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05kewds18> 
+    a org:Organization ;
+    rdfs:label "Northrop Grumman (United States)" ;
+    schema:name "Northrop Grumman (United States)" ;
+    schema:foundingDate "1994"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Northrop_Grumman> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02083pn15> ;
+        rdfs:label "Northrop Grumman (France)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/043wc6127> ;
+        rdfs:label "Northrop Grumman (Germany)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02sr8z564> ;
+        rdfs:label "Northrop Grumman (Norway)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02qjwrc97> ;
+        rdfs:label "Northrop Grumman (United Kingdom)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Predecessor" ;
+        org:member <https://ror.org/03a502s36> ;
+        rdfs:label "Orbital ATK (United States)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Predecessor" ;
+        org:member <https://ror.org/05g920e57> ;
+        rdfs:label "Litton Industries (United States)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Predecessor" ;
+        org:member <https://ror.org/02h0cdt26> ;
+        rdfs:label "BDM International (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.17109 38.88233)"^^geo:wktLiteral ;
+        schema:addressLocality "Falls Church" ;
+    ] ;
+    schema:url <http://www.northropgrumman.com/Pages/default.aspx> ;
+    schema:sameAs <http://isni.org/isni/0000000406344349> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q329953> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q38816650> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7059676> ;
+             .

@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/000t0f062> 
+    a org:Organization ;
+    rdfs:label "Education University of Hong Kong" ;
+    schema:name "Education University of Hong Kong" ;
+    schema:foundingDate "1994"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Education_University_of_Hong_Kong> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(114.16877 22.45007)"^^geo:wktLiteral ;
+        schema:addressLocality "Tai Po" ;
+    ] ;
+    schema:url <https://www.eduhk.hk/main/> ;
+    schema:sameAs <http://isni.org/isni/0000000417996254> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5968342> ;
+             .

@@ -1,0 +1,44 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0263t7p64> 
+    a org:Organization ;
+    rdfs:label "Chan Zuckerberg Biohub New York" ;
+    schema:name "Chan Zuckerberg Biohub New York" ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02qenvm24> ;
+        rdfs:label "Chan Zuckerberg Initiative (United States)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00hj8s172> ;
+        rdfs:label "Columbia University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0420db125> ;
+        rdfs:label "Rockefeller University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03v76x132> ;
+        rdfs:label "Yale University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-74.00597 40.71427)"^^geo:wktLiteral ;
+        schema:addressLocality "New York" ;
+    ] ;
+    schema:url <https://www.czbiohub.org/ny/> ;
+     .

@@ -1,0 +1,26 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/055wjj883> 
+    a org:Organization ;
+    rdfs:label "Institut de Biosciences et Biotechnologies" ;
+    schema:name "Institut de Biosciences et Biotechnologies" ;
+    org:status "inactive" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00byxdz40> ;
+        rdfs:label "lnstitut de Recherche Interdisciplinaire de Grenoble" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(5.50291 43.69415)"^^geo:wktLiteral ;
+        schema:addressLocality "Pertuis" ;
+    ] ;
+    schema:url <http://big.cea.fr/drf/big> ;
+     .

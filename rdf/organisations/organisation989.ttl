@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05j91v252> 
+    a org:Organization ;
+    rdfs:label "Oregon Research Institute" ;
+    schema:name "Oregon Research Institute" ;
+    schema:foundingDate "1960"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Oregon_Research_Institute> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-123.08675 44.05207)"^^geo:wktLiteral ;
+        schema:addressLocality "Eugene" ;
+    ] ;
+    schema:url <http://www.ori.org/> ;
+    schema:sameAs <http://isni.org/isni/000000012110136X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7101310> ;
+             .

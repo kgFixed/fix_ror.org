@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05pwsnp59> 
+    a org:Organization ;
+    rdfs:label "Cambia Health Foundation" ;
+    schema:name "Cambia Health Foundation" ;
+    schema:foundingDate "2007"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03q9jj782> ;
+        rdfs:label "Cambia Health Solutions (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-122.67621 45.52345)"^^geo:wktLiteral ;
+        schema:addressLocality "Portland" ;
+    ] ;
+    schema:url <https://www.cambiahealthfoundation.org> ;
+    schema:sameAs <http://isni.org/isni/000000048306720X> ;
+             .

@@ -1,0 +1,90 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/048rj2z13> 
+    a org:Organization ;
+    rdfs:label "Ministry of Education, Culture, Sports, Science and Technology" ;
+    schema:name "Ministry of Education, Culture, Sports, Science and Technology" ;
+    schema:foundingDate "1871"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Ministry_of_Education,_Culture,_Sports,_Science_and_Technology> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01ye9d912> ;
+        rdfs:label "Asian Growth Research Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01g5y5k24> ;
+        rdfs:label "High Energy Accelerator Research Organization" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00hhkn466> ;
+        rdfs:label "Japan Society for the Promotion of Science" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0182n4f20> ;
+        rdfs:label "National Center for University Entrance Examinations" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/007h0zf03> ;
+        rdfs:label "National Institute for Educational Policy Research" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00kbjsx88> ;
+        rdfs:label "National Institute of Science and Technology Policy" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02ewp2621> ;
+        rdfs:label "National Women's Education Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/031dp5151> ;
+        rdfs:label "Earth-Life Science Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/040xx6p34> ;
+        rdfs:label "National Institutes for the Humanities" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/055n47h92> ;
+        rdfs:label "National Institutes of Natural Sciences" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04p4e8t29> ;
+        rdfs:label "Research Organization of Information and Systems" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(139.69171 35.6895)"^^geo:wktLiteral ;
+        schema:addressLocality "Tokyo" ;
+    ] ;
+    schema:url <http://www.mext.go.jp/english/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q1054379> ;
+             .

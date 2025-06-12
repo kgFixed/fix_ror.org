@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03fz4fp45> 
+    a org:Organization ;
+    rdfs:label "Instituto de Ciencias del Patrimonio" ;
+    schema:name "Instituto de Ciencias del Patrimonio" ;
+    schema:foundingDate "2010"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02gfc7t72> ;
+        rdfs:label "Consejo Superior de Investigaciones Científicas" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-8.54569 42.88052)"^^geo:wktLiteral ;
+        schema:addressLocality "Santiago de Compostela" ;
+    ] ;
+    schema:url <https://www.incipit.csic.es> ;
+    schema:sameAs <http://isni.org/isni/0000000453128198> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q63759214> ;
+             .

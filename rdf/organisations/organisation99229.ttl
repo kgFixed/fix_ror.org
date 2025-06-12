@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00arpt780> 
+    a org:Organization ;
+    rdfs:label "Institute for Marine and Antarctic Studies" ;
+    schema:name "Institute for Marine and Antarctic Studies" ;
+    schema:foundingDate "2010"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Institute_for_Marine_and_Antarctic_Studies> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01nfmeh72> ;
+        rdfs:label "University of Tasmania" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(147.33324 -42.88995)"^^geo:wktLiteral ;
+        schema:addressLocality "Battery Point" ;
+    ] ;
+    schema:url <http://www.imas.utas.edu.au> ;
+    schema:sameAs <http://isni.org/isni/0000000458944338> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6039487> ;
+             .

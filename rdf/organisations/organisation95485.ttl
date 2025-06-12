@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04hj96d73> 
+    a org:Organization ;
+    rdfs:label "Union Carbide (United States)" ;
+    schema:name "Union Carbide (United States)" ;
+    schema:foundingDate "1917"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Union_Carbide> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/032hx4q18> ;
+        rdfs:label "Dow Chemical (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-96.71359 28.41528)"^^geo:wktLiteral ;
+        schema:addressLocality "Seadrift" ;
+    ] ;
+    schema:url <https://www.unioncarbide.com> ;
+    schema:sameAs <http://isni.org/isni/0000000088597171> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q908553> ;
+             .

@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05gh16g69> 
+    a org:Organization ;
+    rdfs:label "Associação para o Desenvolvimento da Aerodinâmica Industrial" ;
+    schema:name "Associação para o Desenvolvimento da Aerodinâmica Industrial" ;
+    schema:foundingDate "1990"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Other" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04z8k9a98> ;
+        rdfs:label "University of Coimbra" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-8.41955 40.20564)"^^geo:wktLiteral ;
+        schema:addressLocality "Coimbra" ;
+    ] ;
+    schema:url <https://www.uc.pt/adai/> ;
+    schema:sameAs <http://isni.org/isni/0000000094000079> ;
+             .

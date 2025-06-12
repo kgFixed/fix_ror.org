@@ -1,0 +1,151 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02nt5es71> 
+    a org:Organization ;
+    rdfs:label "Alberta Health Services" ;
+    schema:name "Alberta Health Services" ;
+    schema:foundingDate "2008"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Alberta_Health_Services> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02h4hqt24> ;
+        rdfs:label "Alberta Bone and Joint Health Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02f5z8140> ;
+        rdfs:label "Alberta Hip and Knee Clinic" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03nw9hs25> ;
+        rdfs:label "Alberta Hospital Edmonton" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00g6ztp19> ;
+        rdfs:label "Calgary Laboratory Services" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04dbasv67> ;
+        rdfs:label "Canmore General Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04me72w78> ;
+        rdfs:label "Chinook Regional Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00d5e0a67> ;
+        rdfs:label "Devon General Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/014has228> ;
+        rdfs:label "Fort Saskatchewan Community Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02n2n9a06> ;
+        rdfs:label "Glenrose Rehabilitation Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03yn2qz25> ;
+        rdfs:label "Leduc Community Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04zg8gg70> ;
+        rdfs:label "Lloydminster Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/040pmw620> ;
+        rdfs:label "Medicine Hat Regional Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04f7crx66> ;
+        rdfs:label "Red Deer Regional Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05tg8p317> ;
+        rdfs:label "Rockyview General Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00wyx7h61> ;
+        rdfs:label "Royal Alexandra Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04pfbqx48> ;
+        rdfs:label "South Health Campus" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05w90nk74> ;
+        rdfs:label "Stollery Children's Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02mtj1m22> ;
+        rdfs:label "Strathcona Community Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00169ff80> ;
+        rdfs:label "Sturgeon Community Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/013e81n30> ;
+        rdfs:label "University of Alberta Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00gmyvv50> ;
+        rdfs:label "Alberta Children's Hospital Research Institute" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-113.46871 53.55014)"^^geo:wktLiteral ;
+        schema:addressLocality "Edmonton" ;
+    ] ;
+    schema:url <http://www.albertahealthservices.ca/> ;
+    schema:sameAs <http://isni.org/isni/0000000106938815> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4711650> ;
+             .

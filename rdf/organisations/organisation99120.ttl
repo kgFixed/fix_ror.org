@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/047179s14> 
+    a org:Organization ;
+    rdfs:label "Universidad Nacional Abierta y a Distancia" ;
+    schema:name "Universidad Nacional Abierta y a Distancia" ;
+    schema:foundingDate "1981"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03vc2bp93> ;
+        rdfs:label "UNAD Florida" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-74.08175 4.60971)"^^geo:wktLiteral ;
+        schema:addressLocality "Bogotá" ;
+    ] ;
+    schema:url <https://www.unad.edu.co/> ;
+    schema:sameAs <http://isni.org/isni/000000009497122X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5556466> ;
+             .

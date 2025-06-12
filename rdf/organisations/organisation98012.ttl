@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03j92cn97> 
+    a org:Organization ;
+    rdfs:label "Shanxi Jincheng Anthracite Mining Group (China)" ;
+    schema:name "Shanxi Jincheng Anthracite Mining Group (China)" ;
+    schema:foundingDate "1958"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Jincheng_Anthracite_Mining_Group> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/032efk559> ;
+        rdfs:label "State Key Laboratory of Co-mining of Coal and Coal-Bed Methane" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(112.83278 35.50222)"^^geo:wktLiteral ;
+        schema:addressLocality "Jincheng" ;
+    ] ;
+    schema:url <http://www.jamg.cn/xyv5/> ;
+     .

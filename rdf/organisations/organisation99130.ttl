@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/013xphc70> 
+    a org:Organization ;
+    rdfs:label "Iloilo State University of Fisheries Science and Technology" ;
+    schema:name "Iloilo State University of Fisheries Science and Technology" ;
+    schema:foundingDate "1957"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Iloilo_State_University_of_Fisheries_Science_and_Technology> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(122.70444 10.89417)"^^geo:wktLiteral ;
+        schema:addressLocality "Barotac Nuevo" ;
+    ] ;
+    schema:url <https://isufst.edu.ph> ;
+    schema:sameAs <http://isni.org/isni/0000000497185303> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6000961> ;
+             .

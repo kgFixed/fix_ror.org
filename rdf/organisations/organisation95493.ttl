@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02hcx7n63> 
+    a org:Organization ;
+    rdfs:label "Toho University" ;
+    schema:name "Toho University" ;
+    schema:foundingDate "1925"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Toho_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02xrm8w90> ;
+        rdfs:label "Toho University Medical Center Sakura Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00mre2126> ;
+        rdfs:label "Toho University Ohashi Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00qf0yp70> ;
+        rdfs:label "Toho University Omori Medical Center" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(139.69171 35.6895)"^^geo:wktLiteral ;
+        schema:addressLocality "Tokyo" ;
+    ] ;
+    schema:url <https://global.toho-u.ac.jp> ;
+    schema:sameAs <http://isni.org/isni/0000000092909879> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q8192864> ;
+             .

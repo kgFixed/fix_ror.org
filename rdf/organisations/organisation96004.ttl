@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/050sd4346> 
+    a org:Organization ;
+    rdfs:label "U.S. Army Yuma Test Center" ;
+    schema:name "U.S. Army Yuma Test Center" ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0189w2q14> ;
+        rdfs:label "United States Army Test and Evaluation Command" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-114.11808 32.86139)"^^geo:wktLiteral ;
+        schema:addressLocality "Yuma Proving Ground" ;
+    ] ;
+    schema:url <https://www.atec.army.mil/ypg/ytc.html> ;
+     .

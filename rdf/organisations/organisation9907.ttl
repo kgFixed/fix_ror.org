@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00wbcgc67> 
+    a org:Organization ;
+    rdfs:label "Johnson Matthey (United States)" ;
+    schema:name "Johnson Matthey (United States)" ;
+    schema:foundingDate "1817"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Johnson_Matthey> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01411sx56> ;
+        rdfs:label "Johnson Matthey (United Kingdom)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-75.38769 40.044)"^^geo:wktLiteral ;
+        schema:addressLocality "Wayne" ;
+    ] ;
+    schema:url <https://matthey.com/about-us/contact-us> ;
+    schema:sameAs <http://isni.org/isni/0000000404136108> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q28971965> ;
+             .

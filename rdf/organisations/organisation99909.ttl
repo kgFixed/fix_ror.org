@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02tjqwz24> 
+    a org:Organization ;
+    rdfs:label "Research Institute for Fodder Crops (Czechia)" ;
+    schema:name "Research Institute for Fodder Crops (Czechia)" ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05eq3gw79> ;
+        rdfs:label "Agricultural Research, Ltd. (Czechia)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(16.51078 49.16951)"^^geo:wktLiteral ;
+        schema:addressLocality "Troubsko" ;
+    ] ;
+    schema:url <http://www.vupt.cz/en/english/basic-information/> ;
+    schema:sameAs <http://isni.org/isni/0000000122226009> ;
+             .

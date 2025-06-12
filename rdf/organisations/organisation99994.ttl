@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01raz2h88> 
+    a org:Organization ;
+    rdfs:label "Université Thomas SANKARA" ;
+    schema:name "Université Thomas SANKARA" ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.53388 12.36566)"^^geo:wktLiteral ;
+        schema:addressLocality "Ouagadougou" ;
+    ] ;
+    schema:url <https://www.uts.bf> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q123382565> ;
+             .

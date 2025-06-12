@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01df4mv68> 
+    a org:Organization ;
+    rdfs:label "Government of Extremadura" ;
+    schema:name "Government of Extremadura" ;
+    schema:foundingDate "1983"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Government_of_Extremadura> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02a6ezh03> ;
+        rdfs:label "Consejería de Educación y Empleo" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-6.97061 38.87789)"^^geo:wktLiteral ;
+        schema:addressLocality "Badajoz" ;
+    ] ;
+    schema:url <https://www.juntaex.es> ;
+    schema:sameAs <http://isni.org/isni/0000000119453489> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q51517> ;
+             .

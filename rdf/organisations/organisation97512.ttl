@@ -1,0 +1,48 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/049d6bh38> 
+    a org:Organization ;
+    rdfs:label "Institute of Geochemistry" ;
+    schema:name "Institute of Geochemistry" ;
+    schema:foundingDate "1966"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Institute_of_Geochemistry> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04gq84p09> ;
+        rdfs:label "State Key Laboratory of Environmental Geochemistry" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04b6v9z58> ;
+        rdfs:label "State Key Laboratory of Mineral Deposit Geochemistry" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03t0yb134> ;
+        rdfs:label "State Key Laboratory of Loess and Quaternary Geology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/034t30j35> ;
+        rdfs:label "Chinese Academy of Sciences" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(106.71667 26.58333)"^^geo:wktLiteral ;
+        schema:addressLocality "Guiyang" ;
+    ] ;
+    schema:url <http://english.gyig.cas.cn/> ;
+    schema:sameAs <http://isni.org/isni/0000000418066526> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q16904213> ;
+             .

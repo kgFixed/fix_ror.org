@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01mqjeb88> 
+    a org:Organization ;
+    rdfs:label "Språkbanken Sam" ;
+    schema:name "Språkbanken Sam" ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05qhvy459> ;
+        rdfs:label "Språkbanken" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(17.63889 59.85882)"^^geo:wktLiteral ;
+        schema:addressLocality "Uppsala" ;
+    ] ;
+    schema:url <https://www.isof.se/lar-dig-mer/forskning/sprakbanken-sam> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q95573144> ;
+             .

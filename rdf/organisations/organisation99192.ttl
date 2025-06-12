@@ -1,0 +1,72 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03q82t418> 
+    a org:Organization ;
+    rdfs:label "NHS Lothian" ;
+    schema:name "NHS Lothian" ;
+    schema:foundingDate "2001"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/NHS_Lothian> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01wx86652> ;
+        rdfs:label "Astley Ainslie Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05sqvht74> ;
+        rdfs:label "Midlothian Community Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00jz7d133> ;
+        rdfs:label "Princess Alexandra Eye Pavilion" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04jxcef68> ;
+        rdfs:label "Royal Edinburgh Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01w7h4t60> ;
+        rdfs:label "Royal Hospital for Sick Children" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01hssm416> ;
+        rdfs:label "St John's Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/009kr6r15> ;
+        rdfs:label "Western General Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0545we460> ;
+        rdfs:label "South-East Scotland School of Anaesthesia" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-3.19648 55.95206)"^^geo:wktLiteral ;
+        schema:addressLocality "Edinburgh" ;
+    ] ;
+    schema:url <http://www.nhslothian.scot.nhs.uk/Pages/default.aspx> ;
+    schema:sameAs <http://isni.org/isni/0000000103880742> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6954149> ;
+             .

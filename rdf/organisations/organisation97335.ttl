@@ -1,0 +1,49 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00prkya54> 
+    a org:Organization ;
+    rdfs:label "Dalian Institute of Chemical Physics" ;
+    schema:name "Dalian Institute of Chemical Physics" ;
+    schema:foundingDate "1949"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Dalian_Institute_of_Chemical_Physics> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04b7wbe03> ;
+        rdfs:label "Dalian National Laboratory for Clean Energy" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04wsvdt21> ;
+        rdfs:label "State Key Laboratory of Catalysis" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03j283p93> ;
+        rdfs:label "State Key Laboratory of Molecular Reaction Dynamics" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/034t30j35> ;
+        rdfs:label "Chinese Academy of Sciences" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(121.60222 38.91222)"^^geo:wktLiteral ;
+        schema:addressLocality "Dalian" ;
+    ] ;
+    schema:url <http://english.dicp.cas.cn/> ;
+    schema:sameAs <http://isni.org/isni/000000041793300X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5210926> ;
+             .

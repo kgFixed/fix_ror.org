@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03eznrw16> 
+    a org:Organization ;
+    rdfs:label "Berlin University of the Arts" ;
+    schema:name "Berlin University of the Arts" ;
+    schema:foundingDate "1696"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Berlin_University_of_the_Arts> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0086bb350> ;
+        rdfs:label "Einstein Center Digital Future" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0029pc197> ;
+        rdfs:label "Institute of Electronic Business" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/023kksk09> ;
+        rdfs:label "Weizenbaum Institute" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(13.41053 52.52437)"^^geo:wktLiteral ;
+        schema:addressLocality "Berlin" ;
+    ] ;
+    schema:url <https://www.udk-berlin.de/en/home/> ;
+    schema:sameAs <http://isni.org/isni/0000000118872825> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q55038> ;
+             .

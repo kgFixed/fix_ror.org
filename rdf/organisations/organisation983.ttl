@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0060t0j89> 
+    a org:Organization ;
+    rdfs:label "United States National Library of Medicine" ;
+    schema:name "United States National Library of Medicine" ;
+    schema:foundingDate "1836"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/United_States_National_Library_of_Medicine> ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02meqm098> ;
+        rdfs:label "National Center for Biotechnology Information" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01cwqze88> ;
+        rdfs:label "National Institutes of Health" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.10026 38.98067)"^^geo:wktLiteral ;
+        schema:addressLocality "Bethesda" ;
+    ] ;
+    schema:url <https://www.nlm.nih.gov/> ;
+    schema:sameAs <http://isni.org/isni/0000000405077840> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q611833> ;
+             .

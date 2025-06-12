@@ -1,0 +1,95 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/030sa3819> 
+    a org:Organization ;
+    rdfs:label "State of California" ;
+    schema:name "State of California" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Government_of_California> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02je1hv25> ;
+        rdfs:label "California Department of Education" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00vmaka31> ;
+        rdfs:label "California Department of Conservation" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04d46jp54> ;
+        rdfs:label "California Department of Transportation" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/011cc8156> ;
+        rdfs:label "California Department of Public Health" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01xtfh998> ;
+        rdfs:label "California Department of Pesticide Regulation" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04ma4gj04> ;
+        rdfs:label "California Department of Food and Agriculture" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02q70n095> ;
+        rdfs:label "California Department of Health Care Services" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02v6w2r95> ;
+        rdfs:label "California Department of Fish and Wildlife" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04fq21t14> ;
+        rdfs:label "California Department of Toxic Substances Control" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01db6pq27> ;
+        rdfs:label "California Department of Parks and Recreation" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02vzxfs32> ;
+        rdfs:label "California Department of Forestry and Fire Protection" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00z0y4310> ;
+        rdfs:label "California Department of Alcohol and Drug Programs" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-121.4944 38.58157)"^^geo:wktLiteral ;
+        schema:addressLocality "Sacramento" ;
+    ] ;
+    schema:url <https://www.ca.gov/Government/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q5589189> ;
+             .

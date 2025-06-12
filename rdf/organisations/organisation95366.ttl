@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/022j0mn33> 
+    a org:Organization ;
+    rdfs:label "U.S. Army Combat Capabilities Development Command Chemical Biological Center" ;
+    schema:name "U.S. Army Combat Capabilities Development Command Chemical Biological Center" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Edgewood_Chemical_Biological_Center> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02rdkx920> ;
+        rdfs:label "United States Army Combat Capabilities Development Command" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-76.13066 39.46686)"^^geo:wktLiteral ;
+        schema:addressLocality "Aberdeen Proving Ground" ;
+    ] ;
+    schema:url <https://www.cbc.devcom.army.mil> ;
+    schema:sameAs <http://isni.org/isni/000000012112166X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5337883> ;
+             .

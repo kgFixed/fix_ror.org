@@ -1,0 +1,40 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05c92t973> 
+    a org:Organization ;
+    rdfs:label "Tenaris (Luxembourg)" ;
+    schema:name "Tenaris (Luxembourg)" ;
+    schema:foundingDate "2001"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Tenaris> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03ch1rj44> ;
+        rdfs:label "Tenaris (Argentina)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01aq5nn23> ;
+        rdfs:label "Tenaris (United States)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05d2nrb83> ;
+        rdfs:label "Tenaris (Venezuela)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(6.13 49.61167)"^^geo:wktLiteral ;
+        schema:addressLocality "Luxembourg" ;
+    ] ;
+    schema:url <http://www.tenaris.com/> ;
+     .

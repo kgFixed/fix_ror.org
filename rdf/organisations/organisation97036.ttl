@@ -1,0 +1,34 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04qeh2h86> 
+    a org:Organization ;
+    rdfs:label "Institut Català de Paleontologia Miquel Crusafont" ;
+    schema:name "Institut Català de Paleontologia Miquel Crusafont" ;
+    schema:foundingDate "1969"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01bkbaq61> ;
+        rdfs:label "CERCA Institution" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/052g8jq94> ;
+        rdfs:label "Universitat Autònoma de Barcelona" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.14079 41.49109)"^^geo:wktLiteral ;
+        schema:addressLocality "Cerdanyola del Vallès" ;
+    ] ;
+    schema:url <https://www.icp.cat> ;
+    schema:sameAs <http://isni.org/isni/0000000417624143> ;
+             .

@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02bv3c993> 
+    a org:Organization ;
+    rdfs:label "Academy of Military Medical Sciences" ;
+    schema:name "Academy of Military Medical Sciences" ;
+    schema:foundingDate "1951"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Academy_of_Military_Medical_Sciences> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02kdgk225> ;
+        rdfs:label "State Key Laboratory of Pathogenic Microorganism Biosafety" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/019bev041> ;
+        rdfs:label "State Key Laboratory of Proteomics" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00vrd0936> ;
+        rdfs:label "307th Hospital of Chinese People’s Liberation Army" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(116.39723 39.9075)"^^geo:wktLiteral ;
+        schema:addressLocality "Beijing" ;
+    ] ;
+    schema:url <http://www.bmi.ac.cn/> ;
+    schema:sameAs <http://isni.org/isni/0000000418034911> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q10872936> ;
+             .

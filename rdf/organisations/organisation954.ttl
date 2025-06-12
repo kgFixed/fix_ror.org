@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00c8v4891> 
+    a org:Organization ;
+    rdfs:label "Long Island Jewish Medical Center" ;
+    schema:name "Long Island Jewish Medical Center" ;
+    schema:foundingDate "1949"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Long_Island_Jewish_Medical_Center> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/026n33e29> ;
+        rdfs:label "Cohen Children's Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05p9y3e72> ;
+        rdfs:label "Schneider Children's Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02bxt4m23> ;
+        rdfs:label "Northwell Health" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-73.68791 40.7351)"^^geo:wktLiteral ;
+        schema:addressLocality "New Hyde Park" ;
+    ] ;
+    schema:url <https://lij.northwell.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000121738133> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6672700> ;
+             .

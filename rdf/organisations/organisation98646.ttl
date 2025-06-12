@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05x643e19> 
+    a org:Organization ;
+    rdfs:label "Corewell Health Butterworth Hospital" ;
+    schema:name "Corewell Health Butterworth Hospital" ;
+    schema:foundingDate "1875"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Butterworth_Hospital_(Michigan)> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02hb5yj49> ;
+        rdfs:label "Corewell Health" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05hs6h993> ;
+        rdfs:label "Michigan State University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-85.66809 42.96336)"^^geo:wktLiteral ;
+        schema:addressLocality "Grand Rapids" ;
+    ] ;
+    schema:url <http://www.spectrumhealth.org/butterworth> ;
+    schema:sameAs <http://isni.org/isni/0000000404505989> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5003039> ;
+             .

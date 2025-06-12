@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/045380x72> 
+    a org:Organization ;
+    rdfs:label "Honey bee and Silkworm Research Unit" ;
+    schema:name "Honey bee and Silkworm Research Unit" ;
+    schema:foundingDate "1931"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0327f2m07> ;
+        rdfs:label "Consiglio per la ricerca in agricoltura e l’analisi dell’economia agraria" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(11.33875 44.49381)"^^geo:wktLiteral ;
+        schema:addressLocality "Bologna" ;
+    ] ;
+    schema:url <http://api.entecra.it/> ;
+    schema:sameAs <http://isni.org/isni/0000000446793771> ;
+             .

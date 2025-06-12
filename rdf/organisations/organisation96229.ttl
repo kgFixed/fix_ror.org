@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01wass480> 
+    a org:Organization ;
+    rdfs:label "Center for Nanophase Materials Sciences" ;
+    schema:name "Center for Nanophase Materials Sciences" ;
+    schema:foundingDate "2006"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Center_for_Nanophase_Materials_Sciences> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01qz5mb56> ;
+        rdfs:label "Oak Ridge National Laboratory" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-84.26964 36.01036)"^^geo:wktLiteral ;
+        schema:addressLocality "Oak Ridge" ;
+    ] ;
+    schema:url <https://www.ornl.gov/facility/cnms> ;
+    schema:sameAs <http://isni.org/isni/000000046478174X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5059785> ;
+             .

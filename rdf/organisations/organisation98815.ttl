@@ -1,0 +1,54 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05tgxx705> 
+    a org:Organization ;
+    rdfs:label "Department of Science and Technology" ;
+    schema:name "Department of Science and Technology" ;
+    schema:foundingDate "1987"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Department_of_Science_and_Technology_(Philippines)> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/058k8t807> ;
+        rdfs:label "Industrial Technology Development Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/056ezpj87> ;
+        rdfs:label "Philippine Council for Industry, Energy, and Emerging Technology Research and Development" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04rpdbq72> ;
+        rdfs:label "Philippine Council for Health Research and Development" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/057p7e749> ;
+        rdfs:label "Philippine Council for Agriculture, Aquatic and Natural Resources Research and Development" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00c746491> ;
+        rdfs:label "National Research Council of the Philippines" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(121.0792 14.5243)"^^geo:wktLiteral ;
+        schema:addressLocality "Taguig" ;
+    ] ;
+    schema:url <http://www.dost.gov.ph/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q3547215> ;
+             .

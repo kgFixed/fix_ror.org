@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00s426w44> 
+    a org:Organization ;
+    rdfs:label "St Joseph's Health Centre" ;
+    schema:name "St Joseph's Health Centre" ;
+    schema:foundingDate "1921"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/St._Joseph%27s_Health_Centre> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/012x5xb44> ;
+        rdfs:label "Unity Health Toronto" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-79.39864 43.70643)"^^geo:wktLiteral ;
+        schema:addressLocality "Toronto" ;
+    ] ;
+    schema:url <http://www.stjoe.on.ca/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q14875435> ;
+             .

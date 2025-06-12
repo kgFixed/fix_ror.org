@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0384y3666> 
+    a org:Organization ;
+    rdfs:label "Police Forensic Science Laboratory Dundee" ;
+    schema:name "Police Forensic Science Laboratory Dundee" ;
+    schema:foundingDate "1989"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Police_Forensic_Science_Laboratory_Dundee> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-2.97489 56.46913)"^^geo:wktLiteral ;
+        schema:addressLocality "Dundee" ;
+    ] ;
+    schema:url <http://pfsld.com/> ;
+     .

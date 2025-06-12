@@ -1,0 +1,121 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04pkc8m17> 
+    a org:Organization ;
+    rdfs:label "Nokia (Finland)" ;
+    schema:name "Nokia (Finland)" ;
+    schema:foundingDate "1865"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Nokia> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05f2ewd15> ;
+        rdfs:label "Nokia (Australia)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05pgmcc48> ;
+        rdfs:label "Nokia (Austria)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04xze1462> ;
+        rdfs:label "Nokia (Belgium)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/008s0t457> ;
+        rdfs:label "Nokia (Canada)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01607kg94> ;
+        rdfs:label "Nokia (China)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04kwfkk85> ;
+        rdfs:label "Nokia (France)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05nh5td39> ;
+        rdfs:label "Nokia (Germany)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01dcaj468> ;
+        rdfs:label "Nokia (Ireland)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04wsrnw24> ;
+        rdfs:label "Nokia (Italy)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01resg468> ;
+        rdfs:label "Nokia (Netherlands)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02d0m4q63> ;
+        rdfs:label "Nokia (Norway)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02s3g3z50> ;
+        rdfs:label "Nokia (Portugal)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00ngjbr32> ;
+        rdfs:label "Nokia (Spain)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00zpf0626> ;
+        rdfs:label "Nokia (United Kingdom)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/038km2573> ;
+        rdfs:label "Nokia (United States)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02ht4fk33> ;
+        rdfs:label "Instituto de Telecomunicações" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(24.6522 60.2052)"^^geo:wktLiteral ;
+        schema:addressLocality "Espoo" ;
+    ] ;
+    schema:url <http://www.nokia.com/fi_fi> ;
+    schema:sameAs <http://isni.org/isni/0000000123048515> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1418> ;
+             .

@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0499dwk57> 
+    a org:Organization ;
+    rdfs:label "Roswell Park Comprehensive Cancer Center" ;
+    schema:name "Roswell Park Comprehensive Cancer Center" ;
+    schema:foundingDate "1898"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Roswell_Park_Cancer_Institute> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/059qgvg50> ;
+        rdfs:label "Health Research" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01y64my43> ;
+        rdfs:label "University at Buffalo, State University of New York" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-78.87837 42.88645)"^^geo:wktLiteral ;
+        schema:addressLocality "Buffalo" ;
+    ] ;
+    schema:url <https://www.roswellpark.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000121818635> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7370121> ;
+             .

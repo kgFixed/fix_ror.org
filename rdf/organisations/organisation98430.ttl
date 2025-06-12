@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04myprd34> 
+    a org:Organization ;
+    rdfs:label "Cell2Cure ApS" ;
+    schema:name "Cell2Cure ApS" ;
+    schema:foundingDate "2018"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(12.42791 55.84759)"^^geo:wktLiteral ;
+        schema:addressLocality "Birkerød" ;
+    ] ;
+    schema:url <https://cell2cure.com> ;
+     .

@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04tz64554> 
+    a org:Organization ;
+    rdfs:label "Defense Threat Reduction Agency" ;
+    schema:name "Defense Threat Reduction Agency" ;
+    schema:foundingDate "1998"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Defense_Threat_Reduction_Agency> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04n07f274> ;
+        rdfs:label "Materials Science in Extreme Environments University Research Alliance" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00q4sx826> ;
+        rdfs:label "Office of the Secretary of Defense" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0447fe631> ;
+        rdfs:label "United States Department of Defense" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.14589 38.7119)"^^geo:wktLiteral ;
+        schema:addressLocality "Fort Belvoir" ;
+    ] ;
+    schema:url <http://www.dtra.mil/> ;
+    schema:sameAs <http://isni.org/isni/0000000106942857> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q749381> ;
+             .

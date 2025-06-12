@@ -1,0 +1,186 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03qd7mz70> 
+    a org:Organization ;
+    rdfs:label "Johnson & Johnson (United States)" ;
+    schema:name "Johnson & Johnson (United States)" ;
+    schema:foundingDate "1886"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Johnson_%26_Johnson> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04yzcpd71> ;
+        rdfs:label "Janssen (Belgium)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0048j1p96> ;
+        rdfs:label "Janssen (France)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/038rd9v60> ;
+        rdfs:label "Janssen (Germany)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05py8xn22> ;
+        rdfs:label "Janssen (Hungary)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04a35vw13> ;
+        rdfs:label "Janssen (India)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01dcg9845> ;
+        rdfs:label "Janssen (Ireland)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05sdrja69> ;
+        rdfs:label "Janssen (Italy)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04cxegr21> ;
+        rdfs:label "Janssen (Netherlands)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01y2qtb13> ;
+        rdfs:label "Janssen (Switzerland)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02nw6hx08> ;
+        rdfs:label "Janssen (United Kingdom)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05af73403> ;
+        rdfs:label "Janssen (United States)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/034ca4k86> ;
+        rdfs:label "Johnson & Johnson (Australia)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04f89zf73> ;
+        rdfs:label "Johnson & Johnson (Brazil)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04z0qye94> ;
+        rdfs:label "Johnson & Johnson (Canada)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00gfjrf11> ;
+        rdfs:label "Johnson & Johnson (France)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/023edjq13> ;
+        rdfs:label "Johnson & Johnson (Germany)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/031hkyx15> ;
+        rdfs:label "Johnson & Johnson (Hungary)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05hb5sg68> ;
+        rdfs:label "Johnson & Johnson (India)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/008j2vk87> ;
+        rdfs:label "Johnson & Johnson (Ireland)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03kzp5v39> ;
+        rdfs:label "Johnson & Johnson (Israel)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03zb78d54> ;
+        rdfs:label "Johnson & Johnson (Italy)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04vkhtf23> ;
+        rdfs:label "Johnson & Johnson (Netherlands)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/020jwmq86> ;
+        rdfs:label "Johnson & Johnson (Sweden)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00505z102> ;
+        rdfs:label "Johnson & Johnson (Switzerland)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03qwpn290> ;
+        rdfs:label "Johnson & Johnson (United Kingdom)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00mjrkf94> ;
+        rdfs:label "Biosense Webster (United States)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04w4xsz15> ;
+        rdfs:label "Janssen Scientific Affairs (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-74.45182 40.48622)"^^geo:wktLiteral ;
+        schema:addressLocality "New Brunswick" ;
+    ] ;
+    schema:url <http://www.jnj.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q333718> ;
+             .

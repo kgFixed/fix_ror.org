@@ -1,0 +1,69 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0155edt85> 
+    a org:Organization ;
+    rdfs:label "fabriqueREL" ;
+    schema:name "fabriqueREL" ;
+    schema:foundingDate "2019"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00kybxq39> ;
+        rdfs:label "Université de Sherbrooke" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0161xgx34> ;
+        rdfs:label "Université de Montréal" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04sjchr03> ;
+        rdfs:label "Université Laval" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04td37d32> ;
+        rdfs:label "Institut National de la Recherche Scientifique" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/002rjbv21> ;
+        rdfs:label "Université du Québec à Montréal" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01nywkf82> ;
+        rdfs:label "Cégep de Sherbrooke" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0020snb74> ;
+        rdfs:label "École de Technologie Supérieure" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03kzn3e44> ;
+        rdfs:label "Cégep de Chicoutimi" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-71.89908 45.40008)"^^geo:wktLiteral ;
+        schema:addressLocality "Sherbrooke" ;
+    ] ;
+    schema:url <https://fabriquerel.org> ;
+     .

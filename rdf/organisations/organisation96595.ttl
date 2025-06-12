@@ -1,0 +1,88 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04p977q83> 
+    a org:Organization ;
+    rdfs:label "Eurofins (Luxembourg)" ;
+    schema:name "Eurofins (Luxembourg)" ;
+    schema:foundingDate "1987"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Eurofins_Scientific> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/022j85822> ;
+        rdfs:label "Eurofins (Brazil)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02nfy1824> ;
+        rdfs:label "Eurofins (Czechia)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0493xxf64> ;
+        rdfs:label "Eurofins (Denmark)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04mdycw91> ;
+        rdfs:label "Eurofins (France)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03v8pzh67> ;
+        rdfs:label "Eurofins (Germany)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04bc14p57> ;
+        rdfs:label "Eurofins (Ireland)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01fx1d378> ;
+        rdfs:label "Eurofins (Netherlands)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/001s2e926> ;
+        rdfs:label "Eurofins (Norway)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/041q4rp74> ;
+        rdfs:label "Eurofins (Slovakia)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03gmmtm59> ;
+        rdfs:label "Eurofins (United Kingdom)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05sy37k83> ;
+        rdfs:label "Eurofins (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(6.13 49.61167)"^^geo:wktLiteral ;
+        schema:addressLocality "Luxembourg" ;
+    ] ;
+    schema:url <https://www.eurofins.com/> ;
+     .

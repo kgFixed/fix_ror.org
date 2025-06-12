@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02hkzh190> 
+    a org:Organization ;
+    rdfs:label "VNU Science and Technology Development Fund" ;
+    schema:name "VNU Science and Technology Development Fund" ;
+    schema:foundingDate "2008"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02jmfj006> ;
+        rdfs:label "Vietnam National University, Hanoi" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(105.84117 21.0245)"^^geo:wktLiteral ;
+        schema:addressLocality "Hanoi" ;
+    ] ;
+    schema:url <https://vnu.edu.vn/eng/?C2294> ;
+     .

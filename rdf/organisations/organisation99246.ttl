@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0274qxk35> 
+    a org:Organization ;
+    rdfs:label "Bluecoat" ;
+    schema:name "Bluecoat" ;
+    schema:foundingDate "1708"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Bluecoat_Chambers> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-2.97794 53.41058)"^^geo:wktLiteral ;
+        schema:addressLocality "Liverpool" ;
+    ] ;
+    schema:url <https://www.thebluecoat.org.uk> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q2409878> ;
+             .

@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0372q6t83> 
+    a org:Organization ;
+    rdfs:label "Elmin Inkişafı Fondu" ;
+    schema:name "Elmin Inkişafı Fondu" ;
+    schema:foundingDate "2009"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Science_Development_Foundation_%28Azerbaijan%29> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(49.89201 40.37767)"^^geo:wktLiteral ;
+        schema:addressLocality "Baku" ;
+    ] ;
+    schema:url <https://www.aef.gov.az> ;
+    schema:sameAs <http://isni.org/isni/0000000459081386> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q12839094> ;
+             .

@@ -1,0 +1,91 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04wktzw65> 
+    a org:Organization ;
+    rdfs:label "Chinese Center For Disease Control and Prevention" ;
+    schema:name "Chinese Center For Disease Control and Prevention" ;
+    schema:foundingDate "1985"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Chinese_Center_for_Disease_Control_and_Prevention> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02xnb4v27> ;
+        rdfs:label "National Center for AIDS/STD Control and Prevention,China CDC" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01r58sr54> ;
+        rdfs:label "National Center for Chronic and Noncommunicable Disease Control and Prevention" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01v171a61> ;
+        rdfs:label "National Center for Women and Children’s Health, China CDC" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04f7g6845> ;
+        rdfs:label "National Institute for Communicable Disease Control and Prevention" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05n5mmr26> ;
+        rdfs:label "National Institute for Occupational Health and Poison Control" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03wneb138> ;
+        rdfs:label "National Institute for Parasitic Diseases" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05whjqq05> ;
+        rdfs:label "National Institute for Radiological Protection" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04b1sh213> ;
+        rdfs:label "National Institute for Viral Disease Control and Prevention" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0311ezn83> ;
+        rdfs:label "State Key Laboratory of Virus Genetic Engineering" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04bhsv505> ;
+        rdfs:label "State Key Laboratory of Infectious Disease Prevention and Control" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05ckt8b96> ;
+        rdfs:label "Ministry of Agriculture and Rural Affairs" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(116.39723 39.9075)"^^geo:wktLiteral ;
+        schema:addressLocality "Beijing" ;
+    ] ;
+    schema:url <http://www.chinacdc.cn/en/> ;
+    schema:sameAs <http://isni.org/isni/0000000088032373> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5100405> ;
+             .

@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03sv46s19> 
+    a org:Organization ;
+    rdfs:label "Ministerio de Asuntos Económicos y Transformación Digital" ;
+    schema:name "Ministerio de Asuntos Económicos y Transformación Digital" ;
+    schema:foundingDate "2020"^^xsd:gYear ;
+    schema:sameAs <https://es.wikipedia.org/wiki/Ministerio_de_Asuntos_Econ%C3%B3micos_y_Transformaci%C3%B3n_Digital> ;
+    org:status "inactive" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Predecessor" ;
+        org:member <https://ror.org/034900433> ;
+        rdfs:label "Ministry of Economy, Industry and Competitiveness" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/01qh08519> ;
+        rdfs:label "Ministerio para la Transformación Digital y de la Función Pública" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-3.70256 40.4165)"^^geo:wktLiteral ;
+        schema:addressLocality "Madrid" ;
+    ] ;
+    schema:url <https://portal.mineco.gob.es> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q81886673> ;
+             .

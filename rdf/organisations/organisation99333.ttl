@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02jv3k292> 
+    a org:Organization ;
+    rdfs:label "Sofia University "St. Kliment Ohridski"" ;
+    schema:name "Sofia University "St. Kliment Ohridski"" ;
+    schema:foundingDate "1888"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Sofia_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(23.32415 42.69751)"^^geo:wktLiteral ;
+        schema:addressLocality "Sofia" ;
+    ] ;
+    schema:url <https://www.uni-sofia.bg/> ;
+    schema:sameAs <http://isni.org/isni/0000000121923275> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q841581> ;
+             .

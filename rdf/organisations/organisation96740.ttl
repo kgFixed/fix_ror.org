@@ -1,0 +1,44 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00nhtcg76> 
+    a org:Organization ;
+    rdfs:label "University of Monastir" ;
+    schema:name "University of Monastir" ;
+    schema:foundingDate "2004"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/University_of_Monastir> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01nr6ek07> ;
+        rdfs:label "Institut Supérieur d'Informatique et de Mathématiques de Monastir" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/037hcdr69> ;
+        rdfs:label "Institut Supérieur d'Informatique de Mahdia" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/045yr8682> ;
+        rdfs:label "Ecole Nationale d'Ingénieurs de Monastir" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(10.82617 35.77799)"^^geo:wktLiteral ;
+        schema:addressLocality "Monastir" ;
+    ] ;
+    schema:url <http://www.um.rnu.tn/> ;
+    schema:sameAs <http://isni.org/isni/0000000405935040> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3551637> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3578092> ;
+             .

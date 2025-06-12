@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/021d9wv59> 
+    a org:Organization ;
+    rdfs:label "Institute of Puerto Rican Culture" ;
+    schema:name "Institute of Puerto Rican Culture" ;
+    schema:foundingDate "1955"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Institute_of_Puerto_Rican_Culture> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-66.10572 18.46633)"^^geo:wktLiteral ;
+        schema:addressLocality "San Juan" ;
+    ] ;
+    schema:url <http://www.icp.gobierno.pr/> ;
+    schema:sameAs <http://isni.org/isni/0000000122979027> ;
+             .

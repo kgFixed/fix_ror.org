@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01q6sg345> 
+    a org:Organization ;
+    rdfs:label "Universitas Islam Internasional Indonesia" ;
+    schema:name "Universitas Islam Internasional Indonesia" ;
+    schema:foundingDate "2019"^^xsd:gYear ;
+    schema:sameAs <https://id.wikipedia.org/wiki/Universitas_Islam_Internasional_Indonesia> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(106.81861 -6.4)"^^geo:wktLiteral ;
+        schema:addressLocality "Depok" ;
+    ] ;
+    schema:url <https://uiii.ac.id> ;
+    schema:sameAs <http://isni.org/isni/0000000505995729> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q28723622> ;
+             .

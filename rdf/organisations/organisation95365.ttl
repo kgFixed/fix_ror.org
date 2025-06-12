@@ -1,0 +1,40 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05jb9pq57> 
+    a org:Organization ;
+    rdfs:label "Shandong First Medical University" ;
+    schema:name "Shandong First Medical University" ;
+    schema:foundingDate "1958"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05b2ycy47> ;
+        rdfs:label "Jinan City People's Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01413r497> ;
+        rdfs:label "Shandong Tumor Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01fr19c68> ;
+        rdfs:label "Jinan Central Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(116.99722 36.66833)"^^geo:wktLiteral ;
+        schema:addressLocality "Jinan" ;
+    ] ;
+    schema:url <http://www.sdams.cn/> ;
+     .

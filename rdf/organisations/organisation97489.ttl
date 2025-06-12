@@ -1,0 +1,67 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05rsv9s98> 
+    a org:Organization ;
+    rdfs:label "United States Department of Veterans Affairs" ;
+    schema:name "United States Department of Veterans Affairs" ;
+    schema:foundingDate "1930"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/United_States_Department_of_Veterans_Affairs> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01dbbht76> ;
+        rdfs:label "National Center for PTSD" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04s3dsz85> ;
+        rdfs:label "Office of Diversity and Inclusion" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0155sw530> ;
+        rdfs:label "Seattle Epidemiologic Information and Research Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05eq41471> ;
+        rdfs:label "Veterans Health Administration" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/027w0yp05> ;
+        rdfs:label "William C. Tallent Outpatient Clinic" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0442kw503> ;
+        rdfs:label "Office of Academic Affiliations" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02rcrvv70> ;
+        rdfs:label "Government of the United States of America" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.03637 38.89511)"^^geo:wktLiteral ;
+        schema:addressLocality "Washington" ;
+    ] ;
+    schema:url <http://www.va.gov/> ;
+    schema:sameAs <http://isni.org/isni/0000000404787015> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q592576> ;
+             .

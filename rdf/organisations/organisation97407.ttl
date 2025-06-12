@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00pz2fp31> 
+    a org:Organization ;
+    rdfs:label "Basque Government" ;
+    schema:name "Basque Government" ;
+    schema:foundingDate "1936"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Basque_Government> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00myw9y39> ;
+        rdfs:label "Achucarro Basque Center for Neuroscience" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03a2pqz96> ;
+        rdfs:label "Department of Education" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/025yj9w07> ;
+        rdfs:label "Department of Health" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/007xj0t96> ;
+        rdfs:label "Ekonomiaren Garapen eta Lehiakortasun Saila" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05yfx9j20> ;
+        rdfs:label "Ekonomiaren Garapen, Jasangarritasun eta Ingurumen Saila" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-2.67268 42.84998)"^^geo:wktLiteral ;
+        schema:addressLocality "Vitoria-Gasteiz" ;
+    ] ;
+    schema:url <http://www.euskadi.eus/r33-2220/eu> ;
+    schema:sameAs <http://isni.org/isni/0000000123153219> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2554299> ;
+             .

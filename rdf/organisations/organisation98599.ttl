@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01qv3ez98> 
+    a org:Organization ;
+    rdfs:label "Australian National Algae Culture Collection" ;
+    schema:name "Australian National Algae Culture Collection" ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03qn8fb07> ;
+        rdfs:label "Commonwealth Scientific and Industrial Research Organisation" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(147.32941 -42.87936)"^^geo:wktLiteral ;
+        schema:addressLocality "Hobart" ;
+    ] ;
+    schema:url <https://www.csiro.au/en/about/facilities-collections/Collections/ANACC> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q64085930> ;
+             .

@@ -1,0 +1,81 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/021203s31> 
+    a org:Organization ;
+    rdfs:label "MapBiomas" ;
+    schema:name "MapBiomas" ;
+    schema:foundingDate "2015"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/020f9s554> ;
+        rdfs:label "Instituto de Pesquisa Ambiental da Amazônia" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03z114n70> ;
+        rdfs:label "Imazon" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0039d5757> ;
+        rdfs:label "Universidade Federal de Goiás" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04ygk5j35> ;
+        rdfs:label "Universidade Estadual de Feira de Santana" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01r2xg724> ;
+        rdfs:label "SOS Mata Atlântica Foundation" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/041yk2d64> ;
+        rdfs:label "Universidade Federal do Rio Grande do Sul" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05wnasr61> ;
+        rdfs:label "Vale Technological Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/036rp1748> ;
+        rdfs:label "Universidade de São Paulo" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03k3p7647> ;
+        rdfs:label "Universidade Federal da Bahia" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00qdc6m37> ;
+        rdfs:label "Universidade Federal de São Carlos" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-46.63611 -23.5475)"^^geo:wktLiteral ;
+        schema:addressLocality "São Paulo" ;
+    ] ;
+    schema:url <https://mapbiomas.org> ;
+     .

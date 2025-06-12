@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04cf69335> 
+    a org:Organization ;
+    rdfs:label "Washington University in St. Louis School of Medicine" ;
+    schema:name "Washington University in St. Louis School of Medicine" ;
+    schema:foundingDate "1891"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Washington_University_School_of_Medicine> ;
+    org:status "withdrawn" ;
+    org:classification "Other" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/01yc7t268> ;
+        rdfs:label "Washington University in St. Louis" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-90.19789 38.62727)"^^geo:wktLiteral ;
+        schema:addressLocality "St Louis" ;
+    ] ;
+    schema:url <https://medicine.wustl.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000121881650> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7972509> ;
+             .

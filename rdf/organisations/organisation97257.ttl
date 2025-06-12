@@ -1,0 +1,26 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/012ajw921> 
+    a org:Organization ;
+    rdfs:label "State Key Laboratory of Complex Electromagnetic Environment Effects on Electronics and Information System" ;
+    schema:name "State Key Laboratory of Complex Electromagnetic Environment Effects on Electronics and Information System" ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05d2yfz11> ;
+        rdfs:label "National University of Defense Technology" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(113.66667 34)"^^geo:wktLiteral ;
+        schema:addressLocality "Henan" ;
+    ] ;
+    schema:url <http://kjtj.hnkjt.gov.cn/web/science_content.xid=771> ;
+     .

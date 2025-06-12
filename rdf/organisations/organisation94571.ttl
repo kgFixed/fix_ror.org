@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01raq4x89> 
+    a org:Organization ;
+    rdfs:label "Laboratoire d'Informatique pour la Mécanique et les Sciences de l'Ingénieur" ;
+    schema:name "Laboratoire d'Informatique pour la Mécanique et les Sciences de l'Ingénieur" ;
+    schema:foundingDate "1972"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Laboratoire_d%27informatique_pour_la_m%C3%A9canique_et_les_sciences_de_l%27ing%C3%A9nieur> ;
+    org:status "inactive" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04z22qz54> ;
+        rdfs:label "Institut des Sciences de l'Information et de leurs Interactions" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/028rypz17> ;
+        rdfs:label "University of Paris-Sud" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.18727 48.69572)"^^geo:wktLiteral ;
+        schema:addressLocality "Orsay" ;
+    ] ;
+    schema:url <https://www.limsi.fr/> ;
+    schema:sameAs <http://isni.org/isni/0000000119596666> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3214435> ;
+             .

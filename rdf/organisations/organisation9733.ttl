@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00ab7ks98> 
+    a org:Organization ;
+    rdfs:label "W.M. Keck Observatory" ;
+    schema:name "W.M. Keck Observatory" ;
+    schema:foundingDate "1993"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/W._M._Keck_Observatory> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-155.67288 20.02323)"^^geo:wktLiteral ;
+        schema:addressLocality "Waimea" ;
+    ] ;
+    schema:url <http://www.keckobservatory.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000087587609> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q210997> ;
+             .

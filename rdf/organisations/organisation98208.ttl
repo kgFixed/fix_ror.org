@@ -1,0 +1,32 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/044rb3f07> 
+    a org:Organization ;
+    rdfs:label "Délégation Régionale Nouvelle-Aquitaine" ;
+    schema:name "Délégation Régionale Nouvelle-Aquitaine" ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05367a632> ;
+        rdfs:label "Plateforme Technologique d'Innovation Biomédicale" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02vjkv261> ;
+        rdfs:label "Inserm" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.5805 44.84044)"^^geo:wktLiteral ;
+        schema:addressLocality "Bordeaux" ;
+    ] ;
+    schema:url <http://www.aquitaine-poitou-charentes.inserm.fr/> ;
+     .

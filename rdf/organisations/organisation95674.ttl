@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02rjhbb08> 
+    a org:Organization ;
+    rdfs:label "Universidade Federal Fluminense" ;
+    schema:name "Universidade Federal Fluminense" ;
+    schema:foundingDate "1960"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Fluminense_Federal_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0379xnz71> ;
+        rdfs:label "Hospital Universitário Antônio Pedro" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-43.10361 -22.88333)"^^geo:wktLiteral ;
+        schema:addressLocality "Niterói" ;
+    ] ;
+    schema:url <https://www.uff.br> ;
+    schema:sameAs <http://isni.org/isni/0000000121846919> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q280247> ;
+             .

@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03ssvsv78> 
+    a org:Organization ;
+    rdfs:label "Quantinuum (United States)" ;
+    schema:name "Quantinuum (United States)" ;
+    schema:foundingDate "2021"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Quantinuum> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0507j3z22> ;
+        rdfs:label "Quantinuum (United Kingdom)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-105.08665 39.92054)"^^geo:wktLiteral ;
+        schema:addressLocality "Broomfield" ;
+    ] ;
+    schema:url <https://www.quantinuum.com> ;
+    schema:sameAs <http://isni.org/isni/0000000506860244> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q111444392> ;
+             .

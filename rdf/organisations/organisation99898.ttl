@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02f4cyy89> 
+    a org:Organization ;
+    rdfs:label "Hospital General Docente de Calderón" ;
+    schema:name "Hospital General Docente de Calderón" ;
+    schema:foundingDate "2016"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02t46gq94> ;
+        rdfs:label "Ministerio de Salud Pública" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-78.52495 -0.22985)"^^geo:wktLiteral ;
+        schema:addressLocality "Quito" ;
+    ] ;
+    schema:url <https://www.hgdc.gob.ec> ;
+    schema:sameAs <http://isni.org/isni/0000000513375941> ;
+             .

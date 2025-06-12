@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0592v9m14> 
+    a org:Organization ;
+    rdfs:label "UBS Optimus Foundation" ;
+    schema:name "UBS Optimus Foundation" ;
+    org:status "active" ;
+    org:classification "Funder" ;
+    org:classification "Nonprofit" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01ekk8h85> ;
+        rdfs:label "Union Bank of Switzerland" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(8.55 47.36667)"^^geo:wktLiteral ;
+        schema:addressLocality "Zurich" ;
+    ] ;
+    schema:url <https://www.ubs.com/optimus> ;
+    schema:sameAs <http://isni.org/isni/000000046091869X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q45137700> ;
+             .

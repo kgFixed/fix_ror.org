@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03g98ap29> 
+    a org:Organization ;
+    rdfs:label "Korea Medical Device Development Fund" ;
+    schema:name "Korea Medical Device Development Fund" ;
+    schema:foundingDate "2020"^^xsd:gYear ;
+    schema:sameAs <https://ko.wikipedia.org/wiki/%EB%B2%94%EB%B6%80%EC%B2%98%EC%8B%A0%EC%95%BD%EA%B0%9C%EB%B0%9C%EC%82%AC%EC%97%85%EB%8B%A8> ;
+    org:status "active" ;
+    org:classification "Funder" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(126.99398 37.55986)"^^geo:wktLiteral ;
+        schema:addressLocality "Jung-gu" ;
+    ] ;
+    schema:url <https://www.kmdf.org> ;
+    schema:sameAs <http://isni.org/isni/0000000507431118> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q16180143> ;
+             .

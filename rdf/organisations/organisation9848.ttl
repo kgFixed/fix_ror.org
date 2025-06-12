@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03xha5352> 
+    a org:Organization ;
+    rdfs:label "Carl Zeiss (United Kingdom)" ;
+    schema:name "Carl Zeiss (United Kingdom)" ;
+    schema:foundingDate "1846"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Carl_Zeiss_AG> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02mp31p96> ;
+        rdfs:label "Carl Zeiss (Germany)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(0.11667 52.2)"^^geo:wktLiteral ;
+        schema:addressLocality "Cambridge" ;
+    ] ;
+    schema:url <http://www.zeiss.co.uk/corporate/en_gb/home.html> ;
+    schema:sameAs <http://isni.org/isni/000000040641225X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q28971338> ;
+             .

@@ -1,0 +1,35 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00gyb4719> 
+    a org:Organization ;
+    rdfs:label "Labex ARBRE" ;
+    schema:name "Labex ARBRE" ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00zg31r41> ;
+        rdfs:label "Centre INRAE Grand-Est - Colmar" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04vfs2w97> ;
+        rdfs:label "Université de Lorraine" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(6.3483 48.74257)"^^geo:wktLiteral ;
+        schema:addressLocality "Champenoux" ;
+    ] ;
+    schema:url <http://mycor.nancy.inra.fr/ARBRE/> ;
+    schema:sameAs <http://isni.org/isni/0000000417947268> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30267170> ;
+             .

@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05d2yfz11> 
+    a org:Organization ;
+    rdfs:label "National University of Defense Technology" ;
+    schema:name "National University of Defense Technology" ;
+    schema:foundingDate "1953"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/National_University_of_Defense_Technology> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/012ajw921> ;
+        rdfs:label "State Key Laboratory of Complex Electromagnetic Environment Effects on Electronics and Information System" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/052qsxn63> ;
+        rdfs:label "State Key Laboratory of Automatic Target Recognition" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00wv14x31> ;
+        rdfs:label "State Key Laboratory of Pulsed Power Laser Technology" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(112.97087 28.19874)"^^geo:wktLiteral ;
+        schema:addressLocality "Changsha" ;
+    ] ;
+    schema:url <http://www.nudt.edu.cn/index_eng.htm> ;
+    schema:sameAs <http://isni.org/isni/0000000095482110> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q831227> ;
+             .

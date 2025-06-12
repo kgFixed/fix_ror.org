@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/012y1mj37> 
+    a org:Organization ;
+    rdfs:label "Oglala Lakota College" ;
+    schema:name "Oglala Lakota College" ;
+    schema:foundingDate "1971"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Oglala_Lakota_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-102.73962 43.18859)"^^geo:wktLiteral ;
+        schema:addressLocality "Oglala" ;
+    ] ;
+    schema:url <http://www.olc.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000107089149> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7080082> ;
+             .

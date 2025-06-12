@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05pmk8j16> 
+    a org:Organization ;
+    rdfs:label "Consejería de la Presidencia, Interior, Diálogo Social y Simplificación Administrativa" ;
+    schema:name "Consejería de la Presidencia, Interior, Diálogo Social y Simplificación Administrativa" ;
+    schema:foundingDate "1982"^^xsd:gYear ;
+    schema:sameAs <https://es.wikipedia.org/wiki/Consejer%C3%ADa_de_la_Presidencia,_Interior,_Di%C3%A1logo_Social_y_Simplificaci%C3%B3n_Administrativa_de_la_Junta_de_Andaluc%C3%ADa> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01jem9c82> ;
+        rdfs:label "Junta de Andalucía" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-5.97317 37.38283)"^^geo:wktLiteral ;
+        schema:addressLocality "Seville" ;
+    ] ;
+    schema:url <https://www.juntadeandalucia.es/organismos/presidenciainteriordialogosocialysimplificacionadministrativa.html> ;
+     .

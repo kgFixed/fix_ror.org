@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/052451r09> 
+    a org:Organization ;
+    rdfs:label "Pratt & Whitney (United States)" ;
+    schema:name "Pratt & Whitney (United States)" ;
+    schema:foundingDate "1925"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Pratt_%26_Whitney> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0354t7b78> ;
+        rdfs:label "RTX (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-72.61203 41.78232)"^^geo:wktLiteral ;
+        schema:addressLocality "East Hartford" ;
+    ] ;
+    schema:url <https://www.prattwhitney.com> ;
+    schema:sameAs <http://isni.org/isni/000000040637859X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q173150> ;
+             .
