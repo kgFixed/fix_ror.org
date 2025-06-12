@@ -1,0 +1,33 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05qer3y84> 
+    a org:Organization ;
+    rdfs:label "Research Institute in Oncology and Hematology" ;
+    schema:name "Research Institute in Oncology and Hematology" ;
+    schema:foundingDate "1969"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/005cmms77> ;
+        rdfs:label "CancerCare Manitoba" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02gfys938> ;
+        rdfs:label "University of Manitoba" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-97.14704 49.8844)"^^geo:wktLiteral ;
+        schema:addressLocality "Winnipeg" ;
+    ] ;
+    schema:url <http://www.umanitoba.ca/institutes/manitoba_institute_cell_biology/> ;
+     .

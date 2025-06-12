@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00ynxc274> 
+    a org:Organization ;
+    rdfs:label "Kao Corporation (Germany)" ;
+    schema:name "Kao Corporation (Germany)" ;
+    schema:foundingDate "1887"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Kao_Corporation> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/016t1kc57> ;
+        rdfs:label "Kao Corporation (Japan)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(8.65027 49.87167)"^^geo:wktLiteral ;
+        schema:addressLocality "Darmstadt" ;
+    ] ;
+    schema:url <http://www.kao.com/group/ja/group/europe_02.html> ;
+    schema:sameAs <http://isni.org/isni/0000000404702210> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q29123923> ;
+             .

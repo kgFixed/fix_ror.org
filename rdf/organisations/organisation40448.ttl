@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02x9c2945> 
+    a org:Organization ;
+    rdfs:label "Alliance One Tobacco (Malawi)" ;
+    schema:name "Alliance One Tobacco (Malawi)" ;
+    schema:foundingDate "2005"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(33.78725 -13.96692)"^^geo:wktLiteral ;
+        schema:addressLocality "Lilongwe" ;
+    ] ;
+    schema:url <http://www.ide.go.jp/English/Data/Africa_file/Company/malawi02.html> ;
+     .

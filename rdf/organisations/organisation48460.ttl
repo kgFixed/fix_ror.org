@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0276n9116> 
+    a org:Organization ;
+    rdfs:label "Yakub Kolas Central Scientific Library" ;
+    schema:name "Yakub Kolas Central Scientific Library" ;
+    schema:foundingDate "1925"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02xk7ft96> ;
+        rdfs:label "Department of Humanities and Arts" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(27.56667 53.9)"^^geo:wktLiteral ;
+        schema:addressLocality "Minsk" ;
+    ] ;
+    schema:url <http://csl.bas-net.by/> ;
+    schema:sameAs <http://isni.org/isni/0000000406204434> ;
+             .

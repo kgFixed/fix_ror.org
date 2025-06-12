@@ -1,0 +1,39 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/038dfxb83> 
+    a org:Organization ;
+    rdfs:label "Traditional Chinese Medicine Hospital of Kunshan" ;
+    schema:name "Traditional Chinese Medicine Hospital of Kunshan" ;
+    schema:foundingDate "1985"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01rxvg760> ;
+        rdfs:label "Nanjing University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0523y5c19> ;
+        rdfs:label "Shandong University of Traditional Chinese Medicine" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00z27jk27> ;
+        rdfs:label "Shanghai University of Traditional Chinese Medicine" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(120.95431 31.37762)"^^geo:wktLiteral ;
+        schema:addressLocality "Kunshan" ;
+    ] ;
+    schema:url <http://www.kstcm.org.cn/> ;
+     .

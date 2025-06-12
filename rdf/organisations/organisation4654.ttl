@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00t2n7611> 
+    a org:Organization ;
+    rdfs:label "Roskilde Sygehus" ;
+    schema:name "Roskilde Sygehus" ;
+    schema:foundingDate "1855"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Roskilde_Sygehus> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/035b05819> ;
+        rdfs:label "University of Copenhagen" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(12.08035 55.64152)"^^geo:wktLiteral ;
+        schema:addressLocality "Roskilde" ;
+    ] ;
+    schema:url <http://www.regionsjaelland.dk/> ;
+    schema:sameAs <http://isni.org/isni/000000040646843X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q12333823> ;
+             .

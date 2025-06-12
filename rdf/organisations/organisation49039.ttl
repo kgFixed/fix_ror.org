@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/033s2jy46> 
+    a org:Organization ;
+    rdfs:label "South East Water (Australia)" ;
+    schema:name "South East Water (Australia)" ;
+    schema:foundingDate "1995"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/South_East_Water_(Australia)> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02xvc5r05> ;
+        rdfs:label "Government of Victoria" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(145.12291 -38.14458)"^^geo:wktLiteral ;
+        schema:addressLocality "Frankston" ;
+    ] ;
+    schema:url <http://southeastwater.com.au/Pages/Home.aspx> ;
+    schema:sameAs <http://isni.org/isni/000000040392118X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7567145> ;
+             .

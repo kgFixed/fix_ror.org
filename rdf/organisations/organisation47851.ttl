@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00qpbjw91> 
+    a org:Organization ;
+    rdfs:label "Fujikura (United States)" ;
+    schema:name "Fujikura (United States)" ;
+    schema:foundingDate "1910"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Fujikura> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0123ma395> ;
+        rdfs:label "Fujikura (Japan)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-82.14511 34.9379)"^^geo:wktLiteral ;
+        schema:addressLocality "Duncan" ;
+    ] ;
+    schema:url <http://www.fujikura.co.jp/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q50514925> ;
+             .

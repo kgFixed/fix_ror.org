@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03x6axv89> 
+    a org:Organization ;
+    rdfs:label "Riverside City College" ;
+    schema:name "Riverside City College" ;
+    schema:foundingDate "1916"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Riverside_City_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05eca5w86> ;
+        rdfs:label "Riverside Community College District" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-117.39616 33.95335)"^^geo:wktLiteral ;
+        schema:addressLocality "Riverside" ;
+    ] ;
+    schema:url <http://www.rcc.edu/Pages/home.aspx> ;
+    schema:sameAs <http://isni.org/isni/0000000093624402> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q14683818> ;
+             .

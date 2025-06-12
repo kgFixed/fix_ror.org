@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01j4vgr28> 
+    a org:Organization ;
+    rdfs:label "Essilor (Germany)" ;
+    schema:name "Essilor (Germany)" ;
+    schema:foundingDate "1849"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Essilor> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02a8zpt37> ;
+        rdfs:label "Essilor (France)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(10.52673 52.26594)"^^geo:wktLiteral ;
+        schema:addressLocality "Braunschweig" ;
+    ] ;
+    schema:url <http://www.essilor.de/Seiten/Home.aspx> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q29113577> ;
+             .

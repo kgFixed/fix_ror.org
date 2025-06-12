@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/053s4kp50> 
+    a org:Organization ;
+    rdfs:label "Islamic Azad University Saveh" ;
+    schema:name "Islamic Azad University Saveh" ;
+    schema:foundingDate "1982"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01kzn7k21> ;
+        rdfs:label "Islamic Azad University, Tehran" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(50.3566 35.0213)"^^geo:wktLiteral ;
+        schema:addressLocality "Sāveh" ;
+    ] ;
+    schema:url <http://www.iau-saveh.ac.ir/en/Index.html> ;
+    schema:sameAs <http://isni.org/isni/0000000404942433> ;
+             .

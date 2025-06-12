@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04fhp7r51> 
+    a org:Organization ;
+    rdfs:label "Davao del Norte State College" ;
+    schema:name "Davao del Norte State College" ;
+    schema:foundingDate "1995"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Davao_del_Norte_State_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00h8mcj46> ;
+        rdfs:label "Philippine Association of State Universities and Colleges" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(125.68417 7.30806)"^^geo:wktLiteral ;
+        schema:addressLocality "Panabo" ;
+    ] ;
+    schema:url <http://dnsc.edu.ph/> ;
+    schema:sameAs <http://isni.org/isni/0000000405667058> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3808846> ;
+             .

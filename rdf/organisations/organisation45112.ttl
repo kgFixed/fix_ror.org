@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02rtq1r98> 
+    a org:Organization ;
+    rdfs:label "Museum of Fine Arts Bern" ;
+    schema:name "Museum of Fine Arts Bern" ;
+    schema:foundingDate "1879"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Museum_of_Fine_Arts_Bern> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(7.44744 46.94809)"^^geo:wktLiteral ;
+        schema:addressLocality "Bern" ;
+    ] ;
+    schema:url <http://www.kunstmuseumbern.ch/index.cfm?nav=1245,1332&SID=2&DID=9> ;
+    schema:sameAs <http://isni.org/isni/0000000404457024> ;
+             .

@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/048f8az88> 
+    a org:Organization ;
+    rdfs:label "American Association for Thoracic Surgery" ;
+    schema:name "American Association for Thoracic Surgery" ;
+    schema:foundingDate "1917"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/American_Association_for_Thoracic_Surgery> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-70.88005 42.55843)"^^geo:wktLiteral ;
+        schema:addressLocality "Beverly" ;
+    ] ;
+    schema:url <http://www.aats.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000110929233> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4743038> ;
+             .

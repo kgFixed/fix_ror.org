@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03m5ehy13> 
+    a org:Organization ;
+    rdfs:label "Ministry of Higher Education and Scientific Research" ;
+    schema:name "Ministry of Higher Education and Scientific Research" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Ministry_of_Higher_Education_and_Scientific_Research_(Iraq)> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(44.40088 33.34058)"^^geo:wktLiteral ;
+        schema:addressLocality "Baghdad" ;
+    ] ;
+    schema:url <http://www.en.mohesr.gov.iq/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q6867133> ;
+             .

@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03j79f182> 
+    a org:Organization ;
+    rdfs:label "Balfour Beatty (Germany)" ;
+    schema:name "Balfour Beatty (Germany)" ;
+    schema:foundingDate "1909"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Balfour_Beatty> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/059xksf83> ;
+        rdfs:label "Balfour Beatty (United Kingdom)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(11.57549 48.13743)"^^geo:wktLiteral ;
+        schema:addressLocality "Munich" ;
+    ] ;
+    schema:url <http://www.balfourbeatty.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30338706> ;
+             .

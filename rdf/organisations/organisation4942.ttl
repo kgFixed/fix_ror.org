@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05n952b74> 
+    a org:Organization ;
+    rdfs:label "North Mississippi Medical Center" ;
+    schema:name "North Mississippi Medical Center" ;
+    schema:foundingDate "1985"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-88.70464 34.25807)"^^geo:wktLiteral ;
+        schema:addressLocality "Tupelo" ;
+    ] ;
+    schema:url <http://www.nmhs.net/> ;
+    schema:sameAs <http://isni.org/isni/0000000090134846> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30280884> ;
+             .

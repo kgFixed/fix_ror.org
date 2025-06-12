@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02txa2075> 
+    a org:Organization ;
+    rdfs:label "Vision West Nottinghamshire College" ;
+    schema:name "Vision West Nottinghamshire College" ;
+    schema:foundingDate "1928"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Vision_West_Nottinghamshire_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.2 53.13333)"^^geo:wktLiteral ;
+        schema:addressLocality "Mansfield" ;
+    ] ;
+    schema:url <http://www.wnc.ac.uk/> ;
+    schema:sameAs <http://isni.org/isni/0000000417558721> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7936182> ;
+             .

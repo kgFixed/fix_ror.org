@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04kaykv54> 
+    a org:Organization ;
+    rdfs:label "Central Board of Secondary Education" ;
+    schema:name "Central Board of Secondary Education" ;
+    schema:foundingDate "1929"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Central_Board_of_Secondary_Education> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02ase7r14> ;
+        rdfs:label "St Anthonys Senior Secondary School" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(77.23149 28.65195)"^^geo:wktLiteral ;
+        schema:addressLocality "Delhi" ;
+    ] ;
+    schema:url <http://cbseaff.nic.in/> ;
+    schema:sameAs <http://isni.org/isni/0000000446519086> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3347350> ;
+             .

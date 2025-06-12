@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04j7hdv70> 
+    a org:Organization ;
+    rdfs:label "Society for the Advancement of Scandinavian Study" ;
+    schema:name "Society for the Advancement of Scandinavian Study" ;
+    schema:foundingDate "1911"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Society_for_the_Advancement_of_Scandinavian_Study> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-111.89105 40.76078)"^^geo:wktLiteral ;
+        schema:addressLocality "Salt Lake City" ;
+    ] ;
+    schema:url <http://scandinavianstudy.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000119412329> ;
+             .

@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01j17xg39> 
+    a org:Organization ;
+    rdfs:label "New York Hospital Queens" ;
+    schema:name "New York Hospital Queens" ;
+    schema:foundingDate "1892"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/NewYork%E2%80%93Presbyterian/Queens> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05bnh6r87> ;
+        rdfs:label "Cornell University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-74.00597 40.71427)"^^geo:wktLiteral ;
+        schema:addressLocality "New York" ;
+    ] ;
+    schema:url <http://www.nyhq.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000097057644> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q22079541> ;
+             .

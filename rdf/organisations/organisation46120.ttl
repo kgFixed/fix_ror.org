@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00m5fcs37> 
+    a org:Organization ;
+    rdfs:label "Humane Slaughter Association" ;
+    schema:name "Humane Slaughter Association" ;
+    schema:foundingDate "1911"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Humane_Slaughter_Association> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.29371 51.81148)"^^geo:wktLiteral ;
+        schema:addressLocality "Wheathampstead" ;
+    ] ;
+    schema:url <http://www.hsa.org.uk/> ;
+    schema:sameAs <http://isni.org/isni/000000009395177X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q17513403> ;
+             .

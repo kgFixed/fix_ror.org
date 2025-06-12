@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/057g0br29> 
+    a org:Organization ;
+    rdfs:label "Brazilian Institute of Environment and Renewable Natural Resources" ;
+    schema:name "Brazilian Institute of Environment and Renewable Natural Resources" ;
+    schema:foundingDate "1989"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Brazilian_Institute_of_Environment_and_Renewable_Natural_Resources> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04nzya351> ;
+        rdfs:label "R3 Animal" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-47.92972 -15.77972)"^^geo:wktLiteral ;
+        schema:addressLocality "Brasília" ;
+    ] ;
+    schema:url <http://www.ibama.gov.br/> ;
+    schema:sameAs <http://isni.org/isni/0000000095618321> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2743129> ;
+             .

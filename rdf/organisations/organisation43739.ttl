@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03bjn0010> 
+    a org:Organization ;
+    rdfs:label "National Research Council" ;
+    schema:name "National Research Council" ;
+    schema:foundingDate "1999"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/National_Research_Council_of_Sri_Lanka> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(79.84868 6.93548)"^^geo:wktLiteral ;
+        schema:addressLocality "Colombo" ;
+    ] ;
+    schema:url <http://www.nrc.gov.lk/> ;
+     .

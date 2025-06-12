@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04fdz6f52> 
+    a org:Organization ;
+    rdfs:label "Crossroads Bible College" ;
+    schema:name "Crossroads Bible College" ;
+    schema:foundingDate "1982"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Crossroads_Bible_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-86.15804 39.76838)"^^geo:wktLiteral ;
+        schema:addressLocality "Indianapolis" ;
+    ] ;
+    schema:url <http://www.crossroads.edu/> ;
+    schema:sameAs <http://isni.org/isni/000000040533099X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5188813> ;
+             .

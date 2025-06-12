@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01ad74h27> 
+    a org:Organization ;
+    rdfs:label "Tillamook Bay Community College" ;
+    schema:name "Tillamook Bay Community College" ;
+    schema:foundingDate "1981"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Tillamook_Bay_Community_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-123.84553 45.4564)"^^geo:wktLiteral ;
+        schema:addressLocality "Tillamook" ;
+    ] ;
+    schema:url <http://www.tillamookbaycc.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000405375063> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7802240> ;
+             .

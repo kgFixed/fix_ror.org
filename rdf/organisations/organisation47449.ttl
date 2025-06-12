@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00vja3713> 
+    a org:Organization ;
+    rdfs:label "Université de Technologie et de Sciences Appliquées Libano-Française" ;
+    schema:name "Université de Technologie et de Sciences Appliquées Libano-Française" ;
+    schema:foundingDate "1996"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(35.84415 34.43352)"^^geo:wktLiteral ;
+        schema:addressLocality "Tripoli" ;
+    ] ;
+    schema:url <http://www.ulf.edu.lb/> ;
+    schema:sameAs <http://isni.org/isni/0000000404174569> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30266454> ;
+             .

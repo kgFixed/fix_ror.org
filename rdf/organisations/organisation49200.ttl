@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/020h5rq76> 
+    a org:Organization ;
+    rdfs:label "Weatherford (United Kingdom)" ;
+    schema:name "Weatherford (United Kingdom)" ;
+    schema:foundingDate "1940"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Weatherford_International> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/000cytz87> ;
+        rdfs:label "Weatherford (Switzerland)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.12574 51.50853)"^^geo:wktLiteral ;
+        schema:addressLocality "London" ;
+    ] ;
+    schema:url <http://www.weatherford.com/en> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q29123567> ;
+             .

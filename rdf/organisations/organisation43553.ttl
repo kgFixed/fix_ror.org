@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01h30nm18> 
+    a org:Organization ;
+    rdfs:label "JCPenney (United States)" ;
+    schema:name "JCPenney (United States)" ;
+    schema:foundingDate "1902"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/J._C._Penney> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-96.69889 33.01984)"^^geo:wktLiteral ;
+        schema:addressLocality "Plano" ;
+    ] ;
+    schema:url <http://www.jcpenney.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000404385833> ;
+             .

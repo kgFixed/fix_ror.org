@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05mw4gk09> 
+    a org:Organization ;
+    rdfs:label "Rebecca Sieff Hospital" ;
+    schema:name "Rebecca Sieff Hospital" ;
+    schema:foundingDate "1910"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Rebecca_Sieff_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(35.496 32.96465)"^^geo:wktLiteral ;
+        schema:addressLocality "Safed" ;
+    ] ;
+    schema:url <http://www.safed.co.il/ziv-hospital.html> ;
+    schema:sameAs <http://isni.org/isni/0000000406317092> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q18393717> ;
+             .

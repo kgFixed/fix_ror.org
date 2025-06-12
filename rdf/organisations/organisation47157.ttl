@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05ye2w436> 
+    a org:Organization ;
+    rdfs:label "Oita Junior College" ;
+    schema:name "Oita Junior College" ;
+    schema:foundingDate "1964"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Oita_Junior_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(131.6 33.23333)"^^geo:wktLiteral ;
+        schema:addressLocality "Ōita" ;
+    ] ;
+    schema:url <http://www.d-b.ne.jp/h-tandai/college/index.htm> ;
+     .

@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01e3p0233> 
+    a org:Organization ;
+    rdfs:label "Vesuvius (France)" ;
+    schema:name "Vesuvius (France)" ;
+    schema:foundingDate "1704"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Vesuvius_plc> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04dmca004> ;
+        rdfs:label "Vesuvius (United Kingdom)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(3.91534 50.29806)"^^geo:wktLiteral ;
+        schema:addressLocality "Feignies" ;
+    ] ;
+    schema:url <http://www.vesuvius.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30262509> ;
+             .

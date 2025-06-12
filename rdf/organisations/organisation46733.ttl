@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/013ch2r08> 
+    a org:Organization ;
+    rdfs:label "Fukushima Prefectural Asaka High School" ;
+    schema:name "Fukushima Prefectural Asaka High School" ;
+    schema:foundingDate "1884"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Fukushima_Prefectural_Asaka_High_School> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(140.38333 37.4)"^^geo:wktLiteral ;
+        schema:addressLocality "Kōriyama" ;
+    ] ;
+    schema:url <http://www.asaka-h.fks.ed.jp/> ;
+     .

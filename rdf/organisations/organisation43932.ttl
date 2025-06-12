@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03qy49k44> 
+    a org:Organization ;
+    rdfs:label "National Agency for National Parks" ;
+    schema:name "National Agency for National Parks" ;
+    schema:foundingDate "2000"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/National_Agency_for_National_Parks> ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(9.45356 0.39241)"^^geo:wktLiteral ;
+        schema:addressLocality "Libreville" ;
+    ] ;
+    schema:url <http://www.parcsgabon.org/l> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q17012007> ;
+             .

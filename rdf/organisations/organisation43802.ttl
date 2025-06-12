@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00y19mj60> 
+    a org:Organization ;
+    rdfs:label "Department of Environment and Conservation" ;
+    schema:name "Department of Environment and Conservation" ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01jet5b79> ;
+        rdfs:label "Government of Newfoundland and Labrador" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-52.70931 47.56494)"^^geo:wktLiteral ;
+        schema:addressLocality "St. John's" ;
+    ] ;
+    schema:url <http://www.env.gov.nl.ca/env/> ;
+     .

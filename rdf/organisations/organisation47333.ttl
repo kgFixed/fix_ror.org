@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02vft6f63> 
+    a org:Organization ;
+    rdfs:label "Tokyo Metropolitan Hiroo High School" ;
+    schema:name "Tokyo Metropolitan Hiroo High School" ;
+    schema:foundingDate "1950"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(139.69171 35.6895)"^^geo:wktLiteral ;
+        schema:addressLocality "Tokyo" ;
+    ] ;
+    schema:url <http://www.hiroo-h.metro.tokyo.jp/> ;
+     .

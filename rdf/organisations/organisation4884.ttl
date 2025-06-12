@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00qctrq52> 
+    a org:Organization ;
+    rdfs:label "Manipal College of Medical Sciences" ;
+    schema:name "Manipal College of Medical Sciences" ;
+    schema:foundingDate "1992"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Manipal_College_of_Medical_Sciences> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01qemgb02> ;
+        rdfs:label "Manipal Teaching Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(83.96851 28.26689)"^^geo:wktLiteral ;
+        schema:addressLocality "Pokhara" ;
+    ] ;
+    schema:url <https://www.manipal.edu.np/mcoms.html> ;
+    schema:sameAs <http://isni.org/isni/0000000406353587> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6749807> ;
+             .

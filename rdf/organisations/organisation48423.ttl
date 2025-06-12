@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04ch3q361> 
+    a org:Organization ;
+    rdfs:label "Centre for Economic and Social Studies" ;
+    schema:name "Centre for Economic and Social Studies" ;
+    schema:foundingDate "1980"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Centre_for_Economic_and_Social_Studies,_Hyderabad> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/009axkg17> ;
+        rdfs:label "Indian Council of Social Science Research" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(78.45636 17.38405)"^^geo:wktLiteral ;
+        schema:addressLocality "Hyderabad" ;
+    ] ;
+    schema:url <http://www.cess.ac.in/cesshome/cessmain.asp> ;
+    schema:sameAs <http://isni.org/isni/0000000404967382> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5062420> ;
+             .

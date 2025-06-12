@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02pvszw76> 
+    a org:Organization ;
+    rdfs:label "Semikron (Germany)" ;
+    schema:name "Semikron (Germany)" ;
+    schema:foundingDate "1951"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Semikron> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03xjasx48> ;
+        rdfs:label "Semikron (Slovakia)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05s9c0w76> ;
+        rdfs:label "Semikron (United Kingdom)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(11.07752 49.45421)"^^geo:wktLiteral ;
+        schema:addressLocality "Nuremberg" ;
+    ] ;
+    schema:url <https://www.semikron.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000463600038> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q320932> ;
+             .

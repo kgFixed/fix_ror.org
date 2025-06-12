@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01dyx2092> 
+    a org:Organization ;
+    rdfs:label "Advanced Electrophoresis Solutions (Canada)" ;
+    schema:name "Advanced Electrophoresis Solutions (Canada)" ;
+    schema:foundingDate "2016"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-80.31269 43.3601)"^^geo:wktLiteral ;
+        schema:addressLocality "Cambridge" ;
+    ] ;
+    schema:url <http://aeslifesciences.com/> ;
+     .

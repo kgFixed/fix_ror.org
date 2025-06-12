@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/037y5zq83> 
+    a org:Organization ;
+    rdfs:label "Kolding Hospital" ;
+    schema:name "Kolding Hospital" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04jewc589> ;
+        rdfs:label "Lillebaelt Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(9.47216 55.4904)"^^geo:wktLiteral ;
+        schema:addressLocality "Kolding" ;
+    ] ;
+    schema:url <https://www.sygehuslillebaelt.dk/wm223295> ;
+    schema:sameAs <http://isni.org/isni/0000000406315249> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30280478> ;
+             .

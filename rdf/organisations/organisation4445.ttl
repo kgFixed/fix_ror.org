@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/027f9rb06> 
+    a org:Organization ;
+    rdfs:label "Shimonoseki City Hospital" ;
+    schema:name "Shimonoseki City Hospital" ;
+    schema:foundingDate "1950"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(130.93713 33.95548)"^^geo:wktLiteral ;
+        schema:addressLocality "Shimonoseki" ;
+    ] ;
+    schema:url <http://shimonosekicity-hosp.jp/> ;
+    schema:sameAs <http://isni.org/isni/0000000417750588> ;
+             .

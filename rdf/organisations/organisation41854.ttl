@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/024g9p727> 
+    a org:Organization ;
+    rdfs:label "For farmers (United Kingdom)" ;
+    schema:name "For farmers (United Kingdom)" ;
+    schema:foundingDate "1893"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/BOCM_Pauls> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(1.15545 52.05917)"^^geo:wktLiteral ;
+        schema:addressLocality "Ipswich" ;
+    ] ;
+    schema:url <http://www.forfarmers.co.uk/> ;
+    schema:sameAs <http://isni.org/isni/000000040517582X> ;
+             .

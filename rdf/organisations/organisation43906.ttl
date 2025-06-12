@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04cvyy414> 
+    a org:Organization ;
+    rdfs:label "Connecticut Department of Labor" ;
+    schema:name "Connecticut Department of Labor" ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-72.65259 41.71427)"^^geo:wktLiteral ;
+        schema:addressLocality "Wethersfield" ;
+    ] ;
+    schema:url <https://www.ctdol.state.ct.us/> ;
+    schema:sameAs <http://isni.org/isni/0000000404385809> ;
+             .

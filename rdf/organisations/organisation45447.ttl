@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00wf3sn74> 
+    a org:Organization ;
+    rdfs:label "Federal Office of Consumer Protection and Food Safety" ;
+    schema:name "Federal Office of Consumer Protection and Food Safety" ;
+    schema:foundingDate "1876"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Federal_Office_of_Consumer_Protection_and_Food_Safety> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04jw21793> ;
+        rdfs:label "Federal Ministry of Food and Agriculture" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(13.41053 52.52437)"^^geo:wktLiteral ;
+        schema:addressLocality "Berlin" ;
+    ] ;
+    schema:url <http://www.bvl.bund.de/EN/Home/homepage_node.html> ;
+    schema:sameAs <http://isni.org/isni/0000000110886114> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q18124763> ;
+             .

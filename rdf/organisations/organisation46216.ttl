@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00rzr9371> 
+    a org:Organization ;
+    rdfs:label "Asociación Universitaria Iberoamericana de Postgrado" ;
+    schema:name "Asociación Universitaria Iberoamericana de Postgrado" ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-5.66388 40.96882)"^^geo:wktLiteral ;
+        schema:addressLocality "Salamanca" ;
+    ] ;
+    schema:url <http://www.auip.org/es/> ;
+     .

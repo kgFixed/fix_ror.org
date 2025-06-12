@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02hgkrr64> 
+    a org:Organization ;
+    rdfs:label "Japan Patent Office" ;
+    schema:name "Japan Patent Office" ;
+    schema:foundingDate "2009"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Japan_Patent_Office> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/055tm7f07> ;
+        rdfs:label "Ministry of Economy, Trade and Industry" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(139.69171 35.6895)"^^geo:wktLiteral ;
+        schema:addressLocality "Tokyo" ;
+    ] ;
+    schema:url <https://www.jpo.go.jp/> ;
+    schema:sameAs <http://isni.org/isni/0000000417637761> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1141991> ;
+             .

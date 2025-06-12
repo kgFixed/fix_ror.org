@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00jh2w590> 
+    a org:Organization ;
+    rdfs:label "New Mexico Department of Health" ;
+    schema:name "New Mexico Department of Health" ;
+    schema:foundingDate "1919"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/New_Mexico_Department_of_Health> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-105.9378 35.68698)"^^geo:wktLiteral ;
+        schema:addressLocality "Santa Fe" ;
+    ] ;
+    schema:url <http://nmhealth.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000403680099> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7010176> ;
+             .

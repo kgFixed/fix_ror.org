@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0359zqq03> 
+    a org:Organization ;
+    rdfs:label "Osaka Prefectural Toyonaka Support School" ;
+    schema:name "Osaka Prefectural Toyonaka Support School" ;
+    schema:foundingDate "1974"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0282p8n44> ;
+        rdfs:label "Osaka Prefectural Education Center" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(135.46932 34.78244)"^^geo:wktLiteral ;
+        schema:addressLocality "Toyonaka" ;
+    ] ;
+    schema:url <http://www.osaka-c.ed.jp/toyonaka-y/> ;
+     .

@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04gkxrj12> 
+    a org:Organization ;
+    rdfs:label "MinebeaMitsumi (Japan)" ;
+    schema:name "MinebeaMitsumi (Japan)" ;
+    schema:foundingDate "1951"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/MinebeaMitsumi> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0197y4k63> ;
+        rdfs:label "MinebeaMitsumi (Germany)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(138.18333 36.65)"^^geo:wktLiteral ;
+        schema:addressLocality "Nagano" ;
+    ] ;
+    schema:url <https://www.minebeamitsumi.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000463597131> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q820239> ;
+             .

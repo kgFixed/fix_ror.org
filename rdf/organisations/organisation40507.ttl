@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00dyead60> 
+    a org:Organization ;
+    rdfs:label "Research and Technology Center of Energy" ;
+    schema:name "Research and Technology Center of Energy" ;
+    schema:foundingDate "2005"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05v1m8q81> ;
+        rdfs:label "Ministry of Higher Education and Scientific Research" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(10.34163 36.72866)"^^geo:wktLiteral ;
+        schema:addressLocality "Hammam-Lif" ;
+    ] ;
+    schema:url <http://www.crten.rnrt.tn/Accueil.php> ;
+     .

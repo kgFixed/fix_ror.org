@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/049sr1d03> 
+    a org:Organization ;
+    rdfs:label "Velindre Cancer Centre" ;
+    schema:name "Velindre Cancer Centre" ;
+    schema:foundingDate "1956"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05ntqkc30> ;
+        rdfs:label "Velindre NHS Trust" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-3.18 51.48)"^^geo:wktLiteral ;
+        schema:addressLocality "Cardiff" ;
+    ] ;
+    schema:url <http://www.velindrecc.wales.nhs.uk/home> ;
+    schema:sameAs <http://isni.org/isni/000000040466551X> ;
+             .

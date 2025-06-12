@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/034zsq795> 
+    a org:Organization ;
+    rdfs:label "Magna International (United States)" ;
+    schema:name "Magna International (United States)" ;
+    schema:foundingDate "1957"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Magna_International> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0537cvg39> ;
+        rdfs:label "Magna International (Canada)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-83.14993 42.60559)"^^geo:wktLiteral ;
+        schema:addressLocality "Troy" ;
+    ] ;
+    schema:url <http://www.magna.com/global-reach/north-america> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q28974299> ;
+             .

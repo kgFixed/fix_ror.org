@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00zy64e53> 
+    a org:Organization ;
+    rdfs:label "Radiation Detection Technologies (United States)" ;
+    schema:name "Radiation Detection Technologies (United States)" ;
+    schema:foundingDate "2011"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-73.96625 40.78343)"^^geo:wktLiteral ;
+        schema:addressLocality "Manhattan" ;
+    ] ;
+    schema:url <http://radectech.com/> ;
+     .

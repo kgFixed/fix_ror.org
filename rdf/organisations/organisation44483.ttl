@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01cb10c90> 
+    a org:Organization ;
+    rdfs:label "Cheung Kong Graduate School of Business" ;
+    schema:name "Cheung Kong Graduate School of Business" ;
+    schema:foundingDate "2002"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Cheung_Kong_Graduate_School_of_Business> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(116.39723 39.9075)"^^geo:wktLiteral ;
+        schema:addressLocality "Beijing" ;
+    ] ;
+    schema:url <http://english.ckgsb.edu.cn/> ;
+    schema:sameAs <http://isni.org/isni/0000000406057227> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q673841> ;
+             .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05xxn0r26> 
+    a org:Organization ;
+    rdfs:label "Americans for Medical Progress" ;
+    schema:name "Americans for Medical Progress" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Americans_for_Medical_Progress> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.03637 38.89511)"^^geo:wktLiteral ;
+        schema:addressLocality "Washington" ;
+    ] ;
+    schema:url <http://www.amprogress.org/> ;
+    schema:sameAs <http://isni.org/isni/000000044659713X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4745618> ;
+             .

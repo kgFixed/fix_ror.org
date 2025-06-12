@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0198sv425> 
+    a org:Organization ;
+    rdfs:label "National Institute of Open Schooling" ;
+    schema:name "National Institute of Open Schooling" ;
+    schema:foundingDate "1989"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/National_Institute_of_Open_Schooling> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/048xjjh50> ;
+        rdfs:label "Ministry of Human Resource Development" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(77.33 28.58)"^^geo:wktLiteral ;
+        schema:addressLocality "Noida" ;
+    ] ;
+    schema:url <http://www.nios.ac.in/> ;
+    schema:sameAs <http://isni.org/isni/0000000417682888> ;
+             .

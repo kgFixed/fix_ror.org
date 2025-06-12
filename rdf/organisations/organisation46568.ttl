@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04dvebt78> 
+    a org:Organization ;
+    rdfs:label "ResMed (Australia)" ;
+    schema:name "ResMed (Australia)" ;
+    schema:foundingDate "1989"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/ResMed> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01j0jk666> ;
+        rdfs:label "ResMed (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(151.20732 -33.86785)"^^geo:wktLiteral ;
+        schema:addressLocality "Sydney" ;
+    ] ;
+    schema:url <http://www.resmed.com/in/en/index.html> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q29123786> ;
+             .

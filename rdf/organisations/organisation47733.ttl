@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03jzczt57> 
+    a org:Organization ;
+    rdfs:label "International Institute for Strategic Studies" ;
+    schema:name "International Institute for Strategic Studies" ;
+    schema:foundingDate "1958"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/International_Institute_for_Strategic_Studies> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.03637 38.89511)"^^geo:wktLiteral ;
+        schema:addressLocality "Washington" ;
+    ] ;
+    schema:url <https://www.iiss.org/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q50376895> ;
+             .

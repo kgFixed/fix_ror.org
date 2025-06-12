@@ -1,0 +1,20 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04ymjyh53> 
+    a org:Organization ;
+    rdfs:label "Foetal Alcohol Spectrum Disorders Clinic" ;
+    schema:name "Foetal Alcohol Spectrum Disorders Clinic" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.00601 51.25687)"^^geo:wktLiteral ;
+        schema:addressLocality "Oxted" ;
+    ] ;
+    schema:url <http://www.fasdclinic.com/> ;
+     .

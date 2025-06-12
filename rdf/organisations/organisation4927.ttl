@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00ft41876> 
+    a org:Organization ;
+    rdfs:label "Marion duPont Scott Equine Medical Center" ;
+    schema:name "Marion duPont Scott Equine Medical Center" ;
+    schema:foundingDate "1984"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Marion_duPont_Scott#Equine_Medical_Center> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.5636 39.11566)"^^geo:wktLiteral ;
+        schema:addressLocality "Leesburg" ;
+    ] ;
+    schema:url <https://www.vetmed.vt.edu/emc/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30280874> ;
+             .

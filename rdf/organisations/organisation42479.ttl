@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05fwp8t64> 
+    a org:Organization ;
+    rdfs:label "Hochschule der Deutschen Bundesbank" ;
+    schema:name "Hochschule der Deutschen Bundesbank" ;
+    schema:foundingDate "1976"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03jvfq589> ;
+        rdfs:label "Deutsche Bundesbank" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(7.82276 50.65998)"^^geo:wktLiteral ;
+        schema:addressLocality "Hachenburg" ;
+    ] ;
+    schema:url <https://www.hochschule-bundesbank.de/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q1622151> ;
+             .

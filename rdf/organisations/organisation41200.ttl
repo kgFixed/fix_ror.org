@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02bb8n686> 
+    a org:Organization ;
+    rdfs:label "Guiyang College of Traditional Chinese Medicine" ;
+    schema:name "Guiyang College of Traditional Chinese Medicine" ;
+    schema:foundingDate "1965"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Guiyang_College_of_Traditional_Chinese_Medicine> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(106.71667 26.58333)"^^geo:wktLiteral ;
+        schema:addressLocality "Guiyang" ;
+    ] ;
+    schema:url <http://en.gyctcm.edu.cn/> ;
+    schema:sameAs <http://isni.org/isni/0000000106811590> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5616925> ;
+             .

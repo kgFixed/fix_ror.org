@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02ewpfp83> 
+    a org:Organization ;
+    rdfs:label "Medicure (Canada)" ;
+    schema:name "Medicure (Canada)" ;
+    schema:foundingDate "1997"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05nxk4667> ;
+        rdfs:label "Medicure (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-97.14704 49.8844)"^^geo:wktLiteral ;
+        schema:addressLocality "Winnipeg" ;
+    ] ;
+    schema:url <http://www.medicure.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000404101810> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30264090> ;
+             .

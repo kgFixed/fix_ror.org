@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01xqt1a75> 
+    a org:Organization ;
+    rdfs:label "CIAM Public Health Research and Development Centre" ;
+    schema:name "CIAM Public Health Research and Development Centre" ;
+    schema:foundingDate "2000"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-16.57803 13.45274)"^^geo:wktLiteral ;
+        schema:addressLocality "Banjul" ;
+    ] ;
+    schema:url <http://www.ciam.gm/> ;
+    schema:sameAs <http://isni.org/isni/0000000406475613> ;
+             .

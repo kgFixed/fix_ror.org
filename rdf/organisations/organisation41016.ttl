@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01sn2ky05> 
+    a org:Organization ;
+    rdfs:label "Genes'ink (France)" ;
+    schema:name "Genes'ink (France)" ;
+    schema:foundingDate "2010"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(5.61959 43.48307)"^^geo:wktLiteral ;
+        schema:addressLocality "Rousset" ;
+    ] ;
+    schema:url <http://www.genesink.com/> ;
+     .

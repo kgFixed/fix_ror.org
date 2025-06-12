@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03f1m2f12> 
+    a org:Organization ;
+    rdfs:label "Dräger (United Kingdom)" ;
+    schema:name "Dräger (United Kingdom)" ;
+    schema:foundingDate "1889"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Dr%C3%A4gerwerk> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0415p9s42> ;
+        rdfs:label "Dräger (Germany)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.50856 55.12708)"^^geo:wktLiteral ;
+        schema:addressLocality "Blyth" ;
+    ] ;
+    schema:url <https://www.draeger.com/en_uk/Home> ;
+     .

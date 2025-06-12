@@ -1,0 +1,84 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04rhvbz32> 
+    a org:Organization ;
+    rdfs:label "California Community Colleges System" ;
+    schema:name "California Community Colleges System" ;
+    schema:foundingDate "1967"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/California_Community_Colleges_System> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00jce1v14> ;
+        rdfs:label "College of the Siskiyous" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03wzvrw53> ;
+        rdfs:label "Feather River College" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00y0xzp63> ;
+        rdfs:label "Lassen Community College" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/006dtpb58> ;
+        rdfs:label "Monterey Peninsula College" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03wxx8465> ;
+        rdfs:label "Mt. San Antonio College" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00b5ztt43> ;
+        rdfs:label "Rancho Santiago Community College District" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05eca5w86> ;
+        rdfs:label "Riverside Community College District" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03wbrqz31> ;
+        rdfs:label "Saddleback College" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/046j50r07> ;
+        rdfs:label "San Bernardino Community College District" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00p0jh392> ;
+        rdfs:label "State Center Community College District" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-121.4944 38.58157)"^^geo:wktLiteral ;
+        schema:addressLocality "Sacramento" ;
+    ] ;
+    schema:url <http://www.cccco.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000088621274> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2460112> ;
+             .

@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01tkb3y54> 
+    a org:Organization ;
+    rdfs:label "GISMA Business School" ;
+    schema:name "GISMA Business School" ;
+    schema:foundingDate "1999"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/GISMA_Business_School> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(9.73322 52.37052)"^^geo:wktLiteral ;
+        schema:addressLocality "Hanover" ;
+    ] ;
+    schema:url <http://www.gisma.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000406457300> ;
+             .

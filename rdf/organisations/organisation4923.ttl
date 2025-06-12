@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0460fxw51> 
+    a org:Organization ;
+    rdfs:label "Sacred Heart Hospital" ;
+    schema:name "Sacred Heart Hospital" ;
+    schema:foundingDate "1889"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-91.49849 44.81135)"^^geo:wktLiteral ;
+        schema:addressLocality "Eau Claire" ;
+    ] ;
+    schema:url <http://www.sacredhearteauclaire.org/> ;
+    schema:sameAs <http://isni.org/isni/000000040383529X> ;
+             .

@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02j1fb913> 
+    a org:Organization ;
+    rdfs:label "Secretaría de Investigación, Innovación y Educación Superior" ;
+    schema:name "Secretaría de Investigación, Innovación y Educación Superior" ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-89.61696 20.97537)"^^geo:wktLiteral ;
+        schema:addressLocality "Mérida" ;
+    ] ;
+    schema:url <http://www.siies.yucatan.gob.mx/> ;
+     .

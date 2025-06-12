@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04tr09862> 
+    a org:Organization ;
+    rdfs:label "Sequoia Hospital" ;
+    schema:name "Sequoia Hospital" ;
+    schema:foundingDate "1950"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Sequoia_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05c9r4685> ;
+        rdfs:label "Dignity Health" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-122.23635 37.48522)"^^geo:wktLiteral ;
+        schema:addressLocality "Redwood City" ;
+    ] ;
+    schema:url <https://www.dignityhealth.org/sequoia/> ;
+    schema:sameAs <http://isni.org/isni/0000000098274667> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7452546> ;
+             .

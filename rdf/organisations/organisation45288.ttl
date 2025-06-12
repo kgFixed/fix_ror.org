@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02jcrd051> 
+    a org:Organization ;
+    rdfs:label "Blue Cross Blue Shield Association" ;
+    schema:name "Blue Cross Blue Shield Association" ;
+    schema:foundingDate "1929"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Blue_Cross_Blue_Shield_Association> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-87.65005 41.85003)"^^geo:wktLiteral ;
+        schema:addressLocality "Chicago" ;
+    ] ;
+    schema:url <http://www.bcbs.com/> ;
+    schema:sameAs <http://isni.org/isni/000000040388194X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4929017> ;
+             .

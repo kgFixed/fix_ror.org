@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02h6w3w70> 
+    a org:Organization ;
+    rdfs:label "Malabar Cancer Centre" ;
+    schema:name "Malabar Cancer Centre" ;
+    schema:foundingDate "2001"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Malabar_Cancer_Centre> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(75.4929 11.74811)"^^geo:wktLiteral ;
+        schema:addressLocality "Thalassery" ;
+    ] ;
+    schema:url <http://www.mcc.kerala.gov.in/> ;
+    schema:sameAs <http://isni.org/isni/000000041767495X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6740733> ;
+             .

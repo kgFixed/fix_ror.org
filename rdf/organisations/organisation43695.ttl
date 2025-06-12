@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02gfwng46> 
+    a org:Organization ;
+    rdfs:label "Whirlpool (United States)" ;
+    schema:name "Whirlpool (United States)" ;
+    schema:foundingDate "1911"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Whirlpool_Corporation> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05mrw0a87> ;
+        rdfs:label "Whirlpool (Brazil)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/002qjv549> ;
+        rdfs:label "Whirlpool (Germany)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05syv4032> ;
+        rdfs:label "Whirlpool (India)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/026xnjn61> ;
+        rdfs:label "Whirlpool (Italy)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/023bna168> ;
+        rdfs:label "Whirlpool (Netherlands)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-86.45419 42.11671)"^^geo:wktLiteral ;
+        schema:addressLocality "Benton Harbor" ;
+    ] ;
+    schema:url <http://www.whirlpoolcorp.com/> ;
+    schema:sameAs <http://isni.org/isni/000000011482210X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1471346> ;
+             .

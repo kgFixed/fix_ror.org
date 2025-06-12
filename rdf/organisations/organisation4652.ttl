@@ -1,0 +1,35 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04gs6xd08> 
+    a org:Organization ;
+    rdfs:label "Zealand University Hospital Køge" ;
+    schema:name "Zealand University Hospital Køge" ;
+    schema:foundingDate "1983"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05bpbnx46> ;
+        rdfs:label "Copenhagen University Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01dtyv127> ;
+        rdfs:label "Region Zealand" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(12.18214 55.45802)"^^geo:wktLiteral ;
+        schema:addressLocality "Køge" ;
+    ] ;
+    schema:url <http://www.regionsjaelland.dk/sundhed/geo/koegesygehus/Sider/default.aspx> ;
+    schema:sameAs <http://isni.org/isni/0000000406300610> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q12323448> ;
+             .

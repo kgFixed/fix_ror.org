@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00y1dzm96> 
+    a org:Organization ;
+    rdfs:label "Institute of Petroleum Geology and Geophysics" ;
+    schema:name "Institute of Petroleum Geology and Geophysics" ;
+    schema:foundingDate "2005"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0554h7e84> ;
+        rdfs:label "Department of Earth Sciences" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(82.9346 55.0415)"^^geo:wktLiteral ;
+        schema:addressLocality "Novosibirsk" ;
+    ] ;
+    schema:url <http://www.ipgg.sbras.ru/en> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q4201625> ;
+             .

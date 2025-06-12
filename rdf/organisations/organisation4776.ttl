@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05nkffb74> 
+    a org:Organization ;
+    rdfs:label "Mubarak Al Kabeer Hospital" ;
+    schema:name "Mubarak Al Kabeer Hospital" ;
+    schema:foundingDate "1982"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Mubarak_Al-Kabeer_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(48.07611 29.33389)"^^geo:wktLiteral ;
+        schema:addressLocality "As Sālimīyah" ;
+    ] ;
+    schema:url <http://www.mkh-medicine.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000406372235> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6930826> ;
+             .

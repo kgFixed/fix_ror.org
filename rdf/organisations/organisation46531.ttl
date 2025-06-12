@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04ecrg623> 
+    a org:Organization ;
+    rdfs:label "Nippon Sheet Glass (Japan)" ;
+    schema:name "Nippon Sheet Glass (Japan)" ;
+    schema:foundingDate "1918"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Nippon_Sheet_Glass> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03zzs9b68> ;
+        rdfs:label "Nippon Sheet Glass (Italy)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04j65hp39> ;
+        rdfs:label "Nippon Sheet Glass (United Kingdom)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04zp8dw64> ;
+        rdfs:label "Nippon Sheet Glass (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(135.50107 34.69379)"^^geo:wktLiteral ;
+        schema:addressLocality "Osaka" ;
+    ] ;
+    schema:url <http://www.nsg.com/> ;
+    schema:sameAs <http://isni.org/isni/000000040631203X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q326700> ;
+             .

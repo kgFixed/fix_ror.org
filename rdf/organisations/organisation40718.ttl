@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/027z3vs57> 
+    a org:Organization ;
+    rdfs:label "Kenya Sea Turtle Conservation Committee" ;
+    schema:name "Kenya Sea Turtle Conservation Committee" ;
+    schema:foundingDate "1993"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(39.66359 -4.05466)"^^geo:wktLiteral ;
+        schema:addressLocality "Mombasa" ;
+    ] ;
+    schema:url <http://seaturtle.wildlifedirect.org/> ;
+     .

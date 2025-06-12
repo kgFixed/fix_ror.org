@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03njb3j41> 
+    a org:Organization ;
+    rdfs:label "Southwestern College - New Mexico" ;
+    schema:name "Southwestern College - New Mexico" ;
+    schema:foundingDate "1976"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Southwestern_College_(Santa_Fe,_New_Mexico)> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-105.9378 35.68698)"^^geo:wktLiteral ;
+        schema:addressLocality "Santa Fe" ;
+    ] ;
+    schema:url <https://www.swc.edu/> ;
+    schema:sameAs <http://isni.org/isni/000000040526825X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7571403> ;
+             .

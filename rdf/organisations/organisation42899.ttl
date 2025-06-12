@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03d0ft388> 
+    a org:Organization ;
+    rdfs:label "Bank für Tirol und Vorarlberg" ;
+    schema:name "Bank für Tirol und Vorarlberg" ;
+    schema:foundingDate "1904"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Bank_f%C3%BCr_Tirol_und_Vorarlberg> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(11.39454 47.26266)"^^geo:wktLiteral ;
+        schema:addressLocality "Innsbruck" ;
+    ] ;
+    schema:url <http://www.btv.at/en/> ;
+     .

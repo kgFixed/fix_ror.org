@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00hqa1k37> 
+    a org:Organization ;
+    rdfs:label "California Christian College" ;
+    schema:name "California Christian College" ;
+    schema:foundingDate "1955"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/California_Christian_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-119.77237 36.74773)"^^geo:wktLiteral ;
+        schema:addressLocality "Fresno" ;
+    ] ;
+    schema:url <http://www.calchristiancollege.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000405259249> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5020313> ;
+             .

@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01w0j5472> 
+    a org:Organization ;
+    rdfs:label "Swiss Society of Radiology" ;
+    schema:name "Swiss Society of Radiology" ;
+    org:status "active" ;
+    org:classification "Other" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(8.55 47.36667)"^^geo:wktLiteral ;
+        schema:addressLocality "Zurich" ;
+    ] ;
+    schema:url <http://sgr-ssr.ch/> ;
+    schema:sameAs <http://isni.org/isni/0000000121603431> ;
+             .

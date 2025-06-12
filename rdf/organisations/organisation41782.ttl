@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04nahdt84> 
+    a org:Organization ;
+    rdfs:label "SVS Medical College" ;
+    schema:name "SVS Medical College" ;
+    schema:foundingDate "1999"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04kyt9204> ;
+        rdfs:label "Dr. NTR University of Health Sciences" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(77.99587 16.76091)"^^geo:wktLiteral ;
+        schema:addressLocality "Mahabubnagar" ;
+    ] ;
+    schema:url <http://svsmch.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000418040414> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30263041> ;
+             .

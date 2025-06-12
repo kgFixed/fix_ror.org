@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01m5tj961> 
+    a org:Organization ;
+    rdfs:label "Villa Maria College" ;
+    schema:name "Villa Maria College" ;
+    schema:foundingDate "1960"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Villa_Maria_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-78.87837 42.88645)"^^geo:wktLiteral ;
+        schema:addressLocality "Buffalo" ;
+    ] ;
+    schema:url <http://www.villa.edu/> ;
+    schema:sameAs <http://isni.org/isni/000000040526999X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7930417> ;
+             .

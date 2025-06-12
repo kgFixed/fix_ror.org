@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0427t6n75> 
+    a org:Organization ;
+    rdfs:label "Ittihad Private University" ;
+    schema:name "Ittihad Private University" ;
+    schema:foundingDate "2003"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(39.00788 35.95283)"^^geo:wktLiteral ;
+        schema:addressLocality "Rakka" ;
+    ] ;
+    schema:url <http://www.ipu.edu.sy/?lang=en> ;
+    schema:sameAs <http://isni.org/isni/0000000404175932> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q12204400> ;
+             .

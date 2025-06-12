@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01chj3z31> 
+    a org:Organization ;
+    rdfs:label "Brazilian Medical Association" ;
+    schema:name "Brazilian Medical Association" ;
+    schema:foundingDate "1951"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Brazilian_Medical_Association> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-46.63611 -23.5475)"^^geo:wktLiteral ;
+        schema:addressLocality "São Paulo" ;
+    ] ;
+    schema:url <http://amb.org.br/> ;
+    schema:sameAs <http://isni.org/isni/0000000093787383> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4958752> ;
+             .

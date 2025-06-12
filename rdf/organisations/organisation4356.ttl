@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/010wh8q62> 
+    a org:Organization ;
+    rdfs:label "Raja Isteri Pengiran Anak Saleha Hospital" ;
+    schema:name "Raja Isteri Pengiran Anak Saleha Hospital" ;
+    schema:foundingDate "1984"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Raja_Isteri_Pengiran_Anak_Saleha_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(114.94006 4.89035)"^^geo:wktLiteral ;
+        schema:addressLocality "Bandar Seri Begawan" ;
+    ] ;
+    schema:url <http://www.moh.gov.bn/SitePages/original/Raja%20Isteri%20Pengiran%20Anak%20Saleha%20Hospital.aspx> ;
+    schema:sameAs <http://isni.org/isni/0000000406001442> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7285454> ;
+             .

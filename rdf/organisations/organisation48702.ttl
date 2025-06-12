@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01qpg5w50> 
+    a org:Organization ;
+    rdfs:label "Tabaran Institute of Higher Education" ;
+    schema:name "Tabaran Institute of Higher Education" ;
+    schema:foundingDate "1965"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(59.60567 36.29807)"^^geo:wktLiteral ;
+        schema:addressLocality "Mashhad" ;
+    ] ;
+    schema:url <http://www.tabaran.ac.ir/> ;
+    schema:sameAs <http://isni.org/isni/0000000490495966> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30267162> ;
+             .

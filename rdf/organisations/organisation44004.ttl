@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02g5xq267> 
+    a org:Organization ;
+    rdfs:label "Saskatchewan Ministry of Agriculture" ;
+    schema:name "Saskatchewan Ministry of Agriculture" ;
+    schema:foundingDate "1906"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Ministry_of_Agriculture_(Saskatchewan)> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04ch2gv47> ;
+        rdfs:label "Government of Saskatchewan" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-104.6178 50.45008)"^^geo:wktLiteral ;
+        schema:addressLocality "Regina" ;
+    ] ;
+    schema:url <https://www.saskatchewan.ca/government/government-structure/ministries/agriculture> ;
+    schema:sameAs <http://isni.org/isni/0000000107437924> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6866623> ;
+             .

@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00jyx0v10> 
+    a org:Organization ;
+    rdfs:label "Alfred I. duPont Hospital for Children" ;
+    schema:name "Alfred I. duPont Hospital for Children" ;
+    schema:foundingDate "1940"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Alfred_I._duPont_Hospital_for_Children> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01mzw6m29> ;
+        rdfs:label "Nemours Children's Health System" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00ysqcn41> ;
+        rdfs:label "Thomas Jefferson University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01sbq1a82> ;
+        rdfs:label "University of Delaware" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-75.54659 39.74595)"^^geo:wktLiteral ;
+        schema:addressLocality "Wilmington" ;
+    ] ;
+    schema:url <http://www.nemours.org/locations/nemours-dupont.html> ;
+    schema:sameAs <http://isni.org/isni/0000000404589676> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4722906> ;
+             .

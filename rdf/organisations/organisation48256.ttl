@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05e0get33> 
+    a org:Organization ;
+    rdfs:label "Alameda County Library" ;
+    schema:name "Alameda County Library" ;
+    schema:foundingDate "1910"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Alameda_County_Library> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-122.29775 37.88687)"^^geo:wktLiteral ;
+        schema:addressLocality "Albany" ;
+    ] ;
+    schema:url <http://www.aclibrary.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000405913239> ;
+             .

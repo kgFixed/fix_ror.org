@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00xyeez13> 
+    a org:Organization ;
+    rdfs:label "Kunming University of Science and Technology" ;
+    schema:name "Kunming University of Science and Technology" ;
+    schema:foundingDate "1954"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Kunming_University_of_Science_and_Technology> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(102.71833 25.03889)"^^geo:wktLiteral ;
+        schema:addressLocality "Kunming" ;
+    ] ;
+    schema:url <http://english.kmust.edu.cn/> ;
+    schema:sameAs <http://isni.org/isni/000000008571108X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6444900> ;
+             .

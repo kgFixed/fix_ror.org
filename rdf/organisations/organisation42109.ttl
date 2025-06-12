@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04ay6mm65> 
+    a org:Organization ;
+    rdfs:label "International Centre for Reindeer Husbandry" ;
+    schema:name "International Centre for Reindeer Husbandry" ;
+    schema:foundingDate "2005"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(23.04116 69.01247)"^^geo:wktLiteral ;
+        schema:addressLocality "Kautokeino" ;
+    ] ;
+    schema:url <http://reindeerherding.org/> ;
+     .

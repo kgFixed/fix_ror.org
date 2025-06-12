@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/026ktg130> 
+    a org:Organization ;
+    rdfs:label "Hainan Provincial Academy of Agricultural Sciences" ;
+    schema:name "Hainan Provincial Academy of Agricultural Sciences" ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0313jb750> ;
+        rdfs:label "Chinese Academy of Agricultural Sciences" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(110.34651 20.03421)"^^geo:wktLiteral ;
+        schema:addressLocality "Haikou" ;
+    ] ;
+    schema:url <http://www.hnaas.org.cn/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30262658> ;
+             .

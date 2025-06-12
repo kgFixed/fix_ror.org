@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/000ezn412> 
+    a org:Organization ;
+    rdfs:label "Sawai Man Singh Hospital" ;
+    schema:name "Sawai Man Singh Hospital" ;
+    schema:foundingDate "1845"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Sawai_Man_Singh_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04f5g2442> ;
+        rdfs:label "Rajasthan University of Health Sciences" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(75.78781 26.91962)"^^geo:wktLiteral ;
+        schema:addressLocality "Jaipur" ;
+    ] ;
+    schema:url <http://medicaleducation.rajasthan.gov.in/jaipur/index.asp> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q7428547> ;
+             .

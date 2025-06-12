@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/034ee3t09> 
+    a org:Organization ;
+    rdfs:label "Synergy University Dubai" ;
+    schema:name "Synergy University Dubai" ;
+    schema:foundingDate "1995"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Synergy_University_Dubai_Campus> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/028mtfb17> ;
+        rdfs:label "Synergy University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(55.30927 25.07725)"^^geo:wktLiteral ;
+        schema:addressLocality "Dubai" ;
+    ] ;
+    schema:url <https://synergydubai.ae/> ;
+    schema:sameAs <http://isni.org/isni/0000000464415635> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q18211094> ;
+             .

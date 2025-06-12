@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04xw8f995> 
+    a org:Organization ;
+    rdfs:label "Atlas Copco (United States)" ;
+    schema:name "Atlas Copco (United States)" ;
+    schema:foundingDate "1873"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Atlas_Copco> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01dy84y11> ;
+        rdfs:label "Atlas Copco (Sweden)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-96.63888 32.91262)"^^geo:wktLiteral ;
+        schema:addressLocality "Garland" ;
+    ] ;
+    schema:url <http://www.acdsgarland.com/acdstdr/aboutUs.action> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q29123791> ;
+             .

@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/027bhx472> 
+    a org:Organization ;
+    rdfs:label "Univar (United States)" ;
+    schema:name "Univar (United States)" ;
+    schema:foundingDate "1924"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Univar> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/037gt0k77> ;
+        rdfs:label "Univar (United Kingdom)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-88.01117 41.80892)"^^geo:wktLiteral ;
+        schema:addressLocality "Downers Grove" ;
+    ] ;
+    schema:url <https://www.univarsolutions.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000404803599> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q772813> ;
+             .

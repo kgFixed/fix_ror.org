@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03tkypj50> 
+    a org:Organization ;
+    rdfs:label "Gyeongsan Science High School" ;
+    schema:name "Gyeongsan Science High School" ;
+    schema:foundingDate "2007"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Gyeongsan_Science_High_School> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(128.73778 35.82333)"^^geo:wktLiteral ;
+        schema:addressLocality "Gyeongsan-si" ;
+    ] ;
+    schema:url <http://gsshs.school.gyo6.net/index/index.do> ;
+     .

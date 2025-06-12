@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/054n9aa03> 
+    a org:Organization ;
+    rdfs:label "Arab League Educational, Cultural and Scientific Organization" ;
+    schema:name "Arab League Educational, Cultural and Scientific Organization" ;
+    schema:foundingDate "1970"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Arab_League_Educational,_Cultural_and_Scientific_Organization> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(10.16579 36.81897)"^^geo:wktLiteral ;
+        schema:addressLocality "Tunis" ;
+    ] ;
+    schema:url <http://www.alecso.org/site/> ;
+    schema:sameAs <http://isni.org/isni/0000000098870784> ;
+             .

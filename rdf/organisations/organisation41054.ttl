@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/028q7hc55> 
+    a org:Organization ;
+    rdfs:label "Limagrain (France)" ;
+    schema:name "Limagrain (France)" ;
+    schema:foundingDate "1965"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Groupe_Limagrain> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04m7h9q42> ;
+        rdfs:label "Limagrain (Czechia)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01met4463> ;
+        rdfs:label "Limagrain (United Kingdom)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0440rnc27> ;
+        rdfs:label "Vilmorin & Cie (France)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(3.22068 45.86848)"^^geo:wktLiteral ;
+        schema:addressLocality "Chappes" ;
+    ] ;
+    schema:url <http://www.limagrain-europe.com/gb/index.cfm> ;
+    schema:sameAs <http://isni.org/isni/0000000106719209> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1143155> ;
+             .

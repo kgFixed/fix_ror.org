@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05kkmzc89> 
+    a org:Organization ;
+    rdfs:label "Nassau County Department of Social Services" ;
+    schema:name "Nassau County Department of Social Services" ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-73.59291 40.70038)"^^geo:wktLiteral ;
+        schema:addressLocality "Uniondale" ;
+    ] ;
+    schema:url <https://www.nassaucountyny.gov/1895/Social-Services> ;
+     .

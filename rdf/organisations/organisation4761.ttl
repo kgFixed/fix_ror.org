@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0427fee43> 
+    a org:Organization ;
+    rdfs:label "Maharani Laxmi Bai Medical College" ;
+    schema:name "Maharani Laxmi Bai Medical College" ;
+    schema:foundingDate "1968"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Maharani_Laxmi_Bai_Medical_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0003ewr82> ;
+        rdfs:label "Bundelkhand University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(78.57994 25.45887)"^^geo:wktLiteral ;
+        schema:addressLocality "Jhānsi" ;
+    ] ;
+    schema:url <http://www.mlbmcj.in/> ;
+    schema:sameAs <http://isni.org/isni/0000000102900705> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6733303> ;
+             .

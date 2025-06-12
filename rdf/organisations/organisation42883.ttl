@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0068yvd12> 
+    a org:Organization ;
+    rdfs:label "Center for Global Development" ;
+    schema:name "Center for Global Development" ;
+    schema:foundingDate "2001"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Center_for_Global_Development> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.03637 38.89511)"^^geo:wktLiteral ;
+        schema:addressLocality "Washington" ;
+    ] ;
+    schema:url <http://www.cgdev.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000122952115> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3355598> ;
+             .

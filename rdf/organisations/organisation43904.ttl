@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/040s5rx17> 
+    a org:Organization ;
+    rdfs:label "Texas Department of Aging and Disability Services" ;
+    schema:name "Texas Department of Aging and Disability Services" ;
+    schema:foundingDate "2004"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Texas_Department_of_Aging_and_Disability_Services> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-97.74306 30.26715)"^^geo:wktLiteral ;
+        schema:addressLocality "Austin" ;
+    ] ;
+    schema:url <http://www.dads.state.tx.us/> ;
+    schema:sameAs <http://isni.org/isni/0000000446873317> ;
+             .

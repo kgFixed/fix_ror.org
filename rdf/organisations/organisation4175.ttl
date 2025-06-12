@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04x1z3t86> 
+    a org:Organization ;
+    rdfs:label "Mercy St. Vincent Medical Center" ;
+    schema:name "Mercy St. Vincent Medical Center" ;
+    schema:foundingDate "1855"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/St._Vincent_Mercy_Medical_Center> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/001d2bp15> ;
+        rdfs:label "Community Mercy Health Partners" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01pbdzh19> ;
+        rdfs:label "University of Toledo" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-83.55521 41.66394)"^^geo:wktLiteral ;
+        schema:addressLocality "Toledo" ;
+    ] ;
+    schema:url <http://www.mercyweb.org/st_vincent.aspx> ;
+    schema:sameAs <http://isni.org/isni/0000000404412387> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7592099> ;
+             .

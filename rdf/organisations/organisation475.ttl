@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02vb7sj25> 
+    a org:Organization ;
+    rdfs:label "Geneva College" ;
+    schema:name "Geneva College" ;
+    schema:foundingDate "1848"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Geneva_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-80.31923 40.75201)"^^geo:wktLiteral ;
+        schema:addressLocality "Beaver Falls" ;
+    ] ;
+    schema:url <http://www.geneva.edu/> ;
+    schema:sameAs <http://isni.org/isni/000000041937108X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5532987> ;
+             .

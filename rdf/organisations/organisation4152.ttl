@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05xh86w23> 
+    a org:Organization ;
+    rdfs:label "Gastroenterology Medical Center and Hospital" ;
+    schema:name "Gastroenterology Medical Center and Hospital" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(76.96612 11.00555)"^^geo:wktLiteral ;
+        schema:addressLocality "Coimbatore" ;
+    ] ;
+    schema:url <https://www.gemhospitals.com/coimbatore/> ;
+    schema:sameAs <http://isni.org/isni/0000000459356538> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30280443> ;
+             .

@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03bq96v15> 
+    a org:Organization ;
+    rdfs:label "Sphaera Pharma (India)" ;
+    schema:name "Sphaera Pharma (India)" ;
+    schema:foundingDate "2008"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04xegkb78> ;
+        rdfs:label "Sphaera Pharma (Singapore)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(77.02635 28.4601)"^^geo:wktLiteral ;
+        schema:addressLocality "Gurugram" ;
+    ] ;
+    schema:url <http://www.sphaerapharma.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000417992288> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30263040> ;
+             .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05tq4a167> 
+    a org:Organization ;
+    rdfs:label "ShinEtsu Chemical (Japan)" ;
+    schema:name "ShinEtsu Chemical (Japan)" ;
+    schema:foundingDate "1926"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Shin-Etsu_Chemical> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(139.69171 35.6895)"^^geo:wktLiteral ;
+        schema:addressLocality "Tokyo" ;
+    ] ;
+    schema:url <http://www.shinetsu.co.jp/en/> ;
+    schema:sameAs <http://isni.org/isni/0000000418084062> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q904284> ;
+             .

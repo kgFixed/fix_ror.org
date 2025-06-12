@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03q3jnq04> 
+    a org:Organization ;
+    rdfs:label "China Nonferrous Metal Mining (China)" ;
+    schema:name "China Nonferrous Metal Mining (China)" ;
+    schema:foundingDate "1983"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/China_Non-Ferrous_Metal_Mining> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(116.39723 39.9075)"^^geo:wktLiteral ;
+        schema:addressLocality "Beijing" ;
+    ] ;
+    schema:url <http://www.cnmc.com.cn/indexen.jsp> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q5099821> ;
+             .

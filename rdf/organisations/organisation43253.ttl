@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00wg8t158> 
+    a org:Organization ;
+    rdfs:label "Sugal Group (Portugal)" ;
+    schema:name "Sugal Group (Portugal)" ;
+    schema:foundingDate "1957"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-8.80759 38.97919)"^^geo:wktLiteral ;
+        schema:addressLocality "Benavente" ;
+    ] ;
+    schema:url <http://www.sugalidal.pt/en> ;
+     .

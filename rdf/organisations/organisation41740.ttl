@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00gn6h668> 
+    a org:Organization ;
+    rdfs:label "Rajarajeswari Medical College and Hospital" ;
+    schema:name "Rajarajeswari Medical College and Hospital" ;
+    schema:foundingDate "2005"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Rajarajeswari_Medical_College_and_Hospital> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0157vkf66> ;
+        rdfs:label "Rajiv Gandhi University of Health Sciences" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(77.59369 12.97194)"^^geo:wktLiteral ;
+        schema:addressLocality "Bengaluru" ;
+    ] ;
+    schema:url <http://www.rrmch.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000418043834> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q19895661> ;
+             .

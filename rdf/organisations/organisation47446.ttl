@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02v3fc375> 
+    a org:Organization ;
+    rdfs:label "Auckland UniServices (New Zealand)" ;
+    schema:name "Auckland UniServices (New Zealand)" ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03b94tp07> ;
+        rdfs:label "University of Auckland" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(174.76349 -36.84853)"^^geo:wktLiteral ;
+        schema:addressLocality "Auckland" ;
+    ] ;
+    schema:url <http://www.uniservices.co.nz/> ;
+    schema:sameAs <http://isni.org/isni/0000000404901180> ;
+             .

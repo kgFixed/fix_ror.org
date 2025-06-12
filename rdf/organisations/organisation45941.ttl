@@ -1,0 +1,51 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01zv98a09> 
+    a org:Organization ;
+    rdfs:label "Aga Khan University Nairobi" ;
+    schema:name "Aga Khan University Nairobi" ;
+    schema:foundingDate "1983"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03z1ps729> ;
+        rdfs:label "Aga Khan Hospital Dar es Salaam" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/038y3xt87> ;
+        rdfs:label "Aga Khan Hospital, Kisumu" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01y3fwb07> ;
+        rdfs:label "Aga Khan Hospital, Mombasa" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03rppv730> ;
+        rdfs:label "Aga Khan University Hospital Nairobi" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03gd0dm95> ;
+        rdfs:label "Aga Khan University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(36.81667 -1.28333)"^^geo:wktLiteral ;
+        schema:addressLocality "Nairobi" ;
+    ] ;
+    schema:url <https://www.aku.edu/Pages/home.aspx> ;
+     .

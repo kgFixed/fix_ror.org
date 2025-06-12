@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01wc5x922> 
+    a org:Organization ;
+    rdfs:label "Providence Sacred Heart Medical Center" ;
+    schema:name "Providence Sacred Heart Medical Center" ;
+    schema:foundingDate "1856"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Providence_Sacred_Heart_Medical_Center_and_Children%27s_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00n4k4n97> ;
+        rdfs:label "Providence Health & Services" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-117.42908 47.65966)"^^geo:wktLiteral ;
+        schema:addressLocality "Spokane" ;
+    ] ;
+    schema:url <https://washington.providence.org/locations-directory/s/sacred-heart-medical-center> ;
+    schema:sameAs <http://isni.org/isni/0000000404578213> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7252476> ;
+             .

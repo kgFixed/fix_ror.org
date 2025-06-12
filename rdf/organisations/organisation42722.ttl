@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/040dxjz28> 
+    a org:Organization ;
+    rdfs:label "Fachhochschule für öffentliche Verwaltung, Polizei und Rechtspflege des Landes Mecklenburg-Vorpommern" ;
+    schema:name "Fachhochschule für öffentliche Verwaltung, Polizei und Rechtspflege des Landes Mecklenburg-Vorpommern" ;
+    schema:foundingDate "1991"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(12.17337 53.7972)"^^geo:wktLiteral ;
+        schema:addressLocality "Güstrow" ;
+    ] ;
+    schema:url <http://www.fh-guestrow.de/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q1391288> ;
+             .

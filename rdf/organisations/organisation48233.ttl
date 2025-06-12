@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/031b6ch69> 
+    a org:Organization ;
+    rdfs:label "Legrand (Germany)" ;
+    schema:name "Legrand (Germany)" ;
+    schema:foundingDate "1904"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Legrand_(company)> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/021sjst25> ;
+        rdfs:label "Legrand (France)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(8.10619 51.57558)"^^geo:wktLiteral ;
+        schema:addressLocality "Soest" ;
+    ] ;
+    schema:url <http://www.legrand.de/> ;
+     .

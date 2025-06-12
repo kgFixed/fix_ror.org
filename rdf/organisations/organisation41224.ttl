@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04ry60e05> 
+    a org:Organization ;
+    rdfs:label "Institute of Forensic Science" ;
+    schema:name "Institute of Forensic Science" ;
+    schema:foundingDate "1951"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00anm2x55> ;
+        rdfs:label "Ministry of Justice" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(121.45806 31.22222)"^^geo:wktLiteral ;
+        schema:addressLocality "Shanghai" ;
+    ] ;
+    schema:url <http://www.ssfjd.com/IFS/Index/Default.aspx> ;
+     .

@@ -1,0 +1,198 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05eq41471> 
+    a org:Organization ;
+    rdfs:label "Veterans Health Administration" ;
+    schema:name "Veterans Health Administration" ;
+    schema:foundingDate "1865"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Veterans_Health_Administration> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04thxh256> ;
+        rdfs:label "Center for the Study of Healthcare Provider Behavior" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00eg0bk82> ;
+        rdfs:label "Columbia VA Health Care System" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0083hz885> ;
+        rdfs:label "Health Services Research & Development" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02hd1sz82> ;
+        rdfs:label "Mental Illness Research, Education and Clinical Centers" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01g77mv66> ;
+        rdfs:label "New York/New Jersey VA Health Care Network" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/038eh4b79> ;
+        rdfs:label "Office of Patient Care Services" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03cdz5d08> ;
+        rdfs:label "Quality Enhancement Research Initiative" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02z5aj645> ;
+        rdfs:label "South Central VA Health Care Network" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01rybzk66> ;
+        rdfs:label "VA Capitol Health Care Network" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/031qpfn56> ;
+        rdfs:label "VA Desert Pacific Healthcare Network" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02hqqcn82> ;
+        rdfs:label "VA Eastern Kansas Health Care System" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/023w6y044> ;
+        rdfs:label "VA Great Lakes Health Care System" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02z5d2h92> ;
+        rdfs:label "VA Healthcare System Serving Ohio, Indiana and Michigan" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04fhxp168> ;
+        rdfs:label "VA Healthcare-VISN 4" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0527v1v90> ;
+        rdfs:label "VA Heart of Texas Health Care Network" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05kcj6c10> ;
+        rdfs:label "VA Heartland Network" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/054w3nm73> ;
+        rdfs:label "VA Mid-Atlantic Health Care Network" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/025yjfh46> ;
+        rdfs:label "VA MidSouth Healthcare Network" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02f2rgc17> ;
+        rdfs:label "VA Midwest Health Care Network" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00s61s029> ;
+        rdfs:label "VA New England Healthcare System" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/041sxnd36> ;
+        rdfs:label "VA Northeast Ohio Healthcare System" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04m453044> ;
+        rdfs:label "VA Northwest Network" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/011qyt180> ;
+        rdfs:label "VA Office of Research and Development" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/054484h93> ;
+        rdfs:label "VA Portland Health Care System" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01x6zzb23> ;
+        rdfs:label "VA Rocky Mountain Network" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/030j39b93> ;
+        rdfs:label "VA Sierra Pacific Network" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03mzbnj03> ;
+        rdfs:label "VA Southeast Network" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02g8ke488> ;
+        rdfs:label "VA Sunshine Healthcare Network" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05rsv9s98> ;
+        rdfs:label "United States Department of Veterans Affairs" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.03637 38.89511)"^^geo:wktLiteral ;
+        schema:addressLocality "Washington" ;
+    ] ;
+    schema:url <http://www.va.gov/health/> ;
+    schema:sameAs <http://isni.org/isni/0000000404819574> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6580225> ;
+             .

@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04q2tvr21> 
+    a org:Organization ;
+    rdfs:label "Seastar Chemicals (Canada)" ;
+    schema:name "Seastar Chemicals (Canada)" ;
+    schema:foundingDate "1987"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-123.35155 48.4359)"^^geo:wktLiteral ;
+        schema:addressLocality "Victoria" ;
+    ] ;
+    schema:url <http://www.seastarchemicals.com/> ;
+     .

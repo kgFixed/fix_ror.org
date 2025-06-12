@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03wgj1374> 
+    a org:Organization ;
+    rdfs:label "Legislative Assembly of Saskatchewan" ;
+    schema:name "Legislative Assembly of Saskatchewan" ;
+    schema:foundingDate "1905"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Legislative_Assembly_of_Saskatchewan> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-104.6178 50.45008)"^^geo:wktLiteral ;
+        schema:addressLocality "Regina" ;
+    ] ;
+    schema:url <http://www.legassembly.sk.ca/> ;
+    schema:sameAs <http://isni.org/isni/0000000404581973> ;
+             .

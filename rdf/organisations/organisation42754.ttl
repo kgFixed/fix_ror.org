@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0560e8961> 
+    a org:Organization ;
+    rdfs:label "Hamburg School of Business Administration" ;
+    schema:name "Hamburg School of Business Administration" ;
+    schema:foundingDate "2004"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/HSBA_Hamburg_School_of_Business_Administration> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(9.99302 53.55073)"^^geo:wktLiteral ;
+        schema:addressLocality "Hamburg" ;
+    ] ;
+    schema:url <http://www.hsba.de/en/home/> ;
+    schema:sameAs <http://isni.org/isni/0000000091279940> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1572930> ;
+             .

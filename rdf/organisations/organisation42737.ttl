@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01zb1m871> 
+    a org:Organization ;
+    rdfs:label "Royal Conservatory of Liège" ;
+    schema:name "Royal Conservatory of Liège" ;
+    schema:foundingDate "1826"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Royal_Conservatory_of_Li%C3%A8ge> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(5.56749 50.63373)"^^geo:wktLiteral ;
+        schema:addressLocality "Liège" ;
+    ] ;
+    schema:url <http://www.crlg.be/> ;
+    schema:sameAs <http://isni.org/isni/0000000121123243> ;
+             .

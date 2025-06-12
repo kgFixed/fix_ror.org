@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0103wwz30> 
+    a org:Organization ;
+    rdfs:label "Minami Kyushu Junior College" ;
+    schema:name "Minami Kyushu Junior College" ;
+    schema:foundingDate "1965"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(131.41667 31.91667)"^^geo:wktLiteral ;
+        schema:addressLocality "Miyazaki" ;
+    ] ;
+    schema:url <http://www.mkjc.ac.jp/> ;
+    schema:sameAs <http://isni.org/isni/0000000403752574> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q11407429> ;
+             .

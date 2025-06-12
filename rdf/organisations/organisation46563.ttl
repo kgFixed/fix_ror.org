@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01j88m682> 
+    a org:Organization ;
+    rdfs:label "Nifco (Japan)" ;
+    schema:name "Nifco (Japan)" ;
+    schema:foundingDate "1967"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/038scr081> ;
+        rdfs:label "Nifco (China)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(139.66722 35.28361)"^^geo:wktLiteral ;
+        schema:addressLocality "Yokosuka" ;
+    ] ;
+    schema:url <http://www.nifco.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000417896501> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q11324583> ;
+             .

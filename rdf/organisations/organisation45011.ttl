@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00dzptj80> 
+    a org:Organization ;
+    rdfs:label "Yokohama Soei University" ;
+    schema:name "Yokohama Soei University" ;
+    schema:foundingDate "1989"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Yokohama_Soei_Junior_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(139.65 35.43333)"^^geo:wktLiteral ;
+        schema:addressLocality "Yokohama" ;
+    ] ;
+    schema:url <http://www.soei.ac.jp/univ/> ;
+    schema:sameAs <http://isni.org/isni/0000000406190749> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q8054648> ;
+             .

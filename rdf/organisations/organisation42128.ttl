@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03vhd2n30> 
+    a org:Organization ;
+    rdfs:label "Circumpolar Agricultural Association" ;
+    schema:name "Circumpolar Agricultural Association" ;
+    schema:foundingDate "1995"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(23.27165 69.96887)"^^geo:wktLiteral ;
+        schema:addressLocality "Alta" ;
+    ] ;
+    schema:url <http://www.bioforsk.no/ikbViewer/page/prosjekt/forside?p_dimension_id=19718&p_menu_id=19722&p_sub_id=19717&p_dim2=19717> ;
+     .

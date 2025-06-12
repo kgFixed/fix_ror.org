@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/023pvcn20> 
+    a org:Organization ;
+    rdfs:label "Cadence Design Systems (United Kingdom)" ;
+    schema:name "Cadence Design Systems (United Kingdom)" ;
+    schema:foundingDate "1988"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Cadence_Design_Systems> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04w8xa018> ;
+        rdfs:label "Cadence Design Systems (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.75054 51.41363)"^^geo:wktLiteral ;
+        schema:addressLocality "Bracknell" ;
+    ] ;
+    schema:url <https://www.cadence.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000404408054> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q28971037> ;
+             .

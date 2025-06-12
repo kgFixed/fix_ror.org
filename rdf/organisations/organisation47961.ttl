@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04e080j72> 
+    a org:Organization ;
+    rdfs:label "Fundação Hemopa" ;
+    schema:name "Fundação Hemopa" ;
+    schema:foundingDate "1978"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-48.50444 -1.45583)"^^geo:wktLiteral ;
+        schema:addressLocality "Belém" ;
+    ] ;
+    schema:url <http://www.hemopa.pa.gov.br/index.htm> ;
+     .

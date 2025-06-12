@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/016gd3115> 
+    a org:Organization ;
+    rdfs:label "Metro South Health" ;
+    schema:name "Metro South Health" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(153.03655 -27.48855)"^^geo:wktLiteral ;
+        schema:addressLocality "Woolloongabba" ;
+    ] ;
+    schema:url <https://metrosouth.health.qld.gov.au/> ;
+     .

@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/011xh8y77> 
+    a org:Organization ;
+    rdfs:label "Government Vellore Medical College" ;
+    schema:name "Government Vellore Medical College" ;
+    schema:foundingDate "2005"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Government_Vellore_Medical_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00b3mhg89> ;
+        rdfs:label "Tamil Nadu Dr. M.G.R. Medical University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(79.13255 12.9184)"^^geo:wktLiteral ;
+        schema:addressLocality "Vellore" ;
+    ] ;
+    schema:url <http://www.gvmc.in/> ;
+    schema:sameAs <http://isni.org/isni/0000000417924146> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5589958> ;
+             .

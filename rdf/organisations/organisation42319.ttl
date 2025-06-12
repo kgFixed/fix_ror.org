@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/008f09676> 
+    a org:Organization ;
+    rdfs:label "Thomas More College of Liberal Arts" ;
+    schema:name "Thomas More College of Liberal Arts" ;
+    schema:foundingDate "1978"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Thomas_More_College_of_Liberal_Arts> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-71.4934 42.86509)"^^geo:wktLiteral ;
+        schema:addressLocality "Merrimack" ;
+    ] ;
+    schema:url <http://www.thomasmorecollege.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000405268735> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7792542> ;
+             .

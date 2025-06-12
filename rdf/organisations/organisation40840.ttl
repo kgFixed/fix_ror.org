@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00p9yb286> 
+    a org:Organization ;
+    rdfs:label "Moroccan National Railways Office" ;
+    schema:name "Moroccan National Railways Office" ;
+    schema:foundingDate "1963"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/ONCF> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-9.59815 30.42018)"^^geo:wktLiteral ;
+        schema:addressLocality "Agadir" ;
+    ] ;
+    schema:url <http://www.oncf.ma/Pages/Accueil.aspx> ;
+     .

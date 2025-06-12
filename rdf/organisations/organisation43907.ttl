@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01r9n3w70> 
+    a org:Organization ;
+    rdfs:label "Connecticut Department of Transportation" ;
+    schema:name "Connecticut Department of Transportation" ;
+    schema:foundingDate "1965"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Connecticut_Department_of_Transportation> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-72.72371 41.69788)"^^geo:wktLiteral ;
+        schema:addressLocality "Newington" ;
+    ] ;
+    schema:url <http://www.ct.gov/dot/site/default.asp> ;
+    schema:sameAs <http://isni.org/isni/0000000093376998> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4923420> ;
+             .

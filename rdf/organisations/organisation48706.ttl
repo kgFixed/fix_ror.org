@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03v48ps49> 
+    a org:Organization ;
+    rdfs:label "O.Ya. Usikov Institute for Radiophysics and Electronics" ;
+    schema:name "O.Ya. Usikov Institute for Radiophysics and Electronics" ;
+    schema:foundingDate "1955"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00je4t102> ;
+        rdfs:label "National Academy of Sciences of Ukraine" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(36.25272 49.98081)"^^geo:wktLiteral ;
+        schema:addressLocality "Kharkiv" ;
+    ] ;
+    schema:url <http://www.ire.kharkov.ua/> ;
+     .

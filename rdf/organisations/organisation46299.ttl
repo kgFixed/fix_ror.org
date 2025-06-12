@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05axsx403> 
+    a org:Organization ;
+    rdfs:label "Institute of Water and Sanitation Development" ;
+    schema:name "Institute of Water and Sanitation Development" ;
+    schema:foundingDate "1994"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(31.05337 -17.82772)"^^geo:wktLiteral ;
+        schema:addressLocality "Harare" ;
+    ] ;
+    schema:url <http://www.iwsd.co.zw/en/> ;
+    schema:sameAs <http://isni.org/isni/000000012097605X> ;
+             .

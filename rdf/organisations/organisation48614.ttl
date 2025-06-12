@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05mpm3k87> 
+    a org:Organization ;
+    rdfs:label "Ontario Forest Research Institute" ;
+    schema:name "Ontario Forest Research Institute" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Ontario_Forest_Research_Institute> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02ntv3742> ;
+        rdfs:label "Ministry of Natural Resources and Forestry" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-84.33325 46.51677)"^^geo:wktLiteral ;
+        schema:addressLocality "Sault Ste. Marie" ;
+    ] ;
+    schema:url <https://www.ontario.ca/page/forest-research> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q7094667> ;
+             .

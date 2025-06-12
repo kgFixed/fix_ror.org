@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01457ne20> 
+    a org:Organization ;
+    rdfs:label "Ministry of Agriculture Mechanisation and Irrigation Development" ;
+    schema:name "Ministry of Agriculture Mechanisation and Irrigation Development" ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(31.05337 -17.82772)"^^geo:wktLiteral ;
+        schema:addressLocality "Harare" ;
+    ] ;
+    schema:url <http://www.moa.gov.zw/> ;
+    schema:sameAs <http://isni.org/isni/0000000403678474> ;
+             .

@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04g0bt697> 
+    a org:Organization ;
+    rdfs:label "MultiCare Health System" ;
+    schema:name "MultiCare Health System" ;
+    schema:foundingDate "1882"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/MultiCare_Health_System> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/029t3me68> ;
+        rdfs:label "Mary Bridge Children's Health Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04p3m1723> ;
+        rdfs:label "MultiCare Auburn Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02cagam23> ;
+        rdfs:label "MultiCare Gig Harbor Medical Park" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00a0pt066> ;
+        rdfs:label "MultiCare Good Samaritan Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05k0zr802> ;
+        rdfs:label "MultiCare Tacoma General Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-122.44429 47.25288)"^^geo:wktLiteral ;
+        schema:addressLocality "Tacoma" ;
+    ] ;
+    schema:url <http://www.multicare.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000403833921> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6934523> ;
+             .

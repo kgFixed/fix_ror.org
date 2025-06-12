@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04zyfmb02> 
+    a org:Organization ;
+    rdfs:label "Government of Khyber Pakhtunkhwa" ;
+    schema:name "Government of Khyber Pakhtunkhwa" ;
+    schema:foundingDate "2001"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Government_of_Khyber_Pakhtunkhwa> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(71.57849 34.008)"^^geo:wktLiteral ;
+        schema:addressLocality "Peshawar" ;
+    ] ;
+    schema:url <http://www.khyberpakhtunkhwa.gov.pk/> ;
+    schema:sameAs <http://isni.org/isni/0000000417848032> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3307055> ;
+             .

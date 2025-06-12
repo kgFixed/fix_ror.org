@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02xkgba40> 
+    a org:Organization ;
+    rdfs:label "Theodore Roosevelt High School" ;
+    schema:name "Theodore Roosevelt High School" ;
+    schema:foundingDate "1868"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Theodore_Roosevelt_High_School_(Kent,_Ohio)> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-81.35789 41.15367)"^^geo:wktLiteral ;
+        schema:addressLocality "Kent" ;
+    ] ;
+    schema:url <http://www.kentschools.net/rhs/> ;
+    schema:sameAs <http://isni.org/isni/0000000405274115> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7781992> ;
+             .

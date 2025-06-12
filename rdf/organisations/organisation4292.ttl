@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/054ekwz94> 
+    a org:Organization ;
+    rdfs:label "Queen Margaret Hospital" ;
+    schema:name "Queen Margaret Hospital" ;
+    schema:foundingDate "1985"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Queen_Margaret_Hospital,_Dunfermline> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05x1ves75> ;
+        rdfs:label "NHS Fife" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-3.45887 56.07156)"^^geo:wktLiteral ;
+        schema:addressLocality "Dunfermline" ;
+    ] ;
+    schema:url <http://www.nhsfife.org/nhs/index.cfm?fuseaction=nhs.facilitydisplay&p2sid=E46A280B-5056-8C6F-C030C8FB81407D0F&themeid=E4689E2B-5056-8C6F-C0BF8FA7CD6A38D0> ;
+    schema:sameAs <http://isni.org/isni/0000000406247354> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7270437> ;
+             .

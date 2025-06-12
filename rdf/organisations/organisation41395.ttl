@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01abrxp85> 
+    a org:Organization ;
+    rdfs:label "Islamic Azad University Semnan" ;
+    schema:name "Islamic Azad University Semnan" ;
+    schema:foundingDate "1984"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01kzn7k21> ;
+        rdfs:label "Islamic Azad University, Tehran" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(53.39205 35.57691)"^^geo:wktLiteral ;
+        schema:addressLocality "Semnan" ;
+    ] ;
+    schema:url <http://www.semnaniau.ac.ir/en> ;
+    schema:sameAs <http://isni.org/isni/000000040417696X> ;
+             .

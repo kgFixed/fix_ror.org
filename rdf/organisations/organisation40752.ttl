@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00yv7s489> 
+    a org:Organization ;
+    rdfs:label "Ministry of Health and Sanitation" ;
+    schema:name "Ministry of Health and Sanitation" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Ministry_of_Health_and_Sanitation_(Sierra_Leone)> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-13.2356 8.48714)"^^geo:wktLiteral ;
+        schema:addressLocality "Freetown" ;
+    ] ;
+    schema:url <http://health.gov.sl/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q21044897> ;
+             .

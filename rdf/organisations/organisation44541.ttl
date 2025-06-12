@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04phxq043> 
+    a org:Organization ;
+    rdfs:label "California Miramar University" ;
+    schema:name "California Miramar University" ;
+    schema:foundingDate "2005"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/California_Miramar_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-117.16472 32.71571)"^^geo:wktLiteral ;
+        schema:addressLocality "San Diego" ;
+    ] ;
+    schema:url <http://www.calmu.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000404232466> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1026836> ;
+             .

@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01ktvbq32> 
+    a org:Organization ;
+    rdfs:label "Cook Children's Health Care System" ;
+    schema:name "Cook Children's Health Care System" ;
+    schema:foundingDate "1918"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/009z5t729> ;
+        rdfs:label "Cook Children's Medical Center" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-97.32085 32.72541)"^^geo:wktLiteral ;
+        schema:addressLocality "Fort Worth" ;
+    ] ;
+    schema:url <http://www.cookchildrens.org/Pages/Default.aspx> ;
+     .

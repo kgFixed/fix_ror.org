@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/055y34y19> 
+    a org:Organization ;
+    rdfs:label "Rose Medical Center" ;
+    schema:name "Rose Medical Center" ;
+    schema:foundingDate "1945"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Rose_Medical_Center> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02hh7en24> ;
+        rdfs:label "University of Colorado Denver" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-104.9847 39.73915)"^^geo:wktLiteral ;
+        schema:addressLocality "Denver" ;
+    ] ;
+    schema:url <http://rosemed.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000087323101> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7367861> ;
+             .

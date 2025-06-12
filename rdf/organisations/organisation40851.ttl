@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01ew07e68> 
+    a org:Organization ;
+    rdfs:label "National Sanitation Utility" ;
+    schema:name "National Sanitation Utility" ;
+    schema:foundingDate "1974"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(10.16579 36.81897)"^^geo:wktLiteral ;
+        schema:addressLocality "Tunis" ;
+    ] ;
+    schema:url <http://www.onas.nat.tn/Fr/index.php?code=3> ;
+     .

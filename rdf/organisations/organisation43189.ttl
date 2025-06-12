@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/033c4qc49> 
+    a org:Organization ;
+    rdfs:label "Niuvanniemi Hospital" ;
+    schema:name "Niuvanniemi Hospital" ;
+    schema:foundingDate "1885"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Niuvanniemi_hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(27.67703 62.89238)"^^geo:wktLiteral ;
+        schema:addressLocality "Kuopio" ;
+    ] ;
+    schema:url <http://www.niuva.fi/english/index_en.htm> ;
+    schema:sameAs <http://isni.org/isni/0000000403912072> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7041726> ;
+             .

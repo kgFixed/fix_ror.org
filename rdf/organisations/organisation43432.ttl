@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02v616z87> 
+    a org:Organization ;
+    rdfs:label "BNP Paribas (France)" ;
+    schema:name "BNP Paribas (France)" ;
+    schema:foundingDate "1848"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/BNP_Paribas> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02qzz9528> ;
+        rdfs:label "BNP Paribas (China)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02nncgd63> ;
+        rdfs:label "BNP Paribas (United Kingdom)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.3488 48.85341)"^^geo:wktLiteral ;
+        schema:addressLocality "Paris" ;
+    ] ;
+    schema:url <http://www.bnpparibas.com/en> ;
+    schema:sameAs <http://isni.org/isni/0000000107203255> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q499707> ;
+             .

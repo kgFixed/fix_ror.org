@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00p5psh68> 
+    a org:Organization ;
+    rdfs:label "Ministério da Saúde e da Segurança Social" ;
+    schema:name "Ministério da Saúde e da Segurança Social" ;
+    schema:foundingDate "2009"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-23.51254 14.93152)"^^geo:wktLiteral ;
+        schema:addressLocality "Praia" ;
+    ] ;
+    schema:url <http://www.minsaude.gov.cv/> ;
+    schema:sameAs <http://isni.org/isni/0000000405769396> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30261764> ;
+             .

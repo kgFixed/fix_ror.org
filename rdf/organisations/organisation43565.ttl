@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00t625d81> 
+    a org:Organization ;
+    rdfs:label "John Deere (United States)" ;
+    schema:name "John Deere (United States)" ;
+    schema:foundingDate "1837"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/John_Deere> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02xc43e34> ;
+        rdfs:label "John Deere (Germany)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00dsdst25> ;
+        rdfs:label "John Deere (New Zealand)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-90.51513 41.5067)"^^geo:wktLiteral ;
+        schema:addressLocality "Moline" ;
+    ] ;
+    schema:url <https://www.deere.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000404349672> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q496302> ;
+             .

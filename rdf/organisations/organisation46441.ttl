@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03mc1nw82> 
+    a org:Organization ;
+    rdfs:label "Aristocrat (Australia)" ;
+    schema:name "Aristocrat (Australia)" ;
+    schema:foundingDate "1953"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Aristocrat_Leisure> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(151.12436 -33.79677)"^^geo:wktLiteral ;
+        schema:addressLocality "North Ryde" ;
+    ] ;
+    schema:url <http://www.aristocrat.com.au/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q2861391> ;
+             .

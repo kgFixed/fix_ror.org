@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00gyqd239> 
+    a org:Organization ;
+    rdfs:label "Copperas Cove Independent School District" ;
+    schema:name "Copperas Cove Independent School District" ;
+    schema:foundingDate "1883"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Copperas_Cove_Independent_School_District> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-97.90308 31.12406)"^^geo:wktLiteral ;
+        schema:addressLocality "Copperas Cove" ;
+    ] ;
+    schema:url <http://www.ccisd.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000404245056> ;
+             .

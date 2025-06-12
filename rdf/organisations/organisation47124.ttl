@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0110jzw27> 
+    a org:Organization ;
+    rdfs:label "Osaka Municipal Toyosaki Junior High School" ;
+    schema:name "Osaka Municipal Toyosaki Junior High School" ;
+    schema:foundingDate "1949"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(135.50107 34.69379)"^^geo:wktLiteral ;
+        schema:addressLocality "Osaka" ;
+    ] ;
+    schema:url <http://swa.city-osaka.ed.jp/swas/index.php?id=j512005> ;
+     .

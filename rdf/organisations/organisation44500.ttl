@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01mv04x52> 
+    a org:Organization ;
+    rdfs:label "British College of Osteopathic Medicine" ;
+    schema:name "British College of Osteopathic Medicine" ;
+    schema:foundingDate "1936"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/British_College_of_Osteopathic_Medicine> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.12574 51.50853)"^^geo:wktLiteral ;
+        schema:addressLocality "London" ;
+    ] ;
+    schema:url <http://www.bcom.ac.uk/> ;
+    schema:sameAs <http://isni.org/isni/0000000403797262> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4969655> ;
+             .

@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03gbfvb23> 
+    a org:Organization ;
+    rdfs:label "Central Ohio Technical College" ;
+    schema:name "Central Ohio Technical College" ;
+    schema:foundingDate "1971"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Central_Ohio_Technical_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0561zqn56> ;
+        rdfs:label "University System of Ohio" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-82.40126 40.05812)"^^geo:wktLiteral ;
+        schema:addressLocality "Newark" ;
+    ] ;
+    schema:url <http://www.cotc.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000405427855> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5061542> ;
+             .

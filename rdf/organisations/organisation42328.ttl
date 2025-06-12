@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0536m9756> 
+    a org:Organization ;
+    rdfs:label "Northwest Institute of Literary Arts" ;
+    schema:name "Northwest Institute of Literary Arts" ;
+    schema:foundingDate "1998"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-122.40626 48.04009)"^^geo:wktLiteral ;
+        schema:addressLocality "Langley" ;
+    ] ;
+    schema:url <https://www.nila.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000417965925> ;
+             .

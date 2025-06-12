@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02339nw55> 
+    a org:Organization ;
+    rdfs:label "Academy of Sciences Malaysia" ;
+    schema:name "Academy of Sciences Malaysia" ;
+    schema:foundingDate "1994"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/012s3r374> ;
+        rdfs:label "Ministry of Science, Technology and Innovation" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(101.68653 3.1412)"^^geo:wktLiteral ;
+        schema:addressLocality "Kuala Lumpur" ;
+    ] ;
+    schema:url <http://www.akademisains.gov.my/> ;
+    schema:sameAs <http://isni.org/isni/0000000122309904> ;
+             .

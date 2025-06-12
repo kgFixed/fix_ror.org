@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01ffhf815> 
+    a org:Organization ;
+    rdfs:label "Flex (Germany)" ;
+    schema:name "Flex (Germany)" ;
+    schema:foundingDate "1969"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Flextronics> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03q7jt003> ;
+        rdfs:label "Flex (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(9.36005 48.59353)"^^geo:wktLiteral ;
+        schema:addressLocality "Frickenhausen" ;
+    ] ;
+    schema:url <https://www.flextronics.com/> ;
+    schema:sameAs <http://isni.org/isni/000000040435317X> ;
+             .

@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/048k12m08> 
+    a org:Organization ;
+    rdfs:label "Spinal Cord Injury Association" ;
+    schema:name "Spinal Cord Injury Association" ;
+    schema:foundingDate "2006"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-93.71217 41.62666)"^^geo:wktLiteral ;
+        schema:addressLocality "Urbandale" ;
+    ] ;
+    schema:url <https://spinalcordiowa.wordpress.com/> ;
+     .
