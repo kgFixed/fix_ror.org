@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03e3kts03> 
+    a org:Organization ;
+    rdfs:label "South Australian Health and Medical Research Institute" ;
+    schema:name "South Australian Health and Medical Research Institute" ;
+    schema:foundingDate "2009"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/South_Australian_Health_and_Medical_Research_Institute> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(138.59863 -34.92866)"^^geo:wktLiteral ;
+        schema:addressLocality "Adelaide" ;
+    ] ;
+    schema:url <https://www.sahmri.org> ;
+    schema:sameAs <http://isni.org/isni/0000000405652606> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q23073847> ;
+             .

@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/010jx2260> 
+    a org:Organization ;
+    rdfs:label "National Institute of Agricultural Botany" ;
+    schema:name "National Institute of Agricultural Botany" ;
+    schema:foundingDate "1919"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/National_Institute_of_Agricultural_Botany> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(0.11667 52.2)"^^geo:wktLiteral ;
+        schema:addressLocality "Cambridge" ;
+    ] ;
+    schema:url <http://www.niab.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000403836532> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q15999923> ;
+             .

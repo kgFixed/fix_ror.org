@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03gtdcg60> 
+    a org:Organization ;
+    rdfs:label "Diego Portales University" ;
+    schema:name "Diego Portales University" ;
+    schema:foundingDate "1982"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Diego_Portales_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-70.64827 -33.45694)"^^geo:wktLiteral ;
+        schema:addressLocality "Santiago" ;
+    ] ;
+    schema:url <http://www.udp.cl/> ;
+    schema:sameAs <http://isni.org/isni/0000000121503115> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1316229> ;
+             .

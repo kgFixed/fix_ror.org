@@ -1,0 +1,33 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01xm4tt59> 
+    a org:Organization ;
+    rdfs:label "Woodruff Health Sciences Center" ;
+    schema:name "Woodruff Health Sciences Center" ;
+    schema:foundingDate "1966"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00hr6kp69> ;
+        rdfs:label "Emory Eye Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03czfpz43> ;
+        rdfs:label "Emory University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-84.38798 33.749)"^^geo:wktLiteral ;
+        schema:addressLocality "Atlanta" ;
+    ] ;
+    schema:url <http://whsc.emory.edu/home/> ;
+     .

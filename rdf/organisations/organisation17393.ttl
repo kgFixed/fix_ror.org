@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02eeqxc82> 
+    a org:Organization ;
+    rdfs:label "Renewable Energy Development Center" ;
+    schema:name "Renewable Energy Development Center" ;
+    schema:foundingDate "1982"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(3.08746 36.73225)"^^geo:wktLiteral ;
+        schema:addressLocality "Algiers" ;
+    ] ;
+    schema:url <http://www.cder.dz/> ;
+    schema:sameAs <http://isni.org/isni/0000000100427846> ;
+             .

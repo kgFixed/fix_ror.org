@@ -1,0 +1,20 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0417eed32> 
+    a org:Organization ;
+    rdfs:label "Associazione per l'Alta Formazione Giuridico-Economica" ;
+    schema:name "Associazione per l'Alta Formazione Giuridico-Economica" ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(7.68682 45.07049)"^^geo:wktLiteral ;
+        schema:addressLocality "Turin" ;
+    ] ;
+    schema:url <http://afge.eu/> ;
+     .

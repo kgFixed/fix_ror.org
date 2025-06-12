@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00g6pb267> 
+    a org:Organization ;
+    rdfs:label "Bureau de Coopération Interuniversitaire" ;
+    schema:name "Bureau de Coopération Interuniversitaire" ;
+    schema:foundingDate "1967"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Bureau_de_coop%C3%A9ration_interuniversitaire> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-73.58781 45.50884)"^^geo:wktLiteral ;
+        schema:addressLocality "Montreal" ;
+    ] ;
+    schema:url <https://www.bci-qc.ca/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q2992914> ;
+             .

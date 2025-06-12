@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00p2bz193> 
+    a org:Organization ;
+    rdfs:label "I-Moss (Belgium)" ;
+    schema:name "I-Moss (Belgium)" ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(4.62918 50.86403)"^^geo:wktLiteral ;
+        schema:addressLocality "Bertem" ;
+    ] ;
+    schema:url <https://www.i-moss.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30289917> ;
+             .

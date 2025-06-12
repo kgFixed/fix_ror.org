@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/038k3z155> 
+    a org:Organization ;
+    rdfs:label "RDM Group (United Kingdom)" ;
+    schema:name "RDM Group (United Kingdom)" ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.51217 52.40656)"^^geo:wktLiteral ;
+        schema:addressLocality "Coventry" ;
+    ] ;
+    schema:url <http://rdmgroup.co.uk/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30291370> ;
+             .

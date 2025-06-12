@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/040jk5g10> 
+    a org:Organization ;
+    rdfs:label "Samuel Merritt University" ;
+    schema:name "Samuel Merritt University" ;
+    schema:foundingDate "1909"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Samuel_Merritt_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05b021m32> ;
+        rdfs:label "Alta Bates Summit Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03w37n116> ;
+        rdfs:label "Alta Bates Summit Medical Center" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-122.2708 37.80437)"^^geo:wktLiteral ;
+        schema:addressLocality "Oakland" ;
+    ] ;
+    schema:url <http://www.samuelmerritt.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000095492028> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7412178> ;
+             .

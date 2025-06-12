@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/028nqyn57> 
+    a org:Organization ;
+    rdfs:label "CGI (United States)" ;
+    schema:name "CGI (United States)" ;
+    schema:foundingDate "1976"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/CGI_Inc.> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0129qsy61> ;
+        rdfs:label "CGI (Canada)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.30637 38.84622)"^^geo:wktLiteral ;
+        schema:addressLocality "Fairfax" ;
+    ] ;
+    schema:url <http://www.cgi.com/en/us> ;
+    schema:sameAs <http://isni.org/isni/0000000403671387> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q29123059> ;
+             .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02jvwwy41> 
+    a org:Organization ;
+    rdfs:label "National Library of Portugal" ;
+    schema:name "National Library of Portugal" ;
+    schema:foundingDate "1796"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Biblioteca_Nacional_de_Portugal> ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-9.13333 38.71667)"^^geo:wktLiteral ;
+        schema:addressLocality "Lisbon" ;
+    ] ;
+    schema:url <http://catalogo.bnportugal.pt/> ;
+    schema:sameAs <http://isni.org/isni/000000010735714X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q245966> ;
+             .

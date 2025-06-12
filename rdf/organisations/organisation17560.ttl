@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04g2pxd54> 
+    a org:Organization ;
+    rdfs:label "Chipola College" ;
+    schema:name "Chipola College" ;
+    schema:foundingDate "1947"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Chipola_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-85.22687 30.77436)"^^geo:wktLiteral ;
+        schema:addressLocality "Marianna" ;
+    ] ;
+    schema:url <http://www.chipola.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000405291564> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5101627> ;
+             .

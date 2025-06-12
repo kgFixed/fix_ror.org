@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04hsde529> 
+    a org:Organization ;
+    rdfs:label "Wisconsin Institute of Nutrition Research Foundation" ;
+    schema:name "Wisconsin Institute of Nutrition Research Foundation" ;
+    schema:foundingDate "2012"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-87.93564 43.13529)"^^geo:wktLiteral ;
+        schema:addressLocality "Glendale" ;
+    ] ;
+    schema:url <https://wisresearch.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30289949> ;
+             .

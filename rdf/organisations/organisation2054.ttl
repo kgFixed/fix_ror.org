@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04tqcn816> 
+    a org:Organization ;
+    rdfs:label "Health Sciences University of Hokkaido" ;
+    schema:name "Health Sciences University of Hokkaido" ;
+    schema:foundingDate "1974"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Health_Sciences_University_of_Hokkaido> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(141.51694 43.21694)"^^geo:wktLiteral ;
+        schema:addressLocality "Tōbetsu" ;
+    ] ;
+    schema:url <http://www.hoku-iryo-u.ac.jp/> ;
+    schema:sameAs <http://isni.org/isni/0000000417695590> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5690669> ;
+             .

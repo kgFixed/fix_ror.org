@@ -1,0 +1,50 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02bbd5539> 
+    a org:Organization ;
+    rdfs:label "AT&T (United States)" ;
+    schema:name "AT&T (United States)" ;
+    schema:foundingDate "2005"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/AT%26T_Corporation> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01mycfe72> ;
+        rdfs:label "AT&T (Israel)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02efxmp95> ;
+        rdfs:label "AT&T (Netherlands)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01784jw84> ;
+        rdfs:label "AT&T (United Kingdom)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00k551w06> ;
+        rdfs:label "Center for Discrete Mathematics and Theoretical Computer Science" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-74.64544 40.68066)"^^geo:wktLiteral ;
+        schema:addressLocality "Bedminster" ;
+    ] ;
+    schema:url <https://www.att.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000119409410> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q35476> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2843047> ;
+             .

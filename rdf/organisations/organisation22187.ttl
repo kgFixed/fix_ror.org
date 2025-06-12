@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0151s7v18> 
+    a org:Organization ;
+    rdfs:label "Umicore (Germany)" ;
+    schema:name "Umicore (Germany)" ;
+    schema:foundingDate "1989"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Umicore> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00zwdnt53> ;
+        rdfs:label "Umicore (Belgium)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(8.91418 50.13423)"^^geo:wktLiteral ;
+        schema:addressLocality "Hanau" ;
+    ] ;
+    schema:url <https://www.umicore.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000446545313> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30292436> ;
+             .

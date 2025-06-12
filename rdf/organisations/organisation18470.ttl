@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/048mhm070> 
+    a org:Organization ;
+    rdfs:label "Famiglia Artigiana Fratelli Ruffatti" ;
+    schema:name "Famiglia Artigiana Fratelli Ruffatti" ;
+    schema:foundingDate "1940"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Fratelli_Ruffatti> ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(11.88586 45.40797)"^^geo:wktLiteral ;
+        schema:addressLocality "Padua" ;
+    ] ;
+    schema:url <http://www.ruffatti.com/> ;
+     .

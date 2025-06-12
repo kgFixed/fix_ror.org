@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02bwmj336> 
+    a org:Organization ;
+    rdfs:label "NSK (United Kingdom)" ;
+    schema:name "NSK (United Kingdom)" ;
+    schema:foundingDate "1916"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/NSK_Ltd.> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05nm3qe34> ;
+        rdfs:label "NSK (Japan)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.71986 51.52279)"^^geo:wktLiteral ;
+        schema:addressLocality "Maidenhead" ;
+    ] ;
+    schema:url <https://www.nskeurope.com/en.html> ;
+    schema:sameAs <http://isni.org/isni/0000000460107598> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30291387> ;
+             .

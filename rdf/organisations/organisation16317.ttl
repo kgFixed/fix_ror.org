@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01hxtdq06> 
+    a org:Organization ;
+    rdfs:label "Spertus Institute for Jewish Learning and Leadership" ;
+    schema:name "Spertus Institute for Jewish Learning and Leadership" ;
+    schema:foundingDate "1924"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Spertus_Institute_for_Jewish_Learning_and_Leadership> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-87.65005 41.85003)"^^geo:wktLiteral ;
+        schema:addressLocality "Chicago" ;
+    ] ;
+    schema:url <http://www.spertus.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000403881376> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2896792> ;
+             .

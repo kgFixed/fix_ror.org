@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01j8hda60> 
+    a org:Organization ;
+    rdfs:label "Native American Cancer Initiatives (United States)" ;
+    schema:name "Native American Cancer Initiatives (United States)" ;
+    schema:foundingDate "1998"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-105.32388 39.40999)"^^geo:wktLiteral ;
+        schema:addressLocality "Pine Grove" ;
+    ] ;
+    schema:url <http://www.natamcancerinitiatives.org/> ;
+    schema:sameAs <http://isni.org/isni/000000040504597X> ;
+             .

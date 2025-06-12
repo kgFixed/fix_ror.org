@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03941sr58> 
+    a org:Organization ;
+    rdfs:label "Claxton-Hepburn Medical Center" ;
+    schema:name "Claxton-Hepburn Medical Center" ;
+    schema:foundingDate "1885"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-75.48634 44.69423)"^^geo:wktLiteral ;
+        schema:addressLocality "Ogdensburg" ;
+    ] ;
+    schema:url <https://www.claxtonhepburn.org/> ;
+    schema:sameAs <http://isni.org/isni/000000040568195X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30287083> ;
+             .

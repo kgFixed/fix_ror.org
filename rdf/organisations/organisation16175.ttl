@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/016gahp64> 
+    a org:Organization ;
+    rdfs:label "St. Clair County Library System" ;
+    schema:name "St. Clair County Library System" ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-82.42491 42.97086)"^^geo:wktLiteral ;
+        schema:addressLocality "Port Huron" ;
+    ] ;
+    schema:url <http://www.sccl.lib.mi.us/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30289528> ;
+             .

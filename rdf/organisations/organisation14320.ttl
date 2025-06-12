@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/030x94n68> 
+    a org:Organization ;
+    rdfs:label "KVC Health Systems" ;
+    schema:name "KVC Health Systems" ;
+    schema:foundingDate "1970"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/KVC_Health_Systems> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-94.81913 38.8814)"^^geo:wktLiteral ;
+        schema:addressLocality "Olathe" ;
+    ] ;
+    schema:url <https://www.kvc.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000449039934> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q17039357> ;
+             .

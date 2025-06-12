@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02tsp7733> 
+    a org:Organization ;
+    rdfs:label "New York State Office of Children and Family Services" ;
+    schema:name "New York State Office of Children and Family Services" ;
+    schema:foundingDate "1998"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/New_York_State_Office_of_Children_and_Family_Services> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-73.7429 42.64258)"^^geo:wktLiteral ;
+        schema:addressLocality "Rensselaer" ;
+    ] ;
+    schema:url <http://ocfs.ny.gov/main/> ;
+    schema:sameAs <http://isni.org/isni/0000000404583717> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7014150> ;
+             .

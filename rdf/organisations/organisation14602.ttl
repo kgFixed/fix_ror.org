@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03n9jn918> 
+    a org:Organization ;
+    rdfs:label "Lincoln Charter School" ;
+    schema:name "Lincoln Charter School" ;
+    schema:foundingDate "2000"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-81.0298 35.53125)"^^geo:wktLiteral ;
+        schema:addressLocality "Denver" ;
+    ] ;
+    schema:url <https://www.lincolncharter.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000404119076> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30288089> ;
+             .

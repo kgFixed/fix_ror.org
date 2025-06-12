@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0524gsp03> 
+    a org:Organization ;
+    rdfs:label "Visup (Italy)" ;
+    schema:name "Visup (Italy)" ;
+    schema:foundingDate "2007"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(13.12237 46.27405)"^^geo:wktLiteral ;
+        schema:addressLocality "Gemona" ;
+    ] ;
+    schema:url <https://visup.co/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30292574> ;
+             .

@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04j9bvy88> 
+    a org:Organization ;
+    rdfs:label "BG University Hospital Bergmannsheil Bochum" ;
+    schema:name "BG University Hospital Bergmannsheil Bochum" ;
+    schema:foundingDate "1888"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Berufsgenossenschaftliches_Universit%C3%A4tsklinikum_Bergmannsheil> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03zcpvf19> ;
+        rdfs:label "University Hospitals of the Ruhr-University of Bochum" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(7.21648 51.48165)"^^geo:wktLiteral ;
+        schema:addressLocality "Bochum" ;
+    ] ;
+    schema:url <http://www.bergmannsheil.de/> ;
+    schema:sameAs <http://isni.org/isni/0000000405512937> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q49770> ;
+             .

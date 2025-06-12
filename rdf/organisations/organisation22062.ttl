@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01ghjfc28> 
+    a org:Organization ;
+    rdfs:label "Tigard-Tualatin School District" ;
+    schema:name "Tigard-Tualatin School District" ;
+    schema:foundingDate "1875"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Tigard-Tualatin_School_District> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-122.77149 45.43123)"^^geo:wktLiteral ;
+        schema:addressLocality "Tigard" ;
+    ] ;
+    schema:url <https://www.ttsdschools.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000403949481> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7801323> ;
+             .

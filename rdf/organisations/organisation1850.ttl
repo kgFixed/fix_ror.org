@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05epcpp46> 
+    a org:Organization ;
+    rdfs:label "Asahi University" ;
+    schema:name "Asahi University" ;
+    schema:foundingDate "1971"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Asahi_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(136.76039 35.42291)"^^geo:wktLiteral ;
+        schema:addressLocality "Gifu" ;
+    ] ;
+    schema:url <http://www.asahi-u.ac.jp/> ;
+    schema:sameAs <http://isni.org/isni/0000000092208466> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4803373> ;
+             .

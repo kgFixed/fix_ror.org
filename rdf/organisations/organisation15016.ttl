@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/054zpyd97> 
+    a org:Organization ;
+    rdfs:label "San Diego Unified School District" ;
+    schema:name "San Diego Unified School District" ;
+    schema:foundingDate "1854"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/San_Diego_Unified_School_District> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-117.16472 32.71571)"^^geo:wktLiteral ;
+        schema:addressLocality "San Diego" ;
+    ] ;
+    schema:url <https://www.sandiegounified.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000087314707> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7413758> ;
+             .

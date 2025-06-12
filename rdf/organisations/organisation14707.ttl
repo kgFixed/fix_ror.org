@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/046hxmc98> 
+    a org:Organization ;
+    rdfs:label "Modulation Therapeutics (United States)" ;
+    schema:name "Modulation Therapeutics (United States)" ;
+    schema:foundingDate "2011"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-82.45843 27.94752)"^^geo:wktLiteral ;
+        schema:addressLocality "Tampa" ;
+    ] ;
+    schema:url <https://www.modulationtherapeutics.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30288199> ;
+             .

@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05939ef94> 
+    a org:Organization ;
+    rdfs:label "Altair Engineering (United States)" ;
+    schema:name "Altair Engineering (United States)" ;
+    schema:foundingDate "1985"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Altair_Engineering> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00vj7a915> ;
+        rdfs:label "Altair Engineering (France)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05ncq9g28> ;
+        rdfs:label "Altair Engineering (United Kingdom)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-83.14993 42.60559)"^^geo:wktLiteral ;
+        schema:addressLocality "Troy" ;
+    ] ;
+    schema:url <http://www.altair.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000449149690> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q434017> ;
+             .

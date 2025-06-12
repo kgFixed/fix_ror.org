@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01j1n9y37> 
+    a org:Organization ;
+    rdfs:label "Ave Maria School of Law" ;
+    schema:name "Ave Maria School of Law" ;
+    schema:foundingDate "1999"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Ave_Maria_School_of_Law> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-81.79596 26.14234)"^^geo:wktLiteral ;
+        schema:addressLocality "Naples" ;
+    ] ;
+    schema:url <http://www.avemarialaw.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000101758049> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4827950> ;
+             .

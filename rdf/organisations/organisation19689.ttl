@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/050pc9c24> 
+    a org:Organization ;
+    rdfs:label "Kistler (Switzerland)" ;
+    schema:name "Kistler (Switzerland)" ;
+    schema:foundingDate "1959"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Kistler_Group> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01e7k1548> ;
+        rdfs:label "Kistler (United Kingdom)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(8.72413 47.50564)"^^geo:wktLiteral ;
+        schema:addressLocality "Winterthur" ;
+    ] ;
+    schema:url <https://www.kistler.com/> ;
+    schema:sameAs <http://isni.org/isni/000000046093637X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30290277> ;
+             .

@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00z72df47> 
+    a org:Organization ;
+    rdfs:label "Scientifica (United Kingdom)" ;
+    schema:name "Scientifica (United Kingdom)" ;
+    schema:foundingDate "1997"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Scientifica> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(0.09589 50.96948)"^^geo:wktLiteral ;
+        schema:addressLocality "Uckfield" ;
+    ] ;
+    schema:url <https://www.scientifica.uk.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30291850> ;
+             .

@@ -1,0 +1,78 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05ntqke24> 
+    a org:Organization ;
+    rdfs:label "UnityPoint Health" ;
+    schema:name "UnityPoint Health" ;
+    schema:foundingDate "1993"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/UnityPoint_Health> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02vtstx21> ;
+        rdfs:label "Allen Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04749sq68> ;
+        rdfs:label "Blank Children's Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03h6d4166> ;
+        rdfs:label "Iowa Lutheran Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/045dgap26> ;
+        rdfs:label "Iowa Methodist Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01w756144> ;
+        rdfs:label "Meriter Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01t45et45> ;
+        rdfs:label "Methodist West Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00w8p4b22> ;
+        rdfs:label "Peoria Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03txk6b49> ;
+        rdfs:label "St. Luke's Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04ep6k202> ;
+        rdfs:label "Trinity Medical Center" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-93.60911 41.60054)"^^geo:wktLiteral ;
+        schema:addressLocality "Des Moines" ;
+    ] ;
+    schema:url <https://www.unitypoint.org/default.aspx> ;
+    schema:sameAs <http://isni.org/isni/0000000403962096> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q17078774> ;
+             .

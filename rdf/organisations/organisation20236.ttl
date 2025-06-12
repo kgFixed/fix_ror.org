@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01hpjfm62> 
+    a org:Organization ;
+    rdfs:label "National Society of Professional Engineers" ;
+    schema:name "National Society of Professional Engineers" ;
+    schema:foundingDate "1934"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/National_Society_of_Professional_Engineers> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.04692 38.80484)"^^geo:wktLiteral ;
+        schema:addressLocality "Alexandria" ;
+    ] ;
+    schema:url <http://www.nspe.org/> ;
+    schema:sameAs <http://isni.org/isni/000000009310639X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q15995344> ;
+             .

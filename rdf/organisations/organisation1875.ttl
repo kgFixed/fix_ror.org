@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00kde4z41> 
+    a org:Organization ;
+    rdfs:label "Universidade Luterana do Brasil" ;
+    schema:name "Universidade Luterana do Brasil" ;
+    schema:foundingDate "1972"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Universidade_Luterana_do_Brasil> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-51.18361 -29.91778)"^^geo:wktLiteral ;
+        schema:addressLocality "Canoas" ;
+    ] ;
+    schema:url <http://www.ulbra.br/> ;
+    schema:sameAs <http://isni.org/isni/0000000121118057> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5650092> ;
+             .

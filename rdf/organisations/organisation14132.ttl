@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05y2vby93> 
+    a org:Organization ;
+    rdfs:label "Texas Health Resources Foundation" ;
+    schema:name "Texas Health Resources Foundation" ;
+    schema:foundingDate "1997"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Texas_Health_Resources> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04wnz4487> ;
+        rdfs:label "Texas Health Arlington Memorial" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05k07p323> ;
+        rdfs:label "Texas Health Dallas" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02yrcx115> ;
+        rdfs:label "Texas Health Harris Methodist Hospital Fort Worth" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-97.10807 32.73569)"^^geo:wktLiteral ;
+        schema:addressLocality "Arlington" ;
+    ] ;
+    schema:url <https://texashealth365fund.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000404021407> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7707724> ;
+             .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04t104d61> 
+    a org:Organization ;
+    rdfs:label "Southwestern College - Kansas" ;
+    schema:name "Southwestern College - Kansas" ;
+    schema:foundingDate "1885"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Southwestern_College_(Kansas)> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-96.99559 37.23975)"^^geo:wktLiteral ;
+        schema:addressLocality "Winfield" ;
+    ] ;
+    schema:url <http://www.sckans.edu/> ;
+    schema:sameAs <http://isni.org/isni/000000040485613X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7571407> ;
+             .

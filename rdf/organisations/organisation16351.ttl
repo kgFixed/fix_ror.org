@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02wyqrf98> 
+    a org:Organization ;
+    rdfs:label "National Association of School Psychologists" ;
+    schema:name "National Association of School Psychologists" ;
+    schema:foundingDate "1969"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/National_Association_of_School_Psychologists> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.10026 38.98067)"^^geo:wktLiteral ;
+        schema:addressLocality "Bethesda" ;
+    ] ;
+    schema:url <http://www.nasponline.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000110107993> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1966926> ;
+             .

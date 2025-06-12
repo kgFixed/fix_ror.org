@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00mczdx43> 
+    a org:Organization ;
+    rdfs:label "National University of San Luis" ;
+    schema:name "National University of San Luis" ;
+    schema:foundingDate "1973"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/National_University_of_San_Luis> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01ktqem13> ;
+        rdfs:label "Centro Científico Tecnológico - Nordeste" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02r8b4p12> ;
+        rdfs:label "Centro Científico Tecnológico - San Luis" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-66.33563 -33.29501)"^^geo:wktLiteral ;
+        schema:addressLocality "San Luis" ;
+    ] ;
+    schema:url <http://www.unsl.edu.ar/> ;
+    schema:sameAs <http://isni.org/isni/0000000123091978> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q9290218> ;
+             .

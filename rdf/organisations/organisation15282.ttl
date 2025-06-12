@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/002eajg41> 
+    a org:Organization ;
+    rdfs:label "Real Time Tomography (United States)" ;
+    schema:name "Real Time Tomography (United States)" ;
+    schema:foundingDate "2007"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-75.38769 40.044)"^^geo:wktLiteral ;
+        schema:addressLocality "Wayne" ;
+    ] ;
+    schema:url <https://www.realtimetomography.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30288776> ;
+             .

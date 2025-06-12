@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05dtcxa32> 
+    a org:Organization ;
+    rdfs:label "Capital Area District Libraries" ;
+    schema:name "Capital Area District Libraries" ;
+    schema:foundingDate "1998"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Capital_Area_District_Library> ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-84.55553 42.73253)"^^geo:wktLiteral ;
+        schema:addressLocality "Lansing" ;
+    ] ;
+    schema:url <https://www.cadl.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000404183406> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30289545> ;
+             .

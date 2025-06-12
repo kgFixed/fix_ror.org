@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05q398y82> 
+    a org:Organization ;
+    rdfs:label "St. John's Riverside Hospital" ;
+    schema:name "St. John's Riverside Hospital" ;
+    schema:foundingDate "1869"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/St._John%27s_Riverside_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-73.89875 40.93121)"^^geo:wktLiteral ;
+        schema:addressLocality "Yonkers" ;
+    ] ;
+    schema:url <http://www.riversidehealth.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000086121815> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q60782268> ;
+             .

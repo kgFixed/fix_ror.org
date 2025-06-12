@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/034kn0n30> 
+    a org:Organization ;
+    rdfs:label "Phio Pharmaceuticals (United States)" ;
+    schema:name "Phio Pharmaceuticals (United States)" ;
+    schema:foundingDate "2011"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/RXi_Pharmaceuticals> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-71.55229 42.34593)"^^geo:wktLiteral ;
+        schema:addressLocality "Marlborough" ;
+    ] ;
+    schema:url <https://phiopharma.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000404604354> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q25245130> ;
+             .

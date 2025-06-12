@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02tfgas26> 
+    a org:Organization ;
+    rdfs:label "Sèleco (Italy)" ;
+    schema:name "Sèleco (Italy)" ;
+    schema:foundingDate "1965"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/S%C3%A8leco> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(12.66051 45.95689)"^^geo:wktLiteral ;
+        schema:addressLocality "Pordenone" ;
+    ] ;
+    schema:url <https://www.seleco.it/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q3979269> ;
+             .

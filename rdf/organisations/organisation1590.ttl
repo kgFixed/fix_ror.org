@@ -1,0 +1,49 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00f2txz25> 
+    a org:Organization ;
+    rdfs:label "Kitasato University" ;
+    schema:name "Kitasato University" ;
+    schema:foundingDate "1970"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Kitasato_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05js82y61> ;
+        rdfs:label "Kitasato Institute Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04s5ej408> ;
+        rdfs:label "Kitasato University East Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02b3e2815> ;
+        rdfs:label "Kitasato University Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03vd2y814> ;
+        rdfs:label "Kitasato University Medical Center" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(139.69171 35.6895)"^^geo:wktLiteral ;
+        schema:addressLocality "Tokyo" ;
+    ] ;
+    schema:url <http://web.med.kitasato-u.ac.jp/en/> ;
+    schema:sameAs <http://isni.org/isni/0000000092062938> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4389652> ;
+             .

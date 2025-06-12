@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05jd76e15> 
+    a org:Organization ;
+    rdfs:label "Zero Breast Cancer" ;
+    schema:name "Zero Breast Cancer" ;
+    schema:foundingDate "1995"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-122.53109 37.97353)"^^geo:wktLiteral ;
+        schema:addressLocality "San Rafael" ;
+    ] ;
+    schema:url <https://www.zerobreastcancer.org/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30289372> ;
+             .

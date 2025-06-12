@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00hncq557> 
+    a org:Organization ;
+    rdfs:label "University of Maryland Charles Regional Medical Center" ;
+    schema:name "University of Maryland Charles Regional Medical Center" ;
+    schema:foundingDate "1926"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/University_of_Maryland_Charles_Regional_Medical_Center> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04fkqna53> ;
+        rdfs:label "University of Maryland Medical System" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-76.97525 38.52929)"^^geo:wktLiteral ;
+        schema:addressLocality "La Plata" ;
+    ] ;
+    schema:url <https://www.umms.org/charles> ;
+    schema:sameAs <http://isni.org/isni/0000000460118721> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5124778> ;
+             .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00v2w0a04> 
+    a org:Organization ;
+    rdfs:label "Polk State College" ;
+    schema:name "Polk State College" ;
+    schema:foundingDate "1964"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Polk_State_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-81.73286 28.02224)"^^geo:wktLiteral ;
+        schema:addressLocality "Winter Haven" ;
+    ] ;
+    schema:url <https://www.polk.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000092211278> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7225469> ;
+             .

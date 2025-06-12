@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03s1f5p42> 
+    a org:Organization ;
+    rdfs:label "Thohoyandou Victim Empowerment Programme" ;
+    schema:name "Thohoyandou Victim Empowerment Programme" ;
+    schema:foundingDate "2002"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(30.48497 -22.94564)"^^geo:wktLiteral ;
+        schema:addressLocality "Thohoyandou" ;
+    ] ;
+    schema:url <https://tvep.org.za/> ;
+     .

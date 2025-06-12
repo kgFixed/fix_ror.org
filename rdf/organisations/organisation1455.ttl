@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04xze1462> 
+    a org:Organization ;
+    rdfs:label "Nokia (Belgium)" ;
+    schema:name "Nokia (Belgium)" ;
+    schema:foundingDate "1865"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Nokia> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04pkc8m17> ;
+        rdfs:label "Nokia (Finland)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(4.40026 51.22047)"^^geo:wktLiteral ;
+        schema:addressLocality "Antwerp" ;
+    ] ;
+    schema:url <http://www.nokia.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000403995410> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q28975932> ;
+             .

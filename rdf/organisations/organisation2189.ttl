@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00xwgyp12> 
+    a org:Organization ;
+    rdfs:label "Universidade Federal Rural do Rio de Janeiro" ;
+    schema:name "Universidade Federal Rural do Rio de Janeiro" ;
+    schema:foundingDate "1910"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Universidade_Federal_Rural_do_Rio_de_Janeiro> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-43.7075 -22.74389)"^^geo:wktLiteral ;
+        schema:addressLocality "Seropédica" ;
+    ] ;
+    schema:url <http://www.ufrrj.br/portal/modulo/home/index.php> ;
+    schema:sameAs <http://isni.org/isni/0000000115232582> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7834196> ;
+             .

@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05sep9w93> 
+    a org:Organization ;
+    rdfs:label "Instituto Tecnológico de Aragón" ;
+    schema:name "Instituto Tecnológico de Aragón" ;
+    schema:foundingDate "1984"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.87734 41.65606)"^^geo:wktLiteral ;
+        schema:addressLocality "Zaragoza" ;
+    ] ;
+    schema:url <http://www.itainnova.es/en/> ;
+    schema:sameAs <http://isni.org/isni/0000000403745104> ;
+             .

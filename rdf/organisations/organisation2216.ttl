@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03c3d1v10> 
+    a org:Organization ;
+    rdfs:label "General University Hospital of Patras" ;
+    schema:name "General University Hospital of Patras" ;
+    schema:foundingDate "1988"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/General_University_Hospital_of_Patras> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/017wvtq80> ;
+        rdfs:label "University of Patras" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(21.73444 38.24444)"^^geo:wktLiteral ;
+        schema:addressLocality "Pátrai" ;
+    ] ;
+    schema:url <http://www.pgnp.gr/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q1524794> ;
+             .

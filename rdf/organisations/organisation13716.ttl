@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05hnp8y26> 
+    a org:Organization ;
+    rdfs:label "ARC of Oswego County" ;
+    schema:name "ARC of Oswego County" ;
+    schema:foundingDate "1953"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-76.41716 43.32285)"^^geo:wktLiteral ;
+        schema:addressLocality "Fulton" ;
+    ] ;
+    schema:url <https://www.arcofoswegocounty.org/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30287203> ;
+             .

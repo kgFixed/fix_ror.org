@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00thc5937> 
+    a org:Organization ;
+    rdfs:label "Fundación Ramón Domínguez" ;
+    schema:name "Fundación Ramón Domínguez" ;
+    schema:foundingDate "2001"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-8.54569 42.88052)"^^geo:wktLiteral ;
+        schema:addressLocality "Santiago de Compostela" ;
+    ] ;
+    schema:url <http://www.fundacionramondominguez.es/> ;
+    schema:sameAs <http://isni.org/isni/0000000464197578> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30287482> ;
+             .

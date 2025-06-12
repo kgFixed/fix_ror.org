@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03myb1z84> 
+    a org:Organization ;
+    rdfs:label "Capita Translation and Interpreting (United Kingdom)" ;
+    schema:name "Capita Translation and Interpreting (United Kingdom)" ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-2.1183 53.54051)"^^geo:wktLiteral ;
+        schema:addressLocality "Oldham" ;
+    ] ;
+    schema:url <https://www.capitatranslationinterpreting.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30255488> ;
+             .

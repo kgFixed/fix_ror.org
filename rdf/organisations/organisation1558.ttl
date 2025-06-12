@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/044pcn091> 
+    a org:Organization ;
+    rdfs:label "University of Mississippi Medical Center" ;
+    schema:name "University of Mississippi Medical Center" ;
+    schema:foundingDate "1955"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/University_of_Mississippi_Medical_Center> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04kqgqa72> ;
+        rdfs:label "Mississippi Institutions of Higher Learning" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02teq1165> ;
+        rdfs:label "University of Mississippi" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-90.18481 32.29876)"^^geo:wktLiteral ;
+        schema:addressLocality "Jackson" ;
+    ] ;
+    schema:url <https://www.ummchealth.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000419370407> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7895818> ;
+             .

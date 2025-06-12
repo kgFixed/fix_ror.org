@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/057r54s29> 
+    a org:Organization ;
+    rdfs:label "Baton Rouge Community College" ;
+    schema:name "Baton Rouge Community College" ;
+    schema:foundingDate "1995"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Baton_Rouge_Community_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/052m3x230> ;
+        rdfs:label "Louisiana Community and Technical College System" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-91.18747 30.44332)"^^geo:wktLiteral ;
+        schema:addressLocality "Baton Rouge" ;
+    ] ;
+    schema:url <http://www.mybrcc.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000106490619> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4869472> ;
+             .

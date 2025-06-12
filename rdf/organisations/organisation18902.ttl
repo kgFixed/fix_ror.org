@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04pzwwc57> 
+    a org:Organization ;
+    rdfs:label "General Patent Corporation (United States)" ;
+    schema:name "General Patent Corporation (United States)" ;
+    schema:foundingDate "1987"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/General_Patent_Corporation> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-74.14959 41.11482)"^^geo:wktLiteral ;
+        schema:addressLocality "Suffern" ;
+    ] ;
+    schema:url <http://www.generalpatent.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30256930> ;
+             .

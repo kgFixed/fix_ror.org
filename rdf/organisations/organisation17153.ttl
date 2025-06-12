@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01fs6y727> 
+    a org:Organization ;
+    rdfs:label "Anvil Semiconductors (United Kingdom)" ;
+    schema:name "Anvil Semiconductors (United Kingdom)" ;
+    schema:foundingDate "2010"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.51217 52.40656)"^^geo:wktLiteral ;
+        schema:addressLocality "Coventry" ;
+    ] ;
+    schema:url <http://www.anvil-semi.co.uk/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30255366> ;
+             .

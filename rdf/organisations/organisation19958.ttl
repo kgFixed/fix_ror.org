@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0221ghv91> 
+    a org:Organization ;
+    rdfs:label "Ministry of Education and Science" ;
+    schema:name "Ministry of Education and Science" ;
+    schema:foundingDate "1991"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Ministry_of_Education_and_Science_(Macedonia)> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(21.43141 41.99646)"^^geo:wktLiteral ;
+        schema:addressLocality "Skopje" ;
+    ] ;
+    schema:url <http://www.mon.gov.mk/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q8014451> ;
+             .

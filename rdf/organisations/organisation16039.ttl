@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01yc4ac23> 
+    a org:Organization ;
+    rdfs:label "Baldwin Public Library" ;
+    schema:name "Baldwin Public Library" ;
+    schema:foundingDate "1869"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-83.21132 42.5467)"^^geo:wktLiteral ;
+        schema:addressLocality "Birmingham" ;
+    ] ;
+    schema:url <https://www.baldwinlib.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000406176971> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q69479384> ;
+             .

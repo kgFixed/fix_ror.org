@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02dr63s31> 
+    a org:Organization ;
+    rdfs:label "Institute of Genetic and Biomedical Research" ;
+    schema:name "Institute of Genetic and Biomedical Research" ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04zaypm56> ;
+        rdfs:label "National Research Council" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(9.1444 39.25642)"^^geo:wktLiteral ;
+        schema:addressLocality "Monserrato" ;
+    ] ;
+    schema:url <http://www.irgb.cnr.it/index.php?lang=en> ;
+    schema:sameAs <http://isni.org/isni/0000000417899390> ;
+             .

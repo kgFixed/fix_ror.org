@@ -1,0 +1,78 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00a45e114> 
+    a org:Organization ;
+    rdfs:label "Virginia Community College System" ;
+    schema:name "Virginia Community College System" ;
+    schema:foundingDate "1966"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Virginia_Community_College_System> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00ehy3369> ;
+        rdfs:label "Central Virginia Community College" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04c2j1p40> ;
+        rdfs:label "Dabney S Lancaster Community College" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04xbyac61> ;
+        rdfs:label "Danville Community College" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03dgxrg98> ;
+        rdfs:label "Germanna Virginia Community College" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05eqkxh55> ;
+        rdfs:label "New River Community College" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04wzh0d51> ;
+        rdfs:label "Northern Virginia Community College" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02sf8e546> ;
+        rdfs:label "Patrick Henry Community College" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05v556078> ;
+        rdfs:label "Southside Virginia Community College" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05wf9ss90> ;
+        rdfs:label "Virginia Highlands Community College" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.46026 37.55376)"^^geo:wktLiteral ;
+        schema:addressLocality "Richmond" ;
+    ] ;
+    schema:url <http://www.vccs.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000087969623> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7934204> ;
+             .

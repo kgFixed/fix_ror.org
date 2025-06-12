@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/038k3ws77> 
+    a org:Organization ;
+    rdfs:label "Centre of Polymer and Carbon Materials" ;
+    schema:name "Centre of Polymer and Carbon Materials" ;
+    schema:foundingDate "1954"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01dr6c206> ;
+        rdfs:label "Polish Academy of Sciences" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(18.78576 50.32492)"^^geo:wktLiteral ;
+        schema:addressLocality "Zabrze" ;
+    ] ;
+    schema:url <https://cmpw-pan.edu.pl/index.php?lang=en> ;
+    schema:sameAs <http://isni.org/isni/000000040387458X> ;
+             .

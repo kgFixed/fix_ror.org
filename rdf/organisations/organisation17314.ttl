@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/026sdzz57> 
+    a org:Organization ;
+    rdfs:label "Centralia College" ;
+    schema:name "Centralia College" ;
+    schema:foundingDate "1925"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Centralia_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-122.9543 46.71621)"^^geo:wktLiteral ;
+        schema:addressLocality "Centralia" ;
+    ] ;
+    schema:url <http://www.centralia.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000405866575> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5062174> ;
+             .

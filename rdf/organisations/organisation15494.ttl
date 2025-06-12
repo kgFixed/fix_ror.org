@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00e32zj49> 
+    a org:Organization ;
+    rdfs:label "Therapeutic Research Foundation" ;
+    schema:name "Therapeutic Research Foundation" ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-72.3762 41.29177)"^^geo:wktLiteral ;
+        schema:addressLocality "Old Saybrook" ;
+    ] ;
+    schema:url <http://tr-f.org/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30288993> ;
+             .

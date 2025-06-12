@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00rgwvs20> 
+    a org:Organization ;
+    rdfs:label "Exel Composites (United Kingdom)" ;
+    schema:name "Exel Composites (United Kingdom)" ;
+    schema:foundingDate "1960"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Exel_Composites> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-2.73124 53.34174)"^^geo:wktLiteral ;
+        schema:addressLocality "Runcorn" ;
+    ] ;
+    schema:url <https://www.exelcomposites.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30256333> ;
+             .

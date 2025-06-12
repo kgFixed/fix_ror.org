@@ -1,0 +1,35 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/051qv3667> 
+    a org:Organization ;
+    rdfs:label "Applus+ IDIADA (Spain)" ;
+    schema:name "Applus+ IDIADA (Spain)" ;
+    schema:foundingDate "1971"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Applus%2B_IDIADA> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00k5yxn79> ;
+        rdfs:label "Applus+ IDIADA (Czechia)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04c4wb253> ;
+        rdfs:label "Applus+ IDIADA (United Kingdom)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(1.55086 41.25357)"^^geo:wktLiteral ;
+        schema:addressLocality "Santa Oliva" ;
+    ] ;
+    schema:url <http://www.applusidiada.com/en/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q621645> ;
+             .

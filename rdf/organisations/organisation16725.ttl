@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/059q7ds12> 
+    a org:Organization ;
+    rdfs:label "Alpha Therm (Germany)" ;
+    schema:name "Alpha Therm (Germany)" ;
+    schema:foundingDate "1966"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(8.59611 49.39444)"^^geo:wktLiteral ;
+        schema:addressLocality "Plankstadt" ;
+    ] ;
+    schema:url <http://www.alpha-therm.de/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30254966> ;
+             .

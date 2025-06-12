@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/022gwqv30> 
+    a org:Organization ;
+    rdfs:label "Breast and GYN Health Project" ;
+    schema:name "Breast and GYN Health Project" ;
+    schema:foundingDate "2004"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-124.08284 40.86652)"^^geo:wktLiteral ;
+        schema:addressLocality "Arcata" ;
+    ] ;
+    schema:url <http://bghp.org/about-us> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30287556> ;
+             .

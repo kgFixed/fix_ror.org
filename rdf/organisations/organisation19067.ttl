@@ -1,0 +1,41 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03459qp74> 
+    a org:Organization ;
+    rdfs:label "TRUMPF (Germany)" ;
+    schema:name "TRUMPF (Germany)" ;
+    schema:foundingDate "1923"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Trumpf> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05e6atz65> ;
+        rdfs:label "TRUMPF (Austria)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02prj1520> ;
+        rdfs:label "TRUMPF (Poland)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04h1pxn55> ;
+        rdfs:label "TRUMPF (United Kingdom)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(9.06703 48.82672)"^^geo:wktLiteral ;
+        schema:addressLocality "Ditzingen" ;
+    ] ;
+    schema:url <https://www.trumpf.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q724429> ;
+             .

@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02f7sfa33> 
+    a org:Organization ;
+    rdfs:label "John F. Kennedy Center for the Performing Arts" ;
+    schema:name "John F. Kennedy Center for the Performing Arts" ;
+    schema:foundingDate "1971"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/John_F._Kennedy_Center_for_the_Performing_Arts> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00bfxmt28> ;
+        rdfs:label "Washington National Opera" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.03637 38.89511)"^^geo:wktLiteral ;
+        schema:addressLocality "Washington" ;
+    ] ;
+    schema:url <http://www.kennedy-center.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000403932292> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1631981> ;
+             .

@@ -1,0 +1,41 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0313f3w77> 
+    a org:Organization ;
+    rdfs:label "Başkent University Hospital" ;
+    schema:name "Başkent University Hospital" ;
+    schema:foundingDate "1982"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0086skx40> ;
+        rdfs:label "Adana Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04tp7cf63> ;
+        rdfs:label "Başkent University Alanya Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02v9bqx10> ;
+        rdfs:label "Başkent University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(32.85427 39.91987)"^^geo:wktLiteral ;
+        schema:addressLocality "Ankara" ;
+    ] ;
+    schema:url <https://ankara.baskenthastaneleri.com/en/> ;
+    schema:sameAs <http://isni.org/isni/0000000406420719> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30253953> ;
+             .

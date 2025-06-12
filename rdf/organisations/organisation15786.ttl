@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/018r09w17> 
+    a org:Organization ;
+    rdfs:label "Strategic Initiative for Women in the Horn of Africa" ;
+    schema:name "Strategic Initiative for Women in the Horn of Africa" ;
+    schema:foundingDate "1995"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(32.58219 0.31628)"^^geo:wktLiteral ;
+        schema:addressLocality "Kampala" ;
+    ] ;
+    schema:url <https://sihanet.org/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30289266> ;
+             .

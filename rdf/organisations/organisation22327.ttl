@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/051tn6h07> 
+    a org:Organization ;
+    rdfs:label "Heraeus (Germany)" ;
+    schema:name "Heraeus (Germany)" ;
+    schema:foundingDate "1851"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Heraeus> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02qz5d088> ;
+        rdfs:label "Heraeus (Belgium)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02tm5n709> ;
+        rdfs:label "Heraeus (Canada)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/049e8me77> ;
+        rdfs:label "Heraeus (United Kingdom)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05fesrm20> ;
+        rdfs:label "Heraeus (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(8.91418 50.13423)"^^geo:wktLiteral ;
+        schema:addressLocality "Hanau" ;
+    ] ;
+    schema:url <https://www.heraeus.com/en/group/home/home.html> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q553935> ;
+             .

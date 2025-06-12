@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04twccc71> 
+    a org:Organization ;
+    rdfs:label "National United University" ;
+    schema:name "National United University" ;
+    schema:foundingDate "1972"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/National_United_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(120.82367 24.56427)"^^geo:wktLiteral ;
+        schema:addressLocality "Miaoli" ;
+    ] ;
+    schema:url <http://www.nuu.edu.tw/UIPWeb/wSite/mp?mp=50> ;
+    schema:sameAs <http://isni.org/isni/0000000406227206> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6145842> ;
+             .

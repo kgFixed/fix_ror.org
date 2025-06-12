@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05j9fmg63> 
+    a org:Organization ;
+    rdfs:label "DuPont (Spain)" ;
+    schema:name "DuPont (Spain)" ;
+    schema:foundingDate "1802"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/DuPont> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03g3m1w62> ;
+        rdfs:label "DuPont (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-4.84609 43.31737)"^^geo:wktLiteral ;
+        schema:addressLocality "Carreña" ;
+    ] ;
+    schema:url <https://www.dupont.es/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30256180> ;
+             .

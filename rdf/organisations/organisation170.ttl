@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01jpkw634> 
+    a org:Organization ;
+    rdfs:label "Mediterranean Center for Environmental Studies" ;
+    schema:name "Mediterranean Center for Environmental Studies" ;
+    schema:foundingDate "1991"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.37966 39.47391)"^^geo:wktLiteral ;
+        schema:addressLocality "Valencia" ;
+    ] ;
+    schema:url <http://www.ceam.es/GVAceam/ceam_en/home.htm> ;
+    schema:sameAs <http://isni.org/isni/0000000087177992> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30252827> ;
+             .

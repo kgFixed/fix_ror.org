@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02cwbgy35> 
+    a org:Organization ;
+    rdfs:label "East Texas Baptist University" ;
+    schema:name "East Texas Baptist University" ;
+    schema:foundingDate "1912"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/East_Texas_Baptist_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-94.36742 32.54487)"^^geo:wktLiteral ;
+        schema:addressLocality "Marshall" ;
+    ] ;
+    schema:url <https://www.etbu.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000095612499> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5329516> ;
+             .

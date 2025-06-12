@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05fqdmq12> 
+    a org:Organization ;
+    rdfs:label "Institute of Automation and Electrometry" ;
+    schema:name "Institute of Automation and Electrometry" ;
+    schema:foundingDate "1957"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00tgr2h49> ;
+        rdfs:label "Computer Equipment and Technologies" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(82.9346 55.0415)"^^geo:wktLiteral ;
+        schema:addressLocality "Novosibirsk" ;
+    ] ;
+    schema:url <http://www.iae.nsk.su/index.php/en/> ;
+    schema:sameAs <http://isni.org/isni/0000000406380315> ;
+             .

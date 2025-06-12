@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01j5y9c13> 
+    a org:Organization ;
+    rdfs:label "Dwight School" ;
+    schema:name "Dwight School" ;
+    schema:foundingDate "1872"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Dwight_School> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-74.00597 40.71427)"^^geo:wktLiteral ;
+        schema:addressLocality "New York" ;
+    ] ;
+    schema:url <https://www.dwight.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000405573545> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5318230> ;
+             .

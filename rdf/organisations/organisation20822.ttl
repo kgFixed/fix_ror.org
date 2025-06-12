@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05pbbmz23> 
+    a org:Organization ;
+    rdfs:label "Privy Council Office" ;
+    schema:name "Privy Council Office" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Privy_Council_Office_(Canada)> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-75.69812 45.41117)"^^geo:wktLiteral ;
+        schema:addressLocality "Ottawa" ;
+    ] ;
+    schema:url <http://www.pco-bcp.gc.ca/index.asp?lang=eng> ;
+    schema:sameAs <http://isni.org/isni/0000000106687411> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q24168> ;
+             .

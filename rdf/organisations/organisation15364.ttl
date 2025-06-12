@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03yhkgk91> 
+    a org:Organization ;
+    rdfs:label "South West Special Recreation Association" ;
+    schema:name "South West Special Recreation Association" ;
+    schema:foundingDate "1981"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-87.73866 41.66892)"^^geo:wktLiteral ;
+        schema:addressLocality "Alsip" ;
+    ] ;
+    schema:url <https://www.swsra.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30288854> ;
+             .

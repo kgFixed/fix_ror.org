@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/039ryp971> 
+    a org:Organization ;
+    rdfs:label "Grodno State Medical University" ;
+    schema:name "Grodno State Medical University" ;
+    schema:foundingDate "1958"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Grodno_State_Medical_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(23.8258 53.6884)"^^geo:wktLiteral ;
+        schema:addressLocality "Hrodna" ;
+    ] ;
+    schema:url <http://www.grsmu.by/en/> ;
+    schema:sameAs <http://isni.org/isni/0000000091625209> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2067552> ;
+             .

@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03a17f132> 
+    a org:Organization ;
+    rdfs:label "Light Chain Bioscience (Switzerland)" ;
+    schema:name "Light Chain Bioscience (Switzerland)" ;
+    schema:foundingDate "1998"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Novimmune> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(6.14569 46.20222)"^^geo:wktLiteral ;
+        schema:addressLocality "Geneva" ;
+    ] ;
+    schema:url <https://www.lightchainbio.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30290924> ;
+             .

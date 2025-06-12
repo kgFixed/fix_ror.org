@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00wys9y90> 
+    a org:Organization ;
+    rdfs:label "Herlev Hospital" ;
+    schema:name "Herlev Hospital" ;
+    schema:foundingDate "1976"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Herlev_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/035b05819> ;
+        rdfs:label "University of Copenhagen" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(12.43998 55.72366)"^^geo:wktLiteral ;
+        schema:addressLocality "Herlev" ;
+    ] ;
+    schema:url <https://www.herlevhospital.dk/> ;
+    schema:sameAs <http://isni.org/isni/0000000406468325> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3375948> ;
+             .

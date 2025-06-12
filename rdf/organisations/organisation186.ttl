@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05efsr055> 
+    a org:Organization ;
+    rdfs:label "Estonian Interuniversity Population Research Centre" ;
+    schema:name "Estonian Interuniversity Population Research Centre" ;
+    schema:foundingDate "1986"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05mey9k78> ;
+        rdfs:label "Tallinn University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(24.75353 59.43696)"^^geo:wktLiteral ;
+        schema:addressLocality "Tallinn" ;
+    ] ;
+    schema:url <http://www.popest.ee/node/23> ;
+    schema:sameAs <http://isni.org/isni/0000000406091978> ;
+             .

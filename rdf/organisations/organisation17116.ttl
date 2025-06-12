@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/019sw1443> 
+    a org:Organization ;
+    rdfs:label "Association for Computational Linguistics" ;
+    schema:name "Association for Computational Linguistics" ;
+    schema:foundingDate "1962"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Association_for_Computational_Linguistics> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-75.19462 40.98676)"^^geo:wktLiteral ;
+        schema:addressLocality "Stroudsburg" ;
+    ] ;
+    schema:url <http://www.aclweb.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000122910687> ;
+             .

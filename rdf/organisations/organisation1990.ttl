@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01rx63s97> 
+    a org:Organization ;
+    rdfs:label "Guarulhos University" ;
+    schema:name "Guarulhos University" ;
+    schema:foundingDate "1970"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-46.53333 -23.46278)"^^geo:wktLiteral ;
+        schema:addressLocality "Guarulhos" ;
+    ] ;
+    schema:url <http://www.ung.br/> ;
+    schema:sameAs <http://isni.org/isni/000000009186527X> ;
+             .

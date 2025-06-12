@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0411vej12> 
+    a org:Organization ;
+    rdfs:label "Hill Group (United States)" ;
+    schema:name "Hill Group (United States)" ;
+    schema:foundingDate "1936"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-87.86562 41.93531)"^^geo:wktLiteral ;
+        schema:addressLocality "Franklin Park" ;
+    ] ;
+    schema:url <https://www.hillgrp.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30256995> ;
+             .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/028jh2126> 
+    a org:Organization ;
+    rdfs:label "Al al-Bayt University" ;
+    schema:name "Al al-Bayt University" ;
+    schema:foundingDate "1993"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Al_al-Bayt_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(36.20804 32.34289)"^^geo:wktLiteral ;
+        schema:addressLocality "Al Mafraq" ;
+    ] ;
+    schema:url <http://www.aabu.edu.jo/> ;
+    schema:sameAs <http://isni.org/isni/0000000106792502> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4705048> ;
+             .

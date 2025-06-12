@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03n0gvg35> 
+    a org:Organization ;
+    rdfs:label "Batchelor Institute of Indigenous Tertiary Education" ;
+    schema:name "Batchelor Institute of Indigenous Tertiary Education" ;
+    schema:foundingDate "1960"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Batchelor_Institute_of_Indigenous_Tertiary_Education> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(130.84185 -12.46113)"^^geo:wktLiteral ;
+        schema:addressLocality "Darwin" ;
+    ] ;
+    schema:url <https://www.batchelor.edu.au/> ;
+    schema:sameAs <http://isni.org/isni/0000000404730449> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4868727> ;
+             .

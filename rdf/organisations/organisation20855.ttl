@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01tdcdz60> 
+    a org:Organization ;
+    rdfs:label "Procter & Gamble (Italy)" ;
+    schema:name "Procter & Gamble (Italy)" ;
+    schema:foundingDate "1837"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Procter_%26_Gamble> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04dkns738> ;
+        rdfs:label "Procter & Gamble (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(12.50124 41.66931)"^^geo:wktLiteral ;
+        schema:addressLocality "Pomezia" ;
+    ] ;
+    schema:url <https://it.pg.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30291276> ;
+             .

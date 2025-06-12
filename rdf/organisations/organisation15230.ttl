@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/026a5wm88> 
+    a org:Organization ;
+    rdfs:label "Public Schools of Robeson County" ;
+    schema:name "Public Schools of Robeson County" ;
+    schema:foundingDate "1989"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-79.01045 34.61834)"^^geo:wktLiteral ;
+        schema:addressLocality "Lumberton" ;
+    ] ;
+    schema:url <https://www.robeson.k12.nc.us/> ;
+    schema:sameAs <http://isni.org/isni/0000000404258711> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30288724> ;
+             .

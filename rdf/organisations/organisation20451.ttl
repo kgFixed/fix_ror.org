@@ -1,0 +1,35 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0415cr103> 
+    a org:Organization ;
+    rdfs:label "Novo Nordisk (United Kingdom)" ;
+    schema:name "Novo Nordisk (United Kingdom)" ;
+    schema:foundingDate "1923"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Novo_Nordisk> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0435rc536> ;
+        rdfs:label "Novo Nordisk (Denmark)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/027754r66> ;
+        rdfs:label "Novo Nordisk UK Research Foundation" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.18312 51.11303)"^^geo:wktLiteral ;
+        schema:addressLocality "Crawley" ;
+    ] ;
+    schema:url <https://www.novonordisk.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30290935> ;
+             .

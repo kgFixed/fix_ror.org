@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03ayf0c60> 
+    a org:Organization ;
+    rdfs:label "Kagawa Nutrition University" ;
+    schema:name "Kagawa Nutrition University" ;
+    schema:foundingDate "1948"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Kagawa_Nutrition_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(139.65657 35.90807)"^^geo:wktLiteral ;
+        schema:addressLocality "Saitama" ;
+    ] ;
+    schema:url <http://www.eiyo.ac.jp/english/e_index.html> ;
+    schema:sameAs <http://isni.org/isni/0000000403702825> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6346396> ;
+             .

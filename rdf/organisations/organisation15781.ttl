@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03j22xd51> 
+    a org:Organization ;
+    rdfs:label "The SoundWell (United States)" ;
+    schema:name "The SoundWell (United States)" ;
+    schema:foundingDate "2013"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-80.13865 26.82339)"^^geo:wktLiteral ;
+        schema:addressLocality "Palm Beach Gardens" ;
+    ] ;
+    schema:url <https://www.vibro-therapy.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30289261> ;
+             .

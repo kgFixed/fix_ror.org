@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03kr0f697> 
+    a org:Organization ;
+    rdfs:label "Adventist Health Glendale" ;
+    schema:name "Adventist Health Glendale" ;
+    schema:foundingDate "1905"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Adventist_Health_Glendale> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/019thgp94> ;
+        rdfs:label "Adventist Health Community Care-Hanford" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04bj28v14> ;
+        rdfs:label "Loma Linda University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-118.25508 34.14251)"^^geo:wktLiteral ;
+        schema:addressLocality "Glendale" ;
+    ] ;
+    schema:url <https://www.adventisthealth.org/glendale/> ;
+    schema:sameAs <http://isni.org/isni/0000000106848617> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5568345> ;
+             .

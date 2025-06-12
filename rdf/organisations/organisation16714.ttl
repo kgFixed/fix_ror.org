@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03wdfz437> 
+    a org:Organization ;
+    rdfs:label "Valencia Port" ;
+    schema:name "Valencia Port" ;
+    schema:foundingDate "1483"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Port_of_Valencia> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.37966 39.47391)"^^geo:wktLiteral ;
+        schema:addressLocality "Valencia" ;
+    ] ;
+    schema:url <http://www.valenciaport.com/> ;
+     .

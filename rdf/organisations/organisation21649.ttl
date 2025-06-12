@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04g2nab09> 
+    a org:Organization ;
+    rdfs:label "Snam (Italy)" ;
+    schema:name "Snam (Italy)" ;
+    schema:foundingDate "1941"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Snam> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(9.26838 45.41047)"^^geo:wktLiteral ;
+        schema:addressLocality "San Donato Milanese" ;
+    ] ;
+    schema:url <https://www.snam.it/en/> ;
+    schema:sameAs <http://isni.org/isni/0000000405364815> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q583247> ;
+             .

@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00vpw9h05> 
+    a org:Organization ;
+    rdfs:label "Honolulu Community College" ;
+    schema:name "Honolulu Community College" ;
+    schema:foundingDate "1920"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Honolulu_Community_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03tzaeb71> ;
+        rdfs:label "University of Hawaii System" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-157.85833 21.30694)"^^geo:wktLiteral ;
+        schema:addressLocality "Honolulu" ;
+    ] ;
+    schema:url <http://www.honolulu.hawaii.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000095420593> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5896667> ;
+             .

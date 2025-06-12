@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/025jta476> 
+    a org:Organization ;
+    rdfs:label "Experimental Aircraft Association" ;
+    schema:name "Experimental Aircraft Association" ;
+    schema:foundingDate "1953"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Experimental_Aircraft_Association> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-88.54261 44.02471)"^^geo:wktLiteral ;
+        schema:addressLocality "Oshkosh" ;
+    ] ;
+    schema:url <https://www.eaa.org/eaa> ;
+    schema:sameAs <http://isni.org/isni/0000000122985013> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1384383> ;
+             .

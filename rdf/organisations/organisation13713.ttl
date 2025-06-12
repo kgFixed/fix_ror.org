@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01hfgte37> 
+    a org:Organization ;
+    rdfs:label "Eastern Cooperative Oncology Group" ;
+    schema:name "Eastern Cooperative Oncology Group" ;
+    schema:foundingDate "1955"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Eastern_Cooperative_Oncology_Group> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-75.16362 39.95238)"^^geo:wktLiteral ;
+        schema:addressLocality "Philadelphia" ;
+    ] ;
+    schema:url <http://www.ecog.org/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q5330089> ;
+             .

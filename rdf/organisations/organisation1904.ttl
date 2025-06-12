@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01jaaym28> 
+    a org:Organization ;
+    rdfs:label "Shimane University" ;
+    schema:name "Shimane University" ;
+    schema:foundingDate "1949"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Shimane_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03nvpm562> ;
+        rdfs:label "Shimane University Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(133.05 35.48333)"^^geo:wktLiteral ;
+        schema:addressLocality "Matsue" ;
+    ] ;
+    schema:url <https://www.shimane-u.ac.jp/en/> ;
+    schema:sameAs <http://isni.org/isni/0000000086611590> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1072918> ;
+             .

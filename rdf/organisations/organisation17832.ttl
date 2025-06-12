@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01tjxaw07> 
+    a org:Organization ;
+    rdfs:label "Colorex Master Batch (Netherlands)" ;
+    schema:name "Colorex Master Batch (Netherlands)" ;
+    schema:foundingDate "1974"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(5.66111 51.48167)"^^geo:wktLiteral ;
+        schema:addressLocality "Helmond" ;
+    ] ;
+    schema:url <https://www.colorex.nl/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30255967> ;
+             .

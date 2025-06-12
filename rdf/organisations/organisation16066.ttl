@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02h3mfv55> 
+    a org:Organization ;
+    rdfs:label "Lincoln Christian University" ;
+    schema:name "Lincoln Christian University" ;
+    schema:foundingDate "1944"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Lincoln_Christian_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-89.36482 40.14838)"^^geo:wktLiteral ;
+        schema:addressLocality "Lincoln" ;
+    ] ;
+    schema:url <https://www.lincolnchristian.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000404204553> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6550534> ;
+             .

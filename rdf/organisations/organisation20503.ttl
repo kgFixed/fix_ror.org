@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0597mp424> 
+    a org:Organization ;
+    rdfs:label "Myasishchev Design Bureau (Russia)" ;
+    schema:name "Myasishchev Design Bureau (Russia)" ;
+    schema:foundingDate "1951"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Myasishchev> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(38.12028 55.59528)"^^geo:wktLiteral ;
+        schema:addressLocality "Zhukovsky" ;
+    ] ;
+    schema:url <http://www.emz-m.ru/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30290969> ;
+             .

@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00ypwp112> 
+    a org:Organization ;
+    rdfs:label "Centro di Cultura Scientifica Alessandro Volta" ;
+    schema:name "Centro di Cultura Scientifica Alessandro Volta" ;
+    schema:foundingDate "1983"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(9.0832 45.80819)"^^geo:wktLiteral ;
+        schema:addressLocality "Como" ;
+    ] ;
+    schema:url <http://www.centrovolta.it/volta/> ;
+    schema:sameAs <http://isni.org/isni/0000000417572347> ;
+             .

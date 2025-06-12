@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/024xf4148> 
+    a org:Organization ;
+    rdfs:label "Illinois Mathematics and Science Academy" ;
+    schema:name "Illinois Mathematics and Science Academy" ;
+    schema:foundingDate "1985"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Illinois_Mathematics_and_Science_Academy> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-88.32007 41.76058)"^^geo:wktLiteral ;
+        schema:addressLocality "Aurora" ;
+    ] ;
+    schema:url <https://www.imsa.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000405250658> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5999555> ;
+             .

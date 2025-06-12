@@ -1,0 +1,34 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02s7et124> 
+    a org:Organization ;
+    rdfs:label "Azienda Ospedaliera Universitaria Senese" ;
+    schema:name "Azienda Ospedaliera Universitaria Senese" ;
+    schema:foundingDate "1975"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00z0xmg52> ;
+        rdfs:label "Ospedale Santa Maria alle Scotte" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01tevnk56> ;
+        rdfs:label "University of Siena" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(11.33064 43.31822)"^^geo:wktLiteral ;
+        schema:addressLocality "Siena" ;
+    ] ;
+    schema:url <http://www.ao-siena.toscana.it/> ;
+    schema:sameAs <http://isni.org/isni/0000000417590844> ;
+             .

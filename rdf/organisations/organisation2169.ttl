@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02rg6ka44> 
+    a org:Organization ;
+    rdfs:label "Southwest Bahia State University" ;
+    schema:name "Southwest Bahia State University" ;
+    schema:foundingDate "1980"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Southwest_Bahia_State_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-40.83944 -14.86611)"^^geo:wktLiteral ;
+        schema:addressLocality "Vitória da Conquista" ;
+    ] ;
+    schema:url <http://www.uesb.br/> ;
+    schema:sameAs <http://isni.org/isni/0000000121929570> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7603636> ;
+             .

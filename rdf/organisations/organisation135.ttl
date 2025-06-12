@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04kgqpx54> 
+    a org:Organization ;
+    rdfs:label "Voestalpine (Austria)" ;
+    schema:name "Voestalpine (Austria)" ;
+    schema:foundingDate "1938"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Voestalpine> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00tgp6q68> ;
+        rdfs:label "Voestalpine (Brazil)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02jwef888> ;
+        rdfs:label "Voestalpine (Germany)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/044267y73> ;
+        rdfs:label "Voestalpine (Sweden)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(14.28611 48.30639)"^^geo:wktLiteral ;
+        schema:addressLocality "Linz" ;
+    ] ;
+    schema:url <http://www.voestalpine.com/group/en/> ;
+    schema:sameAs <http://isni.org/isni/0000000404487207> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q689750> ;
+             .

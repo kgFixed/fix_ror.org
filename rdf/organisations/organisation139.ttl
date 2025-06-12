@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/022d5qt08> 
+    a org:Organization ;
+    rdfs:label "Julius Kühn-Institut" ;
+    schema:name "Julius Kühn-Institut" ;
+    schema:foundingDate "2008"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Julius_K%C3%BChn-Institut> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04jw21793> ;
+        rdfs:label "Federal Ministry of Food and Agriculture" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(11.15006 51.78843)"^^geo:wktLiteral ;
+        schema:addressLocality "Quedlinburg" ;
+    ] ;
+    schema:url <https://www.julius-kuehn.de/> ;
+    schema:sameAs <http://isni.org/isni/0000000110893517> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q832099> ;
+             .

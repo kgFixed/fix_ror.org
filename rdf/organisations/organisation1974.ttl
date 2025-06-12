@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04ss1bw11> 
+    a org:Organization ;
+    rdfs:label "Tzu Chi University" ;
+    schema:name "Tzu Chi University" ;
+    schema:foundingDate "1994"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Tzu_Chi_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/037r57b62> ;
+        rdfs:label "Buddhist Tzu Chi General Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(121.60444 23.97694)"^^geo:wktLiteral ;
+        schema:addressLocality "Hualien City" ;
+    ] ;
+    schema:url <http://eng.tcu.edu.tw/> ;
+    schema:sameAs <http://isni.org/isni/0000000406227222> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q709296> ;
+             .

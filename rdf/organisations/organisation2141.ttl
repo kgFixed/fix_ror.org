@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02a7yfb86> 
+    a org:Organization ;
+    rdfs:label "Pontifícia Universidade Católica de Goiás" ;
+    schema:name "Pontifícia Universidade Católica de Goiás" ;
+    schema:foundingDate "1959"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Pontif%C3%ADcia_Universidade_Cat%C3%B3lica_de_Goi%C3%A1s> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-49.25389 -16.67861)"^^geo:wktLiteral ;
+        schema:addressLocality "Goiânia" ;
+    ] ;
+    schema:url <http://www.ucg.br/> ;
+    schema:sameAs <http://isni.org/isni/0000000123551516> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3551820> ;
+             .

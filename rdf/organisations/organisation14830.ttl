@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05jpe9382> 
+    a org:Organization ;
+    rdfs:label "Pleasant Hill Community Center" ;
+    schema:name "Pleasant Hill Community Center" ;
+    schema:foundingDate "2005"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-84.36159 34.02316)"^^geo:wktLiteral ;
+        schema:addressLocality "Roswell" ;
+    ] ;
+    schema:url <http://www.connect.thephcc.org/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30288323> ;
+             .

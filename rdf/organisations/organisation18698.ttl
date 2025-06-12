@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05p0z2z51> 
+    a org:Organization ;
+    rdfs:label "Goddard College" ;
+    schema:name "Goddard College" ;
+    schema:foundingDate "1863"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Goddard_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-72.57539 44.26006)"^^geo:wktLiteral ;
+        schema:addressLocality "Montpelier" ;
+    ] ;
+    schema:url <https://www.goddard.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000096130766> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5576249> ;
+             .

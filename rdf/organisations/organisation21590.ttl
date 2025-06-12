@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03v1e0p66> 
+    a org:Organization ;
+    rdfs:label "Smiths Detection (France)" ;
+    schema:name "Smiths Detection (France)" ;
+    schema:foundingDate "1950"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/014wzed86> ;
+        rdfs:label "Smiths Group (United Kingdom)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.40332 48.78716)"^^geo:wktLiteral ;
+        schema:addressLocality "Vitry-sur-Seine" ;
+    ] ;
+    schema:url <https://www.smithsdetection.com> ;
+     .

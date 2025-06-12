@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/000kvm359> 
+    a org:Organization ;
+    rdfs:label "Parco Nazionale d'Abruzzo" ;
+    schema:name "Parco Nazionale d'Abruzzo" ;
+    schema:foundingDate "1922"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Parco_Nazionale_d%27Abruzzo,_Lazio_e_Molise> ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(14.49252 41.63147)"^^geo:wktLiteral ;
+        schema:addressLocality "Molise" ;
+    ] ;
+    schema:url <http://www.parcoabruzzo.it/Eindex.php> ;
+    schema:sameAs <http://isni.org/isni/0000000405101521> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1438999> ;
+             .

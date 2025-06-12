@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02e1f2f58> 
+    a org:Organization ;
+    rdfs:label "Wyoming Services for Independent Living" ;
+    schema:name "Wyoming Services for Independent Living" ;
+    schema:foundingDate "1994"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-108.73067 42.83301)"^^geo:wktLiteral ;
+        schema:addressLocality "Lander" ;
+    ] ;
+    schema:url <https://www.wysil.org/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30289247> ;
+             .

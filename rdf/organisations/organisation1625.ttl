@@ -1,0 +1,34 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05tqtd486> 
+    a org:Organization ;
+    rdfs:label "Canterbury District Health Board" ;
+    schema:name "Canterbury District Health Board" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/017c9f638> ;
+        rdfs:label "Burwood Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/003nvpm64> ;
+        rdfs:label "Christchurch Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(171.73011 -43.89834)"^^geo:wktLiteral ;
+        schema:addressLocality "Ashburton" ;
+    ] ;
+    schema:url <http://www.cdhb.health.nz/Pages/default.aspx> ;
+    schema:sameAs <http://isni.org/isni/0000000100400934> ;
+             .

@@ -1,0 +1,20 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/001nr2c08> 
+    a org:Organization ;
+    rdfs:label "Eyes of the World Media Group" ;
+    schema:name "Eyes of the World Media Group" ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-118.39647 34.02112)"^^geo:wktLiteral ;
+        schema:addressLocality "Culver City" ;
+    ] ;
+    schema:url <http://www.eyesoftheworldmediagroup.com/> ;
+     .

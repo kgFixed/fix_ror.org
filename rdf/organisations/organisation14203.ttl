@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05av82888> 
+    a org:Organization ;
+    rdfs:label "New Mexico Cancer Center Foundation" ;
+    schema:name "New Mexico Cancer Center Foundation" ;
+    schema:foundingDate "2002"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03emyr182> ;
+        rdfs:label "New Mexico Cancer Center" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-106.65114 35.08449)"^^geo:wktLiteral ;
+        schema:addressLocality "Albuquerque" ;
+    ] ;
+    schema:url <https://nmcancercenter.org/foundation/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30287700> ;
+             .

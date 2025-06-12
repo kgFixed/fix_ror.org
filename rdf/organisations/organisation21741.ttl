@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04ha7mv34> 
+    a org:Organization ;
+    rdfs:label "Surface Transforms (United Kingdom)" ;
+    schema:name "Surface Transforms (United Kingdom)" ;
+    schema:foundingDate "1992"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-2.90134 53.27875)"^^geo:wktLiteral ;
+        schema:addressLocality "Ellesmere Port" ;
+    ] ;
+    schema:url <https://surfacetransforms.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000446852081> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30292053> ;
+             .

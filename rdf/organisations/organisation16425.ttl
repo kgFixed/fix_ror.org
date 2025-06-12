@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01h5cth39> 
+    a org:Organization ;
+    rdfs:label "Protestant Reformed Churches in America" ;
+    schema:name "Protestant Reformed Churches in America" ;
+    schema:foundingDate "1924"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Protestant_Reformed_Churches_in_America> ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-85.76309 42.90975)"^^geo:wktLiteral ;
+        schema:addressLocality "Grandville" ;
+    ] ;
+    schema:url <http://www.prca.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000404000366> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1985256> ;
+             .

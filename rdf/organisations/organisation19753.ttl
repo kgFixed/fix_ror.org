@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00n7jbm43> 
+    a org:Organization ;
+    rdfs:label "Kopitarna Sevnica (Slovenia)" ;
+    schema:name "Kopitarna Sevnica (Slovenia)" ;
+    schema:foundingDate "1886"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(15.31556 46.00778)"^^geo:wktLiteral ;
+        schema:addressLocality "Sevnica" ;
+    ] ;
+    schema:url <https://www.kopitarna.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30290329> ;
+             .

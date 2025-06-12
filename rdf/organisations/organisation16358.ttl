@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01hqrfw90> 
+    a org:Organization ;
+    rdfs:label "Waukesha County Technical College" ;
+    schema:name "Waukesha County Technical College" ;
+    schema:foundingDate "1923"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Waukesha_County_Technical_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-88.2612 43.08057)"^^geo:wktLiteral ;
+        schema:addressLocality "Pewaukee" ;
+    ] ;
+    schema:url <https://www.wctc.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000405887309> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7975162> ;
+             .

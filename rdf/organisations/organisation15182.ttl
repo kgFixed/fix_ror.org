@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05g4knm43> 
+    a org:Organization ;
+    rdfs:label "Phoenix Indian Medical Center" ;
+    schema:name "Phoenix Indian Medical Center" ;
+    schema:foundingDate "1970"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01fykh430> ;
+        rdfs:label "Indian Health Service" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-112.07404 33.44838)"^^geo:wktLiteral ;
+        schema:addressLocality "Phoenix" ;
+    ] ;
+    schema:url <https://www.ihs.gov/pimc> ;
+    schema:sameAs <http://isni.org/isni/0000000106281796> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30288678> ;
+             .

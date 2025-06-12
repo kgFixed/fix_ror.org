@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03gq1kz58> 
+    a org:Organization ;
+    rdfs:label "Research & Diagnostic Antibodies (United States)" ;
+    schema:name "Research & Diagnostic Antibodies (United States)" ;
+    schema:foundingDate "1984"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-115.1175 36.19886)"^^geo:wktLiteral ;
+        schema:addressLocality "North Las Vegas" ;
+    ] ;
+    schema:url <https://www.rdabs.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30291583> ;
+             .

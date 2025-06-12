@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05tn2bq24> 
+    a org:Organization ;
+    rdfs:label "Lewisham and Greenwich NHS Trust" ;
+    schema:name "Lewisham and Greenwich NHS Trust" ;
+    schema:foundingDate "2013"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Lewisham_and_Greenwich_NHS_Trust> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00p6q5476> ;
+        rdfs:label "Queen Elizabeth Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04vgz8j88> ;
+        rdfs:label "University Hospital Lewisham" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.12574 51.50853)"^^geo:wktLiteral ;
+        schema:addressLocality "London" ;
+    ] ;
+    schema:url <https://www.lewishamandgreenwich.nhs.uk/> ;
+    schema:sameAs <http://isni.org/isni/0000000404268725> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q16996252> ;
+             .

@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/034jtsg79> 
+    a org:Organization ;
+    rdfs:label "Evidentia Publishing (Netherlands)" ;
+    schema:name "Evidentia Publishing (Netherlands)" ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(5.24167 52.29917)"^^geo:wktLiteral ;
+        schema:addressLocality "Huizen" ;
+    ] ;
+    schema:url <https://www.evidentiapublishing.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30289458> ;
+             .

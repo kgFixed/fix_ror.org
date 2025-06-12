@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04pf12f40> 
+    a org:Organization ;
+    rdfs:label "Louisiana State University at Eunice" ;
+    schema:name "Louisiana State University at Eunice" ;
+    schema:foundingDate "1964"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Louisiana_State_University_at_Eunice> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/022gnbj15> ;
+        rdfs:label "Louisiana State University System" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-92.41763 30.49437)"^^geo:wktLiteral ;
+        schema:addressLocality "Eunice" ;
+    ] ;
+    schema:url <http://lsue.edu/site.php> ;
+    schema:sameAs <http://isni.org/isni/0000000096095550> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6689310> ;
+             .

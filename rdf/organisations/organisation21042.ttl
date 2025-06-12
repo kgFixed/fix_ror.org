@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01bzgy570> 
+    a org:Organization ;
+    rdfs:label "Roberts Wesleyan College" ;
+    schema:name "Roberts Wesleyan College" ;
+    schema:foundingDate "1866"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Roberts_Wesleyan_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.61556 43.15478)"^^geo:wktLiteral ;
+        schema:addressLocality "Rochester" ;
+    ] ;
+    schema:url <https://www.roberts.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000121084387> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7352053> ;
+             .

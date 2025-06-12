@@ -1,0 +1,59 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03dsc8d33> 
+    a org:Organization ;
+    rdfs:label "Systems, Applications & Products in Data Processing (Germany)" ;
+    schema:name "Systems, Applications & Products in Data Processing (Germany)" ;
+    schema:foundingDate "1972"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/SAP_SE> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04c2m5174> ;
+        rdfs:label "Systems, Applications & Products in Data Processing (Australia)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/025jhd967> ;
+        rdfs:label "Systems, Applications & Products in Data Processing (Canada)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/036z4j470> ;
+        rdfs:label "Systems, Applications & Products in Data Processing (Switzerland)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04k7gd586> ;
+        rdfs:label "Systems, Applications & Products in Data Processing (United Kingdom)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01gbhv690> ;
+        rdfs:label "Systems, Applications & Products in Data Processing (United States)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02xsf1j07> ;
+        rdfs:label "Systems, Applications, and Products in Data Processing (Russia)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(8.64236 49.30637)"^^geo:wktLiteral ;
+        schema:addressLocality "Walldorf" ;
+    ] ;
+    schema:url <http://go.sap.com/index.html> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q552581> ;
+             .

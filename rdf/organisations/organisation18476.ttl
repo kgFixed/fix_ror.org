@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02nf85c88> 
+    a org:Organization ;
+    rdfs:label "Estaleiros Navais de Peniche (Portugal)" ;
+    schema:name "Estaleiros Navais de Peniche (Portugal)" ;
+    schema:foundingDate "1993"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-9.38112 39.3558)"^^geo:wktLiteral ;
+        schema:addressLocality "Peniche" ;
+    ] ;
+    schema:url <http://www.enp.pt/> ;
+     .

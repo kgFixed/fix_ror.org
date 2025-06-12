@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04qvdf239> 
+    a org:Organization ;
+    rdfs:label "Bozok Universitesi" ;
+    schema:name "Bozok Universitesi" ;
+    schema:foundingDate "2006"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Yozgat_Bozok_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(34.80444 39.82)"^^geo:wktLiteral ;
+        schema:addressLocality "Yozgat" ;
+    ] ;
+    schema:url <http://eng.bozok.edu.tr/eng.asp> ;
+    schema:sameAs <http://isni.org/isni/0000000403698360> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6085866> ;
+             .

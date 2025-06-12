@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01rxfrp27> 
+    a org:Organization ;
+    rdfs:label "La Trobe University" ;
+    schema:name "La Trobe University" ;
+    schema:foundingDate "1964"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/La_Trobe_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/010mv7n52> ;
+        rdfs:label "Austin Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0484pjq71> ;
+        rdfs:label "Box Hill Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03grnna41> ;
+        rdfs:label "Royal Women's Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(144.96332 -37.814)"^^geo:wktLiteral ;
+        schema:addressLocality "Melbourne" ;
+    ] ;
+    schema:url <http://www.latrobe.edu.au/> ;
+    schema:sameAs <http://isni.org/isni/0000000123420938> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1478723> ;
+             .

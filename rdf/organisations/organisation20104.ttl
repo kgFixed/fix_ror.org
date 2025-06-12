@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00ck9ex56> 
+    a org:Organization ;
+    rdfs:label "Malta Enterprise" ;
+    schema:name "Malta Enterprise" ;
+    schema:foundingDate "2003"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Malta_Enterprise> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(14.495 35.89472)"^^geo:wktLiteral ;
+        schema:addressLocality "Pietà" ;
+    ] ;
+    schema:url <http://www.maltaenterprise.com/en> ;
+     .

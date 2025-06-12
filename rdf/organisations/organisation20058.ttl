@@ -1,0 +1,39 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00r9rdf15> 
+    a org:Organization ;
+    rdfs:label "Ministry of Transport and Communications" ;
+    schema:name "Ministry of Transport and Communications" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Ministry_of_Transport_and_Communications_(Finland)> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05hppb561> ;
+        rdfs:label "Finnish Meteorological Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00hef7f20> ;
+        rdfs:label "Finnish Transport Agency" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/027ymyq71> ;
+        rdfs:label "Finnish Transport Safety Agency" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(24.93545 60.16952)"^^geo:wktLiteral ;
+        schema:addressLocality "Helsinki" ;
+    ] ;
+    schema:url <https://www.lvm.fi/en/home> ;
+     .

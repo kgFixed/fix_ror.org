@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/042zjqf83> 
+    a org:Organization ;
+    rdfs:label "Hohenstein Institute" ;
+    schema:name "Hohenstein Institute" ;
+    schema:foundingDate "1946"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Hohenstein_Institute> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(9.09386 49.04018)"^^geo:wktLiteral ;
+        schema:addressLocality "Bönnigheim" ;
+    ] ;
+    schema:url <http://www.hohenstein.de/en/home/home.xhtml> ;
+    schema:sameAs <http://isni.org/isni/0000000111617792> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1623815> ;
+             .
