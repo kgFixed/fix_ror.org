@@ -1,0 +1,145 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00wqdbc63> 
+    a org:Organization ;
+    rdfs:label "Government of Western Australia" ;
+    schema:name "Government of Western Australia" ;
+    schema:foundingDate "1890"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Government_of_Western_Australia> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00thhss72> ;
+        rdfs:label "Botanic Gardens and Parks Authority" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00420et70> ;
+        rdfs:label "Department for Child Protection and Family Support" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02jq36h12> ;
+        rdfs:label "Department of Agriculture and Food Western Australia" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04abk6t05> ;
+        rdfs:label "Department of Biodiversity, Conservation and Attractions" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03dmtvy82> ;
+        rdfs:label "Department of Commerce" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02yf3ey12> ;
+        rdfs:label "Department of Culture and the Arts" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0508kew31> ;
+        rdfs:label "Department of Water and Environmental Regulation" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02nfbzg04> ;
+        rdfs:label "Department of Local Government and Communities" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01awp2978> ;
+        rdfs:label "Department of Primary Industries and Regional Development" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00ew5at92> ;
+        rdfs:label "Department of the Premier and Cabinet" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01epcny94> ;
+        rdfs:label "Government of Western Australia Department of Health" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01b98w967> ;
+        rdfs:label "Main Roads Western Australia" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/043vdcr39> ;
+        rdfs:label "Mental Health Commission" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00es6pb19> ;
+        rdfs:label "Office of Multicultural Interests" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02ma46909> ;
+        rdfs:label "WA Country Health Service" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0321v8618> ;
+        rdfs:label "Western Australia Police" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/032ckra69> ;
+        rdfs:label "Minerals Research Institute of Western Australia" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/030p9nw74> ;
+        rdfs:label "Department of Local Government, Sport and Cultural Industries" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04mr78v45> ;
+        rdfs:label "Department of Mines, Industry Regulation and Safety" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00cv9q002> ;
+        rdfs:label "Department of Jobs, Tourism, Science and Innovation" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(115.8614 -31.95224)"^^geo:wktLiteral ;
+        schema:addressLocality "Perth" ;
+    ] ;
+    schema:url <https://www.wa.gov.au/> ;
+    schema:sameAs <http://isni.org/isni/0000000404453226> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5589347> ;
+             .

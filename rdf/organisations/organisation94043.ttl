@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05wmchm75> 
+    a org:Organization ;
+    rdfs:label "TYKS-säätiö" ;
+    schema:name "TYKS-säätiö" ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05dbzj528> ;
+        rdfs:label "Turku University Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(22.26869 60.45148)"^^geo:wktLiteral ;
+        schema:addressLocality "Turku" ;
+    ] ;
+    schema:url <https://tykssaatio.fi> ;
+    schema:sameAs <http://isni.org/isni/0000000463455942> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q45132788> ;
+             .

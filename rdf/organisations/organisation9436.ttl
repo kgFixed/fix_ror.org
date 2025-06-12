@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03etema57> 
+    a org:Organization ;
+    rdfs:label "Association for Institutional Research" ;
+    schema:name "Association for Institutional Research" ;
+    schema:foundingDate "1966"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-84.28073 30.43826)"^^geo:wktLiteral ;
+        schema:addressLocality "Tallahassee" ;
+    ] ;
+    schema:url <http://www.airweb.org/pages/default.aspx> ;
+    schema:sameAs <http://isni.org/isni/0000000121073485> ;
+             .

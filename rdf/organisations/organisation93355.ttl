@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04e0v3f13> 
+    a org:Organization ;
+    rdfs:label "SOLARIS National Synchrotron Radiation Centre" ;
+    schema:name "SOLARIS National Synchrotron Radiation Centre" ;
+    schema:foundingDate "2015"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Solaris_%28synchrotron%29> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03bqmcz70> ;
+        rdfs:label "Jagiellonian University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(19.93658 50.06143)"^^geo:wktLiteral ;
+        schema:addressLocality "Krakow" ;
+    ] ;
+    schema:url <https://synchrotron.uj.edu.pl> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q16605140> ;
+             .

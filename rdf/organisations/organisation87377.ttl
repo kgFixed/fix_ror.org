@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05w54hk79> 
+    a org:Organization ;
+    rdfs:label "VNU University of Science" ;
+    schema:name "VNU University of Science" ;
+    schema:foundingDate "1906"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Hanoi_University_of_Science> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02jmfj006> ;
+        rdfs:label "Vietnam National University, Hanoi" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(105.84117 21.0245)"^^geo:wktLiteral ;
+        schema:addressLocality "Hanoi" ;
+    ] ;
+    schema:url <http://hus.vnu.edu.vn/en> ;
+    schema:sameAs <http://isni.org/isni/0000000405671508> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5649339> ;
+             .

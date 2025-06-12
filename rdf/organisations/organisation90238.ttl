@@ -1,0 +1,35 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03kj6ny93> 
+    a org:Organization ;
+    rdfs:label "National Optical Astronomy Observatory" ;
+    schema:name "National Optical Astronomy Observatory" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/National_Optical_Astronomy_Observatory> ;
+    org:status "withdrawn" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0135fch82> ;
+        rdfs:label "Kitt Peak National Observatory" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/03zmsge54> ;
+        rdfs:label "NOIRLab" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-110.92648 32.22174)"^^geo:wktLiteral ;
+        schema:addressLocality "Tucson" ;
+    ] ;
+    schema:url <http://www.noao.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000406373924> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1315390> ;
+             .

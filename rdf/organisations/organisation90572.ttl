@@ -1,0 +1,35 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00gpbdx15> 
+    a org:Organization ;
+    rdfs:label "Fujita Health University Okazaki Medical Center" ;
+    schema:name "Fujita Health University Okazaki Medical Center" ;
+    schema:foundingDate "2020"^^xsd:gYear ;
+    schema:sameAs <https://ja.wikipedia.org/wiki/%E8%97%A4%E7%94%B0%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6%E5%B2%A1%E5%B4%8E%E5%8C%BB%E7%99%82%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/046f6cx68> ;
+        rdfs:label "Fujita Health University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02r3zks97> ;
+        rdfs:label "Fujita Health University Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(137.16667 34.95)"^^geo:wktLiteral ;
+        schema:addressLocality "Okazaki" ;
+    ] ;
+    schema:url <https://okazaki.fujita-hu.ac.jp> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q95845215> ;
+             .

@@ -1,0 +1,26 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/056yav047> 
+    a org:Organization ;
+    rdfs:label "Spoločnosť Pro Historia" ;
+    schema:name "Spoločnosť Pro Historia" ;
+    org:status "withdrawn" ;
+    org:classification "Other" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/01yjtde78> ;
+        rdfs:label "Institute of History of the Slovak Academy of Sciences" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(17.10674 48.14816)"^^geo:wktLiteral ;
+        schema:addressLocality "Bratislava" ;
+    ] ;
+    schema:url <http://www.history.sav.sk/prohis.htm> ;
+     .

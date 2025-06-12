@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01vm69c87> 
+    a org:Organization ;
+    rdfs:label "Department of Environment, Forestry and Fisheries" ;
+    schema:name "Department of Environment, Forestry and Fisheries" ;
+    schema:foundingDate "1994"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Department_of_Environment,_Forestry_and_Fisheries> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01gwm7a05> ;
+        rdfs:label "Government of South Africa" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(28.18783 -25.74486)"^^geo:wktLiteral ;
+        schema:addressLocality "Pretoria" ;
+    ] ;
+    schema:url <https://www.environment.gov.za> ;
+    schema:sameAs <http://isni.org/isni/000000040635597X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4294556> ;
+             .

@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05ntpq911> 
+    a org:Organization ;
+    rdfs:label "Carlos III Hospital" ;
+    schema:name "Carlos III Hospital" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Hospital_Carlos_III> ;
+    org:status "inactive" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/01s1q0w69> ;
+        rdfs:label "Hospital Universitario La Paz" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-3.70256 40.4165)"^^geo:wktLiteral ;
+        schema:addressLocality "Madrid" ;
+    ] ;
+    schema:url <http://www.madrid.org/cs/Satellite?pagename=HospitalCarlosIII/Page/HCAR_home&c=Page&site=HospitalCarlosIII> ;
+    schema:sameAs <http://isni.org/isni/0000000090896111> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q18200522> ;
+             .

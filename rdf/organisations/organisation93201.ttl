@@ -1,0 +1,73 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05fqg8t87> 
+    a org:Organization ;
+    rdfs:label "Syngenta (Switzerland)" ;
+    schema:name "Syngenta (Switzerland)" ;
+    schema:foundingDate "2000"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Syngenta> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00tavxp27> ;
+        rdfs:label "Syngenta (Belgium)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/055sbzs47> ;
+        rdfs:label "Syngenta (Canada)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05q054h21> ;
+        rdfs:label "Syngenta (China)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00hzxcy85> ;
+        rdfs:label "Syngenta (Netherlands)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/000bdn450> ;
+        rdfs:label "Syngenta (United Kingdom)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00shfq002> ;
+        rdfs:label "Syngenta (United States)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0508qa918> ;
+        rdfs:label "Syngenta (Zimbabwe)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0310sdb05> ;
+        rdfs:label "Syngenta (France)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(7.57327 47.55839)"^^geo:wktLiteral ;
+        schema:addressLocality "Basel" ;
+    ] ;
+    schema:url <http://www4.syngenta.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000106690426> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q688613> ;
+             .

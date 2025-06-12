@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04cwzbt15> 
+    a org:Organization ;
+    rdfs:label "St Louis Community College" ;
+    schema:name "St Louis Community College" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/St._Louis_Community_College%E2%80%93Florissant_Valley> ;
+    org:status "withdrawn" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/04kc77756> ;
+        rdfs:label "St Louis Community College" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-90.30539 38.74422)"^^geo:wktLiteral ;
+        schema:addressLocality "Ferguson" ;
+    ] ;
+    schema:url <http://www.stlcc.edu/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q7589600> ;
+             .

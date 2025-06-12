@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00q0edr73> 
+    a org:Organization ;
+    rdfs:label "Schöpflin Stiftung" ;
+    schema:name "Schöpflin Stiftung" ;
+    schema:foundingDate "2001"^^xsd:gYear ;
+    schema:sameAs <https://de.wikipedia.org/wiki/Sch%C3%B6pflin_Stiftung> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(7.66457 47.61497)"^^geo:wktLiteral ;
+        schema:addressLocality "Loerrach" ;
+    ] ;
+    schema:url <https://www.schoepflin-stiftung.de> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q60983491> ;
+             .

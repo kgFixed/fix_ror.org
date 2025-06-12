@@ -1,0 +1,50 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04jndar25> 
+    a org:Organization ;
+    rdfs:label "NEC (Japan)" ;
+    schema:name "NEC (Japan)" ;
+    schema:foundingDate "1899"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/NEC> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04xrcx824> ;
+        rdfs:label "NEC (China)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05hxss661> ;
+        rdfs:label "NEC (Germany)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/005b2mc68> ;
+        rdfs:label "NEC (United Kingdom)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01v791m31> ;
+        rdfs:label "NEC (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(139.69171 35.6895)"^^geo:wktLiteral ;
+        schema:addressLocality "Tokyo" ;
+    ] ;
+    schema:url <http://www.nec.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000417565040> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q219203> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q39760418> ;
+             .

@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03w2z6524> 
+    a org:Organization ;
+    rdfs:label "Gansu Education Department" ;
+    schema:name "Gansu Education Department" ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01mv9t934> ;
+        rdfs:label "Ministry of Education of the People's Republic of China" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(103.83987 36.05701)"^^geo:wktLiteral ;
+        schema:addressLocality "Lanzhou" ;
+    ] ;
+    schema:sameAs <http://isni.org/isni/0000000417587135> ;
+             .

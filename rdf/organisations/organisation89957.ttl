@@ -1,0 +1,35 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03qhf8m78> 
+    a org:Organization ;
+    rdfs:label "United Technologies (United Kingdom)" ;
+    schema:name "United Technologies (United Kingdom)" ;
+    schema:foundingDate "1934"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/United_Technologies> ;
+    org:status "inactive" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02mfrg180> ;
+        rdfs:label "United Technologies (United States)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/019btt327> ;
+        rdfs:label "Raytheon Technologies (United Kingdom)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.10313 50.99769)"^^geo:wktLiteral ;
+        schema:addressLocality "Haywards Heath" ;
+    ] ;
+    schema:url <http://www.utc.com/Pages/Home.aspx> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q41566945> ;
+             .

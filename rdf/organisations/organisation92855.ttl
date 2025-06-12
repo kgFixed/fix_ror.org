@@ -1,0 +1,63 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01nysf027> 
+    a org:Organization ;
+    rdfs:label "Bonanza Creek Long Term Ecological Research" ;
+    schema:name "Bonanza Creek Long Term Ecological Research" ;
+    schema:foundingDate "1987"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/039kwqk96> ;
+        rdfs:label "Long Term Ecological Research Network" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01j7nq853> ;
+        rdfs:label "University of Alaska Fairbanks" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03zmjc935> ;
+        rdfs:label "US Forest Service" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0272j5188> ;
+        rdfs:label "Northern Arizona University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0330j0z60> ;
+        rdfs:label "Environmental Data Initiative" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03j7rgg33> ;
+        rdfs:label "Natural Resources Conservation Service" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/035a68863> ;
+        rdfs:label "United States Geological Survey" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-147.71639 64.83778)"^^geo:wktLiteral ;
+        schema:addressLocality "Fairbanks" ;
+    ] ;
+    schema:url <http://www.lter.uaf.edu> ;
+     .

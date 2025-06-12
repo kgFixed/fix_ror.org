@@ -1,0 +1,48 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/011dvr318> 
+    a org:Organization ;
+    rdfs:label "Spaulding Rehabilitation Hospital" ;
+    schema:name "Spaulding Rehabilitation Hospital" ;
+    schema:foundingDate "1971"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Spaulding_Rehabilitation_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04py2rh25> ;
+        rdfs:label "Mass General Brigham" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03vek6s52> ;
+        rdfs:label "Harvard University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04v00sg98> ;
+        rdfs:label "VA Boston Healthcare System" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/008cfmj78> ;
+        rdfs:label "Wyss Institute for Biologically Inspired Engineering" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-71.05977 42.35843)"^^geo:wktLiteral ;
+        schema:addressLocality "Boston" ;
+    ] ;
+    schema:url <http://www.spauldingrehab.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000404518771> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7574134> ;
+             .

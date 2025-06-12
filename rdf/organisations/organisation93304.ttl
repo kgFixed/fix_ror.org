@@ -1,0 +1,45 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03h56sg55> 
+    a org:Organization ;
+    rdfs:label "Dr. A.P.J. Abdul Kalam Technical University" ;
+    schema:name "Dr. A.P.J. Abdul Kalam Technical University" ;
+    schema:foundingDate "2000"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Uttar_Pradesh_Technical_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04dp7tp96> ;
+        rdfs:label "Motilal Nehru National Institute of Technology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03vews725> ;
+        rdfs:label "Rajkiya Engineering College Azamgarh" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01ccvgc22> ;
+        rdfs:label "Shri Ramswaroop Memorial College of Engineering and Management" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(80.92313 26.83928)"^^geo:wktLiteral ;
+        schema:addressLocality "Lucknow" ;
+    ] ;
+    schema:url <https://aktu.ac.in/> ;
+    schema:sameAs <http://isni.org/isni/0000000107339339> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7903351> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6358707> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7887621> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4901120> ;
+             .

@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03hv1ad10> 
+    a org:Organization ;
+    rdfs:label "Akita University" ;
+    schema:name "Akita University" ;
+    schema:foundingDate "1949"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Akita_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02szmmq82> ;
+        rdfs:label "Akita University Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(140.11667 39.71667)"^^geo:wktLiteral ;
+        schema:addressLocality "Akita" ;
+    ] ;
+    schema:url <http://www.akita-u.ac.jp/eng/> ;
+    schema:sameAs <http://isni.org/isni/0000000107258504> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1340164> ;
+             .

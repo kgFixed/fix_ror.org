@@ -1,0 +1,49 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03wjptj96> 
+    a org:Organization ;
+    rdfs:label "Bracco (Italy)" ;
+    schema:name "Bracco (Italy)" ;
+    schema:foundingDate "1927"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Bracco_(company)> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04x8czz63> ;
+        rdfs:label "Bracco (Germany)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00yxram96> ;
+        rdfs:label "Bracco (Netherlands)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01v9kvt79> ;
+        rdfs:label "Bracco (Switzerland)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0168em120> ;
+        rdfs:label "Bracco (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(9.18951 45.46427)"^^geo:wktLiteral ;
+        schema:addressLocality "Milan" ;
+    ] ;
+    schema:url <http://www.braccoimaging.com/it-en> ;
+    schema:sameAs <http://isni.org/isni/0000000417559978> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3355690> ;
+             .

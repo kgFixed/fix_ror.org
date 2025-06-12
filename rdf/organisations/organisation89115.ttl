@@ -1,0 +1,35 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/028rzxs74> 
+    a org:Organization ;
+    rdfs:label "Mylan (United Kingdom)" ;
+    schema:name "Mylan (United Kingdom)" ;
+    schema:foundingDate "1961"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Mylan> ;
+    org:status "inactive" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04nsw4151> ;
+        rdfs:label "Mylan (United States)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/01g1gvr46> ;
+        rdfs:label "Viatris" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.22419 51.76338)"^^geo:wktLiteral ;
+        schema:addressLocality "Hatfield" ;
+    ] ;
+    schema:url <http://www.mylan.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30714497> ;
+             .

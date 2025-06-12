@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03d0tpz61> 
+    a org:Organization ;
+    rdfs:label "Evangelical Church of Westphalia" ;
+    schema:name "Evangelical Church of Westphalia" ;
+    schema:foundingDate "1945"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Evangelical_Church_of_Westphalia> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0446hjy70> ;
+        rdfs:label "Hochschule für Kirchenmusik der Evangelischen Kirche von Westfalen" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(8.53333 52.03333)"^^geo:wktLiteral ;
+        schema:addressLocality "Bielefeld" ;
+    ] ;
+    schema:url <https://www.evangelisch-in-westfalen.de/> ;
+    schema:sameAs <http://isni.org/isni/0000000106610289> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1381014> ;
+             .

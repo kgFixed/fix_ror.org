@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05qx54k29> 
+    a org:Organization ;
+    rdfs:label "Colorado Water Conservation Board" ;
+    schema:name "Colorado Water Conservation Board" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Colorado_Water_Conservation_Board> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03b38v557> ;
+        rdfs:label "Colorado Department of Natural Resources" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-104.9847 39.73915)"^^geo:wktLiteral ;
+        schema:addressLocality "Denver" ;
+    ] ;
+    schema:url <https://cwcb.colorado.gov> ;
+    schema:sameAs <http://isni.org/isni/0000000107046157> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q18348389> ;
+             .

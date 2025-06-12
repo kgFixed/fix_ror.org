@@ -1,0 +1,64 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01xcepn55> 
+    a org:Organization ;
+    rdfs:label "ExxonMobil (United States)" ;
+    schema:name "ExxonMobil (United States)" ;
+    schema:foundingDate "1999"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/ExxonMobil> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01gpy1v41> ;
+        rdfs:label "ExxonMobil (Canada)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04jppe152> ;
+        rdfs:label "ExxonMobil (France)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/017qypp02> ;
+        rdfs:label "ExxonMobil (Germany)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01grxsm65> ;
+        rdfs:label "ExxonMobil (Norway)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00pfnk039> ;
+        rdfs:label "ExxonMobil (Qatar)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/023g45t05> ;
+        rdfs:label "ExxonMobil (United Kingdom)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-96.94889 32.81402)"^^geo:wktLiteral ;
+        schema:addressLocality "Irving" ;
+    ] ;
+    schema:url <http://corporate.exxonmobil.com/en/> ;
+    schema:sameAs <http://isni.org/isni/0000000411121641> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q156238> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q21175559> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q39938158> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q39946001> ;
+             .

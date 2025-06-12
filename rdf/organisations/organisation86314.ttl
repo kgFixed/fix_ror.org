@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03ezqnp95> 
+    a org:Organization ;
+    rdfs:label "Torbat Heydarieh University of Medical Sciences" ;
+    schema:name "Torbat Heydarieh University of Medical Sciences" ;
+    schema:foundingDate "2010"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Torbat_Heydarieh_University_of_Medical_Sciences> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(59.21949 35.27401)"^^geo:wktLiteral ;
+        schema:addressLocality "Torbat-e Ḩeydarīyeh" ;
+    ] ;
+    schema:url <http://www.thums.ac.ir> ;
+    schema:sameAs <http://isni.org/isni/0000000449019917> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q16874935> ;
+             .

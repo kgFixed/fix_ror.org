@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01t8fg661> 
+    a org:Organization ;
+    rdfs:label "ISIS Neutron and Muon Source" ;
+    schema:name "ISIS Neutron and Muon Source" ;
+    schema:foundingDate "1985"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/ISIS_Neutron_and_Muon_Source> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/057g20z61> ;
+        rdfs:label "Science and Technology Facilities Council" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.24214 51.60928)"^^geo:wktLiteral ;
+        schema:addressLocality "Didcot" ;
+    ] ;
+    schema:url <https://www.isis.stfc.ac.uk> ;
+    schema:sameAs <http://isni.org/isni/000000040379052X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q9289166> ;
+             .

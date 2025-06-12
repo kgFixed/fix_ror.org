@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05wtrdx73> 
+    a org:Organization ;
+    rdfs:label "Akademii Wychowania Fizycznego im. Jerzego Kukuczki w Katowicach" ;
+    schema:name "Akademii Wychowania Fizycznego im. Jerzego Kukuczki w Katowicach" ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(19.02754 50.25841)"^^geo:wktLiteral ;
+        schema:addressLocality "Katowice" ;
+    ] ;
+    schema:url <http://en.awf.katowice.pl/> ;
+     .

@@ -1,0 +1,70 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01hq89f96> 
+    a org:Organization ;
+    rdfs:label "Centre Hospitalier Universitaire de Bordeaux" ;
+    schema:name "Centre Hospitalier Universitaire de Bordeaux" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04vgc9p51> ;
+        rdfs:label "Centre de Recherche Cardio-Thoracique de Bordeaux" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00jsv7j98> ;
+        rdfs:label "Electrophysiology and Heart Modeling Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02bf3a828> ;
+        rdfs:label "Hôpital Cardiologique du Haut-Lévêque" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02x581406> ;
+        rdfs:label "Hôpital Pellegrin" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/021959v84> ;
+        rdfs:label "Hôpital Saint-André" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03d532p87> ;
+        rdfs:label "Hôpital Xavier Arnozan" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05367a632> ;
+        rdfs:label "Plateforme Technologique d'Innovation Biomédicale" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/000bbyx17> ;
+        rdfs:label "Centre d'Investigation Clinique Plurithématique de Bordeaux" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.5805 44.84044)"^^geo:wktLiteral ;
+        schema:addressLocality "Bordeaux" ;
+    ] ;
+    schema:url <http://www.chu-bordeaux.fr/> ;
+    schema:sameAs <http://isni.org/isni/0000000405937118> ;
+             .

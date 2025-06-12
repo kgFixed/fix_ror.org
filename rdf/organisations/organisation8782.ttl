@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00ycg6x55> 
+    a org:Organization ;
+    rdfs:label "National Association for Biomedical Research" ;
+    schema:name "National Association for Biomedical Research" ;
+    schema:foundingDate "1979"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/National_Association_for_Biomedical_Research> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.03637 38.89511)"^^geo:wktLiteral ;
+        schema:addressLocality "Washington" ;
+    ] ;
+    schema:url <http://www.nabr.org/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q6970558> ;
+             .

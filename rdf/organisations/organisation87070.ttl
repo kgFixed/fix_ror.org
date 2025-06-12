@@ -1,0 +1,90 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03zcpvf19> 
+    a org:Organization ;
+    rdfs:label "University Hospitals of the Ruhr-University of Bochum" ;
+    schema:name "University Hospitals of the Ruhr-University of Bochum" ;
+    schema:foundingDate "2008"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/University_Hospitals_of_the_Ruhr-University_of_Bochum> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04j9bvy88> ;
+        rdfs:label "BG University Hospital Bergmannsheil Bochum" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02wndzd81> ;
+        rdfs:label "Heart and Diabetes Center North Rhine-Westphalia" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03p371b74> ;
+        rdfs:label "Herford Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05d89kr76> ;
+        rdfs:label "Johannes Wesling Klinikum Minden" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05w1kdn42> ;
+        rdfs:label "LWL-Universitätsklinik Hamm" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04nkkrh90> ;
+        rdfs:label "LWL-Universitätsklinikum Bochum" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05vv9dr68> ;
+        rdfs:label "Medizinisches Zentrum für Seelische Gesundheit" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/046vare28> ;
+        rdfs:label "St. Josef-Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/004h6mc53> ;
+        rdfs:label "Universitätsklinik Marien Hospital Herne" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/024j3hn90> ;
+        rdfs:label "Universitätsklinikum Knappschaftskrankenhaus Bochum" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04tsk2644> ;
+        rdfs:label "Ruhr University Bochum" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(7.21648 51.48165)"^^geo:wktLiteral ;
+        schema:addressLocality "Bochum" ;
+    ] ;
+    schema:url <http://www.uk.rub.de/> ;
+    schema:sameAs <http://isni.org/isni/0000000449108020> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q49782> ;
+             .

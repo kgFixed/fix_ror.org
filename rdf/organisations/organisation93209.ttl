@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03kf4rc21> 
+    a org:Organization ;
+    rdfs:label "Ohio University Lancaster" ;
+    schema:name "Ohio University Lancaster" ;
+    schema:foundingDate "1804"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Ohio_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01jr3y717> ;
+        rdfs:label "Ohio University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-82.59933 39.71368)"^^geo:wktLiteral ;
+        schema:addressLocality "Lancaster" ;
+    ] ;
+    schema:url <https://www.ohio.edu/lancaster/> ;
+    schema:sameAs <http://isni.org/isni/0000000406337333> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30289395> ;
+             .

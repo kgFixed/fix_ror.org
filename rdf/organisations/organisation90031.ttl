@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/000cww991> 
+    a org:Organization ;
+    rdfs:label "Potentia Pharmaceuticals (United States)" ;
+    schema:name "Potentia Pharmaceuticals (United States)" ;
+    org:status "withdrawn" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/0231n7e68> ;
+        rdfs:label "Apellis Pharmaceuticals (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-85.47246 38.32424)"^^geo:wktLiteral ;
+        schema:addressLocality "Crestwood" ;
+    ] ;
+     .

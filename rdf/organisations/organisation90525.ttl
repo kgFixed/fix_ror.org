@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/052fjv050> 
+    a org:Organization ;
+    rdfs:label "Komi Republican Academy of State Service and Administration" ;
+    schema:name "Komi Republican Academy of State Service and Administration" ;
+    schema:foundingDate "1996"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(50.80819 61.68523)"^^geo:wktLiteral ;
+        schema:addressLocality "Syktyvkar" ;
+    ] ;
+    schema:url <http://www.krags.ru> ;
+     .

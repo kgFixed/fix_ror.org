@@ -1,0 +1,35 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05xxs2z38> 
+    a org:Organization ;
+    rdfs:label "Hospital Clínico Universitario Virgen de la Victoria" ;
+    schema:name "Hospital Clínico Universitario Virgen de la Victoria" ;
+    schema:foundingDate "1989"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03q4c3e69> ;
+        rdfs:label "Andalusian Health Service" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/036b2ww28> ;
+        rdfs:label "Universidad de Málaga" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-4.42034 36.72016)"^^geo:wktLiteral ;
+        schema:addressLocality "Málaga" ;
+    ] ;
+    schema:url <http://www.huvv.es/> ;
+    schema:sameAs <http://isni.org/isni/0000000097882492> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5902584> ;
+             .

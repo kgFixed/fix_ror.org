@@ -1,0 +1,78 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03gzbrs57> 
+    a org:Organization ;
+    rdfs:label "NewYork–Presbyterian Hospital" ;
+    schema:name "NewYork–Presbyterian Hospital" ;
+    schema:foundingDate "1771"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/NewYork%E2%80%93Presbyterian_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01skxn174> ;
+        rdfs:label "Lower Manhattan Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/016m8pd54> ;
+        rdfs:label "Morgan Stanley Children's Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04929s478> ;
+        rdfs:label "NewYork–Presbyterian Brooklyn Methodist Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02sp1z620> ;
+        rdfs:label "Burke Medical Research Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00hj8s172> ;
+        rdfs:label "Columbia University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05bnh6r87> ;
+        rdfs:label "Cornell University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/027zt9171> ;
+        rdfs:label "Houston Methodist" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05dvpaj72> ;
+        rdfs:label "The Rogosin Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03zjqec80> ;
+        rdfs:label "Hospital for Special Surgery" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-74.00597 40.71427)"^^geo:wktLiteral ;
+        schema:addressLocality "New York" ;
+    ] ;
+    schema:url <http://nyp.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000084991112> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q975653> ;
+             .

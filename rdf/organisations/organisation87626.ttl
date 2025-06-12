@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05tjfpm07> 
+    a org:Organization ;
+    rdfs:label "American Society for Mass Spectrometry" ;
+    schema:name "American Society for Mass Spectrometry" ;
+    schema:foundingDate "1969"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/American_Society_for_Mass_Spectrometry> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-105.9378 35.68698)"^^geo:wktLiteral ;
+        schema:addressLocality "Santa Fe" ;
+    ] ;
+    schema:url <http://www.asms.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000464722088> ;
+             .

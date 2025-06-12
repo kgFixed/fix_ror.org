@@ -1,0 +1,179 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0581em797> 
+    a org:Organization ;
+    rdfs:label "Generaldirektion Wasserstraßen und Schifffahrt" ;
+    schema:name "Generaldirektion Wasserstraßen und Schifffahrt" ;
+    schema:foundingDate "2013"^^xsd:gYear ;
+    schema:sameAs <https://de.wikipedia.org/wiki/Generaldirektion_Wasserstra%C3%9Fen_und_Schifffahrt> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02frtqf06> ;
+        rdfs:label "Wasserstraßen-Neubauamt Aschaffenburg" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01ftxmw65> ;
+        rdfs:label "Wasserstraßen- und Schifffahrtsamt Oberrhein" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/007hfn712> ;
+        rdfs:label "Wasserstraßen- und Schifffahrtsamt Main" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03135ed07> ;
+        rdfs:label "Wasserstraßen- und Schifffahrtsamt Weser" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/002v5yw74> ;
+        rdfs:label "Wasserstraßen- und Schifffahrtsamt Rhein" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01tfk3v06> ;
+        rdfs:label "Wasserstraßen- und Schifffahrtsamt Donau MDK" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04h1wg685> ;
+        rdfs:label "Wasserstraßen- und Schifffahrtsamt Ems-Nordsee" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01y9h3t34> ;
+        rdfs:label "Wasserstraßen- und Schifffahrtsamt Mosel-Saar-Lahn" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03xkdy484> ;
+        rdfs:label "Wasserstraßen- und Schifffahrtsamt Neckar" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04tmjzh29> ;
+        rdfs:label "Wasserstraßen- und Schifffahrtsamt Weser-Jade-Nordsee" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05j9kq242> ;
+        rdfs:label "Wasserstraßen- und Schifffahrtsamt Spree-Havel" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05ese7s54> ;
+        rdfs:label "Wasserstraßen- und Schifffahrtsamt Ostsee" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05pbd2t84> ;
+        rdfs:label "Wasserstraßen- und Schifffahrtsamt Westdeutsche Kanäle" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00ezjw960> ;
+        rdfs:label "Wasserstraßen- und Schifffahrtsamt Elbe" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02cd28j32> ;
+        rdfs:label "Wasserstraßen- und Schifffahrtsamt Elbe-Nordsee" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0094aqg59> ;
+        rdfs:label "Wasserstraßen- und Schifffahrtsamt Nord-Ostsee-Kanal" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03tme9506> ;
+        rdfs:label "Wasserstraßen- und Schifffahrtsamt Mittellandkanal / Elbe-Seitenkanal" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00t2xrj54> ;
+        rdfs:label "Wasserstraßen- und Schifffahrtsamt Oder-Havel" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02r67s833> ;
+        rdfs:label "Wasserstraßen-Neubauamt Hannover" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0095rxa03> ;
+        rdfs:label "Wasserstraßen-Neubauamt Helmstedt" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0431vax36> ;
+        rdfs:label "Wasserstraßen-Neubauamt Datteln" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05xfjq530> ;
+        rdfs:label "Wasserstraßen-Neubauamt Heidelberg" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01z72wf68> ;
+        rdfs:label "Wasserstraßen-Neubauamt Nord-Ostsee-Kanal" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05nswdr94> ;
+        rdfs:label "Wasserstraßen-Neubauamt Magdeburg" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05jkb5508> ;
+        rdfs:label "Wasserstraßen-Neubauamt Berlin" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00e3ns026> ;
+        rdfs:label "Federal Ministry of Transport and Digital Infrastructure" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(7.09549 50.73438)"^^geo:wktLiteral ;
+        schema:addressLocality "Bonn" ;
+    ] ;
+    schema:url <https://www.gdws.wsv.bund.de> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q12305647> ;
+             .

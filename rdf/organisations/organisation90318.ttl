@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00a787753> 
+    a org:Organization ;
+    rdfs:label "Penn State Mont Alto" ;
+    schema:name "Penn State Mont Alto" ;
+    schema:foundingDate "1903"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Penn_State_Mont_Alto> ;
+    org:status "withdrawn" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/04p491231> ;
+        rdfs:label "Pennsylvania State University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.55832 39.84426)"^^geo:wktLiteral ;
+        schema:addressLocality "Mont Alto" ;
+    ] ;
+    schema:url <http://www.ma.psu.edu/> ;
+    schema:sameAs <http://isni.org/isni/000000008820223X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7163262> ;
+             .

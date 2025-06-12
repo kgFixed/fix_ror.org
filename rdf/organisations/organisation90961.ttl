@@ -1,0 +1,58 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00yzwtk60> 
+    a org:Organization ;
+    rdfs:label "Dienstleistungszentrum Ländlicher Raum" ;
+    schema:name "Dienstleistungszentrum Ländlicher Raum" ;
+    schema:sameAs <https://de.wikipedia.org/wiki/Dienstleistungszentrum_L%C3%A4ndlicher_Raum> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/056ybqa45> ;
+        rdfs:label "Dienstleistungszentrum Ländlicher Raum Westerwald-Osteifel" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00d7t1v24> ;
+        rdfs:label "Dienstleistungszentrum Ländlicher Raum Eifel" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/009aftg61> ;
+        rdfs:label "Dienstleistungszentrum Ländlicher Raum Rheinpfalz" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04hsbr766> ;
+        rdfs:label "Dienstleistungszentrum Ländlicher Raum Mosel" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/049fqhq96> ;
+        rdfs:label "Dienstleistungszentrum Ländlicher Raum Westpfalz" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00v670451> ;
+        rdfs:label "Dienstleistungszentrum Ländlicher Raum Rheinhessen-Nahe-Hunsrück" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(8.13886 49.35009)"^^geo:wktLiteral ;
+        schema:addressLocality "Neustadt an der Weinstraße" ;
+    ] ;
+    schema:url <http://www.dlr.rlp.de> ;
+    schema:sameAs <http://isni.org/isni/0000000403849739> ;
+             .

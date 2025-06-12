@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01antkr91> 
+    a org:Organization ;
+    rdfs:label "Agentschap voor Innovatie door Wetenschap en Technologie" ;
+    schema:name "Agentschap voor Innovatie door Wetenschap en Technologie" ;
+    schema:foundingDate "1991"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Agency_for_Innovation_by_Science_and_Technology> ;
+    org:status "inactive" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04qxsrb28> ;
+        rdfs:label "Flemish Government" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/032xdry56> ;
+        rdfs:label "Flanders Innovation and Entrepreneurship" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(4.34878 50.85045)"^^geo:wktLiteral ;
+        schema:addressLocality "Brussels" ;
+    ] ;
+    schema:url <http://www.iwt.be/> ;
+    schema:sameAs <http://isni.org/isni/0000000085725043> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2462220> ;
+             .

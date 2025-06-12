@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00r8j9489> 
+    a org:Organization ;
+    rdfs:label "Thales (United Kingdom)" ;
+    schema:name "Thales (United Kingdom)" ;
+    schema:foundingDate "2000"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Thales_Group> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04emwm605> ;
+        rdfs:label "Thales (France)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-4.25763 55.86515)"^^geo:wktLiteral ;
+        schema:addressLocality "Glasgow" ;
+    ] ;
+    schema:url <https://www.thalesgroup.com/en/united-kingdom> ;
+    schema:sameAs <http://isni.org/isni/0000000417927195> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q29110552> ;
+             .

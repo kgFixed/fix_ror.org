@@ -1,0 +1,44 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/050519n85> 
+    a org:Organization ;
+    rdfs:label "Postharvest Technology Innovation Center" ;
+    schema:name "Postharvest Technology Innovation Center" ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05m2fqn25> ;
+        rdfs:label "Chiang Mai University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05gzceg21> ;
+        rdfs:label "Kasetsart University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03cq4gr50> ;
+        rdfs:label "Khon Kaen University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0057ax056> ;
+        rdfs:label "King Mongkut's University of Technology Thonburi" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(100.50144 13.75398)"^^geo:wktLiteral ;
+        schema:addressLocality "Bangkok" ;
+    ] ;
+    schema:url <https://www.phtnet.org> ;
+     .

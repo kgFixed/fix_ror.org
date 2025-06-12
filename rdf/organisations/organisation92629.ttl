@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02s42x260> 
+    a org:Organization ;
+    rdfs:label "International Space Station" ;
+    schema:name "International Space Station" ;
+    schema:foundingDate "1998"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/International_Space_Station> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/027ka1x80> ;
+        rdfs:label "National Aeronautics and Space Administration" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02zvw6748> ;
+        rdfs:label "Center for the Advancement of Science in Space" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-88.24338 40.11642)"^^geo:wktLiteral ;
+        schema:addressLocality "Champaign" ;
+    ] ;
+    schema:url <https://www.nasa.gov/mission_pages/station/main/index.html> ;
+    schema:sameAs <http://isni.org/isni/0000000107463524> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q25271> ;
+             .

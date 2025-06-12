@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03ybc3s94> 
+    a org:Organization ;
+    rdfs:label "Maria Mitchell Association" ;
+    schema:name "Maria Mitchell Association" ;
+    schema:foundingDate "1902"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Maria_Mitchell_Association> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-70.09946 41.28346)"^^geo:wktLiteral ;
+        schema:addressLocality "Nantucket" ;
+    ] ;
+    schema:url <http://www.mariamitchell.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000122353200> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q17020191> ;
+             .

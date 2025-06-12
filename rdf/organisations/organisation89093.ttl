@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04sy8yh72> 
+    a org:Organization ;
+    rdfs:label "Illinois Institute of Art" ;
+    schema:name "Illinois Institute of Art" ;
+    schema:foundingDate "1916"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Illinois_Institute_of_Art_%E2%80%93_Chicago> ;
+    org:status "inactive" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01p2ej961> ;
+        rdfs:label "The Art Institutes" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-87.65005 41.85003)"^^geo:wktLiteral ;
+        schema:addressLocality "Chicago" ;
+    ] ;
+    schema:url <https://www.artinstitutes.edu/closed-school-information-page> ;
+    schema:sameAs <http://isni.org/isni/0000000405320345> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5999521> ;
+             .

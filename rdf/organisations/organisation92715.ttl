@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04cvvej54> 
+    a org:Organization ;
+    rdfs:label "Woodwell Climate Research Center" ;
+    schema:name "Woodwell Climate Research Center" ;
+    schema:foundingDate "1985"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Woods_Hole_Research_Center> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/046dg4z72> ;
+        rdfs:label "Marine Biological Laboratory" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/052tfzs89> ;
+        rdfs:label "Plum Island Ecosystems Long Term Ecological Research" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-70.61475 41.5515)"^^geo:wktLiteral ;
+        schema:addressLocality "Falmouth" ;
+    ] ;
+    schema:url <https://www.woodwellclimate.org> ;
+    schema:sameAs <http://isni.org/isni/0000000121850926> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q8033269> ;
+             .

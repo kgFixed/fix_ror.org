@@ -1,0 +1,41 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0428qnk54> 
+    a org:Organization ;
+    rdfs:label "W. L. Gore & Associates (United States)" ;
+    schema:name "W. L. Gore & Associates (United States)" ;
+    schema:foundingDate "1958"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/W._L._Gore_and_Associates> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03jb89v85> ;
+        rdfs:label "W. L. Gore & Associates (Germany)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00cnk1752> ;
+        rdfs:label "W. L. Gore & Associates (Japan)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04nzw6768> ;
+        rdfs:label "W. L. Gore & Associates (United Kingdom)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-75.74966 39.68372)"^^geo:wktLiteral ;
+        schema:addressLocality "Newark" ;
+    ] ;
+    schema:url <https://www.gore.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q471316> ;
+             .

@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03jxpjf95> 
+    a org:Organization ;
+    rdfs:label "DECTRIS (Switzerland)" ;
+    schema:name "DECTRIS (Switzerland)" ;
+    schema:foundingDate "2006"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Dectris> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(8.30592 47.47333)"^^geo:wktLiteral ;
+        schema:addressLocality "Baden" ;
+    ] ;
+    schema:url <https://www.dectris.com> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q111942363> ;
+             .

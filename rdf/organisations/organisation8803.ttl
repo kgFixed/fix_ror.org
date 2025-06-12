@@ -1,0 +1,76 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01nzxq896> 
+    a org:Organization ;
+    rdfs:label "VA North Texas Health Care System" ;
+    schema:name "VA North Texas Health Care System" ;
+    schema:foundingDate "2008"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/034pdr896> ;
+        rdfs:label "Dallas VA Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01nmm5m33> ;
+        rdfs:label "Garland VA Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02s723j51> ;
+        rdfs:label "Sam Rayburn Memorial Veterans Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0527v1v90> ;
+        rdfs:label "VA Heart of Texas Health Care Network" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/054b0b564> ;
+        rdfs:label "Texas Christian University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04dyzkj40> ;
+        rdfs:label "Texas Woman's University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05byvp690> ;
+        rdfs:label "The University of Texas Southwestern Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/019kgqr73> ;
+        rdfs:label "The University of Texas at Arlington" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05msxaq47> ;
+        rdfs:label "University of North Texas Health Science Center" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-96.80667 32.78306)"^^geo:wktLiteral ;
+        schema:addressLocality "Dallas" ;
+    ] ;
+    schema:url <http://www.northtexas.va.gov/> ;
+    schema:sameAs <http://isni.org/isni/0000000404205441> ;
+             .

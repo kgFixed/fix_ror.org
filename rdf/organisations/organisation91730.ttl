@@ -1,0 +1,54 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03ycms792> 
+    a org:Organization ;
+    rdfs:label "National Nuclear Energy Commission" ;
+    schema:name "National Nuclear Energy Commission" ;
+    schema:foundingDate "1956"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/National_Nuclear_Energy_Commission> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/005e8tf31> ;
+        rdfs:label "Centro de Desenvolvimento da Tecnologia Nuclear" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01senny43> ;
+        rdfs:label "Instituto de Pesquisas Energéticas e Nucleares" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00q0yh079> ;
+        rdfs:label "Instituto de Radioproteção e Dosimetria" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/040bdaa45> ;
+        rdfs:label "Nuclear Engineering Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/050zdnc69> ;
+        rdfs:label "Ministry of Science, Technology and Innovation" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-43.18223 -22.90642)"^^geo:wktLiteral ;
+        schema:addressLocality "Rio de Janeiro" ;
+    ] ;
+    schema:url <http://www.cnen.gov.br/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q2328722> ;
+             .

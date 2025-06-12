@@ -1,0 +1,35 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03hass884> 
+    a org:Organization ;
+    rdfs:label "Ernst Ruska Centre" ;
+    schema:name "Ernst Ruska Centre" ;
+    schema:foundingDate "2004"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Ernst_Ruska-Centre> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02nv7yv05> ;
+        rdfs:label "Forschungszentrum Jülich" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04xfq0f34> ;
+        rdfs:label "RWTH Aachen University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(6.36267 50.92149)"^^geo:wktLiteral ;
+        schema:addressLocality "Jülich" ;
+    ] ;
+    schema:url <https://er-c.org> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q5395128> ;
+             .

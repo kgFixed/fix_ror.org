@@ -1,0 +1,20 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04txpk391> 
+    a org:Organization ;
+    rdfs:label "Superconducting Systems (United States)" ;
+    schema:name "Superconducting Systems (United States)" ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-71.26895 42.55843)"^^geo:wktLiteral ;
+        schema:addressLocality "Billerica" ;
+    ] ;
+    schema:url <http://www.superconductingsystems.com/Test2/> ;
+     .

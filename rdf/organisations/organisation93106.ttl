@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01qq57711> 
+    a org:Organization ;
+    rdfs:label "Universidad Andrés Bello" ;
+    schema:name "Universidad Andrés Bello" ;
+    schema:foundingDate "1988"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Andr%C3%A9s_Bello_National_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00gpq1s11> ;
+        rdfs:label "Center of New Drugs for Hypertension" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00rbe2516> ;
+        rdfs:label "Millennium Institute for Subatomic Physics at High-Energy Frontier, Saphir" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-70.64827 -33.45694)"^^geo:wktLiteral ;
+        schema:addressLocality "Santiago" ;
+    ] ;
+    schema:url <https://www.unab.cl> ;
+    schema:sameAs <http://isni.org/isni/000000012156804X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3348434> ;
+             .

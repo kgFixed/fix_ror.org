@@ -1,0 +1,64 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05yqfsf29> 
+    a org:Organization ;
+    rdfs:label "Centro Científico Tecnológico Mar del Plata" ;
+    schema:name "Centro Científico Tecnológico Mar del Plata" ;
+    schema:foundingDate "2009"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03h0e2s88> ;
+        rdfs:label "Institute of Marine and Coastal Research" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/009d3ws08> ;
+        rdfs:label "Instituto de Investigaciones Físicas de Mar del Plata" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/034s8ev31> ;
+        rdfs:label "Instituto de Investigaciones en Ciencia y Tecnología de Materiales" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03cqe8w59> ;
+        rdfs:label "Consejo Nacional de Investigaciones Científicas y Técnicas" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/049b2cm85> ;
+        rdfs:label "Instituto Nacional de Investigacion y Desarrollo Pesquero" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04wm52x94> ;
+        rdfs:label "National Agricultural Technology Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/055eqsb67> ;
+        rdfs:label "National University of Mar del Plata" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-57.5562 -38.00042)"^^geo:wktLiteral ;
+        schema:addressLocality "Mar del Plata" ;
+    ] ;
+    schema:url <https://mardelplata-conicet.gob.ar/> ;
+    schema:sameAs <http://isni.org/isni/0000000459133932> ;
+             .

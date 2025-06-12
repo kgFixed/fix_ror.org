@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04dbakj88> 
+    a org:Organization ;
+    rdfs:label "University of Colorado Museum of Natural History" ;
+    schema:name "University of Colorado Museum of Natural History" ;
+    schema:foundingDate "1902"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/University_of_Colorado_Museum_of_Natural_History> ;
+    org:status "withdrawn" ;
+    org:classification "Archive" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/02ttsq026> ;
+        rdfs:label "University of Colorado Boulder" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-105.27055 40.01499)"^^geo:wktLiteral ;
+        schema:addressLocality "Boulder" ;
+    ] ;
+    schema:url <https://www.colorado.edu/cumuseum/> ;
+    schema:sameAs <http://isni.org/isni/0000000092929124> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4306263> ;
+             .

@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01226dv09> 
+    a org:Organization ;
+    rdfs:label "University Hospital Regensburg" ;
+    schema:name "University Hospital Regensburg" ;
+    schema:foundingDate "1992"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05w0gx844> ;
+        rdfs:label "Kinderklinik Regensburg" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02zmrd443> ;
+        rdfs:label "Klinik und Poliklinik für Augenheilkunde Universitätsklinikum Regensburg" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01pndgw26> ;
+        rdfs:label "Klinik und Poliklinik für Hals-Nasen-Ohren-Heilkunde" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01eezs655> ;
+        rdfs:label "University of Regensburg" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(12.10161 49.01513)"^^geo:wktLiteral ;
+        schema:addressLocality "Regensburg" ;
+    ] ;
+    schema:url <http://www.uniklinikum-regensburg.de/e/> ;
+    schema:sameAs <http://isni.org/isni/0000000091947179> ;
+             .

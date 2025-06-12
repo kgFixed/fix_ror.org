@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/036jeby88> 
+    a org:Organization ;
+    rdfs:label "Waiariki Institute of Technology" ;
+    schema:name "Waiariki Institute of Technology" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Waiariki_Institute_of_Technology> ;
+    org:status "inactive" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/01t2w0q86> ;
+        rdfs:label "Toi Ohomai Institute of Technology" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(176.24516 -38.13874)"^^geo:wktLiteral ;
+        schema:addressLocality "Rotorua" ;
+    ] ;
+    schema:url <http://www.waiariki.ac.nz/> ;
+    schema:sameAs <http://isni.org/isni/0000000123617941> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7959906> ;
+             .

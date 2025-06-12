@@ -1,0 +1,33 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/009nz6031> 
+    a org:Organization ;
+    rdfs:label "Central European Institute of Technology – Masaryk University" ;
+    schema:name "Central European Institute of Technology – Masaryk University" ;
+    schema:foundingDate "2014"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01p7k1986> ;
+        rdfs:label "Central European Institute of Technology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02j46qs45> ;
+        rdfs:label "Masaryk University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(16.60796 49.19522)"^^geo:wktLiteral ;
+        schema:addressLocality "Brno" ;
+    ] ;
+    schema:url <http://muni.ceitec.cz/en/> ;
+     .

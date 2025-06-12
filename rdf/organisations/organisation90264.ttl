@@ -1,0 +1,26 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04qtnm446> 
+    a org:Organization ;
+    rdfs:label "Republican Clinical Oncology Center" ;
+    schema:name "Republican Clinical Oncology Center" ;
+    org:status "withdrawn" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/0244v0536> ;
+        rdfs:label "Republican Oncological Clinical Dispensary" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(49.12214 55.78874)"^^geo:wktLiteral ;
+        schema:addressLocality "Kazan’" ;
+    ] ;
+    schema:url <http://oncort.ru/> ;
+     .

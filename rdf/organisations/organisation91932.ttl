@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05qjftn62> 
+    a org:Organization ;
+    rdfs:label "Pacific Rim National Park Reserve" ;
+    schema:name "Pacific Rim National Park Reserve" ;
+    schema:foundingDate "2001"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Pacific_Rim_National_Park_Reserve> ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/008sy4716> ;
+        rdfs:label "Parks Canada" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-125.33615 49.24962)"^^geo:wktLiteral ;
+        schema:addressLocality "Regional District of Alberni-Clayoquot" ;
+    ] ;
+    schema:url <https://www.pc.gc.ca/en/pn-np/bc/pacificrim> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q1756401> ;
+             .

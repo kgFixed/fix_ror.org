@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0111wxt17> 
+    a org:Organization ;
+    rdfs:label "National Radiological Protection Board" ;
+    schema:name "National Radiological Protection Board" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/National_Radiological_Protection_Board> ;
+    org:status "inactive" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/00vbvha87> ;
+        rdfs:label "Public Health England" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.24214 51.60928)"^^geo:wktLiteral ;
+        schema:addressLocality "Didcot" ;
+    ] ;
+    schema:url <https://www.gov.uk/government/organisations/national-radiological-protection-board> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q6975171> ;
+             .

@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05hphhy26> 
+    a org:Organization ;
+    rdfs:label "University of Central Asia" ;
+    schema:name "University of Central Asia" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/University_of_Central_Asia> ;
+    org:status "withdrawn" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/04rrs4x54> ;
+        rdfs:label "University of Central Asia" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(71.55304 37.48974)"^^geo:wktLiteral ;
+        schema:addressLocality "Khorugh" ;
+    ] ;
+    schema:url <http://www.ucentralasia.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000403981078> ;
+             .

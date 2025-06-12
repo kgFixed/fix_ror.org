@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/056pard58> 
+    a org:Organization ;
+    rdfs:label "Pratt & Whitney Canada (Canada)" ;
+    schema:name "Pratt & Whitney Canada (Canada)" ;
+    schema:foundingDate "1928"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Pratt_%26_Whitney_Canada> ;
+    org:status "withdrawn" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/04b38mm11> ;
+        rdfs:label "Raytheon Technologies (Canada)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-73.46818 45.5152)"^^geo:wktLiteral ;
+        schema:addressLocality "Longueuil" ;
+    ] ;
+    schema:url <http://www.pwc.ca/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q1969155> ;
+             .

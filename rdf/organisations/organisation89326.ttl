@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04k0yvf43> 
+    a org:Organization ;
+    rdfs:label "Catacel (United States)" ;
+    schema:name "Catacel (United States)" ;
+    org:status "withdrawn" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/00wbcgc67> ;
+        rdfs:label "Johnson Matthey (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-81.24205 41.15756)"^^geo:wktLiteral ;
+        schema:addressLocality "Ravenna" ;
+    ] ;
+     .

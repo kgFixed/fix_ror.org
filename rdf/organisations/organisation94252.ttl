@@ -1,0 +1,103 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00qps9a02> 
+    a org:Organization ;
+    rdfs:label "Istituto Nazionale di Geofisica e Vulcanologia" ;
+    schema:name "Istituto Nazionale di Geofisica e Vulcanologia" ;
+    schema:foundingDate "1999"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/National_Institute_of_Geophysics_and_Volcanology> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/049412q44> ;
+        rdfs:label "INGV Sezione di Roma 1" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03z92nm69> ;
+        rdfs:label "INGV Sezione di Roma 2" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00khsxp79> ;
+        rdfs:label "INGV Osservatorio Nazionale Terremoti" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03vrtgf80> ;
+        rdfs:label "INGV Osservatorio Etneo" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00vfbgd72> ;
+        rdfs:label "INGV Sezione di Milano" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/029w2re51> ;
+        rdfs:label "INGV Sezione di Bologna" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00vfm5970> ;
+        rdfs:label "INGV Sezione di Pisa" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/012s4fy16> ;
+        rdfs:label "INGV Sezione di Palermo" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02gsny710> ;
+        rdfs:label "INGV Sezione Irpinia" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/055vn7m78> ;
+        rdfs:label "INGV Osservatorio Vesuviano" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/029rr4k19> ;
+        rdfs:label "INGV Amministrazione Centrale" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04xkqms46> ;
+        rdfs:label "European Multidisciplinary Seafloor and water column Observatory" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00qxqkw78> ;
+        rdfs:label "European Plate Observing System" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(12.51133 41.89193)"^^geo:wktLiteral ;
+        schema:addressLocality "Rome" ;
+    ] ;
+    schema:url <http://www.ingv.it> ;
+    schema:sameAs <http://isni.org/isni/0000000123005064> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1674866> ;
+             .

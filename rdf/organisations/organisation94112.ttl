@@ -1,0 +1,40 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/028znnm42> 
+    a org:Organization ;
+    rdfs:label "DASSI - Data Archive for Social Sciences in Italy" ;
+    schema:name "DASSI - Data Archive for Social Sciences in Italy" ;
+    schema:foundingDate "2021"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01ynf4891> ;
+        rdfs:label "University of Milano-Bicocca" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04zaypm56> ;
+        rdfs:label "National Research Council" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02wg9xc72> ;
+        rdfs:label "Consortium of European Social Science Data Archives" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(9.18951 45.46427)"^^geo:wktLiteral ;
+        schema:addressLocality "Milan" ;
+    ] ;
+    schema:url <https://www.dassi-archive.it> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q121599463> ;
+             .

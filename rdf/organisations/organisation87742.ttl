@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02e271b61> 
+    a org:Organization ;
+    rdfs:label "Huntington Hospital" ;
+    schema:name "Huntington Hospital" ;
+    schema:foundingDate "1892"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Huntington_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03taz7m60> ;
+        rdfs:label "University of Southern California" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-118.14452 34.14778)"^^geo:wktLiteral ;
+        schema:addressLocality "Pasadena" ;
+    ] ;
+    schema:url <http://www.huntingtonhospital.com/Main/Home.aspx> ;
+    schema:sameAs <http://isni.org/isni/000000040450445X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5945374> ;
+             .

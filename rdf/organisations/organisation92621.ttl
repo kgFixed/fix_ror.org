@@ -1,0 +1,64 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04c5b8z55> 
+    a org:Organization ;
+    rdfs:label "Biomedicine Research Institute of Buenos Aires - CONICET - Partner Institute of the Max Planck Society" ;
+    schema:name "Biomedicine Research Institute of Buenos Aires - CONICET - Partner Institute of the Max Planck Society" ;
+    schema:foundingDate "2011"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03cqe8w59> ;
+        rdfs:label "Consejo Nacional de Investigaciones Científicas y Técnicas" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03w11wq45> ;
+        rdfs:label "El Hospital General de Agudos Carlos G. Durand" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0145s0423> ;
+        rdfs:label "Fundación para la Lucha contra las Enfermedades Neurológicas de la Infancia" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00tdzhd41> ;
+        rdfs:label "Hospital Fernández" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00bq4rw46> ;
+        rdfs:label "Hospital Italiano de Buenos Aires" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01hhn8329> ;
+        rdfs:label "Max Planck Society" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0081fs513> ;
+        rdfs:label "University of Buenos Aires" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-58.37723 -34.61315)"^^geo:wktLiteral ;
+        schema:addressLocality "Buenos Aires" ;
+    ] ;
+    schema:url <http://ibioba-mpsp-conicet.gov.ar> ;
+    schema:sameAs <http://isni.org/isni/0000000405909563> ;
+             .

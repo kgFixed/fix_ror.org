@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0358td721> 
+    a org:Organization ;
+    rdfs:label "Lake Erie College of Osteopathic Medicine" ;
+    schema:name "Lake Erie College of Osteopathic Medicine" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Lake_Erie_College_of_Osteopathic_Medicine> ;
+    org:status "withdrawn" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/04679fh62> ;
+        rdfs:label "Lake Erie College of Osteopathic Medicine" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-82.57482 27.49893)"^^geo:wktLiteral ;
+        schema:addressLocality "Bradenton" ;
+    ] ;
+    schema:url <http://lecom.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000406274432> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q50517761> ;
+             .

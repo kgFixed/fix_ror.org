@@ -1,0 +1,113 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/052tfzs89> 
+    a org:Organization ;
+    rdfs:label "Plum Island Ecosystems Long Term Ecological Research" ;
+    schema:name "Plum Island Ecosystems Long Term Ecological Research" ;
+    schema:foundingDate "1998"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/039kwqk96> ;
+        rdfs:label "Long Term Ecological Research Network" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/046dg4z72> ;
+        rdfs:label "Marine Biological Laboratory" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0330j0z60> ;
+        rdfs:label "Environmental Data Initiative" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01rmh9n78> ;
+        rdfs:label "University of New Hampshire" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02b6qw903> ;
+        rdfs:label "University of South Carolina" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02g7kd627> ;
+        rdfs:label "Villanova University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04cvvej54> ;
+        rdfs:label "Woodwell Climate Research Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05qwgg493> ;
+        rdfs:label "Boston University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04ydmy275> ;
+        rdfs:label "University of Massachusetts Boston" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04123ky43> ;
+        rdfs:label "Clark University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/024mw5h28> ;
+        rdfs:label "University of Chicago" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/023kmfd49> ;
+        rdfs:label "Massachusetts Audubon Society" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04eeqc889> ;
+        rdfs:label "Virginia Institute of Marine Science" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01x8rc503> ;
+        rdfs:label "University of Louisiana at Lafayette" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04t5xt781> ;
+        rdfs:label "Northeastern University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-70.87295 42.7708)"^^geo:wktLiteral ;
+        schema:addressLocality "Town of Newbury" ;
+    ] ;
+    schema:url <https://pie.lternet.edu> ;
+    schema:sameAs <http://isni.org/isni/000000012169920X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q500632> ;
+             .

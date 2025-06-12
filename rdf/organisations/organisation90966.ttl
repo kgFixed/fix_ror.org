@@ -1,0 +1,26 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/056ybqa45> 
+    a org:Organization ;
+    rdfs:label "Dienstleistungszentrum Ländlicher Raum Westerwald-Osteifel" ;
+    schema:name "Dienstleistungszentrum Ländlicher Raum Westerwald-Osteifel" ;
+    org:status "active" ;
+    org:classification "Other" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00yzwtk60> ;
+        rdfs:label "Dienstleistungszentrum Ländlicher Raum" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(7.8232 50.43588)"^^geo:wktLiteral ;
+        schema:addressLocality "Montabaur" ;
+    ] ;
+    schema:url <https://www.dlr-westerwald-osteifel.rlp.de/DLR-Westerwald-Osteifel> ;
+     .

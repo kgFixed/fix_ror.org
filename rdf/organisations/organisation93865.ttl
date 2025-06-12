@@ -1,0 +1,50 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02yjqwr70> 
+    a org:Organization ;
+    rdfs:label "Triangle Center for Evolutionary Medicine" ;
+    schema:name "Triangle Center for Evolutionary Medicine" ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00py81415> ;
+        rdfs:label "Duke University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02aze4h65> ;
+        rdfs:label "North Carolina Agricultural and Technical State University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/051r3tx83> ;
+        rdfs:label "North Carolina Central University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04tj63d06> ;
+        rdfs:label "North Carolina State University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0130frc33> ;
+        rdfs:label "University of North Carolina at Chapel Hill" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-78.89862 35.99403)"^^geo:wktLiteral ;
+        schema:addressLocality "Durham" ;
+    ] ;
+     .

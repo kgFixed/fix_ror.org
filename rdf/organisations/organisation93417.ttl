@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/020wtkd09> 
+    a org:Organization ;
+    rdfs:label "South African Council for Natural Scientific Professions" ;
+    schema:name "South African Council for Natural Scientific Professions" ;
+    schema:foundingDate "2007"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/048kh7197> ;
+        rdfs:label "Department of Science and Innovation" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(28.18783 -25.74486)"^^geo:wktLiteral ;
+        schema:addressLocality "Pretoria" ;
+    ] ;
+    schema:url <https://www.sacnasp.org.za> ;
+    schema:sameAs <http://isni.org/isni/0000000512509899> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q119778375> ;
+             .

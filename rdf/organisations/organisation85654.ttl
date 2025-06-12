@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01vxfm326> 
+    a org:Organization ;
+    rdfs:label "Corvinus University of Budapest" ;
+    schema:name "Corvinus University of Budapest" ;
+    schema:foundingDate "1920"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Corvinus_University_of_Budapest> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(19.04045 47.49835)"^^geo:wktLiteral ;
+        schema:addressLocality "Budapest" ;
+    ] ;
+    schema:url <http://portal.uni-corvinus.hu/?id=44509> ;
+    schema:sameAs <http://isni.org/isni/0000000092345858> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q851164> ;
+             .

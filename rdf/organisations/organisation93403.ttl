@@ -1,0 +1,139 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01na82s61> 
+    a org:Organization ;
+    rdfs:label "United States Department of Agriculture" ;
+    schema:name "United States Department of Agriculture" ;
+    schema:foundingDate "1862"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/United_States_Department_of_Agriculture> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01xx4fy37> ;
+        rdfs:label "Agricultural Marketing Service" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02d2m2044> ;
+        rdfs:label "Agricultural Research Service" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0599wfz09> ;
+        rdfs:label "Animal and Plant Health Inspection Service" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02bgabj83> ;
+        rdfs:label "Center for Nutrition Policy and Promotion" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05ycxzd89> ;
+        rdfs:label "Economic Research Service" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/050m26017> ;
+        rdfs:label "Farm Service Agency" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/045k2ma45> ;
+        rdfs:label "Food Safety and Inspection Service" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00t9khr87> ;
+        rdfs:label "Food and Nutrition Service" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00t77bz53> ;
+        rdfs:label "Foreign Agricultural Service" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/056mcm922> ;
+        rdfs:label "Grain Inspection, Packers and Stockyards Administration" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00z6b1508> ;
+        rdfs:label "National Agricultural Library" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04dpymk59> ;
+        rdfs:label "National Agricultural Statistics Service" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05qx3fv49> ;
+        rdfs:label "National Institute of Food and Agriculture" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03j7rgg33> ;
+        rdfs:label "Natural Resources Conservation Service" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05222ev03> ;
+        rdfs:label "Risk Management Agency" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03zmjc935> ;
+        rdfs:label "US Forest Service" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02qhkmh27> ;
+        rdfs:label "USDA Rural Development" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00e7ec781> ;
+        rdfs:label "United States Department of Agriculture Climate Hubs" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02rcrvv70> ;
+        rdfs:label "Government of the United States of America" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.03637 38.89511)"^^geo:wktLiteral ;
+        schema:addressLocality "Washington" ;
+    ] ;
+    schema:url <http://www.usda.gov/> ;
+    schema:sameAs <http://isni.org/isni/0000000404786311> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q501542> ;
+             .

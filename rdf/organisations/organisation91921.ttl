@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03ypxwh20> 
+    a org:Organization ;
+    rdfs:label "Waterford Institute of Technology" ;
+    schema:name "Waterford Institute of Technology" ;
+    schema:foundingDate "1970"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Waterford_Institute_of_Technology> ;
+    org:status "inactive" ;
+    org:classification "Nonprofit" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/007pvy114> ;
+        rdfs:label "University Hospital Waterford" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/03fgx6868> ;
+        rdfs:label "South East Technological University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-7.11194 52.25833)"^^geo:wktLiteral ;
+        schema:addressLocality "Waterford" ;
+    ] ;
+    schema:url <http://www.wit.ie/> ;
+    schema:sameAs <http://isni.org/isni/0000000106807997> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7974025> ;
+             .

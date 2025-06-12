@@ -1,0 +1,155 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/019w4f821> 
+    a org:Organization ;
+    rdfs:label "European Union" ;
+    schema:name "European Union" ;
+    schema:foundingDate "1957"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/European_Union> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01zvsh948> ;
+        rdfs:label "European Agency for Safety and Health at Work" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/018hb5750> ;
+        rdfs:label "European Aviation Safety Agency" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00ajckn66> ;
+        rdfs:label "European Central Bank" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00s9v1h75> ;
+        rdfs:label "European Centre for Disease Prevention and Control" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03e5p9h20> ;
+        rdfs:label "European Centre for the Development of Vocational Training (CEDEFOP)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00k4n6c32> ;
+        rdfs:label "European Commission" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/001b17f86> ;
+        rdfs:label "European Council" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02mkv8r24> ;
+        rdfs:label "European Defence Agency" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02k4b9v70> ;
+        rdfs:label "European Environment Agency" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02t3dz930> ;
+        rdfs:label "European External Action Service" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03nkhf159> ;
+        rdfs:label "European Fisheries Control Agency" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03sk2bs13> ;
+        rdfs:label "European Foundation for the Improvement of Living and Working Conditions" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/036dxts37> ;
+        rdfs:label "European Institute of Innovation and Technology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01z0wsw92> ;
+        rdfs:label "European Medicines Agency" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/028mr0844> ;
+        rdfs:label "European Monitoring Centre for Drugs and Drug Addiction" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/058fj5k57> ;
+        rdfs:label "European Parliament" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00wqx6897> ;
+        rdfs:label "European Union Agency for Network and Information Security" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/041bbkr27> ;
+        rdfs:label "European Union Satellite Centre" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02q40pc92> ;
+        rdfs:label "Fusion for Energy" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/016jmhr98> ;
+        rdfs:label "Publications Office of the European Union" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/051m8tg66> ;
+        rdfs:label "Translation Centre for the Bodies of the European Union" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01ayrdf49> ;
+        rdfs:label "European Chemicals Agency" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(4.34878 50.85045)"^^geo:wktLiteral ;
+        schema:addressLocality "Brussels" ;
+    ] ;
+    schema:url <http://europa.eu/index_en.htm> ;
+    schema:sameAs <http://isni.org/isni/0000000122904914> ;
+             .

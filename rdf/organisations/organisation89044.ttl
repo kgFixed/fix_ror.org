@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03t8x2c04> 
+    a org:Organization ;
+    rdfs:label "Aga Khan Foundation" ;
+    schema:name "Aga Khan Foundation" ;
+    schema:foundingDate "1967"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Aga_Khan_Foundation> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/009cyv989> ;
+        rdfs:label "Aga Khan Development Network" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/048b0ns33> ;
+        rdfs:label "Aga Khan Foundation" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/028mpsh75> ;
+        rdfs:label "Aga Khan Development Network" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(6.14569 46.20222)"^^geo:wktLiteral ;
+        schema:addressLocality "Geneva" ;
+    ] ;
+    schema:url <https://www.akdn.org/our-agencies/aga-khan-foundation> ;
+    schema:sameAs <http://isni.org/isni/0000000405130752> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q389818> ;
+             .

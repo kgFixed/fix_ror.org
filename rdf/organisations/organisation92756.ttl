@@ -1,0 +1,33 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/048f36m54> 
+    a org:Organization ;
+    rdfs:label "Instituto de Tecnologías en Detección y Astropartículas" ;
+    schema:name "Instituto de Tecnologías en Detección y Astropartículas" ;
+    schema:foundingDate "2009"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01xz39a70> ;
+        rdfs:label "Comisión Nacional de Energía Atómica" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03cqe8w59> ;
+        rdfs:label "Consejo Nacional de Investigaciones Científicas y Técnicas" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-58.37723 -34.61315)"^^geo:wktLiteral ;
+        schema:addressLocality "Buenos Aires" ;
+    ] ;
+    schema:url <http://www.iteda.cnea.gov.ar/en/> ;
+     .

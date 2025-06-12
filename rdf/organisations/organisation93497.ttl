@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00jmtdy57> 
+    a org:Organization ;
+    rdfs:label "Atomic Energy Council" ;
+    schema:name "Atomic Energy Council" ;
+    schema:foundingDate "1955"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Atomic_Energy_Council> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/052jx3443> ;
+        rdfs:label "Institute of Nuclear Energy Research" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(121.52639 25.05306)"^^geo:wktLiteral ;
+        schema:addressLocality "Taipei" ;
+    ] ;
+    schema:url <http://www.aec.gov.tw/english/> ;
+    schema:sameAs <http://isni.org/isni/0000000404379118> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5972441> ;
+             .

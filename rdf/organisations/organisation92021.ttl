@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/014kyp779> 
+    a org:Organization ;
+    rdfs:label "M. Kh Dulati Taraz State University" ;
+    schema:name "M. Kh Dulati Taraz State University" ;
+    schema:foundingDate "1998"^^xsd:gYear ;
+    org:status "inactive" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/02tvdnz86> ;
+        rdfs:label "Dulaty University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(71.36667 42.9)"^^geo:wktLiteral ;
+        schema:addressLocality "Taraz" ;
+    ] ;
+    schema:url <http://www.tarsu.kz> ;
+     .

@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02r3e0967> 
+    a org:Organization ;
+    rdfs:label "St. Jude Children's Research Hospital" ;
+    schema:name "St. Jude Children's Research Hospital" ;
+    schema:foundingDate "1962"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/St._Jude_Children%27s_Research_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03rx10x31> ;
+        rdfs:label "American Lebanese Syrian Associated Charities" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04nv2wh79> ;
+        rdfs:label "Novant Health" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01y9s4r06> ;
+        rdfs:label "Our Lady of the Lake Regional Medical Center" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-90.04898 35.14953)"^^geo:wktLiteral ;
+        schema:addressLocality "Memphis" ;
+    ] ;
+    schema:url <https://www.stjude.org/> ;
+    schema:sameAs <http://isni.org/isni/000000010224711X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1164246> ;
+             .

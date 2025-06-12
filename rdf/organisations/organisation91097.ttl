@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/026tjcs76> 
+    a org:Organization ;
+    rdfs:label "National Metallurgical Academy of Ukraine" ;
+    schema:name "National Metallurgical Academy of Ukraine" ;
+    schema:foundingDate "1899"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/National_Metallurgical_Academy_of_Ukraine> ;
+    org:status "inactive" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/052pe2w94> ;
+        rdfs:label "Ukrainian State University of Science and Technologies" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(35.04066 48.46664)"^^geo:wktLiteral ;
+        schema:addressLocality "Dnipro" ;
+    ] ;
+    schema:url <https://nmetau.edu.ua/en> ;
+    schema:sameAs <http://isni.org/isni/0000000403798943> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q94192> ;
+             .

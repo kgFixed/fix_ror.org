@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04n1n3n22> 
+    a org:Organization ;
+    rdfs:label "QB3" ;
+    schema:name "QB3" ;
+    schema:foundingDate "2000"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/California_Institute_for_Quantitative_Biosciences> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01an7q238> ;
+        rdfs:label "University of California, Berkeley" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/043mz5j54> ;
+        rdfs:label "University of California, San Francisco" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03s65by71> ;
+        rdfs:label "University of California, Santa Cruz" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-122.41942 37.77493)"^^geo:wktLiteral ;
+        schema:addressLocality "San Francisco" ;
+    ] ;
+    schema:url <https://qb3.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000403934319> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5020625> ;
+             .

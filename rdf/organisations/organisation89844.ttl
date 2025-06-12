@@ -1,0 +1,57 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01d5pah27> 
+    a org:Organization ;
+    rdfs:label "Direction des Applications Militaires" ;
+    schema:name "Direction des Applications Militaires" ;
+    org:status "withdrawn" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00j8epd55> ;
+        rdfs:label "CEA Gramat" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01hjhm267> ;
+        rdfs:label "CEA Le Ripault" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03ze07515> ;
+        rdfs:label "CEA Valduc" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/026ma2c10> ;
+        rdfs:label "Centre d'Études Scientifiques et Techniques d'Aquitaine" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00jjx8s55> ;
+        rdfs:label "Atomic Energy and Alternative Energies Commission" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/00kn4eb29> ;
+        rdfs:label "CEA DAM Île-de-France" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.18991 48.58868)"^^geo:wktLiteral ;
+        schema:addressLocality "Bruyères-le-Châtel" ;
+    ] ;
+    schema:url <http://www-dam.cea.fr/dynamique/accueil/accueil.asp> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q41566944> ;
+             .

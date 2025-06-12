@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04zrf7b53> 
+    a org:Organization ;
+    rdfs:label "University of Kaiserslautern" ;
+    schema:name "University of Kaiserslautern" ;
+    schema:foundingDate "1970"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Kaiserslautern_University_of_Technology> ;
+    org:status "inactive" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/01qrts582> ;
+        rdfs:label "Rheinland-Pfälzische Technische Universität Kaiserslautern-Landau" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(7.77161 49.443)"^^geo:wktLiteral ;
+        schema:addressLocality "Kaiserslautern" ;
+    ] ;
+    schema:url <http://www.uni-kl.de/no_cache/en/home/> ;
+    schema:sameAs <http://isni.org/isni/0000000121550333> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q678965> ;
+             .

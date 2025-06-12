@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0361bwx64> 
+    a org:Organization ;
+    rdfs:label "United Kingdom Atomic Energy Authority" ;
+    schema:name "United Kingdom Atomic Energy Authority" ;
+    schema:foundingDate "1954"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/United_Kingdom_Atomic_Energy_Authority> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05nmyph15> ;
+        rdfs:label "Culham Centre for Fusion Energy" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/019ya6433> ;
+        rdfs:label "Department for Business, Energy and Industrial Strategy" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.28278 51.67109)"^^geo:wktLiteral ;
+        schema:addressLocality "Abingdon" ;
+    ] ;
+    schema:url <https://www.gov.uk/government/organisations/uk-atomic-energy-authority> ;
+    schema:sameAs <http://isni.org/isni/0000000106832623> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q615775> ;
+             .

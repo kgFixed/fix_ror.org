@@ -1,0 +1,34 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04dqaqw31> 
+    a org:Organization ;
+    rdfs:label "Unité transversale de recherche en psychogénèse et psychopathologie" ;
+    schema:name "Unité transversale de recherche en psychogénèse et psychopathologie" ;
+    schema:foundingDate "2009"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/002t25c44> ;
+        rdfs:label "Université Paris 1 Panthéon-Sorbonne" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0199hds37> ;
+        rdfs:label "Université Sorbonne Paris Nord" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.34167 48.95833)"^^geo:wktLiteral ;
+        schema:addressLocality "Villetaneuse" ;
+    ] ;
+    schema:url <https://utrpp.univ-paris13.fr> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q51783687> ;
+             .

@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05j2xx287> 
+    a org:Organization ;
+    rdfs:label "Brenner Children's Hospital" ;
+    schema:name "Brenner Children's Hospital" ;
+    schema:foundingDate "1986"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Brenner_Children%27s_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04v8djg66> ;
+        rdfs:label "Atrium Health Wake Forest Baptist" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0207ad724> ;
+        rdfs:label "Wake Forest University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-80.24422 36.09986)"^^geo:wktLiteral ;
+        schema:addressLocality "Winston-Salem" ;
+    ] ;
+    schema:url <https://www.brennerchildrens.org/index.htm> ;
+    schema:sameAs <http://isni.org/isni/0000000404590909> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4961269> ;
+             .

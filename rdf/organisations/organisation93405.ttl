@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/022pm7h15> 
+    a org:Organization ;
+    rdfs:label "Health Protection Agency" ;
+    schema:name "Health Protection Agency" ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Health_Protection_Agency> ;
+    org:status "inactive" ;
+    org:classification "Nonprofit" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/00vbvha87> ;
+        rdfs:label "Public Health England" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.32757 51.06314)"^^geo:wktLiteral ;
+        schema:addressLocality "Horsham" ;
+    ] ;
+    schema:url <https://www.gov.uk/government/organisations/public-health-england> ;
+    schema:sameAs <http://isni.org/isni/0000000121968713> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5690635> ;
+             .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/047w8z534> 
+    a org:Organization ;
+    rdfs:label "Middle East Studies Association of North America" ;
+    schema:name "Middle East Studies Association of North America" ;
+    schema:foundingDate "1966"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Middle_East_Studies_Association_of_North_America> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-110.92648 32.22174)"^^geo:wktLiteral ;
+        schema:addressLocality "Tucson" ;
+    ] ;
+    schema:url <http://mesana.org/> ;
+    schema:sameAs <http://isni.org/isni/000000010943732X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6841363> ;
+             .

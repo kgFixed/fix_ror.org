@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05h7s9y46> 
+    a org:Organization ;
+    rdfs:label "Padmashri Dr. V. B. Kolte College of Engineering, Malkapur" ;
+    schema:name "Padmashri Dr. V. B. Kolte College of Engineering, Malkapur" ;
+    schema:foundingDate "2010"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05s8p6g93> ;
+        rdfs:label "Sant Gadge Baba Amravati University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(76.19932 20.88555)"^^geo:wktLiteral ;
+        schema:addressLocality "Malkāpur" ;
+    ] ;
+    schema:url <https://coemalkapur.ac.in/engg/> ;
+     .

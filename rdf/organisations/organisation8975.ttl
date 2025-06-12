@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/004gw9825> 
+    a org:Organization ;
+    rdfs:label "Southeast Community College" ;
+    schema:name "Southeast Community College" ;
+    schema:foundingDate "1941"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Southeast_Community_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-96.66696 40.8)"^^geo:wktLiteral ;
+        schema:addressLocality "Lincoln" ;
+    ] ;
+    schema:url <https://www.southeast.edu/> ;
+    schema:sameAs <http://isni.org/isni/000000040523915X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7569319> ;
+             .

@@ -1,0 +1,48 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/009sa0g06> 
+    a org:Organization ;
+    rdfs:label "Royal Liverpool and Broadgreen University Hospital NHS Trust" ;
+    schema:name "Royal Liverpool and Broadgreen University Hospital NHS Trust" ;
+    schema:foundingDate "1995"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Royal_Liverpool_and_Broadgreen_University_Hospitals_NHS_Trust> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03f7qhc68> ;
+        rdfs:label "Broadgreen Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00ke0d331> ;
+        rdfs:label "Marie Curie Palliative Care Institute Liverpool" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0298hp073> ;
+        rdfs:label "NIHR Liverpool Pancreatic Biomedical Research Unit" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01ycr6b80> ;
+        rdfs:label "Royal Liverpool University Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-2.97794 53.41058)"^^geo:wktLiteral ;
+        schema:addressLocality "Liverpool" ;
+    ] ;
+    schema:url <http://www.rlbuht.nhs.uk/Pages/RoyalHome.aspx> ;
+    schema:sameAs <http://isni.org/isni/0000000404211585> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7374407> ;
+             .

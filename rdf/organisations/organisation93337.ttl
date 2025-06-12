@@ -1,0 +1,67 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02yg0nm07> 
+    a org:Organization ;
+    rdfs:label "University of Puerto Rico System" ;
+    schema:name "University of Puerto Rico System" ;
+    schema:foundingDate "1903"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/University_of_Puerto_Rico> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/038z2eg27> ;
+        rdfs:label "University of Puerto Rico at Arecibo" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00yxqn620> ;
+        rdfs:label "University of Puerto Rico at Cayey" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/020wm8g88> ;
+        rdfs:label "University of Puerto Rico at Humacao" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04vs2n780> ;
+        rdfs:label "University of Puerto Rico at Ponce" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0453v4r20> ;
+        rdfs:label "University of Puerto Rico at Río Piedras" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00h25w961> ;
+        rdfs:label "University of Puerto Rico, Medical Sciences Campus" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00wek6x04> ;
+        rdfs:label "University of Puerto Rico-Mayaguez" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-66.10572 18.46633)"^^geo:wktLiteral ;
+        schema:addressLocality "San Juan" ;
+    ] ;
+    schema:url <http://www.upr.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000404621680> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2075365> ;
+             .

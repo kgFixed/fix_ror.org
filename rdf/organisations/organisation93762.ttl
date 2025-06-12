@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03kw6wr76> 
+    a org:Organization ;
+    rdfs:label "Philips (United States)" ;
+    schema:name "Philips (United States)" ;
+    schema:foundingDate "1891"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Philips> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02p2bgp27> ;
+        rdfs:label "Philips (Netherlands)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-71.137 42.65843)"^^geo:wktLiteral ;
+        schema:addressLocality "Andover" ;
+    ] ;
+    schema:url <http://www.usa.philips.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q29123003> ;
+             .

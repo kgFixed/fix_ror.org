@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/051de0s21> 
+    a org:Organization ;
+    rdfs:label "Sartorius (United Kingdom)" ;
+    schema:name "Sartorius (United Kingdom)" ;
+    schema:foundingDate "1870"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01nvz9x61> ;
+        rdfs:label "Sartorius (Germany)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.27011 51.3305)"^^geo:wktLiteral ;
+        schema:addressLocality "Epsom" ;
+    ] ;
+    schema:url <http://www.sartorius.co.uk/> ;
+    schema:sameAs <http://isni.org/isni/0000000404949379> ;
+             .

@@ -1,0 +1,34 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00vbzva31> 
+    a org:Organization ;
+    rdfs:label "MRC Centre for Medical Mycology" ;
+    schema:name "MRC Centre for Medical Mycology" ;
+    schema:foundingDate "2019"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03yghzc09> ;
+        rdfs:label "University of Exeter" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03x94j517> ;
+        rdfs:label "Medical Research Council" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-3.52751 50.7236)"^^geo:wktLiteral ;
+        schema:addressLocality "Exeter" ;
+    ] ;
+    schema:url <https://www.exeter.ac.uk/research/medicalmycology/> ;
+     .

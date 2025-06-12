@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01680tt85> 
+    a org:Organization ;
+    rdfs:label "International Society of Travel Medicine" ;
+    schema:name "International Society of Travel Medicine" ;
+    schema:foundingDate "1991"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/International_Society_of_Travel_Medicine> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-84.33465 33.94621)"^^geo:wktLiteral ;
+        schema:addressLocality "Dunwoody" ;
+    ] ;
+    schema:url <http://www.istm.org/> ;
+     .

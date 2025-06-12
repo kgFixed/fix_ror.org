@@ -1,0 +1,26 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/030fg5085> 
+    a org:Organization ;
+    rdfs:label "Aberystwyth University" ;
+    schema:name "Aberystwyth University" ;
+    org:status "withdrawn" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/015m2p889> ;
+        rdfs:label "Aberystwyth University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(57.59737 -20.2479)"^^geo:wktLiteral ;
+        schema:addressLocality "Quartier Militaire" ;
+    ] ;
+    schema:url <http://www.aber.ac.mu/> ;
+     .

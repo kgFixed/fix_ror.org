@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05e80bb92> 
+    a org:Organization ;
+    rdfs:label "Institute of Mental Health and Hospital" ;
+    schema:name "Institute of Mental Health and Hospital" ;
+    schema:foundingDate "1859"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/The_Institute_of_Mental_Health_and_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(78.01667 27.18333)"^^geo:wktLiteral ;
+        schema:addressLocality "Agra" ;
+    ] ;
+    schema:url <http://www.imhh.org.in/> ;
+    schema:sameAs <http://isni.org/isni/0000000417679187> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q48731144> ;
+             .

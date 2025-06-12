@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01n5r7s17> 
+    a org:Organization ;
+    rdfs:label "Native Forward Scholars Fund" ;
+    schema:name "Native Forward Scholars Fund" ;
+    schema:foundingDate "1969"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-106.65114 35.08449)"^^geo:wktLiteral ;
+        schema:addressLocality "Albuquerque" ;
+    ] ;
+    schema:url <https://www.nativeforward.org> ;
+    schema:sameAs <http://isni.org/isni/0000000459005412> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30264570> ;
+             .

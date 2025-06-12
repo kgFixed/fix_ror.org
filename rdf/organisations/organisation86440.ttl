@@ -1,0 +1,35 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05av6m066> 
+    a org:Organization ;
+    rdfs:label "United States Marine Corps" ;
+    schema:name "United States Marine Corps" ;
+    schema:foundingDate "1775"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/United_States_Marine_Corps> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01fb0df08> ;
+        rdfs:label "Marine Corps Warfighting Laboratory" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03ar0mv07> ;
+        rdfs:label "United States Department of the Navy" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.10428 38.88101)"^^geo:wktLiteral ;
+        schema:addressLocality "Arlington" ;
+    ] ;
+    schema:url <https://www.marines.mil/> ;
+     .

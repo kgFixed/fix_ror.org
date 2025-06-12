@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00g3gq507> 
+    a org:Organization ;
+    rdfs:label "Taiga Biotechnologies (United States)" ;
+    schema:name "Taiga Biotechnologies (United States)" ;
+    schema:foundingDate "2006"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Taiga> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-104.83192 39.72943)"^^geo:wktLiteral ;
+        schema:addressLocality "Aurora" ;
+    ] ;
+    schema:url <https://www.taigabiotech.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30283895> ;
+             .

@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02j1m6098> 
+    a org:Organization ;
+    rdfs:label "Duke-NUS Medical School" ;
+    schema:name "Duke-NUS Medical School" ;
+    schema:foundingDate "2005"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Duke-NUS_Graduate_Medical_School> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00xcwps97> ;
+        rdfs:label "SingHealth Duke-NUS Academic Medical Centre" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00py81415> ;
+        rdfs:label "Duke University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01tgyzw49> ;
+        rdfs:label "National University of Singapore" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(103.85007 1.28967)"^^geo:wktLiteral ;
+        schema:addressLocality "Singapore" ;
+    ] ;
+    schema:url <https://www.duke-nus.edu.sg/> ;
+    schema:sameAs <http://isni.org/isni/0000000403850924> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5312721> ;
+             .

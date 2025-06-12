@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/030v5kp38> 
+    a org:Organization ;
+    rdfs:label "University Hospital of North Norway" ;
+    schema:name "University Hospital of North Norway" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/University_Hospital_of_North_Norway> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00vbqcv97> ;
+        rdfs:label "Narvik Sykehus" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05f6c0c45> ;
+        rdfs:label "Northern Norway Regional Health Authority" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(18.95508 69.6489)"^^geo:wktLiteral ;
+        schema:addressLocality "Tromsø" ;
+    ] ;
+    schema:url <http://www.unn.no/?lang=en_US> ;
+    schema:sameAs <http://isni.org/isni/0000000446895540> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4586373> ;
+             .

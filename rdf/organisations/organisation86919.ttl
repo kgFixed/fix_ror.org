@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01mhgwt57> 
+    a org:Organization ;
+    rdfs:label "Eastern Connecticut State University" ;
+    schema:name "Eastern Connecticut State University" ;
+    schema:foundingDate "1889"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Eastern_Connecticut_State_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03vr22992> ;
+        rdfs:label "Connecticut State Colleges and Universities" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-72.20813 41.71065)"^^geo:wktLiteral ;
+        schema:addressLocality "Willimantic" ;
+    ] ;
+    schema:url <http://www.easternct.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000107039539> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1278152> ;
+             .

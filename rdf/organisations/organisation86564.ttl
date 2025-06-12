@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03tgsfw79> 
+    a org:Organization ;
+    rdfs:label "Kobe University" ;
+    schema:name "Kobe University" ;
+    schema:foundingDate "1949"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Kobe_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00bb55562> ;
+        rdfs:label "Kobe University Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(135.183 34.6913)"^^geo:wktLiteral ;
+        schema:addressLocality "Kobe" ;
+    ] ;
+    schema:url <http://www.kobe-u.ac.jp/en/alumni/index.html> ;
+    schema:sameAs <http://isni.org/isni/0000000110923077> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1192597> ;
+             .

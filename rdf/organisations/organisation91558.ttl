@@ -1,0 +1,277 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/021wm7p51> 
+    a org:Organization ;
+    rdfs:label "Council of Scientific and Industrial Research" ;
+    schema:name "Council of Scientific and Industrial Research" ;
+    schema:foundingDate "1942"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Council_of_Scientific_and_Industrial_Research> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02x351n42> ;
+        rdfs:label "Advanced Materials and Processes Research Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03gjr0792> ;
+        rdfs:label "Central Building Research Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04t8qjg16> ;
+        rdfs:label "Central Drug Research Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01qek3q18> ;
+        rdfs:label "Central Electrochemical Research Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01hh45364> ;
+        rdfs:label "Central Electronics Engineering Research Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01d7fn555> ;
+        rdfs:label "Central Food Technological Research Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/039d1mp60> ;
+        rdfs:label "Central Glass and Ceramic Research Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0527mfk98> ;
+        rdfs:label "Central Institute of Medicinal and Aromatic Plants" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03vkfy293> ;
+        rdfs:label "Central Institute of Mining and Fuel Research" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02kp7p620> ;
+        rdfs:label "Central Leather Research Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/059h0ng81> ;
+        rdfs:label "Central Mechanical Engineering Research Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01pdb1x94> ;
+        rdfs:label "Central Road Research Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05esh5w42> ;
+        rdfs:label "Central Salt and Marine Chemicals Research Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04bfs6764> ;
+        rdfs:label "Central Scientific Instruments Organisation" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05shq4n12> ;
+        rdfs:label "Centre for Cellular and Molecular Biology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03n73vq73> ;
+        rdfs:label "Fourth Paradigm Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0577j0g35> ;
+        rdfs:label "Human Resource Development Group" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01kh0x418> ;
+        rdfs:label "Indian Institute of Chemical Biology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/040dky007> ;
+        rdfs:label "Indian Institute of Chemical Technology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01zw2nq07> ;
+        rdfs:label "Indian Institute of Integrative Medicine" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04gavx394> ;
+        rdfs:label "Indian Institute of Petroleum" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01e70mw69> ;
+        rdfs:label "Indian Institute of Toxicology Research" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05ef28661> ;
+        rdfs:label "Institute of Genomics and Integrative Biology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03xcn0p72> ;
+        rdfs:label "Institute of Himalayan Bioresource Technology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/055rjs771> ;
+        rdfs:label "Institute of Microbial Technology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01g7qth32> ;
+        rdfs:label "Institute of Minerals and Materials Technology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/057wr4y62> ;
+        rdfs:label "National Aerospace Laboratories" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/036568k33> ;
+        rdfs:label "National Botanical Research Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/057mn3690> ;
+        rdfs:label "National Chemical Laboratory" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/021r5ns39> ;
+        rdfs:label "National Environmental Engineering Research Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03dy10t98> ;
+        rdfs:label "National Geophysical Research Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05bkc5375> ;
+        rdfs:label "National Institute for Interdisciplinary Science and Technology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01gvkyp03> ;
+        rdfs:label "National Institute of Oceanography" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04v5nnm54> ;
+        rdfs:label "National Institute of Science Communication and Information Resources" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02zm5j810> ;
+        rdfs:label "National Institute of Science, Technology and Development Studies" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0211zmf46> ;
+        rdfs:label "National Metallurgical Laboratory" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0307k1x46> ;
+        rdfs:label "CSIR National Physical Laboratory of India" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02p8nt844> ;
+        rdfs:label "North East Institute of Science and Technology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05pvypf90> ;
+        rdfs:label "Open Source Drug Discovery" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00pyevk91> ;
+        rdfs:label "Structural Engineering Research Centre" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0374spr83> ;
+        rdfs:label "Unit for Research and Development of Information Products" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03emtbt60> ;
+        rdfs:label "Ministry of Science and Technology" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(77.2148 28.62137)"^^geo:wktLiteral ;
+        schema:addressLocality "New Delhi" ;
+    ] ;
+    schema:url <http://www.csir.res.in/> ;
+    schema:sameAs <http://isni.org/isni/0000000121548655> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3519967> ;
+             .

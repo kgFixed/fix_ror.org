@@ -1,0 +1,78 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/056naxb15> 
+    a org:Organization ;
+    rdfs:label "Department of Industry, Science, Energy and Resources" ;
+    schema:name "Department of Industry, Science, Energy and Resources" ;
+    schema:foundingDate "2015"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Department_of_Industry,_Innovation_and_Science> ;
+    org:status "inactive" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03x57gn41> ;
+        rdfs:label "Australian Institute of Marine Science" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00ak1t323> ;
+        rdfs:label "Australian National Low Emissions Coal Research and Development" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05j7fep28> ;
+        rdfs:label "Australian Nuclear Science and Technology Organisation" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03qn8fb07> ;
+        rdfs:label "Commonwealth Scientific and Industrial Research Organisation" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04ge02x20> ;
+        rdfs:label "Geoscience Australia" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/014vqg108> ;
+        rdfs:label "IP Australia" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03be3fb73> ;
+        rdfs:label "National Measurement Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0314h5y94> ;
+        rdfs:label "Australian Government" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/021z9m619> ;
+        rdfs:label "Department of Industry, Science and Resources" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(149.12807 -35.28346)"^^geo:wktLiteral ;
+        schema:addressLocality "Canberra" ;
+    ] ;
+    schema:url <https://www.industry.gov.au/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q19872849> ;
+             .

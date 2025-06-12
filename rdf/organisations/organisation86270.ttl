@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05nywn832> 
+    a org:Organization ;
+    rdfs:label "Leibniz Institute for Zoo and Wildlife Research" ;
+    schema:name "Leibniz Institute for Zoo and Wildlife Research" ;
+    schema:foundingDate "1973"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01n6r0e97> ;
+        rdfs:label "Leibniz Association" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(13.41053 52.52437)"^^geo:wktLiteral ;
+        schema:addressLocality "Berlin" ;
+    ] ;
+    schema:url <http://www.izw-berlin.de/welcome.html> ;
+    schema:sameAs <http://isni.org/isni/0000000107080355> ;
+             .

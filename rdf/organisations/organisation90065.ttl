@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04wg6sh66> 
+    a org:Organization ;
+    rdfs:label "Kyoto Sosei University" ;
+    schema:name "Kyoto Sosei University" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Kyoto_Sosei_University> ;
+    org:status "withdrawn" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/04w7k2121> ;
+        rdfs:label "University of Fukuchiyama" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(135.11667 35.3)"^^geo:wktLiteral ;
+        schema:addressLocality "Fukuchiyama" ;
+    ] ;
+    schema:url <https://www.fukuchiyama.ac.jp> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q15240986> ;
+             .

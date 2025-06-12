@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02hgzc508> 
+    a org:Organization ;
+    rdfs:label "Centro de Investigación y Asistencia en Tecnología y Diseño del Estado de Jalisco" ;
+    schema:name "Centro de Investigación y Asistencia en Tecnología y Diseño del Estado de Jalisco" ;
+    schema:foundingDate "1978"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/059ex5q34> ;
+        rdfs:label "Consejo Nacional de Humanidades, Ciencias y Tecnologías" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-103.39182 20.66682)"^^geo:wktLiteral ;
+        schema:addressLocality "Guadalajara" ;
+    ] ;
+    schema:url <https://www.ciatej.mx> ;
+    schema:sameAs <http://isni.org/isni/0000000086085893> ;
+             .

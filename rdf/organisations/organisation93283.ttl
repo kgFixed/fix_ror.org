@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02en7nd34> 
+    a org:Organization ;
+    rdfs:label "Tokyo Metropolitan Tama-Hokubu Medical Center" ;
+    schema:name "Tokyo Metropolitan Tama-Hokubu Medical Center" ;
+    schema:foundingDate "2005"^^xsd:gYear ;
+    schema:sameAs <https://ja.wikipedia.org/wiki/東京都立多摩北部医療センター> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04c3ebg91> ;
+        rdfs:label "Tokyo Metropolitan Tama Medical Center" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(139.46852 35.75459)"^^geo:wktLiteral ;
+        schema:addressLocality "Higashimurayama" ;
+    ] ;
+    schema:url <https://www.tmhp.jp/tamahoku/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q11525248> ;
+             .

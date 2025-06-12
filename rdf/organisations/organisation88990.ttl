@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/030atj633> 
+    a org:Organization ;
+    rdfs:label "Ministry of Health" ;
+    schema:name "Ministry of Health" ;
+    schema:foundingDate "1950"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Ministry_of_Health_(Saudi_Arabia)> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00zszzj16> ;
+        rdfs:label "Al Amal Hospital Jeddah" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01k7e4s32> ;
+        rdfs:label "Prince Sultan Military College of Health Sciences" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(46.72185 24.68773)"^^geo:wktLiteral ;
+        schema:addressLocality "Riyadh" ;
+    ] ;
+    schema:url <http://www.moh.gov.sa/en/Pages/Sitemap.aspx> ;
+    schema:sameAs <http://isni.org/isni/0000000405739824> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1720084> ;
+             .

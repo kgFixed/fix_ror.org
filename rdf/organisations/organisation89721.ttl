@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00ygpk854> 
+    a org:Organization ;
+    rdfs:label "Antiquities, Monuments and Museums Corporation" ;
+    schema:name "Antiquities, Monuments and Museums Corporation" ;
+    org:status "withdrawn" ;
+    org:classification "Archive" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/00cw8st45> ;
+        rdfs:label "Antiquities, Monuments and Museum Corporation" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.34306 25.05823)"^^geo:wktLiteral ;
+        schema:addressLocality "Nassau" ;
+    ] ;
+    schema:url <http://www.ammcbahamas.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000472215975> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q55454071> ;
+             .
