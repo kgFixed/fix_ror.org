@@ -1,0 +1,33 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04damed73> 
+    a org:Organization ;
+    rdfs:label "Laboratoire des Systèmes Mécaniques et d'Ingénierie Simultanée" ;
+    schema:name "Laboratoire des Systèmes Mécaniques et d'Ingénierie Simultanée" ;
+    schema:foundingDate "1994"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01tz1zp46> ;
+        rdfs:label "Délégation Centre-Est" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01qhqcj41> ;
+        rdfs:label "Université de Technologie de Troyes" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(4.08524 48.30073)"^^geo:wktLiteral ;
+        schema:addressLocality "Troyes" ;
+    ] ;
+    schema:url <https://recherche.utt.fr/laboratory-of-mechanical-material-engineering> ;
+     .

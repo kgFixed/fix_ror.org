@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05p299b07> 
+    a org:Organization ;
+    rdfs:label "Instituto Tecnológico Superior de Los Reyes" ;
+    schema:name "Instituto Tecnológico Superior de Los Reyes" ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00davry38> ;
+        rdfs:label "Tecnológico Nacional de México" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-101.57463 19.04472)"^^geo:wktLiteral ;
+        schema:addressLocality "Los Reyes" ;
+    ] ;
+    schema:url <https://itslr.edu.mx/2013/> ;
+    schema:sameAs <http://isni.org/isni/0000000417701292> ;
+             .

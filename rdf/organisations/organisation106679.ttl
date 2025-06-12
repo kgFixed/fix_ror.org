@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/015jxh185> 
+    a org:Organization ;
+    rdfs:label "Liaquat University of Medical & Health Sciences" ;
+    schema:name "Liaquat University of Medical & Health Sciences" ;
+    schema:foundingDate "1881"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Liaquat_University_of_Medical_and_Health_Sciences> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01d692d57> ;
+        rdfs:label "University of Sindh" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04b786w92> ;
+        rdfs:label "Bilawal Medical College" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(68.28017 25.43608)"^^geo:wktLiteral ;
+        schema:addressLocality "Jamshoro" ;
+    ] ;
+    schema:url <https://www.lumhs.edu.pk/home> ;
+    schema:sameAs <http://isni.org/isni/0000000086890294> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6540200> ;
+             .

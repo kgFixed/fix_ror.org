@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/043wmc583> 
+    a org:Organization ;
+    rdfs:label "Institut de Génomique Fonctionnelle" ;
+    schema:name "Institut de Génomique Fonctionnelle" ;
+    schema:foundingDate "2005"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00ts9pr54> ;
+        rdfs:label "Montpellier GenomiX" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02vjkv261> ;
+        rdfs:label "Inserm" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00rydyx93> ;
+        rdfs:label "Institut des Sciences Biologiques" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/051escj72> ;
+        rdfs:label "Université de Montpellier" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(3.87635 43.61093)"^^geo:wktLiteral ;
+        schema:addressLocality "Montpellier" ;
+    ] ;
+    schema:url <https://www.igf.cnrs.fr> ;
+    schema:sameAs <http://isni.org/isni/0000000403832080> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30261344> ;
+             .

@@ -1,0 +1,46 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0535cbn94> 
+    a org:Organization ;
+    rdfs:label "Systèmes Moléculaires et nanoMatériaux pour l'Énergie et la Santé" ;
+    schema:name "Systèmes Moléculaires et nanoMatériaux pour l'Énergie et la Santé" ;
+    schema:foundingDate "2008"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02rx3b187> ;
+        rdfs:label "Université Grenoble Alpes" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00jjx8s55> ;
+        rdfs:label "Commissariat à l'Énergie Atomique et aux Énergies Alternatives" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02feahw73> ;
+        rdfs:label "Centre National de la Recherche Scientifique" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00byxdz40> ;
+        rdfs:label "Institut de Recherche Interdisciplinaire de Grenoble" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(5.71479 45.17869)"^^geo:wktLiteral ;
+        schema:addressLocality "Grenoble" ;
+    ] ;
+    schema:url <https://www.symmes.fr> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30262431> ;
+             .

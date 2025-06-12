@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03rjwv512> 
+    a org:Organization ;
+    rdfs:label "Sener (Spain)" ;
+    schema:name "Sener (Spain)" ;
+    schema:foundingDate "1956"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/SENER> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-3.01146 43.35689)"^^geo:wktLiteral ;
+        schema:addressLocality "Getxo" ;
+    ] ;
+    schema:url <http://www.ingenieriayconstruccion.sener/es/home> ;
+    schema:sameAs <http://isni.org/isni/0000000417786011> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5798323> ;
+             .

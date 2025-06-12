@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02mkvtw30> 
+    a org:Organization ;
+    rdfs:label "Brooklyn Perinatal Network" ;
+    schema:name "Brooklyn Perinatal Network" ;
+    schema:foundingDate "1988"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-73.94958 40.6501)"^^geo:wktLiteral ;
+        schema:addressLocality "Brooklyn" ;
+    ] ;
+    schema:url <https://www.bpnetwork.org/nyc/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q33121981> ;
+             .

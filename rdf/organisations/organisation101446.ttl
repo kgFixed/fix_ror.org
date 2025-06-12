@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05r7z1k40> 
+    a org:Organization ;
+    rdfs:label "NOAA National Marine Fisheries Service Northwest Fisheries Science Center" ;
+    schema:name "NOAA National Marine Fisheries Service Northwest Fisheries Science Center" ;
+    schema:foundingDate "2000"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Funder" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/033mqx355> ;
+        rdfs:label "NOAA National Marine Fisheries Service" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02nc0ck44> ;
+        rdfs:label "NOAA National Marine Fisheries Service Northeast Fisheries Science Center" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-122.33207 47.60621)"^^geo:wktLiteral ;
+        schema:addressLocality "Seattle" ;
+    ] ;
+    schema:url <http://www.nwfsc.noaa.gov/> ;
+    schema:sameAs <http://isni.org/isni/0000000115029269> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30282379> ;
+             .

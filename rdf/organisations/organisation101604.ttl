@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05q5rnr22> 
+    a org:Organization ;
+    rdfs:label "Sekolah Tinggi Olahraga dan Kesehatan Bina Guna" ;
+    schema:name "Sekolah Tinggi Olahraga dan Kesehatan Bina Guna" ;
+    schema:foundingDate "1975"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(98.66667 3.58333)"^^geo:wktLiteral ;
+        schema:addressLocality "Medan" ;
+    ] ;
+    schema:url <https://stok-binaguna.ac.id> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q105626436> ;
+             .

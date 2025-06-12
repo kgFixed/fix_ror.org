@@ -1,0 +1,40 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00vctdx48> 
+    a org:Organization ;
+    rdfs:label "Théorie Économique, Modélisation et Applications" ;
+    schema:name "Théorie Économique, Modélisation et Applications" ;
+    schema:foundingDate "2006"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/043htjv09> ;
+        rdfs:label "CY Cergy Paris Université" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04b0z7q78> ;
+        rdfs:label "Institut des Sciences Humaines et Sociales" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02dga6j42> ;
+        rdfs:label "École Supérieure des Sciences Économiques et Commerciales" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.07805 49.03894)"^^geo:wktLiteral ;
+        schema:addressLocality "Cergy-Pontoise" ;
+    ] ;
+    schema:url <http://thema.u-cergy.fr/?lang=en> ;
+    schema:sameAs <http://isni.org/isni/0000000403683206> ;
+             .

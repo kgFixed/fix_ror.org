@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02rkvz144> 
+    a org:Organization ;
+    rdfs:label "Northeast Normal University" ;
+    schema:name "Northeast Normal University" ;
+    schema:foundingDate "1946"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Northeast_Normal_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(125.32278 43.88)"^^geo:wktLiteral ;
+        schema:addressLocality "Changchun" ;
+    ] ;
+    schema:url <https://www.nenu.edu.cn> ;
+    schema:sameAs <http://isni.org/isni/0000000417899163> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4393424> ;
+             .

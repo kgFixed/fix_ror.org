@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02nxphm19> 
+    a org:Organization ;
+    rdfs:label "Instituto de Investigação e Formação Avançada em Ciências e Tecnologias da Saúde" ;
+    schema:name "Instituto de Investigação e Formação Avançada em Ciências e Tecnologias da Saúde" ;
+    schema:sameAs <https://pt.wikipedia.org/wiki/Instituto_Universit%C3%A1rio_de_Ci%C3%AAncias_da_Sa%C3%BAde> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00w7bj245> ;
+        rdfs:label "Cooperativa de Ensino Superior Politécnico e Universitário" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-8.43376 41.20116)"^^geo:wktLiteral ;
+        schema:addressLocality "Gandra" ;
+    ] ;
+    schema:url <https://iinfacts.cespu.pt> ;
+    schema:sameAs <http://isni.org/isni/0000000463638220> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q125510947> ;
+             .

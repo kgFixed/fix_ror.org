@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04j6ccm70> 
+    a org:Organization ;
+    rdfs:label "Centro Hospitalar Póvoa de Varzim Vila do Conde EPE" ;
+    schema:name "Centro Hospitalar Póvoa de Varzim Vila do Conde EPE" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03qw6qj17> ;
+        rdfs:label "Administração Regional De Saude Do Centro" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-8.76364 41.38344)"^^geo:wktLiteral ;
+        schema:addressLocality "Póvoa de Varzim" ;
+    ] ;
+    schema:url <https://chpvvc.pt> ;
+    schema:sameAs <http://isni.org/isni/0000000459141086> ;
+             .

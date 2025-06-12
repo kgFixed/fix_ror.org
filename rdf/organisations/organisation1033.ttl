@@ -1,0 +1,40 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03n2ay196> 
+    a org:Organization ;
+    rdfs:label "South Texas Veterans Health Care System" ;
+    schema:name "South Texas Veterans Health Care System" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/035xhk118> ;
+        rdfs:label "Audie L. Murphy Memorial VA Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03c46dy37> ;
+        rdfs:label "Kerrville VA Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0527v1v90> ;
+        rdfs:label "VA Heart of Texas Health Care Network" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-98.49363 29.42412)"^^geo:wktLiteral ;
+        schema:addressLocality "San Antonio" ;
+    ] ;
+    schema:url <http://www.southtexas.va.gov/> ;
+    schema:sameAs <http://isni.org/isni/0000000404205695> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30253374> ;
+             .

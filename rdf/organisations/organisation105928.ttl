@@ -1,0 +1,73 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05gvnxz63> 
+    a org:Organization ;
+    rdfs:label "Argonne National Laboratory" ;
+    schema:name "Argonne National Laboratory" ;
+    schema:foundingDate "1946"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Argonne_National_Laboratory> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/004x7d471> ;
+        rdfs:label "Center for Light Energy Activated Redox Processes" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04qxsr837> ;
+        rdfs:label "Advanced Photon Source" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01svjdw65> ;
+        rdfs:label "Argonne Leadership Computing Facility" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04b15va38> ;
+        rdfs:label "Argonne Tandem Linac Accelerator System" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/045ybte48> ;
+        rdfs:label "Center for Nanoscale Materials" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/024mw5h28> ;
+        rdfs:label "University of Chicago" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00mmn6b08> ;
+        rdfs:label "Office of Science" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01dvj3d25> ;
+        rdfs:label "Atmospheric Radiation Measurement User Facility" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-88.00173 41.67364)"^^geo:wktLiteral ;
+        schema:addressLocality "Lemont" ;
+    ] ;
+    schema:url <https://www.anl.gov> ;
+    schema:sameAs <http://isni.org/isni/0000000119394845> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q649120> ;
+             .

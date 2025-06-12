@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00s7tkw17> 
+    a org:Organization ;
+    rdfs:label "Minjiang University" ;
+    schema:name "Minjiang University" ;
+    schema:foundingDate "2002"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Minjiang_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02p34hm58> ;
+        rdfs:label "Fuzhou Melbourne Polytechnic" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(119.30611 26.06139)"^^geo:wktLiteral ;
+        schema:addressLocality "Fuzhou" ;
+    ] ;
+    schema:url <https://www.mju.edu.cn> ;
+    schema:sameAs <http://isni.org/isni/0000000417643555> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6867765> ;
+             .

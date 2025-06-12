@@ -1,0 +1,33 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01zk01k31> 
+    a org:Organization ;
+    rdfs:label "City of Portsmouth College" ;
+    schema:name "City of Portsmouth College" ;
+    schema:foundingDate "2021"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Predecessor" ;
+        org:member <https://ror.org/01zz9ka42> ;
+        rdfs:label "Highbury College" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Predecessor" ;
+        org:member <https://ror.org/05gdfay69> ;
+        rdfs:label "Portsmouth College" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.09125 50.79899)"^^geo:wktLiteral ;
+        schema:addressLocality "Portsmouth" ;
+    ] ;
+    schema:url <https://www.city-of-portsmouth-college.ac.uk> ;
+     .

@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03ham0v36> 
+    a org:Organization ;
+    rdfs:label "Etnografski institut Srpske akademije nauka i umetnosti" ;
+    schema:name "Etnografski institut Srpske akademije nauka i umetnosti" ;
+    schema:foundingDate "1947"^^xsd:gYear ;
+    schema:sameAs <https://sh.wikipedia.org/wiki/Etnografski_institut_SANU> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05m1y4204> ;
+        rdfs:label "Serbian Academy of Sciences and Arts" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(20.46513 44.80401)"^^geo:wktLiteral ;
+        schema:addressLocality "Belgrade" ;
+    ] ;
+    schema:url <https://etno-institut.co.rs> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q52636822> ;
+             .

@@ -1,0 +1,48 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01jy49h31> 
+    a org:Organization ;
+    rdfs:label "Autoliv (Sweden)" ;
+    schema:name "Autoliv (Sweden)" ;
+    schema:foundingDate "1997"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Autoliv> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03bvw9k90> ;
+        rdfs:label "Autoliv (Germany)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02s39fg77> ;
+        rdfs:label "Autoliv (Japan)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/053cetp63> ;
+        rdfs:label "Autoliv (United Kingdom)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02rc7rz93> ;
+        rdfs:label "Autoliv (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(18.06871 59.32938)"^^geo:wktLiteral ;
+        schema:addressLocality "Stockholm" ;
+    ] ;
+    schema:url <https://www.autoliv.com/> ;
+    schema:sameAs <http://isni.org/isni/000000040618367X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q787044> ;
+             .

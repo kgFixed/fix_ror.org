@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/014zxnz40> 
+    a org:Organization ;
+    rdfs:label "Gheorghe Asachi Technical University of Iași" ;
+    schema:name "Gheorghe Asachi Technical University of Iași" ;
+    schema:foundingDate "1937"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Gheorghe_Asachi_Technical_University_of_Ia%C8%99i> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(27.6 47.16667)"^^geo:wktLiteral ;
+        schema:addressLocality "Iasi" ;
+    ] ;
+    schema:url <https://www.tuiasi.ro> ;
+    schema:sameAs <http://isni.org/isni/0000000406097501> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q458666> ;
+             .

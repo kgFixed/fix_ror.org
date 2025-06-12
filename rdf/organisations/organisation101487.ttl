@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0209mnq24> 
+    a org:Organization ;
+    rdfs:label "Technological and Higher Education Institute of Hong Kong" ;
+    schema:name "Technological and Higher Education Institute of Hong Kong" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Technological_and_Higher_Education_Institute_of_Hong_Kong> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(114.24051 22.26718)"^^geo:wktLiteral ;
+        schema:addressLocality "Chai Wan" ;
+    ] ;
+    schema:url <https://www.thei.edu.hk> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q15921549> ;
+             .

@@ -1,0 +1,35 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05cm0es58> 
+    a org:Organization ;
+    rdfs:label "Bayer (France)" ;
+    schema:name "Bayer (France)" ;
+    schema:foundingDate "1863"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Bayer> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03p3f6k20> ;
+        rdfs:label "Laboratoire de Microbiologie, Adaptation et Pathogénie" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04hmn8g73> ;
+        rdfs:label "Bayer (Germany)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(4.84671 45.74846)"^^geo:wktLiteral ;
+        schema:addressLocality "Lyon" ;
+    ] ;
+    schema:url <https://www.bayer.fr/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30284630> ;
+             .

@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01d981710> 
+    a org:Organization ;
+    rdfs:label "Technological University of Pereira" ;
+    schema:name "Technological University of Pereira" ;
+    schema:foundingDate "1958"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Technological_University_of_Pereira> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-75.69611 4.81333)"^^geo:wktLiteral ;
+        schema:addressLocality "Pereira" ;
+    ] ;
+    schema:url <https://www.utp.edu.co> ;
+    schema:sameAs <http://isni.org/isni/0000000121761069> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2441962> ;
+             .

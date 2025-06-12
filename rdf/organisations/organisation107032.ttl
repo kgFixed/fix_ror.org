@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0526p1y61> 
+    a org:Organization ;
+    rdfs:label "Oak Ridge Associated Universities" ;
+    schema:name "Oak Ridge Associated Universities" ;
+    schema:foundingDate "1946"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Oak_Ridge_Associated_Universities> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/040vxhp34> ;
+        rdfs:label "Oak Ridge Institute for Science and Education" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-84.26964 36.01036)"^^geo:wktLiteral ;
+        schema:addressLocality "Oak Ridge" ;
+    ] ;
+    schema:url <https://www.orau.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000110139784> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5583848> ;
+             .

@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00z0kq074> 
+    a org:Organization ;
+    rdfs:label "Universidad Michoacana de San Nicolás de Hidalgo" ;
+    schema:name "Universidad Michoacana de San Nicolás de Hidalgo" ;
+    schema:foundingDate "1540"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Universidad_Michoacana_de_San_Nicol%C3%A1s_de_Hidalgo> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-101.18443 19.70078)"^^geo:wktLiteral ;
+        schema:addressLocality "Morelia" ;
+    ] ;
+    schema:url <https://www.umich.mx> ;
+    schema:sameAs <http://isni.org/isni/000000008796243X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1631821> ;
+             .

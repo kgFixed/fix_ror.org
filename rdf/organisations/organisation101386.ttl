@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03r7e7711> 
+    a org:Organization ;
+    rdfs:label "Musée du Louvre-Lens" ;
+    schema:name "Musée du Louvre-Lens" ;
+    schema:foundingDate "2010"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Louvre-Lens> ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05k441034> ;
+        rdfs:label "Louvre" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.8331 50.4315)"^^geo:wktLiteral ;
+        schema:addressLocality "Lens" ;
+    ] ;
+    schema:url <https://www.louvrelens.fr> ;
+    schema:sameAs <http://isni.org/isni/0000000494703320> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q405543> ;
+             .

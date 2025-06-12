@@ -1,0 +1,48 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0065vkd37> 
+    a org:Organization ;
+    rdfs:label "Brookdale University Hospital and Medical Center" ;
+    schema:name "Brookdale University Hospital and Medical Center" ;
+    schema:foundingDate "1921"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Brookdale_University_Hospital_and_Medical_Center> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01bghzb51> ;
+        rdfs:label "New York Institute of Technology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03dkvy735> ;
+        rdfs:label "New York Medical College" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0190ak572> ;
+        rdfs:label "New York University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0041qmd21> ;
+        rdfs:label "SUNY Downstate Health Sciences University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-73.94958 40.6501)"^^geo:wktLiteral ;
+        schema:addressLocality "Brooklyn" ;
+    ] ;
+    schema:url <http://www.brookdalehospital.org/home.html> ;
+    schema:sameAs <http://isni.org/isni/0000000403812434> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4974388> ;
+             .

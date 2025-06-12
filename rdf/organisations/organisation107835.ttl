@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04grrp271> 
+    a org:Organization ;
+    rdfs:label "Ziekenhuis Groep Twente" ;
+    schema:name "Ziekenhuis Groep Twente" ;
+    schema:foundingDate "1998"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(6.6625 52.35667)"^^geo:wktLiteral ;
+        schema:addressLocality "Almelo" ;
+    ] ;
+    schema:url <https://www.zgt.nl/> ;
+    schema:sameAs <http://isni.org/isni/0000000405020983> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2218121> ;
+             .

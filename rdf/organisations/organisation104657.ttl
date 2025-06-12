@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04n1me355> 
+    a org:Organization ;
+    rdfs:label "Claremont McKenna College" ;
+    schema:name "Claremont McKenna College" ;
+    schema:foundingDate "1946"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Claremont_McKenna_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05sy8gb82> ;
+        rdfs:label "W.M. Keck Science Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03xaz7s88> ;
+        rdfs:label "Claremont Colleges" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-117.71978 34.09668)"^^geo:wktLiteral ;
+        schema:addressLocality "Claremont" ;
+    ] ;
+    schema:url <https://www.cmc.edu> ;
+    schema:sameAs <http://isni.org/isni/0000000088378454> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5126318> ;
+             .

@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04dt46w81> 
+    a org:Organization ;
+    rdfs:label "University of Evansville" ;
+    schema:name "University of Evansville" ;
+    schema:foundingDate "1854"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/University_of_Evansville> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05w72d176> ;
+        rdfs:label "The People of the United Methodist Church" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-87.55585 37.97476)"^^geo:wktLiteral ;
+        schema:addressLocality "Evansville" ;
+    ] ;
+    schema:url <https://www.evansville.edu> ;
+    schema:sameAs <http://isni.org/isni/0000000404004535> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4026988> ;
+             .

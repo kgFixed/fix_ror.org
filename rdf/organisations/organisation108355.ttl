@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04xqwq985> 
+    a org:Organization ;
+    rdfs:label "Inje University" ;
+    schema:name "Inje University" ;
+    schema:foundingDate "1979"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Inje_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01pzf6r50> ;
+        rdfs:label "Inje University Busan Paik Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/019641589> ;
+        rdfs:label "Inje University Haeundae Paik Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01zx5ww52> ;
+        rdfs:label "Inje University Ilsan Paik Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/027j9rp38> ;
+        rdfs:label "Inje University Sanggye Paik Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05we5gj17> ;
+        rdfs:label "Inje University Seoul Paik Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(128.88111 35.23417)"^^geo:wktLiteral ;
+        schema:addressLocality "Gimhae" ;
+    ] ;
+    schema:url <https://www.inje.ac.kr/kor/main/main.asp> ;
+    schema:sameAs <http://isni.org/isni/0000000404705112> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q482659> ;
+             .

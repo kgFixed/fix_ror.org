@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03qt6ba18> 
+    a org:Organization ;
+    rdfs:label "Georgia State University" ;
+    schema:name "Georgia State University" ;
+    schema:foundingDate "1913"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Georgia_State_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02qx6zf82> ;
+        rdfs:label "Center for Translational Research in Neuroimaging and Data Science" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/017wcm924> ;
+        rdfs:label "University System of Georgia" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-84.38798 33.749)"^^geo:wktLiteral ;
+        schema:addressLocality "Atlanta" ;
+    ] ;
+    schema:url <https://www.gsu.edu> ;
+    schema:sameAs <http://isni.org/isni/0000000419367400> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1509333> ;
+             .

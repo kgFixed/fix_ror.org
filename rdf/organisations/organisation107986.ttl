@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03vdm5c68> 
+    a org:Organization ;
+    rdfs:label "Texas Wesleyan University" ;
+    schema:name "Texas Wesleyan University" ;
+    schema:foundingDate "1890"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Texas_Wesleyan_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-97.32085 32.72541)"^^geo:wktLiteral ;
+        schema:addressLocality "Fort Worth" ;
+    ] ;
+    schema:url <https://txwes.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000099682515> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7708205> ;
+             .

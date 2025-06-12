@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/033c46s90> 
+    a org:Organization ;
+    rdfs:label "Université Européenne de Bretagne" ;
+    schema:name "Université Européenne de Bretagne" ;
+    schema:foundingDate "2007"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/European_University_of_Brittany> ;
+    org:status "inactive" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.67429 48.11198)"^^geo:wktLiteral ;
+        schema:addressLocality "Rennes" ;
+    ] ;
+    schema:url <http://www.ueb.eu/versionAnglaiseV2/> ;
+    schema:sameAs <http://isni.org/isni/000000012359716X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3551779> ;
+             .

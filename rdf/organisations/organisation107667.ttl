@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05fzhrv79> 
+    a org:Organization ;
+    rdfs:label "Lupane State University" ;
+    schema:name "Lupane State University" ;
+    schema:foundingDate "2005"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Lupane_State_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04y0q2a96> ;
+        rdfs:label "Zimbabwe University Libraries Consortium" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(28.58333 -20.15)"^^geo:wktLiteral ;
+        schema:addressLocality "Bulawayo" ;
+    ] ;
+    schema:url <https://lsu.ac.zw> ;
+    schema:sameAs <http://isni.org/isni/0000000406484683> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6704659> ;
+             .

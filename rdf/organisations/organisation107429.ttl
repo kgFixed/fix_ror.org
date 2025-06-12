@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0109yf692> 
+    a org:Organization ;
+    rdfs:label "Bursa Metropolitan Municipality" ;
+    schema:name "Bursa Metropolitan Municipality" ;
+    schema:foundingDate "1987"^^xsd:gYear ;
+    schema:sameAs <https://tr.wikipedia.org/wiki/Bursa_B%C3%BCy%C3%BCk%C5%9Fehir_Belediyesi> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(29.15672 40.14201)"^^geo:wktLiteral ;
+        schema:addressLocality "Bursa Province" ;
+    ] ;
+    schema:url <https://www.bursa.bel.tr> ;
+    schema:sameAs <http://isni.org/isni/000000010719773X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q28528543> ;
+             .

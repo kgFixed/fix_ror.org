@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0080fxk18> 
+    a org:Organization ;
+    rdfs:label "California State University, Long Beach" ;
+    schema:name "California State University, Long Beach" ;
+    schema:foundingDate "1949"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/California_State_University,_Long_Beach> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0230s3k26> ;
+        rdfs:label "METRANS Transportation Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/020qm1538> ;
+        rdfs:label "California State University System" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/058p1kn93> ;
+        rdfs:label "VA Long Beach Healthcare System" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-118.18923 33.76696)"^^geo:wktLiteral ;
+        schema:addressLocality "Long Beach" ;
+    ] ;
+    schema:url <https://www.csulb.edu> ;
+    schema:sameAs <http://isni.org/isni/0000000090936830> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1026926> ;
+             .

@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/016gb1631> 
+    a org:Organization ;
+    rdfs:label "HUN-REN Szegedi Biológiai Kutatóközpont" ;
+    schema:name "HUN-REN Szegedi Biológiai Kutatóközpont" ;
+    schema:foundingDate "1971"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Biological_Research_Centre_(Hungarian_Academy_of_Sciences)> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/022dvs210> ;
+        rdfs:label "Institute of Biochemistry" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/038synb39> ;
+        rdfs:label "Institute of Biophysics" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04tjemt46> ;
+        rdfs:label "Institute of Genetics" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/039h1gd08> ;
+        rdfs:label "Institute of Plant Biology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02ks8qq67> ;
+        rdfs:label "Hungarian Academy of Sciences" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(20.14824 46.253)"^^geo:wktLiteral ;
+        schema:addressLocality "Szeged" ;
+    ] ;
+    schema:url <https://www.brc.hu> ;
+    schema:sameAs <http://isni.org/isni/0000000121959606> ;
+            schema:sameAs <http://isni.org/isni/0000000406209788> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4914963> ;
+             .

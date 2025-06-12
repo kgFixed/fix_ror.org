@@ -1,0 +1,34 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03ab0zs98> 
+    a org:Organization ;
+    rdfs:label "Laboratoire de Mathématiques d'Orsay" ;
+    schema:name "Laboratoire de Mathématiques d'Orsay" ;
+    schema:foundingDate "1998"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03xjwb503> ;
+        rdfs:label "Université Paris-Saclay" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02feahw73> ;
+        rdfs:label "Centre National de la Recherche Scientifique" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.18727 48.69572)"^^geo:wktLiteral ;
+        schema:addressLocality "Orsay" ;
+    ] ;
+    schema:url <https://www.imo.universite-paris-saclay.fr> ;
+    schema:sameAs <http://isni.org/isni/0000000403689704> ;
+             .

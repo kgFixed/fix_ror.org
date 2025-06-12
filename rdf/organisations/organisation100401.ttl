@@ -1,0 +1,61 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/059be4e97> 
+    a org:Organization ;
+    rdfs:label "NXP (Netherlands)" ;
+    schema:name "NXP (Netherlands)" ;
+    schema:foundingDate "2006"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/NXP_Semiconductors> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/031v4g827> ;
+        rdfs:label "NXP (Belgium)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05h1ve754> ;
+        rdfs:label "NXP (Czechia)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0268h4j55> ;
+        rdfs:label "NXP (Germany)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/017m4b809> ;
+        rdfs:label "NXP (United Kingdom)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/054fc6480> ;
+        rdfs:label "NXP (United States)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02vas3094> ;
+        rdfs:label "NXP (France)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(5.47778 51.44083)"^^geo:wktLiteral ;
+        schema:addressLocality "Eindhoven" ;
+    ] ;
+    schema:url <http://www.nxp.com/> ;
+    schema:sameAs <http://isni.org/isni/000000009562545X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1155668> ;
+             .

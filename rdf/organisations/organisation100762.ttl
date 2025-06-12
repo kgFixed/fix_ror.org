@@ -1,0 +1,35 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/023xgd207> 
+    a org:Organization ;
+    rdfs:label "Hôpital Lyon Sud" ;
+    schema:name "Hôpital Lyon Sud" ;
+    schema:foundingDate "1867"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01502ca60> ;
+        rdfs:label "Hospices Civils de Lyon" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/029brtt94> ;
+        rdfs:label "Université Claude Bernard Lyon 1" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(4.82424 45.70359)"^^geo:wktLiteral ;
+        schema:addressLocality "Pierre-Bénite" ;
+    ] ;
+    schema:url <https://www.chu-lyon.fr/hopital-lyon-sud> ;
+    schema:sameAs <http://isni.org/isni/0000000102882594> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2945675> ;
+             .

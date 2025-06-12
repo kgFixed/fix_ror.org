@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03cnttr74> 
+    a org:Organization ;
+    rdfs:label "Biomatériaux et Inflammation en Site Osseux" ;
+    schema:name "Biomatériaux et Inflammation en Site Osseux" ;
+    schema:foundingDate "2012"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03hypw319> ;
+        rdfs:label "Université de Reims Champagne-Ardenne" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(4.02853 49.26526)"^^geo:wktLiteral ;
+        schema:addressLocality "Reims" ;
+    ] ;
+    schema:url <https://bios-reims.fr> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q51782377> ;
+             .

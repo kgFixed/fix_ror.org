@@ -1,0 +1,40 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/036ydxy43> 
+    a org:Organization ;
+    rdfs:label "Laboratoire Mémoire et Cognition" ;
+    schema:name "Laboratoire Mémoire et Cognition" ;
+    schema:foundingDate "2012"^^xsd:gYear ;
+    org:status "inactive" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04sq8xk75> ;
+        rdfs:label "Centre for Psychiatry and Neuroscience" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05f82e368> ;
+        rdfs:label "Université Paris Cité" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/05wzw4r89> ;
+        rdfs:label "Laboratoire Mémoire, Cerveau et Cognition" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.24128 48.83545)"^^geo:wktLiteral ;
+        schema:addressLocality "Boulogne-Billancourt" ;
+    ] ;
+    schema:url <http://recherche.parisdescartes.fr/LaboratoireMemoireCognition_eng> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q61933173> ;
+             .

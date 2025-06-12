@@ -1,0 +1,46 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01tx6pn92> 
+    a org:Organization ;
+    rdfs:label "Texas A&M Health Science Center" ;
+    schema:name "Texas A&M Health Science Center" ;
+    schema:foundingDate "1999"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Texas_A%26M_Health_Science_Center> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01f5ytq51> ;
+        rdfs:label "Texas A&M University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/017cm6884> ;
+        rdfs:label "Baylor Scott & White Medical Center - Temple" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02ge60j37> ;
+        rdfs:label "Scott & White Memorial Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02zda6x08> ;
+        rdfs:label "Carl R. Darnall Army Medical Center" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-96.33441 30.62798)"^^geo:wktLiteral ;
+        schema:addressLocality "College Station" ;
+    ] ;
+    schema:url <http://tamhsc.edu/campuses/college-station/index.html> ;
+     .

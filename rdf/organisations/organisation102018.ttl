@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00390t168> 
+    a org:Organization ;
+    rdfs:label "College of Charleston" ;
+    schema:name "College of Charleston" ;
+    schema:foundingDate "1770"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/College_of_Charleston> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/050we9f15> ;
+        rdfs:label "South Carolina Space Grant Consortium" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-79.93092 32.77657)"^^geo:wktLiteral ;
+        schema:addressLocality "Charleston" ;
+    ] ;
+    schema:url <https://www.charleston.edu> ;
+    schema:sameAs <http://isni.org/isni/0000000419367769> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4507421> ;
+             .

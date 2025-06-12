@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02avqqw26> 
+    a org:Organization ;
+    rdfs:label "California State University, Fullerton" ;
+    schema:name "California State University, Fullerton" ;
+    schema:foundingDate "1957"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/California_State_University,_Fullerton> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/020qm1538> ;
+        rdfs:label "California State University System" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-117.92534 33.87029)"^^geo:wktLiteral ;
+        schema:addressLocality "Fullerton" ;
+    ] ;
+    schema:url <https://www.fullerton.edu> ;
+    schema:sameAs <http://isni.org/isni/0000000122928158> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1026925> ;
+             .

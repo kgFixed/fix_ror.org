@@ -1,0 +1,61 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01460j859> 
+    a org:Organization ;
+    rdfs:label "Universitat Politècnica de València" ;
+    schema:name "Universitat Politècnica de València" ;
+    schema:foundingDate "1971"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Technical_University_of_Valencia> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04zdays56> ;
+        rdfs:label "Instituto de Biología Molecular y Celular de Plantas" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03p80e845> ;
+        rdfs:label "Instituto de Instrumentación para Imagen Molecular" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/038792a28> ;
+        rdfs:label "Instituto de Tecnología Química" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02rgtxm82> ;
+        rdfs:label "Instituto de Gestión de la Innovación y del Conocimiento" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05859w570> ;
+        rdfs:label "Escola Politècnica Superior d'Alcoi" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03xwwht98> ;
+        rdfs:label "Centro de Biomateriales e Ingeniería Tisular" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.37966 39.47391)"^^geo:wktLiteral ;
+        schema:addressLocality "Valencia" ;
+    ] ;
+    schema:url <https://www.upv.es> ;
+    schema:sameAs <http://isni.org/isni/0000000417705832> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2003976> ;
+             .

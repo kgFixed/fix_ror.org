@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00q4vv597> 
+    a org:Organization ;
+    rdfs:label "Hong Kong University of Science and Technology" ;
+    schema:name "Hong Kong University of Science and Technology" ;
+    schema:foundingDate "1991"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Hong_Kong_University_of_Science_and_Technology> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0373ev724> ;
+        rdfs:label "Chinese National Engineering Research Center for Control and Treatment of Heavy Metal Pollution" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02gwsx029> ;
+        rdfs:label "Guangdong-Hongkong-Macau Joint Laboratory of Collaborative Innovation for Environmental Quality" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05cvbj479> ;
+        rdfs:label "Guangzhou HKUST Fok Ying Tung Research Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00sz56h79> ;
+        rdfs:label "HKUST Shenzhen Research Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00qfke340> ;
+        rdfs:label "Institute of Molecular Functional Materials" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(114.17469 22.27832)"^^geo:wktLiteral ;
+        schema:addressLocality "Hong Kong" ;
+    ] ;
+    schema:url <https://hkust.edu.hk> ;
+    schema:sameAs <http://isni.org/isni/0000000419371450> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1333303> ;
+             .

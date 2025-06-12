@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01weqhp73> 
+    a org:Organization ;
+    rdfs:label "Technische Universität Ilmenau" ;
+    schema:name "Technische Universität Ilmenau" ;
+    schema:foundingDate "1894"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Technische_Universit%C3%A4t_Ilmenau> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01hmrqc81> ;
+        rdfs:label "CiS Research Institute for Micro Sensors and Photovoltaics" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(10.91858 50.68322)"^^geo:wktLiteral ;
+        schema:addressLocality "Ilmenau" ;
+    ] ;
+    schema:url <https://www.tu-ilmenau.de/> ;
+    schema:sameAs <http://isni.org/isni/0000000110877453> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q129195> ;
+             .

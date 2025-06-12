@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/010djr242> 
+    a org:Organization ;
+    rdfs:label "Laboratório Associado ICVS 3B's" ;
+    schema:name "Laboratório Associado ICVS 3B's" ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-8.29619 41.44443)"^^geo:wktLiteral ;
+        schema:addressLocality "Guimarães" ;
+    ] ;
+    schema:url <https://3bs.uminho.pt/article/20606> ;
+    schema:sameAs <http://isni.org/isni/0000000464178545> ;
+             .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02znfhp50> 
+    a org:Organization ;
+    rdfs:label "Instituto Federal de Educação Ciência e Tecnologia do Paraná" ;
+    schema:name "Instituto Federal de Educação Ciência e Tecnologia do Paraná" ;
+    schema:foundingDate "2008"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Paran%C3%A1_Federal_Institute_of_Education,_Science_and_Technology> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-49.27306 -25.42778)"^^geo:wktLiteral ;
+        schema:addressLocality "Curitiba" ;
+    ] ;
+    schema:url <https://ifpr.edu.br> ;
+    schema:sameAs <http://isni.org/isni/0000000403880007> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7135582> ;
+             .

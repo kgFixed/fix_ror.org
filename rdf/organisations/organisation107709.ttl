@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02azyry73> 
+    a org:Organization ;
+    rdfs:label "University of Siegen" ;
+    schema:name "University of Siegen" ;
+    schema:foundingDate "1972"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/University_of_Siegen> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(8.02431 50.87481)"^^geo:wktLiteral ;
+        schema:addressLocality "Siegen" ;
+    ] ;
+    schema:url <https://www.uni-siegen.de> ;
+    schema:sameAs <http://isni.org/isni/0000000122428751> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q504723> ;
+             .

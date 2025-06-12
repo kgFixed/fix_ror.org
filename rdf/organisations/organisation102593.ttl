@@ -1,0 +1,73 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00cb23x68> 
+    a org:Organization ;
+    rdfs:label "Kwame Nkrumah University of Science and Technology" ;
+    schema:name "Kwame Nkrumah University of Science and Technology" ;
+    schema:foundingDate "1952"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Kwame_Nkrumah_University_of_Science_and_Technology> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00cdwva22> ;
+        rdfs:label "All Nations University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01jthvx19> ;
+        rdfs:label "University College of Management Studies" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03ajsbp04> ;
+        rdfs:label "Accra Institute of Technology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05ks08368> ;
+        rdfs:label "Komfo Anokye Teaching Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05ba8sq03> ;
+        rdfs:label "St. Joseph's College of Education" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00w49ww42> ;
+        rdfs:label "Akrokerri College of Education" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02yv7k107> ;
+        rdfs:label "Wesley College of Education" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03qn3zw06> ;
+        rdfs:label "Lakeside University College Ghana" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.62443 6.68848)"^^geo:wktLiteral ;
+        schema:addressLocality "Kumasi" ;
+    ] ;
+    schema:url <http://www.knust.edu.gh/> ;
+    schema:sameAs <http://isni.org/isni/0000000109466120> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1654025> ;
+             .

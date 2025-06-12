@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05j7qk258> 
+    a org:Organization ;
+    rdfs:label "Brigham Young University - Idaho" ;
+    schema:name "Brigham Young University - Idaho" ;
+    schema:foundingDate "1888"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Brigham_Young_University%E2%80%93Idaho> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-111.78969 43.82602)"^^geo:wktLiteral ;
+        schema:addressLocality "Rexburg" ;
+    ] ;
+    schema:url <https://www.byui.edu> ;
+    schema:sameAs <http://isni.org/isni/0000000104557592> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1029431> ;
+             .

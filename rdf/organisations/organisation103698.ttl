@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/045t78n53> 
+    a org:Organization ;
+    rdfs:label "Michoud Assembly Facility" ;
+    schema:name "Michoud Assembly Facility" ;
+    schema:foundingDate "1940"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Michoud_Assembly_Facility> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02epydz83> ;
+        rdfs:label "Marshall Space Flight Center" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-90.07507 29.95465)"^^geo:wktLiteral ;
+        schema:addressLocality "New Orleans" ;
+    ] ;
+    schema:url <http://www.nasa.gov/centers/marshall/michoud/index.html> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q1441564> ;
+             .

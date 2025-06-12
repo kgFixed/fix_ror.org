@@ -1,0 +1,60 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04gey0774> 
+    a org:Organization ;
+    rdfs:label "Government of Sweden" ;
+    schema:name "Government of Sweden" ;
+    schema:foundingDate "1975"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Government_of_Sweden> ;
+    org:status "active" ;
+    org:classification "Funder" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01251sa74> ;
+        rdfs:label "Ministry for Foreign Affairs" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01pntf040> ;
+        rdfs:label "Ministry of Education and Research" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03wt3br81> ;
+        rdfs:label "Ministry of Climate and Enterprise" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0035nx336> ;
+        rdfs:label "Ministry of Finance" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01zavdj36> ;
+        rdfs:label "Ministry of Health and Social Affairs" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/051y11y24> ;
+        rdfs:label "Ministry of Justice" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(18.06871 59.32938)"^^geo:wktLiteral ;
+        schema:addressLocality "Stockholm" ;
+    ] ;
+    schema:url <http://www.regeringen.se/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q930729> ;
+             .

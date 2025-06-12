@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01yqg2h08> 
+    a org:Organization ;
+    rdfs:label "Harbin Institute of Technology" ;
+    schema:name "Harbin Institute of Technology" ;
+    schema:foundingDate "1920"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Harbin_Institute_of_Technology> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03zxdkx17> ;
+        rdfs:label "State Key Laboratory of Advanced Welding and Joining" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/015m77g16> ;
+        rdfs:label "State Key Laboratory of Robotics and Systems" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05s6mpv98> ;
+        rdfs:label "State Key Laboratory of Urban Water Resources and Water Environment" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(126.65 45.75)"^^geo:wktLiteral ;
+        schema:addressLocality "Harbin" ;
+    ] ;
+    schema:url <https://www.hit.edu.cn> ;
+    schema:sameAs <http://isni.org/isni/0000000101933564> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q632558> ;
+             .

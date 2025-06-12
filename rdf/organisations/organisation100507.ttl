@@ -1,0 +1,33 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03qhdpz92> 
+    a org:Organization ;
+    rdfs:label "Defense Center for Public Health - Aberdeen" ;
+    schema:name "Defense Center for Public Health - Aberdeen" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Defense_Centers_for_Public_Health-Aberdeen> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Predecessor" ;
+        org:member <https://ror.org/021bcyf85> ;
+        rdfs:label "U.S. Army Center for Health Promotion and Preventive Medicine" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04vrzee53> ;
+        rdfs:label "United States Army Medical Command" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-76.13066 39.46686)"^^geo:wktLiteral ;
+        schema:addressLocality "Aberdeen Proving Ground" ;
+    ] ;
+    schema:url <https://ph.health.mil> ;
+     .

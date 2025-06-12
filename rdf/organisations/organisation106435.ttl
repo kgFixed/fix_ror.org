@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01dkyve95> 
+    a org:Organization ;
+    rdfs:label "L'Institut Agro" ;
+    schema:name "L'Institut Agro" ;
+    schema:foundingDate "2020"^^xsd:gYear ;
+    schema:sameAs <https://fr.wikipedia.org/wiki/Institut_national_d%27enseignement_sup%C3%A9rieur_pour_l%27agriculture,_l%27alimentation_et_l%27environnement> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03rnk6m14> ;
+        rdfs:label "Institut Agro Montpellier" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03zek0r74> ;
+        rdfs:label "Institut Agro Dijon" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01s3fs709> ;
+        rdfs:label "Institut Agro Rennes-Angers" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/029m96t80> ;
+        rdfs:label "Ministère de l'Agriculture et de la Souveraineté alimentaire" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.3488 48.85341)"^^geo:wktLiteral ;
+        schema:addressLocality "Paris" ;
+    ] ;
+    schema:url <https://www.institut-agro.fr> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q81433122> ;
+             .

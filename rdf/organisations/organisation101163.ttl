@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/029s6hd13> 
+    a org:Organization ;
+    rdfs:label "Centre Hospitalier Universitaire de Poitiers" ;
+    schema:name "Centre Hospitalier Universitaire de Poitiers" ;
+    schema:foundingDate "1938"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04xhy8q59> ;
+        rdfs:label "Université de Poitiers" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(0.34348 46.58261)"^^geo:wktLiteral ;
+        schema:addressLocality "Poitiers" ;
+    ] ;
+    schema:url <http://www.chu-poitiers.fr/> ;
+    schema:sameAs <http://isni.org/isni/0000000093364276> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2945769> ;
+             .

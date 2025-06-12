@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04a1mvv97> 
+    a org:Organization ;
+    rdfs:label "Norwegian University of Life Sciences" ;
+    schema:name "Norwegian University of Life Sciences" ;
+    schema:foundingDate "1859"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Norwegian_University_of_Life_Sciences> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(10.79465 59.66472)"^^geo:wktLiteral ;
+        schema:addressLocality "Ås" ;
+    ] ;
+    schema:url <https://www.nmbu.no> ;
+    schema:sameAs <http://isni.org/isni/000000040607975X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1725075> ;
+             .

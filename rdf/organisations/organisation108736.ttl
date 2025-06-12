@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00cwp6m07> 
+    a org:Organization ;
+    rdfs:label "Instituto Tecnológico y de Estudios Superiores de Occidente" ;
+    schema:name "Instituto Tecnológico y de Estudios Superiores de Occidente" ;
+    schema:foundingDate "1957"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Western_Institute_of_Technology_and_Higher_Education> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-103.29327 20.64091)"^^geo:wktLiteral ;
+        schema:addressLocality "Tlaquepaque" ;
+    ] ;
+    schema:url <https://www.iteso.mx> ;
+    schema:sameAs <http://isni.org/isni/0000000404836569> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1665244> ;
+             .

@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/018hjpz25> 
+    a org:Organization ;
+    rdfs:label "Sheffield Teaching Hospitals NHS Foundation Trust" ;
+    schema:name "Sheffield Teaching Hospitals NHS Foundation Trust" ;
+    schema:foundingDate "2001"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Sheffield_Teaching_Hospitals_NHS_Foundation_Trust> ;
+    org:status "active" ;
+    org:classification "Funder" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05f2xwq77> ;
+        rdfs:label "Charles Clifford Dental Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03wc8tg09> ;
+        rdfs:label "Jessop Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05r409z22> ;
+        rdfs:label "Northern General Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00514rc81> ;
+        rdfs:label "Royal Hallamshire Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/042gs1a72> ;
+        rdfs:label "Weston Park Cancer Centre" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.4659 53.38297)"^^geo:wktLiteral ;
+        schema:addressLocality "Sheffield" ;
+    ] ;
+    schema:url <http://www.sth.nhs.uk/> ;
+    schema:sameAs <http://isni.org/isni/0000000094228284> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7492756> ;
+             .

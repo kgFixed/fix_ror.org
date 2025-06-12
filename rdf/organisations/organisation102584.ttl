@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01fp50e73> 
+    a org:Organization ;
+    rdfs:label "Axon Enterprise (United States)" ;
+    schema:name "Axon Enterprise (United States)" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Axon_Enterprise> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-111.89903 33.50921)"^^geo:wktLiteral ;
+        schema:addressLocality "Scottsdale" ;
+    ] ;
+    schema:url <https://www.axon.com> ;
+     .

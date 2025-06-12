@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03kdj6d49> 
+    a org:Organization ;
+    rdfs:label "Piacenza Cashmere (Italy)" ;
+    schema:name "Piacenza Cashmere (Italy)" ;
+    schema:foundingDate "1733"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(8.00592 45.57976)"^^geo:wktLiteral ;
+        schema:addressLocality "Pollone" ;
+    ] ;
+    schema:url <https://www.piacenzacashmere.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30254544> ;
+             .

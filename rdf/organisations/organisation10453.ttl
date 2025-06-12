@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00r0jqe29> 
+    a org:Organization ;
+    rdfs:label "British Science Association" ;
+    schema:name "British Science Association" ;
+    schema:foundingDate "1831"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/British_Science_Association> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.12574 51.50853)"^^geo:wktLiteral ;
+        schema:addressLocality "London" ;
+    ] ;
+    schema:url <http://www.britishscienceassociation.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000096535165> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q918782> ;
+             .

@@ -1,0 +1,34 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/016wpzq40> 
+    a org:Organization ;
+    rdfs:label "Laboratoire de Génétique Médicale" ;
+    schema:name "Laboratoire de Génétique Médicale" ;
+    schema:foundingDate "2005"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00pg6eq24> ;
+        rdfs:label "Université de Strasbourg" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02vjkv261> ;
+        rdfs:label "Inserm" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(7.74553 48.58392)"^^geo:wktLiteral ;
+        schema:addressLocality "Strasbourg" ;
+    ] ;
+    schema:url <https://www.unistra.fr/recherche-1/vie-et-sante-1/immuno-rhumathologie-moleculaire-irm-umr-s-1109> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q51785328> ;
+             .

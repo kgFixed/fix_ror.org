@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01mgaqp12> 
+    a org:Organization ;
+    rdfs:label "Aktobe Regional State University named after K.Zhubanov" ;
+    schema:name "Aktobe Regional State University named after K.Zhubanov" ;
+    schema:foundingDate "1966"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(57.20718 50.27969)"^^geo:wktLiteral ;
+        schema:addressLocality "Aktobe" ;
+    ] ;
+    schema:url <http://zhubanov.edu.kz> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q25502201> ;
+             .

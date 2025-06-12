@@ -1,0 +1,79 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02nv7yv05> 
+    a org:Organization ;
+    rdfs:label "Forschungszentrum Jülich" ;
+    schema:name "Forschungszentrum Jülich" ;
+    schema:foundingDate "1956"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Forschungszentrum_J%C3%BClich> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/034waa237> ;
+        rdfs:label "Cluster of Excellence on Plant Sciences" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03hass884> ;
+        rdfs:label "Ernst Ruska Centre" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01vs6se76> ;
+        rdfs:label "Helmholtz Institute Erlangen-Nürnberg" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04ktat366> ;
+        rdfs:label "Helmholtz-Institute Münster" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02zmk8084> ;
+        rdfs:label "John von Neumann Institute for Computing" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02r0e4r58> ;
+        rdfs:label "Jülich Aachen Research Alliance" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/037vx0145> ;
+        rdfs:label "Projektträger Jülich" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0281dp749> ;
+        rdfs:label "Helmholtz Association of German Research Centres" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/033zfn006> ;
+        rdfs:label "In-Service Aircraft for a Global Observing System" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(6.36267 50.92149)"^^geo:wktLiteral ;
+        schema:addressLocality "Jülich" ;
+    ] ;
+    schema:url <https://www.fz-juelich.de> ;
+    schema:sameAs <http://isni.org/isni/000000012297375X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q697111> ;
+             .

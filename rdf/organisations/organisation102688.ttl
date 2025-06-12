@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00wymkh76> 
+    a org:Organization ;
+    rdfs:label "Pima Community College" ;
+    schema:name "Pima Community College" ;
+    schema:foundingDate "1969"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Pima_Community_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/019q0z051> ;
+        rdfs:label "Rocky Mountain Advanced Computing Consortium" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-110.92648 32.22174)"^^geo:wktLiteral ;
+        schema:addressLocality "Tucson" ;
+    ] ;
+    schema:url <https://www.pima.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000089520846> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7194574> ;
+             .

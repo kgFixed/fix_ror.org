@@ -1,0 +1,49 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05qbk4x57> 
+    a org:Organization ;
+    rdfs:label "University of Chinese Academy of Sciences" ;
+    schema:name "University of Chinese Academy of Sciences" ;
+    schema:foundingDate "1978"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/University_of_the_Chinese_Academy_of_Sciences> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01z2px678> ;
+        rdfs:label "International Centre for Theoretical Physics Asia-Pacific" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01kv3wg35> ;
+        rdfs:label "Kavli Institute for Theoretical Sciences" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/034t30j35> ;
+        rdfs:label "Chinese Academy of Sciences" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01apc5d07> ;
+        rdfs:label "Ningbo No. 2 Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(116.39723 39.9075)"^^geo:wktLiteral ;
+        schema:addressLocality "Beijing" ;
+    ] ;
+    schema:url <http://www.ucas.ac.cn/> ;
+    schema:sameAs <http://isni.org/isni/0000000417978419> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6544465> ;
+             .

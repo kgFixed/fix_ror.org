@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02kw5st29> 
+    a org:Organization ;
+    rdfs:label "Deggendorf Institute of Technology" ;
+    schema:name "Deggendorf Institute of Technology" ;
+    schema:foundingDate "1994"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Deggendorf_Institute_of_Technology> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(12.96068 48.84085)"^^geo:wktLiteral ;
+        schema:addressLocality "Deggendorf" ;
+    ] ;
+    schema:url <https://www.th-deg.de> ;
+    schema:sameAs <http://isni.org/isni/0000000123060098> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q468553> ;
+             .

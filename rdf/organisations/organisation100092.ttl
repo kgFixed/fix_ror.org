@@ -1,0 +1,40 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0015ws592> 
+    a org:Organization ;
+    rdfs:label "Institut de génétique et de biologie moléculaire et cellulaire" ;
+    schema:name "Institut de génétique et de biologie moléculaire et cellulaire" ;
+    schema:foundingDate "1994"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02vjkv261> ;
+        rdfs:label "Inserm" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00rydyx93> ;
+        rdfs:label "Institut des Sciences Biologiques" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00pg6eq24> ;
+        rdfs:label "Université de Strasbourg" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(7.71523 48.52894)"^^geo:wktLiteral ;
+        schema:addressLocality "Illkirch-Graffenstaden" ;
+    ] ;
+    schema:url <https://www.igbmc.fr> ;
+    schema:sameAs <http://isni.org/isni/0000000406382716> ;
+             .

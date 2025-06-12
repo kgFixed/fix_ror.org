@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03qvyzg66> 
+    a org:Organization ;
+    rdfs:label "National University of La Rioja" ;
+    schema:name "National University of La Rioja" ;
+    schema:foundingDate "1993"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/National_University_of_La_Rioja> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-66.85067 -29.41105)"^^geo:wktLiteral ;
+        schema:addressLocality "La Rioja" ;
+    ] ;
+    schema:url <https://www.unlar.edu.ar/> ;
+    schema:sameAs <http://isni.org/isni/0000000122017776> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6979253> ;
+             .

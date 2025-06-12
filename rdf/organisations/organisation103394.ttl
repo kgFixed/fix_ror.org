@@ -1,0 +1,85 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05a353079> 
+    a org:Organization ;
+    rdfs:label "University Hospital of Lausanne" ;
+    schema:name "University Hospital of Lausanne" ;
+    schema:foundingDate "1236"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Lausanne_University_Hospital> ;
+    org:status "active" ;
+    org:classification "Funder" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03egrq064> ;
+        rdfs:label "Hôpital Nestlé" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/022vd9g66> ;
+        rdfs:label "Hôpital Orthopédique de la Suisse Romande" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/024009532> ;
+        rdfs:label "Hôpital de Beaumont" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00vqmez57> ;
+        rdfs:label "Hôpital de Cery" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05d9rr978> ;
+        rdfs:label "Hôpital de l'enfance" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03kwyfa97> ;
+        rdfs:label "Swiss Cancer Center Léman" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03grgv984> ;
+        rdfs:label "University Centre of Legal Medicine" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03ts7z477> ;
+        rdfs:label "Institute of Radiation Physics" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/019whta54> ;
+        rdfs:label "University of Lausanne" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01eas9a07> ;
+        rdfs:label "The Sense Innovation and Research Center" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(6.63282 46.516)"^^geo:wktLiteral ;
+        schema:addressLocality "Lausanne" ;
+    ] ;
+    schema:url <http://www.chuv.ch/> ;
+    schema:sameAs <http://isni.org/isni/0000000104234662> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2945783> ;
+             .

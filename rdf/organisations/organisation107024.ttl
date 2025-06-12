@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02dpvst32> 
+    a org:Organization ;
+    rdfs:label "Kinnaird College for Women University" ;
+    schema:name "Kinnaird College for Women University" ;
+    schema:foundingDate "1913"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Kinnaird_College_for_Women_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(74.35071 31.558)"^^geo:wktLiteral ;
+        schema:addressLocality "Lahore" ;
+    ] ;
+    schema:url <https://kinnaird.edu.pk> ;
+    schema:sameAs <http://isni.org/isni/000000009205361X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q125623> ;
+             .

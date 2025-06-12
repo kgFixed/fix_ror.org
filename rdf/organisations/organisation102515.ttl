@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01y60h972> 
+    a org:Organization ;
+    rdfs:label "Ramon Magsaysay Memorial Colleges" ;
+    schema:name "Ramon Magsaysay Memorial Colleges" ;
+    schema:foundingDate "1957"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Ramon_Magsaysay_Memorial_Colleges> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(125.17167 6.11278)"^^geo:wktLiteral ;
+        schema:addressLocality "General Santos" ;
+    ] ;
+    schema:url <https://rmmc.edu.ph> ;
+    schema:sameAs <http://isni.org/isni/0000000404745472> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7289847> ;
+             .

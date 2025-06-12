@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/016vzmc05> 
+    a org:Organization ;
+    rdfs:label "Nippon Steel (Japan)" ;
+    schema:name "Nippon Steel (Japan)" ;
+    schema:foundingDate "1950"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Nippon_Steel_%26_Sumitomo_Metal> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01apday90> ;
+        rdfs:label "Nippon Steel (Germany)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(139.69171 35.6895)"^^geo:wktLiteral ;
+        schema:addressLocality "Tokyo" ;
+    ] ;
+    schema:url <https://www.nipponsteel.com> ;
+    schema:sameAs <http://isni.org/isni/0000000449116055> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1151693> ;
+             .

@@ -1,0 +1,78 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05q65zh81> 
+    a org:Organization ;
+    rdfs:label "Chimie ParisTech" ;
+    schema:name "Chimie ParisTech" ;
+    schema:foundingDate "1896"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Chimie_ParisTech> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/059fn5f50> ;
+        rdfs:label "Fédération de Recherche PhotoVoltaïque" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02s6m8n84> ;
+        rdfs:label "Institut de Recherche de Chimie Paris" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03k1e4r14> ;
+        rdfs:label "Unité de Technologies Chimiques et Biologiques pour la Santé" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04ef65y11> ;
+        rdfs:label "Institut de Chimie Moléculaire de Paris : organique, inorganique et biologique" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05c2qg481> ;
+        rdfs:label "ParisTech" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0459fdx51> ;
+        rdfs:label "Fédération de Recherche sur l'Energie Solaire" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01nrtdp55> ;
+        rdfs:label "GDR NBODY : Problème quantique à N corps en chimie et physique" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01x6z5t49> ;
+        rdfs:label "Fédération de Recherche Spectroscopies de Photoémission" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05edayg07> ;
+        rdfs:label "Fédération de Physico-Chimie Analytique et Biologique" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.3488 48.85341)"^^geo:wktLiteral ;
+        schema:addressLocality "Paris" ;
+    ] ;
+    schema:url <https://www.chimie-paristech.fr/> ;
+    schema:sameAs <http://isni.org/isni/000000009519117X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2963665> ;
+             .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04v5nzb91> 
+    a org:Organization ;
+    rdfs:label "Central University of Himachal Pradesh" ;
+    schema:name "Central University of Himachal Pradesh" ;
+    schema:foundingDate "2009"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Central_University_of_Himachal_Pradesh> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(76.32013 32.22006)"^^geo:wktLiteral ;
+        schema:addressLocality "Dharamsala" ;
+    ] ;
+    schema:url <https://cuhimachal.ac.in> ;
+    schema:sameAs <http://isni.org/isni/0000000417648233> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5061956> ;
+             .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05b955872> 
+    a org:Organization ;
+    rdfs:label "Nwafor Orizu College of Education" ;
+    schema:name "Nwafor Orizu College of Education" ;
+    schema:foundingDate "1976"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Nwafor_Orizu_College_of_Education> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(6.81909 6.26372)"^^geo:wktLiteral ;
+        schema:addressLocality "Nsugbe" ;
+    ] ;
+    schema:url <https://nocen.edu.ng> ;
+    schema:sameAs <http://isni.org/isni/0000000090923300> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q105820700> ;
+             .

@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/021bcyf85> 
+    a org:Organization ;
+    rdfs:label "U.S. Army Center for Health Promotion and Preventive Medicine" ;
+    schema:name "U.S. Army Center for Health Promotion and Preventive Medicine" ;
+    schema:foundingDate "1942"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/U.S._Army_Public_Health_Center_(Provisional)> ;
+    org:status "inactive" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04vrzee53> ;
+        rdfs:label "United States Army Medical Command" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/03qhdpz92> ;
+        rdfs:label "Defense Center for Public Health - Aberdeen" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-76.13066 39.46686)"^^geo:wktLiteral ;
+        schema:addressLocality "Aberdeen Proving Ground" ;
+    ] ;
+    schema:url <https://phc.amedd.army.mil/> ;
+    schema:sameAs <http://isni.org/isni/0000000106463602> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7889456> ;
+             .

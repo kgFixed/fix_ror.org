@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05q0y0j38> 
+    a org:Organization ;
+    rdfs:label "Federal Aviation Administration" ;
+    schema:name "Federal Aviation Administration" ;
+    schema:foundingDate "1958"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Federal_Aviation_Administration> ;
+    org:status "active" ;
+    org:classification "Funder" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/043e04s74> ;
+        rdfs:label "Civil Aerospace Medical Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02xfw2e90> ;
+        rdfs:label "United States Department of Transportation" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Predecessor" ;
+        org:member <https://ror.org/0581dw191> ;
+        rdfs:label "Civil Aeronautics Authority" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.03637 38.89511)"^^geo:wktLiteral ;
+        schema:addressLocality "Washington" ;
+    ] ;
+    schema:url <http://www.faa.gov/> ;
+    schema:sameAs <http://isni.org/isni/000000040384994X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q335357> ;
+             .

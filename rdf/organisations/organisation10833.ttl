@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04g8dha87> 
+    a org:Organization ;
+    rdfs:label "GATC Biotech (Germany)" ;
+    schema:name "GATC Biotech (Germany)" ;
+    schema:foundingDate "1990"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/GATC_Biotech> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(9.17582 47.66033)"^^geo:wktLiteral ;
+        schema:addressLocality "Konstanz" ;
+    ] ;
+    schema:url <https://www.gatc-biotech.com/en/index.html> ;
+    schema:sameAs <http://isni.org/isni/0000000404445568> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q16251081> ;
+             .

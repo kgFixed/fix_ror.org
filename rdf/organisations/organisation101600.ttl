@@ -1,0 +1,35 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0268ecp52> 
+    a org:Organization ;
+    rdfs:label "Paris-Est Sup" ;
+    schema:name "Paris-Est Sup" ;
+    schema:foundingDate "2007"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/University_of_Paris-Est> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/047egvh76> ;
+        rdfs:label "Équipe de Recherche sur l’Utilisation des Données Individuelles en Lien avec la Théorie Économique" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03ha87a98> ;
+        rdfs:label "Laboratoire interdisciplinaire de recherche sur les transformations des pratiques éducatives et des pratiques sociales" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.6 48.85)"^^geo:wktLiteral ;
+        schema:addressLocality "Champs-sur-Marne" ;
+    ] ;
+    schema:url <https://www.paris-est-sup.fr> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q3551472> ;
+             .

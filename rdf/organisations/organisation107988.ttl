@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/026w31v75> 
+    a org:Organization ;
+    rdfs:label "University of Technology Malaysia" ;
+    schema:name "University of Technology Malaysia" ;
+    schema:foundingDate "1975"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Universiti_Teknologi_Malaysia> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(103.7578 1.4655)"^^geo:wktLiteral ;
+        schema:addressLocality "Johor Bahru" ;
+    ] ;
+    schema:url <https://www.utm.my> ;
+    schema:sameAs <http://isni.org/isni/0000000122961505> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q24401> ;
+             .

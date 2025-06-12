@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00z8th821> 
+    a org:Organization ;
+    rdfs:label "Observatoire Oceanologique de Banyuls sur Mer" ;
+    schema:name "Observatoire Oceanologique de Banyuls sur Mer" ;
+    org:status "withdrawn" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/05gz4kr37> ;
+        rdfs:label "Observatoire Océanologique de Banyuls-sur-Mer" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(3.1283 42.4818)"^^geo:wktLiteral ;
+        schema:addressLocality "Banyuls-sur-Mer" ;
+    ] ;
+    schema:url <http://www.obs-banyuls.fr/en/oceanological_observatory.html> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30293588> ;
+             .

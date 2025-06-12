@@ -1,0 +1,35 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00z7dje19> 
+    a org:Organization ;
+    rdfs:label "Fraunhofer Institute for Material Flow and Logistics" ;
+    schema:name "Fraunhofer Institute for Material Flow and Logistics" ;
+    schema:foundingDate "1981"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05hkkdn48> ;
+        rdfs:label "Fraunhofer Society" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04s11ea33> ;
+        rdfs:label "Lamarr Institute for Machine Learning and Artificial Intelligence" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(7.466 51.51494)"^^geo:wktLiteral ;
+        schema:addressLocality "Dortmund" ;
+    ] ;
+    schema:url <http://www.iml.fraunhofer.de/en.html> ;
+    schema:sameAs <http://isni.org/isni/0000000097911740> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1452016> ;
+             .

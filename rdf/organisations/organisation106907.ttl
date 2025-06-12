@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05e94g991> 
+    a org:Organization ;
+    rdfs:label "University of Illinois System" ;
+    schema:name "University of Illinois System" ;
+    schema:foundingDate "1867"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/University_of_Illinois_system> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/047426m28> ;
+        rdfs:label "University of Illinois Urbana-Champaign" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02mpq6x41> ;
+        rdfs:label "University of Illinois Chicago" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0126qma51> ;
+        rdfs:label "University of Illinois at Springfield" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-88.20727 40.11059)"^^geo:wktLiteral ;
+        schema:addressLocality "Urbana" ;
+    ] ;
+    schema:url <https://www.uillinois.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000114006524> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1145814> ;
+             .

@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03k3t2d52> 
+    a org:Organization ;
+    rdfs:label "Tecnológico Nacional de México Campus San Martín Texmelucan" ;
+    schema:name "Tecnológico Nacional de México Campus San Martín Texmelucan" ;
+    schema:foundingDate "2002"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00davry38> ;
+        rdfs:label "Tecnológico Nacional de México" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-98.43885 19.28431)"^^geo:wktLiteral ;
+        schema:addressLocality "San Martin Texmelucan" ;
+    ] ;
+    schema:url <http://smartin.tecnm.mx> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q5917797> ;
+             .

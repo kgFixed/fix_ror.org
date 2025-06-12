@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0327sr118> 
+    a org:Organization ;
+    rdfs:label "DIPF | Leibniz Institute for Research and Information in Education" ;
+    schema:name "DIPF | Leibniz Institute for Research and Information in Education" ;
+    schema:foundingDate "1951"^^xsd:gYear ;
+    schema:sameAs <https://de.wikipedia.org/wiki/DIPF_Leibniz-Institut_f%C3%BCr_Bildungsforschung_und_Bildungsinformation> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01a5y6f48> ;
+        rdfs:label "Bibliothek für Bildungsgeschichtliche Forschung des DIPF" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01n6r0e97> ;
+        rdfs:label "Leibniz Association" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(8.68417 50.11552)"^^geo:wktLiteral ;
+        schema:addressLocality "Frankfurt am Main" ;
+    ] ;
+    schema:url <https://www.dipf.de> ;
+    schema:sameAs <http://isni.org/isni/0000000121091122> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1205728> ;
+             .

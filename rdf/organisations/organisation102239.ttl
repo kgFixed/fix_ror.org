@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04gq09j61> 
+    a org:Organization ;
+    rdfs:label "Institute of Agriculture and Animal Science" ;
+    schema:name "Institute of Agriculture and Animal Science" ;
+    schema:foundingDate "1959"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Institute_of_Agriculture_and_Animal_Science> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02rg1r889> ;
+        rdfs:label "Tribhuvan University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(85.3206 27.70169)"^^geo:wktLiteral ;
+        schema:addressLocality "Kathmandu" ;
+    ] ;
+    schema:url <https://iaas.tu.edu.np> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q5608252> ;
+             .

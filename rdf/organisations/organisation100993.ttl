@@ -1,0 +1,34 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01jm8fn98> 
+    a org:Organization ;
+    rdfs:label "Institut de Biologie Moléculaire des Plantes" ;
+    schema:name "Institut de Biologie Moléculaire des Plantes" ;
+    schema:foundingDate "1987"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00rydyx93> ;
+        rdfs:label "Institut des Sciences Biologiques" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00pg6eq24> ;
+        rdfs:label "Université de Strasbourg" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(7.74553 48.58392)"^^geo:wktLiteral ;
+        schema:addressLocality "Strasbourg" ;
+    ] ;
+    schema:url <http://ibmp.u-strasbg.fr/index.php-id=48&L=1.html> ;
+    schema:sameAs <http://isni.org/isni/0000000406382601> ;
+             .

@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00aqh6z65> 
+    a org:Organization ;
+    rdfs:label "École Nationale d'Administration" ;
+    schema:name "École Nationale d'Administration" ;
+    schema:foundingDate "1945"^^xsd:gYear ;
+    org:status "inactive" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00wnzj089> ;
+        rdfs:label "École nationale d'administration" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(9.45356 0.39241)"^^geo:wktLiteral ;
+        schema:addressLocality "Libreville" ;
+    ] ;
+    schema:url <https://www.ena.fr/eng/Europe-International/L-ENA-dans-le-monde/Afrique/Gabon> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30294407> ;
+             .

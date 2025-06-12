@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02336z538> 
+    a org:Organization ;
+    rdfs:label "Duquesne University" ;
+    schema:name "Duquesne University" ;
+    schema:foundingDate "1878"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Duquesne_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-79.99589 40.44062)"^^geo:wktLiteral ;
+        schema:addressLocality "Pittsburgh" ;
+    ] ;
+    schema:url <https://duq.edu> ;
+    schema:sameAs <http://isni.org/isni/0000000123643111> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q74343> ;
+             .

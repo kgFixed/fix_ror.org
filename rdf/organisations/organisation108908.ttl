@@ -1,0 +1,69 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/008kn4z11> 
+    a org:Organization ;
+    rdfs:label "Délégation Ile-de-France Villejuif" ;
+    schema:name "Délégation Ile-de-France Villejuif" ;
+    schema:foundingDate "1990"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0157t2j08> ;
+        rdfs:label "Architecture Urbanisme Société : Savoirs, Enseignement, Recherche" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02rv1bf67> ;
+        rdfs:label "Centre de Recherche de l'Institut de Démographie de l'Université Paris 1" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04zr5ey71> ;
+        rdfs:label "Institut Carnot ARTS" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/002t9r032> ;
+        rdfs:label "Collège international des sciences territoriales" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/003ckn545> ;
+        rdfs:label "Laboratoire d'Économie Mathématique et de Microéconomie Appliquée" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/002yg6s88> ;
+        rdfs:label "Centre Population et Développement" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02krdtz55> ;
+        rdfs:label "Institut de Recherche en Informatique Fondamentale" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03yz3tz18> ;
+        rdfs:label "Direction Générale Déléguée aux Ressources" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.3488 48.85341)"^^geo:wktLiteral ;
+        schema:addressLocality "Paris" ;
+    ] ;
+    schema:url <https://www.iledefrance-villejuif.cnrs.fr/> ;
+     .

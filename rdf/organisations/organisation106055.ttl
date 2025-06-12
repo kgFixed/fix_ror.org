@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03hqan520> 
+    a org:Organization ;
+    rdfs:label "Royal University of Bhutan" ;
+    schema:name "Royal University of Bhutan" ;
+    schema:foundingDate "2001"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Royal_University_of_Bhutan> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/031ggcd89> ;
+        rdfs:label "Sherubtse College" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(89.64191 27.46609)"^^geo:wktLiteral ;
+        schema:addressLocality "Thimphu" ;
+    ] ;
+    schema:url <http://www.rub.edu.bt/> ;
+    schema:sameAs <http://isni.org/isni/0000000089584321> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2640138> ;
+             .

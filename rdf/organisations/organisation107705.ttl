@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/043ae9h44> 
+    a org:Organization ;
+    rdfs:label "Regis University" ;
+    schema:name "Regis University" ;
+    schema:foundingDate "1877"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Regis_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/019q0z051> ;
+        rdfs:label "Rocky Mountain Advanced Computing Consortium" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-104.9847 39.73915)"^^geo:wktLiteral ;
+        schema:addressLocality "Denver" ;
+    ] ;
+    schema:url <https://www.regis.edu> ;
+    schema:sameAs <http://isni.org/isni/0000000403958791> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q649299> ;
+             .

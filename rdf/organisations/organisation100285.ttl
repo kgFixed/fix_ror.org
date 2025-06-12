@@ -1,0 +1,46 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/033x0mt18> 
+    a org:Organization ;
+    rdfs:label "Fonctionnement et Conduite des Systèmes de Culture Tropicaux et Méditerranéens" ;
+    schema:name "Fonctionnement et Conduite des Systèmes de Culture Tropicaux et Méditerranéens" ;
+    schema:foundingDate "2003"^^xsd:gYear ;
+    org:status "inactive" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05kpkpg04> ;
+        rdfs:label "Centre de Coopération Internationale en Recherche Agronomique pour le Développement" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03rnk6m14> ;
+        rdfs:label "Institut Agro Montpellier" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/003vg9w96> ;
+        rdfs:label "Institut National de Recherche pour l'Agriculture, l'Alimentation et l'Environnement" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/00n2c0309> ;
+        rdfs:label "ABSys" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(3.87635 43.61093)"^^geo:wktLiteral ;
+        schema:addressLocality "Montpellier" ;
+    ] ;
+    schema:url <https://umr-system.cirad.fr/en> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q51780120> ;
+             .

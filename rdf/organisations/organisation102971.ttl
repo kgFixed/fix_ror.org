@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04ahza989> 
+    a org:Organization ;
+    rdfs:label "CItés, Territoires, Environnement et Sociétés" ;
+    schema:name "CItés, Territoires, Environnement et Sociétés" ;
+    schema:foundingDate "2012"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02wwzvj46> ;
+        rdfs:label "Université de Tours" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04andmq85> ;
+        rdfs:label "Institut National de Recherches Archéologiques Préventives" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04b0z7q78> ;
+        rdfs:label "Institut des Sciences Humaines et Sociales" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/008p7mq56> ;
+        rdfs:label "Équipe Monde Arabe Méditerranée" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(0.70398 47.39484)"^^geo:wktLiteral ;
+        schema:addressLocality "Tours" ;
+    ] ;
+    schema:url <http://citeres.univ-tours.fr/> ;
+    schema:sameAs <http://isni.org/isni/0000000118980762> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q47008408> ;
+             .

@@ -1,0 +1,49 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02kpeqv85> 
+    a org:Organization ;
+    rdfs:label "Kyoto University" ;
+    schema:name "Kyoto University" ;
+    schema:foundingDate "1897"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Kyoto_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0349bbg69> ;
+        rdfs:label "Kyoto University Institute for Chemical Research" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0589kgd85> ;
+        rdfs:label "Yukawa Institute for Theoretical Physics" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04k6gr834> ;
+        rdfs:label "Kyoto University Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05dfqh778> ;
+        rdfs:label "Research Institute for Sustainable Humanosphere" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(135.75385 35.02107)"^^geo:wktLiteral ;
+        schema:addressLocality "Kyoto" ;
+    ] ;
+    schema:url <http://www.kyoto-u.ac.jp/en> ;
+    schema:sameAs <http://isni.org/isni/0000000403722033> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q336264> ;
+             .

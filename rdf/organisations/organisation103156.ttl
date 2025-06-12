@@ -1,0 +1,33 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/051n2s460> 
+    a org:Organization ;
+    rdfs:label "Fonctionnement et dysfonctionnement cognitifs: les âges de la vie" ;
+    schema:name "Fonctionnement et dysfonctionnement cognitifs: les âges de la vie" ;
+    schema:foundingDate "2020"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/013bkhk48> ;
+        rdfs:label "Université Paris Nanterre" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04wez5e68> ;
+        rdfs:label "Université Paris 8" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.20675 48.89198)"^^geo:wktLiteral ;
+        schema:addressLocality "Nanterre" ;
+    ] ;
+    schema:url <https://dysco.parisnanterre.fr> ;
+     .

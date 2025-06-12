@@ -1,0 +1,49 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04ttjf776> 
+    a org:Organization ;
+    rdfs:label "RMIT University" ;
+    schema:name "RMIT University" ;
+    schema:foundingDate "1887"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/RMIT_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/039p7nx39> ;
+        rdfs:label "ARC Centre of Excellence for Automated Decision-Making and Society" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03m3ca021> ;
+        rdfs:label "RMIT Europe" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/004axh929> ;
+        rdfs:label "RMIT Vietnam" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/010mv7n52> ;
+        rdfs:label "Austin Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(144.96332 -37.814)"^^geo:wktLiteral ;
+        schema:addressLocality "Melbourne" ;
+    ] ;
+    schema:url <https://www.rmit.edu.au/> ;
+    schema:sameAs <http://isni.org/isni/0000000121633550> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1057890> ;
+             .

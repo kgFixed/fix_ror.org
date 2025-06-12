@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01bzdp563> 
+    a org:Organization ;
+    rdfs:label "Enveloppes fluides : de la ville à l'exobiologie" ;
+    schema:name "Enveloppes fluides : de la ville à l'exobiologie" ;
+    schema:foundingDate "2013"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05f82e368> ;
+        rdfs:label "Université Paris Cité" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02nwvxz07> ;
+        rdfs:label "École nationale des ponts et chaussées" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02feahw73> ;
+        rdfs:label "Centre National de la Recherche Scientifique" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05ggc9x40> ;
+        rdfs:label "Université Paris-Est Créteil" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.46569 48.79266)"^^geo:wktLiteral ;
+        schema:addressLocality "Créteil" ;
+    ] ;
+    schema:url <http://osu-efluve.u-pec.fr> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q51784271> ;
+             .

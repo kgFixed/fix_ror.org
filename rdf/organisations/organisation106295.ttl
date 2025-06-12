@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05kacka20> 
+    a org:Organization ;
+    rdfs:label "Istituto di Scienza e Tecnologie dell'Informazione "Alessandro Faedo"" ;
+    schema:name "Istituto di Scienza e Tecnologie dell'Informazione "Alessandro Faedo"" ;
+    schema:foundingDate "2002"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Istituto_di_Scienza_e_Tecnologie_dell%27Informazione> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04zaypm56> ;
+        rdfs:label "National Research Council" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(10.4036 43.70853)"^^geo:wktLiteral ;
+        schema:addressLocality "Pisa" ;
+    ] ;
+    schema:url <https://www.isti.cnr.it> ;
+    schema:sameAs <http://isni.org/isni/0000000090326370> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3803752> ;
+             .

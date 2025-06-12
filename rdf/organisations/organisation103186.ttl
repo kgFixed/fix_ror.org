@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01e11zd27> 
+    a org:Organization ;
+    rdfs:label "Gilead Sciences (United Kingdom)" ;
+    schema:name "Gilead Sciences (United Kingdom)" ;
+    schema:foundingDate "1987"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Gilead_Sciences> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/056546b03> ;
+        rdfs:label "Gilead Sciences (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(0.11667 52.2)"^^geo:wktLiteral ;
+        schema:addressLocality "Cambridge" ;
+    ] ;
+    schema:url <https://www.gilead.co.uk> ;
+    schema:sameAs <http://isni.org/isni/0000000403838490> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30338599> ;
+             .

@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01tf11a61> 
+    a org:Organization ;
+    rdfs:label "CMCC Foundation - Euro-Mediterranean Center on Climate Change" ;
+    schema:name "CMCC Foundation - Euro-Mediterranean Center on Climate Change" ;
+    schema:foundingDate "2005"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Euro-Mediterranean_Center_for_Climate_Change> ;
+    org:status "active" ;
+    org:classification "Funder" ;
+    org:classification "Nonprofit" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00pdj1108> ;
+        rdfs:label "RFF-CMCC European Institute on Economics and the Environment" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(18.17244 40.35481)"^^geo:wktLiteral ;
+        schema:addressLocality "Lecce" ;
+    ] ;
+    schema:url <https://www.cmcc.it> ;
+    schema:sameAs <http://isni.org/isni/0000000417610884> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3664704> ;
+             .

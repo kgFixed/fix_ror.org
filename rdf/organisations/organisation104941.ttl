@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/044k9ta02> 
+    a org:Organization ;
+    rdfs:label "University of Palermo" ;
+    schema:name "University of Palermo" ;
+    schema:foundingDate "1806"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/University_of_Palermo> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05p21z194> ;
+        rdfs:label "Azienda Ospedaliera Universitaria Policlinico "Paolo Giaccone" di Palermo" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(13.3636 38.1166)"^^geo:wktLiteral ;
+        schema:addressLocality "Palermo" ;
+    ] ;
+    schema:url <https://www.unipa.it> ;
+    schema:sameAs <http://isni.org/isni/0000000417625517> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1641504> ;
+             .

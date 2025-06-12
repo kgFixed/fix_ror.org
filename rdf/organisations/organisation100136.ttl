@@ -1,0 +1,53 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03f0apy98> 
+    a org:Organization ;
+    rdfs:label "Laboratoire de Physique Subatomique et de Cosmologie" ;
+    schema:name "Laboratoire de Physique Subatomique et de Cosmologie" ;
+    schema:foundingDate "1967"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02rx3b187> ;
+        rdfs:label "Université Grenoble Alpes" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05sbt2524> ;
+        rdfs:label "Institut polytechnique de Grenoble" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03fd77x13> ;
+        rdfs:label "Institut National de Physique Nucléaire et de Physique des Particules" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04kdfz702> ;
+        rdfs:label "Institut National des Sciences de l'Univers" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00s19x989> ;
+        rdfs:label "CNRS Ingénierie" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(5.71479 45.17869)"^^geo:wktLiteral ;
+        schema:addressLocality "Grenoble" ;
+    ] ;
+    schema:url <http://lpsc.in2p3.fr/index.php/en/> ;
+    schema:sameAs <http://isni.org/isni/0000000122955578> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6459743> ;
+             .

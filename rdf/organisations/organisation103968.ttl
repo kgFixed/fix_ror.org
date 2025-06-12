@@ -1,0 +1,159 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02v51f717> 
+    a org:Organization ;
+    rdfs:label "Peking University" ;
+    schema:name "Peking University" ;
+    schema:foundingDate "1898"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Peking_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00s1sz824> ;
+        rdfs:label "Beijing Institute of Big Data Research" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05kje8j93> ;
+        rdfs:label "Center for Life Sciences" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03jn38r85> ;
+        rdfs:label "Collaborative Innovation Center of Quantum Matter" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00sz56h79> ;
+        rdfs:label "HKUST Shenzhen Research Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02zwg8g81> ;
+        rdfs:label "State Key Laboratory of Visual and Auditory Information Processing" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/021s6g098> ;
+        rdfs:label "State Key Laboratory of Digital Publishing Technology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04vgnd506> ;
+        rdfs:label "State Key Laboratory of Rare Earth Materials Chemistry and Application" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/049mqh532> ;
+        rdfs:label "State Key Laboratory of Natural and Biomimetic Drugs" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05xbqrp21> ;
+        rdfs:label "State Key Laboratory of Protein and Plant Gene Research" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03mq8q210> ;
+        rdfs:label "State Key Laboratory of Membrane Biology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/007nf8q70> ;
+        rdfs:label "State Key Laboratory of Artificial Microstructure and Mesoscopic Physics" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04km98768> ;
+        rdfs:label "State Key Laboratory of Turbulence and Complex Systems" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00tp8bz22> ;
+        rdfs:label "State Key Laboratory of Nuclear Physics and Technology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03dz8mb53> ;
+        rdfs:label "State Key Laboratory of Advanced Optical Communication Systems and Networks" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/035t17984> ;
+        rdfs:label "Beijing Jishuitan Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00nyxxr91> ;
+        rdfs:label "Peking University Cancer Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02z1vqm45> ;
+        rdfs:label "Peking University First Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03jxhcr96> ;
+        rdfs:label "Peking University International Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/035adwg89> ;
+        rdfs:label "Peking University People's Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05rzcwg85> ;
+        rdfs:label "Peking University Sixth Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00s2xkh70> ;
+        rdfs:label "Peking University Stomatological Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04wwqze12> ;
+        rdfs:label "Peking University Third Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(116.39723 39.9075)"^^geo:wktLiteral ;
+        schema:addressLocality "Beijing" ;
+    ] ;
+    schema:url <https://www.pku.edu.cn> ;
+    schema:sameAs <http://isni.org/isni/0000000122569319> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q16952> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7494371> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q56612455> ;
+             .

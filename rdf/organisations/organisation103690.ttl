@@ -1,0 +1,61 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02y72wh86> 
+    a org:Organization ;
+    rdfs:label "Queen's University" ;
+    schema:name "Queen's University" ;
+    schema:foundingDate "1841"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Queen's_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01s7w1z60> ;
+        rdfs:label "Hotel Dieu Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02gj19t78> ;
+        rdfs:label "Humber River Regional Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03zq81960> ;
+        rdfs:label "Kingston General Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05bwaty49> ;
+        rdfs:label "Kingston Health Sciences Centre" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/018sv0913> ;
+        rdfs:label "McGill-Queen's University Press" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/030txkr67> ;
+        rdfs:label "Bader College" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-76.48098 44.22976)"^^geo:wktLiteral ;
+        schema:addressLocality "Kingston" ;
+    ] ;
+    schema:url <http://www.queensu.ca/> ;
+    schema:sameAs <http://isni.org/isni/0000000419368331> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1420038> ;
+             .

@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05xvt9f17> 
+    a org:Organization ;
+    rdfs:label "Leiden University Medical Center" ;
+    schema:name "Leiden University Medical Center" ;
+    schema:foundingDate "1990"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Leiden_University_Medical_Center> ;
+    org:status "active" ;
+    org:classification "Funder" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04cm10r73> ;
+        rdfs:label "Jon J van Rood Centre for Clinical Transfusion Research" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02xmm1048> ;
+        rdfs:label "Willem-Alexander Kinderziekenhuis" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/027bh9e22> ;
+        rdfs:label "Leiden University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05s4nk876> ;
+        rdfs:label "Endo-ERN" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05ahyhp31> ;
+        rdfs:label "Holland Particle Therapy Center" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(4.49306 52.15833)"^^geo:wktLiteral ;
+        schema:addressLocality "Leiden" ;
+    ] ;
+    schema:url <https://www.lumc.nl> ;
+    schema:sameAs <http://isni.org/isni/0000000089452978> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2406409> ;
+             .

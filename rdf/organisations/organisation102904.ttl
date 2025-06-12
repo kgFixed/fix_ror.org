@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00zy6vr46> 
+    a org:Organization ;
+    rdfs:label "Real Academia de Bellas Artes de San Fernando" ;
+    schema:name "Real Academia de Bellas Artes de San Fernando" ;
+    schema:foundingDate "1752"^^xsd:gYear ;
+    schema:sameAs <https://es.wikipedia.org/wiki/Real_Academia_de_Bellas_Artes_de_San_Fernando> ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/052qegn86> ;
+        rdfs:label "Instituto de España" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-3.70256 40.4165)"^^geo:wktLiteral ;
+        schema:addressLocality "Madrid" ;
+    ] ;
+    schema:url <https://www.realacademiabellasartessanfernando.com> ;
+     .

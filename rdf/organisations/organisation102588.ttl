@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/016cpew17> 
+    a org:Organization ;
+    rdfs:label "State Regional Archives in Prague" ;
+    schema:name "State Regional Archives in Prague" ;
+    schema:foundingDate "2002"^^xsd:gYear ;
+    schema:sameAs <https://cs.wikipedia.org/wiki/St%C3%A1tn%C3%AD_oblastn%C3%AD_archiv_v_Praze> ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(14.42076 50.08804)"^^geo:wktLiteral ;
+        schema:addressLocality "Prague" ;
+    ] ;
+    schema:url <https://www.soapraha.cz> ;
+    schema:sameAs <http://isni.org/isni/0000000121861297> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q12056840> ;
+             .

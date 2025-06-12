@@ -1,0 +1,33 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01tqfb593> 
+    a org:Organization ;
+    rdfs:label "Delaware Asteroseismic Research Center" ;
+    schema:name "Delaware Asteroseismic Research Center" ;
+    schema:foundingDate "2005"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02anj9s22> ;
+        rdfs:label "Mt. Cuba Astronomical Observatory" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01sbq1a82> ;
+        rdfs:label "University of Delaware" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-82.39401 34.85262)"^^geo:wktLiteral ;
+        schema:addressLocality "Greenville" ;
+    ] ;
+    schema:url <https://www.physics.udel.edu/gp/darc/2015new/index.html> ;
+     .

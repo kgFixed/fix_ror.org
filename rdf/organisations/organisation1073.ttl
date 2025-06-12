@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03ywwzv91> 
+    a org:Organization ;
+    rdfs:label "3C Institute" ;
+    schema:name "3C Institute" ;
+    schema:foundingDate "2001"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/3C_Institute> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-78.78112 35.79154)"^^geo:wktLiteral ;
+        schema:addressLocality "Cary" ;
+    ] ;
+    schema:url <http://www.3cisd.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q18148644> ;
+             .

@@ -1,0 +1,20 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03yajem64> 
+    a org:Organization ;
+    rdfs:label "Nisource (United States)" ;
+    schema:name "Nisource (United States)" ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-87.33281 41.48281)"^^geo:wktLiteral ;
+        schema:addressLocality "Merrillville" ;
+    ] ;
+    schema:url <https://www.nisource.com> ;
+     .

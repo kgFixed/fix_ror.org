@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00dntj975> 
+    a org:Organization ;
+    rdfs:label "Science and Arts University" ;
+    schema:name "Science and Arts University" ;
+    schema:foundingDate "2013"^^xsd:gYear ;
+    schema:sameAs <https://fa.wikipedia.org/wiki/%D8%AF%D8%A7%D9%86%D8%B4%DA%AF%D8%A7%D9%87_%D8%B9%D9%84%D9%85_%D9%88_%D9%87%D9%86%D8%B1> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(54.3675 31.89722)"^^geo:wktLiteral ;
+        schema:addressLocality "Yazd" ;
+    ] ;
+    schema:url <https://www.sau.ac.ir> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q16047126> ;
+             .

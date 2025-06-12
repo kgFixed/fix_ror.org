@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02z2yec16> 
+    a org:Organization ;
+    rdfs:label "Zhongshan Ophthalmic Center, Sun Yat-sen University" ;
+    schema:name "Zhongshan Ophthalmic Center, Sun Yat-sen University" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0064kty71> ;
+        rdfs:label "Sun Yat-sen University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(113.25 23.11667)"^^geo:wktLiteral ;
+        schema:addressLocality "Guangzhou" ;
+    ] ;
+    schema:url <https://www.gzzoc.com> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q67251723> ;
+             .

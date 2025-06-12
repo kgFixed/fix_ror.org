@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04w9fbh59> 
+    a org:Organization ;
+    rdfs:label "Beijing University of Posts and Telecommunications" ;
+    schema:name "Beijing University of Posts and Telecommunications" ;
+    schema:foundingDate "1955"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Beijing_University_of_Posts_and_Telecommunications> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02v9wg343> ;
+        rdfs:label "State Key Laboratory of Information Photonics and Optical Communications" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00qtv5q45> ;
+        rdfs:label "State Key Laboratory of Networking and Switching Technology" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(116.39723 39.9075)"^^geo:wktLiteral ;
+        schema:addressLocality "Beijing" ;
+    ] ;
+    schema:url <https://www.bupt.edu.cn> ;
+    schema:sameAs <http://isni.org/isni/0000000087801230> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4881210> ;
+             .

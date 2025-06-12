@@ -1,0 +1,54 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/011q66e29> 
+    a org:Organization ;
+    rdfs:label "Instituto Nacional de Investigación y Tecnología Agraria y Alimentaria" ;
+    schema:name "Instituto Nacional de Investigación y Tecnología Agraria y Alimentaria" ;
+    schema:foundingDate "1971"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Funder" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02nxes898> ;
+        rdfs:label "Instituto de Ciencias Forestales" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01y7nsd18> ;
+        rdfs:label "Centro de Recursos Fitogenéticos y Agricultura Sostenible" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05m6hv760> ;
+        rdfs:label "Centro de Investigación en Sanidad Animal" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04mfzb702> ;
+        rdfs:label "Centre for Plant Biotechnology and Genomics" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02gfc7t72> ;
+        rdfs:label "Consejo Superior de Investigaciones Científicas" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-3.70256 40.4165)"^^geo:wktLiteral ;
+        schema:addressLocality "Madrid" ;
+    ] ;
+    schema:url <https://www.inia.es> ;
+    schema:sameAs <http://isni.org/isni/000000012300669X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5669458> ;
+             .

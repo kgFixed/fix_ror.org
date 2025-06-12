@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01eb5yv70> 
+    a org:Organization ;
+    rdfs:label "University of Diyala" ;
+    schema:name "University of Diyala" ;
+    schema:foundingDate "1999"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/University_of_Diyala> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(44.60518 33.75403)"^^geo:wktLiteral ;
+        schema:addressLocality "Baqubah" ;
+    ] ;
+    schema:url <https://uodiyala.edu.iq> ;
+    schema:sameAs <http://isni.org/isni/0000000404175115> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4120041> ;
+             .

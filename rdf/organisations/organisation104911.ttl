@@ -1,0 +1,35 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05xx77y52> 
+    a org:Organization ;
+    rdfs:label "Centro de Investigaciones Energéticas, Medioambientales y Tecnológicas" ;
+    schema:name "Centro de Investigaciones Energéticas, Medioambientales y Tecnológicas" ;
+    schema:foundingDate "1951"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02x2fbb57> ;
+        rdfs:label "Red Española de Supercomputación" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02w0r2764> ;
+        rdfs:label "MAGIC Telescopes" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-3.70256 40.4165)"^^geo:wktLiteral ;
+        schema:addressLocality "Madrid" ;
+    ] ;
+    schema:url <http://www.ciemat.es/> ;
+    schema:sameAs <http://isni.org/isni/0000000119595823> ;
+             .

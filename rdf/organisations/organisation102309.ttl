@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/057a6gk14> 
+    a org:Organization ;
+    rdfs:label "University of Gibraltar" ;
+    schema:name "University of Gibraltar" ;
+    schema:foundingDate "2015"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/University_of_Gibraltar> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-5.35257 36.14474)"^^geo:wktLiteral ;
+        schema:addressLocality "Gibraltar" ;
+    ] ;
+    schema:url <https://www.unigib.edu.gi> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q18357152> ;
+             .

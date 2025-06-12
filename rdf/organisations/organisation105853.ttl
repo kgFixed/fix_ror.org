@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0290wsh42> 
+    a org:Organization ;
+    rdfs:label "Istituto Universitario di Studi Superiori di Pavia" ;
+    schema:name "Istituto Universitario di Studi Superiori di Pavia" ;
+    schema:foundingDate "1997"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Scuola_Superiore_Studi_Pavia_IUSS> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(9.15917 45.19205)"^^geo:wktLiteral ;
+        schema:addressLocality "Pavia" ;
+    ] ;
+    schema:url <https://www.iusspavia.it> ;
+    schema:sameAs <http://isni.org/isni/000000010724054X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3803694> ;
+             .

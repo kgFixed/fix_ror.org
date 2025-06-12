@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/001nta019> 
+    a org:Organization ;
+    rdfs:label "Institut National des Sciences Appliquées de Strasbourg" ;
+    schema:name "Institut National des Sciences Appliquées de Strasbourg" ;
+    schema:foundingDate "1875"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/INSA_Strasbourg> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00k4e5n71> ;
+        rdfs:label "Laboratoire des Sciences de l'Ingénieur, de l'Informatique et de l'Imagerie" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0459fdx51> ;
+        rdfs:label "Fédération de Recherche sur l'Energie Solaire" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(7.74553 48.58392)"^^geo:wktLiteral ;
+        schema:addressLocality "Strasbourg" ;
+    ] ;
+    schema:url <https://www.insa-strasbourg.fr> ;
+    schema:sameAs <http://isni.org/isni/0000000406405519> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q521036> ;
+             .

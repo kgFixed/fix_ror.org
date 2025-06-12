@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0103yxp25> 
+    a org:Organization ;
+    rdfs:label "Service de Santé des Armées" ;
+    schema:name "Service de Santé des Armées" ;
+    schema:foundingDate "1708"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/French_Defence_Health_Service> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(6.17269 49.11911)"^^geo:wktLiteral ;
+        schema:addressLocality "Metz" ;
+    ] ;
+    schema:url <http://www.defense.gouv.fr/english/sante> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q2657904> ;
+             .

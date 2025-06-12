@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03zbydc22> 
+    a org:Organization ;
+    rdfs:label "North Carolina School of Science and Mathematics" ;
+    schema:name "North Carolina School of Science and Mathematics" ;
+    schema:foundingDate "1980"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/North_Carolina_School_of_Science_and_Mathematics> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0566a8c54> ;
+        rdfs:label "University of North Carolina System" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-78.89862 35.99403)"^^geo:wktLiteral ;
+        schema:addressLocality "Durham" ;
+    ] ;
+    schema:url <https://www.ncssm.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000100216803> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7054585> ;
+             .

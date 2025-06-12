@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/036kqsd10> 
+    a org:Organization ;
+    rdfs:label "Universidad Tecnológica del Suroeste de Guanajuato" ;
+    schema:name "Universidad Tecnológica del Suroeste de Guanajuato" ;
+    schema:foundingDate "1998"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-101.19222 20.3914)"^^geo:wktLiteral ;
+        schema:addressLocality "Valle de Santiago" ;
+    ] ;
+    schema:url <http://www.utsoe.edu.mx> ;
+    schema:sameAs <http://isni.org/isni/0000000417708160> ;
+             .

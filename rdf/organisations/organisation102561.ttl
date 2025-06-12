@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04e3sqx89> 
+    a org:Organization ;
+    rdfs:label "Frome Community Hospital" ;
+    schema:name "Frome Community Hospital" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-2.32211 51.22834)"^^geo:wktLiteral ;
+        schema:addressLocality "Frome" ;
+    ] ;
+    schema:url <http://www.sompar.nhs.uk/what-we-do/community-hospitals/frome-community-hospital/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30293117> ;
+             .

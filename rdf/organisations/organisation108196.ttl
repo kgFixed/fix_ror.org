@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04vj69e88> 
+    a org:Organization ;
+    rdfs:label "National Institute for Mathematical and Biological Synthesis" ;
+    schema:name "National Institute for Mathematical and Biological Synthesis" ;
+    schema:foundingDate "2009"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/National_Institute_for_Mathematical_and_Biological_Synthesis> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/021nxhr62> ;
+        rdfs:label "U.S. National Science Foundation" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-83.92074 35.96064)"^^geo:wktLiteral ;
+        schema:addressLocality "Knoxville" ;
+    ] ;
+    schema:url <http://www.nimbios.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000459065183> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6973585> ;
+             .

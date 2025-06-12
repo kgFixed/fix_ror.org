@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03kkrza17> 
+    a org:Organization ;
+    rdfs:label "Centro de Investigaciones Interdisciplinarias en Ciencias y Humanidades" ;
+    schema:name "Centro de Investigaciones Interdisciplinarias en Ciencias y Humanidades" ;
+    schema:foundingDate "1986"^^xsd:gYear ;
+    schema:sameAs <https://es.wikipedia.org/wiki/Centro_de_Investigaciones_Interdisciplinarias_en_Ciencias_y_Humanidades> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01tmp8f25> ;
+        rdfs:label "Universidad Nacional Autónoma de México" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-99.12766 19.42847)"^^geo:wktLiteral ;
+        schema:addressLocality "Mexico City" ;
+    ] ;
+    schema:url <https://ceiich.unam.mx> ;
+    schema:sameAs <http://isni.org/isni/0000000121824859> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q92199844> ;
+             .

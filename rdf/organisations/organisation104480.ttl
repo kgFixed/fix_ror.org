@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01xszvp42> 
+    a org:Organization ;
+    rdfs:label "Szczecin Academy of Arts" ;
+    schema:name "Szczecin Academy of Arts" ;
+    schema:foundingDate "2010"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Art_Academy_of_Szczecin> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(14.55302 53.42894)"^^geo:wktLiteral ;
+        schema:addressLocality "Szczecin" ;
+    ] ;
+    schema:url <http://www.akademiasztuki.eu/> ;
+    schema:sameAs <http://isni.org/isni/0000000446659986> ;
+             .

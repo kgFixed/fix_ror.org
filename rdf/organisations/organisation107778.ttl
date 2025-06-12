@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03kndyq24> 
+    a org:Organization ;
+    rdfs:label "Moshi Co-operative University" ;
+    schema:name "Moshi Co-operative University" ;
+    schema:foundingDate "2014"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Moshi_Co-operative_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(37.33333 -3.35)"^^geo:wktLiteral ;
+        schema:addressLocality "Moshi" ;
+    ] ;
+    schema:url <https://www.mocu.ac.tz> ;
+    schema:sameAs <http://isni.org/isni/0000000404635863> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q15256455> ;
+             .

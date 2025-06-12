@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03m2b5j70> 
+    a org:Organization ;
+    rdfs:label "Deutscher Verband für Landschaftspflege" ;
+    schema:name "Deutscher Verband für Landschaftspflege" ;
+    schema:foundingDate "1993"^^xsd:gYear ;
+    schema:sameAs <https://de.wikipedia.org/wiki/Deutscher_Verband_f%C3%BCr_Landschaftspflege> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(10.5931 49.30481)"^^geo:wktLiteral ;
+        schema:addressLocality "Ansbach" ;
+    ] ;
+    schema:url <https://www.dvl.org> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q1205429> ;
+             .

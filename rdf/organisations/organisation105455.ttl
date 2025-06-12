@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/042ver755> 
+    a org:Organization ;
+    rdfs:label "University College Birmingham" ;
+    schema:name "University College Birmingham" ;
+    schema:foundingDate "1957"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/University_College_Birmingham> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.89983 52.48142)"^^geo:wktLiteral ;
+        schema:addressLocality "Birmingham" ;
+    ] ;
+    schema:url <https://www.ucb.ac.uk> ;
+    schema:sameAs <http://isni.org/isni/0000000102749232> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7894613> ;
+             .

@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01h3hm524> 
+    a org:Organization ;
+    rdfs:label "Ahl Al Bayt University" ;
+    schema:name "Ahl Al Bayt University" ;
+    schema:foundingDate "2003"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Ahlulbait_University_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(44.02488 32.61603)"^^geo:wktLiteral ;
+        schema:addressLocality "Karbala" ;
+    ] ;
+    schema:url <http://www.abu.edu.iq/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q4695210> ;
+             .

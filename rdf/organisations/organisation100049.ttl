@@ -1,0 +1,26 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01d02zv78> 
+    a org:Organization ;
+    rdfs:label "Australian Institute of Botanical Science" ;
+    schema:name "Australian Institute of Botanical Science" ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03nw3dq29> ;
+        rdfs:label "Royal Botanic Garden Sydney" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(151.20732 -33.86785)"^^geo:wktLiteral ;
+        schema:addressLocality "Sydney" ;
+    ] ;
+    schema:url <https://www.botanicgardens.org.au/discover-and-learn/watch-listen-read/australian-institute-botanical-science> ;
+     .

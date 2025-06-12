@@ -1,0 +1,34 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/051p9ra28> 
+    a org:Organization ;
+    rdfs:label "Station Marine d'Endoume" ;
+    schema:name "Station Marine d'Endoume" ;
+    schema:foundingDate "1882"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/035xkbk20> ;
+        rdfs:label "Aix-Marseille Université" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/049qgqg40> ;
+        rdfs:label "Délégation Provence et Corse" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(5.38107 43.29695)"^^geo:wktLiteral ;
+        schema:addressLocality "Marseille" ;
+    ] ;
+    schema:url <http://www.com.univ-mrs.fr/histoire/> ;
+    schema:sameAs <http://isni.org/isni/0000000110886739> ;
+             .

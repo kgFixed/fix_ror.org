@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00ewz9128> 
+    a org:Organization ;
+    rdfs:label "Huainan Union University" ;
+    schema:name "Huainan Union University" ;
+    schema:foundingDate "1984"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Huainan_United_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(116.99694 32.62639)"^^geo:wktLiteral ;
+        schema:addressLocality "Huainan" ;
+    ] ;
+    schema:url <https://www.hnuu.edu.cn> ;
+    schema:sameAs <http://isni.org/isni/0000000491722120> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5925144> ;
+             .

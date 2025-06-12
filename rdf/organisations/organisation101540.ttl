@@ -1,0 +1,33 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04y91dy23> 
+    a org:Organization ;
+    rdfs:label "Unité Évolution, Écologie et Paléontologie" ;
+    schema:name "Unité Évolution, Écologie et Paléontologie" ;
+    schema:foundingDate "2015"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04cxsn644> ;
+        rdfs:label "Délégation Nord, Pas-de-Calais et Picardie" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02kzqn938> ;
+        rdfs:label "Université de Lille" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(3.16664 50.61669)"^^geo:wktLiteral ;
+        schema:addressLocality "Villeneuve-d'Ascq" ;
+    ] ;
+    schema:url <http://eep.univ-lille.fr/en/> ;
+     .

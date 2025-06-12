@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05cy4wa09> 
+    a org:Organization ;
+    rdfs:label "Wellcome Sanger Institute" ;
+    schema:name "Wellcome Sanger Institute" ;
+    schema:foundingDate "1992"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Wellcome_Trust_Sanger_Institute> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/029chgv08> ;
+        rdfs:label "Wellcome Trust" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(0.11667 52.2)"^^geo:wktLiteral ;
+        schema:addressLocality "Cambridge" ;
+    ] ;
+    schema:url <https://www.sanger.ac.uk> ;
+    schema:sameAs <http://isni.org/isni/0000000406065382> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1142544> ;
+             .

@@ -1,0 +1,34 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0250ngj72> 
+    a org:Organization ;
+    rdfs:label "Centre Hospitalier Universitaire d'Angers" ;
+    schema:name "Centre Hospitalier Universitaire d'Angers" ;
+    schema:foundingDate "1175"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/003g1aw90> ;
+        rdfs:label "Centre de Recherche en Cancérologie et Immunologie Intégrée Nantes Angers" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04yrqp957> ;
+        rdfs:label "Université d'Angers" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.55202 47.47156)"^^geo:wktLiteral ;
+        schema:addressLocality "Angers" ;
+    ] ;
+    schema:url <https://www.chu-angers.fr> ;
+    schema:sameAs <http://isni.org/isni/0000000404720283> ;
+             .

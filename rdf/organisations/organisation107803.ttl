@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/051qw9f78> 
+    a org:Organization ;
+    rdfs:label "HTWG Hochschule Konstanz - Technik, Wirtschaft und Gestaltung" ;
+    schema:name "HTWG Hochschule Konstanz - Technik, Wirtschaft und Gestaltung" ;
+    schema:foundingDate "1906"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Hochschule_Konstanz> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(9.17582 47.66033)"^^geo:wktLiteral ;
+        schema:addressLocality "Konstanz" ;
+    ] ;
+    schema:url <https://www.htwg-konstanz.de> ;
+    schema:sameAs <http://isni.org/isni/0000000107275531> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1622118> ;
+             .

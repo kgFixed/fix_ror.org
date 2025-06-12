@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00671me87> 
+    a org:Organization ;
+    rdfs:label "Max Planck Institute for Psycholinguistics" ;
+    schema:name "Max Planck Institute for Psycholinguistics" ;
+    schema:foundingDate "1980"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Max_Planck_Institute_for_Psycholinguistics> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01hhn8329> ;
+        rdfs:label "Max Planck Society" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(5.85278 51.8425)"^^geo:wktLiteral ;
+        schema:addressLocality "Nijmegen" ;
+    ] ;
+    schema:url <https://www.mpi.nl> ;
+    schema:sameAs <http://isni.org/isni/0000000405013839> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q832911> ;
+             .

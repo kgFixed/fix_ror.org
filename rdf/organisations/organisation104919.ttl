@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02kqnpp86> 
+    a org:Organization ;
+    rdfs:label "University of Campania "Luigi Vanvitelli"" ;
+    schema:name "University of Campania "Luigi Vanvitelli"" ;
+    schema:foundingDate "1991"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Seconda_Universit%C3%A0_degli_Studi_di_Napoli> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/055cpj147> ;
+        rdfs:label "Centro Interuniversitario di Ricerca sui Peptidi Bioattivi" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02p9ey581> ;
+        rdfs:label "Azienda Ospedaliera Universitaria Università degli Studi della Campania Luigi Vanvitelli" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(14.33231 41.07262)"^^geo:wktLiteral ;
+        schema:addressLocality "Caserta" ;
+    ] ;
+    schema:url <https://unina2.it> ;
+    schema:sameAs <http://isni.org/isni/0000000122008888> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3551649> ;
+             .

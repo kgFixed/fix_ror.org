@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0509djg30> 
+    a org:Organization ;
+    rdfs:label "Indian Institute of Technology Dharwad" ;
+    schema:name "Indian Institute of Technology Dharwad" ;
+    schema:foundingDate "2016"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Indian_Institute_of_Technology_Dharwad> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(75.00778 15.46005)"^^geo:wktLiteral ;
+        schema:addressLocality "Dharwad" ;
+    ] ;
+    schema:url <https://www.iitdh.ac.in> ;
+    schema:sameAs <http://isni.org/isni/0000000460038393> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q24590509> ;
+             .

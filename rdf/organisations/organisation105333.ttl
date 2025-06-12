@@ -1,0 +1,34 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02aj7yc53> 
+    a org:Organization ;
+    rdfs:label "Princess Máxima Center" ;
+    schema:name "Princess Máxima Center" ;
+    org:status "active" ;
+    org:classification "Funder" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0575yy874> ;
+        rdfs:label "University Medical Center Utrecht" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05fqypv61> ;
+        rdfs:label "Wilhelmina Children's Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(5.12222 52.09083)"^^geo:wktLiteral ;
+        schema:addressLocality "Utrecht" ;
+    ] ;
+    schema:url <https://www.prinsesmaximacentrum.nl> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q97496397> ;
+             .

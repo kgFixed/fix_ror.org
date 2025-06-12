@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00yh00476> 
+    a org:Organization ;
+    rdfs:label "Organisation Mondiale de la Santé Animale" ;
+    schema:name "Organisation Mondiale de la Santé Animale" ;
+    schema:foundingDate "1924"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/World_Organisation_for_Animal_Health> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05ps02017> ;
+        rdfs:label "World Organisation for Animal Health" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.3488 48.85341)"^^geo:wktLiteral ;
+        schema:addressLocality "Paris" ;
+    ] ;
+    schema:url <http://www.oie.int/> ;
+    schema:sameAs <http://isni.org/isni/0000000123488166> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1058594> ;
+             .

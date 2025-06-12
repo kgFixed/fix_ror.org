@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0459pv085> 
+    a org:Organization ;
+    rdfs:label "Guangdong University Of Finances and Economics" ;
+    schema:name "Guangdong University Of Finances and Economics" ;
+    schema:foundingDate "1983"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Guangdong_University_Of_Finance_and_Economics> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(113.25 23.11667)"^^geo:wktLiteral ;
+        schema:addressLocality "Guangzhou" ;
+    ] ;
+    schema:url <https://www.gdufe.edu.cn> ;
+    schema:sameAs <http://isni.org/isni/0000000119229516> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5613646> ;
+             .

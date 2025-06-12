@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04dd86x86> 
+    a org:Organization ;
+    rdfs:label "Rajarata University of Sri Lanka" ;
+    schema:name "Rajarata University of Sri Lanka" ;
+    schema:foundingDate "1995"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Rajarata_University_of_Sri_Lanka> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(80.41306 8.31223)"^^geo:wktLiteral ;
+        schema:addressLocality "Anuradhapura" ;
+    ] ;
+    schema:url <https://www.rjt.ac.lk> ;
+    schema:sameAs <http://isni.org/isni/0000000404332651> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7285789> ;
+             .

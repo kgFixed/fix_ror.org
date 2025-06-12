@@ -1,0 +1,33 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01bcqbv56> 
+    a org:Organization ;
+    rdfs:label "Hôpital Adélaïde-Hautval" ;
+    schema:name "Hôpital Adélaïde-Hautval" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00pg5jh14> ;
+        rdfs:label "Assistance Publique – Hôpitaux de Paris" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05f82e368> ;
+        rdfs:label "Université Paris Cité" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.39819 49.00875)"^^geo:wktLiteral ;
+        schema:addressLocality "Villiers-le-Bel" ;
+    ] ;
+    schema:url <http://hupnvs.aphp.fr/ehpad-adelaide-hautval/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30101501> ;
+             .

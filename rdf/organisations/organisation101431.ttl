@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/023nfn818> 
+    a org:Organization ;
+    rdfs:label "Instituto Tecnológico de Conkal" ;
+    schema:name "Instituto Tecnológico de Conkal" ;
+    schema:sameAs <https://es.wikipedia.org/wiki/Instituto_Tecnol%C3%B3gico_de_Conkal> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-89.51963 21.07355)"^^geo:wktLiteral ;
+        schema:addressLocality "Conkal" ;
+    ] ;
+    schema:url <https://conkal.tecnm.mx> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q28777051> ;
+             .

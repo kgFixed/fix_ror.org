@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01927vf62> 
+    a org:Organization ;
+    rdfs:label "Zoology Museum of the University of Athens" ;
+    schema:name "Zoology Museum of the University of Athens" ;
+    schema:foundingDate "1858"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Zoological_Museum_of_the_University_of_Athens> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04gnjpq42> ;
+        rdfs:label "National and Kapodistrian University of Athens" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(23.72784 37.98376)"^^geo:wktLiteral ;
+        schema:addressLocality "Athens" ;
+    ] ;
+    schema:url <https://zoolmuseum.biol.uoa.gr> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q8074115> ;
+             .

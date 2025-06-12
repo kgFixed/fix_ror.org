@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05rf29967> 
+    a org:Organization ;
+    rdfs:label "Department for International Development" ;
+    schema:name "Department for International Development" ;
+    schema:foundingDate "1997"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Department_for_International_Development> ;
+    org:status "inactive" ;
+    org:classification "Funder" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05wnh3t63> ;
+        rdfs:label "Government of the United Kingdom" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/037wke960> ;
+        rdfs:label "Foreign, Commonwealth & Development Office" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.12574 51.50853)"^^geo:wktLiteral ;
+        schema:addressLocality "London" ;
+    ] ;
+    schema:url <https://www.gov.uk/government/organisations/department-for-international-development> ;
+    schema:sameAs <http://isni.org/isni/000000011018290X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2748702> ;
+             .

@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/055ysan77> 
+    a org:Organization ;
+    rdfs:label "Klein Buendel (United States)" ;
+    schema:name "Klein Buendel (United States)" ;
+    schema:foundingDate "2002"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-105.2211 39.75554)"^^geo:wktLiteral ;
+        schema:addressLocality "Golden" ;
+    ] ;
+    schema:url <http://www.kleinbuendel.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000405464998> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30253391> ;
+             .

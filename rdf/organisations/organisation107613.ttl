@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03fbv3w59> 
+    a org:Organization ;
+    rdfs:label "National Forensic Sciences University" ;
+    schema:name "National Forensic Sciences University" ;
+    schema:foundingDate "2008"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Gujarat_Forensic_Sciences_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(72.68333 23.21667)"^^geo:wktLiteral ;
+        schema:addressLocality "Gandhinagar" ;
+    ] ;
+    schema:url <https://www.nfsu.ac.in> ;
+    schema:sameAs <http://isni.org/isni/000000041781318X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q18130891> ;
+             .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03m99bx66> 
+    a org:Organization ;
+    rdfs:label "Accademia di Belle Arti di Catania" ;
+    schema:name "Accademia di Belle Arti di Catania" ;
+    schema:foundingDate "1967"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Accademia_di_Belle_Arti_di_Catania> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(15.07041 37.49223)"^^geo:wktLiteral ;
+        schema:addressLocality "Catania" ;
+    ] ;
+    schema:url <https://www.abacatania.it> ;
+    schema:sameAs <http://isni.org/isni/0000000121046372> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3604028> ;
+             .

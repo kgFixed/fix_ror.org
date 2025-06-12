@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02egmk993> 
+    a org:Organization ;
+    rdfs:label "University of Science and Technology Beijing" ;
+    schema:name "University of Science and Technology Beijing" ;
+    schema:foundingDate "1952"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/University_of_Science_and_Technology_Beijing> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01pvjzw40> ;
+        rdfs:label "State Key Laboratory of New Technology of Iron and Steel Metallurgy" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01f29ny64> ;
+        rdfs:label "State Key Laboratory for Advanced Metals and Materials" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(116.39723 39.9075)"^^geo:wktLiteral ;
+        schema:addressLocality "Beijing" ;
+    ] ;
+    schema:url <https://www.ustb.edu.cn> ;
+    schema:sameAs <http://isni.org/isni/0000000403690705> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1510516> ;
+             .

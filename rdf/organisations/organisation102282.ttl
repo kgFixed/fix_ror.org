@@ -1,0 +1,26 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03aes0d95> 
+    a org:Organization ;
+    rdfs:label "Centre Intégré de Santé et Services Sociaux de Chaudière-Appalache" ;
+    schema:name "Centre Intégré de Santé et Services Sociaux de Chaudière-Appalache" ;
+    org:status "withdrawn" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/05ghbjx71> ;
+        rdfs:label "Centre intégré de santé et de services sociaux de Chaudière-Appalaches" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-71.30539 46.09371)"^^geo:wktLiteral ;
+        schema:addressLocality "Thetford-Mines" ;
+    ] ;
+    schema:url <http://www.cisss-ca.gouv.qc.ca/index.php> ;
+     .

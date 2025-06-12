@@ -1,0 +1,39 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01jkemy20> 
+    a org:Organization ;
+    rdfs:label "Istituto Nazionale di Fisica Nucleare, Laboratorio di Tecniche Nucleari per l'Ambiente e i Beni Culturali" ;
+    schema:name "Istituto Nazionale di Fisica Nucleare, Laboratorio di Tecniche Nucleari per l'Ambiente e i Beni Culturali" ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/041zkgm14> ;
+        rdfs:label "University of Ferrara" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02vv5y108> ;
+        rdfs:label "Istituto Nazionale di Fisica Nucleare, Sezione di Firenze" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04jr1s763> ;
+        rdfs:label "University of Florence" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(11.19924 43.83193)"^^geo:wktLiteral ;
+        schema:addressLocality "Sesto Fiorentino" ;
+    ] ;
+    schema:url <https://web.infn.it/labec> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30265268> ;
+             .

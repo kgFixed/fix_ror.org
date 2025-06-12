@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00ftx0026> 
+    a org:Organization ;
+    rdfs:label "Hochschule Düsseldorf University of Applied Sciences" ;
+    schema:name "Hochschule Düsseldorf University of Applied Sciences" ;
+    schema:foundingDate "1971"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Hochschule_D%C3%BCsseldorf> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(6.77616 51.22172)"^^geo:wktLiteral ;
+        schema:addressLocality "Düsseldorf" ;
+    ] ;
+    schema:url <https://www.hs-duesseldorf.de> ;
+    schema:sameAs <http://isni.org/isni/0000000107290889> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q322886> ;
+             .

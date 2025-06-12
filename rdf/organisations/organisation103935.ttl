@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01yymex05> 
+    a org:Organization ;
+    rdfs:label "Southwest Jiaotong University Hope College" ;
+    schema:name "Southwest Jiaotong University Hope College" ;
+    schema:foundingDate "2009"^^xsd:gYear ;
+    schema:sameAs <https://zh.wikipedia.org/wiki/%E8%A5%BF%E5%8D%97%E4%BA%A4%E9%80%9A%E5%A4%A7%E5%AD%A6%E5%B8%8C%E6%9C%9B%E5%AD%A6%E9%99%A2> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00hn7w693> ;
+        rdfs:label "Southwest Jiaotong University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(104.06667 30.66667)"^^geo:wktLiteral ;
+        schema:addressLocality "Chengdu" ;
+    ] ;
+    schema:url <http://www.swjtuhc.cn> ;
+    schema:sameAs <http://isni.org/isni/0000000517779804> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q19856238> ;
+             .

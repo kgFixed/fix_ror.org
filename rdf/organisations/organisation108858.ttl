@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04rtxcq25> 
+    a org:Organization ;
+    rdfs:label "Arkalyk State Pedagogical Institute named after Ibrai Altynsarin" ;
+    schema:name "Arkalyk State Pedagogical Institute named after Ibrai Altynsarin" ;
+    schema:foundingDate "1972"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(66.90384 50.25031)"^^geo:wktLiteral ;
+        schema:addressLocality "Arqalyk" ;
+    ] ;
+    schema:url <https://api.edu.kz> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30294528> ;
+             .

@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/052msxy68> 
+    a org:Organization ;
+    rdfs:label "Montana University System" ;
+    schema:name "Montana University System" ;
+    schema:foundingDate "1994"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Montana_University_System> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03ttqt747> ;
+        rdfs:label "Montana Technological University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0078xmk34> ;
+        rdfs:label "University of Montana" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04rr0m327> ;
+        rdfs:label "University of Montana Western" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-112.03611 46.59271)"^^geo:wktLiteral ;
+        schema:addressLocality "Helena" ;
+    ] ;
+    schema:url <http://mus.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000086584430> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2495887> ;
+             .

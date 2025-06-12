@@ -1,0 +1,48 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/022r5hc56> 
+    a org:Organization ;
+    rdfs:label "Centre de Recherche en Automatique de Nancy" ;
+    schema:name "Centre de Recherche en Automatique de Nancy" ;
+    schema:foundingDate "1980"^^xsd:gYear ;
+    schema:sameAs <https://fr.wikipedia.org/wiki/Centre_de_recherche_en_automatique_de_Nancy> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/016ncsr12> ;
+        rdfs:label "Centre Hospitalier Régional et Universitaire de Nancy" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00yphhr71> ;
+        rdfs:label "Institut de Cancérologie de Lorraine" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04z22qz54> ;
+        rdfs:label "Institut des Sciences de l'Information et de leurs Interactions" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04vfs2w97> ;
+        rdfs:label "Université de Lorraine" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(6.18496 48.68439)"^^geo:wktLiteral ;
+        schema:addressLocality "Nancy" ;
+    ] ;
+    schema:url <https://www.cran.univ-lorraine.fr> ;
+    schema:sameAs <http://isni.org/isni/0000000121518763> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2945401> ;
+             .

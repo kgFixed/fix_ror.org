@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02ypw0a72> 
+    a org:Organization ;
+    rdfs:label "École nationale d'ingénieurs de Brest" ;
+    schema:name "École nationale d'ingénieurs de Brest" ;
+    schema:foundingDate "1961"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/%C3%89cole_nationale_d%27ing%C3%A9nieurs_de_Brest> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03011gg73> ;
+        rdfs:label "Institut de Recherche Dupuy de Lôme" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0266kfd37> ;
+        rdfs:label "Laboratoire des Sciences et Techniques de l’Information de la Communication et de la Connaissance" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-4.61805 48.38131)"^^geo:wktLiteral ;
+        schema:addressLocality "Plouzané" ;
+    ] ;
+    schema:url <https://www.enib.fr> ;
+    schema:sameAs <http://isni.org/isni/0000000406403599> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q273564> ;
+             .

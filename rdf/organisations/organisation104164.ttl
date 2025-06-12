@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02ygek028> 
+    a org:Organization ;
+    rdfs:label "UCLouvain Saint-Louis Brussels" ;
+    schema:name "UCLouvain Saint-Louis Brussels" ;
+    schema:foundingDate "1858"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Universit%C3%A9_Saint-Louis_Bruxelles> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02495e989> ;
+        rdfs:label "UCLouvain" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(4.34878 50.85045)"^^geo:wktLiteral ;
+        schema:addressLocality "Brussels" ;
+    ] ;
+    schema:url <https://www.usaintlouis.be> ;
+    schema:sameAs <http://isni.org/isni/0000000109416203> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1391752> ;
+             .

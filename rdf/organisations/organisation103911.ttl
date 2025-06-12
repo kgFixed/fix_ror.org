@@ -1,0 +1,44 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01sgfhb12> 
+    a org:Organization ;
+    rdfs:label "National Enterprise for NanoScience and NanoTechnology" ;
+    schema:name "National Enterprise for NanoScience and NanoTechnology" ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0042e5975> ;
+        rdfs:label "Istituto Nanoscienze" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/042t93s57> ;
+        rdfs:label "Italian Institute of Technology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/025602r80> ;
+        rdfs:label "Scuola Superiore Sant'Anna" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03aydme10> ;
+        rdfs:label "Scuola Normale Superiore" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(10.4036 43.70853)"^^geo:wktLiteral ;
+        schema:addressLocality "Pisa" ;
+    ] ;
+    schema:url <http://www.laboratorionest.it/> ;
+     .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/004s18446> 
+    a org:Organization ;
+    rdfs:label "Polytechnic Institute of Castelo Branco" ;
+    schema:name "Polytechnic Institute of Castelo Branco" ;
+    schema:foundingDate "1980"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Polytechnic_Institute_of_Castelo_Branco> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-7.49087 39.82219)"^^geo:wktLiteral ;
+        schema:addressLocality "Castelo Branco" ;
+    ] ;
+    schema:url <https://ipcb.pt> ;
+    schema:sameAs <http://isni.org/isni/0000000122194158> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7227029> ;
+             .

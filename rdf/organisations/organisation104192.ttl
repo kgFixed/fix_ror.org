@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01wwv2135> 
+    a org:Organization ;
+    rdfs:label "Chesterfield College" ;
+    schema:name "Chesterfield College" ;
+    schema:foundingDate "1984"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Chesterfield_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/019wt1929> ;
+        rdfs:label "Sheffield Hallam University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.41667 53.25)"^^geo:wktLiteral ;
+        schema:addressLocality "Chesterfield" ;
+    ] ;
+    schema:url <https://www.chesterfield.ac.uk/> ;
+    schema:sameAs <http://isni.org/isni/0000000405188911> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5093795> ;
+             .

@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05r0q9p84> 
+    a org:Organization ;
+    rdfs:label "Calvin University" ;
+    schema:name "Calvin University" ;
+    schema:foundingDate "1876"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Calvin_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-85.66809 42.96336)"^^geo:wktLiteral ;
+        schema:addressLocality "Grand Rapids" ;
+    ] ;
+    schema:url <https://calvin.edu> ;
+    schema:sameAs <http://isni.org/isni/0000000419368171> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2698482> ;
+             .

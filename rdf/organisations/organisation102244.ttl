@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/008mb6p65> 
+    a org:Organization ;
+    rdfs:label "Technology Research Institute of Osaka Prefecture" ;
+    schema:name "Technology Research Institute of Osaka Prefecture" ;
+    schema:foundingDate "1929"^^xsd:gYear ;
+    org:status "inactive" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/03r38cy24> ;
+        rdfs:label "Osaka Research Institute of Industrial Science and Technology" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(135.43333 34.48333)"^^geo:wktLiteral ;
+        schema:addressLocality "Izumi" ;
+    ] ;
+    schema:url <http://tri-osaka.jp/> ;
+    schema:sameAs <http://isni.org/isni/0000000101985794> ;
+             .

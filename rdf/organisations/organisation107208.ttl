@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04vsvr128> 
+    a org:Organization ;
+    rdfs:label "International Centre for Diarrhoeal Disease Research" ;
+    schema:name "International Centre for Diarrhoeal Disease Research" ;
+    schema:foundingDate "1960"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/International_Centre_for_Diarrhoeal_Disease_Research,_Bangladesh> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(90.40744 23.7104)"^^geo:wktLiteral ;
+        schema:addressLocality "Dhaka" ;
+    ] ;
+    schema:url <https://www.icddrb.org> ;
+    schema:sameAs <http://isni.org/isni/0000000406007174> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2945843> ;
+             .

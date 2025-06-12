@@ -1,0 +1,40 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/024gts110> 
+    a org:Organization ;
+    rdfs:label "Géosciences Montpellier" ;
+    schema:name "Géosciences Montpellier" ;
+    schema:foundingDate "2006"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04kdfz702> ;
+        rdfs:label "Institut National des Sciences de l'Univers" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/051escj72> ;
+        rdfs:label "Université de Montpellier" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02ryfmr77> ;
+        rdfs:label "Université des Antilles" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(3.87635 43.61093)"^^geo:wktLiteral ;
+        schema:addressLocality "Montpellier" ;
+    ] ;
+    schema:url <https://www.gm.umontpellier.fr> ;
+    schema:sameAs <http://isni.org/isni/000000012184338X> ;
+             .

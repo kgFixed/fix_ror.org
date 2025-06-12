@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/022991v89> 
+    a org:Organization ;
+    rdfs:label "Catholic University of Croatia" ;
+    schema:name "Catholic University of Croatia" ;
+    schema:foundingDate "2006"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Catholic_University_of_Croatia> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(15.97798 45.81444)"^^geo:wktLiteral ;
+        schema:addressLocality "Zagreb" ;
+    ] ;
+    schema:url <https://www.unicath.hr> ;
+    schema:sameAs <http://isni.org/isni/0000000405467013> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q12632683> ;
+             .

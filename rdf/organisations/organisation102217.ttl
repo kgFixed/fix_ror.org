@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02fsd1928> 
+    a org:Organization ;
+    rdfs:label "Centre Scientifique et Technique du Bâtiment" ;
+    schema:name "Centre Scientifique et Technique du Bâtiment" ;
+    schema:foundingDate "1947"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Scientific_and_Technical_Centre_for_Building> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00g8rx069> ;
+        rdfs:label "Ministère de la Transition écologique et de la Cohésion des territoires" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.6 48.85)"^^geo:wktLiteral ;
+        schema:addressLocality "Champs-sur-Marne" ;
+    ] ;
+    schema:url <https://www.cstb.fr> ;
+    schema:sameAs <http://isni.org/isni/0000000121538043> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2946043> ;
+             .

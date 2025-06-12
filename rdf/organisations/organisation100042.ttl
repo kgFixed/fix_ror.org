@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02z8bdw71> 
+    a org:Organization ;
+    rdfs:label "College of Regional Development and Banking Institute - AMBIS" ;
+    schema:name "College of Regional Development and Banking Institute - AMBIS" ;
+    schema:foundingDate "1994"^^xsd:gYear ;
+    schema:sameAs <https://cs.wikipedia.org/wiki/AMBIS_vysok%C3%A1_%C5%A1kola> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(14.42076 50.08804)"^^geo:wktLiteral ;
+        schema:addressLocality "Prague" ;
+    ] ;
+    schema:url <https://www.ambis.cz> ;
+    schema:sameAs <http://isni.org/isni/0000000483377742> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q11046731> ;
+             .

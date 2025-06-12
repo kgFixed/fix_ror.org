@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01111rn36> 
+    a org:Organization ;
+    rdfs:label "University of Bologna" ;
+    schema:name "University of Bologna" ;
+    schema:foundingDate "1088"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/University_of_Bologna> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00t4vnv68> ;
+        rdfs:label "Policlinico S.Orsola-Malpighi" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04j0x0h93> ;
+        rdfs:label "Istituto Nazionale di Fisica Nucleare, Sezione di Bologna" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(11.33875 44.49381)"^^geo:wktLiteral ;
+        schema:addressLocality "Bologna" ;
+    ] ;
+    schema:url <https://www.unibo.it> ;
+    schema:sameAs <http://isni.org/isni/0000000417571758> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q131262> ;
+             .

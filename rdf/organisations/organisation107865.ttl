@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/054rm6z62> 
+    a org:Organization ;
+    rdfs:label "Catholic University Los Angeles of Chimbote" ;
+    schema:name "Catholic University Los Angeles of Chimbote" ;
+    schema:foundingDate "1985"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Catholic_University_Los_Angeles_of_Chimbote> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-78.59373 -9.07508)"^^geo:wktLiteral ;
+        schema:addressLocality "Chimbote" ;
+    ] ;
+    schema:url <https://www.uladech.edu.pe/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q15217527> ;
+             .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/025chrz76> 
+    a org:Organization ;
+    rdfs:label "Marshfield Clinic" ;
+    schema:name "Marshfield Clinic" ;
+    schema:foundingDate "1916"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Marshfield_Clinic> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-90.1718 44.66885)"^^geo:wktLiteral ;
+        schema:addressLocality "Marshfield" ;
+    ] ;
+    schema:url <https://www.marshfieldclinic.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000092747048> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q17020389> ;
+             .

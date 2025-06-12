@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05hg41718> 
+    a org:Organization ;
+    rdfs:label "Ovarian Cancer Research Alliance" ;
+    schema:name "Ovarian Cancer Research Alliance" ;
+    schema:foundingDate "1994"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Ovarian_Cancer_Research_Alliance> ;
+    org:status "active" ;
+    org:classification "Funder" ;
+    org:classification "Nonprofit" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04jmzd816> ;
+        rdfs:label "Michigan Ovarian Cancer Alliance" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-74.00597 40.71427)"^^geo:wktLiteral ;
+        schema:addressLocality "New York" ;
+    ] ;
+    schema:url <https://ocrahope.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000459064973> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q17009040> ;
+             .

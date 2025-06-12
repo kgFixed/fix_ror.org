@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02mfp0b67> 
+    a org:Organization ;
+    rdfs:label "National Center for Theoretical Sciences" ;
+    schema:name "National Center for Theoretical Sciences" ;
+    schema:foundingDate "1997"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04jmdbw57> ;
+        rdfs:label "National Center for Theoretical Sciences, Mathematics Division" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02mh1d616> ;
+        rdfs:label "National Center for Theoretical Sciences, Physics Division" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(121.52639 25.05306)"^^geo:wktLiteral ;
+        schema:addressLocality "Taipei" ;
+    ] ;
+    schema:url <https://ncts.ntu.edu.tw> ;
+    schema:sameAs <http://isni.org/isni/0000000090605564> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q10867778> ;
+             .

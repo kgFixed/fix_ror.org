@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01s1km724> 
+    a org:Organization ;
+    rdfs:label "Universidad de las Américas Puebla" ;
+    schema:name "Universidad de las Américas Puebla" ;
+    schema:foundingDate "1940"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Universidad_de_las_Am%C3%A9ricas_Puebla> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-98.29526 19.05144)"^^geo:wktLiteral ;
+        schema:addressLocality "San Andrés Cholula" ;
+    ] ;
+    schema:url <https://www.udlap.mx> ;
+    schema:sameAs <http://isni.org/isni/0000000101505973> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1514597> ;
+             .

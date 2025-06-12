@@ -1,0 +1,67 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02xzytt36> 
+    a org:Organization ;
+    rdfs:label "Manipal Academy of Higher Education" ;
+    schema:name "Manipal Academy of Higher Education" ;
+    schema:foundingDate "1953"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Manipal_Academy_of_Higher_Education> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05hg48t65> ;
+        rdfs:label "Kasturba Medical College, Manipal" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04at8nn08> ;
+        rdfs:label "Dr. TMA Pai Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/048vk1h54> ;
+        rdfs:label "Kasturba Medical College, Mangalore" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04qkb5e79> ;
+        rdfs:label "Manipal-Tata Medical College, Jamshedpur" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00g2cf802> ;
+        rdfs:label "Melaka Manipal Medical College" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/040h76494> ;
+        rdfs:label "Manipal University Jaipur" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/023331s46> ;
+        rdfs:label "The George Institute for Global Health" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(74.78333 13.35)"^^geo:wktLiteral ;
+        schema:addressLocality "Manipal" ;
+    ] ;
+    schema:url <https://manipal.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000105715193> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4095278> ;
+             .

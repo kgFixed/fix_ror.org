@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/011aa4g29> 
+    a org:Organization ;
+    rdfs:label "Sami Shamoon College of Engineering" ;
+    schema:name "Sami Shamoon College of Engineering" ;
+    schema:foundingDate "1995"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Sami_Shamoon_College_of_Engineering> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(34.7913 31.25181)"^^geo:wktLiteral ;
+        schema:addressLocality "Beersheba" ;
+    ] ;
+    schema:url <https://www.sce.ac.il/> ;
+    schema:sameAs <http://isni.org/isni/0000000406049884> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q16128755> ;
+             .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0547wj766> 
+    a org:Organization ;
+    rdfs:label "Northern College" ;
+    schema:name "Northern College" ;
+    schema:foundingDate "1978"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Northern_College_for_Residential_and_Community_Adult_Education> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.48333 53.55)"^^geo:wktLiteral ;
+        schema:addressLocality "Barnsley" ;
+    ] ;
+    schema:url <https://www.northern.ac.uk> ;
+    schema:sameAs <http://isni.org/isni/0000000403740581> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7058242> ;
+             .

@@ -1,0 +1,34 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05p21h471> 
+    a org:Organization ;
+    rdfs:label "University College Prague" ;
+    schema:name "University College Prague" ;
+    schema:foundingDate "2021"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Predecessor" ;
+        org:member <https://ror.org/01q2qvt95> ;
+        rdfs:label "Institute of Hospitality Management in Prague" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Predecessor" ;
+        org:member <https://ror.org/05jgjfc59> ;
+        rdfs:label "University of International and Public Relations Prague" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(14.42076 50.08804)"^^geo:wktLiteral ;
+        schema:addressLocality "Prague" ;
+    ] ;
+    schema:url <https://ucp.cz> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q115210101> ;
+             .

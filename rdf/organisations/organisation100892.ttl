@@ -1,0 +1,41 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02tp7mm44> 
+    a org:Organization ;
+    rdfs:label "Centre de Recherches Insulaires et Observatoire de l'Environnement" ;
+    schema:name "Centre de Recherches Insulaires et Observatoire de l'Environnement" ;
+    schema:foundingDate "2010"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01q76b368> ;
+        rdfs:label "Institut Écologie et Environnement" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03am2jy38> ;
+        rdfs:label "Université de Perpignan" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/046b3cj80> ;
+        rdfs:label "École Pratique des Hautes Études" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-149.87437 -17.49538)"^^geo:wktLiteral ;
+        schema:addressLocality "Papetoai" ;
+    ] ;
+    schema:url <http://www.criobe.pf/> ;
+    schema:sameAs <http://isni.org/isni/0000000405695219> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q51781533> ;
+             .

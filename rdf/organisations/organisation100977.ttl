@@ -1,0 +1,79 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02gdcg342> 
+    a org:Organization ;
+    rdfs:label "Université du littoral côte d'opale" ;
+    schema:name "Université du littoral côte d'opale" ;
+    schema:foundingDate "1991"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/University_of_the_Littoral_Opal_Coast> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0018c4h73> ;
+        rdfs:label "Institut Charles Viollette" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/014net767> ;
+        rdfs:label "Laboratoire de Physico-Chimie de l'Atmosphère" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05m14rs93> ;
+        rdfs:label "Laboratoire d’Océanologie et de Géosciences" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00m090414> ;
+        rdfs:label "Maison Européenne des Sciences de l'Homme et de la Société" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04kwqat20> ;
+        rdfs:label "Territoires, Villes, Environnement & Société" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03eq8fa86> ;
+        rdfs:label "Unité de Recherche Pluridisciplinaire Sport, Santé, Société" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00tm1qp20> ;
+        rdfs:label "Laboratoire d’Informatique Signal et Image de la Côte d’Opale" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00hz02a80> ;
+        rdfs:label "Adiposité Médullaire et Os" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/032v67m28> ;
+        rdfs:label "UMR Transfrontalière BioEcoAgro" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.37681 51.0344)"^^geo:wktLiteral ;
+        schema:addressLocality "Dunkirk" ;
+    ] ;
+    schema:url <http://www.univ-littoral.fr/english/english_home.htm> ;
+    schema:sameAs <http://isni.org/isni/0000000121134241> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3551755> ;
+             .

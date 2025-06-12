@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0015qa126> 
+    a org:Organization ;
+    rdfs:label "International Centre for Theoretical Sciences" ;
+    schema:name "International Centre for Theoretical Sciences" ;
+    schema:foundingDate "2007"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/International_Centre_for_Theoretical_Sciences> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03ht1xw27> ;
+        rdfs:label "Tata Institute of Fundamental Research" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(77.59369 12.97194)"^^geo:wktLiteral ;
+        schema:addressLocality "Bengaluru" ;
+    ] ;
+    schema:url <https://www.icts.res.in/> ;
+    schema:sameAs <http://isni.org/isni/0000000417615095> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q14957003> ;
+             .

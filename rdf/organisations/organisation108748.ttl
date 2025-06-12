@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/009zrt367> 
+    a org:Organization ;
+    rdfs:label "The Nigeria French Language Village" ;
+    schema:name "The Nigeria French Language Village" ;
+    schema:foundingDate "1991"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Nigeria_French_Language_Village> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.90245 6.43813)"^^geo:wktLiteral ;
+        schema:addressLocality "Badagry" ;
+    ] ;
+    schema:url <https://frenchvillage.edu.ng> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q112684478> ;
+             .

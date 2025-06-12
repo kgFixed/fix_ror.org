@@ -1,0 +1,33 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00nhs3j29> 
+    a org:Organization ;
+    rdfs:label "Istituto Nazionale di Fisica Nucleare, Trento Institute for Fundamental Physics And Applications" ;
+    schema:name "Istituto Nazionale di Fisica Nucleare, Trento Institute for Fundamental Physics And Applications" ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/005ta0471> ;
+        rdfs:label "Istituto Nazionale di Fisica Nucleare" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05trd4x28> ;
+        rdfs:label "University of Trento" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(11.15503 46.06698)"^^geo:wktLiteral ;
+        schema:addressLocality "Povo" ;
+    ] ;
+    schema:url <https://www.tifpa.infn.it> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30265304> ;
+             .

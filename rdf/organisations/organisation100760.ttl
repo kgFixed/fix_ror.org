@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0132f3h08> 
+    a org:Organization ;
+    rdfs:label "Fondation Nationale des Sciences Politiques" ;
+    schema:name "Fondation Nationale des Sciences Politiques" ;
+    schema:foundingDate "1945"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Fondation_Nationale_des_Sciences_Politiques> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.3488 48.85341)"^^geo:wktLiteral ;
+        schema:addressLocality "Paris" ;
+    ] ;
+    schema:url <http://www.sciencespo.fr/en/home> ;
+    schema:sameAs <http://isni.org/isni/0000000119419264> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3075695> ;
+             .

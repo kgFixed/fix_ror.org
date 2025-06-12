@@ -1,0 +1,26 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03m66j484> 
+    a org:Organization ;
+    rdfs:label "Instituto Tecnológico de Lázaro Cárdenas" ;
+    schema:name "Instituto Tecnológico de Lázaro Cárdenas" ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00davry38> ;
+        rdfs:label "Tecnológico Nacional de México" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-102.22124 17.97066)"^^geo:wktLiteral ;
+        schema:addressLocality "Lázaro Cárdenas" ;
+    ] ;
+    schema:url <https://lcardenas.itlac.mx> ;
+     .

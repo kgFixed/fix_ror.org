@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01zywja13> 
+    a org:Organization ;
+    rdfs:label "Kielce University of Technology" ;
+    schema:name "Kielce University of Technology" ;
+    schema:foundingDate "1965"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Kielce_University_of_Technology> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(20.62752 50.87033)"^^geo:wktLiteral ;
+        schema:addressLocality "Kielce" ;
+    ] ;
+    schema:url <https://tu.kielce.pl> ;
+    schema:sameAs <http://isni.org/isni/0000000110128583> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2399303> ;
+             .

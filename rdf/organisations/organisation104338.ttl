@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/043a7rc44> 
+    a org:Organization ;
+    rdfs:label "Institut catholique de paris" ;
+    schema:name "Institut catholique de paris" ;
+    schema:foundingDate "1875"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Institut_Catholique_de_Paris> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/006yrbb28> ;
+        rdfs:label "École de Psychologues Praticien" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.3488 48.85341)"^^geo:wktLiteral ;
+        schema:addressLocality "Paris" ;
+    ] ;
+    schema:url <https://www.icp.fr> ;
+    schema:sameAs <http://isni.org/isni/0000000122966429> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1470431> ;
+             .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04etcj997> 
+    a org:Organization ;
+    rdfs:label "Inter-University Centre for Astronomy and Astrophysics" ;
+    schema:name "Inter-University Centre for Astronomy and Astrophysics" ;
+    schema:foundingDate "1988"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Inter-University_Centre_for_Astronomy_and_Astrophysics> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(73.85535 18.51957)"^^geo:wktLiteral ;
+        schema:addressLocality "Pune" ;
+    ] ;
+    schema:url <https://www.iucaa.in> ;
+    schema:sameAs <http://isni.org/isni/000000009280468X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3345391> ;
+             .

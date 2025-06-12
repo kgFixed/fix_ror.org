@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02zpfcb35> 
+    a org:Organization ;
+    rdfs:label "Škoda Auto University" ;
+    schema:name "Škoda Auto University" ;
+    schema:foundingDate "2000"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/%C5%A0koda_Auto_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(14.90318 50.41135)"^^geo:wktLiteral ;
+        schema:addressLocality "Mladá Boleslav" ;
+    ] ;
+    schema:url <https://www.savs.cz/> ;
+    schema:sameAs <http://isni.org/isni/0000000088981798> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q391945> ;
+             .

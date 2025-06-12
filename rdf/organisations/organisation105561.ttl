@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/047h64h89> 
+    a org:Organization ;
+    rdfs:label "Lapland University of Applied Sciences" ;
+    schema:name "Lapland University of Applied Sciences" ;
+    schema:foundingDate "2014"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Lapland_University_of_Applied_Sciences> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(24.56371 65.73641)"^^geo:wktLiteral ;
+        schema:addressLocality "Kemi" ;
+    ] ;
+    schema:url <https://www.lapinamk.fi> ;
+    schema:sameAs <http://isni.org/isni/0000000446491976> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q15637496> ;
+             .

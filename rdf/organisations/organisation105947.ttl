@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03dmc3670> 
+    a org:Organization ;
+    rdfs:label "Congreso de los Diputados" ;
+    schema:name "Congreso de los Diputados" ;
+    schema:foundingDate "1843"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Congress_of_Deputies_(Spain)> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-3.70256 40.4165)"^^geo:wktLiteral ;
+        schema:addressLocality "Madrid" ;
+    ] ;
+    schema:url <https://www.congreso.es> ;
+     .

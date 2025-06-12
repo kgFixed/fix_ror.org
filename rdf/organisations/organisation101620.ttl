@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01xc5jm57> 
+    a org:Organization ;
+    rdfs:label "Instituto Federal de Educação Ciência e Tecnologia da Paraíba" ;
+    schema:name "Instituto Federal de Educação Ciência e Tecnologia da Paraíba" ;
+    schema:foundingDate "2008"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-34.86306 -7.115)"^^geo:wktLiteral ;
+        schema:addressLocality "João Pessoa" ;
+    ] ;
+    schema:url <https://www.ifpb.edu.br> ;
+    schema:sameAs <http://isni.org/isni/000000009895745X> ;
+             .

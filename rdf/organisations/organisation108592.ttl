@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02m7p2c22> 
+    a org:Organization ;
+    rdfs:label "Hochschule für Musik und Theater München" ;
+    schema:name "Hochschule für Musik und Theater München" ;
+    schema:foundingDate "1846"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/University_of_Music_and_Performing_Arts_Munich> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(11.57549 48.13743)"^^geo:wktLiteral ;
+        schema:addressLocality "Munich" ;
+    ] ;
+    schema:url <http://website.musikhochschule-muenchen.de/de/index.php> ;
+    schema:sameAs <http://isni.org/isni/0000000123698251> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q657167> ;
+             .

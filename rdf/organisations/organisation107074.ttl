@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0228k1a18> 
+    a org:Organization ;
+    rdfs:label "Linfield College" ;
+    schema:name "Linfield College" ;
+    schema:foundingDate "1858"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Linfield_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-123.19872 45.21012)"^^geo:wktLiteral ;
+        schema:addressLocality "McMinnville" ;
+    ] ;
+    schema:url <https://www.linfield.edu> ;
+    schema:sameAs <http://isni.org/isni/0000000087358195> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6553672> ;
+             .

@@ -1,0 +1,57 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/031xg0236> 
+    a org:Organization ;
+    rdfs:label "Virologie et Pathologies Humaines" ;
+    schema:name "Virologie et Pathologies Humaines" ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/029brtt94> ;
+        rdfs:label "Université Claude Bernard Lyon 1" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00bjjqs38> ;
+        rdfs:label "Délégation Rhône Auvergne" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0530j9m17> ;
+        rdfs:label "Délégation Régionale Auvergne-Rhône-Alpes" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01502ca60> ;
+        rdfs:label "Hospices Civils de Lyon" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/059sz6q14> ;
+        rdfs:label "Centre International de Recherche en Infectiologie" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04zmssz18> ;
+        rdfs:label "École Normale Supérieure de Lyon" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(4.84671 45.74846)"^^geo:wktLiteral ;
+        schema:addressLocality "Lyon" ;
+    ] ;
+    schema:url <http://www.virpath.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000403872111> ;
+             .

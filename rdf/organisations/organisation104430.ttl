@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02g9nss57> 
+    a org:Organization ;
+    rdfs:label "Anyang Normal University" ;
+    schema:name "Anyang Normal University" ;
+    schema:foundingDate "1908"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Anyang_Normal_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(114.38278 36.096)"^^geo:wktLiteral ;
+        schema:addressLocality "Anyang" ;
+    ] ;
+    schema:url <https://www.aynu.edu.cn> ;
+    schema:sameAs <http://isni.org/isni/0000000417589923> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q10947285> ;
+             .

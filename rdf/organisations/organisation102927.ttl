@@ -1,0 +1,35 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03z942k20> 
+    a org:Organization ;
+    rdfs:label "Department of Education" ;
+    schema:name "Department of Education" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Department_of_Education_%28Australia%29> ;
+    org:status "active" ;
+    org:classification "Funder" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01rde0531> ;
+        rdfs:label "Therapeutic Innovation Australia" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/000dfsq72> ;
+        rdfs:label "Office for Learning and Teaching" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(149.12807 -35.28346)"^^geo:wktLiteral ;
+        schema:addressLocality "Canberra" ;
+    ] ;
+    schema:url <https://www.education.gov.au> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q45134155> ;
+             .

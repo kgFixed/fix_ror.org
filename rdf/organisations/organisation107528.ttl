@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04f2nsd36> 
+    a org:Organization ;
+    rdfs:label "Lancaster University" ;
+    schema:name "Lancaster University" ;
+    schema:foundingDate "1964"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Lancaster_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02047t867> ;
+        rdfs:label "New Phytologist Foundation" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-2.79988 54.04649)"^^geo:wktLiteral ;
+        schema:addressLocality "Lancaster" ;
+    ] ;
+    schema:url <https://www.lancaster.ac.uk> ;
+    schema:sameAs <http://isni.org/isni/0000000081906402> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q262854> ;
+             .

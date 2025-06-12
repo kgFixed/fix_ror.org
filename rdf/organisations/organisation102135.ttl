@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03cg93958> 
+    a org:Organization ;
+    rdfs:label "Instituto de Assistência Médica ao Servidor Público Estadual" ;
+    schema:name "Instituto de Assistência Médica ao Servidor Público Estadual" ;
+    schema:foundingDate "1952"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Instituto_de_Assist%C3%AAncia_M%C3%A9dica_ao_Servidor_P%C3%BAblico_Estadual> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04r1rhv60> ;
+        rdfs:label "Hospital do Servidor Público Estadual" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-46.63503 -23.62703)"^^geo:wktLiteral ;
+        schema:addressLocality "São Paulo" ;
+    ] ;
+    schema:url <http://www.iamspe.sp.gov.br> ;
+    schema:sameAs <http://isni.org/isni/0000000404114654> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5908712> ;
+             .

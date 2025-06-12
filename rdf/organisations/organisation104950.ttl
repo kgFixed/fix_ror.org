@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02yxnh564> 
+    a org:Organization ;
+    rdfs:label "Northeast Forestry University" ;
+    schema:name "Northeast Forestry University" ;
+    schema:foundingDate "1952"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Northeast_Forestry_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03a1zvg88> ;
+        rdfs:label "State Key Laboratory of Tree Genetics and Breeding" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(126.65 45.75)"^^geo:wktLiteral ;
+        schema:addressLocality "Harbin" ;
+    ] ;
+    schema:url <https://www.nefu.edu.cn> ;
+    schema:sameAs <http://isni.org/isni/0000000417899091> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q10869592> ;
+             .

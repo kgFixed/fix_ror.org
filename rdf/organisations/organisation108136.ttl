@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00z10e966> 
+    a org:Organization ;
+    rdfs:label "Mohanlal Sukhadia University" ;
+    schema:name "Mohanlal Sukhadia University" ;
+    schema:foundingDate "1962"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Mohanlal_Sukhadia_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(73.71346 24.58584)"^^geo:wktLiteral ;
+        schema:addressLocality "Udaipur" ;
+    ] ;
+    schema:url <https://www.mlsu.ac.in/> ;
+    schema:sameAs <http://isni.org/isni/0000000102351021> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6893652> ;
+             .

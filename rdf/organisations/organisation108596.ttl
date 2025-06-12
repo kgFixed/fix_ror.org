@@ -1,0 +1,61 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00thqtb16> 
+    a org:Organization ;
+    rdfs:label "University of Nebraska Medical Center" ;
+    schema:name "University of Nebraska Medical Center" ;
+    schema:foundingDate "1880"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/University_of_Nebraska_Medical_Center> ;
+    org:status "active" ;
+    org:classification "Funder" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03azxga02> ;
+        rdfs:label "Nebraska Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02b8e6n56> ;
+        rdfs:label "Central States Center for Agricultural Safety and Health" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04j36h363> ;
+        rdfs:label "Children's Hospital & Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03edgm225> ;
+        rdfs:label "Nebraska Orthopaedic Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04yrkc140> ;
+        rdfs:label "University of Nebraska at Omaha" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0238rvs44> ;
+        rdfs:label "University of Nebraska System" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-95.94043 41.25626)"^^geo:wktLiteral ;
+        schema:addressLocality "Omaha" ;
+    ] ;
+    schema:url <https://www.unmc.edu> ;
+    schema:sameAs <http://isni.org/isni/0000000106664105> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7895888> ;
+             .

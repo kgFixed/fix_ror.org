@@ -1,0 +1,56 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02e2c7k09> 
+    a org:Organization ;
+    rdfs:label "Delft University of Technology" ;
+    schema:name "Delft University of Technology" ;
+    schema:foundingDate "1842"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Delft_University_of_Technology> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04wf30j82> ;
+        rdfs:label "QuTech" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02hrx0m28> ;
+        rdfs:label "TU Delft OPEN Publishing" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00wkhef66> ;
+        rdfs:label "Reinier de Graaf Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03rsncr94> ;
+        rdfs:label "4TU" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05ahyhp31> ;
+        rdfs:label "Holland Particle Therapy Center" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(4.35556 52.00667)"^^geo:wktLiteral ;
+        schema:addressLocality "Delft" ;
+    ] ;
+    schema:url <https://www.tudelft.nl> ;
+    schema:sameAs <http://isni.org/isni/0000000120974740> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q752663> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6379334> ;
+             .

@@ -1,0 +1,33 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03z69yv22> 
+    a org:Organization ;
+    rdfs:label "Foie, Métabolisme, Cancer" ;
+    schema:name "Foie, Métabolisme, Cancer" ;
+    org:status "inactive" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02vjkv261> ;
+        rdfs:label "Inserm" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/015m7wh34> ;
+        rdfs:label "University of Rennes" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.67429 48.11198)"^^geo:wktLiteral ;
+        schema:addressLocality "Rennes" ;
+    ] ;
+    schema:url <http://inserm-umr991.univ-rennes1.fr/?lang=en> ;
+    schema:sameAs <http://isni.org/isni/0000000404505428> ;
+             .

@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/042vemv88> 
+    a org:Organization ;
+    rdfs:label "Santa Casa da Misericórdia do Porto" ;
+    schema:name "Santa Casa da Misericórdia do Porto" ;
+    schema:sameAs <https://pt.wikipedia.org/wiki/Santa_Casa_da_Miseric%C3%B3rdia_do_Porto> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-8.61099 41.14961)"^^geo:wktLiteral ;
+        schema:addressLocality "Porto" ;
+    ] ;
+    schema:url <https://www.scmp.pt> ;
+    schema:sameAs <http://isni.org/isni/000000011955663X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q10367736> ;
+             .

@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/036b8pc68> 
+    a org:Organization ;
+    rdfs:label "Stiftung Alfried Krupp Kolleg Greifswald" ;
+    schema:name "Stiftung Alfried Krupp Kolleg Greifswald" ;
+    schema:foundingDate "2000"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Funder" ;
+    org:classification "Nonprofit" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04y7h3604> ;
+        rdfs:label "Alfried Krupp von Bohlen und Halbach Foundation" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00r1edq15> ;
+        rdfs:label "Universität Greifswald" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(13.38786 54.09311)"^^geo:wktLiteral ;
+        schema:addressLocality "Greifswald" ;
+    ] ;
+    schema:url <https://www.wiko-greifswald.de> ;
+    schema:sameAs <http://isni.org/isni/0000000404934193> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1464555> ;
+             .

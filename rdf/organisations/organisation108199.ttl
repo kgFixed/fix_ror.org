@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01s5jzh92> 
+    a org:Organization ;
+    rdfs:label "Stockholm School of Economics" ;
+    schema:name "Stockholm School of Economics" ;
+    schema:foundingDate "1909"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Stockholm_School_of_Economics> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(18.06871 59.32938)"^^geo:wktLiteral ;
+        schema:addressLocality "Stockholm" ;
+    ] ;
+    schema:url <https://www.hhs.se/> ;
+    schema:sameAs <http://isni.org/isni/0000000112141861> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1061504> ;
+             .

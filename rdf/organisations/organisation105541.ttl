@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04e9czp26> 
+    a org:Organization ;
+    rdfs:label "Mimar Sinan Güzel Sanatlar Üniversitesi" ;
+    schema:name "Mimar Sinan Güzel Sanatlar Üniversitesi" ;
+    schema:foundingDate "1882"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Mimar_Sinan_Fine_Arts_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(28.94966 41.01384)"^^geo:wktLiteral ;
+        schema:addressLocality "Istanbul" ;
+    ] ;
+    schema:url <https://msgsu.edu.tr> ;
+    schema:sameAs <http://isni.org/isni/0000000121698100> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1936057> ;
+             .

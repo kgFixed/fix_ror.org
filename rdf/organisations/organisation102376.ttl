@@ -1,0 +1,67 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03a1kwz48> 
+    a org:Organization ;
+    rdfs:label "University of Tübingen" ;
+    schema:name "University of Tübingen" ;
+    schema:foundingDate "1477"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/University_of_T%C3%BCbingen> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04zzwzx41> ;
+        rdfs:label "Hertie Institute for Clinical Brain Research" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/005pfhc08> ;
+        rdfs:label "Senckenberg Centre for Human Evolution and Palaeoenvironment" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00v34f693> ;
+        rdfs:label "Quantitative Biology Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01kkkw551> ;
+        rdfs:label "Zentrum für Datenverarbeitung" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02a2sfd38> ;
+        rdfs:label "Klinikum Esslingen" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00pjgxh97> ;
+        rdfs:label "Universitätsklinikum Tübingen" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0107nyd78> ;
+        rdfs:label "Tübingen AI Center" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(9.05222 48.52266)"^^geo:wktLiteral ;
+        schema:addressLocality "Tübingen" ;
+    ] ;
+    schema:url <https://www.uni-tuebingen.de/en/university.html> ;
+    schema:sameAs <http://isni.org/isni/0000000121901447> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q153978> ;
+             .

@@ -1,0 +1,91 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/019wvm592> 
+    a org:Organization ;
+    rdfs:label "Australian National University" ;
+    schema:name "Australian National University" ;
+    schema:foundingDate "1946"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Australian_National_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05sh7tb37> ;
+        rdfs:label "ARC Centre of Excellence for Transformative Meta-Optical Systems" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01a1mq059> ;
+        rdfs:label "ARC Centre of Excellence in Plant Energy Biology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/006a4jj40> ;
+        rdfs:label "Mount Stromlo Observatory" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00qtfgg81> ;
+        rdfs:label "Australian Data Archive" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/024jkkf40> ;
+        rdfs:label "Australian Centre for Excellence in Antarctic Science" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01s5nqv53> ;
+        rdfs:label "Centre for Advanced Microscopy" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/041c7s516> ;
+        rdfs:label "Calvary Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04h7nbn38> ;
+        rdfs:label "Canberra Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/030jpqj15> ;
+        rdfs:label "Goulburn Base Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00qq77n27> ;
+        rdfs:label "Consortium for Ocean-Sea Ice Modelling in Australia" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01az7g189> ;
+        rdfs:label "Stawell Underground Physics Laboratory" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(149.12807 -35.28346)"^^geo:wktLiteral ;
+        schema:addressLocality "Canberra" ;
+    ] ;
+    schema:url <https://www.anu.edu.au> ;
+    schema:sameAs <http://isni.org/isni/0000000121807477> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q127990> ;
+             .

@@ -1,0 +1,67 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01r9htc13> 
+    a org:Organization ;
+    rdfs:label "Université Libre de Bruxelles" ;
+    schema:name "Université Libre de Bruxelles" ;
+    schema:foundingDate "1834"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Universit%C3%A9_libre_de_Bruxelles> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/040w2dm02> ;
+        rdfs:label "Interuniversity Institute for High Energies" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/013ww9721> ;
+        rdfs:label "Wiener - Anspach Foundation" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/011apjk30> ;
+        rdfs:label "Centre Hospitalier Universitaire Brugmann" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05cmp5q80> ;
+        rdfs:label "Centre Hospitalier Universitaire de Saint-Pierre" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05j1gs298> ;
+        rdfs:label "Erasmus Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05e8s8534> ;
+        rdfs:label "Institut Jules Bordet" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01t5yh786> ;
+        rdfs:label "Queen Fabiola Children's University Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(4.34878 50.85045)"^^geo:wktLiteral ;
+        schema:addressLocality "Brussels" ;
+    ] ;
+    schema:url <https://www.ulb.be> ;
+    schema:sameAs <http://isni.org/isni/0000000123486355> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q574606> ;
+             .
