@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03zg8ak49> 
+    a org:Organization ;
+    rdfs:label "Universidad CEU Fernando III" ;
+    schema:name "Universidad CEU Fernando III" ;
+    schema:foundingDate "2023"^^xsd:gYear ;
+    schema:sameAs <https://es.wikipedia.org/wiki/Universidad_CEU_Fernando_III> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04a0dbe36> ;
+        rdfs:label "Fundación Universitaria San Pablo CEU" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-5.97317 37.38283)"^^geo:wktLiteral ;
+        schema:addressLocality "Seville" ;
+    ] ;
+    schema:url <https://uf3ceu.es> ;
+    schema:sameAs <http://isni.org/isni/0000000524242140> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6156459> ;
+             .

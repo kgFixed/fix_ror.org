@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01sn0bt42> 
+    a org:Organization ;
+    rdfs:label "Animal Health Research Center" ;
+    schema:name "Animal Health Research Center" ;
+    schema:foundingDate "1999"^^xsd:gYear ;
+    schema:sameAs <https://ca.wikipedia.org/wiki/Centre_de_Recerca_en_Sanitat_Animal_%28IRTA-CReSA%29> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/012zh9h13> ;
+        rdfs:label "Institute of Agrifood Research and Technology" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.08746 41.5026)"^^geo:wktLiteral ;
+        schema:addressLocality "Bellaterra" ;
+    ] ;
+    schema:url <https://www.irta.cat/en/centres/cresa-animal-health-research-center/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q27586891> ;
+             .

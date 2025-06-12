@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00v6ffm80> 
+    a org:Organization ;
+    rdfs:label "Ecrins National Park" ;
+    schema:name "Ecrins National Park" ;
+    schema:foundingDate "1973"^^xsd:gYear ;
+    schema:sameAs <https://fr.wikipedia.org/wiki/Parc_national_des_%C3%89crins> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(6.07868 44.55858)"^^geo:wktLiteral ;
+        schema:addressLocality "Gap" ;
+    ] ;
+    schema:url <https://www.ecrins-parcnational.fr> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q476446> ;
+             .

@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01xscrc43> 
+    a org:Organization ;
+    rdfs:label "Solvay (Germany)" ;
+    schema:name "Solvay (Germany)" ;
+    schema:foundingDate "1880"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Solvay_S.A.> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01g8djv19> ;
+        rdfs:label "Solvay (Belgium)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(9.73322 52.37052)"^^geo:wktLiteral ;
+        schema:addressLocality "Hanover" ;
+    ] ;
+    schema:url <http://www.solvay.com/en/index.html> ;
+    schema:sameAs <http://isni.org/isni/0000000406036899> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30338662> ;
+             .

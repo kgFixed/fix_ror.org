@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/002rjbv21> 
+    a org:Organization ;
+    rdfs:label "Université du Québec à Montréal" ;
+    schema:name "Université du Québec à Montréal" ;
+    schema:foundingDate "1969"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Universit%C3%A9_du_Qu%C3%A9bec_%C3%A0_Montr%C3%A9al> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02pkvpx84> ;
+        rdfs:label "Group for Research in Decision Analysis" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/010gxg263> ;
+        rdfs:label "Université du Québec" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03wx0vn75> ;
+        rdfs:label "CentrEau - Quebec Water Management Research Centre" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05xay3m79> ;
+        rdfs:label "Érudit" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0155edt85> ;
+        rdfs:label "fabriqueREL" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-73.58781 45.50884)"^^geo:wktLiteral ;
+        schema:addressLocality "Montreal" ;
+    ] ;
+    schema:url <https://uqam.ca> ;
+    schema:sameAs <http://isni.org/isni/0000000121810211> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1634522> ;
+             .

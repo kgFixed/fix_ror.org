@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05e4xkm09> 
+    a org:Organization ;
+    rdfs:label "Czech National Corpus" ;
+    schema:name "Czech National Corpus" ;
+    schema:foundingDate "2010"^^xsd:gYear ;
+    schema:sameAs <https://cs.wikipedia.org/wiki/%C4%8Cesk%C3%BD_n%C3%A1rodn%C3%AD_korpus> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/024d6js02> ;
+        rdfs:label "Charles University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(14.42076 50.08804)"^^geo:wktLiteral ;
+        schema:addressLocality "Prague" ;
+    ] ;
+    schema:url <https://korpus.cz> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q13365702> ;
+             .

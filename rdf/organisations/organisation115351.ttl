@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04vgqjj36> 
+    a org:Organization ;
+    rdfs:label "Sahlgrenska University Hospital" ;
+    schema:name "Sahlgrenska University Hospital" ;
+    schema:foundingDate "1772"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Sahlgrenska_University_Hospital> ;
+    org:status "active" ;
+    org:classification "Funder" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00yqpgp96> ;
+        rdfs:label "Drottning Silvias barn- och ungdomssjukhus" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01tm6cn81> ;
+        rdfs:label "University of Gothenburg" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/005re7g62> ;
+        rdfs:label "Jubileumskliniken Cancerfond" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(11.96679 57.70716)"^^geo:wktLiteral ;
+        schema:addressLocality "Gothenburg" ;
+    ] ;
+    schema:url <http://www.sahlgrenskaic.com/medical-care/sahlgrenska-university-hospital/> ;
+    schema:sameAs <http://isni.org/isni/000000009445082X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3290496> ;
+             .

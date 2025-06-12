@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05dd3wr66> 
+    a org:Organization ;
+    rdfs:label "Huntsman Marine Science Centre" ;
+    schema:name "Huntsman Marine Science Centre" ;
+    schema:foundingDate "1969"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Huntsman_Marine_Science_Centre> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-67.05312 45.0737)"^^geo:wktLiteral ;
+        schema:addressLocality "Saint Andrews" ;
+    ] ;
+    schema:url <http://www.huntsmanmarine.ca/> ;
+    schema:sameAs <http://isni.org/isni/0000000122196479> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2945552> ;
+             .

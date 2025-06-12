@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03myd1n81> 
+    a org:Organization ;
+    rdfs:label "Dar Al Uloom University" ;
+    schema:name "Dar Al Uloom University" ;
+    schema:foundingDate "2008"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Dar_Al_Uloom_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(46.72185 24.68773)"^^geo:wktLiteral ;
+        schema:addressLocality "Riyadh" ;
+    ] ;
+    schema:url <https://dau.edu.sa/> ;
+    schema:sameAs <http://isni.org/isni/0000000417717446> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q12204482> ;
+             .

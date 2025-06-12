@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00an0vn46> 
+    a org:Organization ;
+    rdfs:label "Raidió Teilifís Éireann (Ireland)" ;
+    schema:name "Raidió Teilifís Éireann (Ireland)" ;
+    schema:foundingDate "1960"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Raidi%C3%B3_Teilif%C3%ADs_%C3%89ireann> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-6.24889 53.33306)"^^geo:wktLiteral ;
+        schema:addressLocality "Dublin" ;
+    ] ;
+    schema:url <https://www.rte.ie/> ;
+    schema:sameAs <http://isni.org/isni/0000000418034452> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q329494> ;
+             .

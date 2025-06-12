@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01bfg2v82> 
+    a org:Organization ;
+    rdfs:label "Institut Agama Islam Negeri Palopo" ;
+    schema:name "Institut Agama Islam Negeri Palopo" ;
+    schema:foundingDate "1997"^^xsd:gYear ;
+    schema:sameAs <https://id.wikipedia.org/wiki/Institut_Agama_Islam_Negeri_Palopo> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(120.19694 -2.9925)"^^geo:wktLiteral ;
+        schema:addressLocality "Palopo" ;
+    ] ;
+    schema:url <https://iainpalopo.ac.id> ;
+     .

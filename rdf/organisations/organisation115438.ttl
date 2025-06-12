@@ -1,0 +1,91 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01ryk1543> 
+    a org:Organization ;
+    rdfs:label "University of Southampton" ;
+    schema:name "University of Southampton" ;
+    schema:foundingDate "1952"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/University_of_Southampton> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04j4a6x59> ;
+        rdfs:label "MRC Lifecourse Epidemiology Unit" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05bfg0961> ;
+        rdfs:label "NIHR CRUK Experimental Cancer Medicine Centre" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01qqpzg67> ;
+        rdfs:label "NIHR Southampton Biomedical Research Centre" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04vxw9c34> ;
+        rdfs:label "University of Southampton Malaysia" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01yg3ff09> ;
+        rdfs:label "NIHR Southampton Respiratory Biomedical Research Unit" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/046xy0k58> ;
+        rdfs:label "NIHR Wellcome Trust Southampton Clinical Research Facility" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02yjksy18> ;
+        rdfs:label "Princess Anne Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04rha3g10> ;
+        rdfs:label "Queen Alexandra Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00hhwej14> ;
+        rdfs:label "Royal Hampshire County Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01zbzxe52> ;
+        rdfs:label "Royal South Hants Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/011cztj49> ;
+        rdfs:label "Southampton General Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.40428 50.90395)"^^geo:wktLiteral ;
+        schema:addressLocality "Southampton" ;
+    ] ;
+    schema:url <http://www.southampton.ac.uk/> ;
+    schema:sameAs <http://isni.org/isni/0000000419369297> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q76473> ;
+             .

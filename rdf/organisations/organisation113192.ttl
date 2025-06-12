@@ -1,0 +1,86 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02ex6cf31> 
+    a org:Organization ;
+    rdfs:label "Brookhaven National Laboratory" ;
+    schema:name "Brookhaven National Laboratory" ;
+    schema:foundingDate "1947"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Brookhaven_National_Laboratory> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05db1vq90> ;
+        rdfs:label "RIKEN BNL Research Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01q47ea17> ;
+        rdfs:label "National Synchrotron Light Source II" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0580dnq61> ;
+        rdfs:label "Accelerator Test Facility" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/035xqz322> ;
+        rdfs:label "Center for Functional Nanomaterials" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02kjy2z57> ;
+        rdfs:label "Relativistic Heavy Ion Collider" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/002h4ry72> ;
+        rdfs:label "Co-design Center for Quantum Advantage" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05434fs92> ;
+        rdfs:label "Brookhaven Science Associates" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00mmn6b08> ;
+        rdfs:label "Office of Science" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01dvj3d25> ;
+        rdfs:label "Atmospheric Radiation Measurement User Facility" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02s1c4g54> ;
+        rdfs:label "Brookhaven National Laboratory - Participation of the Czech Republic" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-72.88677 40.86954)"^^geo:wktLiteral ;
+        schema:addressLocality "Upton" ;
+    ] ;
+    schema:url <http://www.bnl.gov/world/> ;
+    schema:sameAs <http://isni.org/isni/0000000121884229> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q585777> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5059647> ;
+             .

@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01788sq40> 
+    a org:Organization ;
+    rdfs:label "Acorda Therapeutics (United States)" ;
+    schema:name "Acorda Therapeutics (United States)" ;
+    schema:foundingDate "1995"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Acorda_Therapeutics> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03t25rb04> ;
+        rdfs:label "Acorda Therapeutics (Finland)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04k2v7662> ;
+        rdfs:label "Acorda Therapeutics (Switzerland)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-73.84375 41.01065)"^^geo:wktLiteral ;
+        schema:addressLocality "Ardsley" ;
+    ] ;
+    schema:url <http://www.acorda.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000404078905> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4674531> ;
+             .

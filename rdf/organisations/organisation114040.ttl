@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02eqqc684> 
+    a org:Organization ;
+    rdfs:label "Centro Social Paroquial São Romão de Carnaxide" ;
+    schema:name "Centro Social Paroquial São Romão de Carnaxide" ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-9.24671 38.72706)"^^geo:wktLiteral ;
+        schema:addressLocality "Carnaxide" ;
+    ] ;
+    schema:url <https://cspcarnaxide.wixsite.com/centrosocial> ;
+    schema:sameAs <http://isni.org/isni/000000049332023X> ;
+             .

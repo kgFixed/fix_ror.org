@@ -1,0 +1,49 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02xstv633> 
+    a org:Organization ;
+    rdfs:label "Ball (United States)" ;
+    schema:name "Ball (United States)" ;
+    schema:foundingDate "1880"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Ball_Corporation> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/031rbfd73> ;
+        rdfs:label "Ball (France)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/033a14h05> ;
+        rdfs:label "Ball (Germany)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02w60ja15> ;
+        rdfs:label "Ball (Sweden)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/057vt6455> ;
+        rdfs:label "Ball (United Kingdom)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-105.08665 39.92054)"^^geo:wktLiteral ;
+        schema:addressLocality "Broomfield" ;
+    ] ;
+    schema:url <https://www.ball.com/na> ;
+    schema:sameAs <http://isni.org/isni/0000000406378469> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4034815> ;
+             .

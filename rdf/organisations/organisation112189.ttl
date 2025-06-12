@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00kfc2x89> 
+    a org:Organization ;
+    rdfs:label "Turan International University" ;
+    schema:name "Turan International University" ;
+    schema:foundingDate "2022"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(71.67257 40.9983)"^^geo:wktLiteral ;
+        schema:addressLocality "Namangan" ;
+    ] ;
+    schema:url <https://tiu-edu.uz> ;
+    schema:sameAs <http://isni.org/isni/0000000508064858> ;
+             .

@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/026apfz04> 
+    a org:Organization ;
+    rdfs:label "Tova Industries (United States)" ;
+    schema:name "Tova Industries (United States)" ;
+    schema:foundingDate "1985"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-85.75941 38.25424)"^^geo:wktLiteral ;
+        schema:addressLocality "Louisville" ;
+    ] ;
+    schema:url <http://www.tovaindustries.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30286155> ;
+             .

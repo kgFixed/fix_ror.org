@@ -1,0 +1,20 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/032k1g572> 
+    a org:Organization ;
+    rdfs:label "Akita Research Center for Public Health and Environment" ;
+    schema:name "Akita Research Center for Public Health and Environment" ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(140.11667 39.71667)"^^geo:wktLiteral ;
+        schema:addressLocality "Akita" ;
+    ] ;
+    schema:url <https://www.pref.akita.lg.jp/pages/genre/rcphe> ;
+     .

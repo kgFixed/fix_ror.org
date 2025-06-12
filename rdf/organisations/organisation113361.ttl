@@ -1,0 +1,50 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04esgv207> 
+    a org:Organization ;
+    rdfs:label "Rashtrasant Tukadoji Maharaj Nagpur University" ;
+    schema:name "Rashtrasant Tukadoji Maharaj Nagpur University" ;
+    schema:foundingDate "1923"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Rashtrasant_Tukadoji_Maharaj_Nagpur_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02w7k5y22> ;
+        rdfs:label "Datta Meghe Institute of Medical Sciences" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05xanxb38> ;
+        rdfs:label "Govt. Dental College & Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03ys8dr56> ;
+        rdfs:label "Hislop College" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00gcgw028> ;
+        rdfs:label "Government College of Engineering, Nagpur" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(79.08491 21.14631)"^^geo:wktLiteral ;
+        schema:addressLocality "Nagpur" ;
+    ] ;
+    schema:url <http://www.nagpuruniversity.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000111778457> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2628297> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q39516648> ;
+             .

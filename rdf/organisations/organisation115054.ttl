@@ -1,0 +1,61 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04cdgtt98> 
+    a org:Organization ;
+    rdfs:label "German Cancer Research Center" ;
+    schema:name "German Cancer Research Center" ;
+    schema:foundingDate "1964"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/German_Cancer_Research_Center> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05x8b4491> ;
+        rdfs:label "DKFZ-ZMBH Alliance" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/015wgw417> ;
+        rdfs:label "Heidelberger Institut für Radioonkologie" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02cypar22> ;
+        rdfs:label "Hopp Children's Cancer Center Heidelberg" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01zy07c70> ;
+        rdfs:label "Nationales Centrum für Tumorerkrankungen Dresden" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/054qg2939> ;
+        rdfs:label "Helmholtz Institute for Translational Oncology Mainz" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0281dp749> ;
+        rdfs:label "Helmholtz Association of German Research Centres" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(8.69079 49.40768)"^^geo:wktLiteral ;
+        schema:addressLocality "Heidelberg" ;
+    ] ;
+    schema:url <http://www.dkfz.de/en/index.html> ;
+    schema:sameAs <http://isni.org/isni/0000000404920584> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q449325> ;
+             .

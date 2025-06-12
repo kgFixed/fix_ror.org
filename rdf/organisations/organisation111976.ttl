@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0377srw41> 
+    a org:Organization ;
+    rdfs:label "MetroHealth" ;
+    schema:name "MetroHealth" ;
+    schema:foundingDate "1837"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/MetroHealth> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05j4p5w63> ;
+        rdfs:label "MetroHealth Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/051fd9666> ;
+        rdfs:label "Case Western Reserve University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-81.69541 41.4995)"^^geo:wktLiteral ;
+        schema:addressLocality "Cleveland" ;
+    ] ;
+    schema:url <https://www.metrohealth.org> ;
+    schema:sameAs <http://isni.org/isni/000000008614884X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q14716715> ;
+             .

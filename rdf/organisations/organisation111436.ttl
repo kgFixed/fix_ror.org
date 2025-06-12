@@ -1,0 +1,39 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03sc1p174> 
+    a org:Organization ;
+    rdfs:label "Laboratoire Interuniversitaire de Biologie de la Motricité" ;
+    schema:name "Laboratoire Interuniversitaire de Biologie de la Motricité" ;
+    schema:foundingDate "2016"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/029brtt94> ;
+        rdfs:label "Université Claude Bernard Lyon 1" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04gqg1a07> ;
+        rdfs:label "Université Savoie Mont Blanc" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04yznqr36> ;
+        rdfs:label "Université Jean Monnet" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(4.8795 45.76601)"^^geo:wktLiteral ;
+        schema:addressLocality "Villeurbanne" ;
+    ] ;
+    schema:url <https://libm.univ-st-etienne.fr/fr/index.html> ;
+     .

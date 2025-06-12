@@ -1,0 +1,57 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01j84x757> 
+    a org:Organization ;
+    rdfs:label "Nanomaterials and Nanotechnologies for Environment Protection and Sustainable Future" ;
+    schema:name "Nanomaterials and Nanotechnologies for Environment Protection and Sustainable Future" ;
+    schema:foundingDate "2015"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Other" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02sat5y74> ;
+        rdfs:label "Czech Academy of Sciences, J. Heyrovský Institute of Physical Chemistry" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03hjekm25> ;
+        rdfs:label "Czech Academy of Sciences, Institute of Experimental Medicine" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01hsjcv06> ;
+        rdfs:label "Czech Academy of Sciences, Institute of Inorganic Chemistry" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04qxnmv42> ;
+        rdfs:label "Palacký University Olomouc" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02jtk7k02> ;
+        rdfs:label "Technical University of Liberec" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04vjwcp92> ;
+        rdfs:label "Jan Evangelista Purkyně University in Ústí nad Labem" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(14.42076 50.08804)"^^geo:wktLiteral ;
+        schema:addressLocality "Prague" ;
+    ] ;
+    schema:url <https://www.nanoenvicz.cz> ;
+     .

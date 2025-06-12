@@ -1,0 +1,80 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/027s68j25> 
+    a org:Organization ;
+    rdfs:label "Ministry of Science and Technology of the People's Republic of China" ;
+    schema:name "Ministry of Science and Technology of the People's Republic of China" ;
+    schema:foundingDate "1998"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Ministry_of_Science_and_Technology_of_the_People%27s_Republic_of_China> ;
+    org:status "active" ;
+    org:classification "Funder" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/034k14f91> ;
+        rdfs:label "Beijing Municipal Science and Technology Commission" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02fsh0r13> ;
+        rdfs:label "China National Center for Biotechnology Development" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04qqd9793> ;
+        rdfs:label "Chinese Academy of Science and Technology for Development" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01b2av652> ;
+        rdfs:label "Institute of Scientific and Technical Information of China" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02pzr0022> ;
+        rdfs:label "National Center for Science and Technology Evaluation" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01c2sx728> ;
+        rdfs:label "Shaanxi Science and Technology Department" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/012wsxz85> ;
+        rdfs:label "State Key Laboratory of Hydrology-Water Resources and Hydraulic Engineering" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00502tg50> ;
+        rdfs:label "Wanfang Data (China)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02fzqav45> ;
+        rdfs:label "State Council of the People's Republic of China" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(116.39723 39.9075)"^^geo:wktLiteral ;
+        schema:addressLocality "Beijing" ;
+    ] ;
+    schema:url <http://www.most.gov.cn/eng/> ;
+    schema:sameAs <http://isni.org/isni/0000000403691054> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q839875> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7248392> ;
+             .

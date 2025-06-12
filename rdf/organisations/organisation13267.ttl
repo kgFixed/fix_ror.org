@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00wgdxy37> 
+    a org:Organization ;
+    rdfs:label "Appalachian Mountain Advocates" ;
+    schema:name "Appalachian Mountain Advocates" ;
+    schema:foundingDate "2001"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-80.44563 37.80179)"^^geo:wktLiteral ;
+        schema:addressLocality "Lewisburg" ;
+    ] ;
+    schema:url <http://www.appalmad.org/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30286734> ;
+             .

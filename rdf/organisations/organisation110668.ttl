@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04j198w64> 
+    a org:Organization ;
+    rdfs:label "Western Michigan University" ;
+    schema:name "Western Michigan University" ;
+    schema:foundingDate "1903"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Western_Michigan_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/032zc6m47> ;
+        rdfs:label "Bronson Methodist Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05rzk0426> ;
+        rdfs:label "West Michigan Cancer Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03a1q3q78> ;
+        rdfs:label "The Evaluation Center" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-85.58723 42.29171)"^^geo:wktLiteral ;
+        schema:addressLocality "Kalamazoo" ;
+    ] ;
+    schema:url <https://wmich.edu> ;
+    schema:sameAs <http://isni.org/isni/0000000106721122> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1546191> ;
+             .

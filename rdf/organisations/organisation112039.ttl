@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04xrh1s08> 
+    a org:Organization ;
+    rdfs:label "Saint Gabriel College" ;
+    schema:name "Saint Gabriel College" ;
+    schema:foundingDate "1970"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Saint_Gabriel_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(122.36667 11.68333)"^^geo:wktLiteral ;
+        schema:addressLocality "Kalibo" ;
+    ] ;
+    schema:url <https://sgc.edu.ph> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q7401921> ;
+             .

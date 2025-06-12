@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01e2k1j30> 
+    a org:Organization ;
+    rdfs:label "Bureau of Medicine and Surgery" ;
+    schema:name "Bureau of Medicine and Surgery" ;
+    schema:foundingDate "1842"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Bureau_of_Medicine_and_Surgery> ;
+    org:status "active" ;
+    org:classification "Funder" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/035agn614> ;
+        rdfs:label "Navy and Marine Corps Force Health Protection Command" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05f421b09> ;
+        rdfs:label "Naval Medical Research Command" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03ar0mv07> ;
+        rdfs:label "United States Department of the Navy" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.17109 38.88233)"^^geo:wktLiteral ;
+        schema:addressLocality "Falls Church" ;
+    ] ;
+    schema:url <https://www.med.navy.mil> ;
+    schema:sameAs <http://isni.org/isni/0000000106725166> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q17986161> ;
+             .

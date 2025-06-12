@@ -1,0 +1,34 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03qtzce31> 
+    a org:Organization ;
+    rdfs:label "Ministère de l'Économie, de l'Innovation et de l'Énergie" ;
+    schema:name "Ministère de l'Économie, de l'Innovation et de l'Énergie" ;
+    org:status "active" ;
+    org:classification "Funder" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00acpf703> ;
+        rdfs:label "Commission de l'Ethique en Science et en Technologie" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05waa5295> ;
+        rdfs:label "Government of Quebec" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-73.58781 45.50884)"^^geo:wktLiteral ;
+        schema:addressLocality "Montreal" ;
+    ] ;
+    schema:url <https://www.economie.gouv.qc.ca> ;
+    schema:sameAs <http://isni.org/isni/000000046432598X> ;
+             .

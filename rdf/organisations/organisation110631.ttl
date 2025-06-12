@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01s8j4r12> 
+    a org:Organization ;
+    rdfs:label "State Herbarium of South Australia" ;
+    schema:name "State Herbarium of South Australia" ;
+    schema:foundingDate "1954"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/State_Herbarium_of_South_Australia> ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/053gv9453> ;
+        rdfs:label "Department for Environment and Water" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(138.59863 -34.92866)"^^geo:wktLiteral ;
+        schema:addressLocality "Adelaide" ;
+    ] ;
+    schema:url <https://www.environment.sa.gov.au/topics/Science/science-research/State_Herbarium> ;
+    schema:sameAs <http://isni.org/isni/0000000092271975> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7603235> ;
+             .

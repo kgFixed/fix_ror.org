@@ -1,0 +1,35 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05fb7v315> 
+    a org:Organization ;
+    rdfs:label "CTA Observatory" ;
+    schema:name "CTA Observatory" ;
+    schema:foundingDate "2005"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Cherenkov_Telescope_Array> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/020jy7109> ;
+        rdfs:label "CTA Observatory" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/013zggc82> ;
+        rdfs:label "Cherenkov Telescope Array – participation of the Czech Republic" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(11.33875 44.49381)"^^geo:wktLiteral ;
+        schema:addressLocality "Bologna" ;
+    ] ;
+    schema:url <https://www.cta-observatory.org/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q1070229> ;
+             .

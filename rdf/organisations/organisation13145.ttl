@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0565s2t44> 
+    a org:Organization ;
+    rdfs:label "Al-Ghad International Health Sciences Colleges" ;
+    schema:name "Al-Ghad International Health Sciences Colleges" ;
+    schema:foundingDate "2009"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Al-Ghad_International_Health_Sciences_Colleges> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(46.72185 24.68773)"^^geo:wktLiteral ;
+        schema:addressLocality "Riyadh" ;
+    ] ;
+    schema:url <http://alghadcolleges.edu.sa> ;
+    schema:sameAs <http://isni.org/isni/0000000404579187> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q17003495> ;
+             .

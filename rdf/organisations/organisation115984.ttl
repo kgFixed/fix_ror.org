@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05swbnm48> 
+    a org:Organization ;
+    rdfs:label "Association for Molecular Pathology" ;
+    schema:name "Association for Molecular Pathology" ;
+    schema:foundingDate "1995"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Association_for_Molecular_Pathology> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-94.34083 45.47191)"^^geo:wktLiteral ;
+        schema:addressLocality "Rockville" ;
+    ] ;
+    schema:url <https://www.amp.org> ;
+    schema:sameAs <http://isni.org/isni/0000000119573691> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q79194497> ;
+             .

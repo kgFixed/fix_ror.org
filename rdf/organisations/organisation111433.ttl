@@ -1,0 +1,48 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01s91ey96> 
+    a org:Organization ;
+    rdfs:label "Renaissance Computing Institute" ;
+    schema:name "Renaissance Computing Institute" ;
+    schema:foundingDate "2004"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Renaissance_Computing_Institute> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/001zwgm84> ;
+        rdfs:label "NSF CI Compass" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04tj63d06> ;
+        rdfs:label "North Carolina State University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00py81415> ;
+        rdfs:label "Duke University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0130frc33> ;
+        rdfs:label "University of North Carolina at Chapel Hill" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-79.05584 35.9132)"^^geo:wktLiteral ;
+        schema:addressLocality "Chapel Hill" ;
+    ] ;
+    schema:url <https://renci.org> ;
+    schema:sameAs <http://isni.org/isni/0000000449042260> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7312413> ;
+             .

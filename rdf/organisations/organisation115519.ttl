@@ -1,0 +1,61 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04jr1s763> 
+    a org:Organization ;
+    rdfs:label "University of Florence" ;
+    schema:name "University of Florence" ;
+    schema:foundingDate "1321"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/University_of_Florence> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/030ws5c69> ;
+        rdfs:label "Istituto Nazionale di Fisica Nucleare, Galileo Galilei Institute for Theoretical Physics" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04mmhnh95> ;
+        rdfs:label "Quantum Science and Technology in Arcetri" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04x48z588> ;
+        rdfs:label "European Laboratory for Non-Linear Spectroscopy" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01jkemy20> ;
+        rdfs:label "Istituto Nazionale di Fisica Nucleare, Laboratorio di Tecniche Nucleari per l'Ambiente e i Beni Culturali" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02crev113> ;
+        rdfs:label "Azienda Ospedaliero-Universitaria Careggi" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02vv5y108> ;
+        rdfs:label "Istituto Nazionale di Fisica Nucleare, Sezione di Firenze" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(11.24626 43.77925)"^^geo:wktLiteral ;
+        schema:addressLocality "Florence" ;
+    ] ;
+    schema:url <https://www.unifi.it> ;
+    schema:sameAs <http://isni.org/isni/0000000417572304> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q820887> ;
+             .

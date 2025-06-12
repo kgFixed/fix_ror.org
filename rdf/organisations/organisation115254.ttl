@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04htnem03> 
+    a org:Organization ;
+    rdfs:label "Türkiye Enerji Nükleer ve Maden Araştırma Kurumu" ;
+    schema:name "Türkiye Enerji Nükleer ve Maden Araştırma Kurumu" ;
+    schema:foundingDate "1956"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Turkish_Energy%2C_Nuclear_and_Mineral_Research_Agency> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02ws49r51> ;
+        rdfs:label "Nuclear Energy Research Institute" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(32.85427 39.91987)"^^geo:wktLiteral ;
+        schema:addressLocality "Ankara" ;
+    ] ;
+    schema:url <https://www.tenmak.gov.tr> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q6002361> ;
+             .

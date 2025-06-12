@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04x96x598> 
+    a org:Organization ;
+    rdfs:label "Stazione Sperimentale del Vetro" ;
+    schema:name "Stazione Sperimentale del Vetro" ;
+    schema:foundingDate "1956"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Stazione_Sperimentale_del_Vetro> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(12.35683 45.45857)"^^geo:wktLiteral ;
+        schema:addressLocality "Murano" ;
+    ] ;
+    schema:url <http://www.spevetro.it/indexENG.htm> ;
+    schema:sameAs <http://isni.org/isni/0000000417832989> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3968785> ;
+             .

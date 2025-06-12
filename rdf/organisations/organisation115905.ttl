@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04032fz76> 
+    a org:Organization ;
+    rdfs:label "Hospitais da Universidade de Coimbra" ;
+    schema:name "Hospitais da Universidade de Coimbra" ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Hospitais_da_Universidade_de_Coimbra> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04z8k9a98> ;
+        rdfs:label "University of Coimbra" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-8.41955 40.20564)"^^geo:wktLiteral ;
+        schema:addressLocality "Coimbra" ;
+    ] ;
+    schema:url <https://www.chuc.min-saude.pt> ;
+    schema:sameAs <http://isni.org/isni/0000000106861985> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q10298332> ;
+             .

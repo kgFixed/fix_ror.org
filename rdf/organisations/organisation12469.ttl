@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01q3fhc22> 
+    a org:Organization ;
+    rdfs:label "Delaware Department of Education" ;
+    schema:name "Delaware Department of Education" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Delaware_Department_of_Education> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-75.52437 39.15817)"^^geo:wktLiteral ;
+        schema:addressLocality "Dover" ;
+    ] ;
+    schema:url <https://www.doe.k12.de.us/> ;
+    schema:sameAs <http://isni.org/isni/0000000404232298> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5253279> ;
+             .

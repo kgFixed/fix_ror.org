@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05sajct49> 
+    a org:Organization ;
+    rdfs:label "Barcelona Biomedical Research Park" ;
+    schema:name "Barcelona Biomedical Research Park" ;
+    schema:foundingDate "2006"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Barcelona_Biomedical_Research_Park> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04n0g0b29> ;
+        rdfs:label "Universitat Pompeu Fabra" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.15899 41.38879)"^^geo:wktLiteral ;
+        schema:addressLocality "Barcelona" ;
+    ] ;
+    schema:url <http://www.prbb.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000417566019> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4859845> ;
+             .

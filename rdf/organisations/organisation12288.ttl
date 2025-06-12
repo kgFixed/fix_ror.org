@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01177pa98> 
+    a org:Organization ;
+    rdfs:label "Mars Society" ;
+    schema:name "Mars Society" ;
+    schema:foundingDate "1998"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Mars_Society> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-105.08137 39.70471)"^^geo:wktLiteral ;
+        schema:addressLocality "Lakewood" ;
+    ] ;
+    schema:url <http://www.marssociety.org/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q1427829> ;
+             .

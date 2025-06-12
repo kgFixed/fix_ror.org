@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04w46c814> 
+    a org:Organization ;
+    rdfs:label "United States Fleet Forces Command" ;
+    schema:name "United States Fleet Forces Command" ;
+    schema:foundingDate "1906"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/United_States_Fleet_Forces_Command> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03fqkgf18> ;
+        rdfs:label "Navy Expeditionary Combat Command" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03ar0mv07> ;
+        rdfs:label "United States Department of the Navy" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/023cyha02> ;
+        rdfs:label "United States Northern Command" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02ts0wj93> ;
+        rdfs:label "Submarine Force, Atlantic" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-76.28522 36.84681)"^^geo:wktLiteral ;
+        schema:addressLocality "Norfolk" ;
+    ] ;
+    schema:url <https://www.usff.navy.mil> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q2297940> ;
+             .

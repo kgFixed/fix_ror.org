@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03rrfep50> 
+    a org:Organization ;
+    rdfs:label "Ministerium für Bildung, Wissenschaft, Weiterbildung und Kultur" ;
+    schema:name "Ministerium für Bildung, Wissenschaft, Weiterbildung und Kultur" ;
+    schema:foundingDate "1946"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Funder" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(8.2791 49.98419)"^^geo:wktLiteral ;
+        schema:addressLocality "Mainz" ;
+    ] ;
+    schema:url <https://mwwk.rlp.de/de/startseite/> ;
+     .

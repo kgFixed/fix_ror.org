@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/033n3pw66> 
+    a org:Organization ;
+    rdfs:label "University of South Bohemia in České Budějovice" ;
+    schema:name "University of South Bohemia in České Budějovice" ;
+    schema:foundingDate "1991"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/University_of_South_Bohemia_in_%C4%8Cesk%C3%A9_Bud%C4%9Bjovice> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0286qer95> ;
+        rdfs:label "Czech National Infrastructure for Biological Data" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(14.47434 48.97447)"^^geo:wktLiteral ;
+        schema:addressLocality "České Budějovice" ;
+    ] ;
+    schema:url <https://www.jcu.cz> ;
+    schema:sameAs <http://isni.org/isni/0000000121664904> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1428711> ;
+             .

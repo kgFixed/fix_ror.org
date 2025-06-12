@@ -1,0 +1,72 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/036rp1748> 
+    a org:Organization ;
+    rdfs:label "Universidade de São Paulo" ;
+    schema:name "Universidade de São Paulo" ;
+    schema:foundingDate "1934"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/University_of_S%C3%A3o_Paulo> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0406jsq08> ;
+        rdfs:label "Hospital Universitário da Universidade de São Paulo" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04n6fhj26> ;
+        rdfs:label "Clinics Hospital of Ribeirão Preto" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04t6wsp57> ;
+        rdfs:label "Instituto de Estudos Avançados da Universidade de São Paulo" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03se9eg94> ;
+        rdfs:label "Hospital das Clínicas da Faculdade de Medicina da Universidade de São Paulo" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01whwkf30> ;
+        rdfs:label "Instituto Butantan" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/021203s31> ;
+        rdfs:label "MapBiomas" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01c730s93> ;
+        rdfs:label "Universidade Virtual do Estado de São Paulo" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-46.63611 -23.5475)"^^geo:wktLiteral ;
+        schema:addressLocality "São Paulo" ;
+    ] ;
+    schema:url <https://www5.usp.br> ;
+    schema:sameAs <http://isni.org/isni/0000000419370722> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q835960> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5428833> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q10274618> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q10302858> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q48872290> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q48872581> ;
+             .

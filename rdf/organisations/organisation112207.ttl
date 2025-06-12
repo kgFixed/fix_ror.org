@@ -1,0 +1,34 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04933pe04> 
+    a org:Organization ;
+    rdfs:label "Stadtspital Zürich" ;
+    schema:name "Stadtspital Zürich" ;
+    schema:sameAs <https://de.wikipedia.org/wiki/Stadtspital_Z%C3%BCrich> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Predecessor" ;
+        org:member <https://ror.org/03kpdys72> ;
+        rdfs:label "Triemli Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Predecessor" ;
+        org:member <https://ror.org/04azmz153> ;
+        rdfs:label "Stadtspital Waid" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(8.53071 47.38283)"^^geo:wktLiteral ;
+        schema:addressLocality "Zurich" ;
+    ] ;
+    schema:url <https://www.stadt-zuerich.ch/stadtspital/de.html> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q112915449> ;
+             .

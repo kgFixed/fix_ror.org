@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03zpp5097> 
+    a org:Organization ;
+    rdfs:label "Northwest Regional Planning Commission" ;
+    schema:name "Northwest Regional Planning Commission" ;
+    schema:foundingDate "1959"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-91.88934 45.82245)"^^geo:wktLiteral ;
+        schema:addressLocality "Spooner" ;
+    ] ;
+    schema:url <https://nwrpc.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30286206> ;
+             .

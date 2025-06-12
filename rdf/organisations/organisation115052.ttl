@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04rswrd78> 
+    a org:Organization ;
+    rdfs:label "Iowa State University" ;
+    schema:name "Iowa State University" ;
+    schema:foundingDate "1858"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Iowa_State_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00fe3cc74> ;
+        rdfs:label "Iowa Space Grant Consortium" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/041m9xr71> ;
+        rdfs:label "Ames National Laboratory" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01txfgz53> ;
+        rdfs:label "Center for Statistics and Applications in Forensic Evidence" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-93.61994 42.03471)"^^geo:wktLiteral ;
+        schema:addressLocality "Ames" ;
+    ] ;
+    schema:url <https://www.iastate.edu> ;
+    schema:sameAs <http://isni.org/isni/0000000419367312> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1136919> ;
+             .

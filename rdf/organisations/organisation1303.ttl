@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0336f9q30> 
+    a org:Organization ;
+    rdfs:label "Suez (Canada)" ;
+    schema:name "Suez (Canada)" ;
+    schema:foundingDate "2008"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Suez_Environnement> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0475zhg63> ;
+        rdfs:label "Suez (France)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-79.68292 43.45011)"^^geo:wktLiteral ;
+        schema:addressLocality "Oakville" ;
+    ] ;
+    schema:url <https://www.suez-na.com/en-us> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30253586> ;
+             .

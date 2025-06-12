@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0290a6k23> 
+    a org:Organization ;
+    rdfs:label "Region of Southern Denmark" ;
+    schema:name "Region of Southern Denmark" ;
+    schema:foundingDate "2007"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Region_of_Southern_Denmark> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(9.5357 55.70927)"^^geo:wktLiteral ;
+        schema:addressLocality "Vejle" ;
+    ] ;
+    schema:url <https://www.regionsyddanmark.dk/wm228983> ;
+    schema:sameAs <http://isni.org/isni/0000000406391911> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q26061> ;
+             .

@@ -1,0 +1,48 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00d0rke27> 
+    a org:Organization ;
+    rdfs:label "Institut d’Optique Graduate School" ;
+    schema:name "Institut d’Optique Graduate School" ;
+    schema:foundingDate "1917"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/%C3%89cole_sup%C3%A9rieure_d%27optique> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/046hjmc37> ;
+        rdfs:label "Laboratoire Charles Fabry" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0028p8r67> ;
+        rdfs:label "Laboratoire Hubert Curien" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03vdg7e33> ;
+        rdfs:label "Laboratoire Photonique, Numérique et Nanosciences" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03xjwb503> ;
+        rdfs:label "Université Paris-Saclay" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.18727 48.69572)"^^geo:wktLiteral ;
+        schema:addressLocality "Orsay" ;
+    ] ;
+    schema:url <https://www.institutoptique.fr> ;
+    schema:sameAs <http://isni.org/isni/0000000102825557> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q898448> ;
+             .

@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/017gpzf77> 
+    a org:Organization ;
+    rdfs:label "Santa Casa da Misericórdia de Fafe" ;
+    schema:name "Santa Casa da Misericórdia de Fafe" ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-8.17258 41.45083)"^^geo:wktLiteral ;
+        schema:addressLocality "Fafe" ;
+    ] ;
+    schema:url <http://scmfafe.pt> ;
+    schema:sameAs <http://isni.org/isni/0000000459140032> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q100452082> ;
+             .

@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05cczs510> 
+    a org:Organization ;
+    rdfs:label "Ukrainian Medical Stomatological Academy" ;
+    schema:name "Ukrainian Medical Stomatological Academy" ;
+    schema:foundingDate "1921"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Ukrainian_Medical_Stomatological_Academy> ;
+    org:status "inactive" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00kx55e87> ;
+        rdfs:label "Poltava State Medical University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/00kx55e87> ;
+        rdfs:label "Poltava State Medical University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(34.55367 49.58925)"^^geo:wktLiteral ;
+        schema:addressLocality "Poltava" ;
+    ] ;
+    schema:url <http://www.umsa.poltava.ua/> ;
+    schema:sameAs <http://isni.org/isni/0000000403872568> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4470499> ;
+             .

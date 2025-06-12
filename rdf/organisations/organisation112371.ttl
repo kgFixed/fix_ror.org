@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02sr5qc36> 
+    a org:Organization ;
+    rdfs:label "Centro Universitário Cesusc – UNICESUSC" ;
+    schema:name "Centro Universitário Cesusc – UNICESUSC" ;
+    schema:foundingDate "1998"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-48.54917 -27.59667)"^^geo:wktLiteral ;
+        schema:addressLocality "Florianópolis" ;
+    ] ;
+    schema:url <https://cesusc.edu.br> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q56840804> ;
+             .

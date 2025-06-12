@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02cmwmx57> 
+    a org:Organization ;
+    rdfs:label "Biliran Province State University" ;
+    schema:name "Biliran Province State University" ;
+    schema:foundingDate "2019"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Biliran_Province_State_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Predecessor" ;
+        org:member <https://ror.org/02qahtf82> ;
+        rdfs:label "Naval State University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(124.45 11.58333)"^^geo:wktLiteral ;
+        schema:addressLocality "Naval" ;
+    ] ;
+    schema:url <https://www.bipsu.edu.ph> ;
+    schema:sameAs <http://isni.org/isni/0000000483982416> ;
+             .

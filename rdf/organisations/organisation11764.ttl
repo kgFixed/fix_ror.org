@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01k9hhd91> 
+    a org:Organization ;
+    rdfs:label "TÜV SÜD (Germany)" ;
+    schema:name "TÜV SÜD (Germany)" ;
+    schema:foundingDate "1866"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/T%C3%9CV_S%C3%9CD> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01hzjbc83> ;
+        rdfs:label "TÜV SÜD (Czechia)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/021tea790> ;
+        rdfs:label "TÜV SÜD (Singapore)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/049zsmy36> ;
+        rdfs:label "TÜV SÜD (United Kingdom)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(11.57549 48.13743)"^^geo:wktLiteral ;
+        schema:addressLocality "Munich" ;
+    ] ;
+    schema:url <http://www.tuev-sued.de/home_en> ;
+    schema:sameAs <http://isni.org/isni/0000000405540831> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q880718> ;
+             .

@@ -1,0 +1,59 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05h1pdj54> 
+    a org:Organization ;
+    rdfs:label "National Academy of Educational Sciences of Ukraine" ;
+    schema:name "National Academy of Educational Sciences of Ukraine" ;
+    schema:foundingDate "1992"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/National_Academy_of_Educational_Sciences_of_Ukraine> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02qqjk369> ;
+        rdfs:label "Institute for Digitalisation of Education of the NAES of Ukraine" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/049z73212> ;
+        rdfs:label "Institute of Social and Political Psychology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/047agv396> ;
+        rdfs:label "Ivan Ziaziun Institute of Pedagogical Education and Adult Education of the National Academy of Pedagogical Sciences of Ukraine" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/056reh520> ;
+        rdfs:label "University of Educational Management" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02rdthx75> ;
+        rdfs:label "Institute of Higher Education of NAES of Ukraine" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02bv1h546> ;
+        rdfs:label "Institute of Vocational Education of the National Academy of Educational Sciences of Ukraine" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(30.5238 50.45466)"^^geo:wktLiteral ;
+        schema:addressLocality "Kyiv" ;
+    ] ;
+    schema:url <http://naps.gov.ua/en/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q3734241> ;
+             .

@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05scxf493> 
+    a org:Organization ;
+    rdfs:label "University of Al Maarif" ;
+    schema:name "University of Al Maarif" ;
+    schema:foundingDate "1993"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Al_Maarif_University_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(43.30778 33.42056)"^^geo:wktLiteral ;
+        schema:addressLocality "Ramadi" ;
+    ] ;
+    schema:url <https://uoa.edu.iq> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q4704329> ;
+             .

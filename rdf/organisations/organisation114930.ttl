@@ -1,0 +1,72 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05fe7ax82> 
+    a org:Organization ;
+    rdfs:label "Institut d'Etudes Politiques de Paris" ;
+    schema:name "Institut d'Etudes Politiques de Paris" ;
+    schema:foundingDate "1872"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Sciences_Po> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00mpxgs49> ;
+        rdfs:label "Centre d’histoire de Sciences Po" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/045qk7v62> ;
+        rdfs:label "Centre d'études et de recherches internationales de Sciences Po" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/035mqrn57> ;
+        rdfs:label "Centre de Sociologie des Organisations" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00gd2w119> ;
+        rdfs:label "Centre d'études Européennes de Sciences Po" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0266y7j75> ;
+        rdfs:label "Centre de Recherches Politiques de Sciences Po" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03aef3108> ;
+        rdfs:label "Centre de données socio-politiques de Sciences Po" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02a4c5q78> ;
+        rdfs:label "Centre de recherche sur les Inégalités Sociales" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03vk15693> ;
+        rdfs:label "médialab Sciences Po" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.3488 48.85341)"^^geo:wktLiteral ;
+        schema:addressLocality "Paris" ;
+    ] ;
+    schema:url <https://www.sciencespo.fr> ;
+    schema:sameAs <http://isni.org/isni/0000000121532557> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q859363> ;
+             .

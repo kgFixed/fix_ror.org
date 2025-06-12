@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02jwynf03> 
+    a org:Organization ;
+    rdfs:label "Center for Rural Affairs" ;
+    schema:name "Center for Rural Affairs" ;
+    schema:foundingDate "1973"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Center_for_Rural_Affairs> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-95.85917 40.67667)"^^geo:wktLiteral ;
+        schema:addressLocality "Nebraska City" ;
+    ] ;
+    schema:url <http://www.cfra.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000092025133> ;
+             .

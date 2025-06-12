@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/008adv646> 
+    a org:Organization ;
+    rdfs:label "Kansas Department of Wildlife and Parks" ;
+    schema:name "Kansas Department of Wildlife and Parks" ;
+    schema:foundingDate "1905"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Kansas_Department_of_Wildlife%2C_Parks_and_Tourism> ;
+    org:status "active" ;
+    org:classification "Funder" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-98.73759 37.64391)"^^geo:wktLiteral ;
+        schema:addressLocality "Pratt" ;
+    ] ;
+    schema:url <https://ksoutdoors.com> ;
+     .

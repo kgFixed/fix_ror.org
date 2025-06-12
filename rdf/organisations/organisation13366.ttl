@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/010wj4y69> 
+    a org:Organization ;
+    rdfs:label "Childhood Leukemia Foundation" ;
+    schema:name "Childhood Leukemia Foundation" ;
+    schema:foundingDate "1992"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-74.10992 40.05995)"^^geo:wktLiteral ;
+        schema:addressLocality "Brick" ;
+    ] ;
+    schema:url <https://www.clf4kids.org/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30286835> ;
+             .

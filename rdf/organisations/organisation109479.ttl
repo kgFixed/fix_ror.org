@@ -1,0 +1,20 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05a04tz09> 
+    a org:Organization ;
+    rdfs:label "Tottori Prefectural Police" ;
+    schema:name "Tottori Prefectural Police" ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(143.53569 44.0481)"^^geo:wktLiteral ;
+        schema:addressLocality "Higashimachi" ;
+    ] ;
+    schema:url <https://www.pref.tottori.lg.jp/police/> ;
+     .

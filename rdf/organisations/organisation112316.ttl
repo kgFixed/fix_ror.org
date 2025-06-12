@@ -1,0 +1,35 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0566rpx77> 
+    a org:Organization ;
+    rdfs:label "United States Strategic Command" ;
+    schema:name "United States Strategic Command" ;
+    schema:foundingDate "1992"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/United_States_Strategic_Command> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0447fe631> ;
+        rdfs:label "United States Department of Defense" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/059vwwb84> ;
+        rdfs:label "United States Fleet Cyber Command" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-95.91279 41.11805)"^^geo:wktLiteral ;
+        schema:addressLocality "Offutt Air Force Base" ;
+    ] ;
+    schema:url <https://www.stratcom.mil> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q1753390> ;
+             .

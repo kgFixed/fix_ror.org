@@ -1,0 +1,115 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00gtmwv55> 
+    a org:Organization ;
+    rdfs:label "Bristol-Myers Squibb (United States)" ;
+    schema:name "Bristol-Myers Squibb (United States)" ;
+    schema:foundingDate "1887"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Bristol-Myers_Squibb> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03c09ma81> ;
+        rdfs:label "Bristol-Myers Squibb (Belgium)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01r00g076> ;
+        rdfs:label "Bristol-Myers Squibb (Canada)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/013b57229> ;
+        rdfs:label "Bristol-Myers Squibb (France)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/032hfv632> ;
+        rdfs:label "Bristol-Myers Squibb (Germany)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03zmqr331> ;
+        rdfs:label "Bristol-Myers Squibb (India)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01h0vdv12> ;
+        rdfs:label "Bristol-Myers Squibb (Ireland)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0433f0x41> ;
+        rdfs:label "Bristol-Myers Squibb (Italy)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04dbmrm19> ;
+        rdfs:label "Bristol-Myers Squibb (Japan)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00354aw77> ;
+        rdfs:label "Bristol-Myers Squibb (Netherlands)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05hzjar70> ;
+        rdfs:label "Bristol-Myers Squibb (South Korea)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/035hx4w46> ;
+        rdfs:label "Bristol-Myers Squibb (Sweden)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02xqc6638> ;
+        rdfs:label "Bristol-Myers Squibb (Switzerland)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03emf1n04> ;
+        rdfs:label "Bristol-Myers Squibb (United Kingdom)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03efe6r86> ;
+        rdfs:label "MyoKardia (United States)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0223rpe14> ;
+        rdfs:label "Bristol-Myers Squibb (Portugal)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-74.00597 40.71427)"^^geo:wktLiteral ;
+        schema:addressLocality "New York" ;
+    ] ;
+    schema:url <https://www.bms.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000403748313> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q266423> ;
+             .

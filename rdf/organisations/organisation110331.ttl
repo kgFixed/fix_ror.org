@@ -1,0 +1,20 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04adnng28> 
+    a org:Organization ;
+    rdfs:label "International Society for Mangrove Ecosystems" ;
+    schema:name "International Society for Mangrove Ecosystems" ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(127.80139 26.33583)"^^geo:wktLiteral ;
+        schema:addressLocality "Okinawa" ;
+    ] ;
+    schema:url <https://mangrove.or.jp> ;
+     .

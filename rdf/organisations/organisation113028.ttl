@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05m35m789> 
+    a org:Organization ;
+    rdfs:label "Universidad Europea de Valencia" ;
+    schema:name "Universidad Europea de Valencia" ;
+    schema:sameAs <https://es.wikipedia.org/wiki/Universidad_Europea_de_Valencia> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04dp46240> ;
+        rdfs:label "Universidad Europea" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.37966 39.47391)"^^geo:wktLiteral ;
+        schema:addressLocality "Valencia" ;
+    ] ;
+    schema:url <https://universidadeuropea.com/conocenos/valencia/> ;
+    schema:sameAs <http://isni.org/isni/0000000474246759> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q116876982> ;
+             .

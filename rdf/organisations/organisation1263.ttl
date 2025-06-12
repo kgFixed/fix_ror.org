@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/008jvv944> 
+    a org:Organization ;
+    rdfs:label "Héma-Québec" ;
+    schema:name "Héma-Québec" ;
+    schema:foundingDate "1998"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/H%C3%A9ma-Qu%C3%A9bec> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/046r13h33> ;
+        rdfs:label "Ministry of Health and Social Services" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-73.58781 45.50884)"^^geo:wktLiteral ;
+        schema:addressLocality "Montreal" ;
+    ] ;
+    schema:url <http://www.hema-quebec.qc.ca/index.en.html> ;
+    schema:sameAs <http://isni.org/isni/0000000121118890> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3144906> ;
+             .

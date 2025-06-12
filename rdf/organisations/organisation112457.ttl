@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05p7zpp88> 
+    a org:Organization ;
+    rdfs:label "Centre de Recherche sur les Risques et les Crises" ;
+    schema:name "Centre de Recherche sur les Risques et les Crises" ;
+    schema:foundingDate "2008"^^xsd:gYear ;
+    schema:sameAs <https://fr.wikipedia.org/wiki/Centre_de_recherche_sur_les_risques_et_les_crises> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04y8cs423> ;
+        rdfs:label "École Nationale Supérieure des Mines de Paris" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(7.04721 43.62235)"^^geo:wktLiteral ;
+        schema:addressLocality "Sophia Antipolis" ;
+    ] ;
+    schema:url <https://www.crc.mines-paristech.fr> ;
+    schema:sameAs <http://isni.org/isni/0000000096422734> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q56318261> ;
+             .

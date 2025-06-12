@@ -1,0 +1,48 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00qrpt643> 
+    a org:Organization ;
+    rdfs:label "Bankstown Lidcombe Hospital" ;
+    schema:name "Bankstown Lidcombe Hospital" ;
+    schema:foundingDate "1996"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Bankstown_Lidcombe_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05j37e495> ;
+        rdfs:label "South Western Sydney Local Health District" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03r8z3t63> ;
+        rdfs:label "UNSW Sydney" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0384j8v12> ;
+        rdfs:label "The University of Sydney" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03t52dk35> ;
+        rdfs:label "Western Sydney University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(151.20732 -33.86785)"^^geo:wktLiteral ;
+        schema:addressLocality "Sydney" ;
+    ] ;
+    schema:url <http://www.swslhd.nsw.gov.au/bankstown/> ;
+    schema:sameAs <http://isni.org/isni/000000040373988X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4856786> ;
+             .

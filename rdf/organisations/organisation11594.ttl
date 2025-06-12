@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/038nrf531> 
+    a org:Organization ;
+    rdfs:label "Pininfarina (Italy)" ;
+    schema:name "Pininfarina (Italy)" ;
+    schema:foundingDate "1930"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Pininfarina> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(7.77447 44.97113)"^^geo:wktLiteral ;
+        schema:addressLocality "Cambiano" ;
+    ] ;
+    schema:url <http://www.pininfarina.it/en/homepage/homepage.htm> ;
+    schema:sameAs <http://isni.org/isni/0000000121584840> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q40987> ;
+             .

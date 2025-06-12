@@ -1,0 +1,48 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01ejfgc23> 
+    a org:Organization ;
+    rdfs:label "Ministry of Higher Education and Scientific Research" ;
+    schema:name "Ministry of Higher Education and Scientific Research" ;
+    schema:foundingDate "1970"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Ministry_of_Higher_Education_and_Scientific_Research_(Algeria)> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04vpx0k46> ;
+        rdfs:label "Anvredet" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01k1bte55> ;
+        rdfs:label "Centre de Recherche sur l'Information Scientifique et Technique" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01c3h5z21> ;
+        rdfs:label "Institut National de Recherche Forestière" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/056ahff07> ;
+        rdfs:label "CRSTRA" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(3.08746 36.73225)"^^geo:wktLiteral ;
+        schema:addressLocality "Algiers" ;
+    ] ;
+    schema:url <https://www.mesrs.dz/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q1445040> ;
+             .

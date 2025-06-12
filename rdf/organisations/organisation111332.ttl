@@ -1,0 +1,61 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/041nk4h53> 
+    a org:Organization ;
+    rdfs:label "Lawrence Livermore National Laboratory" ;
+    schema:name "Lawrence Livermore National Laboratory" ;
+    schema:foundingDate "1952"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Lawrence_Livermore_National_Laboratory> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/035cj2961> ;
+        rdfs:label "National Ignition Facility" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03z21mf61> ;
+        rdfs:label "Lawrence Livermore National Security" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03sk1we31> ;
+        rdfs:label "National Nuclear Security Administration" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01dvj3d25> ;
+        rdfs:label "Atmospheric Radiation Measurement User Facility" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04n07f274> ;
+        rdfs:label "Materials Science in Extreme Environments University Research Alliance" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02k3nmd98> ;
+        rdfs:label "Program for Climate Model Diagnosis and Intercomparison" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-121.76801 37.68187)"^^geo:wktLiteral ;
+        schema:addressLocality "Livermore" ;
+    ] ;
+    schema:url <https://www.llnl.gov> ;
+    schema:sameAs <http://isni.org/isni/0000000121609702> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q519826> ;
+             .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05078rg59> 
+    a org:Organization ;
+    rdfs:label "Institute of Mathematical Sciences" ;
+    schema:name "Institute of Mathematical Sciences" ;
+    schema:foundingDate "1962"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Institute_of_Mathematical_Sciences,_Chennai> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(80.27847 13.08784)"^^geo:wktLiteral ;
+        schema:addressLocality "Chennai" ;
+    ] ;
+    schema:url <https://www.imsc.res.in/> ;
+    schema:sameAs <http://isni.org/isni/000000040504909X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3530296> ;
+             .

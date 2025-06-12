@@ -1,0 +1,51 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/009nk6b02> 
+    a org:Organization ;
+    rdfs:label "Portuguese Additive Manufacturing Initiative" ;
+    schema:name "Portuguese Additive Manufacturing Initiative" ;
+    org:status "active" ;
+    org:classification "Other" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/010dvvh94> ;
+        rdfs:label "Instituto Politécnico de Leiria" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01t0p2n85> ;
+        rdfs:label "Centimfe" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04z8k9a98> ;
+        rdfs:label "University of Coimbra" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02qzfnk68> ;
+        rdfs:label "Instituto Pedro Nunes" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01nzkd566> ;
+        rdfs:label "Centro de Neurociências e Biologia Celular" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-8.93228 39.74769)"^^geo:wktLiteral ;
+        schema:addressLocality "Marinha Grande" ;
+    ] ;
+    schema:url <https://pami.ipleiria.pt> ;
+    schema:sameAs <http://isni.org/isni/0000000506339766> ;
+             .

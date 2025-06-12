@@ -1,0 +1,46 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00w7v1v77> 
+    a org:Organization ;
+    rdfs:label "National Laboratory of Energy and Geology" ;
+    schema:name "National Laboratory of Energy and Geology" ;
+    schema:foundingDate "2004"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/003zsfh57> ;
+        rdfs:label "Laboratório de Energia Solar" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02jtacs89> ;
+        rdfs:label "Infraestrutura de Investigação para a Biomassa e a Bioenergia" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04fmw2x94> ;
+        rdfs:label "Infraestrutura Nacional de Investigação para Energia Solar de Concentração" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05ddx0m09> ;
+        rdfs:label "Research Infrastructure on Integration of Solar Energy Systems in Buildings" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-9.13333 38.71667)"^^geo:wktLiteral ;
+        schema:addressLocality "Lisbon" ;
+    ] ;
+    schema:url <https://www.lneg.pt> ;
+    schema:sameAs <http://isni.org/isni/0000000121063068> ;
+             .

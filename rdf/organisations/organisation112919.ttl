@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0076knn86> 
+    a org:Organization ;
+    rdfs:label "Toyota Motor North America (United States)" ;
+    schema:name "Toyota Motor North America (United States)" ;
+    schema:foundingDate "1937"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Toyota> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02zqm6r10> ;
+        rdfs:label "Toyota Motor Corporation (Japan)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Predecessor" ;
+        org:member <https://ror.org/00w85m497> ;
+        rdfs:label "Toyota Motor Engineering & Manufacturing North America, Inc. (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-118.34063 33.83585)"^^geo:wktLiteral ;
+        schema:addressLocality "Torrance" ;
+    ] ;
+    schema:url <https://www.toyota.com/usa/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q7830837> ;
+             .

@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/040f6xz90> 
+    a org:Organization ;
+    rdfs:label "International Association of Advanced Materials" ;
+    schema:name "International Association of Advanced Materials" ;
+    schema:foundingDate "2010"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Funder" ;
+    org:classification "Nonprofit" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/039qn6p62> ;
+        rdfs:label "Institute of Advanced Materials" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(15.43567 58.12417)"^^geo:wktLiteral ;
+        schema:addressLocality "Ulrika" ;
+    ] ;
+    schema:url <https://www.iaamonline.org> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q103819150> ;
+             .

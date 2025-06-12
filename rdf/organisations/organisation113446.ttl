@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/043xj7k26> 
+    a org:Organization ;
+    rdfs:label "Universidad de Guadalajara" ;
+    schema:name "Universidad de Guadalajara" ;
+    schema:foundingDate "1792"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/University_of_Guadalajara> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/037xmw090> ;
+        rdfs:label "Red Gobernanza Metropolitana" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-103.39182 20.66682)"^^geo:wktLiteral ;
+        schema:addressLocality "Guadalajara" ;
+    ] ;
+    schema:url <https://www.udg.mx> ;
+    schema:sameAs <http://isni.org/isni/0000000121580196> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q164028> ;
+             .

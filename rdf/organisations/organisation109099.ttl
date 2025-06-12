@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04wdnn819> 
+    a org:Organization ;
+    rdfs:label "Society of Motion Picture and Television Engineers" ;
+    schema:name "Society of Motion Picture and Television Engineers" ;
+    schema:foundingDate "1916"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Society_of_Motion_Picture_and_Television_Engineers> ;
+    org:status "active" ;
+    org:classification "Funder" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-73.76291 41.03399)"^^geo:wktLiteral ;
+        schema:addressLocality "White Plains" ;
+    ] ;
+    schema:url <https://www.smpte.org> ;
+    schema:sameAs <http://isni.org/isni/0000000417968501> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1779011> ;
+             .

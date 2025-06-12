@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/050c2ya64> 
+    a org:Organization ;
+    rdfs:label "Imerys (Greece)" ;
+    schema:name "Imerys (Greece)" ;
+    schema:foundingDate "1880"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Imerys> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/027etx825> ;
+        rdfs:label "Imerys (France)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(23.81106 38.07438)"^^geo:wktLiteral ;
+        schema:addressLocality "Kifissia" ;
+    ] ;
+    schema:url <http://www.imerys-additivesformetallurgy.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30285338> ;
+             .

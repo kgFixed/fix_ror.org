@@ -1,0 +1,20 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/007g1vn56> 
+    a org:Organization ;
+    rdfs:label "Yuri Kumiai General Hospital" ;
+    schema:name "Yuri Kumiai General Hospital" ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(140.05813 39.3895)"^^geo:wktLiteral ;
+        schema:addressLocality "Yurihonjō" ;
+    ] ;
+    schema:url <https://www.yuri-hospital.honjo.akita.jp> ;
+     .

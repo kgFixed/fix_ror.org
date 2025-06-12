@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/020dxsp50> 
+    a org:Organization ;
+    rdfs:label "Q Free (Norway)" ;
+    schema:name "Q Free (Norway)" ;
+    schema:foundingDate "1984"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Q-Free> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03xw8f892> ;
+        rdfs:label "Q Free (Netherlands)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(10.39506 63.43049)"^^geo:wktLiteral ;
+        schema:addressLocality "Trondheim" ;
+    ] ;
+    schema:url <https://www.q-free.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q7265267> ;
+             .

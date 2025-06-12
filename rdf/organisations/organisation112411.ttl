@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03fqqe674> 
+    a org:Organization ;
+    rdfs:label "Davao Oriental State University" ;
+    schema:name "Davao Oriental State University" ;
+    schema:foundingDate "1989"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Davao_Oriental_State_College_of_Science_and_Technology> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00h8mcj46> ;
+        rdfs:label "Philippine Association of State Universities and Colleges" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(126.21655 6.95508)"^^geo:wktLiteral ;
+        schema:addressLocality "Mati" ;
+    ] ;
+    schema:url <https://www.dorsu.edu.ph> ;
+    schema:sameAs <http://isni.org/isni/0000000405667453> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5228153> ;
+             .

@@ -1,0 +1,20 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/018681541> 
+    a org:Organization ;
+    rdfs:label "Black Sea Agricultural Research Institute" ;
+    schema:name "Black Sea Agricultural Research Institute" ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(36.3361 41.27976)"^^geo:wktLiteral ;
+        schema:addressLocality "Samsun" ;
+    ] ;
+    schema:url <https://arastirma.tarimorman.gov.tr/ktae/> ;
+     .

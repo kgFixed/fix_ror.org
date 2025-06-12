@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/012w5e784> 
+    a org:Organization ;
+    rdfs:label "University of Cross River State" ;
+    schema:name "University of Cross River State" ;
+    schema:foundingDate "2002"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Cross_River_University_of_Technology> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(8.32695 4.95893)"^^geo:wktLiteral ;
+        schema:addressLocality "Calabar" ;
+    ] ;
+    schema:url <https://www.unicross.edu.ng> ;
+    schema:sameAs <http://isni.org/isni/0000000418080571> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q13140622> ;
+             .

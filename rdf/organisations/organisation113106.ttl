@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01hf3jh89> 
+    a org:Organization ;
+    rdfs:label "Centro Especializado en Diabetes, Obesidad y Prevención de Enfermedades Cardiovasculares" ;
+    schema:name "Centro Especializado en Diabetes, Obesidad y Prevención de Enfermedades Cardiovasculares" ;
+    schema:foundingDate "2003"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-99.20024 19.43411)"^^geo:wktLiteral ;
+        schema:addressLocality "Miguel Hidalgo" ;
+    ] ;
+    schema:url <https://cedopec.com> ;
+     .

@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01mfrg562> 
+    a org:Organization ;
+    rdfs:label "Dauphin Island Sea Lab" ;
+    schema:name "Dauphin Island Sea Lab" ;
+    schema:foundingDate "1971"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Dauphin_Island_Sea_Lab> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04vzsq290> ;
+        rdfs:label "Mississippi Alabama Sea Grant Consortium" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-88.10972 30.25548)"^^geo:wktLiteral ;
+        schema:addressLocality "Dauphin Island" ;
+    ] ;
+    schema:url <http://www.disl.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000094138991> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5228074> ;
+             .

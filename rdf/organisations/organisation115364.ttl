@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/037vx0145> 
+    a org:Organization ;
+    rdfs:label "Projektträger Jülich" ;
+    schema:name "Projektträger Jülich" ;
+    schema:foundingDate "1974"^^xsd:gYear ;
+    schema:sameAs <https://de.wikipedia.org/wiki/Projekttr%C3%A4ger_J%C3%BClich> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02nv7yv05> ;
+        rdfs:label "Forschungszentrum Jülich" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(6.36267 50.92149)"^^geo:wktLiteral ;
+        schema:addressLocality "Jülich" ;
+    ] ;
+    schema:url <https://www.ptj.de> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q19965692> ;
+             .

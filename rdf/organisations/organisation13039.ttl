@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/037c70862> 
+    a org:Organization ;
+    rdfs:label "American Society of Pediatric Hemotology Oncology" ;
+    schema:name "American Society of Pediatric Hemotology Oncology" ;
+    schema:foundingDate "1981"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/American_Society_of_Pediatric_Hematology/Oncology> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-87.78784 42.06975)"^^geo:wktLiteral ;
+        schema:addressLocality "Glenview" ;
+    ] ;
+    schema:url <http://aspho.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000460828053> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30286501> ;
+             .

@@ -1,0 +1,20 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01qf62403> 
+    a org:Organization ;
+    rdfs:label "SUWA Central Hospital" ;
+    schema:name "SUWA Central Hospital" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(138.15428 35.9944)"^^geo:wktLiteral ;
+        schema:addressLocality "Chino" ;
+    ] ;
+    schema:url <https://www.suwachuo.jp> ;
+     .

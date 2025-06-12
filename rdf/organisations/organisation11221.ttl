@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03mb23c90> 
+    a org:Organization ;
+    rdfs:label "ITM Power (United Kingdom)" ;
+    schema:name "ITM Power (United Kingdom)" ;
+    schema:foundingDate "2001"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/ITM_Power> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.4659 53.38297)"^^geo:wktLiteral ;
+        schema:addressLocality "Sheffield" ;
+    ] ;
+    schema:url <http://www.itm-power.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000405844894> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5974865> ;
+             .

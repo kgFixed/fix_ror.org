@@ -1,0 +1,49 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01jty7g66> 
+    a org:Organization ;
+    rdfs:label "German Centre for Integrative Biodiversity Research" ;
+    schema:name "German Centre for Integrative Biodiversity Research" ;
+    schema:foundingDate "2010"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/German_Centre_for_Integrative_Biodiversity_Research_(iDiv)> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03s7gtk40> ;
+        rdfs:label "Leipzig University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05gqaka33> ;
+        rdfs:label "Martin Luther University Halle-Wittenberg" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05qpz1x62> ;
+        rdfs:label "Friedrich Schiller University Jena" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/000h6jb29> ;
+        rdfs:label "Helmholtz Centre for Environmental Research" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(12.37129 51.33962)"^^geo:wktLiteral ;
+        schema:addressLocality "Leipzig" ;
+    ] ;
+    schema:url <https://www.idiv.de> ;
+    schema:sameAs <http://isni.org/isni/0000000474703956> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1206134> ;
+             .

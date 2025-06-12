@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/025vngs54> 
+    a org:Organization ;
+    rdfs:label "Universitätsmedizin Greifswald" ;
+    schema:name "Universitätsmedizin Greifswald" ;
+    schema:foundingDate "1456"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Greifswald_University_Hospital> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00r1edq15> ;
+        rdfs:label "Universität Greifswald" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(13.38786 54.09311)"^^geo:wktLiteral ;
+        schema:addressLocality "Greifswald" ;
+    ] ;
+    schema:url <https://www.medizin.uni-greifswald.de> ;
+    schema:sameAs <http://isni.org/isni/0000000091168976> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2496421> ;
+             .

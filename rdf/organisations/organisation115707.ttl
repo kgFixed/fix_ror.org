@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01r9z8p25> 
+    a org:Organization ;
+    rdfs:label "Universidad de La Laguna" ;
+    schema:name "Universidad de La Laguna" ;
+    schema:foundingDate "1927"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/University_of_La_Laguna> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03cmntr54> ;
+        rdfs:label "Instituto de Astrofísica de Canarias" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05qndj312> ;
+        rdfs:label "Hospital Universitario de Canarias" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/005a3p084> ;
+        rdfs:label "Hospital Universitario Nuestra Señora de Candelaria" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-16.32014 28.4853)"^^geo:wktLiteral ;
+        schema:addressLocality "San Cristóbal de La Laguna" ;
+    ] ;
+    schema:url <https://www.ull.es> ;
+    schema:sameAs <http://isni.org/isni/0000000121060879> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q539881> ;
+             .

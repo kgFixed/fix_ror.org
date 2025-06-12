@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00x0nkm13> 
+    a org:Organization ;
+    rdfs:label "Universidade Federal de Ciências da Saúde de Porto Alegre" ;
+    schema:name "Universidade Federal de Ciências da Saúde de Porto Alegre" ;
+    schema:foundingDate "1953"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Universidade_Federal_de_Ci%C3%AAncias_da_Sa%C3%BAde_de_Porto_Alegre> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01by1qv45> ;
+        rdfs:label "Santa Casa Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-51.23019 -30.03283)"^^geo:wktLiteral ;
+        schema:addressLocality "Porto Alegre" ;
+    ] ;
+    schema:url <https://ufcspa.edu.br> ;
+    schema:sameAs <http://isni.org/isni/0000000404446202> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2036836> ;
+             .

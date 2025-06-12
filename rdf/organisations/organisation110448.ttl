@@ -1,0 +1,40 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01pawvf59> 
+    a org:Organization ;
+    rdfs:label "Préhistoire et Technologie" ;
+    schema:name "Préhistoire et Technologie" ;
+    schema:foundingDate "1999"^^xsd:gYear ;
+    org:status "inactive" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04b0z7q78> ;
+        rdfs:label "Institut des Sciences Humaines et Sociales" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/013bkhk48> ;
+        rdfs:label "Université Paris Nanterre" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/02my5hx05> ;
+        rdfs:label "Technologie et Ethnologie des Mondes PréhistoriqueS" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.20675 48.89198)"^^geo:wktLiteral ;
+        schema:addressLocality "Nanterre" ;
+    ] ;
+    schema:sameAs <http://isni.org/isni/0000000404528232> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30262415> ;
+             .

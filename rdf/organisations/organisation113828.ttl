@@ -1,0 +1,51 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/039vqpp67> 
+    a org:Organization ;
+    rdfs:label "China Academy of Engineering Physics" ;
+    schema:name "China Academy of Engineering Physics" ;
+    schema:foundingDate "1958"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/China_Academy_of_Engineering_Physics> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00fzxtk71> ;
+        rdfs:label "Joint Laboratory for Extreme Conditions Matter Properties" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05rgwws51> ;
+        rdfs:label "Institute of Fluid Physics" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02ggaqt78> ;
+        rdfs:label "Laser Fusion Research Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03m9a6y90> ;
+        rdfs:label "CAEP Software Center for High Performance Numerical Simulation" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(104.68168 31.46784)"^^geo:wktLiteral ;
+        schema:addressLocality "Mianyang" ;
+    ] ;
+    schema:url <https://www.caep.ac.cn> ;
+    schema:sameAs <http://isni.org/isni/0000000403694132> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5099555> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q39023994> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q39900689> ;
+             .

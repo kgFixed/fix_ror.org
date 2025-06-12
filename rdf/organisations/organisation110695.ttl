@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/024k8tp19> 
+    a org:Organization ;
+    rdfs:label "Space Rapid Capabilities Office" ;
+    schema:name "Space Rapid Capabilities Office" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Space_Rapid_Capabilities_Office> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-106.61262 35.03761)"^^geo:wktLiteral ;
+        schema:addressLocality "Kirtland AFB" ;
+    ] ;
+    schema:url <https://www.kirtland.af.mil/Units/Space-Rapid-Capabilities-Office/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q108377765> ;
+             .

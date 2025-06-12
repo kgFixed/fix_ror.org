@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02q2vrq41> 
+    a org:Organization ;
+    rdfs:label "UL Institute of Mathematics and Computer Science" ;
+    schema:name "UL Institute of Mathematics and Computer Science" ;
+    schema:foundingDate "1959"^^xsd:gYear ;
+    schema:sameAs <https://lv.wikipedia.org/wiki/Latvijas_Universit%C4%81tes_Matem%C4%81tikas_un_inform%C4%81tikas_instit%C5%ABts> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05g3mes96> ;
+        rdfs:label "University of Latvia" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(24.10589 56.946)"^^geo:wktLiteral ;
+        schema:addressLocality "Riga" ;
+    ] ;
+    schema:url <https://www.lumii.lv> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q7742202> ;
+             .

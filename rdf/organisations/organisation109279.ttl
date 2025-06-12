@@ -1,0 +1,20 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02g5mge27> 
+    a org:Organization ;
+    rdfs:label "Nishiwaki Municipal Hospital" ;
+    schema:name "Nishiwaki Municipal Hospital" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(134.97407 34.98419)"^^geo:wktLiteral ;
+        schema:addressLocality "Nishiwaki" ;
+    ] ;
+    schema:url <https://www.city.nishiwaki.lg.jp/hospital/index.html> ;
+     .

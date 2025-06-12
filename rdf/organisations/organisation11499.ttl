@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04v2brz27> 
+    a org:Organization ;
+    rdfs:label "MODUL University Vienna" ;
+    schema:name "MODUL University Vienna" ;
+    schema:foundingDate "2007"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/MODUL_University_Vienna> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04rrhkc58> ;
+        rdfs:label "MODUL University Dubai" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(16.37208 48.20849)"^^geo:wktLiteral ;
+        schema:addressLocality "Vienna" ;
+    ] ;
+    schema:url <https://www.modul.ac.at/> ;
+    schema:sameAs <http://isni.org/isni/0000000404124991> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q872071> ;
+             .

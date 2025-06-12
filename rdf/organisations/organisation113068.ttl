@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03szqc633> 
+    a org:Organization ;
+    rdfs:label "Maharashtra Institute of Medical Science and Research" ;
+    schema:name "Maharashtra Institute of Medical Science and Research" ;
+    schema:foundingDate "1989"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Maharashtra_Institute_of_Medical_Science_and_Research,_Latur> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04grkj883> ;
+        rdfs:label "Maharashtra University of Health Sciences" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05k4wb327> ;
+        rdfs:label "Maharashtra Institute of Dental Science and Research" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(76.56784 18.39721)"^^geo:wktLiteral ;
+        schema:addressLocality "Latur" ;
+    ] ;
+    schema:url <http://mimsr.ac.in/> ;
+    schema:sameAs <http://isni.org/isni/0000000417667426> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6733333> ;
+             .

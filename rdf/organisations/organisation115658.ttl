@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03svwq685> 
+    a org:Organization ;
+    rdfs:label "Università degli Studi della Tuscia" ;
+    schema:name "Università degli Studi della Tuscia" ;
+    schema:foundingDate "1979"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Tuscia_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(12.1056 42.41937)"^^geo:wktLiteral ;
+        schema:addressLocality "Viterbo" ;
+    ] ;
+    schema:url <http://www.unitus.it> ;
+    schema:sameAs <http://isni.org/isni/0000000122989743> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1780458> ;
+             .

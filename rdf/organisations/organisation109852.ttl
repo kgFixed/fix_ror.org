@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02qahtf82> 
+    a org:Organization ;
+    rdfs:label "Naval State University" ;
+    schema:name "Naval State University" ;
+    schema:foundingDate "1945"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Naval_State_University> ;
+    org:status "inactive" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/02cmwmx57> ;
+        rdfs:label "Biliran Province State University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(124.3975 11.56056)"^^geo:wktLiteral ;
+        schema:addressLocality "Naval" ;
+    ] ;
+    schema:url <http://www.nsu.edu.ph> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q6981932> ;
+             .

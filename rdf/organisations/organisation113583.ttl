@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/050pq4m56> 
+    a org:Organization ;
+    rdfs:label "Universiti Tunku Abdul Rahman" ;
+    schema:name "Universiti Tunku Abdul Rahman" ;
+    schema:foundingDate "2002"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Universiti_Tunku_Abdul_Rahman> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/046b54093> ;
+        rdfs:label "Universiti Tunku Abdul Rahman Sungai Long Campus" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(101.15 4.3)"^^geo:wktLiteral ;
+        schema:addressLocality "Kampar" ;
+    ] ;
+    schema:url <https://utar.edu.my> ;
+    schema:sameAs <http://isni.org/isni/000000041798283X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7894438> ;
+             .

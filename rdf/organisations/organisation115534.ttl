@@ -1,0 +1,85 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01f5ytq51> 
+    a org:Organization ;
+    rdfs:label "Texas A&M University" ;
+    schema:name "Texas A&M University" ;
+    schema:foundingDate "1876"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Texas_A%26M_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01tx6pn92> ;
+        rdfs:label "Texas A&M Health Science Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03cv6f983> ;
+        rdfs:label "Texas A&M University School of Law" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03vb4dm14> ;
+        rdfs:label "Texas A&M University at Qatar" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03p8qrw52> ;
+        rdfs:label "Texas A&M Engineering Experiment Station" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0034eay46> ;
+        rdfs:label "Texas A&M University System" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05wevan27> ;
+        rdfs:label "Baylor Scott & White Health" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03nxfhe13> ;
+        rdfs:label "Baylor University Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02dcp1550> ;
+        rdfs:label "Central Texas Veterans Health Care System" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00dqsbj20> ;
+        rdfs:label "Texas Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04twxam07> ;
+        rdfs:label "The University of Texas MD Anderson Cancer Center" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-96.33441 30.62798)"^^geo:wktLiteral ;
+        schema:addressLocality "College Station" ;
+    ] ;
+    schema:url <https://www.tamu.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000446872082> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q49212> ;
+             .

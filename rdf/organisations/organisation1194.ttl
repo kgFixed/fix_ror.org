@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/026dp0v66> 
+    a org:Organization ;
+    rdfs:label "Union for International Cancer Control" ;
+    schema:name "Union for International Cancer Control" ;
+    schema:foundingDate "1933"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Union_for_International_Cancer_Control> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(6.14569 46.20222)"^^geo:wktLiteral ;
+        schema:addressLocality "Geneva" ;
+    ] ;
+    schema:url <http://www.uicc.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000405080601> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1784143> ;
+             .

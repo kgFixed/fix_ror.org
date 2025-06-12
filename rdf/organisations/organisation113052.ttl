@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04mc23283> 
+    a org:Organization ;
+    rdfs:label "Tartu Observatory" ;
+    schema:name "Tartu Observatory" ;
+    schema:foundingDate "1810"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Tartu_Observatory> ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01pewsd85> ;
+        rdfs:label "Estonian Academy of Sciences" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03z77qz90> ;
+        rdfs:label "University of Tartu" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(26.72509 58.38062)"^^geo:wktLiteral ;
+        schema:addressLocality "Tartu" ;
+    ] ;
+    schema:url <https://kosmos.ut.ee> ;
+    schema:sameAs <http://isni.org/isni/0000000113854505> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q91068780> ;
+             .

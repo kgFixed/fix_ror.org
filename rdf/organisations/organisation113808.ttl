@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/013dzwk66> 
+    a org:Organization ;
+    rdfs:label "Wageningen Marine Research" ;
+    schema:name "Wageningen Marine Research" ;
+    schema:foundingDate "2006"^^xsd:gYear ;
+    schema:sameAs <https://nl.wikipedia.org/wiki/Wageningen_Marine_Research> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04qw24q55> ;
+        rdfs:label "Wageningen University & Research" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(4.61048 52.4603)"^^geo:wktLiteral ;
+        schema:addressLocality "IJmuiden" ;
+    ] ;
+    schema:url <https://www.wur.nl/nl/onderzoek-resultaten/onderzoeksinstituten/marine-research.htm> ;
+    schema:sameAs <http://isni.org/isni/0000000094586938> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2520851> ;
+             .

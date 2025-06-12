@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05jxfge78> 
+    a org:Organization ;
+    rdfs:label "Institut national de l’information géographique et forestière" ;
+    schema:name "Institut national de l’information géographique et forestière" ;
+    schema:foundingDate "1940"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Institut_g%C3%A9ographique_national> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03r3n3715> ;
+        rdfs:label "Ecole Nationale des Sciences Géographiques" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0518tra10> ;
+        rdfs:label "UAR Data Terra" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.41579 48.83864)"^^geo:wktLiteral ;
+        schema:addressLocality "Saint-Mandé" ;
+    ] ;
+    schema:url <https://www.ign.fr> ;
+    schema:sameAs <http://isni.org/isni/000000009747945X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1665102> ;
+             .

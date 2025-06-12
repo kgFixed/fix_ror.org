@@ -1,0 +1,67 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/011vxgd24> 
+    a org:Organization ;
+    rdfs:label "West Virginia University" ;
+    schema:name "West Virginia University" ;
+    schema:foundingDate "1867"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/West_Virginia_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/005535379> ;
+        rdfs:label "Blanchette Rockefeller Neurosciences Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01zpqad83> ;
+        rdfs:label "West Virginia Space Grant Consortium" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05a637472> ;
+        rdfs:label "CURE Children’s Hospital of Uganda" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02vfy4r65> ;
+        rdfs:label "Charleston Area Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04fbnx371> ;
+        rdfs:label "West Virginia University Hospitals" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/028ebfc83> ;
+        rdfs:label "West Virginia University Institute of Technology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01txfgz53> ;
+        rdfs:label "Center for Statistics and Applications in Forensic Evidence" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-79.9559 39.62953)"^^geo:wktLiteral ;
+        schema:addressLocality "Morgantown" ;
+    ] ;
+    schema:url <https://www.wvu.edu> ;
+    schema:sameAs <http://isni.org/isni/0000000121566140> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q115376> ;
+             .

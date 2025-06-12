@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03vp4wk44> 
+    a org:Organization ;
+    rdfs:label "Omak School District" ;
+    schema:name "Omak School District" ;
+    schema:foundingDate "1912"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Omak_School_District> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-119.52755 48.41099)"^^geo:wktLiteral ;
+        schema:addressLocality "Omak" ;
+    ] ;
+    schema:url <http://www.omaksd.org> ;
+    schema:sameAs <http://isni.org/isni/0000000404217936> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q14713865> ;
+             .

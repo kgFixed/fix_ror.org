@@ -1,0 +1,44 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04w8z7f34> 
+    a org:Organization ;
+    rdfs:label "National Research Nuclear University MEPhI" ;
+    schema:name "National Research Nuclear University MEPhI" ;
+    schema:foundingDate "1942"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/National_Research_Nuclear_University_MEPhI> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05e94de73> ;
+        rdfs:label "Sarov Institute of Physics and Technology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04kt5vk53> ;
+        rdfs:label "Obninsk Institute for Nuclear Power Engineering" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00se1zw92> ;
+        rdfs:label "Seversk Technological Institute" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(37.61556 55.75222)"^^geo:wktLiteral ;
+        schema:addressLocality "Moscow" ;
+    ] ;
+    schema:url <https://eng.mephi.ru/> ;
+    schema:sameAs <http://isni.org/isni/0000000088685198> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q56837> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q976613> ;
+             .

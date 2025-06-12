@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/017n8df75> 
+    a org:Organization ;
+    rdfs:label "Shenzhen Science and Technology Innovation Commission" ;
+    schema:name "Shenzhen Science and Technology Innovation Commission" ;
+    org:status "active" ;
+    org:classification "Funder" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05rcfc739> ;
+        rdfs:label "Shenzhen Municipal People's Government" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(114.0683 22.54554)"^^geo:wktLiteral ;
+        schema:addressLocality "Shenzhen" ;
+    ] ;
+    schema:url <https://stic.sz.gov.cn> ;
+     .

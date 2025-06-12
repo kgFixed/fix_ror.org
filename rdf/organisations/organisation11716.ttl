@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00kt61z96> 
+    a org:Organization ;
+    rdfs:label "Optoelectronica-2001 (Romania)" ;
+    schema:name "Optoelectronica-2001 (Romania)" ;
+    schema:foundingDate "2000"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(26.03333 44.35)"^^geo:wktLiteral ;
+        schema:addressLocality "Măgurele" ;
+    ] ;
+    schema:url <https://www.optoel.ro/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30285346> ;
+             .

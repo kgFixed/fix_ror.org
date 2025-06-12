@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05sa17k06> 
+    a org:Organization ;
+    rdfs:label "Roth and Rau (Germany)" ;
+    schema:name "Roth and Rau (Germany)" ;
+    schema:foundingDate "1991"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Roth_%26_Rau> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(12.71287 50.80064)"^^geo:wktLiteral ;
+        schema:addressLocality "Hohenstein-Ernstthal" ;
+    ] ;
+    schema:url <http://www.roth-rau.de/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q2168566> ;
+             .

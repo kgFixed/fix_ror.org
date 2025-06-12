@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05t7jxa31> 
+    a org:Organization ;
+    rdfs:label "Institute for Cancer Prevention" ;
+    schema:name "Institute for Cancer Prevention" ;
+    schema:foundingDate "1969"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Institute_for_Cancer_Prevention> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-73.77513 41.07482)"^^geo:wktLiteral ;
+        schema:addressLocality "Valhalla" ;
+    ] ;
+    schema:sameAs <http://isni.org/isni/0000000092266949> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6039200> ;
+             .

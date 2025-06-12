@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/012dgx147> 
+    a org:Organization ;
+    rdfs:label "International Center for Advanced Training and Research in Physics" ;
+    schema:name "International Center for Advanced Training and Research in Physics" ;
+    schema:foundingDate "2013"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(27.97055 47.46034)"^^geo:wktLiteral ;
+        schema:addressLocality "Măgurele" ;
+    ] ;
+    schema:url <https://cifra-c2unesco.ro> ;
+     .

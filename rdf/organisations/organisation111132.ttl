@@ -1,0 +1,48 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0402tt118> 
+    a org:Organization ;
+    rdfs:label "Sydney Hospital" ;
+    schema:name "Sydney Hospital" ;
+    schema:foundingDate "1788"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Sydney_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03w28pb62> ;
+        rdfs:label "South Eastern Sydney Local Health District" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01sf06y89> ;
+        rdfs:label "Macquarie University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03r8z3t63> ;
+        rdfs:label "UNSW Sydney" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0384j8v12> ;
+        rdfs:label "The University of Sydney" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(151.20732 -33.86785)"^^geo:wktLiteral ;
+        schema:addressLocality "Sydney" ;
+    ] ;
+    schema:url <http://www.seslhd.health.nsw.gov.au/SHSEH/> ;
+    schema:sameAs <http://isni.org/isni/0000000406258248> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2373707> ;
+             .

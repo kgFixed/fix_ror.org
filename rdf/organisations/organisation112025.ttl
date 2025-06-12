@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05hg47c09> 
+    a org:Organization ;
+    rdfs:label "KV Institute of Management and Information Studies" ;
+    schema:name "KV Institute of Management and Information Studies" ;
+    schema:foundingDate "2009"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/KV_Institute_of_Management_and_Information_Studies> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(76.96612 11.00555)"^^geo:wktLiteral ;
+        schema:addressLocality "Coimbatore" ;
+    ] ;
+    schema:url <https://kvimis.co.in> ;
+    schema:sameAs <http://isni.org/isni/0000000417716881> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q85773202> ;
+             .

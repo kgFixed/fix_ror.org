@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05vg07g77> 
+    a org:Organization ;
+    rdfs:label "Aravind Eye Hospital" ;
+    schema:name "Aravind Eye Hospital" ;
+    schema:foundingDate "1976"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Aravind_Eye_Hospitals> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00b3mhg89> ;
+        rdfs:label "Tamil Nadu Dr. M.G.R. Medical University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(78.11953 9.919)"^^geo:wktLiteral ;
+        schema:addressLocality "Madurai" ;
+    ] ;
+    schema:url <https://aravind.org> ;
+    schema:sameAs <http://isni.org/isni/0000000417677755> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3261955> ;
+             .

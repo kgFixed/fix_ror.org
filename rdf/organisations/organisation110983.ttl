@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05p4ndd12> 
+    a org:Organization ;
+    rdfs:label "U.S. Army Sustainment Command" ;
+    schema:name "U.S. Army Sustainment Command" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/United_States_Army_Sustainment_Command> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/011rwyf32> ;
+        rdfs:label "U.S. Army Materiel Command" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-90.57875 41.50948)"^^geo:wktLiteral ;
+        schema:addressLocality "Rock Island" ;
+    ] ;
+    schema:url <https://www.aschq.army.mil> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q17123930> ;
+             .

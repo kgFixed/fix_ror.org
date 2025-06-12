@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02fzxed89> 
+    a org:Organization ;
+    rdfs:label "American Statistical Association" ;
+    schema:name "American Statistical Association" ;
+    schema:foundingDate "1839"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/American_Statistical_Association> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.04692 38.80484)"^^geo:wktLiteral ;
+        schema:addressLocality "Alexandria" ;
+    ] ;
+    schema:url <http://www.amstat.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000105254091> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q467040> ;
+             .

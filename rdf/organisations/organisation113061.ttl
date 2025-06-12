@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04bz7jh43> 
+    a org:Organization ;
+    rdfs:label "Formes et Idées de la Renaissance aux Lumières" ;
+    schema:name "Formes et Idées de la Renaissance aux Lumières" ;
+    schema:foundingDate "1985"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03z6jp965> ;
+        rdfs:label "Université Sorbonne Nouvelle" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.3488 48.85341)"^^geo:wktLiteral ;
+        schema:addressLocality "Paris" ;
+    ] ;
+    schema:url <https://www.sorbonne-nouvelle.fr/firl-formes-et-idees-de-la-renaissance-aux-lumieres-ea-174-3431.kjsp> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q51780809> ;
+             .

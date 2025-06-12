@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0103a0295> 
+    a org:Organization ;
+    rdfs:label "Teleflex (Canada)" ;
+    schema:name "Teleflex (Canada)" ;
+    schema:foundingDate "1943"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Teleflex> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01vs7pm87> ;
+        rdfs:label "Teleflex (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-79.2663 43.86682)"^^geo:wktLiteral ;
+        schema:addressLocality "Markham" ;
+    ] ;
+    schema:url <http://www.teleflex.com/en/ca/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30338695> ;
+             .

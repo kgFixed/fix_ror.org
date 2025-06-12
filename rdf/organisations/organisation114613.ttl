@@ -1,0 +1,48 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01hnx7606> 
+    a org:Organization ;
+    rdfs:label "Atmo France" ;
+    schema:name "Atmo France" ;
+    schema:foundingDate "2000"^^xsd:gYear ;
+    schema:sameAs <https://fr.wikipedia.org/wiki/F%C3%A9d%C3%A9ration_Atmo_France> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/032wz9653> ;
+        rdfs:label "AtmoSud" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05p4hdr45> ;
+        rdfs:label "Atmo Guyane" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00j3wcb35> ;
+        rdfs:label "Atmo Hauts-de-France" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/040hzz705> ;
+        rdfs:label "Atmo Normandie" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.3488 48.85341)"^^geo:wktLiteral ;
+        schema:addressLocality "Paris" ;
+    ] ;
+    schema:url <https://www.atmo-france.org> ;
+    schema:sameAs <http://isni.org/isni/0000000406416103> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q21427263> ;
+             .

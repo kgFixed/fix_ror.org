@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04karqd05> 
+    a org:Organization ;
+    rdfs:label "Bolan University of Medical and Health Sciences" ;
+    schema:name "Bolan University of Medical and Health Sciences" ;
+    schema:foundingDate "1972"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Bolan_University_of_Medical_%26_Health_Sciences> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(67.00141 30.18414)"^^geo:wktLiteral ;
+        schema:addressLocality "Quetta" ;
+    ] ;
+    schema:url <https://bumhs.edu.pk> ;
+    schema:sameAs <http://isni.org/isni/0000000099718733> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4938910> ;
+             .

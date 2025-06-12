@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00zb4pn27> 
+    a org:Organization ;
+    rdfs:label "Magna (Austria)" ;
+    schema:name "Magna (Austria)" ;
+    schema:foundingDate "1957"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Magna_Steyr> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0537cvg39> ;
+        rdfs:label "Magna International (Canada)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(15.45 47.06667)"^^geo:wktLiteral ;
+        schema:addressLocality "Graz" ;
+    ] ;
+    schema:url <https://www.magna.com/home> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q698447> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30284920> ;
+             .

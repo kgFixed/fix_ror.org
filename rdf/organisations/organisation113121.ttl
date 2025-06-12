@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05k4wb327> 
+    a org:Organization ;
+    rdfs:label "Maharashtra Institute of Dental Science and Research" ;
+    schema:name "Maharashtra Institute of Dental Science and Research" ;
+    schema:foundingDate "2006"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03szqc633> ;
+        rdfs:label "Maharashtra Institute of Medical Science and Research" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(76.56784 18.39721)"^^geo:wktLiteral ;
+        schema:addressLocality "Latur" ;
+    ] ;
+    schema:url <https://mitmidsr.edu.in> ;
+    schema:sameAs <http://isni.org/isni/0000000418017441> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q99402727> ;
+             .

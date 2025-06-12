@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02w5w7488> 
+    a org:Organization ;
+    rdfs:label "Hellenic Statistical Authority" ;
+    schema:name "Hellenic Statistical Authority" ;
+    schema:foundingDate "2010"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Hellenic_Statistical_Authority> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(23.64619 37.94203)"^^geo:wktLiteral ;
+        schema:addressLocality "Piraeus" ;
+    ] ;
+    schema:url <http://www.statistics.gr/web/guest> ;
+    schema:sameAs <http://isni.org/isni/000000012185162X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1275124> ;
+             .

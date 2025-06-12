@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/050cwv729> 
+    a org:Organization ;
+    rdfs:label "Magen David Adom" ;
+    schema:name "Magen David Adom" ;
+    schema:foundingDate "1930"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Magen_David_Adom> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(34.78057 32.08088)"^^geo:wktLiteral ;
+        schema:addressLocality "Tel Aviv" ;
+    ] ;
+    schema:url <https://www.mdais.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000121885432> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q577902> ;
+             .

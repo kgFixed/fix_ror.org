@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/012zh9h13> 
+    a org:Organization ;
+    rdfs:label "Institute of Agrifood Research and Technology" ;
+    schema:name "Institute of Agrifood Research and Technology" ;
+    schema:foundingDate "2009"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04tz2h245> ;
+        rdfs:label "Center for Research in Agricultural Genomics" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01bg62x04> ;
+        rdfs:label "Government of Catalonia" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01bkbaq61> ;
+        rdfs:label "CERCA Institution" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01sn0bt42> ;
+        rdfs:label "Animal Health Research Center" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.16667 41.63333)"^^geo:wktLiteral ;
+        schema:addressLocality "Caldes de Montbui" ;
+    ] ;
+    schema:url <https://www.irta.cat> ;
+    schema:sameAs <http://isni.org/isni/0000000119436646> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q9006472> ;
+             .

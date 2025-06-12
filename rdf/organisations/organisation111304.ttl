@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05q9m0937> 
+    a org:Organization ;
+    rdfs:label "University of Klagenfurt" ;
+    schema:name "University of Klagenfurt" ;
+    schema:foundingDate "1970"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Alpen-Adria-Universit%C3%A4t_Klagenfurt> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/001zf8v27> ;
+        rdfs:label "Institute for Interdisciplinary Studies of Austrian Universities" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02yf6ha74> ;
+        rdfs:label "Institute for Comparative Media and Communication Studies" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(14.30528 46.62472)"^^geo:wktLiteral ;
+        schema:addressLocality "Klagenfurt" ;
+    ] ;
+    schema:url <https://www.aau.at> ;
+    schema:sameAs <http://isni.org/isni/0000000121963349> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q690639> ;
+             .

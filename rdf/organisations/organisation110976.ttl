@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/011wdec52> 
+    a org:Organization ;
+    rdfs:label "Centre of Excellence for Biosecurity Risk Analysis" ;
+    schema:name "Centre of Excellence for Biosecurity Risk Analysis" ;
+    schema:foundingDate "2006"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Centre_of_Excellence_for_Biosecurity_Risk_Analysis> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01ej9dk98> ;
+        rdfs:label "The University of Melbourne" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(144.95 -37.78333)"^^geo:wktLiteral ;
+        schema:addressLocality "Parkville" ;
+    ] ;
+    schema:url <https://cebra.unimelb.edu.au> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q16943475> ;
+             .

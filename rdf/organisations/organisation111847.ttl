@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03b5p6e80> 
+    a org:Organization ;
+    rdfs:label "Chulabhorn Royal Academy" ;
+    schema:name "Chulabhorn Royal Academy" ;
+    schema:foundingDate "2016"^^xsd:gYear ;
+    schema:sameAs <https://th.wikipedia.org/wiki/%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%A7%E0%B8%B4%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%A5%E0%B8%B1%E0%B8%A2%E0%B8%88%E0%B8%B8%E0%B8%AC%E0%B8%B2%E0%B8%A0%E0%B8%A3%E0%B8%93%E0%B9%8C> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(100.50144 13.75398)"^^geo:wktLiteral ;
+        schema:addressLocality "Bangkok" ;
+    ] ;
+    schema:url <https://www.cra.ac.th> ;
+     .

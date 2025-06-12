@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04ydm6t76> 
+    a org:Organization ;
+    rdfs:label "Malcolm Grow Medical Clinic" ;
+    schema:name "Malcolm Grow Medical Clinic" ;
+    schema:foundingDate "1958"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Malcolm_Grow_Medical_Clinic> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04r3kq386> ;
+        rdfs:label "Uniformed Services University of the Health Sciences" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03df8gj37> ;
+        rdfs:label "Defense Health Agency" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-76.8746 38.80531)"^^geo:wktLiteral ;
+        schema:addressLocality "Andrews Air Force Base Census Designated Place" ;
+    ] ;
+    schema:url <http://www.79mdw.af.mil/units/779thmedicalgroup/> ;
+    schema:sameAs <http://isni.org/isni/0000000404187036> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6742356> ;
+             .

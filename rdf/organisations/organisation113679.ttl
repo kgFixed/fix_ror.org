@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0543paf14> 
+    a org:Organization ;
+    rdfs:label "Unidade Local de Saúde do Arco Ribeirinho" ;
+    schema:name "Unidade Local de Saúde do Arco Ribeirinho" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-9.0724 38.66314)"^^geo:wktLiteral ;
+        schema:addressLocality "Barreiro" ;
+    ] ;
+    schema:url <http://www.chbm.min-saude.pt> ;
+    schema:sameAs <http://isni.org/isni/0000000514453278> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q124812693> ;
+             .

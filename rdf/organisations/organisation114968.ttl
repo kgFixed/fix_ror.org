@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02w4f2z17> 
+    a org:Organization ;
+    rdfs:label "Silesian University in Opava" ;
+    schema:name "Silesian University in Opava" ;
+    schema:foundingDate "1989"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Silesian_University_(Opava)> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03ahhd635> ;
+        rdfs:label "Facility for Antiproton and Ion Research (FAIR) – participation of the Czech Republic" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(17.90257 49.93866)"^^geo:wktLiteral ;
+        schema:addressLocality "Opava" ;
+    ] ;
+    schema:url <https://www.slu.cz> ;
+    schema:sameAs <http://isni.org/isni/0000000110183208> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q354333> ;
+             .

@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05p52kj31> 
+    a org:Organization ;
+    rdfs:label "Royal Brisbane and Women's Hospital" ;
+    schema:name "Royal Brisbane and Women's Hospital" ;
+    schema:foundingDate "2003"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Royal_Brisbane_and_Women's_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00c1dt378> ;
+        rdfs:label "Queensland Health" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00rqy9422> ;
+        rdfs:label "The University of Queensland" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(153.02809 -27.46794)"^^geo:wktLiteral ;
+        schema:addressLocality "Brisbane" ;
+    ] ;
+    schema:url <http://www.health.qld.gov.au/rbwh/> ;
+    schema:sameAs <http://isni.org/isni/0000000106884634> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7373845> ;
+             .

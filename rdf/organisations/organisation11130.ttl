@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03vabvg16> 
+    a org:Organization ;
+    rdfs:label "Svalbard Global Seed Vault" ;
+    schema:name "Svalbard Global Seed Vault" ;
+    schema:foundingDate "2008"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Svalbard_Global_Seed_Vault> ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(15.64689 78.22334)"^^geo:wktLiteral ;
+        schema:addressLocality "Longyearbyen" ;
+    ] ;
+    schema:url <http://www.regjeringen.no/en/dep/lmd/campain/svalbard-global-seed-vault.html?id=462220> ;
+     .

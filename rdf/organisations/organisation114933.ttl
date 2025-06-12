@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/036k1r314> 
+    a org:Organization ;
+    rdfs:label "Lundbeck (Portugal)" ;
+    schema:name "Lundbeck (Portugal)" ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0564cd633> ;
+        rdfs:label "Lundbeck (Denmark)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-9.29143 38.69569)"^^geo:wktLiteral ;
+        schema:addressLocality "Paço de Arcos" ;
+    ] ;
+    schema:url <https://www.lundbeck.com/pt> ;
+    schema:sameAs <http://isni.org/isni/0000000404704144> ;
+             .

@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0579t4s85> 
+    a org:Organization ;
+    rdfs:label "Centre de Morphologie Mathématique - CMM" ;
+    schema:name "Centre de Morphologie Mathématique - CMM" ;
+    schema:foundingDate "1967"^^xsd:gYear ;
+    schema:sameAs <https://fr.wikipedia.org/wiki/Centre_de_morphologie_math%C3%A9matique> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04y8cs423> ;
+        rdfs:label "École Nationale Supérieure des Mines de Paris" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.70177 48.40908)"^^geo:wktLiteral ;
+        schema:addressLocality "Fontainebleau" ;
+    ] ;
+    schema:url <https://www.cmm.minesparis.psl.eu> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q5062340> ;
+             .

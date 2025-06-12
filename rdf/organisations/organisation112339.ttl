@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05s5aag36> 
+    a org:Organization ;
+    rdfs:label "Department of Primary Industries" ;
+    schema:name "Department of Primary Industries" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Department_of_Agriculture_and_Fisheries_(Queensland)> ;
+    org:status "active" ;
+    org:classification "Funder" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/037405308> ;
+        rdfs:label "Queensland Government" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(153.02809 -27.46794)"^^geo:wktLiteral ;
+        schema:addressLocality "Brisbane" ;
+    ] ;
+    schema:url <https://www.daf.qld.gov.au> ;
+    schema:sameAs <http://isni.org/isni/0000000107294564> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5260137> ;
+             .
