@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01fv1ds98> 
+    a org:Organization ;
+    rdfs:label "Yuan Ze University" ;
+    schema:name "Yuan Ze University" ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Yuan_Ze_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(121.3187 24.9896)"^^geo:wktLiteral ;
+        schema:addressLocality "Taoyuan District" ;
+    ] ;
+    schema:url <http://www.yzu.edu.tw/index_en.html> ;
+    schema:sameAs <http://isni.org/isni/0000000417703669> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q8060057> ;
+             .

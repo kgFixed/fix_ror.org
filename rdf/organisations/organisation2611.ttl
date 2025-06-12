@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03cngf009> 
+    a org:Organization ;
+    rdfs:label "Craigavon Area Hospital" ;
+    schema:name "Craigavon Area Hospital" ;
+    schema:foundingDate "1972"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Craigavon_Area_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-6.387 54.44709)"^^geo:wktLiteral ;
+        schema:addressLocality "Craigavon" ;
+    ] ;
+    schema:url <http://www.southerntrust.hscni.net/1539.htm> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q5181644> ;
+             .

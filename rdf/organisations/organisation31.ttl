@@ -1,0 +1,38 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/012p63287> 
+    a org:Organization ;
+    rdfs:label "University of Groningen" ;
+    schema:name "University of Groningen" ;
+    schema:foundingDate "1614"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/University_of_Groningen> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04kf5kc54> ;
+        rdfs:label "Netherlands Interdisciplinary Demographic Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03cv38k47> ;
+        rdfs:label "University Medical Center Groningen" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(6.56667 53.21917)"^^geo:wktLiteral ;
+        schema:addressLocality "Groningen" ;
+    ] ;
+    schema:url <http://www.rug.nl/> ;
+    schema:sameAs <http://isni.org/isni/0000000404071981> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q850730> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2303629> ;
+             .

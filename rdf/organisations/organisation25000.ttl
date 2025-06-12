@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04aen0982> 
+    a org:Organization ;
+    rdfs:label "Centre Africain d'Études Supérieures en Gestion" ;
+    schema:name "Centre Africain d'Études Supérieures en Gestion" ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-17.44406 14.6937)"^^geo:wktLiteral ;
+        schema:addressLocality "Dakar" ;
+    ] ;
+    schema:url <https://www.cesag.sn/> ;
+    schema:sameAs <http://isni.org/isni/0000000417976739> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30294349> ;
+             .

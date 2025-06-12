@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04b3gg905> 
+    a org:Organization ;
+    rdfs:label "Evesham Community Hospital" ;
+    schema:name "Evesham Community Hospital" ;
+    schema:foundingDate "1938"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03nkk3987> ;
+        rdfs:label "Worcestershire Health and Care NHS Trust" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.94887 52.09237)"^^geo:wktLiteral ;
+        schema:addressLocality "Evesham" ;
+    ] ;
+    schema:url <https://www.hacw.nhs.uk/evesham-community-hospital> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30293060> ;
+             .

@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04g3zjj79> 
+    a org:Organization ;
+    rdfs:label "Stratford Hospital" ;
+    schema:name "Stratford Hospital" ;
+    schema:foundingDate "1823"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Stratford_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03k95y741> ;
+        rdfs:label "South Warwickshire NHS Foundation Trust" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.70734 52.19166)"^^geo:wktLiteral ;
+        schema:addressLocality "Stratford-upon-Avon" ;
+    ] ;
+    schema:url <https://www.swft.nhs.uk/our-hospitals/stratford-hospital> ;
+    schema:sameAs <http://isni.org/isni/0000000404171747> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30293010> ;
+             .

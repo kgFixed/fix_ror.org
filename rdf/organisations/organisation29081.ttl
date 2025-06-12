@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04tydb537> 
+    a org:Organization ;
+    rdfs:label "New Hampshire Department of Environmental Services" ;
+    schema:name "New Hampshire Department of Environmental Services" ;
+    schema:foundingDate "1987"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-71.53757 43.20814)"^^geo:wktLiteral ;
+        schema:addressLocality "Concord" ;
+    ] ;
+    schema:url <http://des.nh.gov/> ;
+    schema:sameAs <http://isni.org/isni/0000000404225901> ;
+             .

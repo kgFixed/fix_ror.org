@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0333dtq15> 
+    a org:Organization ;
+    rdfs:label "Hewlett-Packard (Canada)" ;
+    schema:name "Hewlett-Packard (Canada)" ;
+    schema:foundingDate "1939"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Hewlett-Packard> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/059rn9488> ;
+        rdfs:label "Hewlett-Packard (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-97.14704 49.8844)"^^geo:wktLiteral ;
+        schema:addressLocality "Winnipeg" ;
+    ] ;
+    schema:url <http://www8.hp.com/ca/en> ;
+    schema:sameAs <http://isni.org/isni/0000000405268196> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30338715> ;
+             .

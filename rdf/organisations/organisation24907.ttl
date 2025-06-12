@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03s5r1026> 
+    a org:Organization ;
+    rdfs:label "Mountains of the Moon University" ;
+    schema:name "Mountains of the Moon University" ;
+    schema:foundingDate "2005"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Mountains_of_the_Moon_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(30.2748 0.66174)"^^geo:wktLiteral ;
+        schema:addressLocality "Fort Portal" ;
+    ] ;
+    schema:url <http://mmu.ac.ug/> ;
+    schema:sameAs <http://isni.org/isni/0000000403976033> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q595684> ;
+             .

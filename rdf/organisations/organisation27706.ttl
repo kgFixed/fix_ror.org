@@ -1,0 +1,35 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/031yzhe66> 
+    a org:Organization ;
+    rdfs:label "Cyprus American Archaeological Research Institute" ;
+    schema:name "Cyprus American Archaeological Research Institute" ;
+    schema:foundingDate "1978"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05qwgg493> ;
+        rdfs:label "Boston University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02884dc18> ;
+        rdfs:label "Council of American Overseas Research Centers" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(33.3642 35.17531)"^^geo:wktLiteral ;
+        schema:addressLocality "Nicosia" ;
+    ] ;
+    schema:url <http://www.caari.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000403965430> ;
+             .

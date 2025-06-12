@@ -1,0 +1,26 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0599t2n59> 
+    a org:Organization ;
+    rdfs:label "Cooch Behar Panchanan Barma University" ;
+    schema:name "Cooch Behar Panchanan Barma University" ;
+    schema:foundingDate "2012"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Cooch_Behar_Panchanan_Barma_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(89.44508 26.32539)"^^geo:wktLiteral ;
+        schema:addressLocality "Koch Bihār" ;
+    ] ;
+    schema:url <https://cbpbu.ac.in/> ;
+    schema:sameAs <http://isni.org/isni/0000000474789307> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5166813> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5278311> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4673520> ;
+             .

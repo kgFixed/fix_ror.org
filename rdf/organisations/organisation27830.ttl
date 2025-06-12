@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/025ze7j58> 
+    a org:Organization ;
+    rdfs:label "Kansas City, Kansas Public Library" ;
+    schema:name "Kansas City, Kansas Public Library" ;
+    schema:foundingDate "1895"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-94.62746 39.11417)"^^geo:wktLiteral ;
+        schema:addressLocality "Kansas City" ;
+    ] ;
+    schema:url <https://www.kckpl.org/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30258034> ;
+             .

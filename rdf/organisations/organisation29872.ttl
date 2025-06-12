@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/009yjbg58> 
+    a org:Organization ;
+    rdfs:label "Notre Dame of Dadiangas University" ;
+    schema:name "Notre Dame of Dadiangas University" ;
+    schema:foundingDate "1953"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Notre_Dame_of_Dadiangas_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(125.17167 6.11278)"^^geo:wktLiteral ;
+        schema:addressLocality "General Santos" ;
+    ] ;
+    schema:url <http://www.nddu.edu.ph/> ;
+    schema:sameAs <http://isni.org/isni/0000000090723202> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q11007435> ;
+             .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03vr42a56> 
+    a org:Organization ;
+    rdfs:label "University of Toamasina" ;
+    schema:name "University of Toamasina" ;
+    schema:foundingDate "1988"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/University_of_Toamasina> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(49.40234 -18.1492)"^^geo:wktLiteral ;
+        schema:addressLocality "Toamasina" ;
+    ] ;
+    schema:url <http://www.univ-toamasina.mg/> ;
+    schema:sameAs <http://isni.org/isni/0000000094867393> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1443900> ;
+             .

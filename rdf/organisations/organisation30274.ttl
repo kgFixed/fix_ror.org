@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04z3wz653> 
+    a org:Organization ;
+    rdfs:label "Netherlands Institute for Advanced Study in the Humanities and Social Sciences" ;
+    schema:name "Netherlands Institute for Advanced Study in the Humanities and Social Sciences" ;
+    schema:foundingDate "1970"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Netherlands_Institute_for_Advanced_Study> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/043c0p156> ;
+        rdfs:label "Royal Netherlands Academy of Arts and Sciences" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(4.40278 52.14583)"^^geo:wktLiteral ;
+        schema:addressLocality "Wassenaar" ;
+    ] ;
+    schema:url <https://www.nias.knaw.nl/> ;
+    schema:sameAs <http://isni.org/isni/0000000404829203> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2348381> ;
+             .

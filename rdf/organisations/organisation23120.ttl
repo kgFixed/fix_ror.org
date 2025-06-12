@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/048sa9h54> 
+    a org:Organization ;
+    rdfs:label "John Black Day Hospital" ;
+    schema:name "John Black Day Hospital" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00cjeg736> ;
+        rdfs:label "Birmingham and Solihull Mental Health NHS Foundation Trust" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.89983 52.48142)"^^geo:wktLiteral ;
+        schema:addressLocality "Birmingham" ;
+    ] ;
+    schema:url <https://www.bsmhft.nhs.uk/contact-us/sites/?entryid2=2058&char=J> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30293237> ;
+             .

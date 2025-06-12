@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01xkzjp97> 
+    a org:Organization ;
+    rdfs:label "Health Promotion Board" ;
+    schema:name "Health Promotion Board" ;
+    schema:foundingDate "2001"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Health_Promotion_Board> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00mrhvv69> ;
+        rdfs:label "Ministry of Health" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(103.85007 1.28967)"^^geo:wktLiteral ;
+        schema:addressLocality "Singapore" ;
+    ] ;
+    schema:url <http://www.hpb.gov.sg/HOPPortal/> ;
+    schema:sameAs <http://isni.org/isni/0000000406279567> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5690625> ;
+             .

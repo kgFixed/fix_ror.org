@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05sydm958> 
+    a org:Organization ;
+    rdfs:label "ATS Automation Tooling Systems (Canada)" ;
+    schema:name "ATS Automation Tooling Systems (Canada)" ;
+    schema:foundingDate "1978"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/ATS_Automation_Tooling_Systems> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04xya2p21> ;
+        rdfs:label "ATS Automation Tooling Systems (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-80.31269 43.3601)"^^geo:wktLiteral ;
+        schema:addressLocality "Cambridge" ;
+    ] ;
+    schema:url <http://www.atsautomation.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q4654917> ;
+             .

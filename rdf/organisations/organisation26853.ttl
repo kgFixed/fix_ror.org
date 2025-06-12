@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01przwh33> 
+    a org:Organization ;
+    rdfs:label "Aleksander Zelwerowicz National Academy of Dramatic Art in Warsaw" ;
+    schema:name "Aleksander Zelwerowicz National Academy of Dramatic Art in Warsaw" ;
+    schema:foundingDate "1946"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Aleksander_Zelwerowicz_National_Academy_of_Dramatic_Art_in_Warsaw> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(21.01178 52.22977)"^^geo:wktLiteral ;
+        schema:addressLocality "Warsaw" ;
+    ] ;
+    schema:url <http://akademia.at.edu.pl/> ;
+    schema:sameAs <http://isni.org/isni/0000000121792025> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q688872> ;
+             .

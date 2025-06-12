@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04ff49a90> 
+    a org:Organization ;
+    rdfs:label "Amicable Knowledge Solution University" ;
+    schema:name "Amicable Knowledge Solution University" ;
+    schema:foundingDate "2011"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/AKS_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(80.82719 24.57726)"^^geo:wktLiteral ;
+        schema:addressLocality "Satna" ;
+    ] ;
+    schema:url <http://aksuniversity.ac.in/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q4652198> ;
+             .

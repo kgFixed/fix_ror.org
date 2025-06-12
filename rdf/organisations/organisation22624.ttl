@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02gm74063> 
+    a org:Organization ;
+    rdfs:label "Priory Hospital Cheadle Royal" ;
+    schema:name "Priory Hospital Cheadle Royal" ;
+    schema:foundingDate "1763"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Cheadle_Royal_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.98333 52.98333)"^^geo:wktLiteral ;
+        schema:addressLocality "Cheadle" ;
+    ] ;
+    schema:url <https://www.priorygroup.com/nhs/locations/priory-hospital-cheadle-royal-nhs-services> ;
+    schema:sameAs <http://isni.org/isni/0000000404781246> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30292810> ;
+             .

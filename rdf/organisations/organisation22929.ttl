@@ -1,0 +1,83 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02ckk6855> 
+    a org:Organization ;
+    rdfs:label "Kent Community Health NHS Foundation Trust" ;
+    schema:name "Kent Community Health NHS Foundation Trust" ;
+    schema:foundingDate "2011"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Kent_Community_Health_NHS_Foundation_Trust> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/036tx2n48> ;
+        rdfs:label "Edenbridge and District War Memorial Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0325v0r75> ;
+        rdfs:label "Faversham Cottage Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01zfccs95> ;
+        rdfs:label "Gravesham Community Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/015swn341> ;
+        rdfs:label "Hawkhurst Community Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05b6t0504> ;
+        rdfs:label "Queen Victoria Memorial Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/055vv6n72> ;
+        rdfs:label "Sevenoaks Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02gyrfm31> ;
+        rdfs:label "Sheppey Community Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03snwcw72> ;
+        rdfs:label "Sittingbourne Memorial Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00c7sr793> ;
+        rdfs:label "Tonbridge Cottage Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02x5def49> ;
+        rdfs:label "Whitstable and Tankerton Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(0.87376 51.14648)"^^geo:wktLiteral ;
+        schema:addressLocality "Ashford" ;
+    ] ;
+    schema:url <https://www.kentcht.nhs.uk/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q19597637> ;
+             .

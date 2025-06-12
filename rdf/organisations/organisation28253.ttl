@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03e7c0529> 
+    a org:Organization ;
+    rdfs:label "Ridgewood Public Schools" ;
+    schema:name "Ridgewood Public Schools" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Ridgewood_Public_Schools> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-74.11653 40.97926)"^^geo:wktLiteral ;
+        schema:addressLocality "Ridgewood" ;
+    ] ;
+    schema:url <https://www.ridgewood.k12.nj.us/> ;
+    schema:sameAs <http://isni.org/isni/000000040440167X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7332866> ;
+             .

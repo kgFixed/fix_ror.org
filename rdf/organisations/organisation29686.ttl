@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01hdcfr51> 
+    a org:Organization ;
+    rdfs:label "Islamic Azad University, Komijan Branch" ;
+    schema:name "Islamic Azad University, Komijan Branch" ;
+    schema:foundingDate "1985"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Islamic_Azad_University,_Komijan_Branch> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01kzn7k21> ;
+        rdfs:label "Islamic Azad University, Tehran" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(49.32653 34.72142)"^^geo:wktLiteral ;
+        schema:addressLocality "Komījān" ;
+    ] ;
+    schema:url <http://komijaniau.ac.ir/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q10849139> ;
+             .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/049sxg896> 
+    a org:Organization ;
+    rdfs:label "Hemchandracharya North Gujarat University" ;
+    schema:name "Hemchandracharya North Gujarat University" ;
+    schema:foundingDate "1986"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Hemchandracharya_North_Gujarat_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(72.12963 23.8507)"^^geo:wktLiteral ;
+        schema:addressLocality "Pātan" ;
+    ] ;
+    schema:url <http://www.ngu.ac.in/> ;
+    schema:sameAs <http://isni.org/isni/000000040500254X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5711227> ;
+             .

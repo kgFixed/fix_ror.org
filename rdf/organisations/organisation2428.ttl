@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05apdps44> 
+    a org:Organization ;
+    rdfs:label "Raigmore Hospital" ;
+    schema:name "Raigmore Hospital" ;
+    schema:foundingDate "1941"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Raigmore_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/010ypq317> ;
+        rdfs:label "NHS Highland" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/016476m91> ;
+        rdfs:label "University of Aberdeen" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/045wgfr59> ;
+        rdfs:label "University of Stirling" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-4.22398 57.47908)"^^geo:wktLiteral ;
+        schema:addressLocality "Inverness" ;
+    ] ;
+    schema:url <http://www.nhshighland.scot.nhs.uk/Services/Pages/RaigmoreHospital.aspx> ;
+    schema:sameAs <http://isni.org/isni/0000000417951910> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7283830> ;
+             .

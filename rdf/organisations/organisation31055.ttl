@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02t0nms65> 
+    a org:Organization ;
+    rdfs:label "Novozymes (Canada)" ;
+    schema:name "Novozymes (Canada)" ;
+    schema:foundingDate "2000"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Novozymes> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03ejz0s07> ;
+        rdfs:label "Novozymes (Denmark)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-75.69812 45.41117)"^^geo:wktLiteral ;
+        schema:addressLocality "Ottawa" ;
+    ] ;
+    schema:url <http://www.novozymes.com/en/Pages/default.aspx> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30338824> ;
+             .

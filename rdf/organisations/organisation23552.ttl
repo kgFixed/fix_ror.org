@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/016jrh007> 
+    a org:Organization ;
+    rdfs:label "Khost University" ;
+    schema:name "Khost University" ;
+    schema:foundingDate "2000"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Shaikh_Zayed_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(69.92041 33.33951)"^^geo:wktLiteral ;
+        schema:addressLocality "Khōst" ;
+    ] ;
+    schema:url <https://szu.edu.af/ps> ;
+    schema:sameAs <http://isni.org/isni/0000000459282014> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3918348> ;
+             .

@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01z1bn264> 
+    a org:Organization ;
+    rdfs:label "University of Languages and International Studies" ;
+    schema:name "University of Languages and International Studies" ;
+    schema:foundingDate "1955"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/VNU_University_of_Languages_and_International_Studies> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(105.84117 21.0245)"^^geo:wktLiteral ;
+        schema:addressLocality "Hanoi" ;
+    ] ;
+    schema:url <http://ulis.vnu.edu.vn/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q7895616> ;
+             .

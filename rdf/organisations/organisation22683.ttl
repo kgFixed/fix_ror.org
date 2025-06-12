@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0240exq58> 
+    a org:Organization ;
+    rdfs:label "Skegness Hospital" ;
+    schema:name "Skegness Hospital" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05ha03268> ;
+        rdfs:label "Lincolnshire Community Health Services NHS Trust" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(0.3363 53.14362)"^^geo:wktLiteral ;
+        schema:addressLocality "Skegness" ;
+    ] ;
+    schema:url <https://www.lincolnshirecommunityhealthservices.nhs.uk/our-services/community-hospitals/skegness-hospital> ;
+    schema:sameAs <http://isni.org/isni/0000000404009352> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30292862> ;
+             .

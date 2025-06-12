@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03a5bb278> 
+    a org:Organization ;
+    rdfs:label "Kent State University, East Liverpool" ;
+    schema:name "Kent State University, East Liverpool" ;
+    schema:foundingDate "1965"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Kent_State_University_at_East_Liverpool> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0561zqn56> ;
+        rdfs:label "University System of Ohio" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-80.57729 40.61868)"^^geo:wktLiteral ;
+        schema:addressLocality "East Liverpool" ;
+    ] ;
+    schema:url <http://www.kent.edu/columbiana> ;
+    schema:sameAs <http://isni.org/isni/0000000405358802> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6391917> ;
+             .

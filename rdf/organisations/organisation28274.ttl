@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04fmzje57> 
+    a org:Organization ;
+    rdfs:label "Rare Book School" ;
+    schema:name "Rare Book School" ;
+    schema:foundingDate "1983"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Rare_Book_School> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-78.47668 38.02931)"^^geo:wktLiteral ;
+        schema:addressLocality "Charlottesville" ;
+    ] ;
+    schema:url <https://rarebookschool.org/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q7294495> ;
+             .

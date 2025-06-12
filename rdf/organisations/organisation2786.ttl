@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00md77g41> 
+    a org:Organization ;
+    rdfs:label "Casa Sollievo della Sofferenza" ;
+    schema:name "Casa Sollievo della Sofferenza" ;
+    schema:foundingDate "1956"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Casa_Sollievo_della_Sofferenza> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04tfzc498> ;
+        rdfs:label "Istituti di Ricovero e Cura a Carattere Scientifico" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(15.7277 41.70643)"^^geo:wktLiteral ;
+        schema:addressLocality "San Giovanni Rotondo" ;
+    ] ;
+    schema:url <http://www.operapadrepio.it/en/> ;
+    schema:sameAs <http://isni.org/isni/0000000417579135> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1213805> ;
+             .

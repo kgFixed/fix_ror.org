@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00nct2329> 
+    a org:Organization ;
+    rdfs:label "New Epsom and Ewell Community Hospital" ;
+    schema:name "New Epsom and Ewell Community Hospital" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.27011 51.3305)"^^geo:wktLiteral ;
+        schema:addressLocality "Epsom" ;
+    ] ;
+    schema:url <https://www.cshsurrey.co.uk/our-services/location/new-epsom-and-ewell-community-hospital-neech> ;
+    schema:sameAs <http://isni.org/isni/0000000404002310> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30293054> ;
+             .

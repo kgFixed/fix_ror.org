@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/017hfdc92> 
+    a org:Organization ;
+    rdfs:label "Kharkiv University of Humanities People’s Ukrainian Academy" ;
+    schema:name "Kharkiv University of Humanities People’s Ukrainian Academy" ;
+    schema:foundingDate "1991"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Kharkiv_University_of_Humanities_%E2%80%9CPeople%E2%80%99s_Ukrainian_Academy%E2%80%9D> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(36.25272 49.98081)"^^geo:wktLiteral ;
+        schema:addressLocality "Kharkiv" ;
+    ] ;
+    schema:url <http://www.nua.kharkov.ua> ;
+    schema:sameAs <http://isni.org/isni/000000040449655X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4496306> ;
+             .

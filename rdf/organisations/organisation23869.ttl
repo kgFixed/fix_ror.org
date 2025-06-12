@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/056nda222> 
+    a org:Organization ;
+    rdfs:label "Kentucky Christian University" ;
+    schema:name "Kentucky Christian University" ;
+    schema:foundingDate "1919"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Kentucky_Christian_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-82.9485 38.33258)"^^geo:wktLiteral ;
+        schema:addressLocality "Grayson" ;
+    ] ;
+    schema:url <https://www.kcu.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000101087505> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6392195> ;
+             .

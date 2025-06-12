@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04mvvs945> 
+    a org:Organization ;
+    rdfs:label "Leeds Jane Culbreth Library" ;
+    schema:name "Leeds Jane Culbreth Library" ;
+    schema:foundingDate "1923"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-86.54443 33.54816)"^^geo:wktLiteral ;
+        schema:addressLocality "Leeds" ;
+    ] ;
+    schema:url <https://www.leedslibrary.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000404148969> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30258087> ;
+             .

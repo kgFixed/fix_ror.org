@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05p5fe205> 
+    a org:Organization ;
+    rdfs:label "Internationale Vereniging voor Neerlandistiek" ;
+    schema:name "Internationale Vereniging voor Neerlandistiek" ;
+    schema:foundingDate "1970"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(5.0913 51.55551)"^^geo:wktLiteral ;
+        schema:addressLocality "Tilburg" ;
+    ] ;
+    schema:url <http://www.ivnnl.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000089984288> ;
+             .

@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05aeshm06> 
+    a org:Organization ;
+    rdfs:label "Governador Celso Ramos Hospital" ;
+    schema:name "Governador Celso Ramos Hospital" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-48.54917 -27.59667)"^^geo:wktLiteral ;
+        schema:addressLocality "Florianópolis" ;
+    ] ;
+    schema:url <http://portalses.saude.sc.gov.br/index.php?option=com_content&view=frontpage&Itemid=28> ;
+    schema:sameAs <http://isni.org/isni/0000000405042293> ;
+             .

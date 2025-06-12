@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00ca12a38> 
+    a org:Organization ;
+    rdfs:label "Mahatma Gandhi Chitrakoot Gramodaya Vishwavidyalaya" ;
+    schema:name "Mahatma Gandhi Chitrakoot Gramodaya Vishwavidyalaya" ;
+    schema:foundingDate "1991"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Mahatma_Gandhi_Chitrakoot_Gramoday_Vishwavidyalaya> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(80.82719 24.57726)"^^geo:wktLiteral ;
+        schema:addressLocality "Satna" ;
+    ] ;
+    schema:url <http://www.mgcgvchitrakoot.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000417614391> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6733488> ;
+             .

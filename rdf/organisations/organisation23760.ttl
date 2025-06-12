@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/053nycv62> 
+    a org:Organization ;
+    rdfs:label "Korea University of Technology and Education" ;
+    schema:name "Korea University of Technology and Education" ;
+    schema:foundingDate "1991"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Korea_University_of_Technology_and_Education> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(127.1522 36.8065)"^^geo:wktLiteral ;
+        schema:addressLocality "Cheonan" ;
+    ] ;
+    schema:url <http://www.koreatech.ac.kr/eng.do> ;
+    schema:sameAs <http://isni.org/isni/0000000406471807> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6431749> ;
+             .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02z7pfr92> 
+    a org:Organization ;
+    rdfs:label "Oita University of Nursing and Health Sciences" ;
+    schema:name "Oita University of Nursing and Health Sciences" ;
+    schema:foundingDate "1998"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Oita_University_of_Nursing_and_Health_Sciences> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(131.6 33.23333)"^^geo:wktLiteral ;
+        schema:addressLocality "Ōita" ;
+    ] ;
+    schema:url <http://www.oita-nhs.ac.jp/English/> ;
+    schema:sameAs <http://isni.org/isni/0000000403753710> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3551721> ;
+             .

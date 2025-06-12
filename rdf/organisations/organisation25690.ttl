@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04hah6r58> 
+    a org:Organization ;
+    rdfs:label "Asian University" ;
+    schema:name "Asian University" ;
+    schema:foundingDate "1993"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Asian_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(100.92891 13.04704)"^^geo:wktLiteral ;
+        schema:addressLocality "Bang Lamung" ;
+    ] ;
+    schema:url <http://www.asianu.ac.th/> ;
+    schema:sameAs <http://isni.org/isni/0000000406446003> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q727768> ;
+             .

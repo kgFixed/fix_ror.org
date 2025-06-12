@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05bmme985> 
+    a org:Organization ;
+    rdfs:label "Monkwearmouth Hospital" ;
+    schema:name "Monkwearmouth Hospital" ;
+    schema:foundingDate "1873"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Monkwearmouth_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01ajv0n48> ;
+        rdfs:label "Cumbria Northumberland Tyne and Wear NHS Foundation Trust" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.38222 54.90465)"^^geo:wktLiteral ;
+        schema:addressLocality "Sunderland" ;
+    ] ;
+    schema:url <https://www.cntw.nhs.uk/locations/monkwearmouth/> ;
+    schema:sameAs <http://isni.org/isni/0000000403985212> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30292727> ;
+             .

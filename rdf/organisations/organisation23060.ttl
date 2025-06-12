@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00kgv1q58> 
+    a org:Organization ;
+    rdfs:label "Grantham and District Hospital" ;
+    schema:name "Grantham and District Hospital" ;
+    schema:foundingDate "1874"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Grantham_and_Kesteven_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0377kyv52> ;
+        rdfs:label "United Lincolnshire Hospitals NHS Trust" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.64184 52.91149)"^^geo:wktLiteral ;
+        schema:addressLocality "Grantham" ;
+    ] ;
+    schema:url <https://www.ulh.nhs.uk/hospitals/grantham-district/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q5596642> ;
+             .

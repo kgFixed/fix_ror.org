@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04sdbjc29> 
+    a org:Organization ;
+    rdfs:label "Kristal University" ;
+    schema:name "Kristal University" ;
+    schema:foundingDate "2005"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Kristal_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(20.78083 40.61861)"^^geo:wktLiteral ;
+        schema:addressLocality "Korçë" ;
+    ] ;
+    schema:url <http://www.kristal.edu.al/> ;
+    schema:sameAs <http://isni.org/isni/0000000094207723> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3303491> ;
+             .

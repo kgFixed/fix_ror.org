@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03ef4eh86> 
+    a org:Organization ;
+    rdfs:label "KPC Group (Netherlands)" ;
+    schema:name "KPC Group (Netherlands)" ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(5.30417 51.69917)"^^geo:wktLiteral ;
+        schema:addressLocality "'s-Hertogenbosch" ;
+    ] ;
+    schema:url <http://www.kpcgroep.nl/overig/english.aspx> ;
+    schema:sameAs <http://isni.org/isni/0000000406215977> ;
+             .

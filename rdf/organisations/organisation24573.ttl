@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/049r7sn84> 
+    a org:Organization ;
+    rdfs:label "Universidad Rafael Belloso Chacín" ;
+    schema:name "Universidad Rafael Belloso Chacín" ;
+    schema:foundingDate "1989"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Universidad_Rafael_Belloso_Chac%C3%ADn> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-71.61245 10.66663)"^^geo:wktLiteral ;
+        schema:addressLocality "Maracaibo" ;
+    ] ;
+    schema:url <https://www.urbe.edu/index.jsp> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q6156664> ;
+             .

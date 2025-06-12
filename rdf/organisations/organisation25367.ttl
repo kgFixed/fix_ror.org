@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01nsv4k44> 
+    a org:Organization ;
+    rdfs:label "Universitas Swadaya Gunung Jati" ;
+    schema:name "Universitas Swadaya Gunung Jati" ;
+    schema:foundingDate "1961"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(108.557 -6.7063)"^^geo:wktLiteral ;
+        schema:addressLocality "Cirebon" ;
+    ] ;
+    schema:url <https://unswagati.ac.id/> ;
+    schema:sameAs <http://isni.org/isni/000000046355713X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q12523470> ;
+             .

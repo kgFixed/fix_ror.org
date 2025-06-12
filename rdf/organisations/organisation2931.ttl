@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02jwg2f21> 
+    a org:Organization ;
+    rdfs:label "Hammerfest Hospital" ;
+    schema:name "Hammerfest Hospital" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(23.68092 70.66313)"^^geo:wktLiteral ;
+        schema:addressLocality "Hammerfest" ;
+    ] ;
+    schema:url <https://finnmarkssykehuset.no/steder/hammerfest-sykehus-hammarfeastta-buohcciviessu> ;
+    schema:sameAs <http://isni.org/isni/0000000406107976> ;
+             .

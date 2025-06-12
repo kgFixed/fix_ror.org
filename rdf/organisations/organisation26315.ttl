@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05arzt710> 
+    a org:Organization ;
+    rdfs:label "Sri Sathya Sai Institute of Higher Learning" ;
+    schema:name "Sri Sathya Sai Institute of Higher Learning" ;
+    schema:foundingDate "1981"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Sri_Sathya_Sai_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(77.8117 14.1652)"^^geo:wktLiteral ;
+        schema:addressLocality "Puttaparthi" ;
+    ] ;
+    schema:url <http://sssihl.edu.in/> ;
+    schema:sameAs <http://isni.org/isni/0000000404966988> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4475836> ;
+             .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02fnq4841> 
+    a org:Organization ;
+    rdfs:label "Universidad Católica de Honduras Nuestra Señora Reina de la Paz" ;
+    schema:name "Universidad Católica de Honduras Nuestra Señora Reina de la Paz" ;
+    schema:foundingDate "1992"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Universidad_Católica_de_Honduras> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-87.20681 14.0818)"^^geo:wktLiteral ;
+        schema:addressLocality "Tegucigalpa" ;
+    ] ;
+    schema:url <http://www.unicah.edu/#1> ;
+    schema:sameAs <http://isni.org/isni/0000000459379158> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7894251> ;
+             .

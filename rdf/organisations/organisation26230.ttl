@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05g48k331> 
+    a org:Organization ;
+    rdfs:label "Hamdan Bin Mohammed Smart University" ;
+    schema:name "Hamdan Bin Mohammed Smart University" ;
+    schema:foundingDate "2009"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Hamdan_Bin_Mohammed_Smart_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(55.30927 25.07725)"^^geo:wktLiteral ;
+        schema:addressLocality "Dubai" ;
+    ] ;
+    schema:url <https://www.hbmsu.ac.ae/> ;
+    schema:sameAs <http://isni.org/isni/000000041808226X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5644372> ;
+             .

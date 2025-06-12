@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00mnqcr93> 
+    a org:Organization ;
+    rdfs:label "Alcohol Countermeasure Systems (Canada)" ;
+    schema:name "Alcohol Countermeasure Systems (Canada)" ;
+    schema:foundingDate "1976"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-79.56711 43.65421)"^^geo:wktLiteral ;
+        schema:addressLocality "Etobicoke" ;
+    ] ;
+    schema:url <https://acs-corp.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000404871372> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30294874> ;
+             .

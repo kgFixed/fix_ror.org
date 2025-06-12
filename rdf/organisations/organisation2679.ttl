@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00qpv3w06> 
+    a org:Organization ;
+    rdfs:label "Amref Health Africa" ;
+    schema:name "Amref Health Africa" ;
+    schema:foundingDate "1957"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Amref_Health_Africa> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(36.81667 -1.28333)"^^geo:wktLiteral ;
+        schema:addressLocality "Nairobi" ;
+    ] ;
+    schema:url <http://amref.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000406214210> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q384103> ;
+             .

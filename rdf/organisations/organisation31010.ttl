@@ -1,0 +1,72 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01gfeyd95> 
+    a org:Organization ;
+    rdfs:label "Northumbria Healthcare NHS Foundation Trust" ;
+    schema:name "Northumbria Healthcare NHS Foundation Trust" ;
+    schema:foundingDate "1998"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Northumbria_Healthcare_NHS_Foundation_Trust> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04nx23795> ;
+        rdfs:label "Blyth Community Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/004046r88> ;
+        rdfs:label "Cw Private Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/053f59471> ;
+        rdfs:label "Haltwhistle War Memorial Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04jyr6737> ;
+        rdfs:label "Hexham General Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01zy11s57> ;
+        rdfs:label "North Tyneside General Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/055sezq52> ;
+        rdfs:label "Northumbria Specialist Emergency Care Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00z9hsx23> ;
+        rdfs:label "Rothbury Community Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04mb3yn31> ;
+        rdfs:label "Wansbeck General Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.44925 55.01646)"^^geo:wktLiteral ;
+        schema:addressLocality "North Shields" ;
+    ] ;
+    schema:url <https://www.northumbria.nhs.uk/> ;
+    schema:sameAs <http://isni.org/isni/0000000106421330> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q17017305> ;
+             .

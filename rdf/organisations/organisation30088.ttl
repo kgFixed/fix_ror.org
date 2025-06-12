@@ -1,0 +1,26 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01rcvq140> 
+    a org:Organization ;
+    rdfs:label "Chongqing University of Arts and Sciences" ;
+    schema:name "Chongqing University of Arts and Sciences" ;
+    schema:foundingDate "2005"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Chongqing_University_of_Arts_and_Sciences> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(106.55771 29.56026)"^^geo:wktLiteral ;
+        schema:addressLocality "Chongqing" ;
+    ] ;
+    schema:url <http://www.cqwu.net/> ;
+    schema:sameAs <http://isni.org/isni/000000041762504X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7987712> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q16078683> ;
+             .

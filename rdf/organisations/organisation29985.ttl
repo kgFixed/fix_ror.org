@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0274gjx61> 
+    a org:Organization ;
+    rdfs:label "University of Traditional Medicine, Mandalay" ;
+    schema:name "University of Traditional Medicine, Mandalay" ;
+    schema:foundingDate "2001"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/University_of_Traditional_Medicine,_Mandalay> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(96.08359 21.97473)"^^geo:wktLiteral ;
+        schema:addressLocality "Mandalay" ;
+    ] ;
+    schema:sameAs <http://www.wikidata.org/entity/Q7896503> ;
+             .

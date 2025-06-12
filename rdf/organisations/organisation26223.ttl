@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04kc6x746> 
+    a org:Organization ;
+    rdfs:label "Otemae University" ;
+    schema:name "Otemae University" ;
+    schema:foundingDate "1946"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Otemae_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(135.33199 34.71562)"^^geo:wktLiteral ;
+        schema:addressLocality "Nishinomiya" ;
+    ] ;
+    schema:url <https://www.otemae.ac.jp/> ;
+    schema:sameAs <http://isni.org/isni/000000009612303X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7108520> ;
+             .

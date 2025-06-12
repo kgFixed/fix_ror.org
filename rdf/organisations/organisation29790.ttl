@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04hjsag95> 
+    a org:Organization ;
+    rdfs:label "JECRC University" ;
+    schema:name "JECRC University" ;
+    schema:foundingDate "2012"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/JECRC_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(75.78781 26.91962)"^^geo:wktLiteral ;
+        schema:addressLocality "Jaipur" ;
+    ] ;
+    schema:url <https://jecrcuniversity.edu.in/> ;
+    schema:sameAs <http://isni.org/isni/000000047434958X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6108045> ;
+             .

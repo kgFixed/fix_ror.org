@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/034gcgw60> 
+    a org:Organization ;
+    rdfs:label "Institute of Space and Astronautical Science" ;
+    schema:name "Institute of Space and Astronautical Science" ;
+    schema:foundingDate "1955"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Institute_of_Space_and_Astronautical_Science> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/059yhyy33> ;
+        rdfs:label "Japan Aerospace Exploration Agency" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(139.69171 35.6895)"^^geo:wktLiteral ;
+        schema:addressLocality "Tokyo" ;
+    ] ;
+    schema:url <http://www.isas.jaxa.jp/e/index.shtml> ;
+    schema:sameAs <http://isni.org/isni/0000000099898906> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1207946> ;
+             .

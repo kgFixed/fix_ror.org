@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01tnf8c58> 
+    a org:Organization ;
+    rdfs:label "Feilding Palmer Hospital" ;
+    schema:name "Feilding Palmer Hospital" ;
+    schema:foundingDate "1899"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02fha3693> ;
+        rdfs:label "University Hospitals of Leicester NHS Trust" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.20218 52.45634)"^^geo:wktLiteral ;
+        schema:addressLocality "Lutterworth" ;
+    ] ;
+    schema:url <https://www.nhs.uk/Services/hospitals/Services/Service/DefaultView.aspx?id=288606> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30293093> ;
+             .

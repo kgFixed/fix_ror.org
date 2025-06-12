@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00rcpgp95> 
+    a org:Organization ;
+    rdfs:label "Capitol University Medical Center" ;
+    schema:name "Capitol University Medical Center" ;
+    schema:foundingDate "1973"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Capitol_University_Medical_City> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(124.64722 8.48222)"^^geo:wktLiteral ;
+        schema:addressLocality "Cagayan de Oro" ;
+    ] ;
+    schema:sameAs <http://www.wikidata.org/entity/Q5035954> ;
+             .

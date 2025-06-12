@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/047feaw16> 
+    a org:Organization ;
+    rdfs:label "Shrewsbury and Telford Hospital NHS Trust" ;
+    schema:name "Shrewsbury and Telford Hospital NHS Trust" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Shrewsbury_and_Telford_Hospital_NHS_Trust> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05nnz2423> ;
+        rdfs:label "Royal Shrewsbury Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-2.75208 52.71009)"^^geo:wktLiteral ;
+        schema:addressLocality "Shrewsbury" ;
+    ] ;
+    schema:url <https://www.sath.nhs.uk/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q17020308> ;
+             .

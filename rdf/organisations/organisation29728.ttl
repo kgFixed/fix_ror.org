@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01w860d88> 
+    a org:Organization ;
+    rdfs:label "National Experimental University of the Armed Forces" ;
+    schema:name "National Experimental University of the Armed Forces" ;
+    schema:foundingDate "1974"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/National_Experimental_University_of_the_Armed_Forces> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-66.87919 10.48801)"^^geo:wktLiteral ;
+        schema:addressLocality "Caracas" ;
+    ] ;
+    schema:url <http://www.unefa.edu.ve/portal/> ;
+    schema:sameAs <http://isni.org/isni/0000000404928981> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6972526> ;
+             .

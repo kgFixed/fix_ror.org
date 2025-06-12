@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00njxm476> 
+    a org:Organization ;
+    rdfs:label "Universidad Popular Autónoma del Estado de Puebla" ;
+    schema:name "Universidad Popular Autónoma del Estado de Puebla" ;
+    schema:foundingDate "1973"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Universidad_Popular_Aut%C3%B3noma_del_Estado_de_Puebla> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-98.20346 19.03793)"^^geo:wktLiteral ;
+        schema:addressLocality "Puebla City" ;
+    ] ;
+    schema:url <https://upaep.mx/?lang=en> ;
+    schema:sameAs <http://isni.org/isni/000000012184565X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7894306> ;
+             .

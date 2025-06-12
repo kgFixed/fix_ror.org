@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/030ncfx10> 
+    a org:Organization ;
+    rdfs:label "Universidad Metropolitana de Monterrey" ;
+    schema:name "Universidad Metropolitana de Monterrey" ;
+    schema:foundingDate "1996"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Universidad_Metropolitana_de_Monterrey> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-100.31847 25.67507)"^^geo:wktLiteral ;
+        schema:addressLocality "Monterrey" ;
+    ] ;
+    schema:url <https://www.umm.edu.mx/> ;
+    schema:sameAs <http://isni.org/isni/0000000449050260> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7894288> ;
+             .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01aadv713> 
+    a org:Organization ;
+    rdfs:label "Herzegovina University" ;
+    schema:name "Herzegovina University" ;
+    schema:foundingDate "2010"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/University_of_Herzegovina> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(17.80806 43.34333)"^^geo:wktLiteral ;
+        schema:addressLocality "Mostar" ;
+    ] ;
+    schema:url <http://hercegovina.edu.ba> ;
+    schema:sameAs <http://isni.org/isni/0000000446900127> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q17077730> ;
+             .

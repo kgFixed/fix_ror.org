@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/025q90g47> 
+    a org:Organization ;
+    rdfs:label "Grieg Seafood (Canada)" ;
+    schema:name "Grieg Seafood (Canada)" ;
+    schema:foundingDate "1992"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Grieg_Seafood> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0186a6222> ;
+        rdfs:label "Grieg Seafood (Norway)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-125.24459 50.01634)"^^geo:wktLiteral ;
+        schema:addressLocality "Campbell River" ;
+    ] ;
+    schema:url <https://www.griegseafood.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30295198> ;
+             .

@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/007jmf435> 
+    a org:Organization ;
+    rdfs:label "Ecology Action" ;
+    schema:name "Ecology Action" ;
+    schema:foundingDate "1970"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Ecology_Action> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-122.0308 36.97412)"^^geo:wktLiteral ;
+        schema:addressLocality "Santa Cruz" ;
+    ] ;
+    schema:url <http://ecoact.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000088259535> ;
+             .

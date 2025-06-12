@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02a86ry03> 
+    a org:Organization ;
+    rdfs:label "Muslim University of Morogoro" ;
+    schema:name "Muslim University of Morogoro" ;
+    schema:foundingDate "2004"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Muslim_University_of_Morogoro> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(37.66122 -6.82102)"^^geo:wktLiteral ;
+        schema:addressLocality "Morogoro" ;
+    ] ;
+    schema:url <http://www.mum.ac.tz/> ;
+    schema:sameAs <http://isni.org/isni/0000000403670608> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6942984> ;
+             .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02kf4r633> 
+    a org:Organization ;
+    rdfs:label "Manav Rachna International Institute of Research and Studies" ;
+    schema:name "Manav Rachna International Institute of Research and Studies" ;
+    schema:foundingDate "1997"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Manav_Rachna_International_Institute_of_Research_and_Studies> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(77.31316 28.41124)"^^geo:wktLiteral ;
+        schema:addressLocality "Faridabad" ;
+    ] ;
+    schema:url <https://manavrachna.edu.in/international-institute-of-research-and-studies/> ;
+    schema:sameAs <http://isni.org/isni/0000000417744313> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6747094> ;
+             .

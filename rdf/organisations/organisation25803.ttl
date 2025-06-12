@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00xz8jv85> 
+    a org:Organization ;
+    rdfs:label "Richard J. Daley College" ;
+    schema:name "Richard J. Daley College" ;
+    schema:foundingDate "1960"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Richard_J._Daley_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01dk89r22> ;
+        rdfs:label "City Colleges of Chicago" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-87.65005 41.85003)"^^geo:wktLiteral ;
+        schema:addressLocality "Chicago" ;
+    ] ;
+    schema:url <http://www.ccc.edu/colleges/daley/pages/default.aspx> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q7326714> ;
+             .

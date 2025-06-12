@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00h15ta02> 
+    a org:Organization ;
+    rdfs:label "AMA International University" ;
+    schema:name "AMA International University" ;
+    schema:foundingDate "2002"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/AMA_International_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(50.52472 26.18306)"^^geo:wktLiteral ;
+        schema:addressLocality "Salmābād" ;
+    ] ;
+    schema:url <http://www.amaiu.edu.bh> ;
+    schema:sameAs <http://isni.org/isni/0000000405013521> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4652536> ;
+             .

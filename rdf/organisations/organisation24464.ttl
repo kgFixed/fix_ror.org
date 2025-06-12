@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/004nyzb81> 
+    a org:Organization ;
+    rdfs:label "Universidad Privada de Santa Cruz de la Sierra" ;
+    schema:name "Universidad Privada de Santa Cruz de la Sierra" ;
+    schema:foundingDate "1984"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-63.18117 -17.78629)"^^geo:wktLiteral ;
+        schema:addressLocality "Santa Cruz" ;
+    ] ;
+    schema:url <https://www.upsa.edu.bo> ;
+    schema:sameAs <http://isni.org/isni/0000000119410008> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q9091601> ;
+             .

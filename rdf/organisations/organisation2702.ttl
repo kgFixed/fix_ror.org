@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04b4hfb84> 
+    a org:Organization ;
+    rdfs:label "Green Pastures Hospital and Rehabilitation Centre" ;
+    schema:name "Green Pastures Hospital and Rehabilitation Centre" ;
+    schema:foundingDate "1957"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(83.96851 28.26689)"^^geo:wktLiteral ;
+        schema:addressLocality "Pokhara" ;
+    ] ;
+    schema:url <http://gphospital.org/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30254258> ;
+             .

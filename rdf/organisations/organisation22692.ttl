@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0343mqp27> 
+    a org:Organization ;
+    rdfs:label "The Portland Hospital" ;
+    schema:name "The Portland Hospital" ;
+    schema:foundingDate "1983"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Portland_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-2.44472 50.56748)"^^geo:wktLiteral ;
+        schema:addressLocality "Portland" ;
+    ] ;
+    schema:url <https://www.hcahealthcare.co.uk/facilities/the-portland-hospital> ;
+    schema:sameAs <http://isni.org/isni/0000000405796239> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7231952> ;
+             .

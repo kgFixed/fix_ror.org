@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01jxhzn15> 
+    a org:Organization ;
+    rdfs:label "Centro Universitario México Valle" ;
+    schema:name "Centro Universitario México Valle" ;
+    schema:foundingDate "1960"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-100.31847 25.67507)"^^geo:wktLiteral ;
+        schema:addressLocality "Monterrey" ;
+    ] ;
+    schema:url <http://www.cumv.com.mx/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30293734> ;
+             .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05e30xz71> 
+    a org:Organization ;
+    rdfs:label "LeRoy Collins Leon County Public Library" ;
+    schema:name "LeRoy Collins Leon County Public Library" ;
+    schema:foundingDate "1955"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/LeRoy_Collins_Leon_County_Public_Library> ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-84.28073 30.43826)"^^geo:wktLiteral ;
+        schema:addressLocality "Tallahassee" ;
+    ] ;
+    schema:url <https://lcpl.ent.sirsi.net> ;
+    schema:sameAs <http://isni.org/isni/0000000405433665> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q21020916> ;
+             .

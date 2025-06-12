@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01wdhap14> 
+    a org:Organization ;
+    rdfs:label "University of Health Sciences Antigua" ;
+    schema:name "University of Health Sciences Antigua" ;
+    schema:foundingDate "1982"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/University_of_Health_Sciences_(Antigua)> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-61.78136 17.02741)"^^geo:wktLiteral ;
+        schema:addressLocality "Falmouth" ;
+    ] ;
+    schema:url <http://www.uhsa.ag> ;
+    schema:sameAs <http://isni.org/isni/000000044906120X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7895486> ;
+             .

@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/032sgfc78> 
+    a org:Organization ;
+    rdfs:label "Ivanovo State Medical Academy" ;
+    schema:name "Ivanovo State Medical Academy" ;
+    schema:foundingDate "1930"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(40.97139 56.99719)"^^geo:wktLiteral ;
+        schema:addressLocality "Ivanovo" ;
+    ] ;
+    schema:url <https://www.isma.ivanovo.ru> ;
+    schema:sameAs <http://isni.org/isni/000000046013430X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4196593> ;
+             .

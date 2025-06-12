@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01rb75107> 
+    a org:Organization ;
+    rdfs:label "National University of Advanced Legal Studies" ;
+    schema:name "National University of Advanced Legal Studies" ;
+    schema:foundingDate "2005"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/National_University_of_Advanced_Legal_Studies> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(76.26022 9.93988)"^^geo:wktLiteral ;
+        schema:addressLocality "Ernakulam" ;
+    ] ;
+    schema:url <http://www.nuals.ac.in/> ;
+    schema:sameAs <http://isni.org/isni/0000000417728102> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6979223> ;
+             .

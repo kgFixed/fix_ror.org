@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00gvcmw36> 
+    a org:Organization ;
+    rdfs:label "Kent County Council" ;
+    schema:name "Kent County Council" ;
+    schema:foundingDate "1889"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Kent_County_Council> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03df6me86> ;
+        rdfs:label "West View Integrated Care Centre" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(0.51667 51.26667)"^^geo:wktLiteral ;
+        schema:addressLocality "Maidstone" ;
+    ] ;
+    schema:url <http://www.kent.gov.uk/> ;
+    schema:sameAs <http://isni.org/isni/0000000112611544> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6386127> ;
+             .

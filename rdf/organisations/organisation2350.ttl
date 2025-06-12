@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/032fk0x53> 
+    a org:Organization ;
+    rdfs:label "Urmia University" ;
+    schema:name "Urmia University" ;
+    schema:foundingDate "1878"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Urmia_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(45.07605 37.55274)"^^geo:wktLiteral ;
+        schema:addressLocality "Urmia" ;
+    ] ;
+    schema:url <http://www.urmia.ac.ir/> ;
+    schema:sameAs <http://isni.org/isni/0000000404428645> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3874128> ;
+             .

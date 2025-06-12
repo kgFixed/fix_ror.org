@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03sfvke56> 
+    a org:Organization ;
+    rdfs:label "Kodolányi János University of Applied Sciences" ;
+    schema:name "Kodolányi János University of Applied Sciences" ;
+    schema:foundingDate "1992"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Kodol%C3%A1nyi_J%C3%A1nos_University_of_Applied_Sciences> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(18.41034 47.18995)"^^geo:wktLiteral ;
+        schema:addressLocality "Székesfehérvár" ;
+    ] ;
+    schema:url <http://www.kodolanyi.hu/en> ;
+    schema:sameAs <http://isni.org/isni/0000000101350043> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1114851> ;
+             .

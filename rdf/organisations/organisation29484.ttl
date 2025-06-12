@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04japw488> 
+    a org:Organization ;
+    rdfs:label "Godfrey Okoye University" ;
+    schema:name "Godfrey Okoye University" ;
+    schema:foundingDate "2009"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Godfrey_Okoye_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(7.49883 6.44132)"^^geo:wktLiteral ;
+        schema:addressLocality "Enugu" ;
+    ] ;
+    schema:url <https://www.gouni.edu.ng/> ;
+    schema:sameAs <http://isni.org/isni/0000000417918061> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q13601184> ;
+             .

@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00vr94b03> 
+    a org:Organization ;
+    rdfs:label "Katholisches Klinikum Lünen/Werne , St.-Marien-Hospital Lünen" ;
+    schema:name "Katholisches Klinikum Lünen/Werne , St.-Marien-Hospital Lünen" ;
+    schema:foundingDate "1865"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(7.52872 51.61634)"^^geo:wktLiteral ;
+        schema:addressLocality "Lünen" ;
+    ] ;
+    schema:url <https://www.klinikum-luenen.de/startseite/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30293424> ;
+             .

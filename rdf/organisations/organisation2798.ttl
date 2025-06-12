@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04ssfah06> 
+    a org:Organization ;
+    rdfs:label "Hospital Virgen de los Lirios" ;
+    schema:name "Hospital Virgen de los Lirios" ;
+    schema:foundingDate "1972"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.47432 38.70545)"^^geo:wktLiteral ;
+        schema:addressLocality "Alcoy" ;
+    ] ;
+    schema:url <http://alcoy.san.gva.es/cas/hospital/datos.htm> ;
+    schema:sameAs <http://isni.org/isni/0000000091896148> ;
+             .

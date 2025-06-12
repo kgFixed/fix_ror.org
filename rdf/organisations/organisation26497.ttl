@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03c19jm06> 
+    a org:Organization ;
+    rdfs:label "University of Elbasan" ;
+    schema:name "University of Elbasan" ;
+    schema:foundingDate "1991"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/University_of_Elbasan> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(20.08222 41.1125)"^^geo:wktLiteral ;
+        schema:addressLocality "Elbasan" ;
+    ] ;
+    schema:url <http://www.uniel.edu.al> ;
+    schema:sameAs <http://isni.org/isni/0000000404947410> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1334412> ;
+             .

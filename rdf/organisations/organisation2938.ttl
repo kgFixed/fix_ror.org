@@ -1,0 +1,64 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/058p1kn93> 
+    a org:Organization ;
+    rdfs:label "VA Long Beach Healthcare System" ;
+    schema:name "VA Long Beach Healthcare System" ;
+    schema:foundingDate "1980"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01z2gz488> ;
+        rdfs:label "Tibor Rubin VA Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/031qpfn56> ;
+        rdfs:label "VA Desert Pacific Healthcare Network" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0080fxk18> ;
+        rdfs:label "California State University, Long Beach" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05g44an34> ;
+        rdfs:label "Long Beach City College" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0431mgz06> ;
+        rdfs:label "Southern California Institute for Research and Education" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04gyf1771> ;
+        rdfs:label "University of California, Irvine" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/046rm7j60> ;
+        rdfs:label "University of California, Los Angeles" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-118.18923 33.76696)"^^geo:wktLiteral ;
+        schema:addressLocality "Long Beach" ;
+    ] ;
+    schema:url <http://www.longbeach.va.gov/> ;
+    schema:sameAs <http://isni.org/isni/0000000404192265> ;
+             .

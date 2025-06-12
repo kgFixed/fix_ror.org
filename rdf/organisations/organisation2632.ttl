@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01t54q348> 
+    a org:Organization ;
+    rdfs:label "Grantham Hospital" ;
+    schema:name "Grantham Hospital" ;
+    schema:foundingDate "1957"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Grantham_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05sn8t512> ;
+        rdfs:label "Hospital Authority" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02zhqgq86> ;
+        rdfs:label "University of Hong Kong" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(114.17469 22.27832)"^^geo:wktLiteral ;
+        schema:addressLocality "Hong Kong" ;
+    ] ;
+    schema:url <http://www.ha.org.hk/visitor/ha_visitor_index.asp?Content_ID=100139&Lang=CHIB5&Dimension=100&Parent_ID=10176&Ver=HTML> ;
+    schema:sameAs <http://isni.org/isni/0000000417995171> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5596630> ;
+             .

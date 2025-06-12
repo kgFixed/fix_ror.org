@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00gxhrz08> 
+    a org:Organization ;
+    rdfs:label "Gulf of Alaska Coastal Communities Coalition" ;
+    schema:name "Gulf of Alaska Coastal Communities Coalition" ;
+    schema:foundingDate "2007"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-149.90028 61.21806)"^^geo:wktLiteral ;
+        schema:addressLocality "Anchorage" ;
+    ] ;
+    schema:url <http://www.goac3.org/> ;
+     .

@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00hw53j55> 
+    a org:Organization ;
+    rdfs:label "Escola Superior de Jornalismo" ;
+    schema:name "Escola Superior de Jornalismo" ;
+    schema:foundingDate "2008"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(32.58322 -25.96553)"^^geo:wktLiteral ;
+        schema:addressLocality "Maputo" ;
+    ] ;
+    schema:url <http://www.esj.ac.mz/> ;
+    schema:sameAs <http://isni.org/isni/0000000464699287> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30294202> ;
+             .

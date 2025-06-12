@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01776ep11> 
+    a org:Organization ;
+    rdfs:label "Leeds Community Healthcare NHS Trust" ;
+    schema:name "Leeds Community Healthcare NHS Trust" ;
+    schema:foundingDate "2011"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Leeds_Community_Healthcare_NHS_Trust> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.54785 53.79648)"^^geo:wktLiteral ;
+        schema:addressLocality "Leeds" ;
+    ] ;
+    schema:url <http://www.leedscommunityhealthcare.nhs.uk/> ;
+    schema:sameAs <http://isni.org/isni/0000000404916948> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q16966284> ;
+             .

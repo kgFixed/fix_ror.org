@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01m00b434> 
+    a org:Organization ;
+    rdfs:label "Islamic University of Niger" ;
+    schema:name "Islamic University of Niger" ;
+    schema:foundingDate "1974"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Islamic_University_of_Niger> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.3689 13.1007)"^^geo:wktLiteral ;
+        schema:addressLocality "Say" ;
+    ] ;
+    schema:url <http://www.universite-say.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q890735> ;
+             .

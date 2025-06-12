@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/013wphc16> 
+    a org:Organization ;
+    rdfs:label "Castleberg Hospital" ;
+    schema:name "Castleberg Hospital" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0057f6x09> ;
+        rdfs:label "Airedale NHS Foundation Trust" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-2.2772 54.06865)"^^geo:wktLiteral ;
+        schema:addressLocality "Settle" ;
+    ] ;
+    schema:url <http://www.airedale-trust.nhs.uk/services/community-care/castleberg-hospital/> ;
+    schema:sameAs <http://isni.org/isni/0000000449041612> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30293097> ;
+             .

@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04p1p1388> 
+    a org:Organization ;
+    rdfs:label "Civil Defense Academy" ;
+    schema:name "Civil Defense Academy" ;
+    schema:foundingDate "1992"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(37.42848 55.9001)"^^geo:wktLiteral ;
+        schema:addressLocality "Khimki" ;
+    ] ;
+    schema:url <https://amchs.ru/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q4059230> ;
+             .

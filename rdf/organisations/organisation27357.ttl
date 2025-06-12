@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05mjn5p90> 
+    a org:Organization ;
+    rdfs:label "Tobolsk Pedagogical Institute named after D. I. Mendeleev" ;
+    schema:name "Tobolsk Pedagogical Institute named after D. I. Mendeleev" ;
+    schema:foundingDate "1913"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(68.25457 58.19807)"^^geo:wktLiteral ;
+        schema:addressLocality "Tobolsk" ;
+    ] ;
+    schema:url <https://www.tobolsk.utmn.ru/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30257782> ;
+             .

@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02zg49d29> 
+    a org:Organization ;
+    rdfs:label "Leicester General Hospital" ;
+    schema:name "Leicester General Hospital" ;
+    schema:foundingDate "1771"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Leicester_General_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02fha3693> ;
+        rdfs:label "University Hospitals of Leicester NHS Trust" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04h699437> ;
+        rdfs:label "University of Leicester" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.13169 52.6386)"^^geo:wktLiteral ;
+        schema:addressLocality "Leicester" ;
+    ] ;
+    schema:url <http://www.leicestershospitals.nhs.uk/aboutus/our-hospitals/leicester-general-hospital/> ;
+    schema:sameAs <http://isni.org/isni/0000000404006629> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6519183> ;
+             .

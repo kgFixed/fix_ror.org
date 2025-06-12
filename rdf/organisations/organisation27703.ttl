@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02sxwqc72> 
+    a org:Organization ;
+    rdfs:label "Decorah Public Library" ;
+    schema:name "Decorah Public Library" ;
+    schema:foundingDate "1893"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-91.78571 43.30331)"^^geo:wktLiteral ;
+        schema:addressLocality "Decorah" ;
+    ] ;
+    schema:url <https://www.decorah.lib.ia.us/> ;
+    schema:sameAs <http://isni.org/isni/0000000405895747> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30257973> ;
+             .

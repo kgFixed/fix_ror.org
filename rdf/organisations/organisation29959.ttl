@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03a6cpb51> 
+    a org:Organization ;
+    rdfs:label "University of Goma" ;
+    schema:name "University of Goma" ;
+    schema:foundingDate "1993"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/University_of_Goma> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(29.22845 -1.67409)"^^geo:wktLiteral ;
+        schema:addressLocality "Goma" ;
+    ] ;
+    schema:url <http://ww1.unigom.org/> ;
+    schema:sameAs <http://isni.org/isni/000000046011507X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3551591> ;
+             .

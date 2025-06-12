@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05x5g1486> 
+    a org:Organization ;
+    rdfs:label "Palawan State University" ;
+    schema:name "Palawan State University" ;
+    schema:foundingDate "1965"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Palawan_State_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(118.73528 9.73917)"^^geo:wktLiteral ;
+        schema:addressLocality "Puerto Princesa City" ;
+    ] ;
+    schema:url <http://psu.palawan.edu.ph/> ;
+    schema:sameAs <http://isni.org/isni/0000000406247848> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1559172> ;
+             .

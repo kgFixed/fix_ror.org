@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05n757p35> 
+    a org:Organization ;
+    rdfs:label "Hiroshima Shudo University" ;
+    schema:name "Hiroshima Shudo University" ;
+    schema:foundingDate "1952"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Hiroshima_Shudo_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(132.45 34.4)"^^geo:wktLiteral ;
+        schema:addressLocality "Hiroshima" ;
+    ] ;
+    schema:url <http://www.shudo-u.ac.jp/english/> ;
+    schema:sameAs <http://isni.org/isni/000000010741057X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q8192319> ;
+             .

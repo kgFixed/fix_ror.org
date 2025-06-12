@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02031zf96> 
+    a org:Organization ;
+    rdfs:label "Particle Data Group" ;
+    schema:name "Particle Data Group" ;
+    schema:foundingDate "1957"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Particle_Data_Group> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-122.27275 37.87159)"^^geo:wktLiteral ;
+        schema:addressLocality "Berkeley" ;
+    ] ;
+    schema:url <http://pdg.lbl.gov/2014/html/what_is_pdg.html> ;
+    schema:sameAs <http://isni.org/isni/0000000119401136> ;
+             .

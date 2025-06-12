@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/016ahab87> 
+    a org:Organization ;
+    rdfs:label "Alecu Russo State University of Bălți" ;
+    schema:name "Alecu Russo State University of Bălți" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Alecu_Russo_State_University_of_B%C4%83l%C8%9Bi> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(27.92932 47.76314)"^^geo:wktLiteral ;
+        schema:addressLocality "Bălţi" ;
+    ] ;
+    schema:url <http://www.usb.md/> ;
+    schema:sameAs <http://isni.org/isni/0000000106913618> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2501849> ;
+             .

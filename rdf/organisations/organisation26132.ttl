@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/006c2dp67> 
+    a org:Organization ;
+    rdfs:label "Kwassui Women's University" ;
+    schema:name "Kwassui Women's University" ;
+    schema:foundingDate "1879"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Kwassui_Women's_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(129.88333 32.75)"^^geo:wktLiteral ;
+        schema:addressLocality "Nagasaki" ;
+    ] ;
+    schema:url <http://kwassui-int.ac.jp/> ;
+    schema:sameAs <http://isni.org/isni/0000000403719053> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5369985> ;
+             .

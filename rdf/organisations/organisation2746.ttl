@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/034pdr896> 
+    a org:Organization ;
+    rdfs:label "Dallas VA Medical Center" ;
+    schema:name "Dallas VA Medical Center" ;
+    schema:foundingDate "1940"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01nzxq896> ;
+        rdfs:label "VA North Texas Health Care System" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-96.80667 32.78306)"^^geo:wktLiteral ;
+        schema:addressLocality "Dallas" ;
+    ] ;
+    schema:url <https://www.va.gov/directory/guide/facility.asp?id=35> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30254295> ;
+             .

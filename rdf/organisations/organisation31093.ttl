@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/001yh3598> 
+    a org:Organization ;
+    rdfs:label "Linde (Canada)" ;
+    schema:name "Linde (Canada)" ;
+    schema:foundingDate "1907"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/053d55q96> ;
+        rdfs:label "Linde (Germany)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-79.6583 43.5789)"^^geo:wktLiteral ;
+        schema:addressLocality "Mississauga" ;
+    ] ;
+    schema:url <http://www.praxair.ca/en> ;
+     .

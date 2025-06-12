@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01268am16> 
+    a org:Organization ;
+    rdfs:label "National Museum Institute of the History of Art, Conservation and Museology" ;
+    schema:name "National Museum Institute of the History of Art, Conservation and Museology" ;
+    schema:foundingDate "1989"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/National_Museum_Institute_of_the_History_of_Art,_Conservation_and_Museology> ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(77.2148 28.62137)"^^geo:wktLiteral ;
+        schema:addressLocality "New Delhi" ;
+    ] ;
+    schema:url <http://nmi.gov.in/> ;
+    schema:sameAs <http://isni.org/isni/0000000121896465> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q18128575> ;
+             .

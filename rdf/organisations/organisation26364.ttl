@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00jgwn197> 
+    a org:Organization ;
+    rdfs:label "Sher-e-Kashmir University of Agricultural Sciences and Technology of Kashmir" ;
+    schema:name "Sher-e-Kashmir University of Agricultural Sciences and Technology of Kashmir" ;
+    schema:foundingDate "1982"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Sher-e-Kashmir_University_of_Agricultural_Sciences_and_Technology_of_Kashmir> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(74.80555 34.08565)"^^geo:wktLiteral ;
+        schema:addressLocality "Srinagar" ;
+    ] ;
+    schema:url <http://www.skuastkashmir.ac.in/> ;
+    schema:sameAs <http://isni.org/isni/0000000405006225> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7494595> ;
+             .

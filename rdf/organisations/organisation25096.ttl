@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00vr9xx71> 
+    a org:Organization ;
+    rdfs:label "Central University of Tibetan Studies" ;
+    schema:name "Central University of Tibetan Studies" ;
+    schema:foundingDate "1967"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Central_University_for_Tibetan_Studies> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(83.01041 25.31668)"^^geo:wktLiteral ;
+        schema:addressLocality "Varanasi" ;
+    ] ;
+    schema:url <http://www.cuts.ac.in/GuestSection/default.aspx> ;
+    schema:sameAs <http://isni.org/isni/0000000122645342> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q390021> ;
+             .

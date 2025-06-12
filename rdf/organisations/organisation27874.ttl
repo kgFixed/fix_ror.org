@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04n3hjx90> 
+    a org:Organization ;
+    rdfs:label "Association for Slavic East European and Eurasian Studies" ;
+    schema:name "Association for Slavic East European and Eurasian Studies" ;
+    schema:foundingDate "1948"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Association_for_Slavic,_East_European,_and_Eurasian_Studies> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-79.99589 40.44062)"^^geo:wktLiteral ;
+        schema:addressLocality "Pittsburgh" ;
+    ] ;
+    schema:url <http://aseees.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000086783376> ;
+             .

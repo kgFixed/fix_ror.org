@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05amrd548> 
+    a org:Organization ;
+    rdfs:label "University of Ouargla" ;
+    schema:name "University of Ouargla" ;
+    schema:foundingDate "1988"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/University_of_Ouargla> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(5.32502 31.94932)"^^geo:wktLiteral ;
+        schema:addressLocality "Ouargla" ;
+    ] ;
+    schema:url <https://www.univ-ouargla.dz> ;
+    schema:sameAs <http://isni.org/isni/0000000405243132> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q613937> ;
+             .

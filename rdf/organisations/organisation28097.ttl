@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/054m2gy59> 
+    a org:Organization ;
+    rdfs:label "Jacques Marchais Center of Tibetan Art" ;
+    schema:name "Jacques Marchais Center of Tibetan Art" ;
+    schema:foundingDate "1947"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Jacques_Marchais_Museum_of_Tibetan_Art> ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-74.13986 40.56233)"^^geo:wktLiteral ;
+        schema:addressLocality "Staten Island" ;
+    ] ;
+    schema:url <http://www.tibetanmuseum.org/> ;
+     .

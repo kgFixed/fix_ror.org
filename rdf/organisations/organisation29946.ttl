@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01a7snz60> 
+    a org:Organization ;
+    rdfs:label "University of Television and Film Munich" ;
+    schema:name "University of Television and Film Munich" ;
+    schema:foundingDate "1966"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/University_of_Television_and_Film_Munich> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(11.57549 48.13743)"^^geo:wktLiteral ;
+        schema:addressLocality "Munich" ;
+    ] ;
+    schema:url <https://www.hff-muc.de/> ;
+    schema:sameAs <http://isni.org/isni/000000012295871X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q569350> ;
+             .

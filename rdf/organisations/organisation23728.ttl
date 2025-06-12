@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04xtvq436> 
+    a org:Organization ;
+    rdfs:label "Kurashiki University of Science and the Arts" ;
+    schema:name "Kurashiki University of Science and the Arts" ;
+    schema:foundingDate "1995"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Kurashiki_University_of_Science_and_the_Arts> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(133.76667 34.58333)"^^geo:wktLiteral ;
+        schema:addressLocality "Kurashiki" ;
+    ] ;
+    schema:url <https://www.kusa.ac.jp> ;
+    schema:sameAs <http://isni.org/isni/0000000403718747> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6445630> ;
+             .

@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01e7fkm87> 
+    a org:Organization ;
+    rdfs:label "École Supérieure de Design et des Arts Visuels" ;
+    schema:name "École Supérieure de Design et des Arts Visuels" ;
+    schema:foundingDate "2006"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-7.61138 33.58831)"^^geo:wktLiteral ;
+        schema:addressLocality "Casablanca" ;
+    ] ;
+    schema:url <https://ecole-design.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30294370> ;
+             .

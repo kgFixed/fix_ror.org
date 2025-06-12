@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/036gt0m92> 
+    a org:Organization ;
+    rdfs:label "Jean Piaget University of Cape Verde" ;
+    schema:name "Jean Piaget University of Cape Verde" ;
+    schema:foundingDate "2001"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Jean_Piaget_University_of_Cape_Verde> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-23.51254 14.93152)"^^geo:wktLiteral ;
+        schema:addressLocality "Praia" ;
+    ] ;
+    schema:url <http://www.unipiaget.cv/> ;
+    schema:sameAs <http://isni.org/isni/0000000404072167> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1707547> ;
+             .

@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0227kwk61> 
+    a org:Organization ;
+    rdfs:label "Hai Phong University" ;
+    schema:name "Hai Phong University" ;
+    schema:foundingDate "1968"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Hai_Phong_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(106.68345 20.86481)"^^geo:wktLiteral ;
+        schema:addressLocality "Haiphong" ;
+    ] ;
+    schema:url <http://dhhp.edu.vn/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q5638944> ;
+             .

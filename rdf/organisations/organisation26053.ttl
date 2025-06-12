@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03ncgps69> 
+    a org:Organization ;
+    rdfs:label "Maebashi Kyoai Gakuen College" ;
+    schema:name "Maebashi Kyoai Gakuen College" ;
+    schema:foundingDate "1988"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Maebashi_Kyoai_Gakuen_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(139.08333 36.4)"^^geo:wktLiteral ;
+        schema:addressLocality "Maebashi" ;
+    ] ;
+    schema:url <https://www.kyoai.ac.jp/> ;
+    schema:sameAs <http://isni.org/isni/0000000403719272> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q11392696> ;
+             .

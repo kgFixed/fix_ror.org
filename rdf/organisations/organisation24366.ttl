@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04vh21716> 
+    a org:Organization ;
+    rdfs:label "Universidad Unión Bolivariana" ;
+    schema:name "Universidad Unión Bolivariana" ;
+    schema:foundingDate "1936"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-68.15 -16.5)"^^geo:wktLiteral ;
+        schema:addressLocality "La Paz" ;
+    ] ;
+    schema:url <http://www.ub.edu.bo/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30293992> ;
+             .

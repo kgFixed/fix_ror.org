@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04g0t2d47> 
+    a org:Organization ;
+    rdfs:label "Western Eye Hospital" ;
+    schema:name "Western Eye Hospital" ;
+    schema:foundingDate "1856"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Western_Eye_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/056ffv270> ;
+        rdfs:label "Imperial College Healthcare NHS Trust" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.12574 51.50853)"^^geo:wktLiteral ;
+        schema:addressLocality "London" ;
+    ] ;
+    schema:url <https://www.imperial.nhs.uk/our-locations/western-eye-hospital> ;
+    schema:sameAs <http://isni.org/isni/0000000404499216> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7987822> ;
+             .

@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/012x04f41> 
+    a org:Organization ;
+    rdfs:label "DELL (Ireland)" ;
+    schema:name "DELL (Ireland)" ;
+    schema:foundingDate "1984"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Dell> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05rejmm18> ;
+        rdfs:label "DELL (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-8.47061 51.89797)"^^geo:wktLiteral ;
+        schema:addressLocality "Cork" ;
+    ] ;
+    schema:url <https://www.delltechnologies.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q55453927> ;
+             .

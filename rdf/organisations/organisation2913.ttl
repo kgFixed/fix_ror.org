@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03b2b5383> 
+    a org:Organization ;
+    rdfs:label "Diana Princess of Wales Hospital" ;
+    schema:name "Diana Princess of Wales Hospital" ;
+    schema:foundingDate "1976"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Diana,_Princess_of_Wales_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01ep18d71> ;
+        rdfs:label "Northern Lincolnshire and Goole Hospitals NHS Foundation Trust" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.07553 53.56539)"^^geo:wktLiteral ;
+        schema:addressLocality "Grimsby" ;
+    ] ;
+    schema:url <http://www.nlg.nhs.uk/hospitals/grimsby/> ;
+    schema:sameAs <http://isni.org/isni/0000000404000964> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5271054> ;
+             .

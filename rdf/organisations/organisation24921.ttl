@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04dbvvk55> 
+    a org:Organization ;
+    rdfs:label "Bingham University" ;
+    schema:name "Bingham University" ;
+    schema:foundingDate "2005"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Bingham_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(7.70821 8.53895)"^^geo:wktLiteral ;
+        schema:addressLocality "Nasarawa" ;
+    ] ;
+    schema:url <http://binghamuni.edu.ng/> ;
+    schema:sameAs <http://isni.org/isni/0000000404502542> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5322769> ;
+             .

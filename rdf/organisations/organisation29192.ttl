@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/056xmjm50> 
+    a org:Organization ;
+    rdfs:label "New Hampshire Lakes Association" ;
+    schema:name "New Hampshire Lakes Association" ;
+    schema:foundingDate "1992"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-71.53757 43.20814)"^^geo:wktLiteral ;
+        schema:addressLocality "Concord" ;
+    ] ;
+    schema:url <http://nhlakes.org/> ;
+     .

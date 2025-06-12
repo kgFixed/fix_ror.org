@@ -1,0 +1,54 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/006jjmw19> 
+    a org:Organization ;
+    rdfs:label "University of Colorado Hospital" ;
+    schema:name "University of Colorado Hospital" ;
+    schema:foundingDate "1921"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/University_of_Colorado_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0107w4315> ;
+        rdfs:label "University of Colorado Health" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03wmf1y16> ;
+        rdfs:label "University of Colorado Anschutz Medical Campus" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02ttsq026> ;
+        rdfs:label "University of Colorado Boulder" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04cqn7d42> ;
+        rdfs:label "University of Colorado Cancer Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02hh7en24> ;
+        rdfs:label "University of Colorado Denver" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-104.83192 39.72943)"^^geo:wktLiteral ;
+        schema:addressLocality "Aurora" ;
+    ] ;
+    schema:url <https://www.uchealth.org/locations/uchealth-university-of-colorado-hospital-uch/> ;
+    schema:sameAs <http://isni.org/isni/0000000099087089> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7895285> ;
+             .

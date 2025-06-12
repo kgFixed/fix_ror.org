@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/024nn8203> 
+    a org:Organization ;
+    rdfs:label "Adventista Teológiai Fõiskola" ;
+    schema:name "Adventista Teológiai Fõiskola" ;
+    schema:foundingDate "1948"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(19.34162 47.48962)"^^geo:wktLiteral ;
+        schema:addressLocality "Pécel" ;
+    ] ;
+    schema:url <http://atf.adventista.hu/> ;
+    schema:sameAs <http://isni.org/isni/0000000103252869> ;
+             .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04wvk1327> 
+    a org:Organization ;
+    rdfs:label "Uttarakhand Open University" ;
+    schema:name "Uttarakhand Open University" ;
+    schema:foundingDate "2005"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Uttarakhand_Open_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(79.5286 29.22254)"^^geo:wktLiteral ;
+        schema:addressLocality "Haldwani" ;
+    ] ;
+    schema:url <http://www.uou.ac.in/> ;
+    schema:sameAs <http://isni.org/isni/0000000417798928> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7903390> ;
+             .

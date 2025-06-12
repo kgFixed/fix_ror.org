@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01v4enb76> 
+    a org:Organization ;
+    rdfs:label "Richard Bland College" ;
+    schema:name "Richard Bland College" ;
+    schema:foundingDate "1960"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Richard_Bland_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.40193 37.22793)"^^geo:wktLiteral ;
+        schema:addressLocality "Petersburg" ;
+    ] ;
+    schema:url <http://www.rbc.edu/> ;
+    schema:sameAs <http://isni.org/isni/000000040453478X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7324209> ;
+             .

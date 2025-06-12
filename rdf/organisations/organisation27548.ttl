@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/018av9q43> 
+    a org:Organization ;
+    rdfs:label "Association for Recorded Sound Collections" ;
+    schema:name "Association for Recorded Sound Collections" ;
+    schema:foundingDate "1966"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Association_for_Recorded_Sound_Collections> ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-123.08675 44.05207)"^^geo:wktLiteral ;
+        schema:addressLocality "Eugene" ;
+    ] ;
+    schema:url <http://www.arsc-audio.org> ;
+    schema:sameAs <http://isni.org/isni/0000000119546319> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4809507> ;
+             .

@@ -1,0 +1,89 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/003k75717> 
+    a org:Organization ;
+    rdfs:label "Advocate Health Care" ;
+    schema:name "Advocate Health Care" ;
+    schema:foundingDate "1995"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/044v7v886> ;
+        rdfs:label "Advocate Children's Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05xdxc763> ;
+        rdfs:label "Advocate Children's Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04gw0wg65> ;
+        rdfs:label "Advocate Christ Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00ep78v21> ;
+        rdfs:label "Advocate Good Samaritan Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05syxk111> ;
+        rdfs:label "Advocate Heart Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/036vtmj33> ;
+        rdfs:label "Advocate Illinois Masonic Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04c8vnp90> ;
+        rdfs:label "Advocate Lutheran General Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03t1snc02> ;
+        rdfs:label "Advocate South Suburban Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00xvfm661> ;
+        rdfs:label "Advocate Trinity Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01yhc9w15> ;
+        rdfs:label "Sherman Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04219vz71> ;
+        rdfs:label "Silver Cross Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-88.01117 41.80892)"^^geo:wktLiteral ;
+        schema:addressLocality "Downers Grove" ;
+    ] ;
+    schema:url <http://www.advocatehealth.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000088422515> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30254233> ;
+             .

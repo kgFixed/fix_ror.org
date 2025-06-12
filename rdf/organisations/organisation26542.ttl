@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02hrree94> 
+    a org:Organization ;
+    rdfs:label "Gomel State Medical University" ;
+    schema:name "Gomel State Medical University" ;
+    schema:foundingDate "1990"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Gomel_State_Medical_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(30.9754 52.4345)"^^geo:wktLiteral ;
+        schema:addressLocality "Homyel" ;
+    ] ;
+    schema:url <http://gsmu.by/> ;
+    schema:sameAs <http://isni.org/isni/0000000405210111> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1969692> ;
+             .

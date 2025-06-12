@@ -1,0 +1,34 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0176arq92> 
+    a org:Organization ;
+    rdfs:label "Milwaukee VA Medical Center" ;
+    schema:name "Milwaukee VA Medical Center" ;
+    schema:foundingDate "1865"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/023w6y044> ;
+        rdfs:label "VA Great Lakes Health Care System" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00qqv6244> ;
+        rdfs:label "Medical College of Wisconsin" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-87.90647 43.0389)"^^geo:wktLiteral ;
+        schema:addressLocality "Milwaukee" ;
+    ] ;
+    schema:url <http://www.milwaukee.va.gov/> ;
+    schema:sameAs <http://isni.org/isni/0000000404207009> ;
+             .

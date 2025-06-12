@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/016t28114> 
+    a org:Organization ;
+    rdfs:label "Negros Oriental State University" ;
+    schema:name "Negros Oriental State University" ;
+    schema:foundingDate "1907"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Negros_Oriental_State_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(123.30769 9.30646)"^^geo:wktLiteral ;
+        schema:addressLocality "Dumaguete" ;
+    ] ;
+    schema:url <http://www.norsu.edu.ph/> ;
+    schema:sameAs <http://isni.org/isni/0000000404979412> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3603764> ;
+             .

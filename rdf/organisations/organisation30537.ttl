@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/015z1mm31> 
+    a org:Organization ;
+    rdfs:label "Kuraray (Canada)" ;
+    schema:name "Kuraray (Canada)" ;
+    schema:foundingDate "1926"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Kuraray> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05km1vk92> ;
+        rdfs:label "Kuraray (Japan)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-79.2663 43.86682)"^^geo:wktLiteral ;
+        schema:addressLocality "Markham" ;
+    ] ;
+    schema:url <http://www.calgoncarbon.com/index.php> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30714087> ;
+             .

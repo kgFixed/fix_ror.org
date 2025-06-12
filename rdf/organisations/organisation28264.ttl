@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/055q7hq94> 
+    a org:Organization ;
+    rdfs:label "New Mexico Commission of Public Records" ;
+    schema:name "New Mexico Commission of Public Records" ;
+    schema:foundingDate "1959"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-105.9378 35.68698)"^^geo:wktLiteral ;
+        schema:addressLocality "Santa Fe" ;
+    ] ;
+    schema:url <http://www.nmcpr.state.nm.us/> ;
+    schema:sameAs <http://isni.org/isni/0000000098157719> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30258239> ;
+             .

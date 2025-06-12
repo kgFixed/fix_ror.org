@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04b4w6n09> 
+    a org:Organization ;
+    rdfs:label "Universidad de las Naciones" ;
+    schema:name "Universidad de las Naciones" ;
+    schema:foundingDate "1993"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-96.1429 19.18095)"^^geo:wktLiteral ;
+        schema:addressLocality "Veracruz" ;
+    ] ;
+    schema:url <http://www.uninaciones.edu.mx> ;
+    schema:sameAs <http://isni.org/isni/0000000449019458> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30293717> ;
+             .

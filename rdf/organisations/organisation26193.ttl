@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01mh73q44> 
+    a org:Organization ;
+    rdfs:label "Potti Sreeramulu Telugu University" ;
+    schema:name "Potti Sreeramulu Telugu University" ;
+    schema:foundingDate "1985"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Potti_Sreeramulu_Telugu_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(78.45636 17.38405)"^^geo:wktLiteral ;
+        schema:addressLocality "Hyderabad" ;
+    ] ;
+    schema:url <http://teluguuniversity.ac.in/> ;
+    schema:sameAs <http://isni.org/isni/0000000404970119> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7235345> ;
+             .

@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02rntm597> 
+    a org:Organization ;
+    rdfs:label "Omsk Academy of the Russian Interior Ministry" ;
+    schema:name "Omsk Academy of the Russian Interior Ministry" ;
+    schema:foundingDate "1920"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(73.36859 54.99244)"^^geo:wktLiteral ;
+        schema:addressLocality "Omsk" ;
+    ] ;
+    schema:url <https://xn--80axf.xn--b1aew.xn--p1ai> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30257378> ;
+             .

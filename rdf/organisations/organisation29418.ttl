@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00vkd8x05> 
+    a org:Organization ;
+    rdfs:label "International Islamic University College Selangor" ;
+    schema:name "International Islamic University College Selangor" ;
+    schema:foundingDate "1995"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Kolej_Universiti_Islam_Antarabangsa_Selangor> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(101.69112 2.93527)"^^geo:wktLiteral ;
+        schema:addressLocality "Putrajaya" ;
+    ] ;
+    schema:url <http://www.kuis.edu.my/v4/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q6427193> ;
+             .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03yhc6593> 
+    a org:Organization ;
+    rdfs:label "Ateneo de Zamboanga University" ;
+    schema:name "Ateneo de Zamboanga University" ;
+    schema:foundingDate "1912"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Ateneo_de_Zamboanga_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(122.07389 6.91028)"^^geo:wktLiteral ;
+        schema:addressLocality "Zamboanga City" ;
+    ] ;
+    schema:url <https://www.adzu.edu.ph/> ;
+    schema:sameAs <http://isni.org/isni/0000000406395250> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3549829> ;
+             .

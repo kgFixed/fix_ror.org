@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01yvmh709> 
+    a org:Organization ;
+    rdfs:label "Astrakhan State Medical University" ;
+    schema:name "Astrakhan State Medical University" ;
+    schema:foundingDate "1918"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(48.04076 46.34968)"^^geo:wktLiteral ;
+        schema:addressLocality "Astrakhan" ;
+    ] ;
+    schema:url <http://astgmu.ru> ;
+    schema:sameAs <http://isni.org/isni/000000040451595X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30257627> ;
+             .

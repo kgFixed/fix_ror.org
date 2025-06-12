@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01zqztb27> 
+    a org:Organization ;
+    rdfs:label "Caritas Medical Centre" ;
+    schema:name "Caritas Medical Centre" ;
+    schema:foundingDate "1964"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Caritas_Medical_Centre> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05sn8t512> ;
+        rdfs:label "Hospital Authority" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(114.17469 22.27832)"^^geo:wktLiteral ;
+        schema:addressLocality "Hong Kong" ;
+    ] ;
+    schema:url <https://www.ha.org.hk/visitor/ha_hosp_details.asp?Content_ID=100163&Lang=CHIB5> ;
+    schema:sameAs <http://isni.org/isni/0000000417712960> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5039724> ;
+             .

@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/016ezn892> 
+    a org:Organization ;
+    rdfs:label "Freedom Trail Foundation" ;
+    schema:name "Freedom Trail Foundation" ;
+    schema:foundingDate "1964"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Freedom_Trail> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-71.05977 42.35843)"^^geo:wktLiteral ;
+        schema:addressLocality "Boston" ;
+    ] ;
+    schema:url <http://www.thefreedomtrail.org/> ;
+     .

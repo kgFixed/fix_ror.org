@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02gfnab20> 
+    a org:Organization ;
+    rdfs:label "Bridgnorth Community Hospital" ;
+    schema:name "Bridgnorth Community Hospital" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02gz79h29> ;
+        rdfs:label "Shropshire Community Health NHS Trust" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-2.42033 52.53661)"^^geo:wktLiteral ;
+        schema:addressLocality "Bridgnorth" ;
+    ] ;
+    schema:url <https://www.shropscommunityhealth.nhs.uk/bridgnorth-community-hospital> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30293000> ;
+             .

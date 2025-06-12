@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00r9zdb57> 
+    a org:Organization ;
+    rdfs:label "Pueblo of Pojoaque" ;
+    schema:name "Pueblo of Pojoaque" ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-105.9378 35.68698)"^^geo:wktLiteral ;
+        schema:addressLocality "Santa Fe" ;
+    ] ;
+    schema:url <http://pojoaque.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000405237314> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30258197> ;
+             .

@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05t0mvy43> 
+    a org:Organization ;
+    rdfs:label "Princeton Optronics (United States)" ;
+    schema:name "Princeton Optronics (United States)" ;
+    schema:foundingDate "1993"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-74.68655 40.23705)"^^geo:wktLiteral ;
+        schema:addressLocality "Mercerville" ;
+    ] ;
+    schema:url <http://www.princetonoptronics.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000404947808> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30259173> ;
+             .

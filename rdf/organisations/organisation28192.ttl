@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0210z5p53> 
+    a org:Organization ;
+    rdfs:label "Northern Virginia Regional Park Authority" ;
+    schema:name "Northern Virginia Regional Park Authority" ;
+    schema:foundingDate "1959"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Northern_Virginia_Regional_Park_Authority> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.32554 38.80095)"^^geo:wktLiteral ;
+        schema:addressLocality "Fairfax Station" ;
+    ] ;
+    schema:url <http://www.nvrpa.org/> ;
+     .

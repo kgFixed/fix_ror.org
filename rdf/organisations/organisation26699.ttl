@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/045m60334> 
+    a org:Organization ;
+    rdfs:label "Kazan State University of Culture and Arts" ;
+    schema:name "Kazan State University of Culture and Arts" ;
+    schema:foundingDate "1969"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Kazan_State_University_of_Culture_and_Arts> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(49.12214 55.78874)"^^geo:wktLiteral ;
+        schema:addressLocality "Kazan’" ;
+    ] ;
+    schema:url <http://kazgik.ru/> ;
+    schema:sameAs <http://isni.org/isni/0000000460885760> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6380876> ;
+             .

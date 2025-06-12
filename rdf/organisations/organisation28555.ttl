@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03rs7bk48> 
+    a org:Organization ;
+    rdfs:label "Yeshiva University Museum" ;
+    schema:name "Yeshiva University Museum" ;
+    schema:foundingDate "1973"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Yeshiva_University_Museum> ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03tm6pb36> ;
+        rdfs:label "Center for Jewish History" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/045x93337> ;
+        rdfs:label "Yeshiva University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-74.00597 40.71427)"^^geo:wktLiteral ;
+        schema:addressLocality "New York" ;
+    ] ;
+    schema:url <http://www.yumuseum.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000121794274> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q8052851> ;
+             .

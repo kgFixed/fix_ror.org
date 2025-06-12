@@ -1,0 +1,54 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04esegk75> 
+    a org:Organization ;
+    rdfs:label "Allina Health" ;
+    schema:name "Allina Health" ;
+    schema:foundingDate "1983"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Allina_Health> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01fzm0693> ;
+        rdfs:label "Abbott Northwestern Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02g4b4t25> ;
+        rdfs:label "New Ulm Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03s477z20> ;
+        rdfs:label "Penny George Institute for Health and Healing" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00q2zja93> ;
+        rdfs:label "United Heart and Vascular Clinic" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02hc70w10> ;
+        rdfs:label "United Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-93.26384 44.97997)"^^geo:wktLiteral ;
+        schema:addressLocality "Minneapolis" ;
+    ] ;
+    schema:url <http://www.allinahealth.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000087399261> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4732681> ;
+             .

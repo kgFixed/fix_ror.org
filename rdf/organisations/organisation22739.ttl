@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02tk9ek40> 
+    a org:Organization ;
+    rdfs:label "Clitheroe Community Hospital" ;
+    schema:name "Clitheroe Community Hospital" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/002pa9318> ;
+        rdfs:label "East Lancashire Hospitals NHS Trust" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-2.4 53.86667)"^^geo:wktLiteral ;
+        schema:addressLocality "Clitheroe" ;
+    ] ;
+    schema:url <https://elht.nhs.uk/your-visit/clitheroe-community-hospital> ;
+    schema:sameAs <http://isni.org/isni/0000000446880795> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30292911> ;
+             .

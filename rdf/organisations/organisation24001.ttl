@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05bf5jb12> 
+    a org:Organization ;
+    rdfs:label "Universidad Alzate de Ozumba" ;
+    schema:name "Universidad Alzate de Ozumba" ;
+    schema:foundingDate "1997"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-98.79516 19.03689)"^^geo:wktLiteral ;
+        schema:addressLocality "Ozumba de Alzate" ;
+    ] ;
+    schema:url <http://ualzate.edu.mx/> ;
+    schema:sameAs <http://isni.org/isni/0000000460062246> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30293807> ;
+             .

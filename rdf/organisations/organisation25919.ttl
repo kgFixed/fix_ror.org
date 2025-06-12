@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04f7wmd40> 
+    a org:Organization ;
+    rdfs:label "Pyeongtaek University" ;
+    schema:name "Pyeongtaek University" ;
+    schema:foundingDate "1912"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Pyeongtaek_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(126.98748 37.01372)"^^geo:wktLiteral ;
+        schema:addressLocality "Pyeongtaek-si" ;
+    ] ;
+    schema:url <http://english.ptu.ac.kr/> ;
+    schema:sameAs <http://isni.org/isni/000000040426672X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q12621827> ;
+             .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/016bpc336> 
+    a org:Organization ;
+    rdfs:label "International Pacific University" ;
+    schema:name "International Pacific University" ;
+    schema:foundingDate "2007"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/International_Pacific_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(133.93333 34.65)"^^geo:wktLiteral ;
+        schema:addressLocality "Okayama" ;
+    ] ;
+    schema:url <http://ipu-japan.ac.jp> ;
+    schema:sameAs <http://isni.org/isni/0000000404152861> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6052304> ;
+             .

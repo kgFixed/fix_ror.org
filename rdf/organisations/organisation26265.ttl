@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04b4kxc62> 
+    a org:Organization ;
+    rdfs:label "Universitas Halmahera" ;
+    schema:name "Universitas Halmahera" ;
+    schema:foundingDate "2008"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(128.00948 1.72837)"^^geo:wktLiteral ;
+        schema:addressLocality "Tobelo" ;
+    ] ;
+    schema:url <https://uniera.ac.id/> ;
+    schema:sameAs <http://isni.org/isni/0000000403860727> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30294774> ;
+             .

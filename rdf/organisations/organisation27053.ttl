@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04rdq3258> 
+    a org:Organization ;
+    rdfs:label "University "Eftimie Murgu" of Reşiţa" ;
+    schema:name "University "Eftimie Murgu" of Reşiţa" ;
+    schema:foundingDate "1771"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(21.88917 45.30083)"^^geo:wktLiteral ;
+        schema:addressLocality "Reşiţa" ;
+    ] ;
+    schema:url <http://www.uem.ro/index.php?id=229&L=1> ;
+    schema:sameAs <http://isni.org/isni/0000000404066998> ;
+             .

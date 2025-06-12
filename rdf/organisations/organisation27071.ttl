@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0058xhs49> 
+    a org:Organization ;
+    rdfs:label "Constantin Brâncuși University of Targu Jiu" ;
+    schema:name "Constantin Brâncuși University of Targu Jiu" ;
+    schema:foundingDate "1992"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Constantin_Brâncuși_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03s251g81> ;
+        rdfs:label "University of Craiova" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(23.28333 45.05)"^^geo:wktLiteral ;
+        schema:addressLocality "Târgu Jiu" ;
+    ] ;
+    schema:url <http://www.utgjiu.ro> ;
+    schema:sameAs <http://isni.org/isni/0000000096689404> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3551393> ;
+             .

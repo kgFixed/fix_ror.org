@@ -1,0 +1,67 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/051xgzg37> 
+    a org:Organization ;
+    rdfs:label "Stockholm Environment Institute" ;
+    schema:name "Stockholm Environment Institute" ;
+    schema:foundingDate "1989"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Stockholm_Environment_Institute> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04zpv5q97> ;
+        rdfs:label "Stockholm Environment Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01mxmb797> ;
+        rdfs:label "Stockholm Environment Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03kke0n21> ;
+        rdfs:label "Stockholm Environment Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/037vpg713> ;
+        rdfs:label "Stockholm Environment Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/017w08b10> ;
+        rdfs:label "Stockholm Environment Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/056x7d368> ;
+        rdfs:label "Stockholm Environment Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00ng9c593> ;
+        rdfs:label "Stockholm Environment Institute" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(18.06871 59.32938)"^^geo:wktLiteral ;
+        schema:addressLocality "Stockholm" ;
+    ] ;
+    schema:url <http://www.sei-international.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000106589037> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2350733> ;
+             .

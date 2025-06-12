@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05g910a37> 
+    a org:Organization ;
+    rdfs:label "Yangon University of Education" ;
+    schema:name "Yangon University of Education" ;
+    schema:foundingDate "1931"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Yangon_University_of_Education> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(96.15611 16.80528)"^^geo:wktLiteral ;
+        schema:addressLocality "Yangon" ;
+    ] ;
+    schema:url <http://www.yuoe.edu.mm/> ;
+    schema:sameAs <http://isni.org/isni/000000040468135X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q17070286> ;
+             .

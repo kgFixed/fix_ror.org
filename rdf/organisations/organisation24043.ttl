@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02wk2dc91> 
+    a org:Organization ;
+    rdfs:label "William Jessup University" ;
+    schema:name "William Jessup University" ;
+    schema:foundingDate "1939"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/William_Jessup_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-121.23578 38.79073)"^^geo:wktLiteral ;
+        schema:addressLocality "Rocklin" ;
+    ] ;
+    schema:url <http://www.jessup.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000406342183> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q8013573> ;
+             .

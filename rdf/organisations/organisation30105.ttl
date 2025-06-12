@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0094tm228> 
+    a org:Organization ;
+    rdfs:label "Wellcome Centre for Cell-Matrix Research" ;
+    schema:name "Wellcome Centre for Cell-Matrix Research" ;
+    schema:foundingDate "1995"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Wellcome_Trust_Centre_for_Cell-Matrix_Research> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/027m9bs27> ;
+        rdfs:label "University of Manchester" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/029chgv08> ;
+        rdfs:label "Wellcome Trust" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-2.23743 53.48095)"^^geo:wktLiteral ;
+        schema:addressLocality "Manchester" ;
+    ] ;
+    schema:url <http://www.wellcome-matrix.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000404501654> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7981194> ;
+             .

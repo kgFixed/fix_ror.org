@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00d440w27> 
+    a org:Organization ;
+    rdfs:label "Tenri University" ;
+    schema:name "Tenri University" ;
+    schema:foundingDate "1925"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Tenri_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(135.83333 34.58333)"^^geo:wktLiteral ;
+        schema:addressLocality "Tenri" ;
+    ] ;
+    schema:url <http://www.tenri-u.ac.jp/> ;
+    schema:sameAs <http://isni.org/isni/000000010721427X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4387971> ;
+             .

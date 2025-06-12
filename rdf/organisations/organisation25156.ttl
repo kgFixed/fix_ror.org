@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/043hpy847> 
+    a org:Organization ;
+    rdfs:label "Royal University for Women" ;
+    schema:name "Royal University for Women" ;
+    schema:foundingDate "2005"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Royal_University_for_Women> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(50.555 26.13)"^^geo:wktLiteral ;
+        schema:addressLocality "Riffa" ;
+    ] ;
+    schema:url <https://www.ruw.edu.bh/> ;
+    schema:sameAs <http://isni.org/isni/0000000406488529> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7374950> ;
+             .

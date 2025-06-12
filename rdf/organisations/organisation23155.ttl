@@ -1,0 +1,34 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03pkrx282> 
+    a org:Organization ;
+    rdfs:label "Loughborough Hospital" ;
+    schema:name "Loughborough Hospital" ;
+    schema:foundingDate "1862"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/045wcpc71> ;
+        rdfs:label "Leicestershire Partnership NHS Trust" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04vg4w365> ;
+        rdfs:label "Loughborough University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.2 52.76667)"^^geo:wktLiteral ;
+        schema:addressLocality "Loughborough" ;
+    ] ;
+    schema:url <https://www.leicspart.nhs.uk/base/loughborough-hospital/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30293265> ;
+             .

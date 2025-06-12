@@ -1,0 +1,41 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01jg3a168> 
+    a org:Organization ;
+    rdfs:label "Gosford Hospital" ;
+    schema:name "Gosford Hospital" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Gosford_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0423z3467> ;
+        rdfs:label "Central Coast Local Health District" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04r659a56> ;
+        rdfs:label "University of New England" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00eae9z71> ;
+        rdfs:label "University of Newcastle Australia" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(151.34399 -33.4244)"^^geo:wktLiteral ;
+        schema:addressLocality "Gosford" ;
+    ] ;
+    schema:url <https://www.service.nsw.gov.au/nswgovdirectory/gosford-hospital> ;
+    schema:sameAs <http://isni.org/isni/0000000406240515> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5587185> ;
+             .

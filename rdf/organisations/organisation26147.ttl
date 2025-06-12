@@ -1,0 +1,26 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03s2yse38> 
+    a org:Organization ;
+    rdfs:label "Turkmen National Institute of Foreign Languages named after D. Azadi" ;
+    schema:name "Turkmen National Institute of Foreign Languages named after D. Azadi" ;
+    schema:foundingDate "2009"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05njyag92> ;
+        rdfs:label "Academy of Science of Turkmenistan" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(58.38333 37.95)"^^geo:wktLiteral ;
+        schema:addressLocality "Ashgabat" ;
+    ] ;
+     .

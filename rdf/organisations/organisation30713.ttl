@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02hrn9a05> 
+    a org:Organization ;
+    rdfs:label "IHS Markit (United States)" ;
+    schema:name "IHS Markit (United States)" ;
+    schema:foundingDate "1959"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/IHS_Markit> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03qfmjv22> ;
+        rdfs:label "IHS Markit (United Kingdom)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-104.98776 39.64777)"^^geo:wktLiteral ;
+        schema:addressLocality "Englewood" ;
+    ] ;
+    schema:url <https://ihsmarkit.com/index.html> ;
+    schema:sameAs <http://isni.org/isni/0000000121949758> ;
+             .

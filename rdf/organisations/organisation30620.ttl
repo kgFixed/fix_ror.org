@@ -1,0 +1,61 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02jfa8730> 
+    a org:Organization ;
+    rdfs:label "Chevron (United States)" ;
+    schema:name "Chevron (United States)" ;
+    schema:foundingDate "1879"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Chevron_Corporation> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0324q6b35> ;
+        rdfs:label "Chevron (Australia)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/020r9sg22> ;
+        rdfs:label "Chevron (Canada)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/045g15j06> ;
+        rdfs:label "Chevron (China)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/053k40h13> ;
+        rdfs:label "Chevron (Netherlands)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00pvegc36> ;
+        rdfs:label "Chevron (United Kingdom)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05w5shm69> ;
+        rdfs:label "Chevron Phillips Chemical (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-121.97802 37.77993)"^^geo:wktLiteral ;
+        schema:addressLocality "San Ramon" ;
+    ] ;
+    schema:url <http://www.chevron.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000405998199> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q319642> ;
+             .

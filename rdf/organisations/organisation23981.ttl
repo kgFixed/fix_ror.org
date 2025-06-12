@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01eaxze48> 
+    a org:Organization ;
+    rdfs:label "Catholic University of Dry Tropic Farming and Livestock" ;
+    schema:name "Catholic University of Dry Tropic Farming and Livestock" ;
+    schema:foundingDate "1974"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Catholic_University_of_Dry_Tropic_Farming_and_Livestock> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-86.35384 13.09185)"^^geo:wktLiteral ;
+        schema:addressLocality "Estelí" ;
+    ] ;
+    schema:url <http://www.ucatse.edu.ni/> ;
+    schema:sameAs <http://isni.org/isni/0000000403820055> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6156405> ;
+             .

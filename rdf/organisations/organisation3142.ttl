@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05mshxb09> 
+    a org:Organization ;
+    rdfs:label "Sheffield Children's Hospital" ;
+    schema:name "Sheffield Children's Hospital" ;
+    schema:foundingDate "1876"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Sheffield_Children%27s_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02md8hv62> ;
+        rdfs:label "Sheffield Children's NHS Foundation Trust" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/019wt1929> ;
+        rdfs:label "Sheffield Hallam University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05krs5044> ;
+        rdfs:label "University of Sheffield" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.4659 53.38297)"^^geo:wktLiteral ;
+        schema:addressLocality "Sheffield" ;
+    ] ;
+    schema:url <https://www.sheffieldchildrens.nhs.uk/contact-us/maps/> ;
+    schema:sameAs <http://isni.org/isni/0000000406416082> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7492604> ;
+             .

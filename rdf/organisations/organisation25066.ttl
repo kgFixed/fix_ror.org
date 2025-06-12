@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00tt5kf04> 
+    a org:Organization ;
+    rdfs:label "Marien Ngouabi University" ;
+    schema:name "Marien Ngouabi University" ;
+    schema:foundingDate "1971"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Marien_Ngouabi_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(15.28318 -4.26613)"^^geo:wktLiteral ;
+        schema:addressLocality "Brazzaville" ;
+    ] ;
+    schema:url <https://www.umng.cg> ;
+    schema:sameAs <http://isni.org/isni/0000000109437362> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3551438> ;
+             .

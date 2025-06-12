@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/006jqh454> 
+    a org:Organization ;
+    rdfs:label "Brookfields Hospital" ;
+    schema:name "Brookfields Hospital" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/041q37h40> ;
+        rdfs:label "Cambridgeshire Community Services NHS Trust" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(0.11667 52.2)"^^geo:wktLiteral ;
+        schema:addressLocality "Cambridge" ;
+    ] ;
+    schema:url <https://www.cambscommunityservices.nhs.uk/contact-find-us/our-sites/brookfields-hospital> ;
+    schema:sameAs <http://isni.org/isni/0000000404470720> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30293029> ;
+             .

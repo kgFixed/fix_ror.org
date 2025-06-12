@@ -1,0 +1,60 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03400ft78> 
+    a org:Organization ;
+    rdfs:label "Norfolk and Suffolk NHS Foundation Trust" ;
+    schema:name "Norfolk and Suffolk NHS Foundation Trust" ;
+    schema:foundingDate "2013"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Norfolk_and_Suffolk_NHS_Foundation_Trust> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/001t6ze16> ;
+        rdfs:label "Bickley Day Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01k322j33> ;
+        rdfs:label "Hellesdon Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04kw8a006> ;
+        rdfs:label "Julian Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01vh0ja39> ;
+        rdfs:label "Northgate Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01bpk4154> ;
+        rdfs:label "St Clement's Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02h43kn72> ;
+        rdfs:label "St. Leonards Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(1.29834 52.62783)"^^geo:wktLiteral ;
+        schema:addressLocality "Norwich" ;
+    ] ;
+    schema:url <http://www.nsft.nhs.uk/> ;
+    schema:sameAs <http://isni.org/isni/0000000404894670> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q17016587> ;
+             .

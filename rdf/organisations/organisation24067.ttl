@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03z59cm68> 
+    a org:Organization ;
+    rdfs:label "Henley-Putnam School of Strategic Security" ;
+    schema:name "Henley-Putnam School of Strategic Security" ;
+    schema:foundingDate "2001"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Henley-Putnam_School_of_Strategic_Security> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-121.89496 37.33939)"^^geo:wktLiteral ;
+        schema:addressLocality "San Jose" ;
+    ] ;
+    schema:url <https://henley-putnam.national.edu/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q5714562> ;
+             .

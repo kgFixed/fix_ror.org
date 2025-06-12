@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0340p7w89> 
+    a org:Organization ;
+    rdfs:label "Crowborough War Memorial Hospital" ;
+    schema:name "Crowborough War Memorial Hospital" ;
+    schema:foundingDate "1911"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04e4sh030> ;
+        rdfs:label "Sussex Community NHS Foundation Trust" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(0.16342 51.06098)"^^geo:wktLiteral ;
+        schema:addressLocality "Crowborough" ;
+    ] ;
+    schema:url <https://www.sussexcommunity.nhs.uk/services/locations/crowborough-hospital.htm> ;
+    schema:sameAs <http://isni.org/isni/0000000405172813> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30292945> ;
+             .

@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05eyk3846> 
+    a org:Organization ;
+    rdfs:label "American Association for State and Local History" ;
+    schema:name "American Association for State and Local History" ;
+    schema:foundingDate "1940"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/American_Association_for_State_and_Local_History> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-86.78444 36.16589)"^^geo:wktLiteral ;
+        schema:addressLocality "Nashville" ;
+    ] ;
+    schema:url <http://about.aaslh.org/home/> ;
+    schema:sameAs <http://isni.org/isni/0000000109400332> ;
+             .

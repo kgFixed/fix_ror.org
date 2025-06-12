@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0176aa147> 
+    a org:Organization ;
+    rdfs:label "Petrozavodsk State University" ;
+    schema:name "Petrozavodsk State University" ;
+    schema:foundingDate "1940"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Petrozavodsk_State_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(34.34691 61.78491)"^^geo:wktLiteral ;
+        schema:addressLocality "Petrozavodsk" ;
+    ] ;
+    schema:url <https://petrsu.ru/en> ;
+    schema:sameAs <http://isni.org/isni/0000000110183793> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4361461> ;
+             .

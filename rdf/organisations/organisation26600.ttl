@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05kce7016> 
+    a org:Organization ;
+    rdfs:label "Voronezh State Medical Academy named after N.N. Burdenko" ;
+    schema:name "Voronezh State Medical Academy named after N.N. Burdenko" ;
+    schema:foundingDate "1918"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Voronezh_State_Medical_University_named_after_N._N._Burdenko> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(39.1843 51.67204)"^^geo:wktLiteral ;
+        schema:addressLocality "Voronezh" ;
+    ] ;
+    schema:url <http://www.vsmaburdenko.ru/english/about-vsma/> ;
+    schema:sameAs <http://isni.org/isni/0000000406203837> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4125386> ;
+             .

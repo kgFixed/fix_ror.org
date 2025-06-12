@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04qcq6322> 
+    a org:Organization ;
+    rdfs:label "Yamagata Prefectural University of Health Sciences" ;
+    schema:name "Yamagata Prefectural University of Health Sciences" ;
+    schema:foundingDate "2000"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Yamagata_Prefectural_University_of_Health_Sciences> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(140.36667 38.23333)"^^geo:wktLiteral ;
+        schema:addressLocality "Yamagata" ;
+    ] ;
+    schema:url <http://www.yachts.ac.jp/> ;
+    schema:sameAs <http://isni.org/isni/000000040375924X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q836096> ;
+             .

@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03x653m21> 
+    a org:Organization ;
+    rdfs:label "Universidad Autónoma del Paraguay" ;
+    schema:name "Universidad Autónoma del Paraguay" ;
+    schema:foundingDate "1992"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-57.647 -25.28646)"^^geo:wktLiteral ;
+        schema:addressLocality "Asunción" ;
+    ] ;
+    schema:url <http://uap.edu.py/> ;
+    schema:sameAs <http://isni.org/isni/0000000403973764> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30294142> ;
+             .

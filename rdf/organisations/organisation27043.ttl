@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02wf2mv31> 
+    a org:Organization ;
+    rdfs:label "Mihail Kogălniceanu University" ;
+    schema:name "Mihail Kogălniceanu University" ;
+    schema:foundingDate "1990"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Mihail_Kog%C4%83lniceanu_University_of_Ia%C8%99i> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(27.6 47.16667)"^^geo:wktLiteral ;
+        schema:addressLocality "Iasi" ;
+    ] ;
+    schema:url <https://www.umk.ro/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q6845144> ;
+             .

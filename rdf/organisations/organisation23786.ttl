@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04f2wck35> 
+    a org:Organization ;
+    rdfs:label "St. Stephen's University" ;
+    schema:name "St. Stephen's University" ;
+    schema:foundingDate "1971"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/St._Stephen%27s_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-67.29529 45.18044)"^^geo:wktLiteral ;
+        schema:addressLocality "St. Stephen" ;
+    ] ;
+    schema:url <https://ssu.ca/> ;
+    schema:sameAs <http://isni.org/isni/0000000404020148> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7591785> ;
+             .

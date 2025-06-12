@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0105bda30> 
+    a org:Organization ;
+    rdfs:label "Virtual University of Tunis" ;
+    schema:name "Virtual University of Tunis" ;
+    schema:foundingDate "2002"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Virtual_University_of_Tunisia> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(10.16579 36.81897)"^^geo:wktLiteral ;
+        schema:addressLocality "Tunis" ;
+    ] ;
+    schema:url <http://www.uvt.rnu.tn/> ;
+    schema:sameAs <http://isni.org/isni/0000000405522799> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3551862> ;
+             .
