@@ -1,0 +1,78 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01w2zd907> 
+    a org:Organization ;
+    rdfs:label "Nuffield Health" ;
+    schema:name "Nuffield Health" ;
+    schema:foundingDate "1957"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Nuffield_Health> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01ywnqg74> ;
+        rdfs:label "Chichester Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05a5dkj17> ;
+        rdfs:label "Exeter Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01nbpkh22> ;
+        rdfs:label "Guildford Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01bc2jm91> ;
+        rdfs:label "Haywards Heath Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05sq6ae13> ;
+        rdfs:label "Manor Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02w91w637> ;
+        rdfs:label "Newcastle upon Tyne Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01xew6m16> ;
+        rdfs:label "Nuffield Health Bristol Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00qjry581> ;
+        rdfs:label "Warwickshire Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04d7nv189> ;
+        rdfs:label "Wolverhampton Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.27011 51.3305)"^^geo:wktLiteral ;
+        schema:addressLocality "Epsom" ;
+    ] ;
+    schema:url <https://www.nuffieldhealth.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000404697132> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7068711> ;
+             .

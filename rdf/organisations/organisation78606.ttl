@@ -1,0 +1,76 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04d1tk502> 
+    a org:Organization ;
+    rdfs:label "Agricultural Research Service - Midwest Area" ;
+    schema:name "Agricultural Research Service - Midwest Area" ;
+    schema:foundingDate "1940"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Agricultural_Research_Service> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05xqthq76> ;
+        rdfs:label "Biological Control of Insects Research Laboratory" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04fx69j13> ;
+        rdfs:label "Cereal Disease Laboratory" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04ky99h94> ;
+        rdfs:label "National Animal Disease Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02gbdhj19> ;
+        rdfs:label "National Center for Agricultural Utilization Research" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/048ns6x85> ;
+        rdfs:label "National Laboratory for Agriculture and the Environment" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04cnk3y09> ;
+        rdfs:label "National Soil Erosion Research Laboratory" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02gb6hj86> ;
+        rdfs:label "North Central Soil Conservation Research Laboratory" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/048zyw409> ;
+        rdfs:label "U.S. Dairy Forage Research Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02d2m2044> ;
+        rdfs:label "Agricultural Research Service" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-89.58899 40.69365)"^^geo:wktLiteral ;
+        schema:addressLocality "Peoria" ;
+    ] ;
+    schema:url <https://www.ars.usda.gov/midwest-area/> ;
+     .

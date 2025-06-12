@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01af4em40> 
+    a org:Organization ;
+    rdfs:label "IDS (Germany)" ;
+    schema:name "IDS (Germany)" ;
+    schema:foundingDate "1975"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(8.40763 48.94094)"^^geo:wktLiteral ;
+        schema:addressLocality "Ettlingen" ;
+    ] ;
+    schema:url <https://www.ids.de> ;
+     .

@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/049bwzr51> 
+    a org:Organization ;
+    rdfs:label "University of Applied Sciences St. Gallen" ;
+    schema:name "University of Applied Sciences St. Gallen" ;
+    schema:foundingDate "2001"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/038mj2660> ;
+        rdfs:label "Ostschweizer Fachhochschule OST" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(9.37477 47.42391)"^^geo:wktLiteral ;
+        schema:addressLocality "Saint Gallen" ;
+    ] ;
+    schema:url <https://www.fhsg.ch/en/> ;
+    schema:sameAs <http://isni.org/isni/0000000099397546> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1388287> ;
+             .

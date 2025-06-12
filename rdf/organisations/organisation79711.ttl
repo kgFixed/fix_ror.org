@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/058wv3r60> 
+    a org:Organization ;
+    rdfs:label "Export–Import Bank of Korea" ;
+    schema:name "Export–Import Bank of Korea" ;
+    schema:foundingDate "1976"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Export%E2%80%93Import_Bank_of_Korea> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(126.9784 37.566)"^^geo:wktLiteral ;
+        schema:addressLocality "Seoul" ;
+    ] ;
+    schema:url <https://www.koreaexim.go.kr/site/main/index002> ;
+    schema:sameAs <http://isni.org/isni/0000000095410176> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4501812> ;
+             .

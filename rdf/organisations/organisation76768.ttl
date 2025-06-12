@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05nt5a548> 
+    a org:Organization ;
+    rdfs:label "Q-Cells (Germany)" ;
+    schema:name "Q-Cells (Germany)" ;
+    schema:foundingDate "1999"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Q-Cells> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(12.84996 50.70077)"^^geo:wktLiteral ;
+        schema:addressLocality "Thalheim" ;
+    ] ;
+    schema:url <https://www.q-cells.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000459973923> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q265176> ;
+             .

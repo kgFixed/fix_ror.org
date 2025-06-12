@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0446zdv37> 
+    a org:Organization ;
+    rdfs:label "Oklahoma Panhandle State University" ;
+    schema:name "Oklahoma Panhandle State University" ;
+    schema:foundingDate "1909"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Oklahoma_Panhandle_State_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-101.63655 36.5953)"^^geo:wktLiteral ;
+        schema:addressLocality "Goodwell" ;
+    ] ;
+    schema:url <http://www.opsu.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000100312010> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7082284> ;
+             .

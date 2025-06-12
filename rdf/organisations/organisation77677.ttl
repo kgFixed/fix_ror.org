@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05vcgwf09> 
+    a org:Organization ;
+    rdfs:label "SUSS MicroTec (Germany)" ;
+    schema:name "SUSS MicroTec (Germany)" ;
+    schema:foundingDate "1949"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/SUSS_MicroTec> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/043fdq347> ;
+        rdfs:label "SUSS MicroTec (Switzerland)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(11.65101 48.24896)"^^geo:wktLiteral ;
+        schema:addressLocality "Garching" ;
+    ] ;
+    schema:url <https://www.suss.com/en> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q2382257> ;
+             .

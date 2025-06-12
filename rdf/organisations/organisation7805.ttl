@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02es2jq57> 
+    a org:Organization ;
+    rdfs:label "Cegep Edouard Montpetit" ;
+    schema:name "Cegep Edouard Montpetit" ;
+    schema:foundingDate "1967"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/C%C3%A9gep_%C3%89douard-Montpetit> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-73.46818 45.5152)"^^geo:wktLiteral ;
+        schema:addressLocality "Longueuil" ;
+    ] ;
+    schema:url <https://www.cegepmontpetit.ca/> ;
+    schema:sameAs <http://isni.org/isni/0000000107036610> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2983897> ;
+             .

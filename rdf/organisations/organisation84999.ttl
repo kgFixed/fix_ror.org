@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00ng7yn96> 
+    a org:Organization ;
+    rdfs:label "Catholic Medical Center" ;
+    schema:name "Catholic Medical Center" ;
+    schema:foundingDate "1892"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Catholic_Medical_Center> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-71.45479 42.99564)"^^geo:wktLiteral ;
+        schema:addressLocality "Manchester" ;
+    ] ;
+    schema:url <https://www.catholicmedicalcenter.org/default.aspx> ;
+    schema:sameAs <http://isni.org/isni/0000000404309929> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5053195> ;
+             .

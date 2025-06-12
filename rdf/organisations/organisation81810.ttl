@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03s4wsx37> 
+    a org:Organization ;
+    rdfs:label "Southern Plains Agricultural Research Center" ;
+    schema:name "Southern Plains Agricultural Research Center" ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03sqy6516> ;
+        rdfs:label "Agricultural Research Service - Plains Area" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-96.33441 30.62798)"^^geo:wktLiteral ;
+        schema:addressLocality "College Station" ;
+    ] ;
+    schema:url <https://www.ars.usda.gov/plains-area/college-station-tx/southern-plains-agricultural-research-center/> ;
+    schema:sameAs <http://isni.org/isni/0000000406162502> ;
+             .

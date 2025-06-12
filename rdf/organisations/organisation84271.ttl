@@ -1,0 +1,40 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/032hdk172> 
+    a org:Organization ;
+    rdfs:label "University of Mumbai" ;
+    schema:name "University of Mumbai" ;
+    schema:foundingDate "1857"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/University_of_Mumbai> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/057wkj006> ;
+        rdfs:label "Center for Excellence in Basic Sciences" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/017je7s69> ;
+        rdfs:label "National Institute for Research in Reproductive Health" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(72.88261 19.07283)"^^geo:wktLiteral ;
+        schema:addressLocality "Mumbai" ;
+    ] ;
+    schema:url <http://www.mu.ac.in/> ;
+    schema:sameAs <http://isni.org/isni/0000000106680201> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q406402> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6881613> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7918222> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q16885450> ;
+             .

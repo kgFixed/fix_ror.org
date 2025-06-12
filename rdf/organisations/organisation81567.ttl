@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01j4ba358> 
+    a org:Organization ;
+    rdfs:label "Lahore Garrison University" ;
+    schema:name "Lahore Garrison University" ;
+    schema:foundingDate "2010"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Lahore_Garrison_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(74.35071 31.558)"^^geo:wktLiteral ;
+        schema:addressLocality "Lahore" ;
+    ] ;
+    schema:url <http://lgu.edu.pk/> ;
+    schema:sameAs <http://isni.org/isni/0000000453766253> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q16911413> ;
+             .

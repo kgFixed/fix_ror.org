@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02zcn6j48> 
+    a org:Organization ;
+    rdfs:label "World Marrow Donor Association" ;
+    schema:name "World Marrow Donor Association" ;
+    schema:foundingDate "1986"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Bone_Marrow_Donors_Worldwide> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(4.49306 52.15833)"^^geo:wktLiteral ;
+        schema:addressLocality "Leiden" ;
+    ] ;
+    schema:url <https://wmda.info/#> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q4941524> ;
+             .

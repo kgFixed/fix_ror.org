@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04z1nmb83> 
+    a org:Organization ;
+    rdfs:label "College of the Mainland" ;
+    schema:name "College of the Mainland" ;
+    schema:foundingDate "1966"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/College_of_the_Mainland> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-94.9027 29.38385)"^^geo:wktLiteral ;
+        schema:addressLocality "Texas City" ;
+    ] ;
+    schema:url <http://www.com.edu/> ;
+    schema:sameAs <http://isni.org/isni/000000010355383X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5146887> ;
+             .

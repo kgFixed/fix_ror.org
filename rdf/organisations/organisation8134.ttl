@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02ym2t546> 
+    a org:Organization ;
+    rdfs:label "Milwaukee Area Technical College" ;
+    schema:name "Milwaukee Area Technical College" ;
+    schema:foundingDate "1912"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Milwaukee_Area_Technical_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-87.90647 43.0389)"^^geo:wktLiteral ;
+        schema:addressLocality "Milwaukee" ;
+    ] ;
+    schema:url <http://www.matc.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000097513996> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q14714546> ;
+             .

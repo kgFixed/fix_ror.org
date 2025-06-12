@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0020h0412> 
+    a org:Organization ;
+    rdfs:label "Art Aia - Creatives / In / Residence" ;
+    schema:name "Art Aia - Creatives / In / Residence" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Art_Aia-Creatives/In/Residence> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(12.81295 45.84938)"^^geo:wktLiteral ;
+        schema:addressLocality "Sesto al Reghena" ;
+    ] ;
+    schema:url <https://artaiafvg.org/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q47679517> ;
+             .

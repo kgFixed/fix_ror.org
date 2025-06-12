@@ -1,0 +1,33 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05g5rgx31> 
+    a org:Organization ;
+    rdfs:label "Itasca Consultants (United States)" ;
+    schema:name "Itasca Consultants (United States)" ;
+    schema:foundingDate "1981"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01nb9ks67> ;
+        rdfs:label "Itasca Consultants (France)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00kjw1h22> ;
+        rdfs:label "Itasca Consultants (Germany)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-93.26384 44.97997)"^^geo:wktLiteral ;
+        schema:addressLocality "Minneapolis" ;
+    ] ;
+    schema:url <https://www.itascacg.com/> ;
+     .

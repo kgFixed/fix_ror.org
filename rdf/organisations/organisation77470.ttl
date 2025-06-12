@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03p8xz723> 
+    a org:Organization ;
+    rdfs:label "Lausitzer Seenland Klinikum" ;
+    schema:name "Lausitzer Seenland Klinikum" ;
+    schema:foundingDate "1898"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(14.23549 51.43787)"^^geo:wktLiteral ;
+        schema:addressLocality "Hoyerswerda" ;
+    ] ;
+    schema:url <https://www.seenlandklinikum.de/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q81654821> ;
+             .

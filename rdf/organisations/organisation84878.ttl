@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0465c8g46> 
+    a org:Organization ;
+    rdfs:label "Clariant (Switzerland)" ;
+    schema:name "Clariant (Switzerland)" ;
+    schema:foundingDate "1995"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Clariant> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0084vrs13> ;
+        rdfs:label "Clariant (Germany)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/006hwbx79> ;
+        rdfs:label "Clariant (United Kingdom)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04hrt9p44> ;
+        rdfs:label "Clariant (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(7.64511 47.52271)"^^geo:wktLiteral ;
+        schema:addressLocality "Muttenz" ;
+    ] ;
+    schema:url <http://www.clariant.com/en/Corporate> ;
+    schema:sameAs <http://isni.org/isni/0000000406035677> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30338601> ;
+             .

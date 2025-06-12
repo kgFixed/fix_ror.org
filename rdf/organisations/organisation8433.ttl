@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/035dpw102> 
+    a org:Organization ;
+    rdfs:label "Sage College of Albany" ;
+    schema:name "Sage College of Albany" ;
+    schema:foundingDate "1916"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Sage_College_of_Albany> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02h7txh22> ;
+        rdfs:label "Sage Colleges" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-73.75623 42.65258)"^^geo:wktLiteral ;
+        schema:addressLocality "Albany" ;
+    ] ;
+    schema:url <https://www.sage.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000405265913> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7399121> ;
+             .

@@ -1,0 +1,91 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04esx4891> 
+    a org:Organization ;
+    rdfs:label "Dorset HealthCare University NHS Foundation Trust" ;
+    schema:name "Dorset HealthCare University NHS Foundation Trust" ;
+    schema:foundingDate "2007"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Dorset_HealthCare_University_NHS_Foundation_Trust> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0262yf988> ;
+        rdfs:label "Alderney Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03rm88931> ;
+        rdfs:label "Blandford Community Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01eh8k851> ;
+        rdfs:label "Bridport Community Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04z5n3121> ;
+        rdfs:label "Kings Park Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02jjcbg38> ;
+        rdfs:label "St Ann's Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0038dsf96> ;
+        rdfs:label "St Leonards Community Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/003fj3t94> ;
+        rdfs:label "Swanage Community Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00rqys923> ;
+        rdfs:label "Victoria Community Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04j9g4c85> ;
+        rdfs:label "Wareham Community Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02ndvaj90> ;
+        rdfs:label "Westhaven Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01brsq570> ;
+        rdfs:label "Weymouth Community Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.98458 50.71429)"^^geo:wktLiteral ;
+        schema:addressLocality "Poole" ;
+    ] ;
+    schema:url <http://www.dorsethealthcare.nhs.uk/> ;
+    schema:sameAs <http://isni.org/isni/000000040379239X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q16988978> ;
+             .

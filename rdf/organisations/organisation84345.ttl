@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05tkzma19> 
+    a org:Organization ;
+    rdfs:label "Indira Gandhi Centre for Atomic Research" ;
+    schema:name "Indira Gandhi Centre for Atomic Research" ;
+    schema:foundingDate "1971"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Indira_Gandhi_Centre_for_Atomic_Research> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02m388s04> ;
+        rdfs:label "Department of Atomic Energy" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(80.17364 12.56375)"^^geo:wktLiteral ;
+        schema:addressLocality "Kālpākkam" ;
+    ] ;
+    schema:url <http://www.igcar.gov.in/> ;
+    schema:sameAs <http://isni.org/isni/0000000121878574> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3522162> ;
+             .

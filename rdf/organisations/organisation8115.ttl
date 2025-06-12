@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/020wypw95> 
+    a org:Organization ;
+    rdfs:label "Lord Corporation (United States)" ;
+    schema:name "Lord Corporation (United States)" ;
+    schema:foundingDate "1924"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Lord_Corporation> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-78.78112 35.79154)"^^geo:wktLiteral ;
+        schema:addressLocality "Cary" ;
+    ] ;
+    schema:url <http://www.lord.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000403762369> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6679130> ;
+             .

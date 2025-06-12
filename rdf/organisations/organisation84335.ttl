@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0578f1k82> 
+    a org:Organization ;
+    rdfs:label "Henan Institute of Science and Technology" ;
+    schema:name "Henan Institute of Science and Technology" ;
+    schema:foundingDate "1939"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(113.80151 35.19033)"^^geo:wktLiteral ;
+        schema:addressLocality "Xinxiang" ;
+    ] ;
+    schema:url <http://www.hist.edu.cn/> ;
+    schema:sameAs <http://isni.org/isni/0000000417617808> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q11141690> ;
+             .

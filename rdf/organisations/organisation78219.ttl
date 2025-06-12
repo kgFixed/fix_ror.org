@@ -1,0 +1,53 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04w8sxm43> 
+    a org:Organization ;
+    rdfs:label "University Hospitals of Derby and Burton NHS Foundation Trust" ;
+    schema:name "University Hospitals of Derby and Burton NHS Foundation Trust" ;
+    schema:foundingDate "2018"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/University_Hospitals_of_Derby_and_Burton_NHS_Foundation_Trust> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03mccxv57> ;
+        rdfs:label "Derbyshire Children's Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/008gfj249> ;
+        rdfs:label "London Road Community Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/005r9p256> ;
+        rdfs:label "Royal Derby Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05k21nx54> ;
+        rdfs:label "Samuel Johnson Community Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05xekmj63> ;
+        rdfs:label "Sir Robert Peel Community Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.86488 52.89838)"^^geo:wktLiteral ;
+        schema:addressLocality "Uttoxeter" ;
+    ] ;
+    schema:url <https://www.uhdb.nhs.uk/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q55636718> ;
+             .

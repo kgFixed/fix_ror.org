@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03dez2856> 
+    a org:Organization ;
+    rdfs:label "Institute of General Energy of the National Academy of Sciences of Ukraine" ;
+    schema:name "Institute of General Energy of the National Academy of Sciences of Ukraine" ;
+    schema:foundingDate "1997"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00je4t102> ;
+        rdfs:label "National Academy of Sciences of Ukraine" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(30.5238 50.45466)"^^geo:wktLiteral ;
+        schema:addressLocality "Kyiv" ;
+    ] ;
+    schema:url <http://ienergy.kiev.ua/> ;
+    schema:sameAs <http://isni.org/isni/0000000460235637> ;
+             .

@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00jgbqj86> 
+    a org:Organization ;
+    rdfs:label "AZTI" ;
+    schema:name "AZTI" ;
+    schema:foundingDate "1981"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.92707 43.3253)"^^geo:wktLiteral ;
+        schema:addressLocality "Pasaia" ;
+    ] ;
+    schema:url <https://www.azti.es/en/about-azti/> ;
+     .

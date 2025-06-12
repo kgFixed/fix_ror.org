@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/008s67533> 
+    a org:Organization ;
+    rdfs:label "Institut Mérieux (France)" ;
+    schema:name "Institut Mérieux (France)" ;
+    schema:foundingDate "1897"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Institut_M%C3%A9rieux> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01m6mfc08> ;
+        rdfs:label "Fondation Mérieux" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/021ayzg23> ;
+        rdfs:label "Institut Mérieux (United States)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03hf69k85> ;
+        rdfs:label "bioMérieux (France)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(4.84671 45.74846)"^^geo:wktLiteral ;
+        schema:addressLocality "Lyon" ;
+    ] ;
+    schema:url <http://www.institut-merieux.com/en/home/> ;
+    schema:sameAs <http://isni.org/isni/0000000122979203> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3151778> ;
+             .

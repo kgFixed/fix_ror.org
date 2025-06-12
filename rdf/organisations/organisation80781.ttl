@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02qvwkt51> 
+    a org:Organization ;
+    rdfs:label "Tigireksky Nature Reserve" ;
+    schema:name "Tigireksky Nature Reserve" ;
+    schema:foundingDate "1999"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Tigireksky_Nature_Reserve> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(83.76361 53.36056)"^^geo:wktLiteral ;
+        schema:addressLocality "Barnaul" ;
+    ] ;
+    schema:url <http://tigirek.ru/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q16705942> ;
+             .

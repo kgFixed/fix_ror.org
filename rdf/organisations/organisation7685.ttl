@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/035wemy73> 
+    a org:Organization ;
+    rdfs:label "Bellus Health (Canada)" ;
+    schema:name "Bellus Health (Canada)" ;
+    schema:foundingDate "1993"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01jaw9d22> ;
+        rdfs:label "Bellus Health (Switzerland)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-73.692 45.56995)"^^geo:wktLiteral ;
+        schema:addressLocality "Laval" ;
+    ] ;
+    schema:url <http://www.bellushealth.com/English/home/default.aspx> ;
+    schema:sameAs <http://isni.org/isni/0000000404104288> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30282778> ;
+             .

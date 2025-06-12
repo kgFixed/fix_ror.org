@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03anxx281> 
+    a org:Organization ;
+    rdfs:label "Phenikaa University" ;
+    schema:name "Phenikaa University" ;
+    schema:foundingDate "2007"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(105.84117 21.0245)"^^geo:wktLiteral ;
+        schema:addressLocality "Hanoi" ;
+    ] ;
+    schema:url <https://phenikaa-uni.edu.vn/vi> ;
+    schema:sameAs <http://isni.org/isni/0000000483416684> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q10829136> ;
+             .

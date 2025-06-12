@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/043nk1744> 
+    a org:Organization ;
+    rdfs:label "Kobe Material Testing Laboratory (Japan)" ;
+    schema:name "Kobe Material Testing Laboratory (Japan)" ;
+    schema:foundingDate "1998"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(135.183 34.6913)"^^geo:wktLiteral ;
+        schema:addressLocality "Kobe" ;
+    ] ;
+    schema:url <https://www.kmtl.co.jp/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q82730869> ;
+             .

@@ -1,0 +1,67 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/013k5y296> 
+    a org:Organization ;
+    rdfs:label "Otsuka (Japan)" ;
+    schema:name "Otsuka (Japan)" ;
+    schema:foundingDate "1964"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Otsuka_Pharmaceutical> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/017f12b13> ;
+        rdfs:label "Otsuka (France)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05hy0av13> ;
+        rdfs:label "Otsuka (Germany)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01ambd593> ;
+        rdfs:label "Otsuka (Indonesia)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02j6s3h86> ;
+        rdfs:label "Otsuka (South Korea)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04bx2zy40> ;
+        rdfs:label "Otsuka (United Kingdom)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00ew4na22> ;
+        rdfs:label "Otsuka (United States)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05fx1fs38> ;
+        rdfs:label "Astex Pharmaceuticals" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(139.69171 35.6895)"^^geo:wktLiteral ;
+        schema:addressLocality "Tokyo" ;
+    ] ;
+    schema:url <https://www.otsuka.co.jp/en/index.php> ;
+    schema:sameAs <http://isni.org/isni/0000000417560784> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q386434> ;
+             .

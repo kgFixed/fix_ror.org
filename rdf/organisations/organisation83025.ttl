@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/035k44f72> 
+    a org:Organization ;
+    rdfs:label "Ahava (Israel)" ;
+    schema:name "Ahava (Israel)" ;
+    schema:foundingDate "1988"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Ahava> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(34.77918 32.01034)"^^geo:wktLiteral ;
+        schema:addressLocality "Holon" ;
+    ] ;
+    schema:url <https://www.ahava.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000106713536> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4695024> ;
+             .

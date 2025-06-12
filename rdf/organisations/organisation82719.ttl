@@ -1,0 +1,181 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/059mq0909> 
+    a org:Organization ;
+    rdfs:label "Siemens (Germany)" ;
+    schema:name "Siemens (Germany)" ;
+    schema:foundingDate "1847"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Siemens> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05dvgp237> ;
+        rdfs:label "Siemens (Australia)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03794w632> ;
+        rdfs:label "Siemens (Austria)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04w702289> ;
+        rdfs:label "Siemens (Belgium)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/002dnnm39> ;
+        rdfs:label "Siemens (Brazil)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03cpzkh11> ;
+        rdfs:label "Siemens (Canada)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00v6g9845> ;
+        rdfs:label "Siemens (China)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/002rp1x36> ;
+        rdfs:label "Siemens (Czechia)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/031gmvg29> ;
+        rdfs:label "Siemens (Denmark)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04q9w3z30> ;
+        rdfs:label "Siemens (France)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02kpejc28> ;
+        rdfs:label "Siemens (Greece)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01rk7mv85> ;
+        rdfs:label "Siemens (Hungary)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0247c3d85> ;
+        rdfs:label "Siemens (Israel)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04f6ygk28> ;
+        rdfs:label "Siemens (Italy)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02mt4w922> ;
+        rdfs:label "Siemens (Netherlands)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00cgmd914> ;
+        rdfs:label "Siemens (Norway)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01a079157> ;
+        rdfs:label "Siemens (Portugal)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/026xfzp73> ;
+        rdfs:label "Siemens (Qatar)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00sexkk33> ;
+        rdfs:label "Siemens (Romania)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03acf5r27> ;
+        rdfs:label "Siemens (Russia)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/051vpna32> ;
+        rdfs:label "Siemens (Singapore)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/058pqk375> ;
+        rdfs:label "Siemens (Slovakia)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05rn4h878> ;
+        rdfs:label "Siemens (Spain)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03v7qgt03> ;
+        rdfs:label "Siemens (Sweden)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/056egm241> ;
+        rdfs:label "Siemens (Switzerland)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0287e5797> ;
+        rdfs:label "Siemens (United Kingdom)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04axb7e79> ;
+        rdfs:label "Siemens (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(11.57549 48.13743)"^^geo:wktLiteral ;
+        schema:addressLocality "Munich" ;
+    ] ;
+    schema:url <http://www.siemens.com/entry/cc/en/> ;
+    schema:sameAs <http://isni.org/isni/000000012178835X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q81230> ;
+             .

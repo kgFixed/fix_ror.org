@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/020rcsj15> 
+    a org:Organization ;
+    rdfs:label "Port of Antwerp" ;
+    schema:name "Port of Antwerp" ;
+    schema:foundingDate "1811"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Port_of_Antwerp> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(4.40026 51.22047)"^^geo:wktLiteral ;
+        schema:addressLocality "Antwerp" ;
+    ] ;
+    schema:url <https://www.portofantwerp.com/nl> ;
+    schema:sameAs <http://isni.org/isni/0000000110096294> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q662529> ;
+             .

@@ -1,0 +1,35 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/016bnqk64> 
+    a org:Organization ;
+    rdfs:label "Humber Teaching NHS Foundation Trust" ;
+    schema:name "Humber Teaching NHS Foundation Trust" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Humber_Teaching_NHS_Foundation_Trust> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02846rb74> ;
+        rdfs:label "Whitby Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/021wnqb35> ;
+        rdfs:label "Withernsea Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.44186 53.76099)"^^geo:wktLiteral ;
+        schema:addressLocality "Willerby" ;
+    ] ;
+    schema:url <https://www.humber.nhs.uk/> ;
+    schema:sameAs <http://isni.org/isni/0000000404898890> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q16963841> ;
+             .

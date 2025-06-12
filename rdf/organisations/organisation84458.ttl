@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0210gge93> 
+    a org:Organization ;
+    rdfs:label "Scientific Association ICONO 14" ;
+    schema:name "Scientific Association ICONO 14" ;
+    schema:foundingDate "2001"^^xsd:gYear ;
+    schema:sameAs <https://es.wikipedia.org/wiki/Icono_14> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-3.70256 40.4165)"^^geo:wktLiteral ;
+        schema:addressLocality "Madrid" ;
+    ] ;
+    schema:url <https://icono14.es> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q50814625> ;
+             .

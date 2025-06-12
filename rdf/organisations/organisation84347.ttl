@@ -1,0 +1,49 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00shsf120> 
+    a org:Organization ;
+    rdfs:label "National University of Ireland" ;
+    schema:name "National University of Ireland" ;
+    schema:foundingDate "1908"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/National_University_of_Ireland> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03bea9k73> ;
+        rdfs:label "Ollscoil na Gaillimhe – University of Galway" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/048nfjm95> ;
+        rdfs:label "National University of Ireland, Maynooth" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03265fv13> ;
+        rdfs:label "University College Cork" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05m7pjf47> ;
+        rdfs:label "University College Dublin" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-6.24889 53.33306)"^^geo:wktLiteral ;
+        schema:addressLocality "Dublin" ;
+    ] ;
+    schema:url <http://www.nui.ie/> ;
+    schema:sameAs <http://isni.org/isni/000000040488240X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1860208> ;
+             .

@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/058ccs847> 
+    a org:Organization ;
+    rdfs:label "Observatorio Nacional de las Telecomunicaciones y de la Sociedad de la Información" ;
+    schema:name "Observatorio Nacional de las Telecomunicaciones y de la Sociedad de la Información" ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-3.70256 40.4165)"^^geo:wktLiteral ;
+        schema:addressLocality "Madrid" ;
+    ] ;
+    schema:url <https://www.ontsi.red.es/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q85698091> ;
+             .

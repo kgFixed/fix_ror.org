@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04qw9bn98> 
+    a org:Organization ;
+    rdfs:label "Angelus Silesius State University" ;
+    schema:name "Angelus Silesius State University" ;
+    schema:foundingDate "1999"^^xsd:gYear ;
+    schema:sameAs <https://pl.wikipedia.org/wiki/Pa%C5%84stwowa_Uczelnia_Angelusa_Silesiusa> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(16.28432 50.77141)"^^geo:wktLiteral ;
+        schema:addressLocality "Wałbrzych" ;
+    ] ;
+    schema:url <http://www.pwsz.com.pl/ects-information-package/> ;
+    schema:url <https://puas.pl/> ;
+    schema:sameAs <http://isni.org/isni/000000009304431X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q11815224> ;
+             .

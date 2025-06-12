@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04r78f145> 
+    a org:Organization ;
+    rdfs:label "Austrian Physical Society" ;
+    schema:name "Austrian Physical Society" ;
+    schema:foundingDate "1950"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Austrian_Physical_Society> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(13.78056 46.81556)"^^geo:wktLiteral ;
+        schema:addressLocality "Bad Kleinkirchheim" ;
+    ] ;
+    schema:url <https://www.oepg.at/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q304062> ;
+             .

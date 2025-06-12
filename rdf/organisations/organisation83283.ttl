@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05wks2t16> 
+    a org:Organization ;
+    rdfs:label "Kitami Institute of Technology" ;
+    schema:name "Kitami Institute of Technology" ;
+    schema:foundingDate "1960"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Kitami_Institute_of_Technology> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(143.89083 43.80306)"^^geo:wktLiteral ;
+        schema:addressLocality "Kitami" ;
+    ] ;
+    schema:url <http://www.kitami-it.ac.jp/eng/index.html> ;
+    schema:sameAs <http://isni.org/isni/0000000114818733> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3113717> ;
+             .

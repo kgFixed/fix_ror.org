@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03m691g30> 
+    a org:Organization ;
+    rdfs:label "Sabah Parks" ;
+    schema:name "Sabah Parks" ;
+    schema:foundingDate "1964"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Sabah_Parks> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(116.0724 5.9749)"^^geo:wktLiteral ;
+        schema:addressLocality "Kota Kinabalu" ;
+    ] ;
+    schema:url <http://www.sabahparks.org.my/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q7395827> ;
+             .

@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02wv1rw66> 
+    a org:Organization ;
+    rdfs:label "Oxurion (Belgium)" ;
+    schema:name "Oxurion (Belgium)" ;
+    schema:foundingDate "1998"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01wyyby64> ;
+        rdfs:label "Oxurion (Ireland)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(4.70093 50.87959)"^^geo:wktLiteral ;
+        schema:addressLocality "Leuven" ;
+    ] ;
+    schema:url <https://www.oxurion.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000404370615> ;
+             .

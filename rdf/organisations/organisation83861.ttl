@@ -1,0 +1,210 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04zke5364> 
+    a org:Organization ;
+    rdfs:label "Health Service Executive" ;
+    schema:name "Health Service Executive" ;
+    schema:foundingDate "2005"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Health_Service_Executive> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/002bjj765> ;
+        rdfs:label "Bantry General Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/031fazd56> ;
+        rdfs:label "Cavan General Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03h5v7z82> ;
+        rdfs:label "Connolly Hospital Blanchardstown" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03a23ch04> ;
+        rdfs:label "Health Protection Surveillance Centre" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/012b0w593> ;
+        rdfs:label "Kilcreene Orthopaedic Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03jzya593> ;
+        rdfs:label "Leopardstown Park Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04s2yen12> ;
+        rdfs:label "Letterkenny University Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00keqx598> ;
+        rdfs:label "Mallow General Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00c9syb98> ;
+        rdfs:label "Merlin Park University Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03z526x05> ;
+        rdfs:label "Midland Regional Hospital Mullingar" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/043mnf671> ;
+        rdfs:label "Midland Regional Hospital Portlaoise" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03df3zw56> ;
+        rdfs:label "Midland Regional Hospital at Tullamore" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00r5kgd36> ;
+        rdfs:label "Nenagh Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/029sr1j73> ;
+        rdfs:label "Our Lady of Lourdes Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/034afnt37> ;
+        rdfs:label "Our Lady's Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/045exnh37> ;
+        rdfs:label "Portiuncula Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04hh2kn75> ;
+        rdfs:label "Roscommon University Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04avk7z79> ;
+        rdfs:label "Sacred Heart Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03w2xw870> ;
+        rdfs:label "Saolta University Health Care Group" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02dhjed84> ;
+        rdfs:label "South Tipperary General Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01tm0s838> ;
+        rdfs:label "St. Columcille's Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00e60hf45> ;
+        rdfs:label "St. Davnet's Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00sgprf31> ;
+        rdfs:label "St. Dympna's Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/035r9vd46> ;
+        rdfs:label "St. Finbarr's Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05p668j08> ;
+        rdfs:label "St. Luke's General Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03gth6e91> ;
+        rdfs:label "University Hospital Kerry" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04y3ze847> ;
+        rdfs:label "University Hospital Limerick" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/007pvy114> ;
+        rdfs:label "University Hospital Waterford" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04jgrem26> ;
+        rdfs:label "University Maternity Hospital Limerick" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00bbdze26> ;
+        rdfs:label "Wexford General Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03k6fqn53> ;
+        rdfs:label "Department of Health" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-6.24889 53.33306)"^^geo:wktLiteral ;
+        schema:addressLocality "Dublin" ;
+    ] ;
+    schema:url <http://www.hse.ie/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q5690681> ;
+             .

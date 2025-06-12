@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/043pgqy52> 
+    a org:Organization ;
+    rdfs:label "Universities Space Research Association" ;
+    schema:name "Universities Space Research Association" ;
+    schema:foundingDate "1969"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Universities_Space_Research_Association> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01r4eh644> ;
+        rdfs:label "Lunar and Planetary Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/022qmyy53> ;
+        rdfs:label "Research Institute for Advanced Computer Science" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-76.83942 39.24038)"^^geo:wktLiteral ;
+        schema:addressLocality "Columbia" ;
+    ] ;
+    schema:url <http://www.usra.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000086341877> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7894455> ;
+             .

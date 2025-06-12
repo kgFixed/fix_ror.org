@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01gp83d60> 
+    a org:Organization ;
+    rdfs:label "Bavarian Nordic (Denmark)" ;
+    schema:name "Bavarian Nordic (Denmark)" ;
+    schema:foundingDate "1994"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Bavarian_Nordic> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01zg9ry50> ;
+        rdfs:label "Bavarian Nordic (Germany)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/059mdcg68> ;
+        rdfs:label "Bavarian Nordic (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(12.6136 56.03606)"^^geo:wktLiteral ;
+        schema:addressLocality "Elsinore" ;
+    ] ;
+    schema:url <http://www.bavarian-nordic.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000403928189> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q812002> ;
+             .

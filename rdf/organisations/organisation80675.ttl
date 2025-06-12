@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/010s0k503> 
+    a org:Organization ;
+    rdfs:label "XING Technologies (Australia)" ;
+    schema:name "XING Technologies (Australia)" ;
+    schema:foundingDate "2013"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(153.02809 -27.46794)"^^geo:wktLiteral ;
+        schema:addressLocality "Brisbane" ;
+    ] ;
+    schema:url <https://www.xingtech.com.au/> ;
+     .

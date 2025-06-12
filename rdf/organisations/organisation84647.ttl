@@ -1,0 +1,38 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/026exqw73> 
+    a org:Organization ;
+    rdfs:label "National Instruments (United States)" ;
+    schema:name "National Instruments (United States)" ;
+    schema:foundingDate "1976"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/National_Instruments> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03b4j0710> ;
+        rdfs:label "National Instruments (Ireland)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0068vzv72> ;
+        rdfs:label "National Instruments (United Kingdom)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-97.74306 30.26715)"^^geo:wktLiteral ;
+        schema:addressLocality "Austin" ;
+    ] ;
+    schema:url <http://www.ni.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000092165603> ;
+            schema:sameAs <http://isni.org/isni/000000012237516X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1544413> ;
+             .

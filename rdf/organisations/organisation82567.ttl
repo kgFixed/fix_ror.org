@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0599mab02> 
+    a org:Organization ;
+    rdfs:label "St Catherine's Health Centre" ;
+    schema:name "St Catherine's Health Centre" ;
+    schema:foundingDate "1863"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/St_Catherine's_Health_Centre> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0257nzs56> ;
+        rdfs:label "Wirral Community Health and Care NHS Foundations Trust" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-3.01479 53.39337)"^^geo:wktLiteral ;
+        schema:addressLocality "Birkenhead" ;
+    ] ;
+    schema:url <https://www.wirralct.nhs.uk/contact/clinics-a-z/st-catherines> ;
+    schema:sameAs <http://isni.org/isni/0000000404223236> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7592763> ;
+             .

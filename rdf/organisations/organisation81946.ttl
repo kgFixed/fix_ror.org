@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03dgx1q54> 
+    a org:Organization ;
+    rdfs:label "National MS Center Melsbroek" ;
+    schema:name "National MS Center Melsbroek" ;
+    schema:foundingDate "1957"^^xsd:gYear ;
+    schema:sameAs <https://nl.wikipedia.org/wiki/Nationaal_Multiple_Sclerose_Centrum> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(4.50989 50.91851)"^^geo:wktLiteral ;
+        schema:addressLocality "Steenokkerzeel" ;
+    ] ;
+    schema:url <https://mscenter.be/nl> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q2356005> ;
+             .

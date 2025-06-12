@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/019tz0c71> 
+    a org:Organization ;
+    rdfs:label "State Scientific and Technical Library of Ukraine" ;
+    schema:name "State Scientific and Technical Library of Ukraine" ;
+    schema:foundingDate "1935"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/State_Scientific_and_Technical_Library_of_Ukraine> ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(30.5238 50.45466)"^^geo:wktLiteral ;
+        schema:addressLocality "Kyiv" ;
+    ] ;
+    schema:url <https://dntb.gov.ua/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q12100333> ;
+             .

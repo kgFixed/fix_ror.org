@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05xvyz406> 
+    a org:Organization ;
+    rdfs:label "Genetics Society of America" ;
+    schema:name "Genetics Society of America" ;
+    schema:foundingDate "1931"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Genetics_Society_of_America> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.10026 38.98067)"^^geo:wktLiteral ;
+        schema:addressLocality "Bethesda" ;
+    ] ;
+    schema:url <http://www.genetics-gsa.org/> ;
+    schema:sameAs <http://isni.org/isni/000000011092749X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1502090> ;
+             .

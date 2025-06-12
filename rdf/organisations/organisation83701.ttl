@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01dbzsr51> 
+    a org:Organization ;
+    rdfs:label "Canadian Association of Emergency Physicians" ;
+    schema:name "Canadian Association of Emergency Physicians" ;
+    schema:foundingDate "1991"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Canadian_Association_of_Emergency_Physicians> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-75.69812 45.41117)"^^geo:wktLiteral ;
+        schema:addressLocality "Ottawa" ;
+    ] ;
+    schema:url <http://caep.ca/> ;
+    schema:sameAs <http://isni.org/isni/0000000087917946> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q19596241> ;
+             .

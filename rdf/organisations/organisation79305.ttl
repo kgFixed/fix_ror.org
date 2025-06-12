@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02vya1t32> 
+    a org:Organization ;
+    rdfs:label "Conseil Régional de l'Environnement du Bas-Saint-Laurent" ;
+    schema:name "Conseil Régional de l'Environnement du Bas-Saint-Laurent" ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-68.52396 48.44879)"^^geo:wktLiteral ;
+        schema:addressLocality "Rimouski" ;
+    ] ;
+    schema:url <http://www.crebsl.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30295084> ;
+             .

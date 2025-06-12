@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02g2x8w06> 
+    a org:Organization ;
+    rdfs:label "Control4 (United States)" ;
+    schema:name "Control4 (United States)" ;
+    schema:foundingDate "2003"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Control4> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-111.89105 40.76078)"^^geo:wktLiteral ;
+        schema:addressLocality "Salt Lake City" ;
+    ] ;
+    schema:url <https://www.control4.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q5165812> ;
+             .

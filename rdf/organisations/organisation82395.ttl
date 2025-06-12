@@ -1,0 +1,83 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02mv6r745> 
+    a org:Organization ;
+    rdfs:label "Utah System of Higher Education" ;
+    schema:name "Utah System of Higher Education" ;
+    schema:foundingDate "1969"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Utah_System_of_Higher_Education> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04dx66682> ;
+        rdfs:label "Utah Tech University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/029z7h505> ;
+        rdfs:label "Salt Lake Community College" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04azdj983> ;
+        rdfs:label "Snow College" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04gfeaw48> ;
+        rdfs:label "Southern Utah University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03r0ha626> ;
+        rdfs:label "University of Utah" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/006jnja70> ;
+        rdfs:label "Utah College of Applied Technology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00h6set76> ;
+        rdfs:label "Utah State University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/058v42s42> ;
+        rdfs:label "Utah State University Eastern" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02rxpxc98> ;
+        rdfs:label "Utah Valley University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01epn2q93> ;
+        rdfs:label "Weber State University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-111.89105 40.76078)"^^geo:wktLiteral ;
+        schema:addressLocality "Salt Lake City" ;
+    ] ;
+    schema:url <https://higheredutah.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000092060844> ;
+             .

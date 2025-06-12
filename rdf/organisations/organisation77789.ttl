@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02x0x2d91> 
+    a org:Organization ;
+    rdfs:label "Yancheng Second People's Hospital" ;
+    schema:name "Yancheng Second People's Hospital" ;
+    schema:foundingDate "1954"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(120.1573 33.3575)"^^geo:wktLiteral ;
+        schema:addressLocality "Yancheng" ;
+    ] ;
+    schema:url <http://www.yc2y.com/> ;
+     .

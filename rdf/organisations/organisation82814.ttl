@@ -1,0 +1,59 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03am4ny08> 
+    a org:Organization ;
+    rdfs:label "Maine Community College System" ;
+    schema:name "Maine Community College System" ;
+    schema:foundingDate "1946"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Maine_Community_College_System> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04e4qaj02> ;
+        rdfs:label "Central Maine Community College" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04hpxzg72> ;
+        rdfs:label "Kennebec Valley Community College" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00vxbe865> ;
+        rdfs:label "Northern Maine Community College" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01aywcp58> ;
+        rdfs:label "Southern Maine Community College" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01mtwad75> ;
+        rdfs:label "Washington County Community College" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/006j5kw87> ;
+        rdfs:label "York County Community College" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-69.77949 44.31062)"^^geo:wktLiteral ;
+        schema:addressLocality "Augusta" ;
+    ] ;
+    schema:url <https://www.mccs.me.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000404837481> ;
+             .

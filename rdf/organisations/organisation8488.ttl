@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/041jmaw90> 
+    a org:Organization ;
+    rdfs:label "San Juan College" ;
+    schema:name "San Juan College" ;
+    schema:foundingDate "1956"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/San_Juan_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00hpz7z43> ;
+        rdfs:label "New Mexico State University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-108.21869 36.72806)"^^geo:wktLiteral ;
+        schema:addressLocality "Farmington" ;
+    ] ;
+    schema:url <https://www.sanjuancollege.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000091380897> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7414571> ;
+             .

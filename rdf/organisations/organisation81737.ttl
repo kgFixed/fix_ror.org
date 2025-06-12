@@ -1,0 +1,64 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/036f4sz05> 
+    a org:Organization ;
+    rdfs:label "Łukasiewicz Research Network" ;
+    schema:name "Łukasiewicz Research Network" ;
+    schema:foundingDate "2019"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/039bged65> ;
+        rdfs:label "Lukasiewicz Research Network - Krakow Institute of Technology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/025wsd308> ;
+        rdfs:label "Łukasiewicz Research Network - Automotive Industry Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0086rk289> ;
+        rdfs:label "Łukasiewicz Research Network - Institute of Electrical Drives & Machines KOMEL" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/052f2eb74> ;
+        rdfs:label "Łukasiewicz Research Network - Institute of Industrial Organic Chemistry, Branch Pszczyna" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03as2hc70> ;
+        rdfs:label "Łukasiewicz Research Network - Institute of Innovative Technologies EMAG" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05abmv045> ;
+        rdfs:label "Łukasiewicz Research Network - Institute of Mechanised Construction and Rock Mining" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05xx8bb48> ;
+        rdfs:label "Łukasiewicz Research Network - Institute of Welding" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(21.01178 52.22977)"^^geo:wktLiteral ;
+        schema:addressLocality "Warsaw" ;
+    ] ;
+    schema:url <https://lukasiewicz.gov.pl/en/> ;
+    schema:sameAs <http://isni.org/isni/0000000479330669> ;
+             .

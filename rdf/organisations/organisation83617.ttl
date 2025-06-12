@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02k4pxv54> 
+    a org:Organization ;
+    rdfs:label "National Geospatial-Intelligence Agency" ;
+    schema:name "National Geospatial-Intelligence Agency" ;
+    schema:foundingDate "1996"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/National_Geospatial-Intelligence_Agency> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0447fe631> ;
+        rdfs:label "United States Department of Defense" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.1872 38.78928)"^^geo:wktLiteral ;
+        schema:addressLocality "Springfield" ;
+    ] ;
+    schema:url <https://www.nga.mil/Pages/Default.aspx> ;
+    schema:sameAs <http://isni.org/isni/000000040561129X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1296491> ;
+             .

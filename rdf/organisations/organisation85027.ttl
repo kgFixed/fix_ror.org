@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01cx85066> 
+    a org:Organization ;
+    rdfs:label "John Peter Smith Hospital" ;
+    schema:name "John Peter Smith Hospital" ;
+    schema:foundingDate "1877"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/John_Peter_Smith_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02nkp4593> ;
+        rdfs:label "JPS Health Network" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05msxaq47> ;
+        rdfs:label "University of North Texas Health Science Center" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-97.32085 32.72541)"^^geo:wktLiteral ;
+        schema:addressLocality "Fort Worth" ;
+    ] ;
+    schema:url <https://www.jpshealthnet.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000404430016> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q14710539> ;
+             .

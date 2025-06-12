@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04vxw9c34> 
+    a org:Organization ;
+    rdfs:label "University of Southampton Malaysia" ;
+    schema:name "University of Southampton Malaysia" ;
+    schema:foundingDate "2012"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/University_of_Southampton> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01ryk1543> ;
+        rdfs:label "University of Southampton" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(103.7578 1.4655)"^^geo:wktLiteral ;
+        schema:addressLocality "Johor Bahru" ;
+    ] ;
+    schema:url <https://www.southampton.ac.uk/my/index.page> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q83371852> ;
+             .

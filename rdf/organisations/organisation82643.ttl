@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01rmh6e96> 
+    a org:Organization ;
+    rdfs:label "Calvary Riverina Hospital" ;
+    schema:name "Calvary Riverina Hospital" ;
+    schema:foundingDate "1926"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Calvary_Hospital,_Wagga_Wagga> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02stey378> ;
+        rdfs:label "The University of Notre Dame Australia" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(147.35375 -35.12577)"^^geo:wktLiteral ;
+        schema:addressLocality "Wagga Wagga" ;
+    ] ;
+    schema:url <http://www.calvary-wagga.com.au/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q5024192> ;
+             .

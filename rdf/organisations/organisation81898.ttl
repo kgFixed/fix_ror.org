@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04gcpjy47> 
+    a org:Organization ;
+    rdfs:label "I.Horbachevsky Ternopil National Medical University" ;
+    schema:name "I.Horbachevsky Ternopil National Medical University" ;
+    schema:foundingDate "1957"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Ternopil_National_Medical_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(25.59067 49.55404)"^^geo:wktLiteral ;
+        schema:addressLocality "Ternopil" ;
+    ] ;
+    schema:url <https://www.tdmu.edu.ua/en/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q94473> ;
+             .

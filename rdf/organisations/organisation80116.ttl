@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00skc8b63> 
+    a org:Organization ;
+    rdfs:label "Ministry of Public Works Transportation and Communications" ;
+    schema:name "Ministry of Public Works Transportation and Communications" ;
+    schema:foundingDate "1899"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Ministry_of_Public_Works,_Transportation_and_Communications_(Haiti)> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-72.30036 18.54478)"^^geo:wktLiteral ;
+        schema:addressLocality "Delmas" ;
+    ] ;
+    schema:url <https://www.mtptc.gouv.ht/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q18345400> ;
+             .

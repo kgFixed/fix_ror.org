@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/028d79m65> 
+    a org:Organization ;
+    rdfs:label "Stolby Nature Reserve" ;
+    schema:name "Stolby Nature Reserve" ;
+    schema:foundingDate "1925"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Stolby_Nature_Reserve> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(92.90765 56.02668)"^^geo:wktLiteral ;
+        schema:addressLocality "Krasnoyarsk" ;
+    ] ;
+    schema:url <https://kras-stolby.ru/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q4442880> ;
+             .

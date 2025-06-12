@@ -1,0 +1,54 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/000vekr11> 
+    a org:Organization ;
+    rdfs:label "GW4" ;
+    schema:name "GW4" ;
+    schema:foundingDate "2013"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/GW4> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/022p86748> ;
+        rdfs:label "GW4 Facility for High-Resolution Electron Cryo-Microscopy" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0524sp257> ;
+        rdfs:label "University of Bristol" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03yghzc09> ;
+        rdfs:label "University of Exeter" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/002h8g185> ;
+        rdfs:label "University of Bath" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03kk7td41> ;
+        rdfs:label "Cardiff University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-2.59665 51.45523)"^^geo:wktLiteral ;
+        schema:addressLocality "Bristol" ;
+    ] ;
+    schema:url <https://gw4.ac.uk> ;
+    schema:sameAs <http://isni.org/isni/000000047478045X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q28402688> ;
+             .

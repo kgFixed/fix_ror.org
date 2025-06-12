@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03e4a0h58> 
+    a org:Organization ;
+    rdfs:label "St. John's School" ;
+    schema:name "St. John's School" ;
+    schema:foundingDate "1946"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/St._John's_School_(Texas)> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-95.36327 29.76328)"^^geo:wktLiteral ;
+        schema:addressLocality "Houston" ;
+    ] ;
+    schema:url <https://www.sjs.org/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q7588837> ;
+             .

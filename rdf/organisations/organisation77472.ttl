@@ -1,0 +1,59 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01jfre984> 
+    a org:Organization ;
+    rdfs:label "Aptiv (Ireland)" ;
+    schema:name "Aptiv (Ireland)" ;
+    schema:foundingDate "1994"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Aptiv> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05qm04q50> ;
+        rdfs:label "Aptiv (France)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/039sb8791> ;
+        rdfs:label "Aptiv (Germany)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0409nay36> ;
+        rdfs:label "Aptiv (Italy)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03cax2885> ;
+        rdfs:label "Aptiv (Luxembourg)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02vvm5369> ;
+        rdfs:label "Aptiv (United Kingdom)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02967gp58> ;
+        rdfs:label "Aptiv (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-6.24889 53.33306)"^^geo:wktLiteral ;
+        schema:addressLocality "Dublin" ;
+    ] ;
+    schema:url <https://www.aptiv.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q81654830> ;
+             .

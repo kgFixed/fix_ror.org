@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02x6rcb77> 
+    a org:Organization ;
+    rdfs:label "Máxima Medisch Centrum" ;
+    schema:name "Máxima Medisch Centrum" ;
+    schema:foundingDate "2002"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/M%C3%A1xima_Medisch_Centrum> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02jz4aj89> ;
+        rdfs:label "Maastricht University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/016xsfp80> ;
+        rdfs:label "Radboud University Nijmegen" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(5.40278 51.41833)"^^geo:wktLiteral ;
+        schema:addressLocality "Veldhoven" ;
+    ] ;
+    schema:url <http://expats.mmc.nl/> ;
+    schema:sameAs <http://isni.org/isni/0000000404774812> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q97486366> ;
+             .

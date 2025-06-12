@@ -1,0 +1,34 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05xfjtp79> 
+    a org:Organization ;
+    rdfs:label "Physico-Chemical Institute of Environmental and Human Protection" ;
+    schema:name "Physico-Chemical Institute of Environmental and Human Protection" ;
+    schema:foundingDate "1992"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03bra4w96> ;
+        rdfs:label "Ministry of Education and Science" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00je4t102> ;
+        rdfs:label "National Academy of Sciences of Ukraine" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(30.74383 46.48572)"^^geo:wktLiteral ;
+        schema:addressLocality "Odesa" ;
+    ] ;
+    schema:url <http://www.pchip.gov.ua/> ;
+    schema:sameAs <http://isni.org/isni/0000000474717426> ;
+             .

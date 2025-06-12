@@ -1,0 +1,87 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/047d2d387> 
+    a org:Organization ;
+    rdfs:label "Centre for the Observation and Modelling of Earthquakes, Volcanoes and Tectonics" ;
+    schema:name "Centre for the Observation and Modelling of Earthquakes, Volcanoes and Tectonics" ;
+    schema:foundingDate "2002"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04a7gbp98> ;
+        rdfs:label "British Geological Survey" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01v29qb04> ;
+        rdfs:label "Durham University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02b5d8509> ;
+        rdfs:label "Natural Environment Research Council" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01kj2bm70> ;
+        rdfs:label "Newcastle University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02jx3x895> ;
+        rdfs:label "University College London" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0524sp257> ;
+        rdfs:label "University of Bristol" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/013meh722> ;
+        rdfs:label "University of Cambridge" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/024mrxd33> ;
+        rdfs:label "University of Leeds" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04xs57h96> ;
+        rdfs:label "University of Liverpool" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/052gg0110> ;
+        rdfs:label "University of Oxford" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05v62cm79> ;
+        rdfs:label "University of Reading" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.54785 53.79648)"^^geo:wktLiteral ;
+        schema:addressLocality "Leeds" ;
+    ] ;
+    schema:url <http://comet.nerc.ac.uk/> ;
+     .

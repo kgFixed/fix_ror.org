@@ -1,0 +1,49 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01173vs27> 
+    a org:Organization ;
+    rdfs:label "University of Chittagong" ;
+    schema:name "University of Chittagong" ;
+    schema:foundingDate "1966"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/University_of_Chittagong> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00y8zcm61> ;
+        rdfs:label "Chattagram Maa-O-Shishu Hospital Medical College" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01y8zn427> ;
+        rdfs:label "Chittagong Medical College" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03q8sfx86> ;
+        rdfs:label "Comilla Medical College" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01ft2as73> ;
+        rdfs:label "Eastern Medical College and Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(91.83168 22.3384)"^^geo:wktLiteral ;
+        schema:addressLocality "Chittagong" ;
+    ] ;
+    schema:url <http://www.cu.ac.bd/ctguni/> ;
+    schema:sameAs <http://isni.org/isni/0000000097443393> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7895267> ;
+             .

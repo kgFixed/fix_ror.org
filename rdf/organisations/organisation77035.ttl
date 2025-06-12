@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04pwkp704> 
+    a org:Organization ;
+    rdfs:label "Department Of Agriculture and Rural Affairs Of Jiangxi Province" ;
+    schema:name "Department Of Agriculture and Rural Affairs Of Jiangxi Province" ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(115.85306 28.68396)"^^geo:wktLiteral ;
+        schema:addressLocality "Nanchang" ;
+    ] ;
+    schema:url <http://www.jxagri.gov.cn/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q11135325> ;
+             .

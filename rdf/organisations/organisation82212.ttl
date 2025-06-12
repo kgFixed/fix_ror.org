@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/022ah1092> 
+    a org:Organization ;
+    rdfs:label "Borowiec Astrogeodynamic Observatory" ;
+    schema:name "Borowiec Astrogeodynamic Observatory" ;
+    schema:foundingDate "1977"^^xsd:gYear ;
+    schema:sameAs <https://pl.wikipedia.org/wiki/Obserwatorium_Astrogeodynamiczne_Centrum_Bada%C5%84_Kosmicznych_PAN> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03zm2br59> ;
+        rdfs:label "Centrum Badań Kosmicznych" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(17.02077 52.276)"^^geo:wktLiteral ;
+        schema:addressLocality "Borowiec" ;
+    ] ;
+    schema:url <https://www.cbk.poznan.pl> ;
+    schema:sameAs <http://isni.org/isni/0000000460231767> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q11795174> ;
+             .

@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0073h0969> 
+    a org:Organization ;
+    rdfs:label "Indus Instruments (United States)" ;
+    schema:name "Indus Instruments (United States)" ;
+    schema:foundingDate "1992"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-95.11826 29.53773)"^^geo:wktLiteral ;
+        schema:addressLocality "Webster" ;
+    ] ;
+    schema:url <http://indusinstruments.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30282866> ;
+             .

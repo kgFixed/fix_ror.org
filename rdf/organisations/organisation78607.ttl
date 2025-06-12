@@ -1,0 +1,94 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04qr9ne10> 
+    a org:Organization ;
+    rdfs:label "Agricultural Research Service - Northeast Area" ;
+    schema:name "Agricultural Research Service - Northeast Area" ;
+    schema:foundingDate "1910"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Agricultural_Research_Service> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/052kar395> ;
+        rdfs:label "Appalachian Fruit Research Laboratory" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03b08sh51> ;
+        rdfs:label "Beltsville Agricultural Research Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/004zpe866> ;
+        rdfs:label "Beltsville Human Nutrition Research Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/052v5pn20> ;
+        rdfs:label "Eastern Regional Research Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01d0zz505> ;
+        rdfs:label "Jean Mayer Human Nutrition Research Center on Aging" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/026sw0405> ;
+        rdfs:label "National Center for Cool and Cold Water Aquaculture" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04x40m321> ;
+        rdfs:label "National Cold Water Marine Aquaculture Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04bh7ck51> ;
+        rdfs:label "New England Plant, Soil and Water Research Laboratory" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02dtaqq02> ;
+        rdfs:label "Plum Island Animal Disease Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/050z40a57> ;
+        rdfs:label "Robert W. Holley Center for Agriculture & Health" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03xcerw48> ;
+        rdfs:label "U.S. National Arboretum" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02d2m2044> ;
+        rdfs:label "Agricultural Research Service" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-76.90747 39.03483)"^^geo:wktLiteral ;
+        schema:addressLocality "Beltsville" ;
+    ] ;
+    schema:url <https://www.ars.usda.gov/northeast-area/> ;
+     .

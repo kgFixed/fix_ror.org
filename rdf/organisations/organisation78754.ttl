@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01ye8r794> 
+    a org:Organization ;
+    rdfs:label "Tropical Crops Genetic Resources Institute" ;
+    schema:name "Tropical Crops Genetic Resources Institute" ;
+    schema:foundingDate "1958"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/003qeh975> ;
+        rdfs:label "Chinese Academy of Tropical Agricultural Sciences" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(110.34651 20.03421)"^^geo:wktLiteral ;
+        schema:addressLocality "Haikou" ;
+    ] ;
+    schema:url <http://www.catas.cn/pzs/> ;
+     .

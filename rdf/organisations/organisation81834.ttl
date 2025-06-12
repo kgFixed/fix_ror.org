@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02dtaqq02> 
+    a org:Organization ;
+    rdfs:label "Plum Island Animal Disease Center" ;
+    schema:name "Plum Island Animal Disease Center" ;
+    schema:foundingDate "1969"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Plum_Island_Animal_Disease_Center> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04qr9ne10> ;
+        rdfs:label "Agricultural Research Service - Northeast Area" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-72.35925 41.10343)"^^geo:wktLiteral ;
+        schema:addressLocality "Greenport" ;
+    ] ;
+    schema:url <https://www.ars.usda.gov/northeast-area/orient-point-ny/plum-island-animal-disease-center/> ;
+    schema:sameAs <http://isni.org/isni/0000000089984835> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7205327> ;
+             .

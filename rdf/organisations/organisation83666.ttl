@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01bqnjh41> 
+    a org:Organization ;
+    rdfs:label "North Carolina Museum of Natural Sciences" ;
+    schema:name "North Carolina Museum of Natural Sciences" ;
+    schema:foundingDate "1879"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/North_Carolina_Museum_of_Natural_Sciences> ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-78.63861 35.7721)"^^geo:wktLiteral ;
+        schema:addressLocality "Raleigh" ;
+    ] ;
+    schema:url <http://naturalsciences.org/> ;
+    schema:sameAs <http://isni.org/isni/000000012226059X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2483656> ;
+             .

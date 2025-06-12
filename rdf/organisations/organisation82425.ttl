@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01vvnn702> 
+    a org:Organization ;
+    rdfs:label "Bühler (Switzerland)" ;
+    schema:name "Bühler (Switzerland)" ;
+    schema:foundingDate "1860"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/B%C3%BChler_Group> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/027cwk965> ;
+        rdfs:label "Bühler (Austria)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/031x5nm39> ;
+        rdfs:label "Bühler (China)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0408a5x16> ;
+        rdfs:label "Bühler (Germany)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/055c4qx71> ;
+        rdfs:label "Bühler (United Kingdom)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(9.13422 47.43653)"^^geo:wktLiteral ;
+        schema:addressLocality "Uzwil" ;
+    ] ;
+    schema:url <http://www.buhlergroup.com> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q664297> ;
+             .

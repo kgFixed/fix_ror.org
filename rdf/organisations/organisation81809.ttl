@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/005kqqf02> 
+    a org:Organization ;
+    rdfs:label "Northern Plains Agricultural Research Laboratory" ;
+    schema:name "Northern Plains Agricultural Research Laboratory" ;
+    schema:foundingDate "1955"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03sqy6516> ;
+        rdfs:label "Agricultural Research Service - Plains Area" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-104.15633 47.71668)"^^geo:wktLiteral ;
+        schema:addressLocality "Sidney" ;
+    ] ;
+    schema:url <https://www.ars.usda.gov/plains-area/sidney-mt/northern-plains-agricultural-research-laboratory/> ;
+    schema:sameAs <http://isni.org/isni/0000000122357711> ;
+             .

@@ -1,0 +1,39 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/017bfx208> 
+    a org:Organization ;
+    rdfs:label "Georgia Coastal Ecosystems Long Term Ecological Research" ;
+    schema:name "Georgia Coastal Ecosystems Long Term Ecological Research" ;
+    schema:foundingDate "2001"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/039kwqk96> ;
+        rdfs:label "Long Term Ecological Research Network" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0330j0z60> ;
+        rdfs:label "Environmental Data Initiative" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00te3t702> ;
+        rdfs:label "University of Georgia" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-81.27871 31.39745)"^^geo:wktLiteral ;
+        schema:addressLocality "Sapelo Island" ;
+    ] ;
+    schema:url <https://gce-lter.marsci.uga.edu> ;
+     .

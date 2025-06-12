@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05853sr12> 
+    a org:Organization ;
+    rdfs:label "Scientific Design Company (United States)" ;
+    schema:name "Scientific Design Company (United States)" ;
+    schema:foundingDate "1946"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-74.04208 40.85288)"^^geo:wktLiteral ;
+        schema:addressLocality "Little Ferry" ;
+    ] ;
+    schema:url <https://www.scidesign.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000404596569> ;
+             .

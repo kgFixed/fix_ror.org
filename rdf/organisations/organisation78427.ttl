@@ -1,0 +1,35 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/006jfnq36> 
+    a org:Organization ;
+    rdfs:label "American Farm Bureau Federation" ;
+    schema:name "American Farm Bureau Federation" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/American_Farm_Bureau_Federation> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02w94dx49> ;
+        rdfs:label "Illinois Farm Bureau" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/013dthz53> ;
+        rdfs:label "Missouri Farm Bureau" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.03637 38.89511)"^^geo:wktLiteral ;
+        schema:addressLocality "Washington" ;
+    ] ;
+    schema:url <https://www.fb.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000093153233> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4743741> ;
+             .

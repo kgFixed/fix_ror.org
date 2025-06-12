@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02q2dn726> 
+    a org:Organization ;
+    rdfs:label "Sinte Gleska University" ;
+    schema:name "Sinte Gleska University" ;
+    schema:foundingDate "1970"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Sinte_Gleska_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-100.65819 43.30584)"^^geo:wktLiteral ;
+        schema:addressLocality "Mission" ;
+    ] ;
+    schema:url <http://www.sintegleska.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000098314251> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7525103> ;
+             .

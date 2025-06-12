@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01fj5gf64> 
+    a org:Organization ;
+    rdfs:label "Hunan Academy of Agricultural Sciences" ;
+    schema:name "Hunan Academy of Agricultural Sciences" ;
+    schema:foundingDate "1901"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05j918z43> ;
+        rdfs:label "Hunan Institute of Nuclear Agronomy and Space Breeding" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0313jb750> ;
+        rdfs:label "Chinese Academy of Agricultural Sciences" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(112.97087 28.19874)"^^geo:wktLiteral ;
+        schema:addressLocality "Changsha" ;
+    ] ;
+    schema:url <http://www.hunaas.cn/> ;
+    schema:sameAs <http://isni.org/isni/0000000449119766> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30253690> ;
+             .

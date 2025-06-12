@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01eq1tg37> 
+    a org:Organization ;
+    rdfs:label "Landesbetrieb für Küstenschutz, Nationalpark und Meeresschutz Schleswig-Holstein" ;
+    schema:name "Landesbetrieb für Küstenschutz, Nationalpark und Meeresschutz Schleswig-Holstein" ;
+    schema:foundingDate "2008"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(9.05239 54.4858)"^^geo:wktLiteral ;
+        schema:addressLocality "Husum" ;
+    ] ;
+    schema:url <https://www.schleswig-holstein.de/DE/Landesregierung/LKN/_documents/lkn.html> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q1785301> ;
+             .

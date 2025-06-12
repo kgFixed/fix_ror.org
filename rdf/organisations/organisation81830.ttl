@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/052kar395> 
+    a org:Organization ;
+    rdfs:label "Appalachian Fruit Research Laboratory" ;
+    schema:name "Appalachian Fruit Research Laboratory" ;
+    schema:foundingDate "1979"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04qr9ne10> ;
+        rdfs:label "Agricultural Research Service - Northeast Area" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.96389 39.45621)"^^geo:wktLiteral ;
+        schema:addressLocality "Martinsburg" ;
+    ] ;
+    schema:url <https://www.ars.usda.gov/northeast-area/kearneysville-wv/appalachian-fruit-research-laboratory/innovative-fruit-production-improvement-and-protection/> ;
+     .

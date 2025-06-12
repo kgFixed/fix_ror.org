@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01djrhs97> 
+    a org:Organization ;
+    rdfs:label "Federal Reserve Bank of Boston" ;
+    schema:name "Federal Reserve Bank of Boston" ;
+    schema:foundingDate "1914"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Federal_Reserve_Bank_of_Boston> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05fk5tr28> ;
+        rdfs:label "Federal Reserve" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-71.05977 42.35843)"^^geo:wktLiteral ;
+        schema:addressLocality "Boston" ;
+    ] ;
+    schema:url <https://www.bostonfed.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000121839006> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4384803> ;
+             .

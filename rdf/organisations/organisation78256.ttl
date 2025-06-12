@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02xmm1048> 
+    a org:Organization ;
+    rdfs:label "Willem-Alexander Kinderziekenhuis" ;
+    schema:name "Willem-Alexander Kinderziekenhuis" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05xvt9f17> ;
+        rdfs:label "Leiden University Medical Center" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(4.49306 52.15833)"^^geo:wktLiteral ;
+        schema:addressLocality "Leiden" ;
+    ] ;
+    schema:url <https://www.lumc.nl/org/wakz/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q97487800> ;
+             .

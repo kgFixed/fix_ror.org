@@ -1,0 +1,32 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03h2q9n18> 
+    a org:Organization ;
+    rdfs:label "Tennessee Space Grant Consortium" ;
+    schema:name "Tennessee Space Grant Consortium" ;
+    org:status "active" ;
+    org:classification "Other" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/027ka1x80> ;
+        rdfs:label "National Aeronautics and Space Administration" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02vm5rt34> ;
+        rdfs:label "Vanderbilt University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-86.78444 36.16589)"^^geo:wktLiteral ;
+        schema:addressLocality "Nashville" ;
+    ] ;
+    schema:url <https://tn.spacegrant.org/> ;
+     .

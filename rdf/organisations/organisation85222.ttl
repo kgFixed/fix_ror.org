@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01pe8xs92> 
+    a org:Organization ;
+    rdfs:label "Oracle (United Kingdom)" ;
+    schema:name "Oracle (United Kingdom)" ;
+    schema:foundingDate "1977"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Oracle_Corporation> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/006c77m33> ;
+        rdfs:label "Oracle (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.97113 51.45625)"^^geo:wktLiteral ;
+        schema:addressLocality "Reading" ;
+    ] ;
+    schema:url <https://www.oracle.com/uk/index.html> ;
+    schema:sameAs <http://isni.org/isni/0000000417641576> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q28974598> ;
+             .

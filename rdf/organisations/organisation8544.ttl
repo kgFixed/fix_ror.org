@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01g9x3v85> 
+    a org:Organization ;
+    rdfs:label "Federal Emergency Management Agency" ;
+    schema:name "Federal Emergency Management Agency" ;
+    schema:foundingDate "1978"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Federal_Emergency_Management_Agency> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00jyr0d86> ;
+        rdfs:label "United States Department of Homeland Security" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-74.00597 40.71427)"^^geo:wktLiteral ;
+        schema:addressLocality "New York" ;
+    ] ;
+    schema:url <http://www.fema.gov/> ;
+    schema:sameAs <http://isni.org/isni/0000000122202605> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q503010> ;
+             .

@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03ztw9d82> 
+    a org:Organization ;
+    rdfs:label "Department of Statistics Malaysia" ;
+    schema:name "Department of Statistics Malaysia" ;
+    schema:foundingDate "1965"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(101.69112 2.93527)"^^geo:wktLiteral ;
+        schema:addressLocality "Putrajaya" ;
+    ] ;
+    schema:url <https://www.dosm.gov.my/v1/> ;
+    schema:sameAs <http://isni.org/isni/0000000106741596> ;
+             .

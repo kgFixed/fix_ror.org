@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00r23cm16> 
+    a org:Organization ;
+    rdfs:label "Lesaffre (France)" ;
+    schema:name "Lesaffre (France)" ;
+    schema:foundingDate "1853"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Lesaffre> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(3.08333 50.66667)"^^geo:wktLiteral ;
+        schema:addressLocality "Marcq-en-Barœul" ;
+    ] ;
+    schema:url <https://gnosisbylesaffre.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q21467304> ;
+             .

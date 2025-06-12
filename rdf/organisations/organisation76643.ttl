@@ -1,0 +1,35 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/003xvvt95> 
+    a org:Organization ;
+    rdfs:label "Institute for German, European and International Medical Law, Public Health Law and Bioethics" ;
+    schema:name "Institute for German, European and International Medical Law, Public Health Law and Bioethics" ;
+    schema:foundingDate "1998"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/038t36y30> ;
+        rdfs:label "Heidelberg University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/031bsb921> ;
+        rdfs:label "University of Mannheim" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(8.46694 49.4891)"^^geo:wktLiteral ;
+        schema:addressLocality "Mannheim" ;
+    ] ;
+    schema:url <http://www.imgb.de/> ;
+    schema:sameAs <http://isni.org/isni/000000012228994X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q77077502> ;
+             .

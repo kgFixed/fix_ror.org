@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02f1mqt91> 
+    a org:Organization ;
+    rdfs:label "Deutsches Historisches Institut Paris" ;
+    schema:name "Deutsches Historisches Institut Paris" ;
+    schema:foundingDate "1958"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/German_Historical_Institute_Paris> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02esxtn62> ;
+        rdfs:label "Max Weber Stiftung - Deutsche Geisteswissenschaftliche Institute im Ausland" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.3488 48.85341)"^^geo:wktLiteral ;
+        schema:addressLocality "Paris" ;
+    ] ;
+    schema:url <http://www.dhi-paris.fr/> ;
+    schema:sameAs <http://isni.org/isni/0000000121670634> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q836312> ;
+             .

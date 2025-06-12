@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02a8bt934> 
+    a org:Organization ;
+    rdfs:label "Peter MacCallum Cancer Centre" ;
+    schema:name "Peter MacCallum Cancer Centre" ;
+    schema:foundingDate "1949"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Peter_MacCallum_Cancer_Centre> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(144.96332 -37.814)"^^geo:wktLiteral ;
+        schema:addressLocality "Melbourne" ;
+    ] ;
+    schema:url <http://www.petermac.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000403978434> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7175569> ;
+             .

@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03bqt8z64> 
+    a org:Organization ;
+    rdfs:label "National Institute of Technology" ;
+    schema:name "National Institute of Technology" ;
+    schema:foundingDate "1917"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/National_Institute_of_Technology_(Norway)> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(10.74609 59.91273)"^^geo:wktLiteral ;
+        schema:addressLocality "Oslo" ;
+    ] ;
+    schema:url <https://teknologisk.no/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q6973726> ;
+             .

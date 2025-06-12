@@ -1,0 +1,53 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00pjgxh97> 
+    a org:Organization ;
+    rdfs:label "Universitätsklinikum Tübingen" ;
+    schema:name "Universitätsklinikum Tübingen" ;
+    schema:foundingDate "1805"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01bavmk12> ;
+        rdfs:label "Poliklinik für Zahnärztliche Prothetik mit Propädeutik" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03esvmb28> ;
+        rdfs:label "University Children's Hospital Tübingen" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02veq1j93> ;
+        rdfs:label "Universitäts Frauenklinik" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03a1kwz48> ;
+        rdfs:label "University of Tübingen" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05a27za87> ;
+        rdfs:label "ERN-RND" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(9.05222 48.52266)"^^geo:wktLiteral ;
+        schema:addressLocality "Tübingen" ;
+    ] ;
+    schema:url <https://www.medizin.uni-tuebingen.de/en/Homepage.html> ;
+    schema:sameAs <http://isni.org/isni/0000000101968249> ;
+             .

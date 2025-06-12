@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04djymq25> 
+    a org:Organization ;
+    rdfs:label "Kamioka Observatory" ;
+    schema:name "Kamioka Observatory" ;
+    schema:foundingDate "1983"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Kamioka_Observatory> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/033tx3651> ;
+        rdfs:label "KAGRA" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(137.17323 36.24483)"^^geo:wktLiteral ;
+        schema:addressLocality "Hida" ;
+    ] ;
+    schema:url <https://www-sk.icrr.u-tokyo.ac.jp> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q363047> ;
+             .

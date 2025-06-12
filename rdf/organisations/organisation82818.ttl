@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02v09qm69> 
+    a org:Organization ;
+    rdfs:label "Jackson State Community College" ;
+    schema:name "Jackson State Community College" ;
+    schema:foundingDate "1965"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Jackson_State_Community_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-88.81395 35.61452)"^^geo:wktLiteral ;
+        schema:addressLocality "Jackson" ;
+    ] ;
+    schema:url <http://www.jscc.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000102199824> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6117378> ;
+             .

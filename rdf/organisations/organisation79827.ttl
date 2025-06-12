@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01mc04w21> 
+    a org:Organization ;
+    rdfs:label "Fujian Business University" ;
+    schema:name "Fujian Business University" ;
+    schema:foundingDate "1949"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(119.30611 26.06139)"^^geo:wktLiteral ;
+        schema:addressLocality "Fuzhou" ;
+    ] ;
+    schema:url <http://www.fjcc.edu.cn/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q48900250> ;
+             .

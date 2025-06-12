@@ -1,0 +1,102 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05fk5tr28> 
+    a org:Organization ;
+    rdfs:label "Federal Reserve" ;
+    schema:name "Federal Reserve" ;
+    schema:foundingDate "1913"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Federal_Reserve> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05qg1tz58> ;
+        rdfs:label "Federal Reserve Bank of Atlanta" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01djrhs97> ;
+        rdfs:label "Federal Reserve Bank of Boston" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03n7scr80> ;
+        rdfs:label "Federal Reserve Bank of Chicago" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01wxdvj03> ;
+        rdfs:label "Federal Reserve Bank of Cleveland" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05ks2fq79> ;
+        rdfs:label "Federal Reserve Bank of Dallas" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/015h21b91> ;
+        rdfs:label "Federal Reserve Bank of Kansas City" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0380n5h16> ;
+        rdfs:label "Federal Reserve Bank of Minneapolis" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05hwvzg47> ;
+        rdfs:label "Federal Reserve Bank of New York" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02gsb6172> ;
+        rdfs:label "Federal Reserve Bank of Philadelphia" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/058pmah25> ;
+        rdfs:label "Federal Reserve Bank of Richmond" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05p5xsx92> ;
+        rdfs:label "Federal Reserve Bank of San Francisco" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02skhjj30> ;
+        rdfs:label "Federal Reserve Bank of St. Louis" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00v448643> ;
+        rdfs:label "Federal Reserve Board of Governors" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.03637 38.89511)"^^geo:wktLiteral ;
+        schema:addressLocality "Washington" ;
+    ] ;
+    schema:url <https://www.federalreserve.gov/> ;
+    schema:sameAs <http://isni.org/isni/0000000404787576> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q53536> ;
+             .

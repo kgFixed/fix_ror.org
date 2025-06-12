@@ -1,0 +1,84 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03w2xw870> 
+    a org:Organization ;
+    rdfs:label "Saolta University Health Care Group" ;
+    schema:name "Saolta University Health Care Group" ;
+    schema:foundingDate "2013"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/West_/_North_West_Hospitals_Group> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04s2yen12> ;
+        rdfs:label "Letterkenny University Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02z8t9146> ;
+        rdfs:label "Mayo General Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00c9syb98> ;
+        rdfs:label "Merlin Park University Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/045exnh37> ;
+        rdfs:label "Portiuncula Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04hh2kn75> ;
+        rdfs:label "Roscommon University Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03ke5zk82> ;
+        rdfs:label "Sligo University Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04scgfz75> ;
+        rdfs:label "University Hospital Galway" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/007pvy114> ;
+        rdfs:label "University Hospital Waterford" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04zke5364> ;
+        rdfs:label "Health Service Executive" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03bea9k73> ;
+        rdfs:label "Ollscoil na Gaillimhe – University of Galway" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-9.05095 53.27245)"^^geo:wktLiteral ;
+        schema:addressLocality "Galway" ;
+    ] ;
+    schema:url <https://www.hse.ie/eng/services/yourhealthservice/access/AccessOfficers/wnwhg.html> ;
+    schema:sameAs <http://isni.org/isni/0000000404107403> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q17089713> ;
+             .

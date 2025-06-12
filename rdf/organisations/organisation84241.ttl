@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0569s5x60> 
+    a org:Organization ;
+    rdfs:label "China Women's University" ;
+    schema:name "China Women's University" ;
+    schema:foundingDate "1949"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/China_Women's_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(116.39723 39.9075)"^^geo:wktLiteral ;
+        schema:addressLocality "Beijing" ;
+    ] ;
+    schema:url <http://www.cwu.edu.cn/> ;
+    schema:sameAs <http://isni.org/isni/0000000406052493> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4569544> ;
+             .

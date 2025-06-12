@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0075t0c68> 
+    a org:Organization ;
+    rdfs:label "Wienerberger (Austria)" ;
+    schema:name "Wienerberger (Austria)" ;
+    schema:foundingDate "1819"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Wienerberger> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03ha1m790> ;
+        rdfs:label "Wienerberger (Czechia)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01x9cep12> ;
+        rdfs:label "Wienerberger (Norway)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(16.37208 48.20849)"^^geo:wktLiteral ;
+        schema:addressLocality "Vienna" ;
+    ] ;
+    schema:url <https://www.wienerberger.at/> ;
+    schema:sameAs <http://isni.org/isni/0000000446738764> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q586665> ;
+             .

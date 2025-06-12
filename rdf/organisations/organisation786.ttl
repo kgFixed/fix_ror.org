@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/038nb9c73> 
+    a org:Organization ;
+    rdfs:label "Olivet Nazarene University" ;
+    schema:name "Olivet Nazarene University" ;
+    schema:foundingDate "1907"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Olivet_Nazarene_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-87.88754 41.15376)"^^geo:wktLiteral ;
+        schema:addressLocality "Bourbonnais" ;
+    ] ;
+    schema:url <http://www.olivet.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000098248944> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7088000> ;
+             .

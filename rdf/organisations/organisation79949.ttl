@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00v5sgn53> 
+    a org:Organization ;
+    rdfs:label "LDK Solar (China)" ;
+    schema:name "LDK Solar (China)" ;
+    schema:foundingDate "2005"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/LDK_Solar_Co> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(114.84591 27.83906)"^^geo:wktLiteral ;
+        schema:addressLocality "xinyu shi" ;
+    ] ;
+    schema:url <http://www.saiweisolar.com/index.html> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q1055434> ;
+             .

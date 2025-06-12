@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02c8cxy67> 
+    a org:Organization ;
+    rdfs:label "Donbas National Academy of Civil Engineering and Architecture - Kramatorsk" ;
+    schema:name "Donbas National Academy of Civil Engineering and Architecture - Kramatorsk" ;
+    schema:foundingDate "1972"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Donbas_National_Academy_of_Civil_Engineering_and_Architecture> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(37.58793 48.73049)"^^geo:wktLiteral ;
+        schema:addressLocality "Kramatorsk" ;
+    ] ;
+    schema:url <https://donnaba.edu.ua/> ;
+    schema:sameAs <http://isni.org/isni/0000000460910014> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4166082> ;
+             .

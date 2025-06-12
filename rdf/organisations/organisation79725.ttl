@@ -1,0 +1,33 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02mkj1868> 
+    a org:Organization ;
+    rdfs:label "New Hampshire Space Grant Consortium" ;
+    schema:name "New Hampshire Space Grant Consortium" ;
+    schema:foundingDate "1991"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Other" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/027ka1x80> ;
+        rdfs:label "National Aeronautics and Space Administration" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01rmh9n78> ;
+        rdfs:label "University of New Hampshire" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-70.92645 43.13397)"^^geo:wktLiteral ;
+        schema:addressLocality "Durham" ;
+    ] ;
+    schema:url <https://www.nhsgc.unh.edu/> ;
+     .

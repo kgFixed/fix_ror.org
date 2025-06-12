@@ -1,0 +1,33 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03ww91346> 
+    a org:Organization ;
+    rdfs:label "Institute of Water Problems of the North Karelian Research Centre" ;
+    schema:name "Institute of Water Problems of the North Karelian Research Centre" ;
+    schema:foundingDate "1946"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0554h7e84> ;
+        rdfs:label "Department of Earth Sciences" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/016rf4127> ;
+        rdfs:label "Institute of Applied Mathematical Research of the Karelian Research Centre of the Russian Academy of Sciences" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(34.34691 61.78491)"^^geo:wktLiteral ;
+        schema:addressLocality "Petrozavodsk" ;
+    ] ;
+    schema:url <http://water.krc.karelia.ru/index.php?plang=e> ;
+     .

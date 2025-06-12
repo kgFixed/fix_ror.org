@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04p25v506> 
+    a org:Organization ;
+    rdfs:label "Montshire Museum of Science" ;
+    schema:name "Montshire Museum of Science" ;
+    schema:foundingDate "1974"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Montshire_Museum_of_Science> ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-104.90136 40.47748)"^^geo:wktLiteral ;
+        schema:addressLocality "Windsor" ;
+    ] ;
+    schema:url <http://www.montshire.org/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q6906616> ;
+             .

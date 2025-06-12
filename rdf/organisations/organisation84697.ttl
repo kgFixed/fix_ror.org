@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/003eaqr04> 
+    a org:Organization ;
+    rdfs:label "Technological University of the Mixteca" ;
+    schema:name "Technological University of the Mixteca" ;
+    schema:foundingDate "1991"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Technological_University_of_the_Mixteca> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-97.77956 17.80787)"^^geo:wktLiteral ;
+        schema:addressLocality "Ciudad de Huajuapan de León" ;
+    ] ;
+    schema:url <http://www.utm.mx/> ;
+    schema:sameAs <http://isni.org/isni/0000000093482475> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7692511> ;
+             .

@@ -1,0 +1,26 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0494d5694> 
+    a org:Organization ;
+    rdfs:label "Neurologisches Rehabilitationszentrum Quellenhof Bad Wildbad" ;
+    schema:name "Neurologisches Rehabilitationszentrum Quellenhof Bad Wildbad" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01b4gqk18> ;
+        rdfs:label "Sana Klinikum" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(8.5504 48.75071)"^^geo:wktLiteral ;
+        schema:addressLocality "Bad Wildbad" ;
+    ] ;
+    schema:url <https://www.sana.de/quellenhof-wildbad> ;
+     .

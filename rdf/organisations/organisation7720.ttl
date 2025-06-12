@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02naadr48> 
+    a org:Organization ;
+    rdfs:label "Pearson (United States)" ;
+    schema:name "Pearson (United States)" ;
+    schema:foundingDate "1998"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Pearson_Education> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01480s295> ;
+        rdfs:label "Pearson (United Kingdom)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-74.00597 40.71427)"^^geo:wktLiteral ;
+        schema:addressLocality "New York" ;
+    ] ;
+    schema:url <http://www.pearsoned.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000103085052> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6420723> ;
+             .

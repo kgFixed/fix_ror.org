@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02n94hw85> 
+    a org:Organization ;
+    rdfs:label "Institute for Enterprise Systems" ;
+    schema:name "Institute for Enterprise Systems" ;
+    schema:foundingDate "2011"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Other" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/031bsb921> ;
+        rdfs:label "University of Mannheim" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(8.46694 49.4891)"^^geo:wktLiteral ;
+        schema:addressLocality "Mannheim" ;
+    ] ;
+    schema:url <http://www.institute-for-enterprise-systems.de> ;
+     .

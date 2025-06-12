@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04wcs7k46> 
+    a org:Organization ;
+    rdfs:label "Proof & Experimental Establishment" ;
+    schema:name "Proof & Experimental Establishment" ;
+    schema:foundingDate "1895"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Proof_and_Experimental_Establishment> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05k37v296> ;
+        rdfs:label "Defence Research and Development Organisation" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(86.93348 21.49266)"^^geo:wktLiteral ;
+        schema:addressLocality "Balasore" ;
+    ] ;
+    schema:url <https://www.drdo.gov.in/labs-and-establishments/proof-experimental-establishment-pxe> ;
+    schema:sameAs <http://isni.org/isni/0000000417707467> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7249995> ;
+             .

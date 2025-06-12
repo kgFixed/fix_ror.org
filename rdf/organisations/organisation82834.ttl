@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0498w0n61> 
+    a org:Organization ;
+    rdfs:label "Nestlé (Brazil)" ;
+    schema:name "Nestlé (Brazil)" ;
+    schema:foundingDate "1866"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Nestl%C3%A9> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01v5xwf23> ;
+        rdfs:label "Nestlé (Switzerland)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-46.63611 -23.5475)"^^geo:wktLiteral ;
+        schema:addressLocality "São Paulo" ;
+    ] ;
+    schema:url <https://corporativo.nestle.com.br/> ;
+    schema:sameAs <http://isni.org/isni/0000000405095598> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q61931221> ;
+             .

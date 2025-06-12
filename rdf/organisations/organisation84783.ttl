@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04ejdtr48> 
+    a org:Organization ;
+    rdfs:label "Institute of Bioorganic Chemistry, Polish Academy of Sciences" ;
+    schema:name "Institute of Bioorganic Chemistry, Polish Academy of Sciences" ;
+    schema:foundingDate "1969"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/025cj6e44> ;
+        rdfs:label "Poznan Supercomputing and Networking Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01dr6c206> ;
+        rdfs:label "Polish Academy of Sciences" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(16.92993 52.40692)"^^geo:wktLiteral ;
+        schema:addressLocality "Poznan" ;
+    ] ;
+    schema:url <https://www.ibch.poznan.pl/en.html> ;
+    schema:sameAs <http://isni.org/isni/0000000406312857> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q11712976> ;
+             .
