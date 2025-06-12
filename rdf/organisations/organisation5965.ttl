@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02afjh072> 
+    a org:Organization ;
+    rdfs:label "Fraunhofer Institute for Applied Optics and Precision Engineering" ;
+    schema:name "Fraunhofer Institute for Applied Optics and Precision Engineering" ;
+    schema:foundingDate "1992"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Fraunhofer_Institute_for_Applied_Optics_and_Precision_Engineering> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05hkkdn48> ;
+        rdfs:label "Fraunhofer Society" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(11.5899 50.92878)"^^geo:wktLiteral ;
+        schema:addressLocality "Jena" ;
+    ] ;
+    schema:url <http://www.iof.fraunhofer.de/en.html> ;
+    schema:sameAs <http://isni.org/isni/0000000088492898> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1451992> ;
+             .

@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00x4qp065> 
+    a org:Organization ;
+    rdfs:label "He University" ;
+    schema:name "He University" ;
+    schema:foundingDate "1999"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04fnhr972> ;
+        rdfs:label "He Eye Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(123.43278 41.79222)"^^geo:wktLiteral ;
+        schema:addressLocality "Shenyang" ;
+    ] ;
+    schema:url <http://en.he-edu.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000417779081> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q43896398> ;
+             .

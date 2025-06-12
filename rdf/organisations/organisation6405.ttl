@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04xgb0s62> 
+    a org:Organization ;
+    rdfs:label "Elms College" ;
+    schema:name "Elms College" ;
+    schema:foundingDate "1928"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Elms_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-72.60787 42.1487)"^^geo:wktLiteral ;
+        schema:addressLocality "Chicopee" ;
+    ] ;
+    schema:url <http://www.elms.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000088673939> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5366900> ;
+             .

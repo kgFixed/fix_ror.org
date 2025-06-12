@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05cb6kb05> 
+    a org:Organization ;
+    rdfs:label "Penn Highlands DuBois" ;
+    schema:name "Penn Highlands DuBois" ;
+    schema:foundingDate "1898"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/018dcfg43> ;
+        rdfs:label "Penn Highlands Healthcare" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-78.76003 41.11923)"^^geo:wktLiteral ;
+        schema:addressLocality "DuBois" ;
+    ] ;
+    schema:url <https://www.phhealthcare.org/location/hospital/penn-highlands-dubois-3> ;
+    schema:sameAs <http://isni.org/isni/0000000403970256> ;
+             .

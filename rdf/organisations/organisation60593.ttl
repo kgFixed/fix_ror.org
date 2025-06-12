@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/003y38f74> 
+    a org:Organization ;
+    rdfs:label "National Recreation and Park Association" ;
+    schema:name "National Recreation and Park Association" ;
+    schema:foundingDate "1965"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/National_Recreation_and_Park_Association> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.48749 39.04372)"^^geo:wktLiteral ;
+        schema:addressLocality "Ashburn" ;
+    ] ;
+    schema:url <http://www.nrpa.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000110906998> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6975223> ;
+             .

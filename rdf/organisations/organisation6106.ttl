@@ -1,0 +1,163 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0157vkf66> 
+    a org:Organization ;
+    rdfs:label "Rajiv Gandhi University of Health Sciences" ;
+    schema:name "Rajiv Gandhi University of Health Sciences" ;
+    schema:foundingDate "1996"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Rajiv_Gandhi_University_of_Health_Sciences> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05qmk4a18> ;
+        rdfs:label "Bangalore Medical College and Research Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/028qd3f30> ;
+        rdfs:label "Government Dental College & Research Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02q5yp463> ;
+        rdfs:label "KVG Medical College & Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04wnsdv29> ;
+        rdfs:label "Mandya Institute of Medical Sciences" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00h7p4v21> ;
+        rdfs:label "Sri Jayadeva Institute of Cardiovascular Sciences and Research" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/040eytj64> ;
+        rdfs:label "St.Martha's College Of Nursing" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04601vy80> ;
+        rdfs:label "Al-Ameen College of Pharmacy" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01ng2wp34> ;
+        rdfs:label "D A Pandu Memorial RV Dental College and Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03yvf9v84> ;
+        rdfs:label "Father Muller Homoeopathic Medical College" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04t41ec74> ;
+        rdfs:label "Father Muller Medical College Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03d6dzy78> ;
+        rdfs:label "Karnataka Institute of Medical Sciences" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04pcmf738> ;
+        rdfs:label "Kempegowda Institute of Medical Sciences" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/007r4ws88> ;
+        rdfs:label "Krishnadevaraya College of Dental Sciences and Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04x5ap794> ;
+        rdfs:label "M. S. Ramaiah Dental College and Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03v08em34> ;
+        rdfs:label "Maaruti College of Dental sciences & Research Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03yz7v531> ;
+        rdfs:label "Mysore Medical College" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/022d03y10> ;
+        rdfs:label "P.M.N.M. Dental College and Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00gn6h668> ;
+        rdfs:label "Rajarajeswari Medical College and Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02qwr8r69> ;
+        rdfs:label "S Nijalingappa Medical College and HSK Hospital & Research Centre" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05x8s5x77> ;
+        rdfs:label "Shamnur Shivashankarappa Institute of Medical Sciences & Research Centre" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/041w2qd15> ;
+        rdfs:label "Sri Rajiv Gandhi College of Dental Sciences and Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04z7fc725> ;
+        rdfs:label "St.John's Medical College Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02y9ayd76> ;
+        rdfs:label "Vokkaligara Sangha Dental College & Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(77.59369 12.97194)"^^geo:wktLiteral ;
+        schema:addressLocality "Bengaluru" ;
+    ] ;
+    schema:url <http://www.rguhs.ac.in/> ;
+    schema:sameAs <http://isni.org/isni/0000000417943160> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2508394> ;
+             .

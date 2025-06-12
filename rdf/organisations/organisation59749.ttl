@@ -1,0 +1,33 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00fzxtk71> 
+    a org:Organization ;
+    rdfs:label "Joint Laboratory for Extreme Conditions Matter Properties" ;
+    schema:name "Joint Laboratory for Extreme Conditions Matter Properties" ;
+    schema:foundingDate "2006"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/039vqpp67> ;
+        rdfs:label "China Academy of Engineering Physics" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04d996474> ;
+        rdfs:label "Southwest University of Science and Technology" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(104.68168 31.46784)"^^geo:wktLiteral ;
+        schema:addressLocality "Mianyang" ;
+    ] ;
+    schema:url <http://www.jd.swust.edu.cn/> ;
+     .

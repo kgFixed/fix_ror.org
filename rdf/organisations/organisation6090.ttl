@@ -1,0 +1,50 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/038e2g226> 
+    a org:Organization ;
+    rdfs:label "Fujitsu (Japan)" ;
+    schema:name "Fujitsu (Japan)" ;
+    schema:foundingDate "1935"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Fujitsu> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04max0939> ;
+        rdfs:label "Fujitsu (Germany)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03w6bzp59> ;
+        rdfs:label "Fujitsu (Sweden)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/053ny5136> ;
+        rdfs:label "Fujitsu (United Kingdom)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0073whr05> ;
+        rdfs:label "Fujitsu (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(135.1501 34.2152)"^^geo:wktLiteral ;
+        schema:addressLocality "Minato" ;
+    ] ;
+    schema:url <http://www.fujitsu.com/jp/> ;
+    schema:sameAs <http://isni.org/isni/0000000417894688> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q186394> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q39664267> ;
+             .

@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/054ey2125> 
+    a org:Organization ;
+    rdfs:label "Behandlungszentrum Aschau" ;
+    schema:name "Behandlungszentrum Aschau" ;
+    schema:foundingDate "1917"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(12.32297 47.77689)"^^geo:wktLiteral ;
+        schema:addressLocality "Aschau im Chiemgau" ;
+    ] ;
+    schema:url <http://www.bz-aschau.de/> ;
+    schema:sameAs <http://isni.org/isni/0000000405578880> ;
+             .

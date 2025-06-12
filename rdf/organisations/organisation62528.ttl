@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01v2qkv12> 
+    a org:Organization ;
+    rdfs:label "NEA Baptist Memorial Hospital" ;
+    schema:name "NEA Baptist Memorial Hospital" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-90.70428 35.8423)"^^geo:wktLiteral ;
+        schema:addressLocality "Jonesboro" ;
+    ] ;
+    schema:url <https://www.baptistonline.org/locations/nea> ;
+    schema:sameAs <http://isni.org/isni/0000000405000165> ;
+             .

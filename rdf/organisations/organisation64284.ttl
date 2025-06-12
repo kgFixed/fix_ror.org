@@ -1,0 +1,20 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05y9nr091> 
+    a org:Organization ;
+    rdfs:label "Arts OutWest" ;
+    schema:name "Arts OutWest" ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(149.5806 -33.41665)"^^geo:wktLiteral ;
+        schema:addressLocality "Bathurst" ;
+    ] ;
+    schema:url <http://artsoutwest.org.au/> ;
+     .

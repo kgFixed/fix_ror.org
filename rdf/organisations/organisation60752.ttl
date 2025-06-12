@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00vc9tk32> 
+    a org:Organization ;
+    rdfs:label "Inuit Circumpolar Council" ;
+    schema:name "Inuit Circumpolar Council" ;
+    schema:foundingDate "1977"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Inuit_Circumpolar_Council> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-149.90028 61.21806)"^^geo:wktLiteral ;
+        schema:addressLocality "Anchorage" ;
+    ] ;
+    schema:url <http://iccalaska.org/> ;
+     .

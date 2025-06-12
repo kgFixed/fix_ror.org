@@ -1,0 +1,41 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02zmk8084> 
+    a org:Organization ;
+    rdfs:label "John von Neumann Institute for Computing" ;
+    schema:name "John von Neumann Institute for Computing" ;
+    schema:foundingDate "1997"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01js2sh04> ;
+        rdfs:label "Deutsches Elektronen-Synchrotron DESY" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02nv7yv05> ;
+        rdfs:label "Forschungszentrum Jülich" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02k8cbn47> ;
+        rdfs:label "GSI Helmholtz Centre for Heavy Ion Research" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(6.36267 50.92149)"^^geo:wktLiteral ;
+        schema:addressLocality "Jülich" ;
+    ] ;
+    schema:url <http://www.john-von-neumann-institut.de/nic/EN/Home/home_node.html> ;
+    schema:sameAs <http://isni.org/isni/0000000122172039> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q47525056> ;
+             .

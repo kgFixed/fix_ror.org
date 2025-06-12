@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0593p4448> 
+    a org:Organization ;
+    rdfs:label "International Rice Research Institute" ;
+    schema:name "International Rice Research Institute" ;
+    schema:foundingDate "1960"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/International_Rice_Research_Institute> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04c4bm785> ;
+        rdfs:label "CGIAR" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(121.24181 14.17025)"^^geo:wktLiteral ;
+        schema:addressLocality "Los Baños" ;
+    ] ;
+    schema:url <http://irri.org/> ;
+    schema:sameAs <http://isni.org/isni/000000010729330X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1204921> ;
+             .

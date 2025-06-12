@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05ma4gw77> 
+    a org:Organization ;
+    rdfs:label "University of the Pacific" ;
+    schema:name "University of the Pacific" ;
+    schema:foundingDate "1851"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/University_of_the_Pacific_(United_States)> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02ha38c24> ;
+        rdfs:label "San Joaquin General Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-121.29078 37.9577)"^^geo:wktLiteral ;
+        schema:addressLocality "Stockton" ;
+    ] ;
+    schema:url <http://www.pacific.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000121527491> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q630226> ;
+             .

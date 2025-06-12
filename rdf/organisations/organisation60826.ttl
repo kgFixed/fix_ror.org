@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/051r8dh72> 
+    a org:Organization ;
+    rdfs:label "Nano3D Biosciences (United States)" ;
+    schema:name "Nano3D Biosciences (United States)" ;
+    schema:foundingDate "2008"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-95.36327 29.76328)"^^geo:wktLiteral ;
+        schema:addressLocality "Houston" ;
+    ] ;
+    schema:url <http://www.n3dbio.com/> ;
+     .

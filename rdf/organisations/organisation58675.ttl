@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/034bznj45> 
+    a org:Organization ;
+    rdfs:label "Fresenius Kabi (Czechia)" ;
+    schema:name "Fresenius Kabi (Czechia)" ;
+    schema:foundingDate "1999"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01v376g59> ;
+        rdfs:label "Fresenius (Germany)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(14.42076 50.08804)"^^geo:wktLiteral ;
+        schema:addressLocality "Prague" ;
+    ] ;
+    schema:url <http://www.fresenius-kabi.cz/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q41567093> ;
+             .

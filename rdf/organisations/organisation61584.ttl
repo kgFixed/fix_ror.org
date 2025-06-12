@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05jrvwk92> 
+    a org:Organization ;
+    rdfs:label "Clínica e Instituto de Oftalmologia Ivo Corrêa Meyer" ;
+    schema:name "Clínica e Instituto de Oftalmologia Ivo Corrêa Meyer" ;
+    schema:foundingDate "1930"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-51.23019 -30.03283)"^^geo:wktLiteral ;
+        schema:addressLocality "Porto Alegre" ;
+    ] ;
+    schema:url <http://www.cursoicm.com.br/home/> ;
+     .

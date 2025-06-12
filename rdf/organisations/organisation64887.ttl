@@ -1,0 +1,20 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00st8mg19> 
+    a org:Organization ;
+    rdfs:label "L'organizzazione Ospedale di Civitanova M" ;
+    schema:name "L'organizzazione Ospedale di Civitanova M" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(13.72068 43.30491)"^^geo:wktLiteral ;
+        schema:addressLocality "Civitanova Marche" ;
+    ] ;
+    schema:url <http://www.asurzona8.marche.it/viewdoc.asp?CO_ID=14248> ;
+     .

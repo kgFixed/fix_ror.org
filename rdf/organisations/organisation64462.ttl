@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03x3mrm69> 
+    a org:Organization ;
+    rdfs:label "Yo quiero Yo puedo" ;
+    schema:name "Yo quiero Yo puedo" ;
+    schema:foundingDate "1985"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Mexican_Institute_for_Family_and_Population_Research> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-99.15766 19.3984)"^^geo:wktLiteral ;
+        schema:addressLocality "Benito Juarez" ;
+    ] ;
+    schema:url <https://yoquieroyopuedo.org.mx/> ;
+     .

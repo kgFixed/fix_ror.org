@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00qzn0672> 
+    a org:Organization ;
+    rdfs:label "Egis Pharmaceuticals (Hungary)" ;
+    schema:name "Egis Pharmaceuticals (Hungary)" ;
+    schema:foundingDate "1991"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(19.04045 47.49835)"^^geo:wktLiteral ;
+        schema:addressLocality "Budapest" ;
+    ] ;
+    schema:url <http://www.egis.hu/wps/portal/egisEN/index/!ut/p/z1/04_Sj9CPykssy0xPLMnMz0vMAfIjo8ziLQJ8zAyNnA18DELdzA0cXQ2CDR1Dw4zdg030wwkpiAJKG-AAjgZA_VGElBTkRhikOyoqAgAW7sjF/dz/d5/L2dBISEvZ0FBIS9nQSEh/> ;
+    schema:sameAs <http://isni.org/isni/0000000406216283> ;
+             .

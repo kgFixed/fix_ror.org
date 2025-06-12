@@ -1,0 +1,60 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04j5wtv36> 
+    a org:Organization ;
+    rdfs:label "Directorate-General Joint Research Centre" ;
+    schema:name "Directorate-General Joint Research Centre" ;
+    schema:foundingDate "1961"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Joint_Research_Centre> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05a4nj078> ;
+        rdfs:label "Joint Research Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02ef88m96> ;
+        rdfs:label "Joint Research Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02qezmz13> ;
+        rdfs:label "Joint Research Centre" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05wzskb47> ;
+        rdfs:label "Joint Research Centre" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02ptz5951> ;
+        rdfs:label "Joint Research Centre" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00k4n6c32> ;
+        rdfs:label "European Commission" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(4.34878 50.85045)"^^geo:wktLiteral ;
+        schema:addressLocality "Brussels" ;
+    ] ;
+    schema:url <https://ec.europa.eu/info/departments/joint-research-centre_en> ;
+    schema:sameAs <http://isni.org/isni/000000040635247X> ;
+             .

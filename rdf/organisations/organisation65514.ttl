@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02pvf2m42> 
+    a org:Organization ;
+    rdfs:label "Progressive Technology (China)" ;
+    schema:name "Progressive Technology (China)" ;
+    schema:foundingDate "1996"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(113.97157 22.39175)"^^geo:wktLiteral ;
+        schema:addressLocality "Tuen Mun" ;
+    ] ;
+    schema:url <http://www.progtech.com.hk/index2.html> ;
+     .

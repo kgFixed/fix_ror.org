@@ -1,0 +1,49 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00j83wy46> 
+    a org:Organization ;
+    rdfs:label "Monsanto (United States)" ;
+    schema:name "Monsanto (United States)" ;
+    schema:foundingDate "1901"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Monsanto> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/003js0r95> ;
+        rdfs:label "Monsanto (Brazil)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02q2m1930> ;
+        rdfs:label "Monsanto (Canada)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01qzva589> ;
+        rdfs:label "Monsanto (India)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04yyrj242> ;
+        rdfs:label "Monsanto (United Kingdom)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-90.42262 38.66089)"^^geo:wktLiteral ;
+        schema:addressLocality "Creve Coeur" ;
+    ] ;
+    schema:url <http://www.monsanto.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000404668542> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q207983> ;
+             .

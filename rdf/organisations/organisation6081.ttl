@@ -1,0 +1,91 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02d6ew870> 
+    a org:Organization ;
+    rdfs:label "Baxter (United States)" ;
+    schema:name "Baxter (United States)" ;
+    schema:foundingDate "1931"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Baxter_International> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/054bf3454> ;
+        rdfs:label "Baxter (Australia)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/013xmn143> ;
+        rdfs:label "Baxter (Austria)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/040dw4657> ;
+        rdfs:label "Baxter (Belgium)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02a9kts05> ;
+        rdfs:label "Baxter (Colombia)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01mgtdr23> ;
+        rdfs:label "Baxter (France)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05jgtkc28> ;
+        rdfs:label "Baxter (Germany)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02kf9ya90> ;
+        rdfs:label "Baxter (Italy)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05d088546> ;
+        rdfs:label "Baxter (Netherlands)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00y1hj465> ;
+        rdfs:label "Baxter (South Korea)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05mw5ed57> ;
+        rdfs:label "Baxter (Sweden)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/052wab383> ;
+        rdfs:label "Baxter (Switzerland)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-87.84451 42.17114)"^^geo:wktLiteral ;
+        schema:addressLocality "Deerfield" ;
+    ] ;
+    schema:url <http://www.baxter.com/index.page> ;
+    schema:sameAs <http://isni.org/isni/0000000102961954> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q761965> ;
+             .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/012n4jm27> 
+    a org:Organization ;
+    rdfs:label "State Technical College of Missouri" ;
+    schema:name "State Technical College of Missouri" ;
+    schema:foundingDate "1961"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/State_Technical_College_of_Missouri> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-91.85045 38.48587)"^^geo:wktLiteral ;
+        schema:addressLocality "Linn" ;
+    ] ;
+    schema:url <https://www.statetechmo.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000099028214> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q43895381> ;
+             .

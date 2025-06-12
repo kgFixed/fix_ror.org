@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02kc8gm46> 
+    a org:Organization ;
+    rdfs:label "Brisbane Hand & Upper Limb Research Institute" ;
+    schema:name "Brisbane Hand & Upper Limb Research Institute" ;
+    schema:foundingDate "2010"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(153.02311 -27.46141)"^^geo:wktLiteral ;
+        schema:addressLocality "Spring Hill" ;
+    ] ;
+    schema:url <http://upperlimb.com/> ;
+     .

@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04dg4zc02> 
+    a org:Organization ;
+    rdfs:label "Gemeinschaftskrankenhaus Herdecke" ;
+    schema:name "Gemeinschaftskrankenhaus Herdecke" ;
+    schema:foundingDate "1969"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(7.43584 51.39999)"^^geo:wktLiteral ;
+        schema:addressLocality "Herdecke" ;
+    ] ;
+    schema:url <https://www.gemeinschaftskrankenhaus.de/> ;
+    schema:sameAs <http://isni.org/isni/000000009523829X> ;
+             .

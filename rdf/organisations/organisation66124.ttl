@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00dxjhh32> 
+    a org:Organization ;
+    rdfs:label "Agence Nationale pour l'Emploi" ;
+    schema:name "Agence Nationale pour l'Emploi" ;
+    schema:foundingDate "1967"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Agence_nationale_pour_l%27emploi> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(5.03586 43.83125)"^^geo:wktLiteral ;
+        schema:addressLocality "Cavaillon" ;
+    ] ;
+    schema:url <https://www.pole-emploi.fr/accueil/> ;
+     .

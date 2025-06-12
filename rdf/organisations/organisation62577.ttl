@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01xyh8d66> 
+    a org:Organization ;
+    rdfs:label "Magrabi Hospitals and Centers" ;
+    schema:name "Magrabi Hospitals and Centers" ;
+    schema:foundingDate "1955"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Magrabi_Hospitals_and_Centers> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(39.18624 21.49012)"^^geo:wktLiteral ;
+        schema:addressLocality "Jeddah" ;
+    ] ;
+    schema:url <https://www.magrabi.com.sa/> ;
+    schema:sameAs <http://isni.org/isni/0000000406082115> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6732425> ;
+             .

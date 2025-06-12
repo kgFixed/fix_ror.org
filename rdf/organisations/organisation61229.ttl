@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01jkda844> 
+    a org:Organization ;
+    rdfs:label "West Cancer Center" ;
+    schema:name "West Cancer Center" ;
+    schema:foundingDate "1979"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-89.81009 35.08676)"^^geo:wktLiteral ;
+        schema:addressLocality "Germantown" ;
+    ] ;
+    schema:url <https://www.westcancercenter.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000460132320> ;
+             .

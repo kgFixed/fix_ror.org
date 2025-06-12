@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/004542426> 
+    a org:Organization ;
+    rdfs:label "Ústav T. G. Masaryka" ;
+    schema:name "Ústav T. G. Masaryka" ;
+    schema:foundingDate "1932"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/053avzc18> ;
+        rdfs:label "Czech Academy of Sciences" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(14.42024 50.087)"^^geo:wktLiteral ;
+        schema:addressLocality "Old Town" ;
+    ] ;
+    schema:url <http://www.utgm.cz/> ;
+    schema:sameAs <http://isni.org/isni/0000000122254747> ;
+             .

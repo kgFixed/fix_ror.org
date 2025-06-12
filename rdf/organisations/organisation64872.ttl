@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01e5m5282> 
+    a org:Organization ;
+    rdfs:label "Swedish Orphan Biovitrum (United States)" ;
+    schema:name "Swedish Orphan Biovitrum (United States)" ;
+    schema:foundingDate "2001"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Swedish_Orphan_Biovitrum> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04asvbz37> ;
+        rdfs:label "Swedish Orphan Biovitrum (Sweden)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-71.23561 42.37649)"^^geo:wktLiteral ;
+        schema:addressLocality "Waltham" ;
+    ] ;
+    schema:url <https://www.sobi.com/en/taxonomy/term/19> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q50039819> ;
+             .

@@ -1,0 +1,20 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05bq6d892> 
+    a org:Organization ;
+    rdfs:label "Pamoja Tunaweza Women's Centre" ;
+    schema:name "Pamoja Tunaweza Women's Centre" ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(37.33333 -3.35)"^^geo:wktLiteral ;
+        schema:addressLocality "Moshi" ;
+    ] ;
+    schema:url <http://www.pamojatunaweza.com/> ;
+     .

@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/049gvsd25> 
+    a org:Organization ;
+    rdfs:label "Knorr-Bremse (Czechia)" ;
+    schema:name "Knorr-Bremse (Czechia)" ;
+    schema:foundingDate "1905"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Knorr-Bremse> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/010c9nr19> ;
+        rdfs:label "Knorr-Bremse (Germany)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(15.02683 50.79099)"^^geo:wktLiteral ;
+        schema:addressLocality "Stráž nad Nisou" ;
+    ] ;
+    schema:url <http://www.knorr-bremse.cz/cz/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q41567095> ;
+             .

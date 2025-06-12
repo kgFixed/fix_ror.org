@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02vf30q73> 
+    a org:Organization ;
+    rdfs:label "Ministry of Health" ;
+    schema:name "Ministry of Health" ;
+    schema:foundingDate "1921"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(106.88324 47.90771)"^^geo:wktLiteral ;
+        schema:addressLocality "Ulaanbaatar" ;
+    ] ;
+    schema:url <https://moh.gov.mn/> ;
+    schema:sameAs <http://isni.org/isni/0000000404742773> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q52842738> ;
+             .

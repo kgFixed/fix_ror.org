@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04yv75396> 
+    a org:Organization ;
+    rdfs:label "Univé (Netherlands)" ;
+    schema:name "Univé (Netherlands)" ;
+    schema:foundingDate "1794"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Univ%C3%A9> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(6.5625 52.99667)"^^geo:wktLiteral ;
+        schema:addressLocality "Assen" ;
+    ] ;
+    schema:url <https://www.unive.nl/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q2155541> ;
+             .

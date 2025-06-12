@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0416mbc73> 
+    a org:Organization ;
+    rdfs:label "College of Physicians of Philadelphia" ;
+    schema:name "College of Physicians of Philadelphia" ;
+    schema:foundingDate "1787"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/College_of_Physicians_of_Philadelphia> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-75.16362 39.95238)"^^geo:wktLiteral ;
+        schema:addressLocality "Philadelphia" ;
+    ] ;
+    schema:url <http://collegeofphysicians.org/> ;
+    schema:sameAs <http://isni.org/isni/000000010706788X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5146808> ;
+             .

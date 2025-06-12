@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/006gr2m12> 
+    a org:Organization ;
+    rdfs:label "Nederlandse Vereniging van Orthodontisten" ;
+    schema:name "Nederlandse Vereniging van Orthodontisten" ;
+    schema:foundingDate "1962"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(6.78472 52.4075)"^^geo:wktLiteral ;
+        schema:addressLocality "Tubbergen" ;
+    ] ;
+    schema:url <http://www.orthodontist.nl/vvo-actueel.php> ;
+    schema:sameAs <http://isni.org/isni/0000000404662394> ;
+             .

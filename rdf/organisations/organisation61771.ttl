@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04ssr4v64> 
+    a org:Organization ;
+    rdfs:label "Research Institute for Child Psychology and Pathopsychology" ;
+    schema:name "Research Institute for Child Psychology and Pathopsychology" ;
+    schema:foundingDate "1963"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(17.10674 48.14816)"^^geo:wktLiteral ;
+        schema:addressLocality "Bratislava" ;
+    ] ;
+    schema:url <http://www.vudpap.sk/> ;
+    schema:sameAs <http://isni.org/isni/0000000110894456> ;
+             .

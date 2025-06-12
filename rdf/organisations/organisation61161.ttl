@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04en0yf19> 
+    a org:Organization ;
+    rdfs:label "Rumah Sakit Umum Pusat Sanglah Denpasar" ;
+    schema:name "Rumah Sakit Umum Pusat Sanglah Denpasar" ;
+    schema:foundingDate "1956"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/035qsg823> ;
+        rdfs:label "Udayana University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(115.21667 -8.65)"^^geo:wktLiteral ;
+        schema:addressLocality "Denpasar" ;
+    ] ;
+    schema:url <http://sanglahhospitalbali.com/v2/> ;
+    schema:sameAs <http://isni.org/isni/0000000449057067> ;
+             .

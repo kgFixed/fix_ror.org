@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/034q4hd34> 
+    a org:Organization ;
+    rdfs:label "Sts. Mary & Elizabeth Hospital" ;
+    schema:name "Sts. Mary & Elizabeth Hospital" ;
+    schema:foundingDate "1874"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00f1vw968> ;
+        rdfs:label "KentuckyOne Health" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-85.75941 38.25424)"^^geo:wktLiteral ;
+        schema:addressLocality "Louisville" ;
+    ] ;
+    schema:url <http://www.kentuckyonehealth.org/st-mary-st-elizabeth-hospital> ;
+     .

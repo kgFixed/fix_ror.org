@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/000m4se28> 
+    a org:Organization ;
+    rdfs:label "Aerospace Research Institute" ;
+    schema:name "Aerospace Research Institute" ;
+    schema:foundingDate "1996"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Aerospace_Research_Institute> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(51.42151 35.69439)"^^geo:wktLiteral ;
+        schema:addressLocality "Tehran" ;
+    ] ;
+    schema:url <http://ari.ac.ir/index.php/en/> ;
+    schema:sameAs <http://isni.org/isni/0000000404943639> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5908453> ;
+             .

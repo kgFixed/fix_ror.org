@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03t5pkx69> 
+    a org:Organization ;
+    rdfs:label "Mateřská školka Sokolovská" ;
+    schema:name "Mateřská školka Sokolovská" ;
+    schema:foundingDate "1904"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(14.47457 50.10819)"^^geo:wktLiteral ;
+        schema:addressLocality "Libeň" ;
+    ] ;
+    schema:url <http://www.mssokolovska.cz/> ;
+     .

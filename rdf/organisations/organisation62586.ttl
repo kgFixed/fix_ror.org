@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03ecr5c85> 
+    a org:Organization ;
+    rdfs:label "Kaiser Permanente Burke Medical Center" ;
+    schema:name "Kaiser Permanente Burke Medical Center" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00t60zh31> ;
+        rdfs:label "Kaiser Permanente" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.27165 38.79345)"^^geo:wktLiteral ;
+        schema:addressLocality "Burke" ;
+    ] ;
+    schema:url <https://healthy.kaiserpermanente.org/maryland-virginia-washington-dc/facilities/Burke-Medical-Center-100423> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q50036748> ;
+             .

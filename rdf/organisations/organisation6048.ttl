@@ -1,0 +1,49 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05addee68> 
+    a org:Organization ;
+    rdfs:label "General Motors (United States)" ;
+    schema:name "General Motors (United States)" ;
+    schema:foundingDate "1908"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/General_Motors> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04vd6qx78> ;
+        rdfs:label "General Motors (Canada)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/018qep702> ;
+        rdfs:label "General Motors (Germany)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05g5nrw43> ;
+        rdfs:label "General Motors (India)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03n3nz506> ;
+        rdfs:label "General Motors (Poland)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-83.04575 42.33143)"^^geo:wktLiteral ;
+        schema:addressLocality "Detroit" ;
+    ] ;
+    schema:url <http://www.gm.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000403963355> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q81965> ;
+             .

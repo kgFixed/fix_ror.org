@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05x4n5887> 
+    a org:Organization ;
+    rdfs:label "Information Systems Audit and Control Association" ;
+    schema:name "Information Systems Audit and Control Association" ;
+    schema:foundingDate "1967"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/ISACA> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-88.01313 42.08419)"^^geo:wktLiteral ;
+        schema:addressLocality "Rolling Meadows" ;
+    ] ;
+    schema:url <http://www.isaca.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000115122519> ;
+             .

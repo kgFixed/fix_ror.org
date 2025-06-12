@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00jtgnb29> 
+    a org:Organization ;
+    rdfs:label "American Board of Internal Medicine" ;
+    schema:name "American Board of Internal Medicine" ;
+    schema:foundingDate "1936"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/American_Board_of_Internal_Medicine> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-75.16362 39.95238)"^^geo:wktLiteral ;
+        schema:addressLocality "Philadelphia" ;
+    ] ;
+    schema:url <http://www.abim.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000115269748> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4743204> ;
+             .

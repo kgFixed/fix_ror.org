@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05x8k4a38> 
+    a org:Organization ;
+    rdfs:label "Health Insurance Institute of Slovenia" ;
+    schema:name "Health Insurance Institute of Slovenia" ;
+    schema:foundingDate "1992"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Health_Insurance_Institute_of_Slovenia> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(14.50513 46.05108)"^^geo:wktLiteral ;
+        schema:addressLocality "Ljubljana" ;
+    ] ;
+    schema:url <http://www.zzzs.si/indexeng.html> ;
+    schema:sameAs <http://isni.org/isni/0000000106963295> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q16250847> ;
+             .

@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03x3mpp61> 
+    a org:Organization ;
+    rdfs:label "Indian Grassland and Fodder Research Institute" ;
+    schema:name "Indian Grassland and Fodder Research Institute" ;
+    schema:foundingDate "1962"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Indian_Grassland_and_Fodder_Research_Institute> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04fw54a43> ;
+        rdfs:label "Indian Council of Agricultural Research" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(78.57994 25.45887)"^^geo:wktLiteral ;
+        schema:addressLocality "Jhānsi" ;
+    ] ;
+    schema:url <http://www.igfri.res.in/> ;
+    schema:sameAs <http://isni.org/isni/000000010702138X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q18125946> ;
+             .

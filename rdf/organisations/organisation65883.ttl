@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/008s4ef43> 
+    a org:Organization ;
+    rdfs:label "European Federation of Agencies and Regions for Energy and Environment" ;
+    schema:name "European Federation of Agencies and Regions for Energy and Environment" ;
+    schema:foundingDate "1990"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/FEDARENE> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(4.34878 50.85045)"^^geo:wktLiteral ;
+        schema:addressLocality "Brussels" ;
+    ] ;
+    schema:url <http://www.fedarene.org/> ;
+     .

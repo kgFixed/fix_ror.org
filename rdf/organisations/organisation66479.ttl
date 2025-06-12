@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00y245p24> 
+    a org:Organization ;
+    rdfs:label "Ural Institute of Traumatology and Orthopedics named after V.D. Chaklin" ;
+    schema:name "Ural Institute of Traumatology and Orthopedics named after V.D. Chaklin" ;
+    schema:foundingDate "1931"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(60.6122 56.8519)"^^geo:wktLiteral ;
+        schema:addressLocality "Yekaterinburg" ;
+    ] ;
+    schema:url <http://www.chaklin.ru/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q52845512> ;
+             .

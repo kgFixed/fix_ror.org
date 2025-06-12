@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02khtdb43> 
+    a org:Organization ;
+    rdfs:label "American Academy of Family Physicians" ;
+    schema:name "American Academy of Family Physicians" ;
+    schema:foundingDate "1947"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/American_Academy_of_Family_Physicians> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-94.6169 38.96667)"^^geo:wktLiteral ;
+        schema:addressLocality "Leawood" ;
+    ] ;
+    schema:url <http://www.aafp.org/home.html> ;
+    schema:sameAs <http://isni.org/isni/0000000404190438> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4742888> ;
+             .

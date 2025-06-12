@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05393h285> 
+    a org:Organization ;
+    rdfs:label "Memorial Hermann Memorial City Medical Center" ;
+    schema:name "Memorial Hermann Memorial City Medical Center" ;
+    schema:foundingDate "1971"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Memorial_Hermann_Memorial_City_Medical_Center> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/049d9a475> ;
+        rdfs:label "Memorial Hermann" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-95.36327 29.76328)"^^geo:wktLiteral ;
+        schema:addressLocality "Houston" ;
+    ] ;
+    schema:url <http://www.memorialhermann.org/locations/memorial-city/> ;
+    schema:sameAs <http://isni.org/isni/0000000094883350> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q16895024> ;
+             .

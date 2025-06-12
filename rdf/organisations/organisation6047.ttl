@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04hrjej96> 
+    a org:Organization ;
+    rdfs:label "Leeds General Infirmary" ;
+    schema:name "Leeds General Infirmary" ;
+    schema:foundingDate "1771"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Leeds_General_Infirmary> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00v4dac24> ;
+        rdfs:label "Leeds Teaching Hospitals NHS Trust" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/024mrxd33> ;
+        rdfs:label "University of Leeds" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.54785 53.79648)"^^geo:wktLiteral ;
+        schema:addressLocality "Leeds" ;
+    ] ;
+    schema:url <http://www.leedsth.nhs.uk/home/> ;
+    schema:sameAs <http://isni.org/isni/0000000100972705> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1245797> ;
+             .

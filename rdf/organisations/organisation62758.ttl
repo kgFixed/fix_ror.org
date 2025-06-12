@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04fr6kc62> 
+    a org:Organization ;
+    rdfs:label "Schön Klinik Bad Aibling" ;
+    schema:name "Schön Klinik Bad Aibling" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/007ztdc30> ;
+        rdfs:label "Schön Klinik Roseneck" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(12.01055 47.8638)"^^geo:wktLiteral ;
+        schema:addressLocality "Bad Aibling" ;
+    ] ;
+    schema:url <http://www.schoen-kliniken.de/ptp/kkh/aib/> ;
+    schema:sameAs <http://isni.org/isni/0000000405817239> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q50036986> ;
+             .

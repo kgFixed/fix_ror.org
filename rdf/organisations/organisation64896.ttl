@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0252twa85> 
+    a org:Organization ;
+    rdfs:label "Virtua Memorial Hospital" ;
+    schema:name "Virtua Memorial Hospital" ;
+    schema:foundingDate "1998"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/058az4744> ;
+        rdfs:label "Virtua Health" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-74.78766 39.99289)"^^geo:wktLiteral ;
+        schema:addressLocality "Mount Holly" ;
+    ] ;
+    schema:url <https://www.virtua.org/locations/memorial-hospital> ;
+    schema:sameAs <http://isni.org/isni/0000000404556292> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q50039854> ;
+             .

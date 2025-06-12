@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03k9qs827> 
+    a org:Organization ;
+    rdfs:label "Fritz Haber Institute of the Max Planck Society" ;
+    schema:name "Fritz Haber Institute of the Max Planck Society" ;
+    schema:foundingDate "1911"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Fritz_Haber_Institute_of_the_Max_Planck_Society> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01hhn8329> ;
+        rdfs:label "Max Planck Society" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(13.41053 52.52437)"^^geo:wktLiteral ;
+        schema:addressLocality "Berlin" ;
+    ] ;
+    schema:url <http://www.fhi-berlin.mpg.de/> ;
+    schema:sameAs <http://isni.org/isni/0000000105651775> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q514590> ;
+             .

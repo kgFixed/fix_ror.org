@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02nckwn80> 
+    a org:Organization ;
+    rdfs:label "Cheyney University of Pennsylvania" ;
+    schema:name "Cheyney University of Pennsylvania" ;
+    schema:foundingDate "1837"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Cheyney_University_of_Pennsylvania> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00m2s0z68> ;
+        rdfs:label "Pennsylvania State System of Higher Education" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-75.60804 39.96097)"^^geo:wktLiteral ;
+        schema:addressLocality "West Chester" ;
+    ] ;
+    schema:url <http://www.cheyney.edu/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q3445541> ;
+             .

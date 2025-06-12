@@ -1,0 +1,20 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/036501p19> 
+    a org:Organization ;
+    rdfs:label "Gulf Marine Institute of Technology" ;
+    schema:name "Gulf Marine Institute of Technology" ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-87.16386 30.35714)"^^geo:wktLiteral ;
+        schema:addressLocality "Gulf Breeze" ;
+    ] ;
+    schema:url <http://www.gulfmarine.org/> ;
+     .

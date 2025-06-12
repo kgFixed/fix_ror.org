@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04rw83w19> 
+    a org:Organization ;
+    rdfs:label "Avera McKennan Hospital & University Health Center" ;
+    schema:name "Avera McKennan Hospital & University Health Center" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05nter171> ;
+        rdfs:label "Avera Health" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-96.70033 43.54997)"^^geo:wktLiteral ;
+        schema:addressLocality "Sioux Falls" ;
+    ] ;
+    schema:url <https://www.avera.org/locations/mckennan/> ;
+    schema:sameAs <http://isni.org/isni/0000000100328821> ;
+             .

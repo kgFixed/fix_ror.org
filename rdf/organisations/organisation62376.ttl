@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04pgw5133> 
+    a org:Organization ;
+    rdfs:label "Charlotte Hungerford Hospital" ;
+    schema:name "Charlotte Hungerford Hospital" ;
+    schema:foundingDate "1916"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Charlotte_Hungerford_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-73.12122 41.80065)"^^geo:wktLiteral ;
+        schema:addressLocality "Torrington" ;
+    ] ;
+    schema:url <https://www.charlottehungerford.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000403824347> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q16918162> ;
+             .

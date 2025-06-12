@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02w6f6b92> 
+    a org:Organization ;
+    rdfs:label "Deutsche Rheuma-Liga" ;
+    schema:name "Deutsche Rheuma-Liga" ;
+    schema:foundingDate "1970"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(7.09549 50.73438)"^^geo:wktLiteral ;
+        schema:addressLocality "Bonn" ;
+    ] ;
+    schema:url <https://www.rheuma-liga.de> ;
+    schema:sameAs <http://isni.org/isni/0000000088354911> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1203795> ;
+             .

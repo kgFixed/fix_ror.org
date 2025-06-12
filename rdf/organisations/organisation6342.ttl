@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05eyymj94> 
+    a org:Organization ;
+    rdfs:label "École Supérieure de Biotechnologie de Strasbourg" ;
+    schema:name "École Supérieure de Biotechnologie de Strasbourg" ;
+    schema:foundingDate "1982"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/École_supérieure_de_biotechnologie_Strasbourg> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(7.71523 48.52894)"^^geo:wktLiteral ;
+        schema:addressLocality "Illkirch-Graffenstaden" ;
+    ] ;
+    schema:url <https://esbs.unistra.fr/en/> ;
+    schema:sameAs <http://isni.org/isni/0000000406100264> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q273630> ;
+             .

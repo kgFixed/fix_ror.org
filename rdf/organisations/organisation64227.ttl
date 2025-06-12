@@ -1,0 +1,20 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/049fxhe24> 
+    a org:Organization ;
+    rdfs:label "Klinik Bad Bergzabern" ;
+    schema:name "Klinik Bad Bergzabern" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(8.00092 49.10245)"^^geo:wktLiteral ;
+        schema:addressLocality "Bad Bergzaben" ;
+    ] ;
+    schema:url <http://www.klinikum-ld-suew.de/klinik-bad-bergzabern/> ;
+     .

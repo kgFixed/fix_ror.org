@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00yqqsx19> 
+    a org:Organization ;
+    rdfs:label "Care Institute of Medical Sciences" ;
+    schema:name "Care Institute of Medical Sciences" ;
+    schema:foundingDate "2010"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Care_Institute_of_Medical_Sciences_(CIMS),_Ahmedabad> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(72.58727 23.02579)"^^geo:wktLiteral ;
+        schema:addressLocality "Ahmedabad" ;
+    ] ;
+    schema:url <http://www.cims.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000483402274> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q25212579> ;
+             .

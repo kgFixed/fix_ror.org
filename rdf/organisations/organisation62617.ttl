@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01t45et45> 
+    a org:Organization ;
+    rdfs:label "Methodist West Hospital" ;
+    schema:name "Methodist West Hospital" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05ntqke24> ;
+        rdfs:label "UnityPoint Health" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-93.71133 41.57721)"^^geo:wktLiteral ;
+        schema:addressLocality "West Des Moines" ;
+    ] ;
+    schema:url <http://www.unitypoint.org/desmoines/methodist-west-hospital.aspx> ;
+    schema:sameAs <http://isni.org/isni/0000000459109537> ;
+             .

@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03yef6m79> 
+    a org:Organization ;
+    rdfs:label "Oncological Dispensary No. 2" ;
+    schema:name "Oncological Dispensary No. 2" ;
+    schema:foundingDate "1964"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(38.97603 45.04484)"^^geo:wktLiteral ;
+        schema:addressLocality "Krasnodar" ;
+    ] ;
+    schema:url <http://www.onko-sochi.ru/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q50035706> ;
+             .

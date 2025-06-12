@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05129cd91> 
+    a org:Organization ;
+    rdfs:label "Dürr Dental (Germany)" ;
+    schema:name "Dürr Dental (Germany)" ;
+    schema:foundingDate "1941"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/D%C3%BCrr_Dental> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(9.11755 48.94407)"^^geo:wktLiteral ;
+        schema:addressLocality "Bietigheim-Bissingen" ;
+    ] ;
+    schema:url <https://www.duerrdental.com/en/home/?changeLang=1> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q1272127> ;
+             .

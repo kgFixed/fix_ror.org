@@ -1,0 +1,35 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/015jj1011> 
+    a org:Organization ;
+    rdfs:label "Ministère de l'Intérieur" ;
+    schema:name "Ministère de l'Intérieur" ;
+    schema:foundingDate "1790"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04zx93s85> ;
+        rdfs:label "Gendarmerie Nationale" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/042edgv29> ;
+        rdfs:label "Institut National de Police Scientifique" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.3488 48.85341)"^^geo:wktLiteral ;
+        schema:addressLocality "Paris" ;
+    ] ;
+    schema:url <https://www.interieur.gouv.fr/> ;
+    schema:sameAs <http://isni.org/isni/000000012369535X> ;
+             .

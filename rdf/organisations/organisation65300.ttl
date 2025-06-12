@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03kke0n21> 
+    a org:Organization ;
+    rdfs:label "Stockholm Environment Institute" ;
+    schema:name "Stockholm Environment Institute" ;
+    schema:foundingDate "1989"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Stockholm_Environment_Institute_US_Center> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/051xgzg37> ;
+        rdfs:label "Stockholm Environment Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05wvpxv85> ;
+        rdfs:label "Tufts University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-71.0995 42.3876)"^^geo:wktLiteral ;
+        schema:addressLocality "Somerville" ;
+    ] ;
+    schema:url <https://www.sei.org/centres/us/> ;
+    schema:sameAs <http://isni.org/isni/0000000405738012> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7618006> ;
+             .

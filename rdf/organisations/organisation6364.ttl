@@ -1,0 +1,26 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01ga31z69> 
+    a org:Organization ;
+    rdfs:label "Cochlear (United States)" ;
+    schema:name "Cochlear (United States)" ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04hvmsy06> ;
+        rdfs:label "Cochlear (Australia)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-104.98776 39.64777)"^^geo:wktLiteral ;
+        schema:addressLocality "Englewood" ;
+    ] ;
+    schema:url <http://www.cochlear.com/wps/wcm/connect/intl/home> ;
+     .

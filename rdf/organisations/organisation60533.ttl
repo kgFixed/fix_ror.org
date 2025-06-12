@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05jr0p734> 
+    a org:Organization ;
+    rdfs:label "Joint Interoperability Test Command" ;
+    schema:name "Joint Interoperability Test Command" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Joint_Interoperability_Test_Command> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0447fe631> ;
+        rdfs:label "United States Department of Defense" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-110.30369 31.55454)"^^geo:wktLiteral ;
+        schema:addressLocality "Sierra Vista" ;
+    ] ;
+    schema:url <http://jitc.fhu.disa.mil/index.aspx> ;
+     .

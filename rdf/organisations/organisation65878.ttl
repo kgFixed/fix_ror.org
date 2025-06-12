@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02ng64w29> 
+    a org:Organization ;
+    rdfs:label "Dobrich Local Agency for Energy Management" ;
+    schema:name "Dobrich Local Agency for Energy Management" ;
+    schema:foundingDate "2005"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(27.83333 43.56667)"^^geo:wktLiteral ;
+        schema:addressLocality "Dobrich" ;
+    ] ;
+    schema:url <http://www.dlaem.org/en/> ;
+     .

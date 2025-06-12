@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04e5xac72> 
+    a org:Organization ;
+    rdfs:label "Clasado BioSciences (United Kingdom)" ;
+    schema:name "Clasado BioSciences (United Kingdom)" ;
+    schema:foundingDate "2004"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.75583 52.04172)"^^geo:wktLiteral ;
+        schema:addressLocality "Milton Keynes" ;
+    ] ;
+    schema:url <http://www.clasado.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q23585885> ;
+             .

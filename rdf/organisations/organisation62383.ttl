@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02vz7hv03> 
+    a org:Organization ;
+    rdfs:label "Comprehensive Blood & Cancer Center" ;
+    schema:name "Comprehensive Blood & Cancer Center" ;
+    schema:foundingDate "1984"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-119.01871 35.37329)"^^geo:wktLiteral ;
+        schema:addressLocality "Bakersfield" ;
+    ] ;
+    schema:url <http://www.cbccusa.com/> ;
+     .

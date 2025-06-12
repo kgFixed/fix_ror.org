@@ -1,0 +1,26 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/032kej893> 
+    a org:Organization ;
+    rdfs:label "Poliklinik für Zahnärztliche Prothetik" ;
+    schema:name "Poliklinik für Zahnärztliche Prothetik" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/032nzv584> ;
+        rdfs:label "Universitätsklinikum Gießen und Marburg" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(8.67554 50.58727)"^^geo:wktLiteral ;
+        schema:addressLocality "Giessen" ;
+    ] ;
+    schema:url <http://www.ukgm.de/ugm_2/deu/ugi_zap/index.html> ;
+     .

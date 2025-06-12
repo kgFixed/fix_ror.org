@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03sqq2g46> 
+    a org:Organization ;
+    rdfs:label "Retina Foundation of the Southwest" ;
+    schema:name "Retina Foundation of the Southwest" ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-96.80667 32.78306)"^^geo:wktLiteral ;
+        schema:addressLocality "Dallas" ;
+    ] ;
+    schema:url <http://retinafoundation.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000476700345> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30282032> ;
+             .

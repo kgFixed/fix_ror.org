@@ -1,0 +1,20 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05mg0j941> 
+    a org:Organization ;
+    rdfs:label "Radiation Oncology Centers of Nevada" ;
+    schema:name "Radiation Oncology Centers of Nevada" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-115.13722 36.17497)"^^geo:wktLiteral ;
+        schema:addressLocality "Las Vegas" ;
+    ] ;
+    schema:url <http://rocnv.com/> ;
+     .

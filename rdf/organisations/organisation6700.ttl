@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04aty2659> 
+    a org:Organization ;
+    rdfs:label "Moscow State University of Fine Chemical Technologies" ;
+    schema:name "Moscow State University of Fine Chemical Technologies" ;
+    schema:foundingDate "1900"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Moscow_State_University_of_Fine_Chemical_Technologies> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(37.61556 55.75222)"^^geo:wktLiteral ;
+        schema:addressLocality "Moscow" ;
+    ] ;
+    schema:url <http://www.mitht.ru/> ;
+    schema:sameAs <http://isni.org/isni/0000000406459576> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4304107> ;
+             .

@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04c9j0t17> 
+    a org:Organization ;
+    rdfs:label "Collingswood Public Schools" ;
+    schema:name "Collingswood Public Schools" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Collingswood_Public_Schools> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-75.07128 39.91817)"^^geo:wktLiteral ;
+        schema:addressLocality "Collingswood" ;
+    ] ;
+    schema:url <http://www.collingswood.k12.nj.us/#> ;
+     .

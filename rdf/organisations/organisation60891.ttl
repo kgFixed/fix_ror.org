@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03mg8fc79> 
+    a org:Organization ;
+    rdfs:label "Fred Rogers (United States)" ;
+    schema:name "Fred Rogers (United States)" ;
+    schema:foundingDate "1971"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/The_Fred_Rogers_Company> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-79.99589 40.44062)"^^geo:wktLiteral ;
+        schema:addressLocality "Pittsburgh" ;
+    ] ;
+    schema:url <https://www.fredrogers.org/> ;
+     .

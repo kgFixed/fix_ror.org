@@ -1,0 +1,26 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01736k933> 
+    a org:Organization ;
+    rdfs:label "Vince Lombardi Cancer Clinic" ;
+    schema:name "Vince Lombardi Cancer Clinic" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04d5w7479> ;
+        rdfs:label "Aurora Health Care" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-87.56925 44.15388)"^^geo:wktLiteral ;
+        schema:addressLocality "Two Rivers" ;
+    ] ;
+    schema:url <https://www.aurorahealthcare.org/locations/clinic/vince-lombardi-cancer-clinic-two-rivers/> ;
+     .

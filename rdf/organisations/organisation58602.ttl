@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03tz15v17> 
+    a org:Organization ;
+    rdfs:label "Hochtief (Czechia)" ;
+    schema:name "Hochtief (Czechia)" ;
+    schema:foundingDate "1874"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Hochtief> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03xq46679> ;
+        rdfs:label "Hochtief (Germany)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(14.42076 50.08804)"^^geo:wktLiteral ;
+        schema:addressLocality "Prague" ;
+    ] ;
+    schema:url <http://www.hochtief.cz/en> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q41567010> ;
+             .

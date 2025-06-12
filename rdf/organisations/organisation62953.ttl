@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/057s1m822> 
+    a org:Organization ;
+    rdfs:label "Florida Department of Citrus" ;
+    schema:name "Florida Department of Citrus" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Florida_Department_of_Citrus> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-81.84314 27.89641)"^^geo:wktLiteral ;
+        schema:addressLocality "Bartow" ;
+    ] ;
+    schema:url <https://www.floridacitrus.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000086336103> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q21020901> ;
+             .

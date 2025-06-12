@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00tc0zx28> 
+    a org:Organization ;
+    rdfs:label "Aspirus Ironwood Hospital" ;
+    schema:name "Aspirus Ironwood Hospital" ;
+    schema:foundingDate "1923"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-90.17101 46.45467)"^^geo:wktLiteral ;
+        schema:addressLocality "Ironwood" ;
+    ] ;
+    schema:url <http://www.aspirus.org/Aspirus-Ironwood-Hospital/Our-Locations/Aspirus-Grand-View-Hospital-452.aspx> ;
+     .

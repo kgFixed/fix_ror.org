@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00126za90> 
+    a org:Organization ;
+    rdfs:label "Hôpital d'Instruction des Armées Clermont-Tonnerre" ;
+    schema:name "Hôpital d'Instruction des Armées Clermont-Tonnerre" ;
+    schema:foundingDate "1822"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-4.48628 48.39029)"^^geo:wktLiteral ;
+        schema:addressLocality "Brest" ;
+    ] ;
+    schema:url <http://www.hopital-armees-brest.fr/topic/index.html> ;
+    schema:sameAs <http://isni.org/isni/0000000094191522> ;
+             .

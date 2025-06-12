@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04e0j1059> 
+    a org:Organization ;
+    rdfs:label "Bethune-Cookman University" ;
+    schema:name "Bethune-Cookman University" ;
+    schema:foundingDate "1904"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Bethune-Cookman_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-81.02283 29.21081)"^^geo:wktLiteral ;
+        schema:addressLocality "Daytona" ;
+    ] ;
+    schema:url <http://www.cookman.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000403888156> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3298457> ;
+             .

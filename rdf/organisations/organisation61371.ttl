@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02v72sd52> 
+    a org:Organization ;
+    rdfs:label "Chhattisgarh Dental College & Research Institute" ;
+    schema:name "Chhattisgarh Dental College & Research Institute" ;
+    schema:foundingDate "2001"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(81.0289 21.09687)"^^geo:wktLiteral ;
+        schema:addressLocality "Rāj-Nāndgaon" ;
+    ] ;
+    schema:url <http://www.cdcri.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000418005010> ;
+             .

@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/002jdvv38> 
+    a org:Organization ;
+    rdfs:label "Centre Hospitalier de Douai" ;
+    schema:name "Centre Hospitalier de Douai" ;
+    schema:foundingDate "1971"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(3.07922 50.37069)"^^geo:wktLiteral ;
+        schema:addressLocality "Douai" ;
+    ] ;
+    schema:url <http://www.ch-douai.fr/> ;
+    schema:sameAs <http://isni.org/isni/0000000406393677> ;
+             .

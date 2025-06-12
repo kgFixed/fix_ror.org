@@ -1,0 +1,33 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02076gf69> 
+    a org:Organization ;
+    rdfs:label "Psychiatry Region Zealand" ;
+    schema:name "Psychiatry Region Zealand" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05bpbnx46> ;
+        rdfs:label "Copenhagen University Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01dtyv127> ;
+        rdfs:label "Region Zealand" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(11.35459 55.40276)"^^geo:wktLiteral ;
+        schema:addressLocality "Slagelse" ;
+    ] ;
+    schema:url <http://www.regionsjaelland.dk/sundhed/geo/psykiatrien/Sider/default.aspx> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q50037233> ;
+             .

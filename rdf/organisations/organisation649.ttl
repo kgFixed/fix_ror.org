@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00bz6qm80> 
+    a org:Organization ;
+    rdfs:label "Dillard University" ;
+    schema:name "Dillard University" ;
+    schema:foundingDate "1869"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Dillard_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05w72d176> ;
+        rdfs:label "The People of the United Methodist Church" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03vpkt967> ;
+        rdfs:label "United Church of Christ" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-90.07507 29.95465)"^^geo:wktLiteral ;
+        schema:addressLocality "New Orleans" ;
+    ] ;
+    schema:url <http://www.dillard.edu/> ;
+    schema:sameAs <http://isni.org/isni/000000012233734X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4359655> ;
+             .

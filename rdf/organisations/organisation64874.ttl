@@ -1,0 +1,20 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03h96m993> 
+    a org:Organization ;
+    rdfs:label "Les Thermes d’Allevard" ;
+    schema:name "Les Thermes d’Allevard" ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(6.07519 45.39449)"^^geo:wktLiteral ;
+        schema:addressLocality "Allevard" ;
+    ] ;
+    schema:url <http://www.thermes-allevard.com/> ;
+     .

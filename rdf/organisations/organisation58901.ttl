@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02ak6z209> 
+    a org:Organization ;
+    rdfs:label "Mvb Opava (Czechia)" ;
+    schema:name "Mvb Opava (Czechia)" ;
+    schema:foundingDate "2000"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(17.90257 49.93866)"^^geo:wktLiteral ;
+        schema:addressLocality "Opava" ;
+    ] ;
+    schema:url <https://www.mvb.cz/> ;
+     .

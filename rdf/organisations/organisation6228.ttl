@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02w7azg93> 
+    a org:Organization ;
+    rdfs:label "Chiba Cerebral and Cardiovascular Center" ;
+    schema:name "Chiba Cerebral and Cardiovascular Center" ;
+    schema:foundingDate "1955"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(140.11667 35.6)"^^geo:wktLiteral ;
+        schema:addressLocality "Chiba" ;
+    ] ;
+    schema:url <https://www.pref.chiba.lg.jp/junkan/> ;
+    schema:sameAs <http://isni.org/isni/0000000403771935> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q11406174> ;
+             .

@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02a71hb33> 
+    a org:Organization ;
+    rdfs:label "Azov Scientific Research Institute of Fisheries" ;
+    schema:name "Azov Scientific Research Institute of Fisheries" ;
+    schema:foundingDate "1928"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(39.72328 47.23135)"^^geo:wktLiteral ;
+        schema:addressLocality "Rostov-on-Don" ;
+    ] ;
+    schema:url <http://azniirkh.ru/> ;
+    schema:sameAs <http://isni.org/isni/0000000463610877> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q52842892> ;
+             .

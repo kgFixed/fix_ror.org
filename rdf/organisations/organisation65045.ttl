@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/004bh1g50> 
+    a org:Organization ;
+    rdfs:label "National Horticultural Research Institute" ;
+    schema:name "National Horticultural Research Institute" ;
+    schema:foundingDate "1975"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(3.90591 7.37756)"^^geo:wktLiteral ;
+        schema:addressLocality "Ibadan" ;
+    ] ;
+    schema:url <http://www.nihort.gov.ng/> ;
+    schema:sameAs <http://isni.org/isni/0000000417836728> ;
+             .

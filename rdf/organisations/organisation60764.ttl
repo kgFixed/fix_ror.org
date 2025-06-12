@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/031wqxd08> 
+    a org:Organization ;
+    rdfs:label "IONEX Research Corporation (United States)" ;
+    schema:name "IONEX Research Corporation (United States)" ;
+    schema:foundingDate "1978"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-105.08971 39.9936)"^^geo:wktLiteral ;
+        schema:addressLocality "Lafayette" ;
+    ] ;
+    schema:url <http://www.ionexres.com/> ;
+     .

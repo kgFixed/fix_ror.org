@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05sa02996> 
+    a org:Organization ;
+    rdfs:label "The Institute of Aesthetic Surgery" ;
+    schema:name "The Institute of Aesthetic Surgery" ;
+    schema:foundingDate "1994"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-81.53313 28.32529)"^^geo:wktLiteral ;
+        schema:addressLocality "Celebration" ;
+    ] ;
+    schema:url <http://instituteofaestheticsurgery.com/> ;
+     .

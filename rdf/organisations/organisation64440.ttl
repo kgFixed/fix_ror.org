@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05rmea943> 
+    a org:Organization ;
+    rdfs:label "International Society for Heart Research" ;
+    schema:name "International Society for Heart Research" ;
+    schema:foundingDate "1968"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/International_Society_for_Heart_Research> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-78.89862 35.99403)"^^geo:wktLiteral ;
+        schema:addressLocality "Durham" ;
+    ] ;
+    schema:url <http://www.ishrworld.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000460070043> ;
+             .

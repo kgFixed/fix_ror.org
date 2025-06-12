@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05syayg48> 
+    a org:Organization ;
+    rdfs:label "Wyoming Outdoor Council" ;
+    schema:name "Wyoming Outdoor Council" ;
+    schema:foundingDate "1967"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Wyoming_Outdoor_Council> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-108.73067 42.83301)"^^geo:wktLiteral ;
+        schema:addressLocality "Lander" ;
+    ] ;
+    schema:url <https://wyomingoutdoorcouncil.org/> ;
+     .

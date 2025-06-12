@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03p03fd83> 
+    a org:Organization ;
+    rdfs:label "Montgomery Botanical Center" ;
+    schema:name "Montgomery Botanical Center" ;
+    schema:foundingDate "1959"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Montgomery_Botanical_Center> ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-80.26838 25.72149)"^^geo:wktLiteral ;
+        schema:addressLocality "Coral Gables" ;
+    ] ;
+    schema:url <http://www.montgomerybotanical.org/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q9034856> ;
+             .

@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00g3t0998> 
+    a org:Organization ;
+    rdfs:label "The Bureau of Overseas Buildings Operations" ;
+    schema:name "The Bureau of Overseas Buildings Operations" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Bureau_of_Overseas_Buildings_Operations> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.10428 38.88101)"^^geo:wktLiteral ;
+        schema:addressLocality "Arlington" ;
+    ] ;
+    schema:url <https://overseasbuildings.state.gov/> ;
+     .

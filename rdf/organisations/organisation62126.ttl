@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/039zvcc43> 
+    a org:Organization ;
+    rdfs:label "Conemaugh Health System" ;
+    schema:name "Conemaugh Health System" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Conemaugh_Health_System> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04qk4yf71> ;
+        rdfs:label "Conemaugh Memorial Medical Center" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-78.92197 40.32674)"^^geo:wktLiteral ;
+        schema:addressLocality "Johnstown" ;
+    ] ;
+    schema:url <http://www.conemaugh.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000404147069> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5159498> ;
+             .

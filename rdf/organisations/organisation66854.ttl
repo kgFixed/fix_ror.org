@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/032sv9d33> 
+    a org:Organization ;
+    rdfs:label "Jiyang College of Zhejiang A&F University" ;
+    schema:name "Jiyang College of Zhejiang A&F University" ;
+    schema:foundingDate "2000"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(120.24233 29.71877)"^^geo:wktLiteral ;
+        schema:addressLocality "Zhuji" ;
+    ] ;
+    schema:url <http://www.zjyc.edu.cn/> ;
+     .

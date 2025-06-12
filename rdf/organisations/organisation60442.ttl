@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05y6ppz60> 
+    a org:Organization ;
+    rdfs:label "Don Harrington Discovery Center" ;
+    schema:name "Don Harrington Discovery Center" ;
+    schema:foundingDate "1967"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Don_Harrington_Discovery_Center> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-101.8313 35.222)"^^geo:wktLiteral ;
+        schema:addressLocality "Amarillo" ;
+    ] ;
+    schema:url <http://www.discoverycenteramarillo.org/> ;
+     .
