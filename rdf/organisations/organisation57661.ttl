@@ -1,0 +1,75 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/023w6y044> 
+    a org:Organization ;
+    rdfs:label "VA Great Lakes Health Care System" ;
+    schema:name "VA Great Lakes Health Care System" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04x41ba23> ;
+        rdfs:label "Captain James A. Lovell Federal Health Care Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02223wv31> ;
+        rdfs:label "Edward Hines, Jr. VA Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/049qtwc86> ;
+        rdfs:label "Jesse Brown VA Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0176arq92> ;
+        rdfs:label "Milwaukee VA Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00acjv878> ;
+        rdfs:label "Oscar G. Johnson VA Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03mxm6g77> ;
+        rdfs:label "Tomah VA Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00kan1k39> ;
+        rdfs:label "VA Illiana Health Care System" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/037xafn82> ;
+        rdfs:label "William S. Middleton Memorial Veterans Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05eq41471> ;
+        rdfs:label "Veterans Health Administration" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-87.882 41.85059)"^^geo:wktLiteral ;
+        schema:addressLocality "Westchester" ;
+    ] ;
+    schema:url <https://www.visn12.va.gov/> ;
+    schema:sameAs <http://isni.org/isni/0000000404208239> ;
+             .

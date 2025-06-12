@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03s4bg735> 
+    a org:Organization ;
+    rdfs:label "Bio Composants Médicaux (France)" ;
+    schema:name "Bio Composants Médicaux (France)" ;
+    schema:foundingDate "1994"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(5.49077 45.30239)"^^geo:wktLiteral ;
+        schema:addressLocality "Tullins" ;
+    ] ;
+    schema:url <http://www.dental-fiber-force.com/fr/> ;
+     .

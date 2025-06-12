@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01w7qtj07> 
+    a org:Organization ;
+    rdfs:label "Center for Strengthening the Teaching Profession" ;
+    schema:name "Center for Strengthening the Teaching Profession" ;
+    schema:foundingDate "2003"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-122.90169 47.04491)"^^geo:wktLiteral ;
+        schema:addressLocality "Olympia" ;
+    ] ;
+    schema:url <http://cstp-wa.org/> ;
+     .

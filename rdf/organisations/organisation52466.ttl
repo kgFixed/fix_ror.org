@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05jpj2w31> 
+    a org:Organization ;
+    rdfs:label "Udon Thani Hospital" ;
+    schema:name "Udon Thani Hospital" ;
+    schema:foundingDate "1997"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Udon_Thani_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(102.78589 17.41567)"^^geo:wktLiteral ;
+        schema:addressLocality "Udon Thani" ;
+    ] ;
+    schema:url <http://www.udh.go.th/index.php> ;
+    schema:sameAs <http://isni.org/isni/0000000460053577> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30270584> ;
+             .

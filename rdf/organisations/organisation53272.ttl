@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/012sh1702> 
+    a org:Organization ;
+    rdfs:label "Danish Ministry of Climate, Energy and Utilities" ;
+    schema:name "Danish Ministry of Climate, Energy and Utilities" ;
+    schema:foundingDate "2007"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03wtazd67> ;
+        rdfs:label "Danish Energy Agency" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02av6zw72> ;
+        rdfs:label "Danish Geodata Agency" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/020m6x732> ;
+        rdfs:label "Danish Meteorological Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01b40r146> ;
+        rdfs:label "Geological Survey of Denmark and Greenland" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(12.56553 55.67594)"^^geo:wktLiteral ;
+        schema:addressLocality "Copenhagen" ;
+    ] ;
+    schema:url <https://en.kefm.dk/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q3359295> ;
+             .

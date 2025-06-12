@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04461gd92> 
+    a org:Organization ;
+    rdfs:label "Salmaniya Medical Complex" ;
+    schema:name "Salmaniya Medical Complex" ;
+    schema:foundingDate "1979"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Salmaniya_Medical_Complex> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/057n8mx64> ;
+        rdfs:label "Ministry of Health" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(50.58565 26.22787)"^^geo:wktLiteral ;
+        schema:addressLocality "Manama" ;
+    ] ;
+    schema:url <http://www.moh.gov.bh/en/HealthEstablishment/SMC.aspx> ;
+    schema:sameAs <http://isni.org/isni/0000000406213322> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7405447> ;
+             .

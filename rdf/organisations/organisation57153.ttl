@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02y55wr53> 
+    a org:Organization ;
+    rdfs:label "Center for Veterinary Medicine" ;
+    schema:name "Center for Veterinary Medicine" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Center_for_Veterinary_Medicine> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/034xvzb47> ;
+        rdfs:label "United States Food and Drug Administration" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-76.84831 39.09928)"^^geo:wktLiteral ;
+        schema:addressLocality "Laurel" ;
+    ] ;
+    schema:url <https://www.fda.gov/aboutfda/centersoffices/officeoffoods/cvm/default.htm> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q5059912> ;
+             .

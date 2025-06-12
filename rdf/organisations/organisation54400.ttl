@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/046xmah45> 
+    a org:Organization ;
+    rdfs:label "Plastic Omnium (Belgium)" ;
+    schema:name "Plastic Omnium (Belgium)" ;
+    schema:foundingDate "1946"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Plastic_Omnium> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05np4h792> ;
+        rdfs:label "Plastic Omnium (France)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(4.02657 50.82776)"^^geo:wktLiteral ;
+        schema:addressLocality "Ninove" ;
+    ] ;
+    schema:url <https://www.plasticomnium.com/en/> ;
+    schema:sameAs <http://isni.org/isni/0000000460001558> ;
+             .

@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00z6b1508> 
+    a org:Organization ;
+    rdfs:label "National Agricultural Library" ;
+    schema:name "National Agricultural Library" ;
+    schema:foundingDate "1862"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/United_States_National_Agricultural_Library> ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01na82s61> ;
+        rdfs:label "United States Department of Agriculture" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-76.90747 39.03483)"^^geo:wktLiteral ;
+        schema:addressLocality "Beltsville" ;
+    ] ;
+    schema:url <https://www.nal.usda.gov/> ;
+    schema:sameAs <http://isni.org/isni/0000000121132895> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q12406834> ;
+             .

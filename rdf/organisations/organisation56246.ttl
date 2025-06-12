@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00rp2kf19> 
+    a org:Organization ;
+    rdfs:label "Willson Band Instruments (Switzerland)" ;
+    schema:name "Willson Band Instruments (Switzerland)" ;
+    schema:foundingDate "1950"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(9.34301 47.09058)"^^geo:wktLiteral ;
+        schema:addressLocality "Flums" ;
+    ] ;
+    schema:url <http://www.willson.ch/en/> ;
+     .

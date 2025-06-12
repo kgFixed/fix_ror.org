@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01d2e9e05> 
+    a org:Organization ;
+    rdfs:label "Maternity and Children's Hospital" ;
+    schema:name "Maternity and Children's Hospital" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(50.10326 26.43442)"^^geo:wktLiteral ;
+        schema:addressLocality "Dammam" ;
+    ] ;
+    schema:url <http://www.alsehha.gov.sa/index.php/network-of-people/65-2015-03-01-10-20-28/250-2015-03-01-11-09-13> ;
+    schema:sameAs <http://isni.org/isni/0000000406082385> ;
+             .

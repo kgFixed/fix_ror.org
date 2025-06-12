@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01017e202> 
+    a org:Organization ;
+    rdfs:label "Werner Oechslin Library Foundation" ;
+    schema:name "Werner Oechslin Library Foundation" ;
+    schema:foundingDate "1999"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/005381c03> ;
+        rdfs:label "Swiss Academy of Humanities and Social Sciences" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(8.74735 47.12849)"^^geo:wktLiteral ;
+        schema:addressLocality "Einsiedeln" ;
+    ] ;
+    schema:url <http://www.bibliothek-oechslin.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000096997247> ;
+             .

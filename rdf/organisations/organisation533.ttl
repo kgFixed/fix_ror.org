@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03f91xw18> 
+    a org:Organization ;
+    rdfs:label "Museum of the Earth" ;
+    schema:name "Museum of the Earth" ;
+    schema:foundingDate "2003"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Museum_of_the_Earth> ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05bnh6r87> ;
+        rdfs:label "Cornell University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-76.49661 42.44063)"^^geo:wktLiteral ;
+        schema:addressLocality "Ithaca" ;
+    ] ;
+    schema:url <http://www.priweb.org/index.php?> ;
+    schema:sameAs <http://isni.org/isni/000000010693358X> ;
+             .

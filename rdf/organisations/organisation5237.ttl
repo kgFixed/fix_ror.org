@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0164vc797> 
+    a org:Organization ;
+    rdfs:label "Vijayanagara Institute of Medical Sciences" ;
+    schema:name "Vijayanagara Institute of Medical Sciences" ;
+    schema:foundingDate "1961"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Vijayanagara_Institute_of_Medical_Sciences> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(76.92398 15.14205)"^^geo:wktLiteral ;
+        schema:addressLocality "Ballari" ;
+    ] ;
+    schema:url <http://www.vimsbellary.org.in/> ;
+    schema:sameAs <http://isni.org/isni/000000040556696X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7929283> ;
+             .

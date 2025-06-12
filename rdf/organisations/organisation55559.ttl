@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02jqm1g69> 
+    a org:Organization ;
+    rdfs:label "Biotronik (Switzerland)" ;
+    schema:name "Biotronik (Switzerland)" ;
+    schema:foundingDate "1963"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Biotronik> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04gmdfj30> ;
+        rdfs:label "Biotronik (Germany)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(8.52954 47.19625)"^^geo:wktLiteral ;
+        schema:addressLocality "Baar" ;
+    ] ;
+    schema:url <https://www.biotronik.com/de-ch> ;
+    schema:sameAs <http://isni.org/isni/000000040435886X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q50357844> ;
+             .

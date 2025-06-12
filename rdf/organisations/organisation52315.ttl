@@ -1,0 +1,26 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02vjn2106> 
+    a org:Organization ;
+    rdfs:label "Sioux Falls VA Health Care System" ;
+    schema:name "Sioux Falls VA Health Care System" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02f2rgc17> ;
+        rdfs:label "VA Midwest Health Care Network" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-96.70033 43.54997)"^^geo:wktLiteral ;
+        schema:addressLocality "Sioux Falls" ;
+    ] ;
+    schema:url <http://www.siouxfalls.va.gov/> ;
+     .

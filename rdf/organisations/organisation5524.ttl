@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00a56am39> 
+    a org:Organization ;
+    rdfs:label "Philippine General Hospital" ;
+    schema:name "Philippine General Hospital" ;
+    schema:foundingDate "1907"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Philippine_General_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02hqkr514> ;
+        rdfs:label "University of the Philippines System" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01rrczv41> ;
+        rdfs:label "University of the Philippines Manila" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(120.9822 14.6042)"^^geo:wktLiteral ;
+        schema:addressLocality "Manila" ;
+    ] ;
+    schema:url <http://www.pgh.gov.ph/en/> ;
+    schema:sameAs <http://isni.org/isni/000000040367254X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q775409> ;
+             .

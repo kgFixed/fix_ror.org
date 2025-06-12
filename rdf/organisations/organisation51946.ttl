@@ -1,0 +1,20 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/007vhjq80> 
+    a org:Organization ;
+    rdfs:label "Maternal and Child Health Hospital of Xinjiang Uygur Autonomous Region" ;
+    schema:name "Maternal and Child Health Hospital of Xinjiang Uygur Autonomous Region" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(87.60046 43.80096)"^^geo:wktLiteral ;
+        schema:addressLocality "Ürümqi" ;
+    ] ;
+    schema:url <http://www.yjbys.com/company/7462770.html> ;
+     .

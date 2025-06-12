@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01x37cs02> 
+    a org:Organization ;
+    rdfs:label "West Cumberland Hospital" ;
+    schema:name "West Cumberland Hospital" ;
+    schema:foundingDate "1924"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/West_Cumberland_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-3.58412 54.54897)"^^geo:wktLiteral ;
+        schema:addressLocality "Whitehaven" ;
+    ] ;
+    schema:url <http://www.buildingyourhospital.ncuh.nhs.uk/> ;
+    schema:sameAs <http://isni.org/isni/0000000403998267> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7984918> ;
+             .

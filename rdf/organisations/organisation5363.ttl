@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01cs14q41> 
+    a org:Organization ;
+    rdfs:label "Glangwili General Hospital" ;
+    schema:name "Glangwili General Hospital" ;
+    schema:foundingDate "1949"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/West_Wales_General_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/012gye839> ;
+        rdfs:label "Hywel Dda University Health Board" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-4.30535 51.85552)"^^geo:wktLiteral ;
+        schema:addressLocality "Carmarthen" ;
+    ] ;
+    schema:url <http://www.wales.nhs.uk/sitesplus/862/page/42915> ;
+    schema:sameAs <http://isni.org/isni/0000000088213422> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q18378847> ;
+             .

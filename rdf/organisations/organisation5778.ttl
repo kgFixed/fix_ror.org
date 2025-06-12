@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00ctbs693> 
+    a org:Organization ;
+    rdfs:label "Yaroslavl State Medical Academy" ;
+    schema:name "Yaroslavl State Medical Academy" ;
+    schema:foundingDate "1944"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Yaroslavl_State_Medical_Academy> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(39.87368 57.62987)"^^geo:wktLiteral ;
+        schema:addressLocality "Yaroslavl" ;
+    ] ;
+    schema:url <https://ysmu.ru/index.php/ru/welcome/about-academy> ;
+    schema:sameAs <http://isni.org/isni/0000000404515861> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4538824> ;
+             .

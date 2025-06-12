@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/049evaf90> 
+    a org:Organization ;
+    rdfs:label "Access Computer College" ;
+    schema:name "Access Computer College" ;
+    schema:foundingDate "1981"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Access_Computer_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(125.53056 9.04694)"^^geo:wktLiteral ;
+        schema:addressLocality "Caloc-an" ;
+    ] ;
+    schema:url <https://access.edu.ph/> ;
+    schema:sameAs <http://isni.org/isni/0000000446530509> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4672430> ;
+             .

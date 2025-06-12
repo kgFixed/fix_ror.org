@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02bgabj83> 
+    a org:Organization ;
+    rdfs:label "Center for Nutrition Policy and Promotion" ;
+    schema:name "Center for Nutrition Policy and Promotion" ;
+    schema:foundingDate "1994"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Center_for_Nutrition_Policy_and_Promotion> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01na82s61> ;
+        rdfs:label "United States Department of Agriculture" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.04692 38.80484)"^^geo:wktLiteral ;
+        schema:addressLocality "Alexandria" ;
+    ] ;
+    schema:url <https://www.cnpp.usda.gov/> ;
+    schema:sameAs <http://isni.org/isni/0000000122316717> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5059800> ;
+             .

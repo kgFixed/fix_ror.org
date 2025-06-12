@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01nwsvf80> 
+    a org:Organization ;
+    rdfs:label "Shiga Medical Center for Children" ;
+    schema:name "Shiga Medical Center for Children" ;
+    schema:foundingDate "1988"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(135.98333 35.06667)"^^geo:wktLiteral ;
+        schema:addressLocality "Moriyama" ;
+    ] ;
+    schema:url <http://www.pref.shiga.lg.jp/mccs/> ;
+    schema:sameAs <http://isni.org/isni/0000000417647353> ;
+             .

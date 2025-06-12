@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04sgvk352> 
+    a org:Organization ;
+    rdfs:label "Miguel de Cervantes Health Care Centre" ;
+    schema:name "Miguel de Cervantes Health Care Centre" ;
+    schema:foundingDate "2001"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Miguel_de_Cervantes_Health_Care_Centre> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-3.35996 40.48205)"^^geo:wktLiteral ;
+        schema:addressLocality "Alcalá de Henares" ;
+    ] ;
+    schema:url <http://centrossanitarios.sanidadmadrid.org/RedAsistencial/DetalleAsistenciales.aspx?ID=191> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q5488296> ;
+             .

@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01qwdc951> 
+    a org:Organization ;
+    rdfs:label "Bayer (Switzerland)" ;
+    schema:name "Bayer (Switzerland)" ;
+    schema:foundingDate "1954"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04hmn8g73> ;
+        rdfs:label "Bayer (Germany)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(7.57327 47.55839)"^^geo:wktLiteral ;
+        schema:addressLocality "Basel" ;
+    ] ;
+    schema:url <https://www.bayer.ch/> ;
+    schema:sameAs <http://isni.org/isni/0000000405194932> ;
+             .

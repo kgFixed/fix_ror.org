@@ -1,0 +1,41 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04n2d2p10> 
+    a org:Organization ;
+    rdfs:label "Amer Sports (Finland)" ;
+    schema:name "Amer Sports (Finland)" ;
+    schema:foundingDate "1950"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Amer_Sports> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04y2cjj38> ;
+        rdfs:label "Amer Sports (Austria)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04e5zt867> ;
+        rdfs:label "Amer Sports (France)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04aqd7928> ;
+        rdfs:label "Amer Sports (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(24.93545 60.16952)"^^geo:wktLiteral ;
+        schema:addressLocality "Helsinki" ;
+    ] ;
+    schema:url <http://www.amersports.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000405521665> ;
+             .

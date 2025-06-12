@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01rjrd067> 
+    a org:Organization ;
+    rdfs:label "Yamaguchi Prefectural Museum" ;
+    schema:name "Yamaguchi Prefectural Museum" ;
+    schema:foundingDate "1912"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Yamaguchi_Prefectural_Museum> ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(131.46667 34.18333)"^^geo:wktLiteral ;
+        schema:addressLocality "Yamaguchi" ;
+    ] ;
+    schema:url <http://www.yamahaku.pref.yamaguchi.lg.jp/english.html> ;
+     .

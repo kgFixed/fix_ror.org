@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/028n6av57> 
+    a org:Organization ;
+    rdfs:label "Dynacast (Canada)" ;
+    schema:name "Dynacast (Canada)" ;
+    schema:foundingDate "1912"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00kkt6q96> ;
+        rdfs:label "Dynacast (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-73.58781 45.50884)"^^geo:wktLiteral ;
+        schema:addressLocality "Montreal" ;
+    ] ;
+    schema:url <https://www.dynacast.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30267666> ;
+             .

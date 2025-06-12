@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0003zy991> 
+    a org:Organization ;
+    rdfs:label "York Hospital" ;
+    schema:name "York Hospital" ;
+    schema:foundingDate "1976"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/York_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/027e4g787> ;
+        rdfs:label "York Teaching Hospital NHS Foundation Trust" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04m01e293> ;
+        rdfs:label "University of York" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.08271 53.95763)"^^geo:wktLiteral ;
+        schema:addressLocality "York" ;
+    ] ;
+    schema:url <http://www.yorkhospitals.nhs.uk/our_hospitals/_the_york_hospital/> ;
+    schema:sameAs <http://isni.org/isni/0000000090808425> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q8055478> ;
+             .

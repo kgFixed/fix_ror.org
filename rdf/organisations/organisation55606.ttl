@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00xvxdy42> 
+    a org:Organization ;
+    rdfs:label "Acer (United States)" ;
+    schema:name "Acer (United States)" ;
+    schema:foundingDate "1976"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Acer_Inc.> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03xajsx66> ;
+        rdfs:label "Acer (Taiwan)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-121.89496 37.33939)"^^geo:wktLiteral ;
+        schema:addressLocality "San Jose" ;
+    ] ;
+    schema:url <https://www.acer.com/ac/en/US/content/home#_ga=1.212817556.1696349516.1488953609> ;
+    schema:sameAs <http://isni.org/isni/0000000405803961> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q50362991> ;
+             .

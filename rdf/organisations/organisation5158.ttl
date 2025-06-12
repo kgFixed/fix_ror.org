@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05t626n88> 
+    a org:Organization ;
+    rdfs:label "Suwa Red Cross Hospital" ;
+    schema:name "Suwa Red Cross Hospital" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/044s9gr80> ;
+        rdfs:label "Japanese Red Cross Society, Japan" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(138.11308 36.03799)"^^geo:wktLiteral ;
+        schema:addressLocality "Suwa" ;
+    ] ;
+    schema:url <http://www.suwa.jrc.or.jp/> ;
+    schema:sameAs <http://isni.org/isni/0000000404715679> ;
+             .

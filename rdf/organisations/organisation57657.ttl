@@ -1,0 +1,39 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02hqqcn82> 
+    a org:Organization ;
+    rdfs:label "VA Eastern Kansas Health Care System" ;
+    schema:name "VA Eastern Kansas Health Care System" ;
+    schema:foundingDate "1866"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03b7nc883> ;
+        rdfs:label "Colmery-O'Neil VA Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03jb9b006> ;
+        rdfs:label "Dwight D. Eisenhower VA Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05eq41471> ;
+        rdfs:label "Veterans Health Administration" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-94.92246 39.31111)"^^geo:wktLiteral ;
+        schema:addressLocality "Leavenworth" ;
+    ] ;
+    schema:url <https://www.topeka.va.gov/> ;
+     .

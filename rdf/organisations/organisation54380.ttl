@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/012ddpd05> 
+    a org:Organization ;
+    rdfs:label "Givaudan (Switzerland)" ;
+    schema:name "Givaudan (Switzerland)" ;
+    schema:foundingDate "1895"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Givaudan> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/013c7pz75> ;
+        rdfs:label "Givaudan (France)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/012yyz739> ;
+        rdfs:label "Givaudan (Netherlands)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/001pxkx91> ;
+        rdfs:label "Givaudan (Sweden)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(6.08497 46.21702)"^^geo:wktLiteral ;
+        schema:addressLocality "Vernier" ;
+    ] ;
+    schema:url <https://www.givaudan.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000458988445> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q509544> ;
+             .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02prqh017> 
+    a org:Organization ;
+    rdfs:label "Holon Institute of Technology" ;
+    schema:name "Holon Institute of Technology" ;
+    schema:foundingDate "1969"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Holon_Institute_of_Technology> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(34.77918 32.01034)"^^geo:wktLiteral ;
+        schema:addressLocality "Holon" ;
+    ] ;
+    schema:url <http://www.hit.ac.il/en> ;
+    schema:sameAs <http://isni.org/isni/0000000095342791> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5884192> ;
+             .

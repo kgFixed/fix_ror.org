@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00gz1s959> 
+    a org:Organization ;
+    rdfs:label "Archives d'État de Genève" ;
+    schema:name "Archives d'État de Genève" ;
+    schema:foundingDate "1839"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(6.14569 46.20222)"^^geo:wktLiteral ;
+        schema:addressLocality "Geneva" ;
+    ] ;
+    schema:url <http://ge.ch/archives/> ;
+    schema:sameAs <http://isni.org/isni/0000000119569529> ;
+             .

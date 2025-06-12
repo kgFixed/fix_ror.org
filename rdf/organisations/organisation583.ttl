@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01k18gj34> 
+    a org:Organization ;
+    rdfs:label "Ashworth College" ;
+    schema:name "Ashworth College" ;
+    schema:foundingDate "1987"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Ashworth_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-84.21353 33.94121)"^^geo:wktLiteral ;
+        schema:addressLocality "Norcross" ;
+    ] ;
+    schema:url <https://www.ashworthcollege.edu/index.php> ;
+    schema:sameAs <http://isni.org/isni/0000000404201408> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4806216> ;
+             .

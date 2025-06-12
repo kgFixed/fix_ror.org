@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05x23jh68> 
+    a org:Organization ;
+    rdfs:label "Volunteer Research Group and New Orleans Center for Clinical Research" ;
+    schema:name "Volunteer Research Group and New Orleans Center for Clinical Research" ;
+    schema:foundingDate "1985"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-83.92074 35.96064)"^^geo:wktLiteral ;
+        schema:addressLocality "Knoxville" ;
+    ] ;
+    schema:url <http://volresearch.com/> ;
+     .

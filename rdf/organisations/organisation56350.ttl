@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0037rj917> 
+    a org:Organization ;
+    rdfs:label "Institute of Mechanics of Metal-Polymer Systems" ;
+    schema:name "Institute of Mechanics of Metal-Polymer Systems" ;
+    schema:foundingDate "1956"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01y1re497> ;
+        rdfs:label "Department of Physical and Technical Sciences" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(30.9754 52.4345)"^^geo:wktLiteral ;
+        schema:addressLocality "Homyel" ;
+    ] ;
+    schema:url <http://mpri.org.by/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30274138> ;
+             .

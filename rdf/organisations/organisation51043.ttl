@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00j0wh784> 
+    a org:Organization ;
+    rdfs:label "IPPMed (Germany)" ;
+    schema:name "IPPMed (Germany)" ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(8.045 52.84754)"^^geo:wktLiteral ;
+        schema:addressLocality "Cloppenburg" ;
+    ] ;
+    schema:url <http://ippmed.de/> ;
+    schema:sameAs <http://isni.org/isni/0000000483890378> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30269101> ;
+             .

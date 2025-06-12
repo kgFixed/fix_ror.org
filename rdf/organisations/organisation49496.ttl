@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02anmpm17> 
+    a org:Organization ;
+    rdfs:label "Varian Medical Systems (Germany)" ;
+    schema:name "Varian Medical Systems (Germany)" ;
+    schema:foundingDate "1948"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05yab6874> ;
+        rdfs:label "Varian Medical Systems (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(7.14968 50.80901)"^^geo:wktLiteral ;
+        schema:addressLocality "Troisdorf" ;
+    ] ;
+    schema:url <https://www.varian.com/> ;
+     .

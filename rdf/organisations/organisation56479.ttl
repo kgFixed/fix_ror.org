@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04t21k589> 
+    a org:Organization ;
+    rdfs:label "Nexira (France)" ;
+    schema:name "Nexira (France)" ;
+    schema:foundingDate "1895"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.11341 43.24376)"^^geo:wktLiteral ;
+        schema:addressLocality "Bram" ;
+    ] ;
+    schema:url <http://www.nexira.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000460161789> ;
+             .

@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01v7k9n65> 
+    a org:Organization ;
+    rdfs:label "Eli Lilly (Switzerland)" ;
+    schema:name "Eli Lilly (Switzerland)" ;
+    schema:foundingDate "1876"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Eli_Lilly_and_Company> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01qat3289> ;
+        rdfs:label "Eli Lilly (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(6.08497 46.21702)"^^geo:wktLiteral ;
+        schema:addressLocality "Vernier" ;
+    ] ;
+    schema:url <https://www.lilly.ch/> ;
+    schema:sameAs <http://isni.org/isni/0000000405339759> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30268955> ;
+             .

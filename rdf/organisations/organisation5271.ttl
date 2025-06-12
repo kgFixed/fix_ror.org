@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04d0rfg41> 
+    a org:Organization ;
+    rdfs:label "St. Paul's Hospital" ;
+    schema:name "St. Paul's Hospital" ;
+    schema:foundingDate "1907"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/St._Paul%27s_Hospital_(Saskatoon)> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02wtdvm35> ;
+        rdfs:label "Saskatchewan Health Authority" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-106.66892 52.13238)"^^geo:wktLiteral ;
+        schema:addressLocality "Saskatoon" ;
+    ] ;
+    schema:url <http://www.stpaulshospital.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000404976668> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7591152> ;
+             .

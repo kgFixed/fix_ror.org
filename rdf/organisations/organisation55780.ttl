@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/048p4wq89> 
+    a org:Organization ;
+    rdfs:label "Takeda (France)" ;
+    schema:name "Takeda (France)" ;
+    schema:foundingDate "1781"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Takeda_Pharmaceutical_Company> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04hjbmv12> ;
+        rdfs:label "Takeda (Japan)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.23894 48.88341)"^^geo:wktLiteral ;
+        schema:addressLocality "Puteaux" ;
+    ] ;
+    schema:url <http://www.takeda.fr/> ;
+    schema:sameAs <http://isni.org/isni/0000000093637924> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30273449> ;
+             .

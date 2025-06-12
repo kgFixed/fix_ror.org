@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04a2k6j28> 
+    a org:Organization ;
+    rdfs:label "Volpe National Transportation Systems Center" ;
+    schema:name "Volpe National Transportation Systems Center" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/John_A._Volpe_National_Transportation_Systems_Center> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02xfw2e90> ;
+        rdfs:label "United States Department of Transportation" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-71.10561 42.3751)"^^geo:wktLiteral ;
+        schema:addressLocality "Cambridge" ;
+    ] ;
+    schema:url <https://www.volpe.dot.gov/> ;
+    schema:sameAs <http://isni.org/isni/0000000403749287> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3562954> ;
+             .

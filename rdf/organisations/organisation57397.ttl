@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0499cjb39> 
+    a org:Organization ;
+    rdfs:label "Greek Society of Rheumatology" ;
+    schema:name "Greek Society of Rheumatology" ;
+    schema:foundingDate "1960"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(23.72784 37.98376)"^^geo:wktLiteral ;
+        schema:addressLocality "Athens" ;
+    ] ;
+    schema:url <http://www.ere.gr/%CE%A0%CF%81%CE%BF%CF%86%CE%AF%CE%BB> ;
+     .

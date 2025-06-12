@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/056v7cj11> 
+    a org:Organization ;
+    rdfs:label "Archives de l'ancien Évêché de Bâle" ;
+    schema:name "Archives de l'ancien Évêché de Bâle" ;
+    schema:foundingDate "1985"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(7.07573 47.41728)"^^geo:wktLiteral ;
+        schema:addressLocality "Porrentruy" ;
+    ] ;
+    schema:url <http://www.aaeb.ch/Scripts/Index.aspx?idz=1> ;
+    schema:sameAs <http://isni.org/isni/0000000091570332> ;
+             .

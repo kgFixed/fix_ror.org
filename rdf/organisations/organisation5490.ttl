@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0132qa516> 
+    a org:Organization ;
+    rdfs:label "Worcester Memorial Hospital" ;
+    schema:name "Worcester Memorial Hospital" ;
+    schema:foundingDate "1871"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Memorial_Hospital_(Worcester)> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-71.80229 42.26259)"^^geo:wktLiteral ;
+        schema:addressLocality "Worcester" ;
+    ] ;
+    schema:sameAs <http://www.wikidata.org/entity/Q6815466> ;
+             .

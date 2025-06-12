@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0523s0t06> 
+    a org:Organization ;
+    rdfs:label "Gerot Lannach (Austria)" ;
+    schema:name "Gerot Lannach (Austria)" ;
+    schema:foundingDate "1947"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(15.33722 46.94611)"^^geo:wktLiteral ;
+        schema:addressLocality "Lannach" ;
+    ] ;
+    schema:url <https://gl-pharma.at/language/en/> ;
+    schema:sameAs <http://isni.org/isni/0000000405154770> ;
+             .

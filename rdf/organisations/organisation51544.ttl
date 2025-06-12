@@ -1,0 +1,26 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/027sxqf09> 
+    a org:Organization ;
+    rdfs:label "Clinique Saint-Joseph" ;
+    schema:name "Clinique Saint-Joseph" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/002atrf55> ;
+        rdfs:label "Centre Hospitalier Chrétien" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(5.56749 50.63373)"^^geo:wktLiteral ;
+        schema:addressLocality "Liège" ;
+    ] ;
+    schema:url <http://www.chc.be/Cliniques/Clinique-Saint-Joseph-Liege.aspx> ;
+     .

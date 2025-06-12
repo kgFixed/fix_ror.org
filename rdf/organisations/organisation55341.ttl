@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05xjcvb83> 
+    a org:Organization ;
+    rdfs:label "Society for Industrial and Organizational Psychology" ;
+    schema:name "Society for Industrial and Organizational Psychology" ;
+    schema:foundingDate "1982"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Society_for_Industrial_and_Organizational_Psychology> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-83.65132 41.37477)"^^geo:wktLiteral ;
+        schema:addressLocality "Bowling Green" ;
+    ] ;
+    schema:url <http://www.siop.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000122286327> ;
+             .

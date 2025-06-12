@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02rzjwp47> 
+    a org:Organization ;
+    rdfs:label "Science and Technology Center in Ukraine" ;
+    schema:name "Science and Technology Center in Ukraine" ;
+    schema:foundingDate "1993"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Science_and_Technology_Center_in_Ukraine> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(30.5238 50.45466)"^^geo:wktLiteral ;
+        schema:addressLocality "Kyiv" ;
+    ] ;
+    schema:url <http://www.stcu.int/> ;
+    schema:sameAs <http://isni.org/isni/0000000085378993> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7433636> ;
+             .

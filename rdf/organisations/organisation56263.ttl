@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04fg2k993> 
+    a org:Organization ;
+    rdfs:label "Biogen (Switzerland)" ;
+    schema:name "Biogen (Switzerland)" ;
+    schema:foundingDate "1978"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Biogen> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02jqkb192> ;
+        rdfs:label "Biogen (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(8.51745 47.17242)"^^geo:wktLiteral ;
+        schema:addressLocality "Zug" ;
+    ] ;
+    schema:url <https://www.biogen.ch/> ;
+    schema:sameAs <http://isni.org/isni/0000000406441683> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30274042> ;
+             .

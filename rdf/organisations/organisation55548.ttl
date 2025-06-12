@@ -1,0 +1,35 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03j353w33> 
+    a org:Organization ;
+    rdfs:label "Berry (United States)" ;
+    schema:name "Berry (United States)" ;
+    schema:foundingDate "1967"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Berry_Global> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/020qgqz48> ;
+        rdfs:label "Berry (India)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00zw0jt22> ;
+        rdfs:label "Berry (Switzerland)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-87.55585 37.97476)"^^geo:wktLiteral ;
+        schema:addressLocality "Evansville" ;
+    ] ;
+    schema:url <http://www.berryplastics.com/> ;
+    schema:sameAs <http://isni.org/isni/000000040401125X> ;
+             .

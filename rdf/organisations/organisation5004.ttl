@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0159cmf83> 
+    a org:Organization ;
+    rdfs:label "St Peter's Hospital" ;
+    schema:name "St Peter's Hospital" ;
+    schema:foundingDate "1939"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/St_Peter%27s_Hospital_(Chertsey)> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/051p4rr20> ;
+        rdfs:label "Ashford and St Peter's Hospitals NHS Foundation Trust" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/041kmwe10> ;
+        rdfs:label "Imperial College London" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/040f08y74> ;
+        rdfs:label "St George's, University of London" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.50782 51.38812)"^^geo:wktLiteral ;
+        schema:addressLocality "Chertsey" ;
+    ] ;
+    schema:url <http://www.ashfordstpeters.nhs.uk/st-peter-s-hospital/82-st-peter-s-hospital> ;
+    schema:sameAs <http://isni.org/isni/0000000403996077> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7595324> ;
+             .

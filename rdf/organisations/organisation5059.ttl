@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00rfgpg89> 
+    a org:Organization ;
+    rdfs:label "Salem Hospital" ;
+    schema:name "Salem Hospital" ;
+    schema:foundingDate "1896"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Salem_Hospital_(Oregon)> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00b4emx12> ;
+        rdfs:label "North Shore Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/009avj582> ;
+        rdfs:label "Oregon Health & Science University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-123.0351 44.9429)"^^geo:wktLiteral ;
+        schema:addressLocality "Salem" ;
+    ] ;
+    schema:url <https://www.salemhealth.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000404604960> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7404125> ;
+             .

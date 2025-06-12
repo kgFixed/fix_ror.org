@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01p87k189> 
+    a org:Organization ;
+    rdfs:label "American Heart Institute" ;
+    schema:name "American Heart Institute" ;
+    schema:foundingDate "1999"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/The_American_Heart_Institute> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(33.3642 35.17531)"^^geo:wktLiteral ;
+        schema:addressLocality "Nicosia" ;
+    ] ;
+    schema:url <http://amc.com.cy/en-us/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30269599> ;
+             .

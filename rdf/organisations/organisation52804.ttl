@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02eq6ye19> 
+    a org:Organization ;
+    rdfs:label "B. Braun Stiftung" ;
+    schema:name "B. Braun Stiftung" ;
+    schema:foundingDate "1966"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04nxj7050> ;
+        rdfs:label "B. Braun (Germany)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(9.55236 51.13029)"^^geo:wktLiteral ;
+        schema:addressLocality "Melsungen" ;
+    ] ;
+    schema:url <http://www.bbraun-stiftung.de/> ;
+     .

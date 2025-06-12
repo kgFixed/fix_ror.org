@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02v6f4y51> 
+    a org:Organization ;
+    rdfs:label "National Academy of Sciences India" ;
+    schema:name "National Academy of Sciences India" ;
+    schema:foundingDate "1930"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/National_Academy_of_Sciences,_India> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(81.84322 25.44478)"^^geo:wktLiteral ;
+        schema:addressLocality "Prayagraj" ;
+    ] ;
+    schema:url <http://www.nasi.org.in/> ;
+    schema:sameAs <http://isni.org/isni/0000000085266940> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7753141> ;
+             .

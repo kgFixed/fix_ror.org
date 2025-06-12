@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05fbj2448> 
+    a org:Organization ;
+    rdfs:label "Florida Chamber of Commerce" ;
+    schema:name "Florida Chamber of Commerce" ;
+    schema:foundingDate "1912"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Florida_Chamber_of_Commerce> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-84.28073 30.43826)"^^geo:wktLiteral ;
+        schema:addressLocality "Tallahassee" ;
+    ] ;
+    schema:url <http://www.flchamber.com/> ;
+     .

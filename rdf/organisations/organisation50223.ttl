@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01xd82d18> 
+    a org:Organization ;
+    rdfs:label "PAST Foundation" ;
+    schema:name "PAST Foundation" ;
+    schema:foundingDate "2000"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/PAST_Foundation> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-82.99879 39.96118)"^^geo:wktLiteral ;
+        schema:addressLocality "Columbus" ;
+    ] ;
+    schema:url <https://pastfoundation.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000091950474> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7118262> ;
+             .

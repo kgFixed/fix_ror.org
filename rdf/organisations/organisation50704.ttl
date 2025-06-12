@@ -1,0 +1,33 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04r0bh641> 
+    a org:Organization ;
+    rdfs:label "Neoleukin Therapeutics (United States)" ;
+    schema:name "Neoleukin Therapeutics (United States)" ;
+    schema:foundingDate "2006"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03q1gvb68> ;
+        rdfs:label "Neoleukin Therapeutics (Canada)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01spess76> ;
+        rdfs:label "Neoleukin Therapeutics (United Kingdom)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-122.41108 37.63049)"^^geo:wktLiteral ;
+        schema:addressLocality "San Bruno" ;
+    ] ;
+    schema:url <https://www.neoleukin.com/> ;
+     .

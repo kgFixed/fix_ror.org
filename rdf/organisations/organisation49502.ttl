@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04hqvm002> 
+    a org:Organization ;
+    rdfs:label "ZF Friedrichshafen (Japan)" ;
+    schema:name "ZF Friedrichshafen (Japan)" ;
+    schema:foundingDate "1915"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/ZF_Friedrichshafen#ZF-TRW> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/021wbbm64> ;
+        rdfs:label "ZF Friedrichshafen (Germany)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(135.1501 34.2152)"^^geo:wktLiteral ;
+        schema:addressLocality "Minato" ;
+    ] ;
+    schema:url <https://www.zf.com/japan/ja/home/home.html> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30712947> ;
+             .

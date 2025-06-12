@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03sgj4t62> 
+    a org:Organization ;
+    rdfs:label "Evonik (France)" ;
+    schema:name "Evonik (France)" ;
+    schema:foundingDate "2007"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Evonik_Industries> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01qmw3j63> ;
+        rdfs:label "Evonik (Germany)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(4.81496 45.37388)"^^geo:wktLiteral ;
+        schema:addressLocality "Roussillon" ;
+    ] ;
+    schema:url <http://corporate.evonik.com/en> ;
+    schema:sameAs <http://isni.org/isni/0000000404464152> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30714005> ;
+             .

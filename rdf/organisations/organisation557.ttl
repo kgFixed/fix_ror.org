@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/022swbj46> 
+    a org:Organization ;
+    rdfs:label "National Brain Research Centre" ;
+    schema:name "National Brain Research Centre" ;
+    schema:foundingDate "1997"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/National_Brain_Research_Centre> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03emtbt60> ;
+        rdfs:label "Ministry of Science and Technology" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(77.02635 28.4601)"^^geo:wktLiteral ;
+        schema:addressLocality "Gurugram" ;
+    ] ;
+    schema:url <http://www.nbrc.ac.in/> ;
+    schema:sameAs <http://isni.org/isni/0000000417681797> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6971115> ;
+             .

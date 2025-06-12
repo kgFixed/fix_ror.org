@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/055gjr823> 
+    a org:Organization ;
+    rdfs:label "Institut für Sozialwissenschaftliche Analysen und Beratung" ;
+    schema:name "Institut für Sozialwissenschaftliche Analysen und Beratung" ;
+    schema:foundingDate "1988"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(8.30635 47.05048)"^^geo:wktLiteral ;
+        schema:addressLocality "Lucerne" ;
+    ] ;
+    schema:url <http://www.isab.ch/> ;
+    schema:sameAs <http://isni.org/isni/0000000085023375> ;
+             .

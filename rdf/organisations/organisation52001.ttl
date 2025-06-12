@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/057bn5g61> 
+    a org:Organization ;
+    rdfs:label "Lindesbergs lasarett" ;
+    schema:name "Lindesbergs lasarett" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(15.2304 59.59202)"^^geo:wktLiteral ;
+        schema:addressLocality "Lindesberg" ;
+    ] ;
+    schema:url <https://www.regionorebrolan.se/lindesberg/> ;
+    schema:sameAs <http://isni.org/isni/0000000406180540> ;
+             .

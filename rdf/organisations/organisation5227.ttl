@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02stzb903> 
+    a org:Organization ;
+    rdfs:label "Victoria Hospital" ;
+    schema:name "Victoria Hospital" ;
+    schema:foundingDate "1967"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Victoria_Hospital_(Kirkcaldy)> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05x1ves75> ;
+        rdfs:label "NHS Fife" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-3.15999 56.11683)"^^geo:wktLiteral ;
+        schema:addressLocality "Kirkcaldy" ;
+    ] ;
+    schema:url <http://www.nhsfife.org/nhs/index.cfm?fuseaction=nhs.facilitydisplay&p2sid=E839B517-5056-8C6F-C0DB46109650A94B&themeid=E4689E2B-5056-8C6F-C0BF8FA7CD6A38D0> ;
+    schema:sameAs <http://isni.org/isni/0000000406249667> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7926784> ;
+             .

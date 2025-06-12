@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00jy1b467> 
+    a org:Organization ;
+    rdfs:label "Busara Center for Behavioral Economics" ;
+    schema:name "Busara Center for Behavioral Economics" ;
+    schema:foundingDate "2012"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/032f13a22> ;
+        rdfs:label "Busara Center for Behavioral Economics" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-74.74294 40.21705)"^^geo:wktLiteral ;
+        schema:addressLocality "Trenton" ;
+    ] ;
+    schema:url <http://www.busaracenter.org/> ;
+     .

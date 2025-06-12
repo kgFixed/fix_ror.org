@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01ckbq028> 
+    a org:Organization ;
+    rdfs:label "Whittington Hospital" ;
+    schema:name "Whittington Hospital" ;
+    schema:foundingDate "1848"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Whittington_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02vg92y09> ;
+        rdfs:label "Whittington Health NHS Trust" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02jx3x895> ;
+        rdfs:label "University College London" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.12574 51.50853)"^^geo:wktLiteral ;
+        schema:addressLocality "London" ;
+    ] ;
+    schema:url <https://www.whittington.nhs.uk/mini-apps/location/locationPage.asp?LocationID=1> ;
+    schema:sameAs <http://isni.org/isni/0000000446873624> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7996907> ;
+             .

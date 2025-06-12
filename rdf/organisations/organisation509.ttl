@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05msy3z48> 
+    a org:Organization ;
+    rdfs:label "Legacy Good Samaritan Medical Center" ;
+    schema:name "Legacy Good Samaritan Medical Center" ;
+    schema:foundingDate "1875"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Legacy_Good_Samaritan_Medical_Center> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04g9xj393> ;
+        rdfs:label "Legacy Health" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-122.67621 45.52345)"^^geo:wktLiteral ;
+        schema:addressLocality "Portland" ;
+    ] ;
+    schema:url <http://www.legacyhealth.org/locations/hospitals/legacy-good-samaritan-medical-center.aspx> ;
+    schema:sameAs <http://isni.org/isni/000000040443077X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6517242> ;
+             .

@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/003qr7703> 
+    a org:Organization ;
+    rdfs:label "Peijas Hospital" ;
+    schema:name "Peijas Hospital" ;
+    schema:foundingDate "2001"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Peijas_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02e8hzf44> ;
+        rdfs:label "Helsinki University Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/020cpqb94> ;
+        rdfs:label "Hospital District of Helsinki and Uusimaa" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(25.04099 60.29414)"^^geo:wktLiteral ;
+        schema:addressLocality "Vantaa" ;
+    ] ;
+    schema:url <http://www.hus.fi/en/medical-care/hospitals/peijas-hospital/Pages/default.aspx> ;
+    schema:sameAs <http://isni.org/isni/0000000406247696> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q18661247> ;
+             .

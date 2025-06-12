@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02a6ezh03> 
+    a org:Organization ;
+    rdfs:label "Consejería de Educación y Empleo" ;
+    schema:name "Consejería de Educación y Empleo" ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01df4mv68> ;
+        rdfs:label "Government of Extremadura" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-6.34366 38.91611)"^^geo:wktLiteral ;
+        schema:addressLocality "Mérida" ;
+    ] ;
+    schema:url <http://www.juntaex.es/con04/consejara-de-educacion-y-empleo> ;
+     .

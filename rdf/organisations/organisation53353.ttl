@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03g3g6c84> 
+    a org:Organization ;
+    rdfs:label "Foundation for National Parks and Wildlife" ;
+    schema:name "Foundation for National Parks and Wildlife" ;
+    schema:foundingDate "1970"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Foundation_for_National_Parks_%26_Wildlife> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(151.20732 -33.86785)"^^geo:wktLiteral ;
+        schema:addressLocality "Sydney" ;
+    ] ;
+    schema:url <http://www.fnpw.org.au/> ;
+    schema:sameAs <http://isni.org/isni/0000000459000726> ;
+             .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04qy50a03> 
+    a org:Organization ;
+    rdfs:label "Friedrich Naumann Foundation" ;
+    schema:name "Friedrich Naumann Foundation" ;
+    schema:foundingDate "1958"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Friedrich_Naumann_Foundation> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(13.06566 52.39886)"^^geo:wktLiteral ;
+        schema:addressLocality "Potsdam" ;
+    ] ;
+    schema:url <https://www.freiheit.org/> ;
+    schema:sameAs <http://isni.org/isni/000000012149807X> ;
+             .

@@ -1,0 +1,48 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01vs7pm87> 
+    a org:Organization ;
+    rdfs:label "Teleflex (United States)" ;
+    schema:name "Teleflex (United States)" ;
+    schema:foundingDate "1943"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Teleflex> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/025ajkx98> ;
+        rdfs:label "Teleflex (Australia)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0103a0295> ;
+        rdfs:label "Teleflex (Canada)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/052sehq92> ;
+        rdfs:label "Teleflex (Germany)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03x26x505> ;
+        rdfs:label "Teleflex (Ireland)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-75.38769 40.044)"^^geo:wktLiteral ;
+        schema:addressLocality "Wayne" ;
+    ] ;
+    schema:url <http://www.teleflex.com/usa/?language_id=1> ;
+    schema:sameAs <http://isni.org/isni/0000000406012766> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7696143> ;
+             .

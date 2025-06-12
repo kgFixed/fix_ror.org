@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/013e81n30> 
+    a org:Organization ;
+    rdfs:label "University of Alberta Hospital" ;
+    schema:name "University of Alberta Hospital" ;
+    schema:foundingDate "1906"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/University_of_Alberta_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02nt5es71> ;
+        rdfs:label "Alberta Health Services" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0160cpw27> ;
+        rdfs:label "University of Alberta" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-113.46871 53.55014)"^^geo:wktLiteral ;
+        schema:addressLocality "Edmonton" ;
+    ] ;
+    schema:url <http://www.albertahealthservices.ca/facilities.asp?pid=facility&rid=6600> ;
+    schema:sameAs <http://isni.org/isni/0000000404597625> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7895046> ;
+             .

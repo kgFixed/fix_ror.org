@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0583j8v67> 
+    a org:Organization ;
+    rdfs:label "Strong Memorial Hospital" ;
+    schema:name "Strong Memorial Hospital" ;
+    schema:foundingDate "1925"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Strong_Memorial_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00trqv719> ;
+        rdfs:label "University of Rochester Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/022kthw22> ;
+        rdfs:label "University of Rochester" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.61556 43.15478)"^^geo:wktLiteral ;
+        schema:addressLocality "Rochester" ;
+    ] ;
+    schema:url <https://www.urmc.rochester.edu/strong-memorial.aspx> ;
+    schema:sameAs <http://isni.org/isni/0000000092063906> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7624508> ;
+             .

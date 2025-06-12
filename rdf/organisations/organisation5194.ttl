@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03mxm6g77> 
+    a org:Organization ;
+    rdfs:label "Tomah VA Medical Center" ;
+    schema:name "Tomah VA Medical Center" ;
+    schema:foundingDate "1930"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/023w6y044> ;
+        rdfs:label "VA Great Lakes Health Care System" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-90.50402 43.97858)"^^geo:wktLiteral ;
+        schema:addressLocality "Tomah" ;
+    ] ;
+    schema:url <http://www.tomah.va.gov/> ;
+    schema:sameAs <http://isni.org/isni/0000000404207084> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30281028> ;
+             .

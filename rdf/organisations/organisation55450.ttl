@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/046ec5t14> 
+    a org:Organization ;
+    rdfs:label "Syngenta Foundation for Sustainable Agriculture" ;
+    schema:name "Syngenta Foundation for Sustainable Agriculture" ;
+    org:status "active" ;
+    org:classification "Other" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(7.57327 47.55839)"^^geo:wktLiteral ;
+        schema:addressLocality "Basel" ;
+    ] ;
+    schema:url <https://www.syngentafoundation.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000122036926> ;
+             .

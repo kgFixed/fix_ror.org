@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01y2xw046> 
+    a org:Organization ;
+    rdfs:label "Central Indiana Gastroenterology Group" ;
+    schema:name "Central Indiana Gastroenterology Group" ;
+    schema:foundingDate "1982"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-85.68025 40.10532)"^^geo:wktLiteral ;
+        schema:addressLocality "Anderson" ;
+    ] ;
+    schema:url <http://www.ciggroup.net/> ;
+    schema:sameAs <http://isni.org/isni/000000040388629X> ;
+             .

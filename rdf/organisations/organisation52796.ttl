@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01hvxhn04> 
+    a org:Organization ;
+    rdfs:label "American Society of Naturalist" ;
+    schema:name "American Society of Naturalist" ;
+    schema:foundingDate "1883"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/American_Society_of_Naturalists> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-72.58981 42.10148)"^^geo:wktLiteral ;
+        schema:addressLocality "Springfield" ;
+    ] ;
+    schema:url <http://www.amnat.org/home.html> ;
+    schema:sameAs <http://isni.org/isni/0000000108606144> ;
+             .

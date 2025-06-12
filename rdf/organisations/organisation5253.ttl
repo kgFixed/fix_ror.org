@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02wcqs336> 
+    a org:Organization ;
+    rdfs:label "Jerusalem Mental Health Center" ;
+    schema:name "Jerusalem Mental Health Center" ;
+    schema:foundingDate "1951"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Kfar_Shaul_Mental_Health_Center> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03qxff017> ;
+        rdfs:label "Hebrew University of Jerusalem" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(35.21633 31.76904)"^^geo:wktLiteral ;
+        schema:addressLocality "Jerusalem" ;
+    ] ;
+    schema:url <http://www.psjer.org.il/> ;
+    schema:sameAs <http://isni.org/isni/0000000405597707> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2898545> ;
+             .

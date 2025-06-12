@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02yb4t415> 
+    a org:Organization ;
+    rdfs:label "Sidel (France)" ;
+    schema:name "Sidel (France)" ;
+    schema:foundingDate "1965"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Sidel> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0382m9t69> ;
+        rdfs:label "Sidel (Italy)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(0.1166 49.55496)"^^geo:wktLiteral ;
+        schema:addressLocality "Octeville-sur-Mer" ;
+    ] ;
+    schema:url <http://www.sidel.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000406216507> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3483122> ;
+             .

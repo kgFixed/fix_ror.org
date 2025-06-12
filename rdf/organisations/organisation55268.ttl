@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03h4z1825> 
+    a org:Organization ;
+    rdfs:label "Racing Victoria" ;
+    schema:name "Racing Victoria" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Racing_Victoria> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(144.93001 -37.78825)"^^geo:wktLiteral ;
+        schema:addressLocality "Flemington" ;
+    ] ;
+    schema:url <https://rv.racing.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000405355679> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7279696> ;
+             .

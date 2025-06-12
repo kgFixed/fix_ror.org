@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02s61w335> 
+    a org:Organization ;
+    rdfs:label "Ospedale Regionale di Bellinzona e Valli" ;
+    schema:name "Ospedale Regionale di Bellinzona e Valli" ;
+    schema:foundingDate "2000"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(9.01703 46.19278)"^^geo:wktLiteral ;
+        schema:addressLocality "Bellinzona" ;
+    ] ;
+    schema:url <http://www.eoc.ch/Ospedali-e-Istituti/Ospedale-Regionale-di-Bellinzona-e-Valli/Bellinzona/Presentazione.html> ;
+    schema:sameAs <http://isni.org/isni/0000000404404459> ;
+             .

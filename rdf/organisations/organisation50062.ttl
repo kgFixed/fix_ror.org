@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05qraqp26> 
+    a org:Organization ;
+    rdfs:label "Ministry of Culture" ;
+    schema:name "Ministry of Culture" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Ministry_of_Culture_(Lithuania)> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02jnvb825> ;
+        rdfs:label "Department of Cultural Heritage" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(25.2798 54.68916)"^^geo:wktLiteral ;
+        schema:addressLocality "Vilnius" ;
+    ] ;
+    schema:url <https://lrkm.lrv.lt/en/> ;
+     .

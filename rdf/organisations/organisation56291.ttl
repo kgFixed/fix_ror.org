@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/024a53a32> 
+    a org:Organization ;
+    rdfs:label "Texas Instruments (Switzerland)" ;
+    schema:name "Texas Instruments (Switzerland)" ;
+    schema:foundingDate "1930"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Texas_Instruments> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03vsmv677> ;
+        rdfs:label "Texas Instruments (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(8.40015 47.40165)"^^geo:wktLiteral ;
+        schema:addressLocality "Dietikon" ;
+    ] ;
+    schema:url <http://www.ti.com/> ;
+     .

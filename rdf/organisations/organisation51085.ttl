@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04ts8g112> 
+    a org:Organization ;
+    rdfs:label "MediWound (Germany)" ;
+    schema:name "MediWound (Germany)" ;
+    schema:foundingDate "2001"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04pp96p75> ;
+        rdfs:label "MediWound (Israel)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(8.42251 49.98955)"^^geo:wktLiteral ;
+        schema:addressLocality "Rüsselsheim am Main" ;
+    ] ;
+    schema:url <http://www.mediwound.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30269147> ;
+             .

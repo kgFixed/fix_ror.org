@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0017b9g92> 
+    a org:Organization ;
+    rdfs:label "International Society for Developmental Origins of Health and Disease" ;
+    schema:name "International Society for Developmental Origins of Health and Disease" ;
+    schema:foundingDate "2003"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/International_Society_for_Developmental_Origins_of_Health_and_Disease> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.40428 50.90395)"^^geo:wktLiteral ;
+        schema:addressLocality "Southampton" ;
+    ] ;
+    schema:url <https://dohadsoc.org/> ;
+     .

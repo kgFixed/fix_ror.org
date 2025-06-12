@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02zqt3j23> 
+    a org:Organization ;
+    rdfs:label "Cradle of Liberty Council Boy Scouts of America" ;
+    schema:name "Cradle of Liberty Council Boy Scouts of America" ;
+    schema:foundingDate "1996"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Cradle_of_Liberty_Council> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-75.38769 40.044)"^^geo:wktLiteral ;
+        schema:addressLocality "Wayne" ;
+    ] ;
+    schema:url <http://colbsa.org/> ;
+     .

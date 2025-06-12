@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0228pwd35> 
+    a org:Organization ;
+    rdfs:label "Federal Department of Finance" ;
+    schema:name "Federal Department of Finance" ;
+    schema:foundingDate "1848"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Federal_Department_of_Finance> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(7.44744 46.94809)"^^geo:wktLiteral ;
+        schema:addressLocality "Bern" ;
+    ] ;
+    schema:url <https://www.efd.admin.ch/efd/en/home.html?_organization=601&_startDate=01.06.2015> ;
+     .

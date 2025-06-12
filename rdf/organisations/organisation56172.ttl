@@ -1,0 +1,33 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/017mw4x28> 
+    a org:Organization ;
+    rdfs:label "Healthcare Technology Innovation Centre" ;
+    schema:name "Healthcare Technology Innovation Centre" ;
+    schema:foundingDate "2012"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03tjsyq23> ;
+        rdfs:label "Department of Biotechnology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03v0r5n49> ;
+        rdfs:label "Indian Institute of Technology Madras" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(80.27847 13.08784)"^^geo:wktLiteral ;
+        schema:addressLocality "Chennai" ;
+    ] ;
+    schema:url <https://htic.iitm.ac.in/> ;
+     .

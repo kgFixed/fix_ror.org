@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01pgead21> 
+    a org:Organization ;
+    rdfs:label "Apotex (Canada)" ;
+    schema:name "Apotex (Canada)" ;
+    schema:foundingDate "1974"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Apotex> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04f5a5m96> ;
+        rdfs:label "Apotex (India)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00kw4g054> ;
+        rdfs:label "Apotex (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-79.39864 43.70643)"^^geo:wktLiteral ;
+        schema:addressLocality "Toronto" ;
+    ] ;
+    schema:url <http://www.apotex.com/ca/en/> ;
+    schema:sameAs <http://isni.org/isni/0000000106882401> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4780735> ;
+             .

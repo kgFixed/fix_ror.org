@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05vsxz108> 
+    a org:Organization ;
+    rdfs:label "National Association of Secondary School Principals" ;
+    schema:name "National Association of Secondary School Principals" ;
+    schema:foundingDate "1916"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/National_Association_of_Secondary_School_Principals> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.3411 38.96872)"^^geo:wktLiteral ;
+        schema:addressLocality "Reston" ;
+    ] ;
+    schema:url <https://www.nassp.org/?SSO=true> ;
+    schema:sameAs <http://isni.org/isni/0000000411448476> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6970757> ;
+             .

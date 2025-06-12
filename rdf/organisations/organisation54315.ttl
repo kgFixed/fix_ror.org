@@ -1,0 +1,54 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/030qsdn71> 
+    a org:Organization ;
+    rdfs:label "Federal Mogul (United States)" ;
+    schema:name "Federal Mogul (United States)" ;
+    schema:foundingDate "1899"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Federal-Mogul> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01wjt3437> ;
+        rdfs:label "Federal Mogul (Belgium)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/023kawg24> ;
+        rdfs:label "Federal Mogul (France)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03bq9hz14> ;
+        rdfs:label "Federal Mogul (Germany)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/002qtbf65> ;
+        rdfs:label "Federal Mogul (Sweden)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04qg98577> ;
+        rdfs:label "Federal Mogul (United Kingdom)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-83.22187 42.47337)"^^geo:wktLiteral ;
+        schema:addressLocality "Southfield" ;
+    ] ;
+    schema:url <http://www.federalmogul.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000122661481> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30338376> ;
+             .

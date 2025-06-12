@@ -1,0 +1,35 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02112mb03> 
+    a org:Organization ;
+    rdfs:label "Ospedale Filippo Del Ponte Varese" ;
+    schema:name "Ospedale Filippo Del Ponte Varese" ;
+    schema:foundingDate "1866"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Ospedale_Filippo_del_Ponte> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02s6h0431> ;
+        rdfs:label "Ospedale di Circolo e Fondazione Macchi" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00s409261> ;
+        rdfs:label "University of Insubria" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(8.82511 45.82058)"^^geo:wktLiteral ;
+        schema:addressLocality "Varese" ;
+    ] ;
+    schema:url <http://www.ospedalivarese.net/ospedali/delponte-varese/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q19369275> ;
+             .

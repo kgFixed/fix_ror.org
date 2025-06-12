@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/035gyn125> 
+    a org:Organization ;
+    rdfs:label "Trenton Psychiatric Hospital" ;
+    schema:name "Trenton Psychiatric Hospital" ;
+    schema:foundingDate "1848"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Trenton_Psychiatric_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-74.74294 40.21705)"^^geo:wktLiteral ;
+        schema:addressLocality "Trenton" ;
+    ] ;
+    schema:url <http://www.nj.gov/humanservices/dmhs/oshm/tph/> ;
+    schema:sameAs <http://isni.org/isni/0000000103874027> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7838596> ;
+             .

@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/003mh1m57> 
+    a org:Organization ;
+    rdfs:label "Zürcher RehaZentrum Davos" ;
+    schema:name "Zürcher RehaZentrum Davos" ;
+    schema:foundingDate "2011"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(9.83723 46.80429)"^^geo:wktLiteral ;
+        schema:addressLocality "Davos" ;
+    ] ;
+    schema:url <http://www.zuercher-rehazentren.ch/> ;
+     .

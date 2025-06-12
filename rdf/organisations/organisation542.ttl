@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/054gzqw08> 
+    a org:Organization ;
+    rdfs:label "Central Connecticut State University" ;
+    schema:name "Central Connecticut State University" ;
+    schema:foundingDate "1848"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Central_Connecticut_State_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03vr22992> ;
+        rdfs:label "Connecticut State Colleges and Universities" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-72.77954 41.66121)"^^geo:wktLiteral ;
+        schema:addressLocality "New Britain" ;
+    ] ;
+    schema:url <http://www.ccsu.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000121843689> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1053764> ;
+             .

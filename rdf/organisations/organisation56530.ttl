@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05j242h88> 
+    a org:Organization ;
+    rdfs:label "Vitalité Health Network" ;
+    schema:name "Vitalité Health Network" ;
+    schema:foundingDate "2008"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Vitalit%C3%A9_Health_Network> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04gqmrb58> ;
+        rdfs:label "Dr. Georges-L.-Dumont University Hospital Centre" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-65.65112 47.61814)"^^geo:wktLiteral ;
+        schema:addressLocality "Bathurst" ;
+    ] ;
+    schema:url <http://www.vitalitenb.ca/en> ;
+    schema:sameAs <http://isni.org/isni/0000000404349939> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7936874> ;
+             .

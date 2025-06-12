@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03ct46856> 
+    a org:Organization ;
+    rdfs:label "Environment Canterbury" ;
+    schema:name "Environment Canterbury" ;
+    schema:foundingDate "1979"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Canterbury_Regional_Council> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(171.25364 -44.39672)"^^geo:wktLiteral ;
+        schema:addressLocality "Timaru" ;
+    ] ;
+    schema:url <https://www.ecan.govt.nz/> ;
+    schema:sameAs <http://isni.org/isni/0000000103117384> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5033686> ;
+             .

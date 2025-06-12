@@ -1,0 +1,35 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05yn9cj95> 
+    a org:Organization ;
+    rdfs:label "Sørlandet Sykehus" ;
+    schema:name "Sørlandet Sykehus" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/S%C3%B8rlandet_Hospital_Kristiansand> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0068xq694> ;
+        rdfs:label "Hospital of Southern Norway" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00pk1yr39> ;
+        rdfs:label "Sørlandet Hospital Arendal" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(7.9956 58.14671)"^^geo:wktLiteral ;
+        schema:addressLocality "Kristiansand" ;
+    ] ;
+    schema:url <http://www.sshf.no/> ;
+    schema:sameAs <http://isni.org/isni/0000000406273712> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q12004887> ;
+             .
