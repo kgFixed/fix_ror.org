@@ -35,7 +35,8 @@ def json_to_rdf(path_json_file, template_name, template_directory, output_direct
         
         try:
             # Fichier de sortie pour cet objet
-            output_file = os.path.join(output_directory, f"organisation{i}.ttl")
+            ror_id = obj["id"].split("/")[-1]
+            output_file = os.path.join(output_directory, f"{ror_id}.ttl")
             
             # Configuration avec le fichier temporaire comme source
             sink = SinkFactory.make_sink(output_file, False)
