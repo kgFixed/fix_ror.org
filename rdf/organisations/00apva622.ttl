@@ -1,0 +1,20 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00apva622> 
+    a org:Organization ;
+    rdfs:label "Arno Therapeutics (United States)" ;
+    schema:name "Arno Therapeutics (United States)" ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-74.85933 40.51233)"^^geo:wktLiteral ;
+        schema:addressLocality "Flemington" ;
+    ] ;
+    schema:url <http://www.arnothera.com/> ;
+     .

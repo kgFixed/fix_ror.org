@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00amjd520> 
+    a org:Organization ;
+    rdfs:label "Saint Vincent College" ;
+    schema:name "Saint Vincent College" ;
+    schema:foundingDate "1846"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Saint_Vincent_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-79.37948 40.32118)"^^geo:wktLiteral ;
+        schema:addressLocality "Latrobe" ;
+    ] ;
+    schema:url <http://www.stvincent.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000123230157> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3444141> ;
+             .

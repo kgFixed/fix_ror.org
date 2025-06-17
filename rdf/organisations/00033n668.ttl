@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00033n668> 
+    a org:Organization ;
+    rdfs:label "University for Business and Technology" ;
+    schema:name "University for Business and Technology" ;
+    schema:foundingDate "2001"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/University_for_Business_and_Technology> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(21.16688 42.67272)"^^geo:wktLiteral ;
+        schema:addressLocality "Pristina" ;
+    ] ;
+    schema:url <https://www.ubt-uni.net/sq/ballina/> ;
+    schema:sameAs <http://isni.org/isni/0000000446874264> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q19946137> ;
+             .

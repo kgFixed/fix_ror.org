@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0048myj07> 
+    a org:Organization ;
+    rdfs:label "Ospedale del Ceppo" ;
+    schema:name "Ospedale del Ceppo" ;
+    schema:foundingDate "1277"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Ospedale_del_Ceppo> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(10.92365 43.93064)"^^geo:wktLiteral ;
+        schema:addressLocality "Pistoia" ;
+    ] ;
+    schema:sameAs <http://isni.org/isni/0000000417684234> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1115846> ;
+             .

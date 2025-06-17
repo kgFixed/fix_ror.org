@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00128qj25> 
+    a org:Organization ;
+    rdfs:label "Clinique Neuro-Outaouais" ;
+    schema:name "Clinique Neuro-Outaouais" ;
+    schema:foundingDate "2008"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-75.70164 45.47723)"^^geo:wktLiteral ;
+        schema:addressLocality "Gatineau" ;
+    ] ;
+    schema:url <http://www.neuro-outaouais.com/> ;
+     .

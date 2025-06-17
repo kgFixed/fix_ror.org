@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00cpb6264> 
+    a org:Organization ;
+    rdfs:label "Istituto Neurologico Mediterraneo" ;
+    schema:name "Istituto Neurologico Mediterraneo" ;
+    schema:foundingDate "1991"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04tfzc498> ;
+        rdfs:label "Istituti di Ricovero e Cura a Carattere Scientifico" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(14.06252 41.51142)"^^geo:wktLiteral ;
+        schema:addressLocality "Pozzilli" ;
+    ] ;
+    schema:url <http://www.neuromed.it/> ;
+    schema:sameAs <http://isni.org/isni/0000000417603561> ;
+             .

@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00f5xw084> 
+    a org:Organization ;
+    rdfs:label "Instituto de Educación Técnica Profesional de Roldanillo" ;
+    schema:name "Instituto de Educación Técnica Profesional de Roldanillo" ;
+    schema:foundingDate "1979"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-76.15457 4.41256)"^^geo:wktLiteral ;
+        schema:addressLocality "Roldanillo" ;
+    ] ;
+    schema:url <https://www.intep.edu.co> ;
+    schema:sameAs <http://isni.org/isni/0000000096953308> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30294069> ;
+             .

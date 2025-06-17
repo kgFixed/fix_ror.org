@@ -1,0 +1,20 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/007xn0x86> 
+    a org:Organization ;
+    rdfs:label "Yakama Nation Tribal Council" ;
+    schema:name "Yakama Nation Tribal Council" ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-120.30867 46.37735)"^^geo:wktLiteral ;
+        schema:addressLocality "Toppenish" ;
+    ] ;
+    schema:url <http://www.yakamanation-nsn.gov/council.php> ;
+     .

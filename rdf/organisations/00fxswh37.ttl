@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00fxswh37> 
+    a org:Organization ;
+    rdfs:label "Mondragon Corporation (Spain)" ;
+    schema:name "Mondragon Corporation (Spain)" ;
+    schema:foundingDate "1956"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Mondragon_Corporation> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0147bee55> ;
+        rdfs:label "Mondragon Corporation (Germany)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00h62h294> ;
+        rdfs:label "Mondragon Corporation (New Zealand)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00wvqgd19> ;
+        rdfs:label "Mondragon University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-2.48977 43.06441)"^^geo:wktLiteral ;
+        schema:addressLocality "Arrasate / Mondragón" ;
+    ] ;
+    schema:url <https://www.mondragon-corporation.com> ;
+    schema:sameAs <http://isni.org/isni/0000000093962065> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q163327> ;
+             .

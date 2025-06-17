@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00agykx25> 
+    a org:Organization ;
+    rdfs:label "Hydal Aluminium Profiler (Norway)" ;
+    schema:name "Hydal Aluminium Profiler (Norway)" ;
+    schema:foundingDate "1988"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(10.69155 60.79574)"^^geo:wktLiteral ;
+        schema:addressLocality "Gjøvik" ;
+    ] ;
+    schema:url <http://hap.hydal.com/en/> ;
+     .

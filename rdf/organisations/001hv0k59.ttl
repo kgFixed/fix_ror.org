@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/001hv0k59> 
+    a org:Organization ;
+    rdfs:label "Toyota Technological Institute" ;
+    schema:name "Toyota Technological Institute" ;
+    schema:foundingDate "1981"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Toyota_Technological_Institute> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02sn5gb64> ;
+        rdfs:label "Toyota Technological Institute at Chicago" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(136.90641 35.18147)"^^geo:wktLiteral ;
+        schema:addressLocality "Nagoya" ;
+    ] ;
+    schema:url <http://www.toyota-ti.ac.jp/english/> ;
+    schema:sameAs <http://isni.org/isni/0000000123017444> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7830890> ;
+             .

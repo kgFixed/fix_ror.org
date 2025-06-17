@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00anb1726> 
+    a org:Organization ;
+    rdfs:label "Vertex Pharmaceuticals (United States)" ;
+    schema:name "Vertex Pharmaceuticals (United States)" ;
+    schema:foundingDate "1989"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Vertex_Pharmaceuticals> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05a8pa318> ;
+        rdfs:label "Vertex Pharmaceuticals (Canada)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03fs5jd74> ;
+        rdfs:label "Vertex Pharmaceuticals (United Kingdom)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-71.05977 42.35843)"^^geo:wktLiteral ;
+        schema:addressLocality "Boston" ;
+    ] ;
+    schema:url <http://www.vrtx.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000403847506> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2744099> ;
+             .

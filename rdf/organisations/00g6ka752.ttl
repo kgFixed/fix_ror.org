@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00g6ka752> 
+    a org:Organization ;
+    rdfs:label "Ferdowsi University of Mashhad" ;
+    schema:name "Ferdowsi University of Mashhad" ;
+    schema:foundingDate "1949"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Ferdowsi_University_of_Mashhad> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(59.60567 36.29807)"^^geo:wktLiteral ;
+        schema:addressLocality "Mashhad" ;
+    ] ;
+    schema:url <http://en.um.ac.ir/> ;
+    schema:sameAs <http://isni.org/isni/0000000106661211> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q502545> ;
+             .

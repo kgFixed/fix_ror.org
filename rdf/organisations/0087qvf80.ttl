@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0087qvf80> 
+    a org:Organization ;
+    rdfs:label "Instituto Técnico Artístico e Profissional de Coimbra" ;
+    schema:name "Instituto Técnico Artístico e Profissional de Coimbra" ;
+    schema:foundingDate "1990"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-8.41955 40.20564)"^^geo:wktLiteral ;
+        schema:addressLocality "Coimbra" ;
+    ] ;
+    schema:url <http://www.itap-net.org/> ;
+     .

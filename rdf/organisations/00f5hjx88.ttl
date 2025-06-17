@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00f5hjx88> 
+    a org:Organization ;
+    rdfs:label "Górnośląskie Centrum Zdrowia Dziecka w Katowicach" ;
+    schema:name "Górnośląskie Centrum Zdrowia Dziecka w Katowicach" ;
+    schema:sameAs <https://pl.wikipedia.org/wiki/G%C3%B3rno%C5%9Bl%C4%85skie_Centrum_Zdrowia_Dziecka> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/005k7hp45> ;
+        rdfs:label "Medical University of Silesia" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(19.02754 50.25841)"^^geo:wktLiteral ;
+        schema:addressLocality "Katowice" ;
+    ] ;
+    schema:url <https://gczd.katowice.pl> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q9283780> ;
+             .

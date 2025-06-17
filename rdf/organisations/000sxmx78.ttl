@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/000sxmx78> 
+    a org:Organization ;
+    rdfs:label "Affiliated Eye Hospital of Wenzhou Medical College" ;
+    schema:name "Affiliated Eye Hospital of Wenzhou Medical College" ;
+    schema:foundingDate "1998"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00rd5t069> ;
+        rdfs:label "Wenzhou Medical University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(120.66682 27.99942)"^^geo:wktLiteral ;
+        schema:addressLocality "Wenzhou" ;
+    ] ;
+    schema:url <http://www.wzeye.cn/eyehospital/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q7712765> ;
+             .

@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00bsyjc58> 
+    a org:Organization ;
+    rdfs:label "Kanchi Mamunivar Centre for Post Graduate Studies" ;
+    schema:name "Kanchi Mamunivar Centre for Post Graduate Studies" ;
+    schema:foundingDate "1989"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Kanchi_Mamunivar_Centre_for_Postgraduate_Studies> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01a3mef16> ;
+        rdfs:label "Pondicherry University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(79.82979 11.93381)"^^geo:wktLiteral ;
+        schema:addressLocality "Puducherry" ;
+    ] ;
+    schema:url <http://kmcpgs.puducherry.gov.in/> ;
+    schema:sameAs <http://isni.org/isni/0000000417687793> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30254012> ;
+             .

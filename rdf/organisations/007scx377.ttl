@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/007scx377> 
+    a org:Organization ;
+    rdfs:label "Kouchibouguac National Park" ;
+    schema:name "Kouchibouguac National Park" ;
+    schema:foundingDate "1969"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Kouchibouguac_National_Park> ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/008sy4716> ;
+        rdfs:label "Parks Canada" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-64.96474 46.79933)"^^geo:wktLiteral ;
+        schema:addressLocality "Kouchibouguac National Park" ;
+    ] ;
+    schema:url <https://www.pc.gc.ca/fr/pn-np/nb/kouchibouguac> ;
+    schema:sameAs <http://isni.org/isni/0000000122250973> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q862260> ;
+             .

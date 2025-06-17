@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0021ws843> 
+    a org:Organization ;
+    rdfs:label "Ministry of Community Safety and Correctional Services" ;
+    schema:name "Ministry of Community Safety and Correctional Services" ;
+    schema:foundingDate "1972"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Ministry_of_Community_Safety_and_Correctional_Services> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-79.39864 43.70643)"^^geo:wktLiteral ;
+        schema:addressLocality "Toronto" ;
+    ] ;
+    schema:url <http://www.mcscs.jus.gov.on.ca/english/default.html> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q3315329> ;
+             .

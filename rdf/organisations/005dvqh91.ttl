@@ -1,0 +1,67 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/005dvqh91> 
+    a org:Organization ;
+    rdfs:label "NYU Langone Health" ;
+    schema:name "NYU Langone Health" ;
+    schema:foundingDate "1841"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/NYU_Langone_Medical_Center> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01ky34z31> ;
+        rdfs:label "Bellevue Hospital Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05d789537> ;
+        rdfs:label "New York University Langone Orthopedic Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05bk0c386> ;
+        rdfs:label "Rusk Rehabilitation" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02gkddr41> ;
+        rdfs:label "Tisch Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01jtcg420> ;
+        rdfs:label "Woodhull Medical and Mental Health Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00sa8g751> ;
+        rdfs:label "NYU Langone’s Laura and Isaac Perlmutter Cancer Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0190ak572> ;
+        rdfs:label "New York University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-74.00597 40.71427)"^^geo:wktLiteral ;
+        schema:addressLocality "New York" ;
+    ] ;
+    schema:url <https://nyulangone.org> ;
+    schema:sameAs <http://isni.org/isni/0000000121094251> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6956114> ;
+             .

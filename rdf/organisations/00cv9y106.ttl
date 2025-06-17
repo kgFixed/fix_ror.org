@@ -1,0 +1,79 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00cv9y106> 
+    a org:Organization ;
+    rdfs:label "Ghent University" ;
+    schema:name "Ghent University" ;
+    schema:foundingDate "1817"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Ghent_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/041bygf77> ;
+        rdfs:label "Ghent University Global Campus" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05bm1gr16> ;
+        rdfs:label "VIB - International Plant Biotechnology Outreach" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04q4ydz28> ;
+        rdfs:label "VIB-UGent Center for Inflammation Research" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04hbttm44> ;
+        rdfs:label "VIB-UGent Center for Medical Biotechnology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01qnqmc89> ;
+        rdfs:label "VIB-UGent Center for Plant Systems Biology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05y4fay10> ;
+        rdfs:label "VIB-VUB Laboratory Myeloid Cell Immunology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00xmkp704> ;
+        rdfs:label "Ghent University Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/056t38c37> ;
+        rdfs:label "Vlerick Business School" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0038zss60> ;
+        rdfs:label "European Marine Biological Resource Centre" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(3.71667 51.05)"^^geo:wktLiteral ;
+        schema:addressLocality "Ghent" ;
+    ] ;
+    schema:url <https://www.ugent.be> ;
+    schema:sameAs <http://isni.org/isni/0000000120697798> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1137665> ;
+             .

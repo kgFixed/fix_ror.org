@@ -1,0 +1,103 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0060avh92> 
+    a org:Organization ;
+    rdfs:label "Sutter Health" ;
+    schema:name "Sutter Health" ;
+    schema:foundingDate "1918"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Sutter_Health> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03w37n116> ;
+        rdfs:label "Alta Bates Summit Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05b021m32> ;
+        rdfs:label "Alta Bates Summit Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02bjh0167> ;
+        rdfs:label "California Pacific Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/035trbs97> ;
+        rdfs:label "Eden Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/008tsd037> ;
+        rdfs:label "Memorial Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02vnyaz83> ;
+        rdfs:label "Mills Peninsula Health Services" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01vzcsc16> ;
+        rdfs:label "Sutter Auburn Faith Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02qr8sv28> ;
+        rdfs:label "Sutter Davis Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03zk9v026> ;
+        rdfs:label "Sutter Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/025srm412> ;
+        rdfs:label "Sutter Roseville Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02kvbnm84> ;
+        rdfs:label "Sutter Santa Rosa Regional Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01bdqmr31> ;
+        rdfs:label "Sutter Solano Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04rg6e566> ;
+        rdfs:label "Palo Alto Medical Foundation" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-121.4944 38.58157)"^^geo:wktLiteral ;
+        schema:addressLocality "Sacramento" ;
+    ] ;
+    schema:url <http://www.sutterhealth.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000404603124> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7650154> ;
+             .

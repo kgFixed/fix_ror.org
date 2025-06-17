@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0033y0972> 
+    a org:Organization ;
+    rdfs:label "Fairview Lakes Medical Center" ;
+    schema:name "Fairview Lakes Medical Center" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04hsn8391> ;
+        rdfs:label "Fairview Health Services" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-92.99716 45.33636)"^^geo:wktLiteral ;
+        schema:addressLocality "Wyoming" ;
+    ] ;
+    schema:url <https://www.fairview.org/locations/fairview-lakes-medical-center> ;
+    schema:sameAs <http://isni.org/isni/0000000404417647> ;
+             .

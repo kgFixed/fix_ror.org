@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0060wre92> 
+    a org:Organization ;
+    rdfs:label "Troitsk Institute for Innovation and Fusion Research" ;
+    schema:name "Troitsk Institute for Innovation and Fusion Research" ;
+    schema:foundingDate "1956"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Troitsk_Institute_of_Innovative_and_Thermonuclear_Research> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(37.30736 55.48498)"^^geo:wktLiteral ;
+        schema:addressLocality "Troitsk" ;
+    ] ;
+    schema:url <http://www.triniti.ru/Triniti_eng/> ;
+    schema:sameAs <http://isni.org/isni/0000000098405495> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4463510> ;
+             .

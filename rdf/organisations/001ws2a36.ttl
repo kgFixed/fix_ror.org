@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/001ws2a36> 
+    a org:Organization ;
+    rdfs:label "National Institute Of Technology Silchar" ;
+    schema:name "National Institute Of Technology Silchar" ;
+    schema:foundingDate "1967"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/National_Institute_of_Technology,_Silchar> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(92.79787 24.82733)"^^geo:wktLiteral ;
+        schema:addressLocality "Silchar" ;
+    ] ;
+    schema:url <http://www.nits.ac.in/> ;
+    schema:sameAs <http://isni.org/isni/0000000404974101> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3633984> ;
+             .

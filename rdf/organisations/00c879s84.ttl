@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00c879s84> 
+    a org:Organization ;
+    rdfs:label "Groote Schuur Hospital" ;
+    schema:name "Groote Schuur Hospital" ;
+    schema:foundingDate "1938"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Groote_Schuur_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02nys7898> ;
+        rdfs:label "Western Cape Department of Health" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03p74gp79> ;
+        rdfs:label "University of Cape Town" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(18.42322 -33.92584)"^^geo:wktLiteral ;
+        schema:addressLocality "Cape Town" ;
+    ] ;
+    schema:url <https://www.westerncape.gov.za/your_gov/163> ;
+    schema:sameAs <http://isni.org/isni/0000000406351506> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q368400> ;
+             .

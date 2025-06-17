@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00fweme20> 
+    a org:Organization ;
+    rdfs:label "Chinese General Hospital College of Nursing and Liberal Arts" ;
+    schema:name "Chinese General Hospital College of Nursing and Liberal Arts" ;
+    schema:foundingDate "1921"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Chinese_General_Hospital_College_of_Nursing_and_Liberal_Arts> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(120.9822 14.6042)"^^geo:wktLiteral ;
+        schema:addressLocality "Manila" ;
+    ] ;
+    schema:url <http://www.cghc.edu.ph/> ;
+    schema:sameAs <http://isni.org/isni/0000000417633162> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5100463> ;
+             .

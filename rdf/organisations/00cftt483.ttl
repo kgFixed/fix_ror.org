@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00cftt483> 
+    a org:Organization ;
+    rdfs:label "Hoya Surgical Optics (United States)" ;
+    schema:name "Hoya Surgical Optics (United States)" ;
+    schema:foundingDate "1987"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-117.75888 33.9938)"^^geo:wktLiteral ;
+        schema:addressLocality "Chino Hills" ;
+    ] ;
+    schema:url <http://hoyasurgicaloptics.com/global/> ;
+     .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0055k7a87> 
+    a org:Organization ;
+    rdfs:label "New Energy and Industrial Technology Development Organization" ;
+    schema:name "New Energy and Industrial Technology Development Organization" ;
+    schema:foundingDate "1980"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/New_Energy_and_Industrial_Technology_Development_Organization> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(139.71722 35.52056)"^^geo:wktLiteral ;
+        schema:addressLocality "Kawasaki" ;
+    ] ;
+    schema:url <http://www.nedo.go.jp/english/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q1047780> ;
+             .

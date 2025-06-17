@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0011qv509> 
+    a org:Organization ;
+    rdfs:label "University of Tennessee Health Science Center" ;
+    schema:name "University of Tennessee Health Science Center" ;
+    schema:foundingDate "1911"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/University_of_Tennessee_Health_Science_Center> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00xzqjh13> ;
+        rdfs:label "University of Tennessee System" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/056wg8a82> ;
+        rdfs:label "Le Bonheur Children's Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/000vjzq57> ;
+        rdfs:label "Memphis VA Medical Center" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-90.04898 35.14953)"^^geo:wktLiteral ;
+        schema:addressLocality "Memphis" ;
+    ] ;
+    schema:url <https://www.uthsc.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000403869246> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7896420> ;
+             .

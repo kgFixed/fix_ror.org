@@ -1,0 +1,26 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00g1egx47> 
+    a org:Organization ;
+    rdfs:label "Fisabio" ;
+    schema:name "Fisabio" ;
+    org:status "withdrawn" ;
+    org:classification "Nonprofit" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/0116vew40> ;
+        rdfs:label "Fundación para el Fomento de la Investigación Sanitaria y Biomédica de la Comunitat Valenciana" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.37966 39.47391)"^^geo:wktLiteral ;
+        schema:addressLocality "Valencia" ;
+    ] ;
+    schema:url <http://fisabio.san.gva.es/en/> ;
+     .

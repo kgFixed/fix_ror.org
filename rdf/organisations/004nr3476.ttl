@@ -1,0 +1,59 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/004nr3476> 
+    a org:Organization ;
+    rdfs:label "Amdocs (United States)" ;
+    schema:name "Amdocs (United States)" ;
+    schema:foundingDate "1982"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02prt1r25> ;
+        rdfs:label "Amdocs (Cyprus)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05wk0jx96> ;
+        rdfs:label "Amdocs (France)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00792x745> ;
+        rdfs:label "Amdocs (Germany)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00cdhs571> ;
+        rdfs:label "Amdocs (Israel)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03yw95n57> ;
+        rdfs:label "Amdocs (Philippines)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01mfgkr43> ;
+        rdfs:label "Amdocs (United Kingdom)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-90.57707 38.66311)"^^geo:wktLiteral ;
+        schema:addressLocality "Chesterfield" ;
+    ] ;
+    schema:url <http://www.amdocs.com/pages/homepage.aspx> ;
+    schema:sameAs <http://isni.org/isni/0000000403727192> ;
+             .

@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00b9ph040> 
+    a org:Organization ;
+    rdfs:label "Hexagon (Israel)" ;
+    schema:name "Hexagon (Israel)" ;
+    schema:foundingDate "1992"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Hexagon_AB> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/009a2jy80> ;
+        rdfs:label "Hexagon (Sweden)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(34.8394 32.14613)"^^geo:wktLiteral ;
+        schema:addressLocality "Ramat HaSharon" ;
+    ] ;
+    schema:url <http://www.hexagonmi.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q29123871> ;
+             .

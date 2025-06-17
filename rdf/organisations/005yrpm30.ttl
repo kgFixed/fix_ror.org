@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/005yrpm30> 
+    a org:Organization ;
+    rdfs:label "Pediatric Cancer Research Foundation" ;
+    schema:name "Pediatric Cancer Research Foundation" ;
+    schema:foundingDate "1982"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Pediatric_Cancer_Research_Foundation> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-117.82311 33.66946)"^^geo:wktLiteral ;
+        schema:addressLocality "Irvine" ;
+    ] ;
+    schema:url <http://pcrf-kids.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000404229240> ;
+             .

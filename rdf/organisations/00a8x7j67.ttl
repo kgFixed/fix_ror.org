@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00a8x7j67> 
+    a org:Organization ;
+    rdfs:label "Federal Law Enforcement Training Centers" ;
+    schema:name "Federal Law Enforcement Training Centers" ;
+    schema:foundingDate "1970"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Federal_Law_Enforcement_Training_Centers> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-81.49149 31.14995)"^^geo:wktLiteral ;
+        schema:addressLocality "Brunswick" ;
+    ] ;
+    schema:url <https://www.fletc.gov/> ;
+    schema:sameAs <http://isni.org/isni/0000000122967472> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1400052> ;
+             .

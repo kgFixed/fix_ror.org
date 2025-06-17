@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00cjb8p81> 
+    a org:Organization ;
+    rdfs:label "GGD Brabant-Zuidoost" ;
+    schema:name "GGD Brabant-Zuidoost" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/006xsx833> ;
+        rdfs:label "Geneeskundige en Gezondheidsdienst" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(5.47778 51.44083)"^^geo:wktLiteral ;
+        schema:addressLocality "Eindhoven" ;
+    ] ;
+    schema:url <https://www.ggdbzo.nl/Paginas/Default.aspx> ;
+    schema:sameAs <http://isni.org/isni/0000000406490637> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q89363063> ;
+             .

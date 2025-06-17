@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/002famp79> 
+    a org:Organization ;
+    rdfs:label "Türk Telekom (Turkey)" ;
+    schema:name "Türk Telekom (Turkey)" ;
+    schema:foundingDate "1995"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/T%C3%BCrk_Telekom> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(32.85427 39.91987)"^^geo:wktLiteral ;
+        schema:addressLocality "Ankara" ;
+    ] ;
+    schema:url <http://www.turktelekom.com.tr/tt/portal/Home/> ;
+    schema:sameAs <http://isni.org/isni/0000000404467353> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q263700> ;
+             .

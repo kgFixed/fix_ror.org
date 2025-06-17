@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/000yct867> 
+    a org:Organization ;
+    rdfs:label "Bridgeport Hospital" ;
+    schema:name "Bridgeport Hospital" ;
+    schema:foundingDate "1878"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Bridgeport_Hospital> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01s1hsq14> ;
+        rdfs:label "Yale New Haven Health System" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03v76x132> ;
+        rdfs:label "Yale University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-73.18945 41.17923)"^^geo:wktLiteral ;
+        schema:addressLocality "Bridgeport" ;
+    ] ;
+    schema:url <http://www.bridgeporthospital.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000403798695> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4966597> ;
+             .

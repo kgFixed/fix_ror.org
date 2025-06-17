@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00cmfmh53> 
+    a org:Organization ;
+    rdfs:label "Azienda Ospedaliera G.Rummo" ;
+    schema:name "Azienda Ospedaliera G.Rummo" ;
+    schema:foundingDate "1615"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(14.77816 41.1307)"^^geo:wktLiteral ;
+        schema:addressLocality "Benevento" ;
+    ] ;
+    schema:url <http://ao-rummo.it/> ;
+    schema:sameAs <http://isni.org/isni/0000000417596867> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30280403> ;
+             .

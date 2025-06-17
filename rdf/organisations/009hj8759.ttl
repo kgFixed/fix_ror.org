@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/009hj8759> 
+    a org:Organization ;
+    rdfs:label "Grady Memorial Hospital" ;
+    schema:name "Grady Memorial Hospital" ;
+    schema:foundingDate "1892"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Grady_Memorial_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00k1xr956> ;
+        rdfs:label "Grady Health System" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03czfpz43> ;
+        rdfs:label "Emory University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01pbhra64> ;
+        rdfs:label "Morehouse School of Medicine" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-84.38798 33.749)"^^geo:wktLiteral ;
+        schema:addressLocality "Atlanta" ;
+    ] ;
+    schema:url <http://www.gradyhealth.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000406346969> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5592136> ;
+             .

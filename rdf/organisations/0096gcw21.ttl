@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0096gcw21> 
+    a org:Organization ;
+    rdfs:label "Centre for Independent Social Research" ;
+    schema:name "Centre for Independent Social Research" ;
+    schema:foundingDate "1991"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Centre_for_Independent_Social_Research> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(30.31413 59.93863)"^^geo:wktLiteral ;
+        schema:addressLocality "St Petersburg" ;
+    ] ;
+    schema:url <http://cisr.ru/en/> ;
+    schema:sameAs <http://isni.org/isni/0000000463234816> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q82775> ;
+             .

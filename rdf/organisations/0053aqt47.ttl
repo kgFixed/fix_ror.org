@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0053aqt47> 
+    a org:Organization ;
+    rdfs:label "Fluidhouse (Finland)" ;
+    schema:name "Fluidhouse (Finland)" ;
+    schema:foundingDate "2003"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(25.72088 62.24147)"^^geo:wktLiteral ;
+        schema:addressLocality "Jyväskylä" ;
+    ] ;
+    schema:url <http://www.fluidhouse.fi/fi/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30256475> ;
+             .

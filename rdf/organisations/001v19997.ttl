@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/001v19997> 
+    a org:Organization ;
+    rdfs:label "Eskişehir Osmangazi Üniversitesi Tıp Fakültesi Hastanesi" ;
+    schema:name "Eskişehir Osmangazi Üniversitesi Tıp Fakültesi Hastanesi" ;
+    schema:foundingDate "1976"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01dzjez04> ;
+        rdfs:label "Eskişehir Osmangazi University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(30.52056 39.77667)"^^geo:wktLiteral ;
+        schema:addressLocality "Eskişehir" ;
+    ] ;
+    schema:url <http://hastane.ogu.edu.tr/> ;
+     .

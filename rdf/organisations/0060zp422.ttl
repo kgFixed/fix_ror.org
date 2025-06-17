@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0060zp422> 
+    a org:Organization ;
+    rdfs:label "Royal BAM Group (Netherlands)" ;
+    schema:name "Royal BAM Group (Netherlands)" ;
+    schema:foundingDate "1869"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Royal_BAM_Group> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03t4qcg79> ;
+        rdfs:label "Royal BAM Group (United Kingdom)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(5.19861 52.06667)"^^geo:wktLiteral ;
+        schema:addressLocality "Bunnik" ;
+    ] ;
+    schema:url <https://www.bam.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000460064903> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1572363> ;
+             .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00a6ctc34> 
+    a org:Organization ;
+    rdfs:label "EIILM University" ;
+    schema:name "EIILM University" ;
+    schema:foundingDate "1995"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Eastern_Institute_for_Integrated_Learning_in_Management_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(88.32332 27.10696)"^^geo:wktLiteral ;
+        schema:addressLocality "Jorethang" ;
+    ] ;
+    schema:url <http://www.eiilmuniversity.co.in/> ;
+    schema:sameAs <http://isni.org/isni/0000000417606279> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q13179590> ;
+             .

@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00190t495> 
+    a org:Organization ;
+    rdfs:label "National Center for Complementary and Integrative Health" ;
+    schema:name "National Center for Complementary and Integrative Health" ;
+    schema:foundingDate "1991"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/National_Center_for_Complementary_and_Integrative_Health> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01cwqze88> ;
+        rdfs:label "National Institutes of Health" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.10026 38.98067)"^^geo:wktLiteral ;
+        schema:addressLocality "Bethesda" ;
+    ] ;
+    schema:url <https://nccih.nih.gov/> ;
+    schema:sameAs <http://isni.org/isni/0000000086584190> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3278030> ;
+             .

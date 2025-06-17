@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/001x4vz59> 
+    a org:Organization ;
+    rdfs:label "St Mary's Hospital" ;
+    schema:name "St Mary's Hospital" ;
+    schema:foundingDate "1790"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/St_Mary%27s_Hospital,_Manchester> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00he80998> ;
+        rdfs:label "Manchester University NHS Foundation Trust" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04fsd0842> ;
+        rdfs:label "Solent NHS Trust" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-2.23743 53.48095)"^^geo:wktLiteral ;
+        schema:addressLocality "Manchester" ;
+    ] ;
+    schema:url <http://www.cmft.nhs.uk/saint-marys.aspx> ;
+    schema:sameAs <http://isni.org/isni/0000000406412620> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7594497> ;
+             .

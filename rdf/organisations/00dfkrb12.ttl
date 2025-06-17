@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00dfkrb12> 
+    a org:Organization ;
+    rdfs:label "Rio Grande Bible Institute" ;
+    schema:name "Rio Grande Bible Institute" ;
+    schema:foundingDate "1946"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Rio_Grande_Bible_Institute> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-98.16334 26.30174)"^^geo:wktLiteral ;
+        schema:addressLocality "Edinburg" ;
+    ] ;
+    schema:url <http://riogrande.edu/en> ;
+    schema:sameAs <http://isni.org/isni/0000000087482882> ;
+             .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0047xfd47> 
+    a org:Organization ;
+    rdfs:label "National Kaohsiung University of Hospitality and Tourism" ;
+    schema:name "National Kaohsiung University of Hospitality and Tourism" ;
+    schema:foundingDate "1995"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/National_Kaohsiung_University_of_Hospitality_and_Tourism> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(120.31333 22.61626)"^^geo:wktLiteral ;
+        schema:addressLocality "Kaohsiung" ;
+    ] ;
+    schema:url <https://www.nkuht.edu.tw/> ;
+    schema:sameAs <http://isni.org/isni/0000000406393685> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6973910> ;
+             .

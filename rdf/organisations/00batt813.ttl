@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00batt813> 
+    a org:Organization ;
+    rdfs:label "Dragomanov Ukrainian State University" ;
+    schema:name "Dragomanov Ukrainian State University" ;
+    schema:foundingDate "1834"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/National_Pedagogical_Dragomanov_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(30.5238 50.45466)"^^geo:wktLiteral ;
+        schema:addressLocality "Kyiv" ;
+    ] ;
+    schema:url <https://udu.edu.ua> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q4315056> ;
+             .

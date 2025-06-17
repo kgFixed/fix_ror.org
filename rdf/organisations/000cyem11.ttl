@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/000cyem11> 
+    a org:Organization ;
+    rdfs:label "Donald Danforth Plant Science Center" ;
+    schema:name "Donald Danforth Plant Science Center" ;
+    schema:foundingDate "1998"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Donald_Danforth_Plant_Science_Center> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0573j3j10> ;
+        rdfs:label "Taylor Geospatial Institute" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-90.19789 38.62727)"^^geo:wktLiteral ;
+        schema:addressLocality "St Louis" ;
+    ] ;
+    schema:url <http://www.danforthcenter.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000404666352> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5294218> ;
+             .

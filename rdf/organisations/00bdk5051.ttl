@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00bdk5051> 
+    a org:Organization ;
+    rdfs:label "Polar Light Technologies (Sweden)" ;
+    schema:name "Polar Light Technologies (Sweden)" ;
+    schema:foundingDate "2014"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(15.62157 58.41086)"^^geo:wktLiteral ;
+        schema:addressLocality "Linköping" ;
+    ] ;
+    schema:url <http://www.polar-light-technologies.com> ;
+     .

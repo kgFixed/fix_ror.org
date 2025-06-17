@@ -1,0 +1,20 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/000zz1243> 
+    a org:Organization ;
+    rdfs:label "Dinas Pendidikan Kabupaten Grobogan" ;
+    schema:name "Dinas Pendidikan Kabupaten Grobogan" ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(110.91667 -7.13333)"^^geo:wktLiteral ;
+        schema:addressLocality "Grobogan Regency" ;
+    ] ;
+    schema:url <https://disdik.grobogan.go.id> ;
+     .

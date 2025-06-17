@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0033rtn64> 
+    a org:Organization ;
+    rdfs:label "Gedeon Richter (Hungary)" ;
+    schema:name "Gedeon Richter (Hungary)" ;
+    schema:foundingDate "1901"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Gedeon_Richter> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(19.04045 47.49835)"^^geo:wktLiteral ;
+        schema:addressLocality "Budapest" ;
+    ] ;
+    schema:url <https://www.gedeonrichter.com/hu-hu> ;
+    schema:sameAs <http://isni.org/isni/0000000406215862> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q630125> ;
+             .

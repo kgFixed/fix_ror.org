@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/007vvce33> 
+    a org:Organization ;
+    rdfs:label "Aurora West Allis Medical Center" ;
+    schema:name "Aurora West Allis Medical Center" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04d5w7479> ;
+        rdfs:label "Aurora Health Care" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-88.00703 43.01668)"^^geo:wktLiteral ;
+        schema:addressLocality "West Allis" ;
+    ] ;
+    schema:url <https://www.aurorahealthcare.org/locations/hospital/aurora-west-allis-medical-center> ;
+    schema:sameAs <http://isni.org/isni/0000000404390069> ;
+             .

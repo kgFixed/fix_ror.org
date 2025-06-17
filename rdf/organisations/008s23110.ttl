@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/008s23110> 
+    a org:Organization ;
+    rdfs:label "Metso (Finland)" ;
+    schema:name "Metso (Finland)" ;
+    schema:foundingDate "1999"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Metso> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/002fy4y97> ;
+        rdfs:label "Metso (Canada)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04z9kpd59> ;
+        rdfs:label "Metso (Sweden)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03bce7633> ;
+        rdfs:label "Metso (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(24.93545 60.16952)"^^geo:wktLiteral ;
+        schema:addressLocality "Helsinki" ;
+    ] ;
+    schema:url <https://www.metso.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000406248218> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q339318> ;
+             .

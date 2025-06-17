@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/002t87n17> 
+    a org:Organization ;
+    rdfs:label "Hawaiian Islands Land Trust" ;
+    schema:name "Hawaiian Islands Land Trust" ;
+    schema:foundingDate "2011"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Hawaiian_Islands_Land_Trust> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-156.50604 20.89133)"^^geo:wktLiteral ;
+        schema:addressLocality "Wailuku" ;
+    ] ;
+    schema:url <http://www.hilt.org/> ;
+     .

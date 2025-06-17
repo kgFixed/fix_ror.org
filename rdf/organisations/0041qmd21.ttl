@@ -1,0 +1,44 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0041qmd21> 
+    a org:Organization ;
+    rdfs:label "SUNY Downstate Health Sciences University" ;
+    schema:name "SUNY Downstate Health Sciences University" ;
+    schema:foundingDate "1860"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/SUNY_Downstate_Medical_Center> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01q1z8k08> ;
+        rdfs:label "State University of New York" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0065vkd37> ;
+        rdfs:label "Brookdale University Hospital and Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03dp8bn13> ;
+        rdfs:label "Kingsbrook Jewish Medical Center" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-73.94958 40.6501)"^^geo:wktLiteral ;
+        schema:addressLocality "Brooklyn" ;
+    ] ;
+    schema:url <https://www.downstate.edu> ;
+    schema:sameAs <http://isni.org/isni/0000000106932202> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3246712> ;
+             .

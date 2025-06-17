@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00g0x9d29> 
+    a org:Organization ;
+    rdfs:label "Ospedali Riuniti di Foggia" ;
+    schema:name "Ospedali Riuniti di Foggia" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00jrmky87> ;
+        rdfs:label "Puglia Salute" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(15.55188 41.45845)"^^geo:wktLiteral ;
+        schema:addressLocality "Foggia" ;
+    ] ;
+    schema:url <https://www.sanita.puglia.it/web/ospedaliriunitifoggia/> ;
+    schema:sameAs <http://isni.org/isni/0000000417599857> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30270204> ;
+             .

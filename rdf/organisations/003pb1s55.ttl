@@ -1,0 +1,60 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/003pb1s55> 
+    a org:Organization ;
+    rdfs:label "South West London and St George's Mental Health NHS Trust" ;
+    schema:name "South West London and St George's Mental Health NHS Trust" ;
+    schema:foundingDate "1994"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/South_West_London_and_St_George%27s_Mental_Health_NHS_Trust> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05tfkwc03> ;
+        rdfs:label "Barnes Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04389kb95> ;
+        rdfs:label "Queen Mary's Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02606ke74> ;
+        rdfs:label "Richmond Royal Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05j49wk85> ;
+        rdfs:label "Springfield University Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00knds943> ;
+        rdfs:label "Tolworth Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00gfqxe82> ;
+        rdfs:label "Wilson Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.12574 51.50853)"^^geo:wktLiteral ;
+        schema:addressLocality "London" ;
+    ] ;
+    schema:url <http://www.swlstg-tr.nhs.uk/> ;
+    schema:sameAs <http://isni.org/isni/0000000105076811> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q17061943> ;
+             .

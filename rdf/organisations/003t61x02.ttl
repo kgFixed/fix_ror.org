@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/003t61x02> 
+    a org:Organization ;
+    rdfs:label "Bristlecone Family Resources" ;
+    schema:name "Bristlecone Family Resources" ;
+    schema:foundingDate "1964"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-119.8138 39.52963)"^^geo:wktLiteral ;
+        schema:addressLocality "Reno" ;
+    ] ;
+    schema:url <https://www.bristleconereno.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30286650> ;
+             .

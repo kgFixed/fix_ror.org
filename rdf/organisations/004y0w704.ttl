@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/004y0w704> 
+    a org:Organization ;
+    rdfs:label "AgriSense (United Kingdom)" ;
+    schema:name "AgriSense (United Kingdom)" ;
+    schema:foundingDate "1984"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-3.34211 51.6021)"^^geo:wktLiteral ;
+        schema:addressLocality "Pontypridd" ;
+    ] ;
+    schema:url <http://www.agrisense.co.uk/> ;
+    schema:sameAs <http://isni.org/isni/0000000405743356> ;
+             .

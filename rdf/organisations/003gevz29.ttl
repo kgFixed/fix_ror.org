@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/003gevz29> 
+    a org:Organization ;
+    rdfs:label "Camden Children's Garden" ;
+    schema:name "Camden Children's Garden" ;
+    schema:foundingDate "1985"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Camden_Children%27s_Garden> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-75.11962 39.92595)"^^geo:wktLiteral ;
+        schema:addressLocality "Camden" ;
+    ] ;
+    schema:url <http://www.camdenchildrensgarden.org/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q15206933> ;
+             .

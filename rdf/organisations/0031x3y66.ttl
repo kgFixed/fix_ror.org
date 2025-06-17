@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0031x3y66> 
+    a org:Organization ;
+    rdfs:label "Dai Nam University" ;
+    schema:name "Dai Nam University" ;
+    schema:foundingDate "2007"^^xsd:gYear ;
+    schema:sameAs <https://vi.wikipedia.org/wiki/Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_%C4%90%E1%BA%A1i_Nam> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(105.84117 21.0245)"^^geo:wktLiteral ;
+        schema:addressLocality "Hanoi" ;
+    ] ;
+    schema:url <https://dainam.edu.vn> ;
+    schema:sameAs <http://isni.org/isni/0000000505900208> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q10829182> ;
+             .

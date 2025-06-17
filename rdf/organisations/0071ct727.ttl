@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0071ct727> 
+    a org:Organization ;
+    rdfs:label "Saskatchewan Hospice Palliative Care Association" ;
+    schema:name "Saskatchewan Hospice Palliative Care Association" ;
+    schema:foundingDate "1991"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-104.6178 50.45008)"^^geo:wktLiteral ;
+        schema:addressLocality "Regina" ;
+    ] ;
+    schema:url <http://www.saskpalliativecare.org/> ;
+     .

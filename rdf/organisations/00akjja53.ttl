@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00akjja53> 
+    a org:Organization ;
+    rdfs:label "Atlas Elektronik (Germany)" ;
+    schema:name "Atlas Elektronik (Germany)" ;
+    schema:foundingDate "1902"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Atlas_Elektronik> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/021swj028> ;
+        rdfs:label "Atlas Elektronik (United Kingdom)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02vbxt202> ;
+        rdfs:label "ThyssenKrupp (Germany)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(8.80717 53.07582)"^^geo:wktLiteral ;
+        schema:addressLocality "Bremen" ;
+    ] ;
+    schema:url <http://www.atlas-elektronik.com/atlas-elektronik/> ;
+    schema:sameAs <http://isni.org/isni/0000000404954135> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q176856> ;
+             .

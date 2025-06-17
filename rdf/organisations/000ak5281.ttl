@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/000ak5281> 
+    a org:Organization ;
+    rdfs:label "Missouri Department of Public Safety" ;
+    schema:name "Missouri Department of Public Safety" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Missouri_Department_of_Public_Safety> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-95.53772 29.61857)"^^geo:wktLiteral ;
+        schema:addressLocality "Missouri City" ;
+    ] ;
+    schema:url <https://dps.mo.gov/> ;
+    schema:sameAs <http://isni.org/isni/0000000405058172> ;
+             .

@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/009g8rq41> 
+    a org:Organization ;
+    rdfs:label "Ministry of Agriculture, Food and Rural Affairs" ;
+    schema:name "Ministry of Agriculture, Food and Rural Affairs" ;
+    schema:foundingDate "1948"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Ministry_of_Agriculture,_Food_and_Rural_Affairs_(South_Korea)> ;
+    org:status "active" ;
+    org:classification "Funder" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02chzeh21> ;
+        rdfs:label "National Institute of Fisheries Science" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03xs9yg50> ;
+        rdfs:label "Rural Development Administration" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/019xm3p48> ;
+        rdfs:label "Government of the Republic of Korea" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(127.29223 36.59245)"^^geo:wktLiteral ;
+        schema:addressLocality "Sejong" ;
+    ] ;
+    schema:url <http://english.mafra.go.kr/main.jsp> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q624460> ;
+             .

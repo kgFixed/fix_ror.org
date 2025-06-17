@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/007svmx82> 
+    a org:Organization ;
+    rdfs:label "Caldwell Memorial Hospital" ;
+    schema:name "Caldwell Memorial Hospital" ;
+    schema:foundingDate "1950"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Caldwell_Memorial_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-81.53898 35.91402)"^^geo:wktLiteral ;
+        schema:addressLocality "Lenoir" ;
+    ] ;
+    schema:url <http://caldwellmemorial.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000404245187> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5019161> ;
+             .

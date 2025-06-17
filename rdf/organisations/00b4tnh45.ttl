@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00b4tnh45> 
+    a org:Organization ;
+    rdfs:label "Campaign Legal Center" ;
+    schema:name "Campaign Legal Center" ;
+    schema:foundingDate "2002"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Campaign_Legal_Center> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.03637 38.89511)"^^geo:wktLiteral ;
+        schema:addressLocality "Washington" ;
+    ] ;
+    schema:url <https://campaignlegal.org/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q5027755> ;
+             .

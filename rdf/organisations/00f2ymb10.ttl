@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00f2ymb10> 
+    a org:Organization ;
+    rdfs:label "Chesapeake Research Consortium" ;
+    schema:name "Chesapeake Research Consortium" ;
+    schema:foundingDate "1971"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Chesapeake_Research_Consortium> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-76.557 38.938)"^^geo:wktLiteral ;
+        schema:addressLocality "Edgewater" ;
+    ] ;
+    schema:url <http://www.chesapeake.org/index.php> ;
+    schema:sameAs <http://isni.org/isni/000000009448945X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5092877> ;
+             .

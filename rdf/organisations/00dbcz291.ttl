@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00dbcz291> 
+    a org:Organization ;
+    rdfs:label "St. Vincent Charity Hospital" ;
+    schema:name "St. Vincent Charity Hospital" ;
+    schema:foundingDate "1865"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/St._Vincent_Charity_Medical_Center> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/051fd9666> ;
+        rdfs:label "Case Western Reserve University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-81.69541 41.4995)"^^geo:wktLiteral ;
+        schema:addressLocality "Cleveland" ;
+    ] ;
+    schema:url <https://www.stvincentcharity.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000090865526> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q18158405> ;
+             .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0056x7z10> 
+    a org:Organization ;
+    rdfs:label "Philander Smith College" ;
+    schema:name "Philander Smith College" ;
+    schema:foundingDate "1877"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Philander_Smith_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-92.28959 34.74648)"^^geo:wktLiteral ;
+        schema:addressLocality "Little Rock" ;
+    ] ;
+    schema:url <https://www.philander.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000099537983> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7182919> ;
+             .

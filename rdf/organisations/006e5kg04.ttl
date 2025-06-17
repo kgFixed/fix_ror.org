@@ -1,0 +1,73 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/006e5kg04> 
+    a org:Organization ;
+    rdfs:label "Vrije Universiteit Brussel" ;
+    schema:name "Vrije Universiteit Brussel" ;
+    schema:foundingDate "1834"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Vrije_Universiteit_Brussel> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/040w2dm02> ;
+        rdfs:label "Interuniversity Institute for High Energies" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03e84cm85> ;
+        rdfs:label "VIB-VUB Center for Structural Biology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05y4fay10> ;
+        rdfs:label "VIB-VUB Laboratory Myeloid Cell Immunology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/002kn6n54> ;
+        rdfs:label "Brussels School of International Studies" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05cmp5q80> ;
+        rdfs:label "Centre Hospitalier Universitaire de Saint-Pierre" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01t5yh786> ;
+        rdfs:label "Queen Fabiola Children's University Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/038f7y939> ;
+        rdfs:label "Universitair Ziekenhuis Brussel" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/016782g02> ;
+        rdfs:label "European Association for Education Law and Policy" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(4.34878 50.85045)"^^geo:wktLiteral ;
+        schema:addressLocality "Brussels" ;
+    ] ;
+    schema:url <http://www.vub.ac.be/en/> ;
+    schema:sameAs <http://isni.org/isni/0000000122908069> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q612665> ;
+             .

@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/008hr1h38> 
+    a org:Organization ;
+    rdfs:label "Century College" ;
+    schema:name "Century College" ;
+    schema:foundingDate "1967"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Century_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/014qpa824> ;
+        rdfs:label "Minnesota State Colleges and Universities System" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02ry60714> ;
+        rdfs:label "Minneapolis VA Health Care System" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-93.00994 45.08469)"^^geo:wktLiteral ;
+        schema:addressLocality "White Bear Lake" ;
+    ] ;
+    schema:url <https://www.century.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000405381615> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5063141> ;
+             .

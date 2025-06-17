@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/009543z50> 
+    a org:Organization ;
+    rdfs:label "Northwestern Memorial Hospital" ;
+    schema:name "Northwestern Memorial Hospital" ;
+    schema:foundingDate "1966"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Northwestern_Memorial_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04fzwnh64> ;
+        rdfs:label "Northwestern Medicine" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/000e0be47> ;
+        rdfs:label "Northwestern University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-87.65005 41.85003)"^^geo:wktLiteral ;
+        schema:addressLocality "Chicago" ;
+    ] ;
+    schema:url <http://www.nm.org/location/northwestern-memorial-hospital> ;
+    schema:sameAs <http://isni.org/isni/0000000104917842> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7060339> ;
+             .

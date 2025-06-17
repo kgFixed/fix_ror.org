@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/006p4kh13> 
+    a org:Organization ;
+    rdfs:label "NOAA Joint Polar Satellite System Program Office" ;
+    schema:name "NOAA Joint Polar Satellite System Program Office" ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/007qwym43> ;
+        rdfs:label "NOAA National Environmental Satellite Data and Information Service" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-76.87553 39.00455)"^^geo:wktLiteral ;
+        schema:addressLocality "Greenbelt" ;
+    ] ;
+    schema:url <https://www.nesdis.noaa.gov/our-satellites/currently-flying/joint-polar-satellite-system> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q122596962> ;
+             .

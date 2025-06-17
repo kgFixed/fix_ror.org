@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/001d2bp15> 
+    a org:Organization ;
+    rdfs:label "Community Mercy Health Partners" ;
+    schema:name "Community Mercy Health Partners" ;
+    schema:foundingDate "1969"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04x1z3t86> ;
+        rdfs:label "Mercy St. Vincent Medical Center" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-83.80882 39.92423)"^^geo:wktLiteral ;
+        schema:addressLocality "Springfield" ;
+    ] ;
+    schema:url <https://www.mercy.com/locations/specialty-locations/other-locations/community-mercy-health-partners> ;
+    schema:sameAs <http://isni.org/isni/0000000404411421> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30286905> ;
+             .

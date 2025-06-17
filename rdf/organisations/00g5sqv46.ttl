@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00g5sqv46> 
+    a org:Organization ;
+    rdfs:label "Universitat Rovira i Virgili" ;
+    schema:name "Universitat Rovira i Virgili" ;
+    schema:foundingDate "1991"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/University_of_Rovira_i_Virgili> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04nwrc387> ;
+        rdfs:label "Institut Català d'Arqueologia Clàssica" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05s4b1t72> ;
+        rdfs:label "Hospital Universitari Joan XXIII de Tarragona" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04f7pyb58> ;
+        rdfs:label "Hospital Universitari Sant Joan de Reus" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(1.24544 41.11905)"^^geo:wktLiteral ;
+        schema:addressLocality "Tarragona" ;
+    ] ;
+    schema:url <https://www.urv.cat> ;
+    schema:sameAs <http://isni.org/isni/0000000122849230> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3133193> ;
+             .

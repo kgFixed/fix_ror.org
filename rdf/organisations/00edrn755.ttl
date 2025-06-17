@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00edrn755> 
+    a org:Organization ;
+    rdfs:label "Hvidovre Hospital" ;
+    schema:name "Hvidovre Hospital" ;
+    schema:foundingDate "1976"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Hvidovre_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05bpbnx46> ;
+        rdfs:label "Copenhagen University Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/035b05819> ;
+        rdfs:label "University of Copenhagen" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(12.47708 55.64297)"^^geo:wktLiteral ;
+        schema:addressLocality "Hvidovre" ;
+    ] ;
+    schema:url <https://www.hvidovrehospital.dk/> ;
+    schema:sameAs <http://isni.org/isni/0000000406468202> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3374772> ;
+             .

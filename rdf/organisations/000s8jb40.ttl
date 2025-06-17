@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/000s8jb40> 
+    a org:Organization ;
+    rdfs:label "Alcon (United States)" ;
+    schema:name "Alcon (United States)" ;
+    schema:foundingDate "1945"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Alcon> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/056gwgh96> ;
+        rdfs:label "Alcon (Switzerland)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-97.32085 32.72541)"^^geo:wktLiteral ;
+        schema:addressLocality "Fort Worth" ;
+    ] ;
+    schema:url <https://www.alcon.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000404020009> ;
+             .

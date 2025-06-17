@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/001jhv750> 
+    a org:Organization ;
+    rdfs:label "NFDI4Culture" ;
+    schema:name "NFDI4Culture" ;
+    schema:foundingDate "2020"^^xsd:gYear ;
+    schema:sameAs <https://de.wikipedia.org/wiki/NFDI4Culture> ;
+    org:status "withdrawn" ;
+    org:classification "Other" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05qj6w324> ;
+        rdfs:label "Nationale Forschungsdateninfrastruktur" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(8.2791 49.98419)"^^geo:wktLiteral ;
+        schema:addressLocality "Mainz" ;
+    ] ;
+    schema:url <https://nfdi4culture.de> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q98276929> ;
+             .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00btvqy64> 
+    a org:Organization ;
+    rdfs:label "Pohang Iron and Steel (South Korea)" ;
+    schema:name "Pohang Iron and Steel (South Korea)" ;
+    schema:foundingDate "1968"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/POSCO> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(129.36481 36.02917)"^^geo:wktLiteral ;
+        schema:addressLocality "Pohang" ;
+    ] ;
+    schema:url <http://www.posco.com/homepage/docs/eng5/jsp/s91a0000001i.jsp> ;
+    schema:sameAs <http://isni.org/isni/0000000091139200> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q483946> ;
+             .

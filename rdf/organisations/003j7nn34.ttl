@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/003j7nn34> 
+    a org:Organization ;
+    rdfs:label "EnerSys (United States)" ;
+    schema:name "EnerSys (United States)" ;
+    schema:foundingDate "1999"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/EnerSys> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04zq68n70> ;
+        rdfs:label "EnerSys (Switzerland)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00rrtbd20> ;
+        rdfs:label "EnerSys (United Kingdom)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-75.92687 40.33565)"^^geo:wktLiteral ;
+        schema:addressLocality "Reading" ;
+    ] ;
+    schema:url <https://www.enersys.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000405358255> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30286094> ;
+             .

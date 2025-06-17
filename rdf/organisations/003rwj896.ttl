@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/003rwj896> 
+    a org:Organization ;
+    rdfs:label "Ensol (Poland)" ;
+    schema:name "Ensol (Poland)" ;
+    schema:foundingDate "2006"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(18.21928 50.09195)"^^geo:wktLiteral ;
+        schema:addressLocality "Racibórz" ;
+    ] ;
+    schema:url <http://ensol.pl/en/> ;
+     .

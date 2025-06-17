@@ -1,0 +1,48 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/000ztjy10> 
+    a org:Organization ;
+    rdfs:label "Naval Information Warfare Systems Command" ;
+    schema:name "Naval Information Warfare Systems Command" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Space_and_Naval_Warfare_Systems_Command> ;
+    org:status "active" ;
+    org:classification "Funder" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01gs1cg95> ;
+        rdfs:label "Naval Information Warfare Center Pacific" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05v8y4456> ;
+        rdfs:label "Naval Information Warfare Center Atlantic" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/024b23796> ;
+        rdfs:label "NAVWAR Space Field Activity" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03ar0mv07> ;
+        rdfs:label "United States Department of the Navy" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-117.16472 32.71571)"^^geo:wktLiteral ;
+        schema:addressLocality "San Diego" ;
+    ] ;
+    schema:url <https://www.navwar.navy.mil> ;
+    schema:sameAs <http://isni.org/isni/0000000123258686> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3492612> ;
+             .

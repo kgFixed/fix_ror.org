@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00egtf878> 
+    a org:Organization ;
+    rdfs:label "Society for Psychical Research" ;
+    schema:name "Society for Psychical Research" ;
+    schema:foundingDate "1882"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Society_for_Psychical_Research> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.12574 51.50853)"^^geo:wktLiteral ;
+        schema:addressLocality "London" ;
+    ] ;
+    schema:url <https://www.spr.ac.uk/> ;
+    schema:sameAs <http://isni.org/isni/0000000121881730> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1434254> ;
+             .

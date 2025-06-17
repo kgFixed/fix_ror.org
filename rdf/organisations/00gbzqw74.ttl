@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00gbzqw74> 
+    a org:Organization ;
+    rdfs:label "Wolf Park" ;
+    schema:name "Wolf Park" ;
+    schema:foundingDate "1972"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Wolf_Park> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-86.84168 40.50837)"^^geo:wktLiteral ;
+        schema:addressLocality "Battle Ground" ;
+    ] ;
+    schema:url <https://wolfpark.org/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q8029878> ;
+             .

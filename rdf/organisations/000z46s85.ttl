@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/000z46s85> 
+    a org:Organization ;
+    rdfs:label "Lille’s Cardiology Hospital" ;
+    schema:name "Lille’s Cardiology Hospital" ;
+    schema:foundingDate "1978"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02ppyfa04> ;
+        rdfs:label "Centre Hospitalier Universitaire de Lille" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(3.05858 50.63297)"^^geo:wktLiteral ;
+        schema:addressLocality "Lille" ;
+    ] ;
+    schema:url <http://www.chru-lille.fr/organisation-structure/hopitaux/98604.html> ;
+     .

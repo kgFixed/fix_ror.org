@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00f6n1x59> 
+    a org:Organization ;
+    rdfs:label "Far Eastern Scientific Research Institute of Mechanization and Electrification of Agriculture" ;
+    schema:name "Far Eastern Scientific Research Institute of Mechanization and Electrification of Agriculture" ;
+    schema:foundingDate "1988"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05wtp9w08> ;
+        rdfs:label "Department of Agricultural Sciences" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(127.5405 50.27961)"^^geo:wktLiteral ;
+        schema:addressLocality "Blagoveshchensk" ;
+    ] ;
+    schema:url <http://xn--80ahnanie9ayb2dp.xn--p1ai/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q52846425> ;
+             .

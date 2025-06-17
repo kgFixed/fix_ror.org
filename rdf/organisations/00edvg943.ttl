@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00edvg943> 
+    a org:Organization ;
+    rdfs:label "Hochschule Bielefeld" ;
+    schema:name "Hochschule Bielefeld" ;
+    schema:sameAs <https://de.wikipedia.org/wiki/Hochschule_Bielefeld> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(8.53333 52.03333)"^^geo:wktLiteral ;
+        schema:addressLocality "Bielefeld" ;
+    ] ;
+    schema:url <https://www.hsbi.de> ;
+    schema:sameAs <http://isni.org/isni/0000000091746422> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1391181> ;
+             .

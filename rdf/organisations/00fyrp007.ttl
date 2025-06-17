@@ -1,0 +1,32 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00fyrp007> 
+    a org:Organization ;
+    rdfs:label "NeuroMab" ;
+    schema:name "NeuroMab" ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01s5ya894> ;
+        rdfs:label "National Institute of Neurological Disorders and Stroke" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05rrcem69> ;
+        rdfs:label "University of California, Davis" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-121.74052 38.54491)"^^geo:wktLiteral ;
+        schema:addressLocality "Davis" ;
+    ] ;
+    schema:url <http://neuromab.ucdavis.edu/> ;
+     .

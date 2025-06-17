@@ -1,0 +1,35 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/003xxrm77> 
+    a org:Organization ;
+    rdfs:label "Wirral Women and Children's Hospital" ;
+    schema:name "Wirral Women and Children's Hospital" ;
+    schema:foundingDate "2011"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Wirral_Women_and_Children%27s_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05cv4zg26> ;
+        rdfs:label "Wirral University Teaching Hospital NHS Foundation Trust" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04xs57h96> ;
+        rdfs:label "University of Liverpool" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-3.11667 53.4)"^^geo:wktLiteral ;
+        schema:addressLocality "Moreton" ;
+    ] ;
+    schema:url <https://www.wuth.nhs.uk/our-locations/wirral-women-and-childrens-hospital> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q16903554> ;
+             .

@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/006vx3924> 
+    a org:Organization ;
+    rdfs:label "St. Vincent's Medical Center" ;
+    schema:name "St. Vincent's Medical Center" ;
+    schema:foundingDate "1903"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/St._Vincent%27s_Medical_Center_(Bridgeport)> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00s1szh94> ;
+        rdfs:label "Ascension" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03dkvy735> ;
+        rdfs:label "New York Medical College" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-73.18945 41.17923)"^^geo:wktLiteral ;
+        schema:addressLocality "Bridgeport" ;
+    ] ;
+    schema:url <http://www.stvincents.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000404359598> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7592067> ;
+             .

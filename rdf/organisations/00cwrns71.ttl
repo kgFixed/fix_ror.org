@@ -1,0 +1,56 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00cwrns71> 
+    a org:Organization ;
+    rdfs:label "Indian Space Research Organisation" ;
+    schema:name "Indian Space Research Organisation" ;
+    schema:foundingDate "1969"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Indian_Space_Research_Organisation> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02xqs5h32> ;
+        rdfs:label "Antrix Corporation (India)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00a14tf81> ;
+        rdfs:label "ISRO Propulsion Complex" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04a39s417> ;
+        rdfs:label "Indian Institute of Remote Sensing" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0491y3t26> ;
+        rdfs:label "National Remote Sensing Centre" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/000kjq947> ;
+        rdfs:label "Department of Space" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(77.59369 12.97194)"^^geo:wktLiteral ;
+        schema:addressLocality "Bengaluru" ;
+    ] ;
+    schema:url <http://www.isro.gov.in/> ;
+    schema:sameAs <http://isni.org/isni/0000000405009274> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q229058> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2173159> ;
+             .

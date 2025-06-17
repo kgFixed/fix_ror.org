@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/006a7pj43> 
+    a org:Organization ;
+    rdfs:label "Centre hospitalier universitaire de Québec" ;
+    schema:name "Centre hospitalier universitaire de Québec" ;
+    schema:foundingDate "1995"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Centre_hospitalier_universitaire_de_Qu%C3%A9bec> ;
+    org:status "inactive" ;
+    org:classification "Funder" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/05qn5kv73> ;
+        rdfs:label "CHU de Québec-Université Laval" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-71.21454 46.81228)"^^geo:wktLiteral ;
+        schema:addressLocality "Québec" ;
+    ] ;
+    schema:url <https://www.chudequebec.ca> ;
+    schema:sameAs <http://isni.org/isni/0000000094711794> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5062640> ;
+             .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/008642w33> 
+    a org:Organization ;
+    rdfs:label "Plains Art Museum" ;
+    schema:name "Plains Art Museum" ;
+    schema:foundingDate "1965"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Plains_Art_Museum> ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-96.7898 46.87719)"^^geo:wktLiteral ;
+        schema:addressLocality "Fargo" ;
+    ] ;
+    schema:url <https://plainsart.org> ;
+    schema:sameAs <http://isni.org/isni/0000000085797928> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2097996> ;
+             .

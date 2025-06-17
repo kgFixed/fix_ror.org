@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00bzsst90> 
+    a org:Organization ;
+    rdfs:label "Institute for Advanced Studies in Basic Sciences" ;
+    schema:name "Institute for Advanced Studies in Basic Sciences" ;
+    schema:foundingDate "1991"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Institute_for_Advanced_Studies_in_Basic_Sciences> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(48.49628 36.67642)"^^geo:wktLiteral ;
+        schema:addressLocality "Zanjan" ;
+    ] ;
+    schema:url <http://www.iasbs.ac.ir/?ef=en> ;
+    schema:sameAs <http://isni.org/isni/0000000404056626> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q10296988> ;
+             .

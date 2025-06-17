@@ -1,0 +1,49 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00g2tkw06> 
+    a org:Organization ;
+    rdfs:label "Ford Motor Company (United States)" ;
+    schema:name "Ford Motor Company (United States)" ;
+    schema:foundingDate "1903"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Ford_Motor_Company> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00v84va72> ;
+        rdfs:label "Ford Motor Company (Canada)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02vf5zz47> ;
+        rdfs:label "Ford Motor Company (Czechia)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/018mdm506> ;
+        rdfs:label "Ford Motor Company (France)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00t00te02> ;
+        rdfs:label "Ford Motor Company (United Kingdom)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-83.17631 42.32226)"^^geo:wktLiteral ;
+        schema:addressLocality "Dearborn" ;
+    ] ;
+    schema:url <http://www.ford.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000107209454> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q44294> ;
+             .

@@ -1,0 +1,54 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/004cdt922> 
+    a org:Organization ;
+    rdfs:label "Illinois Tool Works (United States)" ;
+    schema:name "Illinois Tool Works (United States)" ;
+    schema:foundingDate "1912"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Illinois_Tool_Works> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/005d42743> ;
+        rdfs:label "Illinois Tool Works (Australia)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05f6p1h60> ;
+        rdfs:label "Illinois Tool Works (Brazil)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/047ajv266> ;
+        rdfs:label "Illinois Tool Works (France)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00j8cdz25> ;
+        rdfs:label "Illinois Tool Works (Germany)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02b4eje67> ;
+        rdfs:label "Illinois Tool Works (United Kingdom)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-87.78784 42.06975)"^^geo:wktLiteral ;
+        schema:addressLocality "Glenview" ;
+    ] ;
+    schema:url <http://www.itw.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000100476787> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1510378> ;
+             .

@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/006pq9r08> 
+    a org:Organization ;
+    rdfs:label "Centro Cardiologico Monzino" ;
+    schema:name "Centro Cardiologico Monzino" ;
+    schema:foundingDate "1981"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04tfzc498> ;
+        rdfs:label "Istituti di Ricovero e Cura a Carattere Scientifico" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(9.18951 45.46427)"^^geo:wktLiteral ;
+        schema:addressLocality "Milan" ;
+    ] ;
+    schema:url <http://www.cardiologicomonzino.it/Pages/Default.aspx> ;
+    schema:sameAs <http://isni.org/isni/0000000417601750> ;
+             .

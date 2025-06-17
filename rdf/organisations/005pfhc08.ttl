@@ -1,0 +1,34 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/005pfhc08> 
+    a org:Organization ;
+    rdfs:label "Senckenberg Centre for Human Evolution and Palaeoenvironment" ;
+    schema:name "Senckenberg Centre for Human Evolution and Palaeoenvironment" ;
+    schema:foundingDate "2009"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00xmqmx64> ;
+        rdfs:label "Senckenberg Society for Nature Research" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03a1kwz48> ;
+        rdfs:label "University of Tübingen" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(9.05222 48.52266)"^^geo:wktLiteral ;
+        schema:addressLocality "Tübingen" ;
+    ] ;
+    schema:url <https://www.senckenberg.de/en/institutes/shep/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q74673447> ;
+             .

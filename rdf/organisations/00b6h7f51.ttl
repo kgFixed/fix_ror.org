@@ -1,0 +1,20 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00b6h7f51> 
+    a org:Organization ;
+    rdfs:label "Economic Development Commission of Floridas Space Coast" ;
+    schema:name "Economic Development Commission of Floridas Space Coast" ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-80.72533 28.35084)"^^geo:wktLiteral ;
+        schema:addressLocality "Rockledge" ;
+    ] ;
+    schema:url <http://spacecoastedc.org/> ;
+     .

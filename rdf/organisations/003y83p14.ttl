@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/003y83p14> 
+    a org:Organization ;
+    rdfs:label "University of the Third Age" ;
+    schema:name "University of the Third Age" ;
+    schema:foundingDate "1973"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/University_of_the_Third_Age> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.12574 51.50853)"^^geo:wktLiteral ;
+        schema:addressLocality "London" ;
+    ] ;
+    schema:url <http://www.u3a.org.uk/> ;
+    schema:sameAs <http://isni.org/isni/000000040564477X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2400788> ;
+             .
