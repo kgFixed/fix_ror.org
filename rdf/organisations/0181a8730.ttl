@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0181a8730> 
+    a org:Organization ;
+    rdfs:label "Harcourt Butler Technical University" ;
+    schema:name "Harcourt Butler Technical University" ;
+    schema:foundingDate "1921"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Harcourt_Butler_Technical_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(80.34975 26.46523)"^^geo:wktLiteral ;
+        schema:addressLocality "Kanpur" ;
+    ] ;
+    schema:url <http://hbtu.ac.in/> ;
+    schema:sameAs <http://isni.org/isni/0000000477054947> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5655014> ;
+             .

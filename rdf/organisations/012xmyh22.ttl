@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/012xmyh22> 
+    a org:Organization ;
+    rdfs:label "31 Degrees (France)" ;
+    schema:name "31 Degrees (France)" ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(1.3542 44.01759)"^^geo:wktLiteral ;
+        schema:addressLocality "Montauban" ;
+    ] ;
+    schema:url <http://www.31deg.com/Home_a22.html> ;
+    schema:sameAs <http://isni.org/isni/0000000405490758> ;
+             .

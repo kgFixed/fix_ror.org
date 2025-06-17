@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/016qa9g64> 
+    a org:Organization ;
+    rdfs:label "Straight Ahead Pictures" ;
+    schema:name "Straight Ahead Pictures" ;
+    schema:foundingDate "1989"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-72.69953 42.50981)"^^geo:wktLiteral ;
+        schema:addressLocality "Conway" ;
+    ] ;
+    schema:url <http://www.straightaheadpictures.org/sap/home.html> ;
+     .

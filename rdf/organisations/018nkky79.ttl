@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/018nkky79> 
+    a org:Organization ;
+    rdfs:label "Tuen Mun Hospital" ;
+    schema:name "Tuen Mun Hospital" ;
+    schema:foundingDate "1990"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Tuen_Mun_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05sn8t512> ;
+        rdfs:label "Hospital Authority" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(113.97157 22.39175)"^^geo:wktLiteral ;
+        schema:addressLocality "Tuen Mun" ;
+    ] ;
+    schema:url <http://www3.ha.org.hk/tmh/en/> ;
+    schema:sameAs <http://isni.org/isni/0000000417713971> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7851389> ;
+             .

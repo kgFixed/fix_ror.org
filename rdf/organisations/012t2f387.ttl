@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/012t2f387> 
+    a org:Organization ;
+    rdfs:label "South Bohemian Region" ;
+    schema:name "South Bohemian Region" ;
+    schema:foundingDate "2000"^^xsd:gYear ;
+    schema:sameAs <https://cs.wikipedia.org/wiki/Jiho%C4%8Desk%C3%BD_kraj> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(14.47434 48.97447)"^^geo:wktLiteral ;
+        schema:addressLocality "České Budějovice" ;
+    ] ;
+    schema:url <https://www.kraj-jihocesky.cz> ;
+    schema:sameAs <http://isni.org/isni/0000000104833323> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q188373> ;
+             .

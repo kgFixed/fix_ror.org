@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0128ckf82> 
+    a org:Organization ;
+    rdfs:label "Ferrum College" ;
+    schema:name "Ferrum College" ;
+    schema:foundingDate "1913"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Ferrum_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05w72d176> ;
+        rdfs:label "The People of the United Methodist Church" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-80.01337 36.92292)"^^geo:wktLiteral ;
+        schema:addressLocality "Ferrum" ;
+    ] ;
+    schema:url <http://www.ferrum.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000090759926> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5445466> ;
+             .

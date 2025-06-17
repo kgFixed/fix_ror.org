@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0116f3t39> 
+    a org:Organization ;
+    rdfs:label "Verman (Finland)" ;
+    schema:name "Verman (Finland)" ;
+    schema:foundingDate "1987"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(25.105 60.40338)"^^geo:wktLiteral ;
+        schema:addressLocality "Kerava" ;
+    ] ;
+    schema:url <http://www.verman.fi/> ;
+    schema:sameAs <http://isni.org/isni/0000000406161497> ;
+             .

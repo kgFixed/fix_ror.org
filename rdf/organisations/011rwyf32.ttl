@@ -1,0 +1,54 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/011rwyf32> 
+    a org:Organization ;
+    rdfs:label "U.S. Army Materiel Command" ;
+    schema:name "U.S. Army Materiel Command" ;
+    schema:foundingDate "1962"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/United_States_Army_Materiel_Command> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/056d91m78> ;
+        rdfs:label "U.S. Army Aviation and Missile Command" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02cm95j49> ;
+        rdfs:label "U.S. Army Communications-Electronics Command" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03vy7v919> ;
+        rdfs:label "U.S. Army Tank-automotive and Armaments Command" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03hmvjq54> ;
+        rdfs:label "U.S. Army Joint Munitions Command" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05p4ndd12> ;
+        rdfs:label "U.S. Army Sustainment Command" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-86.64764 34.68387)"^^geo:wktLiteral ;
+        schema:addressLocality "Redstone Arsenal" ;
+    ] ;
+    schema:url <https://www.amc.army.mil> ;
+    schema:sameAs <http://isni.org/isni/0000000119564613> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q847228> ;
+             .

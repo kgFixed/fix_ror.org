@@ -1,0 +1,40 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/011907q25> 
+    a org:Organization ;
+    rdfs:label "Laboratoire de Génie des Procédés Catalytiques" ;
+    schema:name "Laboratoire de Génie des Procédés Catalytiques" ;
+    schema:foundingDate "2011"^^xsd:gYear ;
+    org:status "inactive" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00s19x989> ;
+        rdfs:label "Institut des Sciences de l'Ingénierie et des Systèmes" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01cbtr271> ;
+        rdfs:label "École d'Ingénieurs en Chimie et Sciences du Numérique" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/02f6tst70> ;
+        rdfs:label "Catalyse, Polymérisation, Procédés et Matériaux" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(4.8795 45.76601)"^^geo:wktLiteral ;
+        schema:addressLocality "Villeurbanne" ;
+    ] ;
+    schema:url <http://www.lgpc.fr> ;
+    schema:sameAs <http://isni.org/isni/0000000403822739> ;
+             .

@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01efj0y81> 
+    a org:Organization ;
+    rdfs:label "Intensive Care Foundation" ;
+    schema:name "Intensive Care Foundation" ;
+    schema:foundingDate "1999"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Intensive_Care_Foundation> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(144.96667 -37.8)"^^geo:wktLiteral ;
+        schema:addressLocality "Carlton" ;
+    ] ;
+    schema:url <http://www.intensivecarefoundation.org.au/> ;
+     .

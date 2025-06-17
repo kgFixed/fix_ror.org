@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01gc0n970> 
+    a org:Organization ;
+    rdfs:label "Kaishi Professional University" ;
+    schema:name "Kaishi Professional University" ;
+    schema:foundingDate "2020"^^xsd:gYear ;
+    schema:sameAs <https://ja.wikipedia.org/wiki/%E9%96%8B%E5%BF%97%E5%B0%82%E9%96%80%E8%81%B7%E5%A4%A7%E5%AD%A6> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(139.04125 37.92259)"^^geo:wktLiteral ;
+        schema:addressLocality "Niigata" ;
+    ] ;
+    schema:url <https://kaishi-pu.ac.jp> ;
+    schema:sameAs <http://isni.org/isni/0000000483429389> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q96971327> ;
+             .

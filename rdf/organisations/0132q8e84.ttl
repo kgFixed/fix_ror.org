@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0132q8e84> 
+    a org:Organization ;
+    rdfs:label "Longenecker and Associates (United States)" ;
+    schema:name "Longenecker and Associates (United States)" ;
+    schema:foundingDate "1989"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-115.13722 36.17497)"^^geo:wktLiteral ;
+        schema:addressLocality "Las Vegas" ;
+    ] ;
+    schema:url <http://la-inc.com/> ;
+     .

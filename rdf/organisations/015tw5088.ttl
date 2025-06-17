@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/015tw5088> 
+    a org:Organization ;
+    rdfs:label "Regents Theological College" ;
+    schema:name "Regents Theological College" ;
+    schema:foundingDate "1925"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Regents_Theological_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-2.32515 52.11161)"^^geo:wktLiteral ;
+        schema:addressLocality "Great Malvern" ;
+    ] ;
+    schema:url <http://www.regents-tc.ac.uk/> ;
+    schema:sameAs <http://isni.org/isni/0000000404369753> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1774197> ;
+             .

@@ -1,0 +1,111 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/017vyhs10> 
+    a org:Organization ;
+    rdfs:label "Moorea Coral Reef Long Term Ecological Research" ;
+    schema:name "Moorea Coral Reef Long Term Ecological Research" ;
+    schema:foundingDate "2004"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/039kwqk96> ;
+        rdfs:label "Long Term Ecological Research Network" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02t274463> ;
+        rdfs:label "University of California, Santa Barbara" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0330j0z60> ;
+        rdfs:label "Environmental Data Initiative" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/005f5hv41> ;
+        rdfs:label "California State University, Northridge" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04sk0et52> ;
+        rdfs:label "Gump South Pacific Research Station" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03s65by71> ;
+        rdfs:label "University of California, Santa Cruz" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01zkghx44> ;
+        rdfs:label "Georgia Institute of Technology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00py81415> ;
+        rdfs:label "Duke University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/013ckk937> ;
+        rdfs:label "University of Rhode Island" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01wspgy28> ;
+        rdfs:label "University of Hawaiʻi at Mānoa" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00ysfqy60> ;
+        rdfs:label "Oregon State University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0168r3w48> ;
+        rdfs:label "University of California, San Diego" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05g3dte14> ;
+        rdfs:label "Florida State University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/008zs3103> ;
+        rdfs:label "Rice University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04v7hvq31> ;
+        rdfs:label "Scripps Institution of Oceanography" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-149.82699 -17.48822)"^^geo:wktLiteral ;
+        schema:addressLocality "Pihaena" ;
+    ] ;
+    schema:url <http://mcr.lternet.edu> ;
+     .

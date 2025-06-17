@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01a2cdx51> 
+    a org:Organization ;
+    rdfs:label "Kumamoto Saishun Medical Center" ;
+    schema:name "Kumamoto Saishun Medical Center" ;
+    schema:sameAs <https://ja.wikipedia.org/wiki/%E5%9B%BD%E7%AB%8B%E7%97%85%E9%99%A2%E6%A9%9F%E6%A7%8B%E7%86%8A%E6%9C%AC%E5%86%8D%E6%98%A5%E5%8C%BB%E7%99%82%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(138.93333 37.33333)"^^geo:wktLiteral ;
+        schema:addressLocality "Koshi-gun" ;
+    ] ;
+    schema:url <https://saishun.hosp.go.jp> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q11571642> ;
+             .

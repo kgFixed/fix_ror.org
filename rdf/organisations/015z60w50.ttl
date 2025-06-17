@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/015z60w50> 
+    a org:Organization ;
+    rdfs:label "Center for Advanced Legal Studies" ;
+    schema:name "Center for Advanced Legal Studies" ;
+    schema:foundingDate "1987"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-95.36327 29.76328)"^^geo:wktLiteral ;
+        schema:addressLocality "Houston" ;
+    ] ;
+    schema:url <http://www.paralegal.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000121147704> ;
+             .

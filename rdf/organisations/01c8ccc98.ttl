@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01c8ccc98> 
+    a org:Organization ;
+    rdfs:label "California Strategic Growth Council" ;
+    schema:name "California Strategic Growth Council" ;
+    schema:foundingDate "2008"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03chte209> ;
+        rdfs:label "Office of the Governor State of California" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-121.4944 38.58157)"^^geo:wktLiteral ;
+        schema:addressLocality "Sacramento" ;
+    ] ;
+    schema:url <https://sgc.ca.gov> ;
+    schema:sameAs <http://isni.org/isni/0000000512356327> ;
+             .

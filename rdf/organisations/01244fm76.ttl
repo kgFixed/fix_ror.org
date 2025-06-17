@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01244fm76> 
+    a org:Organization ;
+    rdfs:label "University of Tennessee at Martin" ;
+    schema:name "University of Tennessee at Martin" ;
+    schema:foundingDate "1927"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/University_of_Tennessee_at_Martin> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00xzqjh13> ;
+        rdfs:label "University of Tennessee System" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-88.85034 36.3434)"^^geo:wktLiteral ;
+        schema:addressLocality "Martin" ;
+    ] ;
+    schema:url <http://www.utm.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000123005312> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1566138> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q11704313> ;
+             .

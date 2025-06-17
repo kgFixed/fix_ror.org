@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/011hf9620> 
+    a org:Organization ;
+    rdfs:label "Nordic Paper (Sweden)" ;
+    schema:name "Nordic Paper (Sweden)" ;
+    schema:foundingDate "2001"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Nordic_Paper> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(12.92888 59.13229)"^^geo:wktLiteral ;
+        schema:addressLocality "Säffle" ;
+    ] ;
+    schema:url <http://www.nordic-paper.com/> ;
+     .

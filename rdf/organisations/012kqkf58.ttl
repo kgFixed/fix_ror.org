@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/012kqkf58> 
+    a org:Organization ;
+    rdfs:label "Robert Bosch Stiftung" ;
+    schema:name "Robert Bosch Stiftung" ;
+    schema:foundingDate "1964"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Robert_Bosch_Stiftung> ;
+    org:status "active" ;
+    org:classification "Funder" ;
+    org:classification "Nonprofit" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/054gdnq27> ;
+        rdfs:label "Bosch Health Campus" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(9.17702 48.78232)"^^geo:wktLiteral ;
+        schema:addressLocality "Stuttgart" ;
+    ] ;
+    schema:url <https://www.bosch-stiftung.de/de> ;
+    schema:sameAs <http://isni.org/isni/0000000405642483> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q319347> ;
+             .

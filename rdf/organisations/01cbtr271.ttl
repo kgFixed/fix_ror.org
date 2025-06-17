@@ -1,0 +1,72 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01cbtr271> 
+    a org:Organization ;
+    rdfs:label "École d'Ingénieurs en Chimie et Sciences du Numérique" ;
+    schema:name "École d'Ingénieurs en Chimie et Sciences du Numérique" ;
+    schema:foundingDate "1883"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/%C3%89cole_sup%C3%A9rieure_de_chimie_physique_%C3%A9lectronique_de_Lyon> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03kfjwy31> ;
+        rdfs:label "Automation and Process Engineering Laboratory" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00gj33s30> ;
+        rdfs:label "Institut de Chimie et Biochimie Moléculaires et Supramoléculaires" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04jsk0b74> ;
+        rdfs:label "Institut des Nanotechnologies de Lyon" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0028p8r67> ;
+        rdfs:label "Laboratoire Hubert Curien" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/026m44z54> ;
+        rdfs:label "Laboratoire Nanotechnologies et Nanosystèmes" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02f6tst70> ;
+        rdfs:label "Catalyse, Polymérisation, Procédés et Matériaux" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0459fdx51> ;
+        rdfs:label "Fédération de Recherche sur l'Energie Solaire" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01x6z5t49> ;
+        rdfs:label "Fédération de Recherche Spectroscopies de Photoémission" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(4.84671 45.74846)"^^geo:wktLiteral ;
+        schema:addressLocality "Lyon" ;
+    ] ;
+    schema:url <http://www.cpe.fr/> ;
+    schema:sameAs <http://isni.org/isni/0000000088669008> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q10178> ;
+             .

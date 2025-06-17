@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0133h5567> 
+    a org:Organization ;
+    rdfs:label "Yangon University of Economics" ;
+    schema:name "Yangon University of Economics" ;
+    schema:foundingDate "1964"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Yangon_University_of_Economics> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(96.15611 16.80528)"^^geo:wktLiteral ;
+        schema:addressLocality "Yangon" ;
+    ] ;
+    schema:url <http://www.yueco.edu.mm/> ;
+    schema:sameAs <http://isni.org/isni/0000000406431872> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q8048622> ;
+             .

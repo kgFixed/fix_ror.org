@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01fgq8278> 
+    a org:Organization ;
+    rdfs:label "DSM (Switzerland)" ;
+    schema:name "DSM (Switzerland)" ;
+    schema:foundingDate "1902"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/DSM_(company)> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00k01kt20> ;
+        rdfs:label "DSM (Netherlands)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(7.72605 47.53966)"^^geo:wktLiteral ;
+        schema:addressLocality "Kaiseraugst" ;
+    ] ;
+    schema:url <http://www.dsm.com/corporate/home.html> ;
+    schema:sameAs <http://isni.org/isni/0000000405383477> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q29123919> ;
+             .

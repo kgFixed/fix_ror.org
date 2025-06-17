@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01dcrt245> 
+    a org:Organization ;
+    rdfs:label "Dubai Health Authority" ;
+    schema:name "Dubai Health Authority" ;
+    schema:foundingDate "2007"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Dubai_Health_Authority> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04czxss33> ;
+        rdfs:label "Dubai Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05n56ba96> ;
+        rdfs:label "Latifa Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04b2pvs09> ;
+        rdfs:label "Rashid Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(55.30927 25.07725)"^^geo:wktLiteral ;
+        schema:addressLocality "Dubai" ;
+    ] ;
+    schema:url <https://www.dha.gov.ae/en/pages/dhahome.aspx> ;
+    schema:sameAs <http://isni.org/isni/0000000417570894> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5310552> ;
+             .

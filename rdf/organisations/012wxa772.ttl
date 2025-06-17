@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/012wxa772> 
+    a org:Organization ;
+    rdfs:label "Northern Illinois University" ;
+    schema:name "Northern Illinois University" ;
+    schema:foundingDate "1895"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Northern_Illinois_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02xse0b92> ;
+        rdfs:label "NIU Observatory" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-88.75036 41.92947)"^^geo:wktLiteral ;
+        schema:addressLocality "DeKalb" ;
+    ] ;
+    schema:url <https://www.niu.edu> ;
+    schema:sameAs <http://isni.org/isni/0000000090038934> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1191344> ;
+             .

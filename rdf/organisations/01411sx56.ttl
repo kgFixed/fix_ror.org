@@ -1,0 +1,48 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01411sx56> 
+    a org:Organization ;
+    rdfs:label "Johnson Matthey (United Kingdom)" ;
+    schema:name "Johnson Matthey (United Kingdom)" ;
+    schema:foundingDate "1817"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Johnson_Matthey> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/029ve2p44> ;
+        rdfs:label "Johnson Matthey (France)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0131hr478> ;
+        rdfs:label "Johnson Matthey (Germany)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00wbcgc67> ;
+        rdfs:label "Johnson Matthey (United States)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01rkf4y25> ;
+        rdfs:label "Johnson Matthey Battery Systems (United Kingdom)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.12574 51.50853)"^^geo:wktLiteral ;
+        schema:addressLocality "London" ;
+    ] ;
+    schema:url <http://www.matthey.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000106793687> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q502470> ;
+             .

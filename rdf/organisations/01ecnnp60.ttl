@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01ecnnp60> 
+    a org:Organization ;
+    rdfs:label "Jackson State University" ;
+    schema:name "Jackson State University" ;
+    schema:foundingDate "1877"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Jackson_State_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04kqgqa72> ;
+        rdfs:label "Mississippi Institutions of Higher Learning" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04vzsq290> ;
+        rdfs:label "Mississippi Alabama Sea Grant Consortium" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0249rpb20> ;
+        rdfs:label "Mississippi Space Grant Consortium" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-90.18481 32.29876)"^^geo:wktLiteral ;
+        schema:addressLocality "Jackson" ;
+    ] ;
+    schema:url <http://www.jsums.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000106718898> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1747601> ;
+             .

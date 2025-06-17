@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01a53yy36> 
+    a org:Organization ;
+    rdfs:label "Wauconda Area Library" ;
+    schema:name "Wauconda Area Library" ;
+    schema:foundingDate "1939"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Wauconda_Area_Library> ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-88.13925 42.25891)"^^geo:wktLiteral ;
+        schema:addressLocality "Wauconda" ;
+    ] ;
+    schema:url <https://www.wauclib.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000406025882> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7975121> ;
+             .

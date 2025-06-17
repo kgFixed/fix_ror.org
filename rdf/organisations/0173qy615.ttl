@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0173qy615> 
+    a org:Organization ;
+    rdfs:label "Jordan Radio and Television Corporation" ;
+    schema:name "Jordan Radio and Television Corporation" ;
+    schema:foundingDate "1985"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Jordan_Radio_and_Television_Corporation> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(35.94503 31.95522)"^^geo:wktLiteral ;
+        schema:addressLocality "Amman" ;
+    ] ;
+    schema:url <http://www.jrtv.jo/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q3115641> ;
+             .

@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01c284h11> 
+    a org:Organization ;
+    rdfs:label "Norwegian Government Security and Service Organisation" ;
+    schema:name "Norwegian Government Security and Service Organisation" ;
+    schema:foundingDate "1979"^^xsd:gYear ;
+    schema:sameAs <https://no.wikipedia.org/wiki/Departementenes_sikkerhets-_og_serviceorganisasjon> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05a4cm665> ;
+        rdfs:label "Government of Norway" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(10.74609 59.91273)"^^geo:wktLiteral ;
+        schema:addressLocality "Oslo" ;
+    ] ;
+    schema:url <https://www.dss.dep.no> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q5588670> ;
+             .

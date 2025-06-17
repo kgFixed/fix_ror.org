@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01dwwvh23> 
+    a org:Organization ;
+    rdfs:label "rgb Onkologisches Management" ;
+    schema:name "rgb Onkologisches Management" ;
+    schema:foundingDate "2002"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(9.85411 52.23495)"^^geo:wktLiteral ;
+        schema:addressLocality "Sarstedt" ;
+    ] ;
+    schema:url <https://www.rgb-onkologie.de/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q50038903> ;
+             .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01bs3vx31> 
+    a org:Organization ;
+    rdfs:label "Foundation Jewish Contemporary Documentation Center" ;
+    schema:name "Foundation Jewish Contemporary Documentation Center" ;
+    schema:foundingDate "1955"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Centro_di_Documentazione_Ebraica_Contemporanea> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(9.18951 45.46427)"^^geo:wktLiteral ;
+        schema:addressLocality "Milan" ;
+    ] ;
+    schema:url <http://www.cdec.it/home2_2.asp?idtesto=990> ;
+    schema:sameAs <http://isni.org/isni/0000000121768973> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q480470> ;
+             .

@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/019y81x83> 
+    a org:Organization ;
+    rdfs:label "Szczecińska Szkoła Wyższa Collegium Balticum" ;
+    schema:name "Szczecińska Szkoła Wyższa Collegium Balticum" ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(14.55302 53.42894)"^^geo:wktLiteral ;
+        schema:addressLocality "Szczecin" ;
+    ] ;
+    schema:url <http://www.cb.szczecin.pl/> ;
+    schema:sameAs <http://isni.org/isni/0000000113739072> ;
+             .

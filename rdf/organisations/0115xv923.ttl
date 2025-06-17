@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0115xv923> 
+    a org:Organization ;
+    rdfs:label "Swiss Federal Institute of Metrology" ;
+    schema:name "Swiss Federal Institute of Metrology" ;
+    schema:foundingDate "1862"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Federal_Office_of_Metrology> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(7.44744 46.94809)"^^geo:wktLiteral ;
+        schema:addressLocality "Bern" ;
+    ] ;
+    schema:url <https://www.metas.ch> ;
+    schema:sameAs <http://isni.org/isni/0000000405274422> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1005465> ;
+             .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01f8zms39> 
+    a org:Organization ;
+    rdfs:label "Billroth Hospitals" ;
+    schema:name "Billroth Hospitals" ;
+    schema:foundingDate "1990"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Billroth_Hospitals> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(80.27847 13.08784)"^^geo:wktLiteral ;
+        schema:addressLocality "Chennai" ;
+    ] ;
+    schema:url <http://www.billrothhospitals.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000418033193> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q17049866> ;
+             .

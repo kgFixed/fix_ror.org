@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01a58zy03> 
+    a org:Organization ;
+    rdfs:label "Blanke Meier Evers Rechtsanwälte in Partnerschaft" ;
+    schema:name "Blanke Meier Evers Rechtsanwälte in Partnerschaft" ;
+    schema:foundingDate "1998"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(8.80717 53.07582)"^^geo:wktLiteral ;
+        schema:addressLocality "Bremen" ;
+    ] ;
+    schema:url <http://bme-law.de/en/startseite.html> ;
+     .

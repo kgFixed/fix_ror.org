@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/016kj2436> 
+    a org:Organization ;
+    rdfs:label "Royal Observatory" ;
+    schema:name "Royal Observatory" ;
+    schema:foundingDate "1896"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Royal_Observatory,_Edinburgh> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01egwg173> ;
+        rdfs:label "UK Astronomy Technology Centre" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-3.19648 55.95206)"^^geo:wktLiteral ;
+        schema:addressLocality "Edinburgh" ;
+    ] ;
+    schema:url <https://www.roe.ac.uk/> ;
+    schema:sameAs <http://isni.org/isni/0000000406001987> ;
+             .

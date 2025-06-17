@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01eagw932> 
+    a org:Organization ;
+    rdfs:label "Çamlıca Erdem Hastahanesi" ;
+    schema:name "Çamlıca Erdem Hastahanesi" ;
+    schema:foundingDate "2009"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(29.01366 41.02274)"^^geo:wktLiteral ;
+        schema:addressLocality "Üsküdar" ;
+    ] ;
+    schema:url <http://www.erdemhastahanesi.com.tr/tr/hastahaneler-ve-merkezler/camlica-erdem-hastahanesi-2> ;
+     .

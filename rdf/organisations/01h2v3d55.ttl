@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01h2v3d55> 
+    a org:Organization ;
+    rdfs:label "Central European Research Infrastructure Consortium" ;
+    schema:name "Central European Research Infrastructure Consortium" ;
+    schema:foundingDate "2014"^^xsd:gYear ;
+    schema:sameAs <https://it.wikipedia.org/wiki/Central_European_Research_Infrastructure_Consortium> ;
+    org:status "active" ;
+    org:classification "Funder" ;
+    org:classification "Other" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/001338s77> ;
+        rdfs:label "Surface Physics Laboratory – Hydrogen Technology Centre" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(13.77678 45.64953)"^^geo:wktLiteral ;
+        schema:addressLocality "Trieste" ;
+    ] ;
+    schema:url <https://www.ceric-eric.eu> ;
+    schema:sameAs <http://isni.org/isni/0000000473971334> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q47519380> ;
+             .

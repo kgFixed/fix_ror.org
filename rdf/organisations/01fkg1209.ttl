@@ -1,0 +1,57 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01fkg1209> 
+    a org:Organization ;
+    rdfs:label "NorthEast Pacific Deep-sea Exploration Project" ;
+    schema:name "NorthEast Pacific Deep-sea Exploration Project" ;
+    schema:foundingDate "2023"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Other" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02qa1x782> ;
+        rdfs:label "Fisheries and Oceans Canada" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04s5mat29> ;
+        rdfs:label "University of Victoria" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00yxpmx15> ;
+        rdfs:label "Royal British Columbia Museum" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05gknh003> ;
+        rdfs:label "Ocean Networks Canada Society" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/021j0ne73> ;
+        rdfs:label "Council of the Haida Nation" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01g72me42> ;
+        rdfs:label "Nuu Chah Nulth Tribal Council" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-123.35155 48.4359)"^^geo:wktLiteral ;
+        schema:addressLocality "Victoria" ;
+    ] ;
+    schema:url <https://www.nepdep.com> ;
+     .

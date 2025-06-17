@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/015aem925> 
+    a org:Organization ;
+    rdfs:label "New Generation University College" ;
+    schema:name "New Generation University College" ;
+    schema:foundingDate "2002"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/New_Generation_University_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(38.74689 9.02497)"^^geo:wktLiteral ;
+        schema:addressLocality "Addis Ababa" ;
+    ] ;
+    schema:url <http://www.nguc.edu.et/> ;
+    schema:sameAs <http://isni.org/isni/0000000453754244> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q17071332> ;
+             .

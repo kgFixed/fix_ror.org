@@ -1,0 +1,59 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/014bj5w56> 
+    a org:Organization ;
+    rdfs:label "Directorate for STEM Education (EDU)" ;
+    schema:name "Directorate for STEM Education (EDU)" ;
+    org:status "active" ;
+    org:classification "Funder" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/054ydxh33> ;
+        rdfs:label "Division of Elementary, Secondary, and Informal Education" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00whkrf32> ;
+        rdfs:label "Division of Graduate Education" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03mamvh39> ;
+        rdfs:label "Division of Equity for Excellence in STEM (EES)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05s7cqk18> ;
+        rdfs:label "Division of Research on Learning in Formal and Informal Settings" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02kd4km72> ;
+        rdfs:label "Division of Undergraduate Education" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/021nxhr62> ;
+        rdfs:label "U.S. National Science Foundation" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.10428 38.88101)"^^geo:wktLiteral ;
+        schema:addressLocality "Arlington" ;
+    ] ;
+    schema:url <https://new.nsf.gov/edu> ;
+    schema:sameAs <http://isni.org/isni/000000040501353X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30299809> ;
+             .

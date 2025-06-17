@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01ereaj97> 
+    a org:Organization ;
+    rdfs:label "National and University Library in Zagreb" ;
+    schema:name "National and University Library in Zagreb" ;
+    schema:foundingDate "1607"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/National_and_University_Library_in_Zagreb> ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(15.97798 45.81444)"^^geo:wktLiteral ;
+        schema:addressLocality "Zagreb" ;
+    ] ;
+    schema:url <https://nsk.hr> ;
+    schema:sameAs <http://isni.org/isni/0000000123702126> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q631375> ;
+             .

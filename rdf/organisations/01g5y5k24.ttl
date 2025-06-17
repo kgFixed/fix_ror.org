@@ -1,0 +1,74 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01g5y5k24> 
+    a org:Organization ;
+    rdfs:label "High Energy Accelerator Research Organization" ;
+    schema:name "High Energy Accelerator Research Organization" ;
+    schema:foundingDate "1997"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/KEK> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02vck8g64> ;
+        rdfs:label "Japan Proton Accelerator Research Complex" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/008td3p62> ;
+        rdfs:label "Institute for Cosmic Ray Research" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/053xn4v04> ;
+        rdfs:label "International Center for Quantum-field Measurement Systems for Studies of the Universe and Particles" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01948cb05> ;
+        rdfs:label "KEK Applied Research Laboratory" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0327y7e25> ;
+        rdfs:label "Institute of Materials Structure Science" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01qradn92> ;
+        rdfs:label "KEK Accelerator Laboratory" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00nwp9g54> ;
+        rdfs:label "Institute of Particle and Nuclear Studies" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/048rj2z13> ;
+        rdfs:label "Ministry of Education, Culture, Sports, Science and Technology" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(140.1 36.2)"^^geo:wktLiteral ;
+        schema:addressLocality "Tsukuba" ;
+    ] ;
+    schema:url <https://www.kek.jp> ;
+    schema:sameAs <http://isni.org/isni/000000012155959X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2165768> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q11605654> ;
+             .

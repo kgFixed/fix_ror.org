@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01dvske68> 
+    a org:Organization ;
+    rdfs:label "Base4NFDI" ;
+    schema:name "Base4NFDI" ;
+    schema:foundingDate "2023"^^xsd:gYear ;
+    org:status "withdrawn" ;
+    org:classification "Other" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05qj6w324> ;
+        rdfs:label "Nationale Forschungsdateninfrastruktur" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(13.73832 51.05089)"^^geo:wktLiteral ;
+        schema:addressLocality "Dresden" ;
+    ] ;
+    schema:url <https://base4nfdi.de> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q113544452> ;
+             .

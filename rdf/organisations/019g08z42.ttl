@@ -1,0 +1,59 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/019g08z42> 
+    a org:Organization ;
+    rdfs:label "East Suffolk and North Essex NHS Foundation Trust" ;
+    schema:name "East Suffolk and North Essex NHS Foundation Trust" ;
+    schema:foundingDate "2018"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/East_Suffolk_and_North_Essex_NHS_Foundation_Trust> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01ketq791> ;
+        rdfs:label "Aldeburgh Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05tfp2303> ;
+        rdfs:label "Clacton Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/023dma244> ;
+        rdfs:label "Colchester Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00k4nrj32> ;
+        rdfs:label "Essex County Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03dw0z746> ;
+        rdfs:label "Halstead Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05m3qrs33> ;
+        rdfs:label "Ipswich Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(0.90421 51.88921)"^^geo:wktLiteral ;
+        schema:addressLocality "Colchester" ;
+    ] ;
+    schema:url <https://www.esneft.nhs.uk/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q55610419> ;
+             .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/013h5z577> 
+    a org:Organization ;
+    rdfs:label "Swedish Sports Confederation" ;
+    schema:name "Swedish Sports Confederation" ;
+    schema:foundingDate "1903"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Swedish_Sports_Confederation> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(18.06871 59.32938)"^^geo:wktLiteral ;
+        schema:addressLocality "Stockholm" ;
+    ] ;
+    schema:url <https://www.rf.se/> ;
+    schema:sameAs <http://isni.org/isni/0000000106653940> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q501511> ;
+             .

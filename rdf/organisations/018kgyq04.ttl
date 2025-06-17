@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/018kgyq04> 
+    a org:Organization ;
+    rdfs:label "Roal (Finland)" ;
+    schema:name "Roal (Finland)" ;
+    schema:foundingDate "1991"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(24.8073 60.46407)"^^geo:wktLiteral ;
+        schema:addressLocality "Nurmijärvi" ;
+    ] ;
+    schema:url <http://www.roal.fi/> ;
+    schema:sameAs <http://isni.org/isni/0000000406394805> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30285279> ;
+             .

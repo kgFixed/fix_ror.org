@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/016ksqd60> 
+    a org:Organization ;
+    rdfs:label "Hong Kong Institution of Engineers" ;
+    schema:name "Hong Kong Institution of Engineers" ;
+    schema:foundingDate "1947"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Hong_Kong_Institution_of_Engineers> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(114.17469 22.27832)"^^geo:wktLiteral ;
+        schema:addressLocality "Hong Kong" ;
+    ] ;
+    schema:url <http://hkie.org.hk/en/> ;
+    schema:sameAs <http://isni.org/isni/0000000107236962> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5894742> ;
+             .

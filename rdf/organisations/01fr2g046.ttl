@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01fr2g046> 
+    a org:Organization ;
+    rdfs:label "Peace Arch Hospital" ;
+    schema:name "Peace Arch Hospital" ;
+    schema:foundingDate "1954"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Peace_Arch_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-122.79507 49.02049)"^^geo:wktLiteral ;
+        schema:addressLocality "White Rock" ;
+    ] ;
+    schema:url <http://www.fraserhealth.ca/find-us/locations/our-locations?site_id=1783> ;
+    schema:sameAs <http://isni.org/isni/0000000406339814> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7157315> ;
+             .

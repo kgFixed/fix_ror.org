@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/014028r32> 
+    a org:Organization ;
+    rdfs:label "Le Hong Phong High School for the Gifted" ;
+    schema:name "Le Hong Phong High School for the Gifted" ;
+    schema:foundingDate "1920"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/L%C3%AA_H%E1%BB%93ng_Phong_High_School> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(106.17729 20.43389)"^^geo:wktLiteral ;
+        schema:addressLocality "Nam Định" ;
+    ] ;
+    schema:url <http://thpt-lehongphong-nd.edu.vn/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q3269006> ;
+             .

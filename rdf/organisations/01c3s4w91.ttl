@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01c3s4w91> 
+    a org:Organization ;
+    rdfs:label "University of Fredericton" ;
+    schema:name "University of Fredericton" ;
+    schema:foundingDate "2007"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/University_of_Fredericton> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-66.66558 45.94541)"^^geo:wktLiteral ;
+        schema:addressLocality "Fredericton" ;
+    ] ;
+    schema:url <https://www.ufred.ca/> ;
+    schema:sameAs <http://isni.org/isni/0000000446672347> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7895437> ;
+             .

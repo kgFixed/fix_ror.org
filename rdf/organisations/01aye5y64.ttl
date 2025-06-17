@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01aye5y64> 
+    a org:Organization ;
+    rdfs:label "Gateshead Health NHS Foundation Trust" ;
+    schema:name "Gateshead Health NHS Foundation Trust" ;
+    schema:foundingDate "2005"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Gateshead_Health_NHS_Foundation_Trust> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/046rmzh87> ;
+        rdfs:label "Bensham Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0010vn771> ;
+        rdfs:label "Dunston Hill Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/015dyrs73> ;
+        rdfs:label "Queen Elizabeth Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.60168 54.96209)"^^geo:wktLiteral ;
+        schema:addressLocality "Gateshead" ;
+    ] ;
+    schema:url <https://www.qegateshead.nhs.uk/> ;
+    schema:sameAs <http://isni.org/isni/0000000404033782> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q16992671> ;
+             .

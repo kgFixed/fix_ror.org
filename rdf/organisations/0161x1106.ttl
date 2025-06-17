@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0161x1106> 
+    a org:Organization ;
+    rdfs:label "National Sculpture Society" ;
+    schema:name "National Sculpture Society" ;
+    schema:foundingDate "1893"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/National_Sculpture_Society> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-74.00597 40.71427)"^^geo:wktLiteral ;
+        schema:addressLocality "New York" ;
+    ] ;
+    schema:url <https://nationalsculpture.org/> ;
+    schema:sameAs <http://isni.org/isni/000000045907053X> ;
+             .

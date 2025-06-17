@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01fs5qc70> 
+    a org:Organization ;
+    rdfs:label "Tiburcio Vasquez Health Center" ;
+    schema:name "Tiburcio Vasquez Health Center" ;
+    schema:foundingDate "1971"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-122.01913 37.59577)"^^geo:wktLiteral ;
+        schema:addressLocality "Union City" ;
+    ] ;
+    schema:url <https://www.tvhc.org/> ;
+    schema:sameAs <http://isni.org/isni/000000040558595X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30289039> ;
+             .

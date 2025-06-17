@@ -1,0 +1,45 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/016vxbe23> 
+    a org:Organization ;
+    rdfs:label "Zone Atelier Moselle" ;
+    schema:name "Zone Atelier Moselle" ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01tz1zp46> ;
+        rdfs:label "Délégation Centre-Est" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0471kz689> ;
+        rdfs:label "Agence Nationale de Sécurité Sanitaire de l’Alimentation, de l’Environnement et du Travail" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/003vg9w96> ;
+        rdfs:label "Institut National de Recherche pour l'Agriculture, l'Alimentation et l'Environnement" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04vfs2w97> ;
+        rdfs:label "Université de Lorraine" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(6.17114 48.66115)"^^geo:wktLiteral ;
+        schema:addressLocality "Vandœuvre-lès-Nancy" ;
+    ] ;
+    schema:url <https://zam.univ-lorraine.fr/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q36875379> ;
+             .

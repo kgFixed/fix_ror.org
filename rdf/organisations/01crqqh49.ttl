@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01crqqh49> 
+    a org:Organization ;
+    rdfs:label "Parmenides Foundation" ;
+    schema:name "Parmenides Foundation" ;
+    schema:foundingDate "2000"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Parmenides_Foundation> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(11.52148 48.06122)"^^geo:wktLiteral ;
+        schema:addressLocality "Pullach im Isartal" ;
+    ] ;
+    schema:url <https://www.parmenides-foundation.org/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q1433864> ;
+             .

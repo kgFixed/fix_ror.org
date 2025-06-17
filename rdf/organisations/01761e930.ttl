@@ -1,0 +1,40 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01761e930> 
+    a org:Organization ;
+    rdfs:label "Turku PET Centre" ;
+    schema:name "Turku PET Centre" ;
+    schema:foundingDate "1970"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05dbzj528> ;
+        rdfs:label "Turku University Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05vghhr25> ;
+        rdfs:label "University of Turku" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/029pk6x14> ;
+        rdfs:label "Åbo Akademi University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(22.26869 60.45148)"^^geo:wktLiteral ;
+        schema:addressLocality "Turku" ;
+    ] ;
+    schema:url <http://www.turkupetcentre.fi/> ;
+    schema:sameAs <http://isni.org/isni/0000000403914481> ;
+             .

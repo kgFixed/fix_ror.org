@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01820fp17> 
+    a org:Organization ;
+    rdfs:label "Hong Kong Convention and Exhibition Centre" ;
+    schema:name "Hong Kong Convention and Exhibition Centre" ;
+    schema:foundingDate "1997"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Hong_Kong_Convention_and_Exhibition_Centre> ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(114.17469 22.27832)"^^geo:wktLiteral ;
+        schema:addressLocality "Hong Kong" ;
+    ] ;
+    schema:url <https://www.hkcec.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q597725> ;
+             .

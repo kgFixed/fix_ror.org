@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/016rf0n60> 
+    a org:Organization ;
+    rdfs:label "Stiftung Charité" ;
+    schema:name "Stiftung Charité" ;
+    schema:foundingDate "2005"^^xsd:gYear ;
+    schema:sameAs <https://de.wikipedia.org/wiki/Stiftung_Charit%C3%A9> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/001w7jn25> ;
+        rdfs:label "Charité - Universitätsmedizin Berlin" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(13.41053 52.52437)"^^geo:wktLiteral ;
+        schema:addressLocality "Berlin" ;
+    ] ;
+    schema:url <https://www.stiftung-charite.de> ;
+    schema:sameAs <http://isni.org/isni/000000048308275X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q21076611> ;
+             .

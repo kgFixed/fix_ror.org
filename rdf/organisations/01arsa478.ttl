@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01arsa478> 
+    a org:Organization ;
+    rdfs:label "Stevens–Henager College" ;
+    schema:name "Stevens–Henager College" ;
+    schema:foundingDate "1891"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Stevens%E2%80%93Henager_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-111.97383 41.223)"^^geo:wktLiteral ;
+        schema:addressLocality "Ogden" ;
+    ] ;
+    schema:url <http://www.stevenshenager.edu/> ;
+    schema:sameAs <http://isni.org/isni/000000040446622X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7615552> ;
+             .

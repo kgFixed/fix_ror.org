@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01axw0s80> 
+    a org:Organization ;
+    rdfs:label "Research Institute of Agricultural Engineering" ;
+    schema:name "Research Institute of Agricultural Engineering" ;
+    schema:foundingDate "1951"^^xsd:gYear ;
+    org:status "inactive" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/0436mv865> ;
+        rdfs:label "Czech Agrifood Research Center" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(14.42076 50.08804)"^^geo:wktLiteral ;
+        schema:addressLocality "Prague" ;
+    ] ;
+    schema:url <http://www.vuzt.cz/> ;
+    schema:sameAs <http://isni.org/isni/0000000121511799> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30258790> ;
+             .

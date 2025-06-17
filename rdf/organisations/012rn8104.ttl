@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/012rn8104> 
+    a org:Organization ;
+    rdfs:label "Tidewater (United States)" ;
+    schema:name "Tidewater (United States)" ;
+    schema:foundingDate "1956"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Tidewater_(marine_services)> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/040y85z67> ;
+        rdfs:label "Tidewater (Norway)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-90.07507 29.95465)"^^geo:wktLiteral ;
+        schema:addressLocality "New Orleans" ;
+    ] ;
+    schema:url <http://www.tdw.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000121506850> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7800873> ;
+             .

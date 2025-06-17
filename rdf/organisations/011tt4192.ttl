@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/011tt4192> 
+    a org:Organization ;
+    rdfs:label "Mona Vale Hospital" ;
+    schema:name "Mona Vale Hospital" ;
+    schema:foundingDate "1964"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Mona_Vale_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0384j8v12> ;
+        rdfs:label "The University of Sydney" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(151.20732 -33.86785)"^^geo:wktLiteral ;
+        schema:addressLocality "Sydney" ;
+    ] ;
+    schema:url <http://www.nslhd.health.nsw.gov.au/Hospitals/MonaVale> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q6897733> ;
+             .

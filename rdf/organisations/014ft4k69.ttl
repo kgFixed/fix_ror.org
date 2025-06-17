@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/014ft4k69> 
+    a org:Organization ;
+    rdfs:label "Aviation and Aerospace University, Bangladesh" ;
+    schema:name "Aviation and Aerospace University, Bangladesh" ;
+    schema:foundingDate "2019"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Aviation_and_Aerospace_University%2C_Bangladesh> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(89.44595 25.91719)"^^geo:wktLiteral ;
+        schema:addressLocality "Lalmonirhat" ;
+    ] ;
+    schema:url <http://www.aaub.edu.bd> ;
+    schema:sameAs <http://isni.org/isni/0000000505974178> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q67654472> ;
+             .

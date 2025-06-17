@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0186tjy74> 
+    a org:Organization ;
+    rdfs:label "Muscatine Community College" ;
+    schema:name "Muscatine Community College" ;
+    schema:foundingDate "1929"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Muscatine_Community_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03w69rv70> ;
+        rdfs:label "Eastern Iowa Community College" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-91.04321 41.42447)"^^geo:wktLiteral ;
+        schema:addressLocality "Muscatine" ;
+    ] ;
+    schema:url <http://www.eicc.edu/about-eicc/colleges-and-centers/muscatine-community-college.aspx> ;
+    schema:sameAs <http://isni.org/isni/0000000403959241> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6940239> ;
+             .

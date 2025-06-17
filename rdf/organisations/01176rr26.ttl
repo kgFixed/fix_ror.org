@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01176rr26> 
+    a org:Organization ;
+    rdfs:label "Anaxsys (United Kingdom)" ;
+    schema:name "Anaxsys (United Kingdom)" ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.55893 51.31903)"^^geo:wktLiteral ;
+        schema:addressLocality "Woking" ;
+    ] ;
+    schema:url <http://www.anaxsys.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30255247> ;
+             .

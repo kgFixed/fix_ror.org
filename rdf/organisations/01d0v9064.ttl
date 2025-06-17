@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01d0v9064> 
+    a org:Organization ;
+    rdfs:label "Virginia Department of Conservation and Recreation" ;
+    schema:name "Virginia Department of Conservation and Recreation" ;
+    schema:foundingDate "1926"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Virginia_Department_of_Conservation_and_Recreation> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.46026 37.55376)"^^geo:wktLiteral ;
+        schema:addressLocality "Richmond" ;
+    ] ;
+    schema:url <https://www.dcr.virginia.gov/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q7934237> ;
+             .

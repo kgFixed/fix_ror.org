@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/012g45386> 
+    a org:Organization ;
+    rdfs:label "Papua New Guinea University of Technology" ;
+    schema:name "Papua New Guinea University of Technology" ;
+    schema:foundingDate "1965"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Papua_New_Guinea_University_of_Technology> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(146.99611 -6.72333)"^^geo:wktLiteral ;
+        schema:addressLocality "Lae" ;
+    ] ;
+    schema:url <http://www.unitech.ac.pg/> ;
+    schema:sameAs <http://isni.org/isni/0000000419372146> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q890684> ;
+             .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/011a33g95> 
+    a org:Organization ;
+    rdfs:label "Baptist College of Florida" ;
+    schema:name "Baptist College of Florida" ;
+    schema:foundingDate "1943"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Baptist_College_of_Florida> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-85.5166 30.95685)"^^geo:wktLiteral ;
+        schema:addressLocality "Graceville" ;
+    ] ;
+    schema:url <https://www.baptistcollege.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000405288058> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4857614> ;
+             .

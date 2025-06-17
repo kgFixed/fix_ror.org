@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01azqfh67> 
+    a org:Organization ;
+    rdfs:label "Together" ;
+    schema:name "Together" ;
+    schema:foundingDate "1989"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-122.82319 47.03426)"^^geo:wktLiteral ;
+        schema:addressLocality "Lacey" ;
+    ] ;
+    schema:url <http://www.thurstontogether.org/> ;
+     .

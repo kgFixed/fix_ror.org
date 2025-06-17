@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/012rb2c33> 
+    a org:Organization ;
+    rdfs:label "U.S. President's Malaria Initiative" ;
+    schema:name "U.S. President's Malaria Initiative" ;
+    schema:foundingDate "2005"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/President's_Malaria_Initiative> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/042twtr12> ;
+        rdfs:label "Centers for Disease Control and Prevention" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01n6e6j62> ;
+        rdfs:label "United States Agency for International Development" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.03637 38.89511)"^^geo:wktLiteral ;
+        schema:addressLocality "Washington" ;
+    ] ;
+    schema:url <https://www.pmi.gov/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q25101993> ;
+             .

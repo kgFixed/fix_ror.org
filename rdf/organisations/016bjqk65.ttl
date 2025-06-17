@@ -1,0 +1,46 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/016bjqk65> 
+    a org:Organization ;
+    rdfs:label "Abu Dhabi Health Services" ;
+    schema:name "Abu Dhabi Health Services" ;
+    schema:foundingDate "2007"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/000c39f30> ;
+        rdfs:label "Al Ain Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02rn83489> ;
+        rdfs:label "Corniche Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03gd1jf50> ;
+        rdfs:label "Shaikh Khalifa Medical City" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/007a5h107> ;
+        rdfs:label "Tawam Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(54.39696 24.45118)"^^geo:wktLiteral ;
+        schema:addressLocality "Abu Dhabi" ;
+    ] ;
+    schema:url <https://www.seha.ae> ;
+    schema:sameAs <http://isni.org/isni/0000000417560733> ;
+             .

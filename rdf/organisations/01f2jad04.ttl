@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01f2jad04> 
+    a org:Organization ;
+    rdfs:label "Saarstahl (Germany)" ;
+    schema:name "Saarstahl (Germany)" ;
+    schema:foundingDate "1989"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(6.85873 49.25162)"^^geo:wktLiteral ;
+        schema:addressLocality "Völklingen" ;
+    ] ;
+    schema:url <http://www.saarstahl.com/sag/en/products/index.shtml> ;
+    schema:sameAs <http://isni.org/isni/0000000123313411> ;
+             .

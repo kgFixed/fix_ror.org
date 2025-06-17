@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/019faqe83> 
+    a org:Organization ;
+    rdfs:label "Lac du Flambeau Band of Lake Superior Chippewa Indians" ;
+    schema:name "Lac du Flambeau Band of Lake Superior Chippewa Indians" ;
+    schema:foundingDate "1854"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Lac_du_Flambeau_Band_of_Lake_Superior_Chippewa> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-89.8921 45.96967)"^^geo:wktLiteral ;
+        schema:addressLocality "Lac du Flambeau" ;
+    ] ;
+    schema:url <https://www.ldftribe.com/> ;
+     .

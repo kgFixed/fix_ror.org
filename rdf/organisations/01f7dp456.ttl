@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01f7dp456> 
+    a org:Organization ;
+    rdfs:label "Ministry of Food and Drug Safety" ;
+    schema:name "Ministry of Food and Drug Safety" ;
+    schema:foundingDate "1996"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Ministry_of_Food_and_Drug_Safety> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/027k9sa32> ;
+        rdfs:label "National Institute of Food and Drug Safety Evaluation" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(127.48972 36.63722)"^^geo:wktLiteral ;
+        schema:addressLocality "Cheongju-si" ;
+    ] ;
+    schema:url <http://www.mfds.go.kr/eng/index.do> ;
+    schema:sameAs <http://isni.org/isni/0000000088189039> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q482905> ;
+             .

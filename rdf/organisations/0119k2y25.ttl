@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0119k2y25> 
+    a org:Organization ;
+    rdfs:label "Safeware Engineering (United States)" ;
+    schema:name "Safeware Engineering (United States)" ;
+    schema:foundingDate "1991"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-76.50274 39.03206)"^^geo:wktLiteral ;
+        schema:addressLocality "Arnold" ;
+    ] ;
+    schema:url <http://www.safeware-eng.com/> ;
+     .

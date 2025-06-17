@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/018bzp792> 
+    a org:Organization ;
+    rdfs:label "University of the Arts Utrecht" ;
+    schema:name "University of the Arts Utrecht" ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Utrecht_School_of_the_Arts> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(5.12222 52.09083)"^^geo:wktLiteral ;
+        schema:addressLocality "Utrecht" ;
+    ] ;
+    schema:url <http://www.hku.nl/Homeen.htm> ;
+    schema:sameAs <http://isni.org/isni/0000000103396803> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2422926> ;
+             .

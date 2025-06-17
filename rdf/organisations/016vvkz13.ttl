@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/016vvkz13> 
+    a org:Organization ;
+    rdfs:label "European Patent Organisation" ;
+    schema:name "European Patent Organisation" ;
+    schema:foundingDate "1977"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/European_Patent_Organisation> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(4.32501 52.03634)"^^geo:wktLiteral ;
+        schema:addressLocality "Rijswijk" ;
+    ] ;
+    schema:url <https://www.epo.org/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q50362984> ;
+             .

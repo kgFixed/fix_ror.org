@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01a48y329> 
+    a org:Organization ;
+    rdfs:label "Hospital Punta Pacifica" ;
+    schema:name "Hospital Punta Pacifica" ;
+    schema:foundingDate "1999"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Hospital_Punta_Pacifica> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00za53h95> ;
+        rdfs:label "Johns Hopkins University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-79.51973 8.9936)"^^geo:wktLiteral ;
+        schema:addressLocality "Panama City" ;
+    ] ;
+    schema:url <http://www.hospitalpuntapacifica.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q5908559> ;
+             .

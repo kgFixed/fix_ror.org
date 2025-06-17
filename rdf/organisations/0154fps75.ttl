@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0154fps75> 
+    a org:Organization ;
+    rdfs:label "Pinega Nature Reserve" ;
+    schema:name "Pinega Nature Reserve" ;
+    schema:foundingDate "1974"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Pinega_Nature_Reserve> ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(43.39016 64.69969)"^^geo:wktLiteral ;
+        schema:addressLocality "Pinega" ;
+    ] ;
+    schema:url <http://www.zapovednik-pinega.ru/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q4362986> ;
+             .

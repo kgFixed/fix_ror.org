@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01cmcvq49> 
+    a org:Organization ;
+    rdfs:label "Alliance for a Green Revolution in Africa" ;
+    schema:name "Alliance for a Green Revolution in Africa" ;
+    schema:foundingDate "2006"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Alliance_for_a_Green_Revolution_in_Africa> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(36.81667 -1.28333)"^^geo:wktLiteral ;
+        schema:addressLocality "Nairobi" ;
+    ] ;
+    schema:url <https://agra.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000477443467> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2649103> ;
+             .

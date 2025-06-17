@@ -1,0 +1,35 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/014tv7j22> 
+    a org:Organization ;
+    rdfs:label "Department of Agrarian Sciences" ;
+    schema:name "Department of Agrarian Sciences" ;
+    schema:foundingDate "2002"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00zrb8z36> ;
+        rdfs:label "Institute of the Meat and Dairy Industry" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02j8pe645> ;
+        rdfs:label "National Academy of Sciences of Belarus" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(27.56667 53.9)"^^geo:wktLiteral ;
+        schema:addressLocality "Minsk" ;
+    ] ;
+    schema:url <https://nasb.gov.by/eng/about/otdeleniya-nauk/agro.php?sphrase_id=11698148> ;
+    schema:sameAs <http://isni.org/isni/0000000405230972> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q17046383> ;
+             .

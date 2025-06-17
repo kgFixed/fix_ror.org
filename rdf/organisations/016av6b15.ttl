@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/016av6b15> 
+    a org:Organization ;
+    rdfs:label "Max Weber Netzwerk Osteuropa" ;
+    schema:name "Max Weber Netzwerk Osteuropa" ;
+    schema:foundingDate "2024"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Funder" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02esxtn62> ;
+        rdfs:label "Max Weber Stiftung - Deutsche Geisteswissenschaftliche Institute im Ausland" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(7.09549 50.73438)"^^geo:wktLiteral ;
+        schema:addressLocality "Bonn" ;
+    ] ;
+    schema:url <https://mwsosteuropa.hypotheses.org> ;
+     .

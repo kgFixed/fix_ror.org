@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01g1dn598> 
+    a org:Organization ;
+    rdfs:label "Southwestern Michigan College" ;
+    schema:name "Southwestern Michigan College" ;
+    schema:foundingDate "1964"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Southwestern_Michigan_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-86.10862 41.98421)"^^geo:wktLiteral ;
+        schema:addressLocality "Dowagiac" ;
+    ] ;
+    schema:url <https://www.swmich.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000104340844> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7571432> ;
+             .

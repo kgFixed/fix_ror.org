@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/011nx7d79> 
+    a org:Organization ;
+    rdfs:label "Ruth M. Rothstein CORE Center" ;
+    schema:name "Ruth M. Rothstein CORE Center" ;
+    schema:foundingDate "1998"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Ruth_M._Rothstein_CORE_Center> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/058gs5s26> ;
+        rdfs:label "Cook County Health and Hospitals System" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-87.65005 41.85003)"^^geo:wktLiteral ;
+        schema:addressLocality "Chicago" ;
+    ] ;
+    schema:url <http://www.cookcountyhhs.org/locations/ruth-m-rothstein-core-center/> ;
+    schema:sameAs <http://isni.org/isni/0000000404546764> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7383102> ;
+             .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/018ze3r73> 
+    a org:Organization ;
+    rdfs:label "Chukwuemeka Odumegwu Ojukwu University" ;
+    schema:name "Chukwuemeka Odumegwu Ojukwu University" ;
+    schema:foundingDate "2000"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Chukwuemeka_Odumegwu_Ojukwu_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(6.85944 5.85475)"^^geo:wktLiteral ;
+        schema:addressLocality "Ihiala" ;
+    ] ;
+    schema:url <https://coou.edu.ng/> ;
+    schema:sameAs <http://isni.org/isni/0000000089599937> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4751185> ;
+             .

@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01fv25t22> 
+    a org:Organization ;
+    rdfs:label "CEA Paris-Saclay - Etablissement de Saclay" ;
+    schema:name "CEA Paris-Saclay - Etablissement de Saclay" ;
+    schema:foundingDate "1949"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Saclay_Nuclear_Research_Centre> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03n15ch10> ;
+        rdfs:label "CEA Paris-Saclay" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.16923 48.7326)"^^geo:wktLiteral ;
+        schema:addressLocality "Saclay" ;
+    ] ;
+    schema:url <https://www.cea.fr/Pages/le-cea/les-centres-cea/paris-saclay.aspx> ;
+    schema:sameAs <http://isni.org/isni/0000000098532953> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4393524> ;
+             .

@@ -1,0 +1,73 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01537wn74> 
+    a org:Organization ;
+    rdfs:label "Government of the Northern Territory" ;
+    schema:name "Government of the Northern Territory" ;
+    schema:foundingDate "1978"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Government_of_the_Northern_Territory> ;
+    org:status "active" ;
+    org:classification "Funder" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/011kr2t58> ;
+        rdfs:label "Department of Housing and Community Development" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05n7q5q24> ;
+        rdfs:label "Department of Primary Industry and Resources" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/050q16438> ;
+        rdfs:label "Department of Sport and Recreation" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/000tce348> ;
+        rdfs:label "National Critical Care and Trauma Response Centre" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05fe24682> ;
+        rdfs:label "Northern Territory Environment Protection Authority" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/021ctjg87> ;
+        rdfs:label "Northern Territory Health Services" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00a50j303> ;
+        rdfs:label "Department of Environment, Parks and Water Security" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05waxv440> ;
+        rdfs:label "Library and Archives Northern Territory" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(130.84185 -12.46113)"^^geo:wktLiteral ;
+        schema:addressLocality "Darwin" ;
+    ] ;
+    schema:url <https://nt.gov.au/> ;
+    schema:sameAs <http://isni.org/isni/0000000403943004> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5589402> ;
+             .

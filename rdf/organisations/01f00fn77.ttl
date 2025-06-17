@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01f00fn77> 
+    a org:Organization ;
+    rdfs:label "Fresno Pacific University" ;
+    schema:name "Fresno Pacific University" ;
+    schema:foundingDate "1944"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Fresno_Pacific_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-119.77237 36.74773)"^^geo:wktLiteral ;
+        schema:addressLocality "Fresno" ;
+    ] ;
+    schema:url <https://www.fresno.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000404027753> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2587376> ;
+             .

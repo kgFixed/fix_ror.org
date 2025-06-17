@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/014e7ac16> 
+    a org:Organization ;
+    rdfs:label "Vivekanandha College of Nursing" ;
+    schema:name "Vivekanandha College of Nursing" ;
+    schema:foundingDate "1993"^^xsd:gYear ;
+    schema:sameAs <https://ta.wikipedia.org/wiki/%E0%AE%B5%E0%AE%BF%E0%AE%B5%E0%AF%87%E0%AE%95%E0%AE%BE%E0%AE%A8%E0%AE%A8%E0%AF%8D%E0%AE%A4%E0%AE%BE_%E0%AE%AE%E0%AE%95%E0%AE%B3%E0%AE%BF%E0%AE%B0%E0%AF%8D_%E0%AE%9A%E0%AF%86%E0%AE%B5%E0%AE%BF%E0%AE%B2%E0%AE%BF%E0%AE%AF%E0%AE%B0%E0%AF%8D_%E0%AE%95%E0%AE%B2%E0%AF%8D%E0%AE%B2%E0%AF%82%E0%AE%B0%E0%AE%BF> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00b3mhg89> ;
+        rdfs:label "Tamil Nadu Dr. M.G.R. Medical University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(78.16524 11.22126)"^^geo:wktLiteral ;
+        schema:addressLocality "Namakkal" ;
+    ] ;
+    schema:url <http://vivekanandha.ac.in/vcn> ;
+     .

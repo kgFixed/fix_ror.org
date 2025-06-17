@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/015h21b91> 
+    a org:Organization ;
+    rdfs:label "Federal Reserve Bank of Kansas City" ;
+    schema:name "Federal Reserve Bank of Kansas City" ;
+    schema:foundingDate "1914"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Federal_Reserve_Bank_of_Kansas_City> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05fk5tr28> ;
+        rdfs:label "Federal Reserve" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-94.57857 39.09973)"^^geo:wktLiteral ;
+        schema:addressLocality "Kansas City" ;
+    ] ;
+    schema:url <https://www.kansascityfed.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000121623299> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2166296> ;
+             .

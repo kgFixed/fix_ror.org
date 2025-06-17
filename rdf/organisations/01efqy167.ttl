@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01efqy167> 
+    a org:Organization ;
+    rdfs:label "Tarlac State University" ;
+    schema:name "Tarlac State University" ;
+    schema:foundingDate "1906"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Tarlac_State_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(120.59794 15.48017)"^^geo:wktLiteral ;
+        schema:addressLocality "Tarlac City" ;
+    ] ;
+    schema:url <https://www.tsu.edu.ph/> ;
+    schema:sameAs <http://isni.org/isni/0000000087385337> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1368179> ;
+             .

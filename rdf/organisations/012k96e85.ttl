@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/012k96e85> 
+    a org:Organization ;
+    rdfs:label "University Hospital of Umeå" ;
+    schema:name "University Hospital of Umeå" ;
+    schema:foundingDate "1907"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/University_Hospital_of_Ume%C3%A5> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05kb8h459> ;
+        rdfs:label "Umeå University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(20.25972 63.82842)"^^geo:wktLiteral ;
+        schema:addressLocality "Umeå" ;
+    ] ;
+    schema:url <https://www.vll.se/default.aspx?id=25719&refid=1926> ;
+    schema:sameAs <http://isni.org/isni/000000040623991X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2000141> ;
+             .

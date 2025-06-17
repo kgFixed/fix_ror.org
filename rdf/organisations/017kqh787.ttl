@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/017kqh787> 
+    a org:Organization ;
+    rdfs:label "OxyMem (Ireland)" ;
+    schema:name "OxyMem (Ireland)" ;
+    schema:foundingDate "1914"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-7.93722 53.42278)"^^geo:wktLiteral ;
+        schema:addressLocality "Athlone" ;
+    ] ;
+    schema:url <https://oxymem.com> ;
+     .

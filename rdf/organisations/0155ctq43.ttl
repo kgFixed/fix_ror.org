@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0155ctq43> 
+    a org:Organization ;
+    rdfs:label "BGI Genomics" ;
+    schema:name "BGI Genomics" ;
+    schema:foundingDate "2017"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/045pn2j94> ;
+        rdfs:label "BGI Group (China)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(114.0683 22.54554)"^^geo:wktLiteral ;
+        schema:addressLocality "Shenzhen" ;
+    ] ;
+    schema:url <https://www.bgi.com> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q795900> ;
+             .

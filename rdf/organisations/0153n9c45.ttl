@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0153n9c45> 
+    a org:Organization ;
+    rdfs:label "Institute for Personal Excellence" ;
+    schema:name "Institute for Personal Excellence" ;
+    schema:foundingDate "2005"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-78.63861 35.7721)"^^geo:wktLiteral ;
+        schema:addressLocality "Raleigh" ;
+    ] ;
+    schema:url <http://ipebraintraining.com/> ;
+     .

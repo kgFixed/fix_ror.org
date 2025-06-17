@@ -1,0 +1,54 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01db6n192> 
+    a org:Organization ;
+    rdfs:label "Department of Climate Change, Energy, the Environment and Water" ;
+    schema:name "Department of Climate Change, Energy, the Environment and Water" ;
+    schema:foundingDate "2022"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Department_of_Climate_Change%2C_Energy%2C_the_Environment_and_Water> ;
+    org:status "active" ;
+    org:classification "Funder" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00289aa83> ;
+        rdfs:label "Australian Biological Resources Study" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03x57gn41> ;
+        rdfs:label "Australian Institute of Marine Science" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0314h5y94> ;
+        rdfs:label "Australian Government" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Predecessor" ;
+        org:member <https://ror.org/030c92375> ;
+        rdfs:label "Department of Agriculture, Water and the Environment" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00qq77n27> ;
+        rdfs:label "Consortium for Ocean-Sea Ice Modelling in Australia" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(149.12807 -35.28346)"^^geo:wktLiteral ;
+        schema:addressLocality "Canberra" ;
+    ] ;
+    schema:url <https://www.dcceew.gov.au> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q113380107> ;
+             .

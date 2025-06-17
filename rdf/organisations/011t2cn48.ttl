@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/011t2cn48> 
+    a org:Organization ;
+    rdfs:label "St. Luke's-Roosevelt Hospital Center" ;
+    schema:name "St. Luke's-Roosevelt Hospital Center" ;
+    schema:foundingDate "1858"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/St._Luke%27s%E2%80%93Roosevelt_Hospital_Center> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04a9tmd77> ;
+        rdfs:label "Icahn School of Medicine at Mount Sinai" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-74.00597 40.71427)"^^geo:wktLiteral ;
+        schema:addressLocality "New York" ;
+    ] ;
+    schema:url <http://www.stlukeshospitalnyc.org/index.aspx> ;
+    schema:sameAs <http://isni.org/isni/0000000101589062> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7589748> ;
+             .

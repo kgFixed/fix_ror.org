@@ -1,0 +1,26 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/014fc7457> 
+    a org:Organization ;
+    rdfs:label "PerkinElmer (United Kingdom)" ;
+    schema:name "PerkinElmer (United Kingdom)" ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05s8x7560> ;
+        rdfs:label "PerkinElmer (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.64732 51.61219)"^^geo:wktLiteral ;
+        schema:addressLocality "Beaconsfield" ;
+    ] ;
+    schema:url <http://www.perkinelmer.co.uk/> ;
+     .

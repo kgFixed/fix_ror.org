@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0163r0829> 
+    a org:Organization ;
+    rdfs:label "Polytechnic Marko Marulic" ;
+    schema:name "Polytechnic Marko Marulic" ;
+    schema:foundingDate "2005"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(16.19662 44.04063)"^^geo:wktLiteral ;
+        schema:addressLocality "Knin" ;
+    ] ;
+    schema:url <http://www.veleknin.hr> ;
+    schema:sameAs <http://isni.org/isni/000000040549621X> ;
+             .

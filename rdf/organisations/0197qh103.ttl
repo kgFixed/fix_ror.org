@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0197qh103> 
+    a org:Organization ;
+    rdfs:label "South Baylo University" ;
+    schema:name "South Baylo University" ;
+    schema:foundingDate "1977"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-117.9145 33.83529)"^^geo:wktLiteral ;
+        schema:addressLocality "Anaheim" ;
+    ] ;
+    schema:url <https://www.southbaylo.edu/ca/home/index.htm> ;
+    schema:sameAs <http://isni.org/isni/0000000406339689> ;
+             .

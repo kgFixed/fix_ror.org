@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0113zvv22> 
+    a org:Organization ;
+    rdfs:label "Catholic University College of Bruges–Ostend" ;
+    schema:name "Catholic University College of Bruges–Ostend" ;
+    schema:foundingDate "1990"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Katholieke_Hogeschool_Vives_Noord> ;
+    org:status "inactive" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/02rnb8t27> ;
+        rdfs:label "Katholieke Hogeschool Vives" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(3.22424 51.20892)"^^geo:wktLiteral ;
+        schema:addressLocality "Bruges" ;
+    ] ;
+    schema:url <http://www.khbo.be> ;
+    schema:sameAs <http://isni.org/isni/0000000100445438> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1976507> ;
+             .

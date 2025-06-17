@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01b8kcc49> 
+    a org:Organization ;
+    rdfs:label "National Cheng Kung University" ;
+    schema:name "National Cheng Kung University" ;
+    schema:foundingDate "1931"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/National_Cheng_Kung_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04zx3rq17> ;
+        rdfs:label "National Cheng Kung University Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(120.21333 22.99083)"^^geo:wktLiteral ;
+        schema:addressLocality "Tainan City" ;
+    ] ;
+    schema:url <http://web.ncku.edu.tw/bin/home.php> ;
+    schema:sameAs <http://isni.org/isni/0000000405323255> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q706708> ;
+             .

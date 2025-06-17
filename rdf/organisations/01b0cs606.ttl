@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01b0cs606> 
+    a org:Organization ;
+    rdfs:label "Unilever (China)" ;
+    schema:name "Unilever (China)" ;
+    schema:foundingDate "1930"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Unilever> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05n8ah907> ;
+        rdfs:label "Unilever (United Kingdom)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(121.42105 31.21739)"^^geo:wktLiteral ;
+        schema:addressLocality "Changning" ;
+    ] ;
+    schema:url <https://www.unilever.com.cn> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q55454303> ;
+             .

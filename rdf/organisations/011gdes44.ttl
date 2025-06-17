@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/011gdes44> 
+    a org:Organization ;
+    rdfs:label "Centre for Window and Cladding Technology" ;
+    schema:name "Centre for Window and Cladding Technology" ;
+    schema:foundingDate "1989"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Centre_for_Window_and_Cladding_Technology> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-2.36172 51.3751)"^^geo:wktLiteral ;
+        schema:addressLocality "Bath" ;
+    ] ;
+    schema:url <https://www.cwct.co.uk> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q28406485> ;
+             .

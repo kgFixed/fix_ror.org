@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01ahfyn28> 
+    a org:Organization ;
+    rdfs:label "Hull Maternity Hospital" ;
+    schema:name "Hull Maternity Hospital" ;
+    org:status "withdrawn" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/02njpkz73> ;
+        rdfs:label "Hull Royal Infirmary" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.33525 53.7446)"^^geo:wktLiteral ;
+        schema:addressLocality "Hull" ;
+    ] ;
+     .

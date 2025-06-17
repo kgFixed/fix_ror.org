@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01ae87070> 
+    a org:Organization ;
+    rdfs:label "Ospedale A. Perrino" ;
+    schema:name "Ospedale A. Perrino" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00jrmky87> ;
+        rdfs:label "Puglia Salute" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(17.93607 40.63215)"^^geo:wktLiteral ;
+        schema:addressLocality "Brindisi" ;
+    ] ;
+    schema:url <http://www.sanita.puglia.it/web/asl-brindisi/ospedali_det/-/journal_content/56/36031/presidio-di-brindisi-di-summa-perrino-> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30281363> ;
+             .

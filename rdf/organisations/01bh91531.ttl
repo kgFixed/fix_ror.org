@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01bh91531> 
+    a org:Organization ;
+    rdfs:label "National Institute for Biotechnology and Genetic Engineering" ;
+    schema:name "National Institute for Biotechnology and Genetic Engineering" ;
+    schema:foundingDate "1994"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/National_Institute_for_Biotechnology_and_Genetic_Engineering> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04d4mbk19> ;
+        rdfs:label "Pakistan Institute of Engineering and Applied Sciences" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(73.08969 31.41554)"^^geo:wktLiteral ;
+        schema:addressLocality "Faisalabad" ;
+    ] ;
+    schema:url <http://www.nibge.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000404470237> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6973563> ;
+             .

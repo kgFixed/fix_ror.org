@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01b2cn516> 
+    a org:Organization ;
+    rdfs:label "Hospital Rafael Méndez" ;
+    schema:name "Hospital Rafael Méndez" ;
+    schema:foundingDate "1990"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05b1rsv17> ;
+        rdfs:label "Universidad Católica San Antonio de Murcia" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.7017 37.67119)"^^geo:wktLiteral ;
+        schema:addressLocality "Lorca" ;
+    ] ;
+    schema:url <http://www.murciasalud.es/seccion.php?idsec=142> ;
+    schema:sameAs <http://isni.org/isni/0000000417938687> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5902835> ;
+             .

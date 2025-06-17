@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/018nw3344> 
+    a org:Organization ;
+    rdfs:label "AstraZeneca (Australia)" ;
+    schema:name "AstraZeneca (Australia)" ;
+    schema:foundingDate "1999"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/AstraZeneca> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04r9x1a08> ;
+        rdfs:label "AstraZeneca (United Kingdom)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(151.12757 -33.78105)"^^geo:wktLiteral ;
+        schema:addressLocality "Macquarie Park" ;
+    ] ;
+    schema:url <http://www.astrazeneca.com.au/home/> ;
+    schema:sameAs <http://isni.org/isni/0000000404453920> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q28971321> ;
+             .

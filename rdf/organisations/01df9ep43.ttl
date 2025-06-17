@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01df9ep43> 
+    a org:Organization ;
+    rdfs:label "Era's Lucknow Medical College and Hospital" ;
+    schema:name "Era's Lucknow Medical College and Hospital" ;
+    schema:foundingDate "2001"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02797hn66> ;
+        rdfs:label "Dr. Ram Manohar Lohia Avadh University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(80.92313 26.83928)"^^geo:wktLiteral ;
+        schema:addressLocality "Lucknow" ;
+    ] ;
+    schema:url <http://www.elmcindia.org/index.asp> ;
+    schema:sameAs <http://isni.org/isni/0000000417680436> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30280083> ;
+             .

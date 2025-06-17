@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0122p5f64> 
+    a org:Organization ;
+    rdfs:label "Universidad de Jaén" ;
+    schema:name "Universidad de Jaén" ;
+    schema:foundingDate "1993"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/University_of_Ja%C3%A9n> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02ecxgj38> ;
+        rdfs:label "Complejo Hospitalario de Jaén" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-3.79028 37.76922)"^^geo:wktLiteral ;
+        schema:addressLocality "Jaén" ;
+    ] ;
+    schema:url <https://www.ujaen.es> ;
+    schema:sameAs <http://isni.org/isni/0000000120969837> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q573144> ;
+             .

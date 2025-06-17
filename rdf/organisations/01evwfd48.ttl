@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01evwfd48> 
+    a org:Organization ;
+    rdfs:label "Bernhard Nocht Institute for Tropical Medicine" ;
+    schema:name "Bernhard Nocht Institute for Tropical Medicine" ;
+    schema:foundingDate "1900"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Bernhard_Nocht_Institute_for_Tropical_Medicine> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04fhwda97> ;
+        rdfs:label "Centre for Structural Systems Biology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01n6r0e97> ;
+        rdfs:label "Leibniz Association" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(9.99302 53.55073)"^^geo:wktLiteral ;
+        schema:addressLocality "Hamburg" ;
+    ] ;
+    schema:url <http://www.bnitm.de/en/> ;
+    schema:sameAs <http://isni.org/isni/0000000107013136> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q617048> ;
+             .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01e4pq504> 
+    a org:Organization ;
+    rdfs:label "Portland Community College" ;
+    schema:name "Portland Community College" ;
+    schema:foundingDate "1961"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Portland_Community_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-122.67621 45.52345)"^^geo:wktLiteral ;
+        schema:addressLocality "Portland" ;
+    ] ;
+    schema:url <http://www.pcc.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000405369405> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7231908> ;
+             .

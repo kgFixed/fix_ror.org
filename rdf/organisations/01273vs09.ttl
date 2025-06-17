@@ -1,0 +1,32 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01273vs09> 
+    a org:Organization ;
+    rdfs:label "Laboratoire de Radiopharmaceutiques Biocliniques" ;
+    schema:name "Laboratoire de Radiopharmaceutiques Biocliniques" ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0530j9m17> ;
+        rdfs:label "Délégation Régionale Auvergne-Rhône-Alpes" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02rx3b187> ;
+        rdfs:label "Université Grenoble Alpes" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(5.74629 45.20507)"^^geo:wktLiteral ;
+        schema:addressLocality "La Tronche" ;
+    ] ;
+    schema:url <https://lrb.univ-grenoble-alpes.fr> ;
+     .

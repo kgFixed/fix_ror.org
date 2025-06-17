@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/015dyrs73> 
+    a org:Organization ;
+    rdfs:label "Queen Elizabeth Hospital" ;
+    schema:name "Queen Elizabeth Hospital" ;
+    schema:foundingDate "1948"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Queen_Elizabeth_Hospital,_Gateshead> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01aye5y64> ;
+        rdfs:label "Gateshead Health NHS Foundation Trust" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01kj2bm70> ;
+        rdfs:label "Newcastle University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.60168 54.96209)"^^geo:wktLiteral ;
+        schema:addressLocality "Gateshead" ;
+    ] ;
+    schema:url <http://www.nhs.uk/Services/hospitals/Overview/DefaultView.aspx?id=1293> ;
+    schema:sameAs <http://isni.org/isni/0000000404003364> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7270338> ;
+             .

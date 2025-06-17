@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01bzgqf33> 
+    a org:Organization ;
+    rdfs:label "The Office of Public Works" ;
+    schema:name "The Office of Public Works" ;
+    schema:foundingDate "1831"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Office_of_Public_Works> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-6.79167 53.555)"^^geo:wktLiteral ;
+        schema:addressLocality "Trim" ;
+    ] ;
+    schema:url <https://www.opw.ie/en/> ;
+    schema:sameAs <http://isni.org/isni/000000010721195X> ;
+             .

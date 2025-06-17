@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/011n1b487> 
+    a org:Organization ;
+    rdfs:label "The Center for the Biology of Chronic Disease" ;
+    schema:name "The Center for the Biology of Chronic Disease" ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-73.95542 41.11815)"^^geo:wktLiteral ;
+        schema:addressLocality "Valley Cottage" ;
+    ] ;
+    schema:url <http://cbcd.net/> ;
+    schema:sameAs <http://isni.org/isni/000000047411692X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30288844> ;
+             .

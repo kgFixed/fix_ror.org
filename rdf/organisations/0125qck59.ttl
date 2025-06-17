@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0125qck59> 
+    a org:Organization ;
+    rdfs:label "Republica Portuguesa Secretaria-Geral da Educação e Ciência" ;
+    schema:name "Republica Portuguesa Secretaria-Geral da Educação e Ciência" ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02xv42m49> ;
+        rdfs:label "Ministry of Education" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-9.13333 38.71667)"^^geo:wktLiteral ;
+        schema:addressLocality "Lisbon" ;
+    ] ;
+    schema:url <https://www.sec-geral.mec.pt> ;
+    schema:sameAs <http://isni.org/isni/0000000510891975> ;
+             .

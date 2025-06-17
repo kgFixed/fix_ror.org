@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/013gjg633> 
+    a org:Organization ;
+    rdfs:label "E.ON (Germany)" ;
+    schema:name "E.ON (Germany)" ;
+    schema:foundingDate "2000"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/E.ON> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02x5exm81> ;
+        rdfs:label "E.ON (France)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03yr8h660> ;
+        rdfs:label "E.ON (United Kingdom)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/035wk0p43> ;
+        rdfs:label "E.ON (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(6.77616 51.22172)"^^geo:wktLiteral ;
+        schema:addressLocality "Düsseldorf" ;
+    ] ;
+    schema:url <http://www.eon.com/en.html> ;
+    schema:sameAs <http://isni.org/isni/0000000403976367> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q270223> ;
+             .

@@ -1,0 +1,65 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01c7wz417> 
+    a org:Organization ;
+    rdfs:label "VetAgro Sup" ;
+    schema:name "VetAgro Sup" ;
+    schema:foundingDate "2010"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03985kf35> ;
+        rdfs:label "Translational Innovation in Medicine and Complexity" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/026tc4g97> ;
+        rdfs:label "Territoires" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03yvemy54> ;
+        rdfs:label "Unité Mixte de Recherche sur les Herbivores" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01xbd2h58> ;
+        rdfs:label "Unité Mixte de Recherche sur les Fromages" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02bddg852> ;
+        rdfs:label "Mycoplasmoses animales" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03e04sg66> ;
+        rdfs:label "Épidémiologie des maladies Animales et zoonotiques" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02c3c9255> ;
+        rdfs:label "Unité Mixte de Recherche sur l'Ecosystème Prairial" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(4.84671 45.74846)"^^geo:wktLiteral ;
+        schema:addressLocality "Lyon" ;
+    ] ;
+    schema:url <http://www.vetagro-sup.fr/en/> ;
+    schema:sameAs <http://isni.org/isni/0000000121539484> ;
+             .

@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/017je7s69> 
+    a org:Organization ;
+    rdfs:label "National Institute for Research in Reproductive Health" ;
+    schema:name "National Institute for Research in Reproductive Health" ;
+    schema:foundingDate "1970"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/National_Institute_for_Research_in_Reproductive_Health> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0492wrx28> ;
+        rdfs:label "Indian Council of Medical Research" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/032hdk172> ;
+        rdfs:label "University of Mumbai" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(72.88261 19.07283)"^^geo:wktLiteral ;
+        schema:addressLocality "Mumbai" ;
+    ] ;
+    schema:url <http://www.nirrh.res.in/> ;
+    schema:sameAs <http://isni.org/isni/000000041766871X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6973591> ;
+             .

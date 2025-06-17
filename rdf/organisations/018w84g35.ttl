@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/018w84g35> 
+    a org:Organization ;
+    rdfs:label "Instituto Barretos de Tecnologia" ;
+    schema:name "Instituto Barretos de Tecnologia" ;
+    schema:foundingDate "1985"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-48.56778 -20.55722)"^^geo:wktLiteral ;
+        schema:addressLocality "Barretos" ;
+    ] ;
+    schema:url <http://www.ibt.org.br/> ;
+    schema:sameAs <http://isni.org/isni/0000000405497896> ;
+             .

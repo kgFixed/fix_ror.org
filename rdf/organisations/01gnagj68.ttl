@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01gnagj68> 
+    a org:Organization ;
+    rdfs:label "Shanghai Innovative Research Center of Traditional Chinese Medicine" ;
+    schema:name "Shanghai Innovative Research Center of Traditional Chinese Medicine" ;
+    schema:foundingDate "2000"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Shanghai_Innovative_Research_Center_of_Traditional_Chinese_Medicine> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(121.45806 31.22222)"^^geo:wktLiteral ;
+        schema:addressLocality "Shanghai" ;
+    ] ;
+    schema:url <http://www.sirc-tcm.sh.cn/en/index.html> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q19840740> ;
+             .

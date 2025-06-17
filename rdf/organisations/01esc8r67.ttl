@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01esc8r67> 
+    a org:Organization ;
+    rdfs:label "Hellenic Military Academy" ;
+    schema:name "Hellenic Military Academy" ;
+    schema:foundingDate "1828"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Hellenic_Military_Academy> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(23.77651 37.84221)"^^geo:wktLiteral ;
+        schema:addressLocality "Voula" ;
+    ] ;
+    schema:url <http://sse.army.gr/> ;
+    schema:sameAs <http://isni.org/isni/0000000474345474> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3564659> ;
+             .

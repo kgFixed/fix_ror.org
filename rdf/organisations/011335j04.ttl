@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/011335j04> 
+    a org:Organization ;
+    rdfs:label "University Hospital Mútua de Terrassa" ;
+    schema:name "University Hospital Mútua de Terrassa" ;
+    schema:foundingDate "1900"^^xsd:gYear ;
+    org:status "inactive" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/02h74qa12> ;
+        rdfs:label "Mútua Terrassa" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.01667 41.56667)"^^geo:wktLiteral ;
+        schema:addressLocality "Terrassa" ;
+    ] ;
+    schema:url <http://www.mutuaterrassa.cat/> ;
+    schema:sameAs <http://isni.org/isni/0000000417944956> ;
+             .

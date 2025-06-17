@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01bvqg661> 
+    a org:Organization ;
+    rdfs:label "Nikon (Japan)" ;
+    schema:name "Nikon (Japan)" ;
+    schema:foundingDate "1917"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Nikon> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/042j06y04> ;
+        rdfs:label "Nikon (United Kingdom)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0280y9h11> ;
+        rdfs:label "Nikon (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(139.69171 35.6895)"^^geo:wktLiteral ;
+        schema:addressLocality "Tokyo" ;
+    ] ;
+    schema:url <http://www.nikon.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000406216187> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1218180> ;
+             .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/017yczc37> 
+    a org:Organization ;
+    rdfs:label "Society for Family Health Nigeria" ;
+    schema:name "Society for Family Health Nigeria" ;
+    schema:foundingDate "1985"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Society_for_Family_Health_Nigeria> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(7.49508 9.05785)"^^geo:wktLiteral ;
+        schema:addressLocality "Abuja" ;
+    ] ;
+    schema:url <http://www.sfhnigeria.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000491298745> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q18378960> ;
+             .

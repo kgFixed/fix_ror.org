@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0154ejv33> 
+    a org:Organization ;
+    rdfs:label "Herts and Essex Hospital" ;
+    schema:name "Herts and Essex Hospital" ;
+    schema:foundingDate "1939"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Herts_and_Essex_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04kpzy923> ;
+        rdfs:label "Princess Alexandra Hospital NHS Trust" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(0.15868 51.87113)"^^geo:wktLiteral ;
+        schema:addressLocality "Bishop's Stortford" ;
+    ] ;
+    schema:url <https://www.pah.nhs.uk/article/598/Herts-and-Essex-Hospital> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q5744849> ;
+             .

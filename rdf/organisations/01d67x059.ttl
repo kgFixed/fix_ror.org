@@ -1,0 +1,34 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01d67x059> 
+    a org:Organization ;
+    rdfs:label "Centro de Investigación y Extensión Forestal Andino Patagónico" ;
+    schema:name "Centro de Investigación y Extensión Forestal Andino Patagónico" ;
+    schema:foundingDate "1990"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03cqe8w59> ;
+        rdfs:label "Consejo Nacional de Investigaciones Científicas y Técnicas" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/038n0qb29> ;
+        rdfs:label "Centro Científico Tecnológico - Patagonia Norte" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-71.31947 -42.91147)"^^geo:wktLiteral ;
+        schema:addressLocality "Esquel" ;
+    ] ;
+    schema:url <http://www.ciefap.org.ar/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30266821> ;
+             .

@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/011jef648> 
+    a org:Organization ;
+    rdfs:label "Direção Regional da Cultura" ;
+    schema:name "Direção Regional da Cultura" ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/049zrp193> ;
+        rdfs:label "Governo dos Açores" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-27.21839 38.6539)"^^geo:wktLiteral ;
+        schema:addressLocality "Angra do Heroísmo" ;
+    ] ;
+    schema:url <https://www.culturacores.azores.gov.pt> ;
+    schema:sameAs <http://isni.org/isni/0000000464183782> ;
+             .

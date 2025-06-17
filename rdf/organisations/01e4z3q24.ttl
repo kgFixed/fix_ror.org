@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01e4z3q24> 
+    a org:Organization ;
+    rdfs:label "Priest Hospital" ;
+    schema:name "Priest Hospital" ;
+    schema:foundingDate "1949"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01znkr924> ;
+        rdfs:label "Mahidol University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(100.50144 13.75398)"^^geo:wktLiteral ;
+        schema:addressLocality "Bangkok" ;
+    ] ;
+    schema:url <http://www.priest-hospital.go.th/web/index.php> ;
+    schema:sameAs <http://isni.org/isni/0000000406220258> ;
+             .

@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01bd1z477> 
+    a org:Organization ;
+    rdfs:label "Leeds, Grenville & Lanark District Health Unit" ;
+    schema:name "Leeds, Grenville & Lanark District Health Unit" ;
+    schema:foundingDate "1947"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-76.02333 44.90452)"^^geo:wktLiteral ;
+        schema:addressLocality "Smiths Falls" ;
+    ] ;
+    schema:url <http://www.healthunit.org/> ;
+     .

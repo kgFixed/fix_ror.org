@@ -1,0 +1,20 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/016nv1t74> 
+    a org:Organization ;
+    rdfs:label "Kumamoto Prefectural College of Technology" ;
+    schema:name "Kumamoto Prefectural College of Technology" ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(130.69181 32.80589)"^^geo:wktLiteral ;
+        schema:addressLocality "Kumamoto" ;
+    ] ;
+    schema:url <http://www.kumamoto-pct.ac.jp/> ;
+     .

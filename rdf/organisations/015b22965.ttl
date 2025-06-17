@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/015b22965> 
+    a org:Organization ;
+    rdfs:label "Taro Pharmaceuticals (United States)" ;
+    schema:name "Taro Pharmaceuticals (United States)" ;
+    schema:foundingDate "1950"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Taro_Pharmaceuticals> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/002bpzx43> ;
+        rdfs:label "Taro Pharmaceuticals (Israel)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-73.79597 41.10732)"^^geo:wktLiteral ;
+        schema:addressLocality "Hawthorne" ;
+    ] ;
+    schema:url <https://www.taro.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000404112325> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30289146> ;
+             .

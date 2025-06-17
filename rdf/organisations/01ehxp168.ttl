@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01ehxp168> 
+    a org:Organization ;
+    rdfs:label "Kentucky Assistive Technology Services Network" ;
+    schema:name "Kentucky Assistive Technology Services Network" ;
+    schema:foundingDate "1988"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-85.75941 38.25424)"^^geo:wktLiteral ;
+        schema:addressLocality "Louisville" ;
+    ] ;
+    schema:url <http://www.katsnet.org/> ;
+     .

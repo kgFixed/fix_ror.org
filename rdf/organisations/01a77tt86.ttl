@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01a77tt86> 
+    a org:Organization ;
+    rdfs:label "University of Warwick" ;
+    schema:name "University of Warwick" ;
+    schema:foundingDate "1965"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/University_of_Warwick> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/025ny1854> ;
+        rdfs:label "George Eliot Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/025821s54> ;
+        rdfs:label "University Hospital Coventry" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02z6cxz02> ;
+        rdfs:label "Warwick Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.51217 52.40656)"^^geo:wktLiteral ;
+        schema:addressLocality "Coventry" ;
+    ] ;
+    schema:url <http://www2.warwick.ac.uk/> ;
+    schema:sameAs <http://isni.org/isni/0000000088091613> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q865528> ;
+             .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01cayw543> 
+    a org:Organization ;
+    rdfs:label "North Dakota Superintendent of Public Instruction" ;
+    schema:name "North Dakota Superintendent of Public Instruction" ;
+    schema:foundingDate "1889"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/North_Dakota_Superintendent_of_Public_Instruction> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-100.78374 46.80833)"^^geo:wktLiteral ;
+        schema:addressLocality "Bismarck" ;
+    ] ;
+    schema:url <https://www.nd.gov/dpi/> ;
+    schema:sameAs <http://isni.org/isni/0000000406426483> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7055069> ;
+             .

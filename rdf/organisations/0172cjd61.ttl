@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0172cjd61> 
+    a org:Organization ;
+    rdfs:label "Chemtura (Germany)" ;
+    schema:name "Chemtura (Germany)" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Chemtura> ;
+    org:status "withdrawn" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/00ne0z119> ;
+        rdfs:label "Lanxess (Germany)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(7.64451 51.61633)"^^geo:wktLiteral ;
+        schema:addressLocality "Bergkamen" ;
+    ] ;
+    schema:url <http://chemtura-organometallics.com/Pages/Home.aspx> ;
+     .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/014cnmj57> 
+    a org:Organization ;
+    rdfs:label "Ravensburg University of Cooperative Education" ;
+    schema:name "Ravensburg University of Cooperative Education" ;
+    schema:foundingDate "1978"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Ravensburg_University_of_Cooperative_Education> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(9.61062 47.78198)"^^geo:wktLiteral ;
+        schema:addressLocality "Ravensburg" ;
+    ] ;
+    schema:url <https://www.ravensburg.dhbw.de> ;
+    schema:sameAs <http://isni.org/isni/0000000088461346> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1262617> ;
+             .
