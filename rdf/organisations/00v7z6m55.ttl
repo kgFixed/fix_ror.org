@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00v7z6m55> 
+    a org:Organization ;
+    rdfs:label "Limassol General Hospital" ;
+    schema:name "Limassol General Hospital" ;
+    schema:foundingDate "1993"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03mcwam86> ;
+        rdfs:label "Ministry of Health" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(33.03794 34.68406)"^^geo:wktLiteral ;
+        schema:addressLocality "Limassol" ;
+    ] ;
+    schema:url <http://www.moh.gov.cy/moh/llgh/llgh.nsf/index_en/index_en?OpenDocument> ;
+    schema:sameAs <http://isni.org/isni/0000000404741236> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30296329> ;
+             .

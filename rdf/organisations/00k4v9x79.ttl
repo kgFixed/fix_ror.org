@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00k4v9x79> 
+    a org:Organization ;
+    rdfs:label "Universidad Mayor de San Andrés" ;
+    schema:name "Universidad Mayor de San Andrés" ;
+    schema:foundingDate "1830"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Higher_University_of_San_Andr%C3%A9s> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-68.15 -16.5)"^^geo:wktLiteral ;
+        schema:addressLocality "La Paz" ;
+    ] ;
+    schema:url <https://www.umsa.bo> ;
+    schema:sameAs <http://isni.org/isni/0000000119557325> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3290454> ;
+             .

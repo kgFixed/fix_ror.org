@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00h8b7583> 
+    a org:Organization ;
+    rdfs:label "National Tsunami Warning Center" ;
+    schema:name "National Tsunami Warning Center" ;
+    schema:foundingDate "2013"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/National_Tsunami_Warning_Center> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02z5nhe81> ;
+        rdfs:label "National Oceanic and Atmospheric Administration" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-149.11456 61.59941)"^^geo:wktLiteral ;
+        schema:addressLocality "Palmer" ;
+    ] ;
+    schema:url <http://ntwc.arh.noaa.gov/> ;
+     .

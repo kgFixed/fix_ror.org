@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00zm1cx92> 
+    a org:Organization ;
+    rdfs:label "Jamestowne Society" ;
+    schema:name "Jamestowne Society" ;
+    schema:foundingDate "1936"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Jamestowne_Society> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.46026 37.55376)"^^geo:wktLiteral ;
+        schema:addressLocality "Richmond" ;
+    ] ;
+    schema:url <http://www.jamestowne.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000459045705> ;
+             .

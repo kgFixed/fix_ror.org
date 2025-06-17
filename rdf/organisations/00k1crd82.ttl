@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00k1crd82> 
+    a org:Organization ;
+    rdfs:label "Museum of Science" ;
+    schema:name "Museum of Science" ;
+    schema:foundingDate "1830"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Museum_of_Science_(Boston)> ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-71.05977 42.35843)"^^geo:wktLiteral ;
+        schema:addressLocality "Boston" ;
+    ] ;
+    schema:url <http://www.mos.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000123082692> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1139748> ;
+             .

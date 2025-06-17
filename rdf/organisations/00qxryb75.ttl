@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00qxryb75> 
+    a org:Organization ;
+    rdfs:label "Landesnahverkehrsgesellschaft Niedersachsen" ;
+    schema:name "Landesnahverkehrsgesellschaft Niedersachsen" ;
+    schema:foundingDate "1995"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(9.73322 52.37052)"^^geo:wktLiteral ;
+        schema:addressLocality "Hanover" ;
+    ] ;
+    schema:url <https://www.lnvg.de/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q1552346> ;
+             .

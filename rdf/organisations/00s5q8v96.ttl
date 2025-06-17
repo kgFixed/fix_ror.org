@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00s5q8v96> 
+    a org:Organization ;
+    rdfs:label "Université d'El-Oued" ;
+    schema:name "Université d'El-Oued" ;
+    schema:foundingDate "2001"^^xsd:gYear ;
+    org:status "withdrawn" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/05416s909> ;
+        rdfs:label "Hamma Lakhdar Eloued University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(6.86319 33.35608)"^^geo:wktLiteral ;
+        schema:addressLocality "El Oued" ;
+    ] ;
+    schema:url <https://www.univ-eloued.dz/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q52575086> ;
+             .

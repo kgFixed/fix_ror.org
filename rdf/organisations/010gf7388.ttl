@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/010gf7388> 
+    a org:Organization ;
+    rdfs:label "Agriculture and Horticulture Development Board" ;
+    schema:name "Agriculture and Horticulture Development Board" ;
+    schema:foundingDate "2008"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Agriculture_and_Horticulture_Development_Board> ;
+    org:status "active" ;
+    org:classification "Funder" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00tnppw48> ;
+        rdfs:label "Department for Environment Food and Rural Affairs" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.58276 52.34958)"^^geo:wktLiteral ;
+        schema:addressLocality "Kenilworth" ;
+    ] ;
+    schema:url <http://www.ahdb.org.uk/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q4694007> ;
+             .

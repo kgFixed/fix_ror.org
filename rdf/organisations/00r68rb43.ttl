@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00r68rb43> 
+    a org:Organization ;
+    rdfs:label "ebm-papst" ;
+    schema:name "ebm-papst" ;
+    schema:foundingDate "1963"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Ebm-papst> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(9.80083 49.34028)"^^geo:wktLiteral ;
+        schema:addressLocality "Mulfingen" ;
+    ] ;
+    schema:url <http://www.ebmpapst.in/index.html> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q1279929> ;
+             .

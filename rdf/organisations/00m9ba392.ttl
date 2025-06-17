@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00m9ba392> 
+    a org:Organization ;
+    rdfs:label "Bahawal Victoria Hospital" ;
+    schema:name "Bahawal Victoria Hospital" ;
+    schema:foundingDate "1876"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Bahawal_Victoria_Hospital,_Bahawalpur> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(73.25272 29.99835)"^^geo:wktLiteral ;
+        schema:addressLocality "Bahawalpur" ;
+    ] ;
+    schema:sameAs <http://www.wikidata.org/entity/Q4842504> ;
+             .

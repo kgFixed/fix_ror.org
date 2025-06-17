@@ -1,0 +1,72 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00yksxf10> 
+    a org:Organization ;
+    rdfs:label "Emory Healthcare" ;
+    schema:name "Emory Healthcare" ;
+    schema:foundingDate "1905"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Emory_Healthcare> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00tb5pg67> ;
+        rdfs:label "Emory Clinic" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00hr6kp69> ;
+        rdfs:label "Emory Eye Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02sfkc120> ;
+        rdfs:label "Emory Rehabilitation Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05dm4ck87> ;
+        rdfs:label "Emory University Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02aknh966> ;
+        rdfs:label "Emory University Hospital Midtown" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05bn46e89> ;
+        rdfs:label "Emory University Orthopaedics and Spine Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00m72p590> ;
+        rdfs:label "Saint Joseph's Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02gars961> ;
+        rdfs:label "Winship Cancer Institute" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-84.38798 33.749)"^^geo:wktLiteral ;
+        schema:addressLocality "Atlanta" ;
+    ] ;
+    schema:url <http://www.emoryhealthcare.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000403826932> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5373693> ;
+             .

@@ -1,0 +1,119 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00tsqex91> 
+    a org:Organization ;
+    rdfs:label "Te Pūkenga" ;
+    schema:name "Te Pūkenga" ;
+    schema:foundingDate "2020"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Te_P%C5%ABkenga> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01qvj2271> ;
+        rdfs:label "Otago Polytechnic" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01fkw3y20> ;
+        rdfs:label "Ara Institute of Canterbury" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00ct9cz38> ;
+        rdfs:label "Eastern Institute of Technology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/002r67t24> ;
+        rdfs:label "Manukau Institute of Technology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00wykxp39> ;
+        rdfs:label "Nelson Marlborough Institute of Technology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02scvmk68> ;
+        rdfs:label "Southern Institute of Technology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/020ekrq71> ;
+        rdfs:label "Open Polytechnic" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01t2w0q86> ;
+        rdfs:label "Toi Ohomai Institute of Technology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01px84952> ;
+        rdfs:label "Unitec Institute of Technology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04k3aaz82> ;
+        rdfs:label "Universal College of Learning" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02bjhj961> ;
+        rdfs:label "Waikato Institute of Technology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03ycgmc41> ;
+        rdfs:label "Wellington Institute of Technology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02cqsbv23> ;
+        rdfs:label "Northland Polytechnic" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05ww61844> ;
+        rdfs:label "Tai Poutini Polytechnic" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0528bv030> ;
+        rdfs:label "Western Institute of Technology at Taranaki" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01ngg7w55> ;
+        rdfs:label "Whitireia New Zealand" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(175.28333 -37.78333)"^^geo:wktLiteral ;
+        schema:addressLocality "Hamilton" ;
+    ] ;
+    schema:url <https://xn--tepkenga-szb.ac.nz> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q86902171> ;
+             .

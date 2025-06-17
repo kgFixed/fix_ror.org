@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0101kry21> 
+    a org:Organization ;
+    rdfs:label "Allegheny Health Network" ;
+    schema:name "Allegheny Health Network" ;
+    schema:foundingDate "1848"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Allegheny_Health_Network> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02gy6qp39> ;
+        rdfs:label "Allegheny General Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/038c39g95> ;
+        rdfs:label "Allegheny Valley Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/004315x41> ;
+        rdfs:label "Allegheny-Singer Research Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05a55tn50> ;
+        rdfs:label "Forbes Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03s54zb62> ;
+        rdfs:label "Jefferson Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-79.99589 40.44062)"^^geo:wktLiteral ;
+        schema:addressLocality "Pittsburgh" ;
+    ] ;
+    schema:url <https://www.ahn.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000404545075> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7986183> ;
+             .

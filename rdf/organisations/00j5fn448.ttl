@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00j5fn448> 
+    a org:Organization ;
+    rdfs:label "Loden Foundation" ;
+    schema:name "Loden Foundation" ;
+    schema:foundingDate "2000"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Loden_Foundation> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(89.64191 27.46609)"^^geo:wktLiteral ;
+        schema:addressLocality "Thimphu" ;
+    ] ;
+    schema:url <http://loden.org/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q6666251> ;
+             .

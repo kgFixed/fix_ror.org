@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00v84va72> 
+    a org:Organization ;
+    rdfs:label "Ford Motor Company (Canada)" ;
+    schema:name "Ford Motor Company (Canada)" ;
+    schema:foundingDate "1904"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Ford_Motor_Company_of_Canada> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00g2tkw06> ;
+        rdfs:label "Ford Motor Company (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-79.68292 43.45011)"^^geo:wktLiteral ;
+        schema:addressLocality "Oakville" ;
+    ] ;
+    schema:url <http://www.ford.ca/> ;
+    schema:sameAs <http://isni.org/isni/0000000121754774> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1436921> ;
+             .

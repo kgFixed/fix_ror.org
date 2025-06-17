@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00wmm6v75> 
+    a org:Organization ;
+    rdfs:label "American University of Beirut Medical Center" ;
+    schema:name "American University of Beirut Medical Center" ;
+    schema:foundingDate "1902"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04pznsd21> ;
+        rdfs:label "American University of Beirut" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(35.50157 33.89332)"^^geo:wktLiteral ;
+        schema:addressLocality "Beirut" ;
+    ] ;
+    schema:url <http://www.aubmc.org/pages/home.aspx> ;
+    schema:sameAs <http://isni.org/isni/0000000405813406> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30253977> ;
+             .

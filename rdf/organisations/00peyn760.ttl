@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00peyn760> 
+    a org:Organization ;
+    rdfs:label "Vongchavalitkul University" ;
+    schema:name "Vongchavalitkul University" ;
+    schema:foundingDate "1984"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Vongchavalitkul_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(102.10196 14.97066)"^^geo:wktLiteral ;
+        schema:addressLocality "Nakhon Ratchasima" ;
+    ] ;
+    schema:url <http://www2.vu.ac.th/index.php> ;
+    schema:sameAs <http://isni.org/isni/000000010229379X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4924344> ;
+             .

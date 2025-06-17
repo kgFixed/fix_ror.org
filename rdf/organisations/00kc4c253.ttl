@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00kc4c253> 
+    a org:Organization ;
+    rdfs:label "Information Technology Association of America" ;
+    schema:name "Information Technology Association of America" ;
+    schema:foundingDate "1962"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Information_Technology_Association_of_America> ;
+    org:status "inactive" ;
+    org:classification "Other" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/04jm7vd23> ;
+        rdfs:label "Computing Technology Industry Association" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-122.67065 45.42067)"^^geo:wktLiteral ;
+        schema:addressLocality "Lake Oswego" ;
+    ] ;
+    schema:url <https://www.comptia.org/advocacy> ;
+    schema:sameAs <http://isni.org/isni/0000000087810508> ;
+             .

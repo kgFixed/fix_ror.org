@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00s3z8519> 
+    a org:Organization ;
+    rdfs:label "Johnson C. Smith University" ;
+    schema:name "Johnson C. Smith University" ;
+    schema:foundingDate "1867"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Johnson_C._Smith_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-80.84313 35.22709)"^^geo:wktLiteral ;
+        schema:addressLocality "Charlotte" ;
+    ] ;
+    schema:url <http://www.jcsu.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000094147855> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q11979088> ;
+             .

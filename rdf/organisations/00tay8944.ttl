@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00tay8944> 
+    a org:Organization ;
+    rdfs:label "Instituto Nacional de Derechos Humanos" ;
+    schema:name "Instituto Nacional de Derechos Humanos" ;
+    schema:foundingDate "2005"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-70.64827 -33.45694)"^^geo:wktLiteral ;
+        schema:addressLocality "Santiago" ;
+    ] ;
+    schema:url <https://www.indh.cl/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q6448609> ;
+             .

@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00mcjh785> 
+    a org:Organization ;
+    rdfs:label "Xiamen University" ;
+    schema:name "Xiamen University" ;
+    schema:foundingDate "1921"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Xiamen_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0331wa828> ;
+        rdfs:label "Xiamen University Malaysia" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02x1xke62> ;
+        rdfs:label "State Key Laboratory of Cell Stress Biology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04em2sh18> ;
+        rdfs:label "State Key Laboratory of Marine Environmental Science" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0006swh35> ;
+        rdfs:label "First Affiliated Hospital of Xiamen University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02z125451> ;
+        rdfs:label "Zhongshan Hospital of Xiamen University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(118.08187 24.47979)"^^geo:wktLiteral ;
+        schema:addressLocality "Xiamen" ;
+    ] ;
+    schema:url <https://www.xmu.edu.cn> ;
+    schema:sameAs <http://isni.org/isni/0000000122647233> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1153539> ;
+             .

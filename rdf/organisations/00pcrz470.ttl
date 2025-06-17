@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00pcrz470> 
+    a org:Organization ;
+    rdfs:label "Chengdu University of Traditional Chinese Medicine" ;
+    schema:name "Chengdu University of Traditional Chinese Medicine" ;
+    schema:foundingDate "1956"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Chengdu_University_of_Traditional_Chinese_Medicine> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03jckbw05> ;
+        rdfs:label "First Affiliated Hospital of Chengdu Medical College" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/031maes79> ;
+        rdfs:label "Second Affiliated Hospital of Chengdu University of Traditional Chinese" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(104.06667 30.66667)"^^geo:wktLiteral ;
+        schema:addressLocality "Chengdu" ;
+    ] ;
+    schema:url <http://www.cdutcm.edu.cn/> ;
+    schema:sameAs <http://isni.org/isni/000000010376205X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q16257908> ;
+             .

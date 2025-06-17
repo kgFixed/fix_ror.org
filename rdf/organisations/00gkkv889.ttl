@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00gkkv889> 
+    a org:Organization ;
+    rdfs:label "Development Research Center of the State Council" ;
+    schema:name "Development Research Center of the State Council" ;
+    schema:foundingDate "2008"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Development_Research_Center_of_the_State_Council> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(116.39723 39.9075)"^^geo:wktLiteral ;
+        schema:addressLocality "Beijing" ;
+    ] ;
+    schema:url <http://en.drc.gov.cn/> ;
+    schema:sameAs <http://isni.org/isni/0000000406446804> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q10925951> ;
+             .

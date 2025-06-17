@@ -1,0 +1,60 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00mthsf17> 
+    a org:Organization ;
+    rdfs:label "Centre Hospitalier Universitaire de Montpellier" ;
+    schema:name "Centre Hospitalier Universitaire de Montpellier" ;
+    schema:foundingDate "1958"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Funder" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04m6sq715> ;
+        rdfs:label "Hôpital Arnaud de Villeneuve" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03xzagw65> ;
+        rdfs:label "Hôpital Lapeyronie" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04pwyfk22> ;
+        rdfs:label "Hôpital Saint Eloi" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/051escj72> ;
+        rdfs:label "Université de Montpellier" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00b8mh310> ;
+        rdfs:label "Institute for Regenerative Medicine & Biotherapy" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/003sscq03> ;
+        rdfs:label "Physiologie et Médecine Expérimentale du Coeur et des Muscles" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(3.87635 43.61093)"^^geo:wktLiteral ;
+        schema:addressLocality "Montpellier" ;
+    ] ;
+    schema:url <http://www.chu-montpellier.fr/> ;
+    schema:sameAs <http://isni.org/isni/000000009961060X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q55596074> ;
+             .

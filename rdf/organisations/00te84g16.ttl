@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00te84g16> 
+    a org:Organization ;
+    rdfs:label "Valley Forge Military Academy and College" ;
+    schema:name "Valley Forge Military Academy and College" ;
+    schema:foundingDate "1928"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Valley_Forge_Military_Academy_and_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-75.38769 40.044)"^^geo:wktLiteral ;
+        schema:addressLocality "Wayne" ;
+    ] ;
+    schema:url <https://www.vfmac.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000087310642> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4008225> ;
+             .

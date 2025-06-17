@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00m2etp60> 
+    a org:Organization ;
+    rdfs:label "Holy Family Hospital Nazareth" ;
+    schema:name "Holy Family Hospital Nazareth" ;
+    schema:foundingDate "1882"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(35.29722 32.70056)"^^geo:wktLiteral ;
+        schema:addressLocality "Nazareth" ;
+    ] ;
+    schema:url <http://www.hospitalnazareth.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000403719846> ;
+             .

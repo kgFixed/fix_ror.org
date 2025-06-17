@@ -1,0 +1,34 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00tea5y39> 
+    a org:Organization ;
+    rdfs:label "Helmholtz Institute for Functional Marine Biodiversity" ;
+    schema:name "Helmholtz Institute for Functional Marine Biodiversity" ;
+    schema:foundingDate "2017"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/032e6b942> ;
+        rdfs:label "Alfred-Wegener-Institut Helmholtz-Zentrum für Polar- und Meeresforschung" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/033n9gh91> ;
+        rdfs:label "Carl von Ossietzky Universität Oldenburg" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(8.21467 53.14118)"^^geo:wktLiteral ;
+        schema:addressLocality "Oldenburg" ;
+    ] ;
+    schema:url <https://hifmb.de/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q104842820> ;
+             .

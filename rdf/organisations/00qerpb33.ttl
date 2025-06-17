@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00qerpb33> 
+    a org:Organization ;
+    rdfs:label "National Superconducting Cyclotron Laboratory" ;
+    schema:name "National Superconducting Cyclotron Laboratory" ;
+    schema:foundingDate "1963"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/National_Superconducting_Cyclotron_Laboratory> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05hs6h993> ;
+        rdfs:label "Michigan State University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/021nxhr62> ;
+        rdfs:label "U.S. National Science Foundation" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-84.48387 42.73698)"^^geo:wktLiteral ;
+        schema:addressLocality "East Lansing" ;
+    ] ;
+    schema:url <https://www.nscl.msu.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000121735928> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6978772> ;
+             .

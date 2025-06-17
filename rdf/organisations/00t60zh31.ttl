@@ -1,0 +1,301 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00t60zh31> 
+    a org:Organization ;
+    rdfs:label "Kaiser Permanente" ;
+    schema:name "Kaiser Permanente" ;
+    schema:foundingDate "1945"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Kaiser_Permanente> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04cpf2p55> ;
+        rdfs:label "Bess Kaiser Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05dsgrz38> ;
+        rdfs:label "Hawaii Permanente Medical Group" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03j78my65> ;
+        rdfs:label "Kaiser Foundation Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00yep6g06> ;
+        rdfs:label "Kaiser Foundation Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/058ydcm32> ;
+        rdfs:label "Kaiser Foundation Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/047hxsy31> ;
+        rdfs:label "Kaiser Permanente Anaheim Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03vyf7w04> ;
+        rdfs:label "Kaiser Permanente Baldwin Park Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03ecr5c85> ;
+        rdfs:label "Kaiser Permanente Burke Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05ek56k41> ;
+        rdfs:label "Kaiser Permanente Capitol Hill Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00vdcfb98> ;
+        rdfs:label "Kaiser Permanente Castle Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/028gzjv13> ;
+        rdfs:label "Kaiser Permanente Center for Health Research" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02jw82j47> ;
+        rdfs:label "Kaiser Permanente Fontana Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05a9k3463> ;
+        rdfs:label "Kaiser Permanente Franklin Medical Offices" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02jng7h30> ;
+        rdfs:label "Kaiser Permanente Gaithersburg Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/017h1mj21> ;
+        rdfs:label "Kaiser Permanente Hayward Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/015sq8750> ;
+        rdfs:label "Kaiser Permanente Lone Tree Medical Offices" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03xx88d27> ;
+        rdfs:label "Kaiser Permanente Moanalua Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01mwnbk39> ;
+        rdfs:label "Kaiser Permanente Modesto Medical Center and Medical Offices" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05rfek682> ;
+        rdfs:label "Kaiser Permanente Oakland Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05535a176> ;
+        rdfs:label "Kaiser Permanente Orange County Irvine Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00qjyeh27> ;
+        rdfs:label "Kaiser Permanente Rancho Cordova Medical Offices" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02bz7vk34> ;
+        rdfs:label "Kaiser Permanente Redwood City Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01q9c7s07> ;
+        rdfs:label "Kaiser Permanente Richmond Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01wgych27> ;
+        rdfs:label "Kaiser Permanente Riverside Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/022wfr829> ;
+        rdfs:label "Kaiser Permanente Rock Creek Medical Offices" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0280q1024> ;
+        rdfs:label "Kaiser Permanente Roseville Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02q404g62> ;
+        rdfs:label "Kaiser Permanente Sacramento Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00fg98b82> ;
+        rdfs:label "Kaiser Permanente San Diego Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02fxsj090> ;
+        rdfs:label "Kaiser Permanente San Francisco Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05vbevg81> ;
+        rdfs:label "Kaiser Permanente San Jose Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04btmx930> ;
+        rdfs:label "Kaiser Permanente San Leandro Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/018d0rc68> ;
+        rdfs:label "Kaiser Permanente San Marcos Medical Offices" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0299ptp31> ;
+        rdfs:label "Kaiser Permanente San Rafael Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/038yw9848> ;
+        rdfs:label "Kaiser Permanente Santa Clara Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04kjpp702> ;
+        rdfs:label "Kaiser Permanente Santa Rosa Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00nrk9x91> ;
+        rdfs:label "Kaiser Permanente South Sacramento Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/032qfz281> ;
+        rdfs:label "Kaiser Permanente South San Francisco Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00jrz2221> ;
+        rdfs:label "Kaiser Permanente Stockton Medical Offices" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05xenh663> ;
+        rdfs:label "Kaiser Permanente Tysons Corner Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05w1qwk94> ;
+        rdfs:label "Kaiser Permanente Vacaville Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02r3xg590> ;
+        rdfs:label "Kaiser Permanente Vallejo Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/011mkef94> ;
+        rdfs:label "Kaiser Permanente Walnut Creek Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/031caxb92> ;
+        rdfs:label "Kaiser Permanente West Los Angeles Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03t30gb84> ;
+        rdfs:label "Kaiser Permanente Woodlawn Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/042y18291> ;
+        rdfs:label "Kaiser Permanente Zion Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00spys463> ;
+        rdfs:label "Los Angeles Medical Center" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-122.2708 37.80437)"^^geo:wktLiteral ;
+        schema:addressLocality "Oakland" ;
+    ] ;
+    schema:url <https://healthy.kaiserpermanente.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000099577758> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1721601> ;
+             .

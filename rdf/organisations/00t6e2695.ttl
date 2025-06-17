@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00t6e2695> 
+    a org:Organization ;
+    rdfs:label "Emerson (United Kingdom)" ;
+    schema:name "Emerson (United Kingdom)" ;
+    schema:foundingDate "1890"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Emerson_Electric> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02aga1t67> ;
+        rdfs:label "Emerson (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.12574 51.50853)"^^geo:wktLiteral ;
+        schema:addressLocality "London" ;
+    ] ;
+    schema:url <https://www.emerson.com/en-gb> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30283174> ;
+             .

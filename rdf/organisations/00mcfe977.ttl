@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00mcfe977> 
+    a org:Organization ;
+    rdfs:label "Academy of Family Physicians of India" ;
+    schema:name "Academy of Family Physicians of India" ;
+    schema:foundingDate "2010"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Academy_of_Family_Physicians_of_India> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(77.2148 28.62137)"^^geo:wktLiteral ;
+        schema:addressLocality "New Delhi" ;
+    ] ;
+    schema:url <http://www.afpionline.com/> ;
+    schema:sameAs <http://isni.org/isni/000000044903210X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q18349995> ;
+             .

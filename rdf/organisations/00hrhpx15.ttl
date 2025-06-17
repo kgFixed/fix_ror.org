@@ -1,0 +1,35 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00hrhpx15> 
+    a org:Organization ;
+    rdfs:label "United Technologies (Germany)" ;
+    schema:name "United Technologies (Germany)" ;
+    schema:foundingDate "1934"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/United_Technologies> ;
+    org:status "inactive" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02mfrg180> ;
+        rdfs:label "United Technologies (United States)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/051acq669> ;
+        rdfs:label "Raytheon Technologies (Germany)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(13.41053 52.52437)"^^geo:wktLiteral ;
+        schema:addressLocality "Berlin" ;
+    ] ;
+    schema:url <https://www.utc.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30290818> ;
+             .

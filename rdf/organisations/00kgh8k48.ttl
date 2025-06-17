@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00kgh8k48> 
+    a org:Organization ;
+    rdfs:label "Recreational Fishing Alliance of NSW" ;
+    schema:name "Recreational Fishing Alliance of NSW" ;
+    schema:foundingDate "2000"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(151.23195 -33.96344)"^^geo:wktLiteral ;
+        schema:addressLocality "Matraville" ;
+    ] ;
+    schema:url <http://www.rfansw.com.au/> ;
+     .

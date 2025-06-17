@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00stg1k53> 
+    a org:Organization ;
+    rdfs:label "Institute of Philosophy" ;
+    schema:name "Institute of Philosophy" ;
+    schema:foundingDate "1957"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03wxxbs05> ;
+        rdfs:label "Research Centre for the Humanities" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(19.04045 47.49835)"^^geo:wktLiteral ;
+        schema:addressLocality "Budapest" ;
+    ] ;
+    schema:url <http://www.phil-inst.hu/en/> ;
+    schema:sameAs <http://isni.org/isni/0000000121714748> ;
+             .

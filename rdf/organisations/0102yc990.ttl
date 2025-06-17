@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0102yc990> 
+    a org:Organization ;
+    rdfs:label "Warriors on Wheels of Metropolitan Detroit" ;
+    schema:name "Warriors on Wheels of Metropolitan Detroit" ;
+    schema:foundingDate "2008"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-83.04575 42.33143)"^^geo:wktLiteral ;
+        schema:addressLocality "Detroit" ;
+    ] ;
+    schema:url <http://www.wow4metrodetroit.org/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30289658> ;
+             .

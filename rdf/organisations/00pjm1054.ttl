@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00pjm1054> 
+    a org:Organization ;
+    rdfs:label "Lyell McEwin Hospital" ;
+    schema:name "Lyell McEwin Hospital" ;
+    schema:foundingDate "1959"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Lyell_McEwin_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00892tw58> ;
+        rdfs:label "The University of Adelaide" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01p93h210> ;
+        rdfs:label "University of South Australia" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(138.59863 -34.92866)"^^geo:wktLiteral ;
+        schema:addressLocality "Adelaide" ;
+    ] ;
+    schema:url <http://www.sahealth.sa.gov.au/wps/wcm/connect/public+content/sa+health+internet/health+services/hospitals+and+health+services+metropolitan+adelaide/lyell+mcewin+hospital/lyell+mcewin+hospital> ;
+    schema:sameAs <http://isni.org/isni/0000000103234206> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6707755> ;
+             .

@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00w2qec28> 
+    a org:Organization ;
+    rdfs:label "6WIND (France)" ;
+    schema:name "6WIND (France)" ;
+    schema:foundingDate "2000"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/6WIND> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.03405 48.76636)"^^geo:wktLiteral ;
+        schema:addressLocality "Montigny-le-Bretonneux" ;
+    ] ;
+    schema:url <https://www.6wind.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q4642479> ;
+             .

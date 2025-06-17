@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00t30ch44> 
+    a org:Organization ;
+    rdfs:label "Midwestern State University" ;
+    schema:name "Midwestern State University" ;
+    schema:foundingDate "1922"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Midwestern_State_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/059rc1n32> ;
+        rdfs:label "Medical City Dallas Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05eb9pt23> ;
+        rdfs:label "Methodist Dallas Medical Center" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-98.49339 33.91371)"^^geo:wktLiteral ;
+        schema:addressLocality "Wichita Falls" ;
+    ] ;
+    schema:url <http://www.mwsu.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000404848906> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1932075> ;
+             .

@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00te3t702> 
+    a org:Organization ;
+    rdfs:label "University of Georgia" ;
+    schema:name "University of Georgia" ;
+    schema:foundingDate "1785"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/University_of_Georgia> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0014w1417> ;
+        rdfs:label "Georgia Sea Grant" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04sqkw483> ;
+        rdfs:label "University of Georgia Research Foundation" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03hjqxp26> ;
+        rdfs:label "Skidaway Institute of Oceanography" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/017wcm924> ;
+        rdfs:label "University System of Georgia" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/017bfx208> ;
+        rdfs:label "Georgia Coastal Ecosystems Long Term Ecological Research" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-83.37794 33.96095)"^^geo:wktLiteral ;
+        schema:addressLocality "Athens" ;
+    ] ;
+    schema:url <https://www.uga.edu> ;
+    schema:sameAs <http://isni.org/isni/000000041936738X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q761534> ;
+             .

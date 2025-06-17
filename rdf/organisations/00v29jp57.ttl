@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00v29jp57> 
+    a org:Organization ;
+    rdfs:label "National University of General San Martín" ;
+    schema:name "National University of General San Martín" ;
+    schema:foundingDate "1994"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/National_University_of_General_San_Mart%C3%ADn> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04qzr9r50> ;
+        rdfs:label "Instituto Tecnológico de Chascomús" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05e6n8h53> ;
+        rdfs:label "International Center for Advanced Studies" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01etg5g76> ;
+        rdfs:label "Escuela Interdisciplinaria de Altos Estudios Sociales" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-58.37723 -34.61315)"^^geo:wktLiteral ;
+        schema:addressLocality "Buenos Aires" ;
+    ] ;
+    schema:url <http://www.unsam.edu.ar/english/> ;
+    schema:sameAs <http://isni.org/isni/0000000121050048> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5733950> ;
+             .

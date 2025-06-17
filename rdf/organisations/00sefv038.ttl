@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00sefv038> 
+    a org:Organization ;
+    rdfs:label "Multimedia Nusantara University" ;
+    schema:name "Multimedia Nusantara University" ;
+    schema:foundingDate "2006"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Multimedia_Nusantara_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02w69ra18> ;
+        rdfs:label "Multimedia Nusantara Polytechnic" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(106.63 -6.17806)"^^geo:wktLiteral ;
+        schema:addressLocality "Tangerang" ;
+    ] ;
+    schema:url <https://www.umn.ac.id/> ;
+    schema:sameAs <http://isni.org/isni/0000000403866774> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2610734> ;
+             .

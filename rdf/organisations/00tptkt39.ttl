@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00tptkt39> 
+    a org:Organization ;
+    rdfs:label "NetDragon (United States)" ;
+    schema:name "NetDragon (United States)" ;
+    schema:foundingDate "1999"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/NetDragon_Websoft> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/013b8tn87> ;
+        rdfs:label "NetDragon (China)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-117.81034 34.02862)"^^geo:wktLiteral ;
+        schema:addressLocality "Diamond Bar" ;
+    ] ;
+    schema:url <http://www.netdragon.com> ;
+     .

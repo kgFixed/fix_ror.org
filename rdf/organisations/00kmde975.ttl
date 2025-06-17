@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00kmde975> 
+    a org:Organization ;
+    rdfs:label "Instituto de Ciências Ambientais, Químicas e Farmacêuticas" ;
+    schema:name "Instituto de Ciências Ambientais, Químicas e Farmacêuticas" ;
+    schema:foundingDate "2007"^^xsd:gYear ;
+    schema:sameAs <https://pt.wikipedia.org/wiki/Instituto_de_Ci%C3%AAncias_Ambientais,_Qu%C3%ADmicas_e_Farmac%C3%AAuticas_da_Universidade_Federal_de_S%C3%A3o_Paulo> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02k5swt12> ;
+        rdfs:label "Universidade Federal de São Paulo" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-46.62278 -23.68611)"^^geo:wktLiteral ;
+        schema:addressLocality "Diadema" ;
+    ] ;
+    schema:url <https://www.unifesp.br/edicao-atual-entreteses/item/3926-instituto-de-ciencias-ambientais-quimicas-e-farmaceuticas> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q21019957> ;
+             .

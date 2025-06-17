@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00h2bj464> 
+    a org:Organization ;
+    rdfs:label "Deaconess Hospital" ;
+    schema:name "Deaconess Hospital" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Deaconess_Hospital_(Oklahoma_City,_Oklahoma)> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04w30qj40> ;
+        rdfs:label "Free Methodist Church" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-97.51643 35.46756)"^^geo:wktLiteral ;
+        schema:addressLocality "Oklahoma City" ;
+    ] ;
+    schema:url <http://www.alliancehealthdeaconess.com/alliancehealth-deaconess/home.aspx> ;
+    schema:sameAs <http://isni.org/isni/0000000404260192> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5245049> ;
+             .

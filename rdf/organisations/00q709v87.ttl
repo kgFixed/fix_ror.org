@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00q709v87> 
+    a org:Organization ;
+    rdfs:label "Kellogg Community College" ;
+    schema:name "Kellogg Community College" ;
+    schema:foundingDate "1956"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Kellogg_Community_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-85.17816 42.3173)"^^geo:wktLiteral ;
+        schema:addressLocality "Battle Creek" ;
+    ] ;
+    schema:url <http://www.kellogg.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000405369763> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6385846> ;
+             .

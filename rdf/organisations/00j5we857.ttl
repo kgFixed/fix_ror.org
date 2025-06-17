@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00j5we857> 
+    a org:Organization ;
+    rdfs:label "Bremer Institut für Produktion und Logistik GmbH" ;
+    schema:name "Bremer Institut für Produktion und Logistik GmbH" ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04ers2y35> ;
+        rdfs:label "University of Bremen" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(8.80717 53.07582)"^^geo:wktLiteral ;
+        schema:addressLocality "Bremen" ;
+    ] ;
+    schema:url <https://www.biba.uni-bremen.de> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q101426635> ;
+             .

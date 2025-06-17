@@ -1,0 +1,20 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00t09ra09> 
+    a org:Organization ;
+    rdfs:label "Toyama Prefectural Police" ;
+    schema:name "Toyama Prefectural Police" ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(137.21667 36.7)"^^geo:wktLiteral ;
+        schema:addressLocality "Toyama" ;
+    ] ;
+    schema:url <https://police.pref.toyama.jp> ;
+     .

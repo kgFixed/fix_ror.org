@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00p61b845> 
+    a org:Organization ;
+    rdfs:label "Universitas Islam Negeri Profesor Kiai Haji Saifuddin Zuhri Purwokerto" ;
+    schema:name "Universitas Islam Negeri Profesor Kiai Haji Saifuddin Zuhri Purwokerto" ;
+    schema:foundingDate "1964"^^xsd:gYear ;
+    schema:sameAs <https://id.wikipedia.org/wiki/Universitas_Islam_Negeri_Saifuddin_Zuhri_Purwokerto> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(109.23444 -7.42139)"^^geo:wktLiteral ;
+        schema:addressLocality "Purwokerto" ;
+    ] ;
+    schema:url <https://uinsaizu.ac.id> ;
+    schema:sameAs <http://isni.org/isni/0000000460415902> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q109921435> ;
+             .

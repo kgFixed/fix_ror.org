@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00hhh2m32> 
+    a org:Organization ;
+    rdfs:label "Hochtief (Qatar)" ;
+    schema:name "Hochtief (Qatar)" ;
+    schema:foundingDate "1873"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Hochtief> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03xq46679> ;
+        rdfs:label "Hochtief (Germany)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(51.53096 25.28545)"^^geo:wktLiteral ;
+        schema:addressLocality "Doha" ;
+    ] ;
+    schema:url <https://www.hochtief-vicon.com/vicon_en/0.jhtml> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q59535273> ;
+             .

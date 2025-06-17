@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00hnkz789> 
+    a org:Organization ;
+    rdfs:label "Bohol Island State University" ;
+    schema:name "Bohol Island State University" ;
+    schema:foundingDate "1998"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Bohol_Island_State_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(123.85219 9.65556)"^^geo:wktLiteral ;
+        schema:addressLocality "Tagbilaran" ;
+    ] ;
+    schema:url <http://www.bisu.edu.ph> ;
+    schema:sameAs <http://isni.org/isni/0000000460309480> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4938195> ;
+             .

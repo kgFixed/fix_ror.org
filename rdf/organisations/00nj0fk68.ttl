@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00nj0fk68> 
+    a org:Organization ;
+    rdfs:label "Mitsui & Co (Ireland)" ;
+    schema:name "Mitsui & Co (Ireland)" ;
+    schema:foundingDate "1947"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Mitsui_%26_Co> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05tm9j755> ;
+        rdfs:label "Mitsui & Co (Japan)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-6.24889 53.33306)"^^geo:wktLiteral ;
+        schema:addressLocality "Dublin" ;
+    ] ;
+    schema:url <https://www.mitsui.com/jp/en/index.html> ;
+     .

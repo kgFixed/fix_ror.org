@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00pt3xy74> 
+    a org:Organization ;
+    rdfs:label "Effik (France)" ;
+    schema:name "Effik (France)" ;
+    schema:foundingDate "1992"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.235 48.81381)"^^geo:wktLiteral ;
+        schema:addressLocality "Meudon" ;
+    ] ;
+    schema:url <http://effik.com> ;
+    schema:sameAs <http://isni.org/isni/0000000417760890> ;
+             .

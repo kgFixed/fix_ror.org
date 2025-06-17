@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00rpmx650> 
+    a org:Organization ;
+    rdfs:label "Escuela Naval del Perú" ;
+    schema:name "Escuela Naval del Perú" ;
+    schema:foundingDate "1657"^^xsd:gYear ;
+    schema:sameAs <https://es.wikipedia.org/wiki/Escuela_Naval_del_Per%C3%BA> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.10365 -11.94753)"^^geo:wktLiteral ;
+        schema:addressLocality "Callao" ;
+    ] ;
+    schema:url <https://escuelanaval.edu.pe> ;
+    schema:sameAs <http://isni.org/isni/0000000460206975> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7171165> ;
+             .

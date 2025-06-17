@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00m2zh467> 
+    a org:Organization ;
+    rdfs:label "arXiv" ;
+    schema:name "arXiv" ;
+    schema:foundingDate "1991"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/ArXiv> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05bnh6r87> ;
+        rdfs:label "Cornell University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-76.49661 42.44063)"^^geo:wktLiteral ;
+        schema:addressLocality "Ithaca" ;
+    ] ;
+    schema:url <https://arxiv.org> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q118398> ;
+             .

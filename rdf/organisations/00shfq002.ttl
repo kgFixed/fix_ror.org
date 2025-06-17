@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00shfq002> 
+    a org:Organization ;
+    rdfs:label "Syngenta (United States)" ;
+    schema:name "Syngenta (United States)" ;
+    schema:foundingDate "2000"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Syngenta> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05fqg8t87> ;
+        rdfs:label "Syngenta (Switzerland)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-79.79198 36.07264)"^^geo:wktLiteral ;
+        schema:addressLocality "Greensboro" ;
+    ] ;
+    schema:url <http://www.syngenta-us.com/home.aspx> ;
+    schema:sameAs <http://isni.org/isni/0000000406156743> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q29123722> ;
+             .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00zz2cd87> 
+    a org:Organization ;
+    rdfs:label "Kannur University" ;
+    schema:name "Kannur University" ;
+    schema:foundingDate "1996"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Kannur_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(75.35763 11.86752)"^^geo:wktLiteral ;
+        schema:addressLocality "Kannur" ;
+    ] ;
+    schema:url <http://www.kannuruniversity.ac.in/> ;
+    schema:sameAs <http://isni.org/isni/0000000088113173> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6364161> ;
+             .

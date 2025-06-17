@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00nqcp204> 
+    a org:Organization ;
+    rdfs:label "Niigata Seiryo University" ;
+    schema:name "Niigata Seiryo University" ;
+    schema:foundingDate "1900"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Niigata_Seiryo_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(139.04125 37.92259)"^^geo:wktLiteral ;
+        schema:addressLocality "Niigata" ;
+    ] ;
+    schema:url <http://www.n-seiryo.ac.jp/> ;
+    schema:sameAs <http://isni.org/isni/0000000403755601> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7034394> ;
+             .

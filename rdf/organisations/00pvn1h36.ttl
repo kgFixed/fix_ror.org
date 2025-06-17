@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00pvn1h36> 
+    a org:Organization ;
+    rdfs:label "Eli Lilly (Ireland)" ;
+    schema:name "Eli Lilly (Ireland)" ;
+    schema:foundingDate "1876"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01qat3289> ;
+        rdfs:label "Eli Lilly (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-8.47061 51.89797)"^^geo:wktLiteral ;
+        schema:addressLocality "Cork" ;
+    ] ;
+    schema:url <http://www.lilly.ie/en/> ;
+     .

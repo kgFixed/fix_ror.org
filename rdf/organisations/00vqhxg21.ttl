@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00vqhxg21> 
+    a org:Organization ;
+    rdfs:label "SMEC (Australia)" ;
+    schema:name "SMEC (Australia)" ;
+    schema:foundingDate "1970"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/SMEC_Holdings> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(144.96332 -37.814)"^^geo:wktLiteral ;
+        schema:addressLocality "Melbourne" ;
+    ] ;
+    schema:url <https://www.smec.com/en_au> ;
+    schema:sameAs <http://isni.org/isni/0000000115203271> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7391139> ;
+             .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00n789a42> 
+    a org:Organization ;
+    rdfs:label "International Association for the Evaluation of Educational Achievement" ;
+    schema:name "International Association for the Evaluation of Educational Achievement" ;
+    schema:foundingDate "1958"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/International_Association_for_the_Evaluation_of_Educational_Achievement> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(4.88969 52.37403)"^^geo:wktLiteral ;
+        schema:addressLocality "Amsterdam" ;
+    ] ;
+    schema:url <http://www.iea.nl/> ;
+    schema:sameAs <http://isni.org/isni/0000000123530774> ;
+             .

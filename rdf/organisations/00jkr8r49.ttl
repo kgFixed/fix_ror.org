@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00jkr8r49> 
+    a org:Organization ;
+    rdfs:label "Programa de Desarrollo de las Ciencias Básicas" ;
+    schema:name "Programa de Desarrollo de las Ciencias Básicas" ;
+    schema:foundingDate "1986"^^xsd:gYear ;
+    schema:sameAs <https://es.wikipedia.org/wiki/Programa_de_Desarrollo_de_las_Ciencias_B%C3%A1sicas> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/051777d98> ;
+        rdfs:label "United Nations Development Programme" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/030bbe882> ;
+        rdfs:label "Universidad de la República de Uruguay" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00ysy1705> ;
+        rdfs:label "Ministerio de Educación y Cultura" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-56.18816 -34.90328)"^^geo:wktLiteral ;
+        schema:addressLocality "Montevideo" ;
+    ] ;
+    schema:url <https://www.pedeciba.edu.uy> ;
+    schema:sameAs <http://isni.org/isni/0000000406140426> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6087580> ;
+             .

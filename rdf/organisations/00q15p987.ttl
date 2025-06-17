@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00q15p987> 
+    a org:Organization ;
+    rdfs:label "Dadabhoy Institute of Higher Education" ;
+    schema:name "Dadabhoy Institute of Higher Education" ;
+    schema:foundingDate "2003"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Dadabhoy_Institute_of_Higher_Education> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(67.0104 24.8608)"^^geo:wktLiteral ;
+        schema:addressLocality "Karachi" ;
+    ] ;
+    schema:url <http://dadabhoy.edu.pk/> ;
+    schema:sameAs <http://isni.org/isni/0000000406081198> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5207893> ;
+             .

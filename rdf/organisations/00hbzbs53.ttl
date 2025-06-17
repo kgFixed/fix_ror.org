@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00hbzbs53> 
+    a org:Organization ;
+    rdfs:label "MTS Systems (United States)" ;
+    schema:name "MTS Systems (United States)" ;
+    schema:foundingDate "1966"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/MTS_Systems_Corporation> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-93.47079 44.85469)"^^geo:wktLiteral ;
+        schema:addressLocality "Eden Prairie" ;
+    ] ;
+    schema:url <http://www.mts.com/en/> ;
+    schema:sameAs <http://isni.org/isni/0000000107024177> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1881941> ;
+             .

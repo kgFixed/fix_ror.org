@@ -1,0 +1,26 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00x1rrc95> 
+    a org:Organization ;
+    rdfs:label "Institute of Life Sciences" ;
+    schema:name "Institute of Life Sciences" ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03r5zec51> ;
+        rdfs:label "HES-SO Valais-Wallis" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(7.35559 46.22739)"^^geo:wktLiteral ;
+        schema:addressLocality "Sion" ;
+    ] ;
+    schema:url <https://www.hevs.ch/ils> ;
+     .

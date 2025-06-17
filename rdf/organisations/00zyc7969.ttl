@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00zyc7969> 
+    a org:Organization ;
+    rdfs:label "United States Coast Guard" ;
+    schema:name "United States Coast Guard" ;
+    schema:foundingDate "1790"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/United_States_Coast_Guard> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00jyr0d86> ;
+        rdfs:label "United States Department of Homeland Security" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.03637 38.89511)"^^geo:wktLiteral ;
+        schema:addressLocality "Washington" ;
+    ] ;
+    schema:url <https://www.gocoastguard.com> ;
+    schema:sameAs <http://isni.org/isni/0000000123644587> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q11224> ;
+             .

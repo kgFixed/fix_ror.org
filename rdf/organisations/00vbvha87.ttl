@@ -1,0 +1,44 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00vbvha87> 
+    a org:Organization ;
+    rdfs:label "Public Health England" ;
+    schema:name "Public Health England" ;
+    schema:foundingDate "2013"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Public_Health_England> ;
+    org:status "inactive" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03sbpja79> ;
+        rdfs:label "Department of Health and Social Care" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/018h10037> ;
+        rdfs:label "UK Health Security Agency" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/02m3w2z38> ;
+        rdfs:label "Office for Health Improvement and Disparities" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.12574 51.50853)"^^geo:wktLiteral ;
+        schema:addressLocality "London" ;
+    ] ;
+    schema:url <https://www.gov.uk/government/organisations/public-health-england> ;
+    schema:sameAs <http://isni.org/isni/000000045909016X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7257402> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5690635> ;
+             .

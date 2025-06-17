@@ -1,0 +1,79 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00t4db855> 
+    a org:Organization ;
+    rdfs:label "Alstom (France)" ;
+    schema:name "Alstom (France)" ;
+    schema:foundingDate "1928"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Alstom> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0432qbr75> ;
+        rdfs:label "Alstom (Belgium)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/059xraf34> ;
+        rdfs:label "Alstom (Canada)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00stexf29> ;
+        rdfs:label "Alstom (Germany)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05k4hm954> ;
+        rdfs:label "Alstom (Poland)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00rffka72> ;
+        rdfs:label "Alstom (Spain)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05863t818> ;
+        rdfs:label "Alstom (Sweden)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/017977v32> ;
+        rdfs:label "Alstom (Switzerland)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02qsqdv65> ;
+        rdfs:label "Alstom (United Kingdom)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0569b7y96> ;
+        rdfs:label "Alstom (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.33306 48.90694)"^^geo:wktLiteral ;
+        schema:addressLocality "Saint-Ouen-sur-Seine" ;
+    ] ;
+    schema:url <http://www.alstom.com/> ;
+    schema:sameAs <http://isni.org/isni/000000041776180X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q309084> ;
+             .

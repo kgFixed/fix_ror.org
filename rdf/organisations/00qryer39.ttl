@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00qryer39> 
+    a org:Organization ;
+    rdfs:label "International Institute of Information Technology" ;
+    schema:name "International Institute of Information Technology" ;
+    schema:foundingDate "2006"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/International_Institute_of_Information_Technology,_Bhubaneswar> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03vqjtg68> ;
+        rdfs:label "Biju Patnaik University of Technology" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(85.83385 20.27241)"^^geo:wktLiteral ;
+        schema:addressLocality "Bhubaneswar" ;
+    ] ;
+    schema:url <http://www.iiit-bh.ac.in/> ;
+    schema:sameAs <http://isni.org/isni/0000000417783478> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6051157> ;
+             .

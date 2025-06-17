@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00yxqn620> 
+    a org:Organization ;
+    rdfs:label "University of Puerto Rico at Cayey" ;
+    schema:name "University of Puerto Rico at Cayey" ;
+    schema:foundingDate "1967"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/University_of_Puerto_Rico_at_Cayey> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02yg0nm07> ;
+        rdfs:label "University of Puerto Rico System" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-66.166 18.11191)"^^geo:wktLiteral ;
+        schema:addressLocality "Cayey" ;
+    ] ;
+    schema:url <http://www.cayey.upr.edu/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q7896175> ;
+             .

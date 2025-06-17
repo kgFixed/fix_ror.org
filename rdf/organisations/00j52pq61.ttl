@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00j52pq61> 
+    a org:Organization ;
+    rdfs:label "New York State College of Agriculture & Life Sciences" ;
+    schema:name "New York State College of Agriculture & Life Sciences" ;
+    schema:foundingDate "1874"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Cornell_University_College_of_Agriculture_and_Life_Sciences> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05bnh6r87> ;
+        rdfs:label "Cornell University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01q1z8k08> ;
+        rdfs:label "State University of New York" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-76.49661 42.44063)"^^geo:wktLiteral ;
+        schema:addressLocality "Ithaca" ;
+    ] ;
+    schema:url <https://cals.cornell.edu/#> ;
+    schema:sameAs <http://isni.org/isni/0000000406140717> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5171560> ;
+             .

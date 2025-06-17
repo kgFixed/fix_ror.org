@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00hn92440> 
+    a org:Organization ;
+    rdfs:label "Broomfield Hospital" ;
+    schema:name "Broomfield Hospital" ;
+    schema:foundingDate "1940"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Broomfield_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0280r7h11> ;
+        rdfs:label "Mid Essex Hospital Services NHS Trust" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/026zzn846> ;
+        rdfs:label "Queen Mary University of London" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(0.46958 51.73575)"^^geo:wktLiteral ;
+        schema:addressLocality "Chelmsford" ;
+    ] ;
+    schema:url <http://www.meht.nhs.uk/patients-and-visitors/our-hospitals/broomfield-hospital/> ;
+    schema:sameAs <http://isni.org/isni/0000000403997889> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4975301> ;
+             .

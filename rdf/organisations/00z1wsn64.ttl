@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00z1wsn64> 
+    a org:Organization ;
+    rdfs:label "Bushey Fields Hospital" ;
+    schema:name "Bushey Fields Hospital" ;
+    schema:foundingDate "1983"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Bushey_Fields_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-2.08333 52.5)"^^geo:wktLiteral ;
+        schema:addressLocality "Dudley" ;
+    ] ;
+    schema:url <https://www.nhs.uk/Services/hospitals/Overview/DefaultView.aspx?id=154456> ;
+    schema:sameAs <http://isni.org/isni/0000000417566238> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5001492> ;
+             .

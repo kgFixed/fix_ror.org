@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00k9e1m49> 
+    a org:Organization ;
+    rdfs:label "Sri Devaraj Urs Medical College" ;
+    schema:name "Sri Devaraj Urs Medical College" ;
+    schema:foundingDate "1986"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Sri_Devaraj_Urs_Medical_College> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(78.12999 13.13768)"^^geo:wktLiteral ;
+        schema:addressLocality "Kolār" ;
+    ] ;
+    schema:url <http://www.sdumc.ac.in/> ;
+    schema:sameAs <http://isni.org/isni/0000000417659645> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7585815> ;
+             .

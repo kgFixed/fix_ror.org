@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00qp50z66> 
+    a org:Organization ;
+    rdfs:label "Hiwassee College" ;
+    schema:name "Hiwassee College" ;
+    schema:foundingDate "1849"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Hiwassee_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-84.36353 35.5198)"^^geo:wktLiteral ;
+        schema:addressLocality "Madisonville" ;
+    ] ;
+    schema:url <http://hiwassee.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000099126412> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q14709930> ;
+             .

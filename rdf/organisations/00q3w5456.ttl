@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00q3w5456> 
+    a org:Organization ;
+    rdfs:label "Hellenic Civil Aviation Authority" ;
+    schema:name "Hellenic Civil Aviation Authority" ;
+    schema:foundingDate "1931"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Hellenic_Civil_Aviation_Authority> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/046gt4s87> ;
+        rdfs:label "Ministry of Infrastructure, Transport and Networks" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(23.75802 37.86289)"^^geo:wktLiteral ;
+        schema:addressLocality "Glyfada" ;
+    ] ;
+    schema:url <http://www.hcaa.gr/en/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q11773243> ;
+             .

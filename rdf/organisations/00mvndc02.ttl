@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00mvndc02> 
+    a org:Organization ;
+    rdfs:label "Ivy Tech Community College of Indiana" ;
+    schema:name "Ivy Tech Community College of Indiana" ;
+    schema:foundingDate "1963"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Ivy_Tech_Community_College_of_Indiana> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-86.15804 39.76838)"^^geo:wktLiteral ;
+        schema:addressLocality "Indianapolis" ;
+    ] ;
+    schema:url <https://www.ivytech.edu/> ;
+    schema:sameAs <http://isni.org/isni/000000040533144X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6099951> ;
+             .

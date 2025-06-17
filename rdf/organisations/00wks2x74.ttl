@@ -1,0 +1,35 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00wks2x74> 
+    a org:Organization ;
+    rdfs:label "Indiana Space Grant Consortium" ;
+    schema:name "Indiana Space Grant Consortium" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Indiana_Space_Grant_Consortium> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/027ka1x80> ;
+        rdfs:label "National Aeronautics and Space Administration" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02dqehb95> ;
+        rdfs:label "Purdue University West Lafayette" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-86.87529 40.4167)"^^geo:wktLiteral ;
+        schema:addressLocality "Lafayette" ;
+    ] ;
+    schema:url <http://www.insgc.org> ;
+    schema:sameAs <http://isni.org/isni/0000000459038505> ;
+             .

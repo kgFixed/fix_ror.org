@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00vcyhn10> 
+    a org:Organization ;
+    rdfs:label "Universidade Católica de Santos" ;
+    schema:name "Universidade Católica de Santos" ;
+    schema:foundingDate "1986"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Universidade_Cat%C3%B3lica_de_Santos> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-46.33361 -23.96083)"^^geo:wktLiteral ;
+        schema:addressLocality "Santos" ;
+    ] ;
+    schema:url <http://www.unisantos.br/> ;
+    schema:sameAs <http://isni.org/isni/0000000090747896> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1736410> ;
+             .

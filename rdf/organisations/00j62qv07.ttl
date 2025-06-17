@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00j62qv07> 
+    a org:Organization ;
+    rdfs:label "Royal Swedish Academy of Sciences" ;
+    schema:name "Royal Swedish Academy of Sciences" ;
+    schema:foundingDate "1739"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Royal_Swedish_Academy_of_Sciences> ;
+    org:status "active" ;
+    org:classification "Funder" ;
+    org:classification "Nonprofit" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00q1c3610> ;
+        rdfs:label "Abisko Scientific Research Station" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02z85gz67> ;
+        rdfs:label "Mittag-Leffler Institute" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(18.06871 59.32938)"^^geo:wktLiteral ;
+        schema:addressLocality "Stockholm" ;
+    ] ;
+    schema:url <https://www.kva.se> ;
+    schema:sameAs <http://isni.org/isni/0000000109450671> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q191583> ;
+             .

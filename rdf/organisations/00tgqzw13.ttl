@@ -1,0 +1,127 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00tgqzw13> 
+    a org:Organization ;
+    rdfs:label "NOAA National Weather Service" ;
+    schema:name "NOAA National Weather Service" ;
+    schema:foundingDate "1970"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/National_Weather_Service> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00ndyev54> ;
+        rdfs:label "NOAA National Centers for Environmental Prediction" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02qy3wv98> ;
+        rdfs:label "NOAA National Data Buoy Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0235zh559> ;
+        rdfs:label "NOAA National Ice Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/038hf8q48> ;
+        rdfs:label "NOAA National Weather Service Alaska Region" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/014kxm163> ;
+        rdfs:label "NOAA National Weather Service Pacific Region" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/013ew2c19> ;
+        rdfs:label "NOAA Office of Water Prediction" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02x0wxr53> ;
+        rdfs:label "NOAA National Weather Service Office of Science and Technology Integration" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03hmhdm29> ;
+        rdfs:label "NOAA Office of Climate, Water, and Weather Services" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04b222d59> ;
+        rdfs:label "NOAA National Water Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02txa8h30> ;
+        rdfs:label "NOAA National Weather Service Eastern Region" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04kfq3e26> ;
+        rdfs:label "NOAA National Weather Service Central Region" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/054y3ya26> ;
+        rdfs:label "NOAA National Weather Service Western Region" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/002pscq53> ;
+        rdfs:label "NOAA National Weather Service Southern Region" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01fmhrb91> ;
+        rdfs:label "NOAA Office of Chief Operating Officer" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02891nv36> ;
+        rdfs:label "NOAA Office of Observations" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02z5nhe81> ;
+        rdfs:label "National Oceanic and Atmospheric Administration" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04chq2495> ;
+        rdfs:label "United States Department of Commerce" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.02609 38.99067)"^^geo:wktLiteral ;
+        schema:addressLocality "Silver Spring" ;
+    ] ;
+    schema:url <http://www.weather.gov/> ;
+    schema:sameAs <http://isni.org/isni/0000000404329209> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1066823> ;
+             .

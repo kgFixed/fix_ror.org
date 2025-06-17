@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00pb7yd26> 
+    a org:Organization ;
+    rdfs:label "Women University of Azad Jammu & Kashmir Bagh" ;
+    schema:name "Women University of Azad Jammu & Kashmir Bagh" ;
+    schema:foundingDate "2014"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Women_University_of_Azad_Jammu_%26_Kashmir> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(73.75769 33.99611)"^^geo:wktLiteral ;
+        schema:addressLocality "Bagh" ;
+    ] ;
+    schema:url <https://www.wuajk.edu.pk> ;
+     .

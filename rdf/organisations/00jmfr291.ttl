@@ -1,0 +1,98 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00jmfr291> 
+    a org:Organization ;
+    rdfs:label "University of Michigan" ;
+    schema:name "University of Michigan" ;
+    schema:foundingDate "1817"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/University_of_Michigan> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/015tnsz82> ;
+        rdfs:label "Michigan Sea Grant" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/057mgcy61> ;
+        rdfs:label "Michigan Space Grant Consortium" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02q7mkh03> ;
+        rdfs:label "Inter-university Consortium for Political and Social Research" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00rx1p510> ;
+        rdfs:label "University of Michigan Press" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02hhndj92> ;
+        rdfs:label "University of Michigan Biological Station" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04xgzv028> ;
+        rdfs:label "Cooperative Institute for Great Lakes Research" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02bkkgm47> ;
+        rdfs:label "Center for Complex Particle Systems" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/034npj057> ;
+        rdfs:label "Hurley Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01zcpa714> ;
+        rdfs:label "Michigan Medicine" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04pk7zz41> ;
+        rdfs:label "Arctic Long Term Ecological Research" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/035wtm547> ;
+        rdfs:label "University of Michigan–Dearborn" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01c3xc117> ;
+        rdfs:label "University of Michigan–Flint" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-83.74088 42.27756)"^^geo:wktLiteral ;
+        schema:addressLocality "Ann Arbor" ;
+    ] ;
+    schema:url <https://www.umich.edu> ;
+    schema:sameAs <http://isni.org/isni/0000000086837370> ;
+            schema:sameAs <http://isni.org/isni/0000000419367347> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q230492> ;
+             .

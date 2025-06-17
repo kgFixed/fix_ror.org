@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00z7r8y22> 
+    a org:Organization ;
+    rdfs:label "Ambulance Victoria" ;
+    schema:name "Ambulance Victoria" ;
+    schema:foundingDate "2008"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Ambulance_Victoria> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00b9jhh55> ;
+        rdfs:label "Department of Health and Human Services" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(144.96332 -37.814)"^^geo:wktLiteral ;
+        schema:addressLocality "Melbourne" ;
+    ] ;
+    schema:url <http://ambulance.vic.gov.au/> ;
+    schema:sameAs <http://isni.org/isni/000000040644872X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4741949> ;
+             .

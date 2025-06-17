@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00jxnw682> 
+    a org:Organization ;
+    rdfs:label "Hospital Tuanku Ja’afar" ;
+    schema:name "Hospital Tuanku Ja’afar" ;
+    schema:foundingDate "1972"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Tuanku_Ja'afar_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(101.9381 2.7297)"^^geo:wktLiteral ;
+        schema:addressLocality "Seremban" ;
+    ] ;
+    schema:url <http://htjs.moh.gov.my/htjs/#> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q20463206> ;
+             .

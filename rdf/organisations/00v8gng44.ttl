@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00v8gng44> 
+    a org:Organization ;
+    rdfs:label "The American Legion Department of Wisconsin" ;
+    schema:name "The American Legion Department of Wisconsin" ;
+    schema:foundingDate "1920"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-89.46262 43.53915)"^^geo:wktLiteral ;
+        schema:addressLocality "Portage" ;
+    ] ;
+    schema:url <http://www.wilegion.org/> ;
+     .

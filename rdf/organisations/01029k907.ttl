@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01029k907> 
+    a org:Organization ;
+    rdfs:label "University of Telafer" ;
+    schema:name "University of Telafer" ;
+    schema:foundingDate "2014"^^xsd:gYear ;
+    schema:sameAs <https://ar.wikipedia.org/wiki/%D8%AC%D8%A7%D9%85%D8%B9%D8%A9_%D8%AA%D9%84%D8%B9%D9%81%D8%B1> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/039cf4q47> ;
+        rdfs:label "University of Mosul" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(42.5 36.5)"^^geo:wktLiteral ;
+        schema:addressLocality "Tel Afar District" ;
+    ] ;
+    schema:url <https://uotelafer.edu.iq> ;
+     .

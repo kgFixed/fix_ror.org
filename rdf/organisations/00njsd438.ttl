@@ -1,0 +1,66 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00njsd438> 
+    a org:Organization ;
+    rdfs:label "Google (United States)" ;
+    schema:name "Google (United States)" ;
+    schema:foundingDate "1998"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Google> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04d06q394> ;
+        rdfs:label "Google (Canada)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03nmefy27> ;
+        rdfs:label "Google (Ireland)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02c20ys54> ;
+        rdfs:label "Google (Israel)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/014f9c269> ;
+        rdfs:label "Google (Switzerland)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/024bc3e07> ;
+        rdfs:label "Google (United Kingdom)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02e9yx751> ;
+        rdfs:label "Alphabet (United States)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03weg0b71> ;
+        rdfs:label "Google (Singapore)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-122.08385 37.38605)"^^geo:wktLiteral ;
+        schema:addressLocality "Mountain View" ;
+    ] ;
+    schema:url <https://www.google.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q95> ;
+             .

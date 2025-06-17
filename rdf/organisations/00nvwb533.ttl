@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00nvwb533> 
+    a org:Organization ;
+    rdfs:label "Université Internationale de Casablanca" ;
+    schema:name "Université Internationale de Casablanca" ;
+    schema:foundingDate "2010"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Universit%C3%A9_Internationale_de_Casablanca> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-7.61138 33.58831)"^^geo:wktLiteral ;
+        schema:addressLocality "Casablanca" ;
+    ] ;
+    schema:url <http://www.uic.ac.ma/> ;
+    schema:sameAs <http://isni.org/isni/000000044914622X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q16682080> ;
+             .

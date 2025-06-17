@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00nb5xj61> 
+    a org:Organization ;
+    rdfs:label "St. Andrews University" ;
+    schema:name "St. Andrews University" ;
+    schema:foundingDate "1896"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/St._Andrews_University_(North_Carolina)> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-79.46282 34.77405)"^^geo:wktLiteral ;
+        schema:addressLocality "Laurinburg" ;
+    ] ;
+    schema:url <https://www.sa.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000404186770> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7586947> ;
+             .

@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00sr2h055> 
+    a org:Organization ;
+    rdfs:label "Banner Del E Webb Medical Center" ;
+    schema:name "Banner Del E Webb Medical Center" ;
+    schema:foundingDate "2008"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-112.34127 33.66198)"^^geo:wktLiteral ;
+        schema:addressLocality "Sun City West" ;
+    ] ;
+    schema:url <https://www.bannerhealth.com/locations/sun-city-west/banner-del-e-webb-medical-center> ;
+    schema:sameAs <http://isni.org/isni/000000040451181X> ;
+             .

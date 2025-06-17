@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00xefvv79> 
+    a org:Organization ;
+    rdfs:label "National Institute of Technology, Kurume College" ;
+    schema:name "National Institute of Technology, Kurume College" ;
+    schema:foundingDate "1964"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02xqkcw08> ;
+        rdfs:label "National Institute of Technology" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(130.51667 33.31667)"^^geo:wktLiteral ;
+        schema:addressLocality "Kurume" ;
+    ] ;
+    schema:url <http://www.kurume-nct.ac.jp/e> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q11369521> ;
+             .

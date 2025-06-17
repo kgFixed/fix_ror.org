@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00z6nh165> 
+    a org:Organization ;
+    rdfs:label "Universidad Privada San Carlos" ;
+    schema:name "Universidad Privada San Carlos" ;
+    schema:foundingDate "2006"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-70.0199 -15.8422)"^^geo:wktLiteral ;
+        schema:addressLocality "Puno" ;
+    ] ;
+    schema:url <http://www.upsc.edu.pe/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30294046> ;
+             .

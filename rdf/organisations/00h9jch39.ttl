@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00h9jch39> 
+    a org:Organization ;
+    rdfs:label "Carey Baptist College" ;
+    schema:name "Carey Baptist College" ;
+    schema:foundingDate "1924"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Carey_Baptist_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(174.76349 -36.84853)"^^geo:wktLiteral ;
+        schema:addressLocality "Auckland" ;
+    ] ;
+    schema:url <http://carey.ac.nz/> ;
+    schema:sameAs <http://isni.org/isni/000000040371966X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5039159> ;
+             .

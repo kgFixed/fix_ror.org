@@ -1,0 +1,108 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00n4k4n97> 
+    a org:Organization ;
+    rdfs:label "Providence Health & Services" ;
+    schema:name "Providence Health & Services" ;
+    schema:foundingDate "1859"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Providence_Health_%26_Services> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03qyxqf94> ;
+        rdfs:label "Little Company of Mary Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00406q532> ;
+        rdfs:label "Providence Alaska Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00cenf840> ;
+        rdfs:label "Providence Health & Services Alaska" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05a7hcs31> ;
+        rdfs:label "Providence Health & Services Oregon and Southwest Washington" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/015z2xk75> ;
+        rdfs:label "Providence Holy Cross Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/031twcj28> ;
+        rdfs:label "Providence Pediatric Pulmonology & Cystic Fibrosis" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05dshav68> ;
+        rdfs:label "Providence Regional Medical Center Everett" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01wc5x922> ;
+        rdfs:label "Providence Sacred Heart Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04xkbx134> ;
+        rdfs:label "Providence Saint Joseph Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05h4tg110> ;
+        rdfs:label "Providence St. Mary Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05xvp5318> ;
+        rdfs:label "Providence St. Peter Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01gcc9p15> ;
+        rdfs:label "Saint John's Health Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/004jktf35> ;
+        rdfs:label "Swedish Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04wcx2r57> ;
+        rdfs:label "TrinityCare Hospice" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-122.21707 47.48288)"^^geo:wktLiteral ;
+        schema:addressLocality "Renton" ;
+    ] ;
+    schema:url <https://www.providence.org> ;
+    schema:sameAs <http://isni.org/isni/0000000404635556> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7252430> ;
+             .

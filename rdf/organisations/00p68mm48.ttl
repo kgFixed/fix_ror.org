@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00p68mm48> 
+    a org:Organization ;
+    rdfs:label "Department of Mineral and Geoscience Malaysia" ;
+    schema:name "Department of Mineral and Geoscience Malaysia" ;
+    schema:foundingDate "2001"^^xsd:gYear ;
+    schema:sameAs <https://ms.wikipedia.org/wiki/Jabatan_Mineral_dan_Geosains_Malaysia> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(101.7 2.91667)"^^geo:wktLiteral ;
+        schema:addressLocality "Putrajaya" ;
+    ] ;
+    schema:url <https://www.jmg.gov.my> ;
+    schema:sameAs <http://isni.org/isni/0000000106822871> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q31186451> ;
+             .

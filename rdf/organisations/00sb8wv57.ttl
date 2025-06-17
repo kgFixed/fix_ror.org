@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00sb8wv57> 
+    a org:Organization ;
+    rdfs:label "Kenya Institute for Public Policy Research and Analysis" ;
+    schema:name "Kenya Institute for Public Policy Research and Analysis" ;
+    schema:foundingDate "1997"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Kenya_Institute_for_Public_Policy_Research_and_Analysis> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(36.81667 -1.28333)"^^geo:wktLiteral ;
+        schema:addressLocality "Nairobi" ;
+    ] ;
+    schema:url <http://www.kippra.org/> ;
+    schema:sameAs <http://isni.org/isni/000000011017060X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6392584> ;
+             .

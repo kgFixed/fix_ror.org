@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/010gtx568> 
+    a org:Organization ;
+    rdfs:label "Ministry of the Interior and Safety" ;
+    schema:name "Ministry of the Interior and Safety" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Ministry_of_the_Interior_and_Safety_%28South_Korea%29> ;
+    org:status "active" ;
+    org:classification "Funder" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(127.29661 36.59313)"^^geo:wktLiteral ;
+        schema:addressLocality "Sejong-Si" ;
+    ] ;
+    schema:url <https://www.mois.go.kr> ;
+    schema:sameAs <http://isni.org/isni/0000000511692433> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q488954> ;
+             .

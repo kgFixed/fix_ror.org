@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00sxp6h30> 
+    a org:Organization ;
+    rdfs:label "Jinchuan (China)" ;
+    schema:name "Jinchuan (China)" ;
+    schema:foundingDate "1959"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Jinchuan_Group> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(104.89633 33.61681)"^^geo:wktLiteral ;
+        schema:addressLocality "Jinchang" ;
+    ] ;
+    schema:url <http://www.jinchuan-intl.com/en/> ;
+    schema:sameAs <http://isni.org/isni/0000000417892041> ;
+             .

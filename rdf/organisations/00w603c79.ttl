@@ -1,0 +1,35 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00w603c79> 
+    a org:Organization ;
+    rdfs:label "National Institute for Research and Development in Environmental Protection" ;
+    schema:name "National Institute for Research and Development in Environmental Protection" ;
+    schema:foundingDate "2009"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00hdnr317> ;
+        rdfs:label "Danube Delta National Institute for Research and Development" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04bb70w76> ;
+        rdfs:label "Institutul Naţional de Cercetare Dezvoltare Marină Grigore Antipa" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(26.10626 44.43225)"^^geo:wktLiteral ;
+        schema:addressLocality "Bucharest" ;
+    ] ;
+    schema:url <http://www.incdpm.ro/production/en/> ;
+    schema:sameAs <http://isni.org/isni/0000000404009301> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q18540952> ;
+             .

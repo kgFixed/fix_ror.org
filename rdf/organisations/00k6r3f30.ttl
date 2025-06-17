@@ -1,0 +1,52 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00k6r3f30> 
+    a org:Organization ;
+    rdfs:label "Centro Hospitalar de Lisboa Central" ;
+    schema:name "Centro Hospitalar de Lisboa Central" ;
+    schema:foundingDate "2007"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0353kya20> ;
+        rdfs:label "Hospital Curry Cabral" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04abkkn33> ;
+        rdfs:label "Hospital Santo António dos Capuchos" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01jhsfg10> ;
+        rdfs:label "Hospital de Dona Estefânia" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05cvd2j85> ;
+        rdfs:label "Hospital de Santa Marta" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00zc7y345> ;
+        rdfs:label "Hospital de São José" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-9.13333 38.71667)"^^geo:wktLiteral ;
+        schema:addressLocality "Lisbon" ;
+    ] ;
+    schema:url <http://www.chlc.min-saude.pt/homepage.aspx?menuid=1> ;
+    schema:sameAs <http://isni.org/isni/0000000406253076> ;
+             .

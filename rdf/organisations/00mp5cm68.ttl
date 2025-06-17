@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00mp5cm68> 
+    a org:Organization ;
+    rdfs:label "Arrowe Park Hospital" ;
+    schema:name "Arrowe Park Hospital" ;
+    schema:foundingDate "1982"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Arrowe_Park_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05cv4zg26> ;
+        rdfs:label "Wirral University Teaching Hospital NHS Foundation Trust" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-3.01479 53.39337)"^^geo:wktLiteral ;
+        schema:addressLocality "Birkenhead" ;
+    ] ;
+    schema:url <https://www.wuth.nhs.uk/our-locations/arrowe-park-hospital/> ;
+    schema:sameAs <http://isni.org/isni/0000000406417667> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q14956828> ;
+             .

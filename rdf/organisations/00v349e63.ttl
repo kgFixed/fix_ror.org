@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00v349e63> 
+    a org:Organization ;
+    rdfs:label "Hungarian Scientific Research Fund" ;
+    schema:name "Hungarian Scientific Research Fund" ;
+    schema:foundingDate "1986"^^xsd:gYear ;
+    org:status "inactive" ;
+    org:classification "Other" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/03g2am276> ;
+        rdfs:label "National Research, Development and Innovation Office" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(19.04045 47.49835)"^^geo:wktLiteral ;
+        schema:addressLocality "Budapest" ;
+    ] ;
+    schema:url <http://www.otka.hu/en> ;
+    schema:sameAs <http://isni.org/isni/0000000093558441> ;
+             .

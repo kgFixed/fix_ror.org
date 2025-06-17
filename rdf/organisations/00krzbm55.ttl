@@ -1,0 +1,45 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00krzbm55> 
+    a org:Organization ;
+    rdfs:label "Luquillo Long Term Ecological Research" ;
+    schema:name "Luquillo Long Term Ecological Research" ;
+    schema:foundingDate "1988"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/039kwqk96> ;
+        rdfs:label "Long Term Ecological Research Network" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0453v4r20> ;
+        rdfs:label "University of Puerto Rico at Río Piedras" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/042re3x97> ;
+        rdfs:label "International Institute of Tropical Forestry" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0330j0z60> ;
+        rdfs:label "Environmental Data Initiative" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-66.10572 18.46633)"^^geo:wktLiteral ;
+        schema:addressLocality "San Juan" ;
+    ] ;
+    schema:url <https://luquillo.lter.network> ;
+     .

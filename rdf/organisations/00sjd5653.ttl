@@ -1,0 +1,26 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00sjd5653> 
+    a org:Organization ;
+    rdfs:label "Ibaraki University" ;
+    schema:name "Ibaraki University" ;
+    schema:foundingDate "1949"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Ibaraki_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(135.56828 34.81641)"^^geo:wktLiteral ;
+        schema:addressLocality "Ibaraki" ;
+    ] ;
+    schema:url <https://www.ibaraki.ac.jp/> ;
+    schema:sameAs <http://isni.org/isni/0000000099490476> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1209685> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q11617302> ;
+             .

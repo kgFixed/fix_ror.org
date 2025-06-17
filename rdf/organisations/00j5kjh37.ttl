@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00j5kjh37> 
+    a org:Organization ;
+    rdfs:label "Cor Jesu College" ;
+    schema:name "Cor Jesu College" ;
+    schema:foundingDate "1959"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(125.35722 6.74972)"^^geo:wktLiteral ;
+        schema:addressLocality "Digos" ;
+    ] ;
+    schema:url <http://www.cjc.edu.ph> ;
+    schema:sameAs <http://isni.org/isni/0000000406395568> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5169375> ;
+             .

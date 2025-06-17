@@ -1,0 +1,20 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00vhe9s39> 
+    a org:Organization ;
+    rdfs:label "American Association of Chairs of Departments of Psychiatry" ;
+    schema:name "American Association of Chairs of Departments of Psychiatry" ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-96.80667 32.78306)"^^geo:wktLiteral ;
+        schema:addressLocality "Dallas" ;
+    ] ;
+    schema:url <http://www.aacdp.org/> ;
+     .

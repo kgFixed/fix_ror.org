@@ -1,0 +1,56 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00rbe2516> 
+    a org:Organization ;
+    rdfs:label "Millennium Institute for Subatomic Physics at High-Energy Frontier, Saphir" ;
+    schema:name "Millennium Institute for Subatomic Physics at High-Energy Frontier, Saphir" ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05510vn56> ;
+        rdfs:label "Federico Santa María Technical University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01qq57711> ;
+        rdfs:label "Universidad Andrés Bello" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04teye511> ;
+        rdfs:label "Pontificia Universidad Católica de Chile" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04xe01d27> ;
+        rdfs:label "University of Tarapacá" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01ht74751> ;
+        rdfs:label "University of La Serena" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01c080z51> ;
+        rdfs:label "Millennium Science Initiative" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-70.64827 -33.45694)"^^geo:wktLiteral ;
+        schema:addressLocality "Santiago" ;
+    ] ;
+    schema:url <https://www.institutosaphir.cl> ;
+     .

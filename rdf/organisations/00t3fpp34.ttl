@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00t3fpp34> 
+    a org:Organization ;
+    rdfs:label "Laboratoire d'Informatique, de Modélisation et d'Optimisation des Systèmes" ;
+    schema:name "Laboratoire d'Informatique, de Modélisation et d'Optimisation des Systèmes" ;
+    schema:foundingDate "2002"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04z22qz54> ;
+        rdfs:label "Institut des Sciences de l'Information et de leurs Interactions" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05a1dws80> ;
+        rdfs:label "Mines Saint-Étienne" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02n5evf44> ;
+        rdfs:label "Sigma Clermont" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01a8ajp46> ;
+        rdfs:label "Université Clermont Auvergne" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(3.11078 45.75082)"^^geo:wktLiteral ;
+        schema:addressLocality "Aubière" ;
+    ] ;
+    schema:url <https://limos.fr/> ;
+    schema:sameAs <http://isni.org/isni/0000000099714898> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q51783797> ;
+             .

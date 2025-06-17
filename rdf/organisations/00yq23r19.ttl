@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00yq23r19> 
+    a org:Organization ;
+    rdfs:label "International Union for Conservation of Nature (United Kingdom)" ;
+    schema:name "International Union for Conservation of Nature (United Kingdom)" ;
+    schema:foundingDate "1948"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/International_Union_for_Conservation_of_Nature> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04tehfn33> ;
+        rdfs:label "International Union for Conservation of Nature" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(0.11667 52.2)"^^geo:wktLiteral ;
+        schema:addressLocality "Cambridge" ;
+    ] ;
+    schema:url <https://iucn.org/about/union/secretariat/offices/europe/resources/country_focus/united_kingdom/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30296226> ;
+             .

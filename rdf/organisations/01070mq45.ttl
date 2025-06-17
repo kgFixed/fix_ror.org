@@ -1,0 +1,85 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01070mq45> 
+    a org:Organization ;
+    rdfs:label "Wayne State University" ;
+    schema:name "Wayne State University" ;
+    schema:foundingDate "1868"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Wayne_State_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00q1brk57> ;
+        rdfs:label "Michigan Center for Urban African American Aging Research" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0207smp78> ;
+        rdfs:label "Ascension Providence Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05x5g2972> ;
+        rdfs:label "Crittenton Hospital Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05gehxw18> ;
+        rdfs:label "Detroit Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00sxe0e68> ;
+        rdfs:label "Harper University Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02kwnkm68> ;
+        rdfs:label "Henry Ford Health System" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0057s8s52> ;
+        rdfs:label "John D. Dingell VA Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00ee40h97> ;
+        rdfs:label "The Barbara Ann Karmanos Cancer Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/003dkgb76> ;
+        rdfs:label "Kresge Eye Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04sac7215> ;
+        rdfs:label "St. John Hospital & Medical Center" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-83.04575 42.33143)"^^geo:wktLiteral ;
+        schema:addressLocality "Detroit" ;
+    ] ;
+    schema:url <https://wayne.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000114567807> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q349055> ;
+             .

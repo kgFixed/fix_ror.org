@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00xj3b267> 
+    a org:Organization ;
+    rdfs:label "GKN (Japan)" ;
+    schema:name "GKN (Japan)" ;
+    schema:foundingDate "1759"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/GKN> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04609ps55> ;
+        rdfs:label "GKN (United Kingdom)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(139.73333 36.38333)"^^geo:wktLiteral ;
+        schema:addressLocality "Tochigi" ;
+    ] ;
+    schema:url <https://www.gkn.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000417897299> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q28971034> ;
+             .

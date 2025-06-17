@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00z160c41> 
+    a org:Organization ;
+    rdfs:label "National Institute of Textile Engineering and Research" ;
+    schema:name "National Institute of Textile Engineering and Research" ;
+    schema:foundingDate "1979"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/National_Institute_of_Textile_Engineering_and_Research> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05wv2vq37> ;
+        rdfs:label "University of Dhaka" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(90.25002 23.84858)"^^geo:wktLiteral ;
+        schema:addressLocality "Savar Upazila" ;
+    ] ;
+    schema:url <https://niter.edu.bd> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q16895693> ;
+             .

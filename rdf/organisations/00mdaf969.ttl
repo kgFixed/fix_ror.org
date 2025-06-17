@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00mdaf969> 
+    a org:Organization ;
+    rdfs:label "Space Delta 4" ;
+    schema:name "Space Delta 4" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Mission_Delta_4> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/013yc5d80> ;
+        rdfs:label "Space Operations Command" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-104.75507 39.7056)"^^geo:wktLiteral ;
+        schema:addressLocality "Buckley AFB" ;
+    ] ;
+    schema:url <https://www.spaceforce.mil/About-Us/Fact-Sheets/Fact-Sheet-Display/Article/3687813/space-delta-4/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q97671430> ;
+             .

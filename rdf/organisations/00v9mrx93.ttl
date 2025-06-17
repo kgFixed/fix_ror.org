@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00v9mrx93> 
+    a org:Organization ;
+    rdfs:label "Energy and Utility Skills" ;
+    schema:name "Energy and Utility Skills" ;
+    schema:foundingDate "2004"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Energy_and_Utility_Skills> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.81952 52.41074)"^^geo:wktLiteral ;
+        schema:addressLocality "Shirley" ;
+    ] ;
+    schema:url <https://www.euskills.co.uk/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q5377020> ;
+             .

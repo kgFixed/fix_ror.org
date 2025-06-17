@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00tprjh98> 
+    a org:Organization ;
+    rdfs:label "Scheer Memorial Adventist Hospital" ;
+    schema:name "Scheer Memorial Adventist Hospital" ;
+    schema:foundingDate "1950"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Scheer_Memorial_Adventist_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(85.52192 27.63245)"^^geo:wktLiteral ;
+        schema:addressLocality "Banepa" ;
+    ] ;
+    schema:url <https://www.scheermemhosp.org/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q7431075> ;
+             .

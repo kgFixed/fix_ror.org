@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00p8msr48> 
+    a org:Organization ;
+    rdfs:label "St. Augustine University of Tanzania" ;
+    schema:name "St. Augustine University of Tanzania" ;
+    schema:foundingDate "2002"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/St._Augustine_University_of_Tanzania> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(32.9 -2.51667)"^^geo:wktLiteral ;
+        schema:addressLocality "Mwanza" ;
+    ] ;
+    schema:url <http://www.saut.ac.tz/> ;
+    schema:sameAs <http://isni.org/isni/0000000100427862> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1765076> ;
+             .

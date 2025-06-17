@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00h4tvg43> 
+    a org:Organization ;
+    rdfs:label "Systems Engineering and Assessment (United Kingdom)" ;
+    schema:name "Systems Engineering and Assessment (United Kingdom)" ;
+    schema:foundingDate "1988"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-2.32211 51.22834)"^^geo:wktLiteral ;
+        schema:addressLocality "Frome" ;
+    ] ;
+    schema:url <https://www.sea.co.uk/> ;
+    schema:sameAs <http://isni.org/isni/000000040637023X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30295473> ;
+             .

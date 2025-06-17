@@ -1,0 +1,26 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00ydnew86> 
+    a org:Organization ;
+    rdfs:label "SKA Telescope, Australia" ;
+    schema:name "SKA Telescope, Australia" ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01pwgd096> ;
+        rdfs:label "SKA Observatory" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(114.61459 -28.77897)"^^geo:wktLiteral ;
+        schema:addressLocality "Geraldton" ;
+    ] ;
+    schema:url <https://www.skatelescope.org/australia/> ;
+     .

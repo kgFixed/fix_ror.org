@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00k4dpj65> 
+    a org:Organization ;
+    rdfs:label "Privolshky Les Nature Reserve" ;
+    schema:name "Privolshky Les Nature Reserve" ;
+    schema:foundingDate "1989"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Privolshky_Les_Nature_Reserve> ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/052w5r042> ;
+        rdfs:label "Ministry of Natural Resources and Environment" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(45.00464 53.20066)"^^geo:wktLiteral ;
+        schema:addressLocality "Penza" ;
+    ] ;
+    schema:url <http://zpls.ru/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q4377886> ;
+             .

@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00vtxwn66> 
+    a org:Organization ;
+    rdfs:label "Maryland State Department of Education" ;
+    schema:name "Maryland State Department of Education" ;
+    schema:foundingDate "1826"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Maryland_State_Department_of_Education> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-76.61219 39.29038)"^^geo:wktLiteral ;
+        schema:addressLocality "Baltimore" ;
+    ] ;
+    schema:url <http://www.marylandpublicschools.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000121167203> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6781499> ;
+             .

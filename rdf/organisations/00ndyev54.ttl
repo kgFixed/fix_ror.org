@@ -1,0 +1,78 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00ndyev54> 
+    a org:Organization ;
+    rdfs:label "NOAA National Centers for Environmental Prediction" ;
+    schema:name "NOAA National Centers for Environmental Prediction" ;
+    schema:foundingDate "1994"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/National_Centers_for_Environmental_Prediction> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/006ha1k08> ;
+        rdfs:label "NOAA Aviation Weather Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04p3r3e35> ;
+        rdfs:label "NOAA Tropical Analysis and Forecast Branch" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0454wth52> ;
+        rdfs:label "NOAA Storm Prediction Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00ejqxs53> ;
+        rdfs:label "NOAA Ocean Prediction Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/040933v44> ;
+        rdfs:label "NOAA Environmental Modeling Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00kct2d35> ;
+        rdfs:label "NOAA Climate Prediction Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00f7rb209> ;
+        rdfs:label "NOAA Weather Prediction Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01j6j9107> ;
+        rdfs:label "NOAA Space Weather Prediction Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00tgqzw13> ;
+        rdfs:label "NOAA National Weather Service" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-76.93692 38.98067)"^^geo:wktLiteral ;
+        schema:addressLocality "College Park" ;
+    ] ;
+    schema:url <http://www.ncep.noaa.gov/> ;
+    schema:sameAs <http://isni.org/isni/0000000404329305> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1966999> ;
+             .

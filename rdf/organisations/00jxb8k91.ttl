@@ -1,0 +1,34 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00jxb8k91> 
+    a org:Organization ;
+    rdfs:label "Agricultural Plant Physiology and Ecology Research Institute" ;
+    schema:name "Agricultural Plant Physiology and Ecology Research Institute" ;
+    schema:foundingDate "1987"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03cqe8w59> ;
+        rdfs:label "Consejo Nacional de Investigaciones Científicas y Técnicas" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0081fs513> ;
+        rdfs:label "University of Buenos Aires" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-58.37723 -34.61315)"^^geo:wktLiteral ;
+        schema:addressLocality "Buenos Aires" ;
+    ] ;
+    schema:url <http://www.ifeva.edu.ar/engver.html> ;
+    schema:sameAs <http://isni.org/isni/0000000404273428> ;
+             .

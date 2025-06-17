@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00nqjr204> 
+    a org:Organization ;
+    rdfs:label "Ministry of Science, Technology and Research" ;
+    schema:name "Ministry of Science, Technology and Research" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Ministry_of_Technology_%28Sri_Lanka%29> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(79.84868 6.93548)"^^geo:wktLiteral ;
+        schema:addressLocality "Colombo" ;
+    ] ;
+    schema:url <https://www.mostr.gov.lk> ;
+    schema:sameAs <http://isni.org/isni/0000000403739230> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4294474> ;
+             .

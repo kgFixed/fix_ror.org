@@ -1,0 +1,26 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00mrcjr06> 
+    a org:Organization ;
+    rdfs:label "St. Luke's Hospital" ;
+    schema:name "St. Luke's Hospital" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/055xrn550> ;
+        rdfs:label "Wheaton Franciscan Healthcare" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-87.78285 42.72613)"^^geo:wktLiteral ;
+        schema:addressLocality "Racine" ;
+    ] ;
+    schema:url <http://www.mywheaton.org/all-saints/about/our-history/> ;
+     .

@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00zc2d847> 
+    a org:Organization ;
+    rdfs:label "Black Sea Biosphere Reserve" ;
+    schema:name "Black Sea Biosphere Reserve" ;
+    schema:foundingDate "1984"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Black_Sea_Biosphere_Reserve> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(32.61458 46.63695)"^^geo:wktLiteral ;
+        schema:addressLocality "Kherson" ;
+    ] ;
+    schema:url <http://bsbr.org.ua/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q864774> ;
+             .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00j9yrx90> 
+    a org:Organization ;
+    rdfs:label "South Moravian Region" ;
+    schema:name "South Moravian Region" ;
+    schema:foundingDate "2000"^^xsd:gYear ;
+    schema:sameAs <https://cs.wikipedia.org/wiki/Jihomoravsk%C3%BD_kraj> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(16.60796 49.19522)"^^geo:wktLiteral ;
+        schema:addressLocality "Brno" ;
+    ] ;
+    schema:url <https://www.jmk.cz> ;
+    schema:sameAs <http://isni.org/isni/0000000121091616> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q960992> ;
+             .

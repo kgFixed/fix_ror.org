@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00vj8w868> 
+    a org:Organization ;
+    rdfs:label "Marygrove College" ;
+    schema:name "Marygrove College" ;
+    schema:foundingDate "1905"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Marygrove_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-83.04575 42.33143)"^^geo:wktLiteral ;
+        schema:addressLocality "Detroit" ;
+    ] ;
+    schema:url <https://www.marygrove.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000094765768> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6781189> ;
+             .

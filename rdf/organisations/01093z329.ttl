@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01093z329> 
+    a org:Organization ;
+    rdfs:label "SAS Institute (United States)" ;
+    schema:name "SAS Institute (United States)" ;
+    schema:foundingDate "1976"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/SAS_Institute> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02rkjsq72> ;
+        rdfs:label "SAS Institute (Ireland)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04bwvvd57> ;
+        rdfs:label "SAS Institute (Norway)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/054446c79> ;
+        rdfs:label "SAS Institute (United Kingdom)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-78.78112 35.79154)"^^geo:wktLiteral ;
+        schema:addressLocality "Cary" ;
+    ] ;
+    schema:url <https://www.sas.com/en_us/home.html> ;
+    schema:sameAs <http://isni.org/isni/0000000403864111> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1473820> ;
+             .

@@ -1,0 +1,73 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00qp5gr06> 
+    a org:Organization ;
+    rdfs:label "Sandvik (Sweden)" ;
+    schema:name "Sandvik (Sweden)" ;
+    schema:foundingDate "1862"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Sandvik> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00386qk52> ;
+        rdfs:label "Sandvik (Austria)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/048htbx03> ;
+        rdfs:label "Sandvik (Finland)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03gsjv132> ;
+        rdfs:label "Sandvik (Germany)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03tw2c072> ;
+        rdfs:label "Sandvik (Norway)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04bg5zd67> ;
+        rdfs:label "Sandvik (South Africa)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00z290809> ;
+        rdfs:label "Sandvik (Switzerland)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02tts0b67> ;
+        rdfs:label "Sandvik (United Kingdom)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00gnfkx95> ;
+        rdfs:label "Sandvik (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(18.06871 59.32938)"^^geo:wktLiteral ;
+        schema:addressLocality "Stockholm" ;
+    ] ;
+    schema:url <https://www.home.sandvik/en/> ;
+    schema:sameAs <http://isni.org/isni/0000000403948964> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1753718> ;
+             .

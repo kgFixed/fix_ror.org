@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00sx29x36> 
+    a org:Organization ;
+    rdfs:label "Alberta Children's Hospital" ;
+    schema:name "Alberta Children's Hospital" ;
+    schema:foundingDate "1922"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Alberta_Children's_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03yjb2x39> ;
+        rdfs:label "University of Calgary" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00gmyvv50> ;
+        rdfs:label "Alberta Children's Hospital Research Institute" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-114.08529 51.05011)"^^geo:wktLiteral ;
+        schema:addressLocality "Calgary" ;
+    ] ;
+    schema:url <http://www.albertahealthservices.ca/facilities/ach/> ;
+    schema:sameAs <http://isni.org/isni/0000000106847358> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2831698> ;
+             .

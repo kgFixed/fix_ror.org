@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00rz19f75> 
+    a org:Organization ;
+    rdfs:label "Sakura no Seibo Junior College" ;
+    schema:name "Sakura no Seibo Junior College" ;
+    schema:foundingDate "1955"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Sakura_no_Seibo_Junior_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(140.46667 37.75)"^^geo:wktLiteral ;
+        schema:addressLocality "Fukushima" ;
+    ] ;
+    schema:url <https://www.sakuranoseibo.jp/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q7403184> ;
+             .

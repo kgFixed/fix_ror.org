@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00k5m1279> 
+    a org:Organization ;
+    rdfs:label "West Virginia University at Parkersburg" ;
+    schema:name "West Virginia University at Parkersburg" ;
+    schema:foundingDate "1961"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/West_Virginia_University_at_Parkersburg> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-81.56151 39.26674)"^^geo:wktLiteral ;
+        schema:addressLocality "Parkersburg" ;
+    ] ;
+    schema:url <http://www.wvup.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000405863083> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q16983276> ;
+             .

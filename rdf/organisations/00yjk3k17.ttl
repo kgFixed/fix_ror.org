@@ -1,0 +1,26 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00yjk3k17> 
+    a org:Organization ;
+    rdfs:label "Ministry of Transport, Communications and Works" ;
+    schema:name "Ministry of Transport, Communications and Works" ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0376fv627> ;
+        rdfs:label "Department of Public Works" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(33.3642 35.17531)"^^geo:wktLiteral ;
+        schema:addressLocality "Nicosia" ;
+    ] ;
+    schema:url <http://www.mcw.gov.cy/mcw/mcw.nsf/index_en/index_en?OpenDocument> ;
+     .

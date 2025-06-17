@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00hqdve77> 
+    a org:Organization ;
+    rdfs:label "Morgan Advanced Materials (United Kingdom)" ;
+    schema:name "Morgan Advanced Materials (United Kingdom)" ;
+    schema:foundingDate "1856"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Morgan_Advanced_Materials> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/016sgt720> ;
+        rdfs:label "Morgan Advanced Materials (Germany)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.6 51.48333)"^^geo:wktLiteral ;
+        schema:addressLocality "Windsor" ;
+    ] ;
+    schema:url <http://www.morganadvancedmaterials.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000405191272> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1947611> ;
+             .

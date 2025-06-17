@@ -1,0 +1,48 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00sj73q02> 
+    a org:Organization ;
+    rdfs:label "CoorsTek (United States)" ;
+    schema:name "CoorsTek (United States)" ;
+    schema:foundingDate "1910"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/CoorsTek> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01vtcxa47> ;
+        rdfs:label "CoorsTek (Czechia)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0414r2h69> ;
+        rdfs:label "CoorsTek (Japan)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0030apy05> ;
+        rdfs:label "CoorsTek (Norway)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04c4y1k56> ;
+        rdfs:label "CoorsTek (United Kingdom)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-105.2211 39.75554)"^^geo:wktLiteral ;
+        schema:addressLocality "Golden" ;
+    ] ;
+    schema:url <https://www.coorstek.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000460048807> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5168054> ;
+             .

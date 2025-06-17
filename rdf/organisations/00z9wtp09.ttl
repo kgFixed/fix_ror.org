@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00z9wtp09> 
+    a org:Organization ;
+    rdfs:label "Aichi Shukutoku University" ;
+    schema:name "Aichi Shukutoku University" ;
+    schema:foundingDate "1905"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Aichi_Shukutoku_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(137.16667 34.95)"^^geo:wktLiteral ;
+        schema:addressLocality "Okazaki" ;
+    ] ;
+    schema:url <http://www.aasa.ac.jp> ;
+    schema:sameAs <http://isni.org/isni/0000000088115339> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4696594> ;
+             .

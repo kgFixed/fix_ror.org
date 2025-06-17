@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00qc9m834> 
+    a org:Organization ;
+    rdfs:label "American College of Allergy, Asthma and Immunology" ;
+    schema:name "American College of Allergy, Asthma and Immunology" ;
+    schema:foundingDate "1942"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/American_College_of_Allergy,_Asthma_and_Immunology> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-87.98063 42.08836)"^^geo:wktLiteral ;
+        schema:addressLocality "Arlington Heights" ;
+    ] ;
+    schema:url <http://acaai.org/> ;
+    schema:sameAs <http://isni.org/isni/000000011018098X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q15994882> ;
+             .

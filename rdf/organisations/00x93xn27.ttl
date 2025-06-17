@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00x93xn27> 
+    a org:Organization ;
+    rdfs:label "Falklands Conservation" ;
+    schema:name "Falklands Conservation" ;
+    schema:foundingDate "1979"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Falklands_Conservation> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.28925 52.12927)"^^geo:wktLiteral ;
+        schema:addressLocality "Sandy" ;
+    ] ;
+    schema:url <https://www.falklandsconservation.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q5431976> ;
+             .

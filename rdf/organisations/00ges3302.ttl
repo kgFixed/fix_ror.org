@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00ges3302> 
+    a org:Organization ;
+    rdfs:label "Western Reserve Hospital" ;
+    schema:name "Western Reserve Hospital" ;
+    schema:foundingDate "1943"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Western_Reserve_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-81.48456 41.13394)"^^geo:wktLiteral ;
+        schema:addressLocality "Cuyahoga Falls" ;
+    ] ;
+    schema:url <http://www.westernreservehospital.org/about-us.aspx> ;
+    schema:sameAs <http://isni.org/isni/0000000446861367> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q19866577> ;
+             .

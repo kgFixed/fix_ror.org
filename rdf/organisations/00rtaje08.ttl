@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00rtaje08> 
+    a org:Organization ;
+    rdfs:label "Raffles University" ;
+    schema:name "Raffles University" ;
+    schema:foundingDate "2011"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Raffles_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(76.40388 28.04932)"^^geo:wktLiteral ;
+        schema:addressLocality "Neemrana" ;
+    ] ;
+    schema:url <https://rafflesuniversity.edu.in> ;
+    schema:sameAs <http://isni.org/isni/0000000449118579> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q22080943> ;
+             .

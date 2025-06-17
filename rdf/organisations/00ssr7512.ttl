@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00ssr7512> 
+    a org:Organization ;
+    rdfs:label "Shikoku Central Medical Welfare Institute" ;
+    schema:name "Shikoku Central Medical Welfare Institute" ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(138.91667 35.11667)"^^geo:wktLiteral ;
+        schema:addressLocality "Mishima" ;
+    ] ;
+    schema:url <http://www.rwf.ac.jp/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q11419694> ;
+             .

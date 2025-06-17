@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00mke2t69> 
+    a org:Organization ;
+    rdfs:label "Zimmer Biomet (United Kingdom)" ;
+    schema:name "Zimmer Biomet (United Kingdom)" ;
+    schema:foundingDate "1927"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Zimmer_Biomet> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02bn55144> ;
+        rdfs:label "Zimmer Biomet (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-3.57722 51.50583)"^^geo:wktLiteral ;
+        schema:addressLocality "Bridgend" ;
+    ] ;
+    schema:url <http://www.zimmerbiomet.co.uk/> ;
+    schema:sameAs <http://isni.org/isni/000000040540061X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q29123112> ;
+             .

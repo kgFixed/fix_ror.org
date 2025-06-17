@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00sjx7d61> 
+    a org:Organization ;
+    rdfs:label "Vencore (United States)" ;
+    schema:name "Vencore (United States)" ;
+    schema:foundingDate "1972"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Vencore> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.4311 38.89428)"^^geo:wktLiteral ;
+        schema:addressLocality "Chantilly" ;
+    ] ;
+    schema:url <http://www.vencore.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000446752451> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q17126084> ;
+             .

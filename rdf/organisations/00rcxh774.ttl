@@ -1,0 +1,67 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00rcxh774> 
+    a org:Organization ;
+    rdfs:label "University of Cologne" ;
+    schema:name "University of Cologne" ;
+    schema:foundingDate "1388"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/University_of_Cologne> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05pb4em20> ;
+        rdfs:label "Bonn-Cologne Graduate School of Physics and Astronomy" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/034waa237> ;
+        rdfs:label "Cluster of Excellence on Plant Sciences" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/015wtqn87> ;
+        rdfs:label "CRC183 - Entangled States of Matter" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04vg4mg18> ;
+        rdfs:label "Heinrich-Barth-Institut" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04c4bwh63> ;
+        rdfs:label "Cologne Excellence Cluster on Cellular Stress Responses in Aging Associated Diseases" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03jtvc520> ;
+        rdfs:label "Institute of Energy Economics at the University of Cologne" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05mxhda18> ;
+        rdfs:label "University Hospital Cologne" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(6.95 50.93333)"^^geo:wktLiteral ;
+        schema:addressLocality "Cologne" ;
+    ] ;
+    schema:url <http://www.portal.uni-koeln.de/> ;
+    schema:sameAs <http://isni.org/isni/0000000085803777> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q54096> ;
+             .

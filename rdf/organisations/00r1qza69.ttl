@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00r1qza69> 
+    a org:Organization ;
+    rdfs:label "Reedley College" ;
+    schema:name "Reedley College" ;
+    schema:foundingDate "1926"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Reedley_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-119.4504 36.59634)"^^geo:wktLiteral ;
+        schema:addressLocality "Reedley" ;
+    ] ;
+    schema:url <http://www.reedleycollege.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000404021415> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7306738> ;
+             .

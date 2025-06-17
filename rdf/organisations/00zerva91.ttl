@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00zerva91> 
+    a org:Organization ;
+    rdfs:label "St. Patrick Hospital" ;
+    schema:name "St. Patrick Hospital" ;
+    schema:foundingDate "1873"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/St._Patrick_Hospital_and_Health_Sciences_Center> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03dj8sp02> ;
+        rdfs:label "Providence Montana Health Foundation" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-113.994 46.87215)"^^geo:wktLiteral ;
+        schema:addressLocality "Missoula" ;
+    ] ;
+    schema:url <http://montana.providence.org/hospitals/st-patrick/> ;
+    schema:sameAs <http://isni.org/isni/0000000087525889> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q14704774> ;
+             .
