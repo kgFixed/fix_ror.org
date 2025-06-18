@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/056ct0w58> 
+    a org:Organization ;
+    rdfs:label "George Moore Community Clinic" ;
+    schema:name "George Moore Community Clinic" ;
+    schema:foundingDate "1928"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04mw34986> ;
+        rdfs:label "Gloucestershire Hospitals NHS Foundation Trust" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-2.07972 51.90006)"^^geo:wktLiteral ;
+        schema:addressLocality "Cheltenham" ;
+    ] ;
+    schema:url <https://www.ghc.nhs.uk/locations/georgemoore/> ;
+    schema:sameAs <http://isni.org/isni/0000000417572785> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q26625736> ;
+             .

@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05a637472> 
+    a org:Organization ;
+    rdfs:label "CURE Children’s Hospital of Uganda" ;
+    schema:name "CURE Children’s Hospital of Uganda" ;
+    schema:foundingDate "2000"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/CURE_Children%27s_Hospital_of_Uganda> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/011vxgd24> ;
+        rdfs:label "West Virginia University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(34.17503 1.08209)"^^geo:wktLiteral ;
+        schema:addressLocality "Mbale" ;
+    ] ;
+    schema:url <https://cure.org/uganda/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q5014715> ;
+             .

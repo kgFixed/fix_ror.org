@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05d53xd56> 
+    a org:Organization ;
+    rdfs:label "Rata Foundation" ;
+    schema:name "Rata Foundation" ;
+    schema:foundingDate "1980"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Other" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(172.63333 -43.53333)"^^geo:wktLiteral ;
+        schema:addressLocality "Christchurch" ;
+    ] ;
+    schema:url <http://www.ratafoundation.org.nz/> ;
+    schema:sameAs <http://isni.org/isni/0000000458996402> ;
+             .

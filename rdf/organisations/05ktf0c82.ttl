@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05ktf0c82> 
+    a org:Organization ;
+    rdfs:label "Sheikh Hasina University" ;
+    schema:name "Sheikh Hasina University" ;
+    schema:foundingDate "2018"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Sheikh_Hasina_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(90.72898 24.88352)"^^geo:wktLiteral ;
+        schema:addressLocality "Netrakona" ;
+    ] ;
+    schema:url <https://www.shu.edu.bd> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q29015031> ;
+             .

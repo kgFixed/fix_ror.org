@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/057k8nt63> 
+    a org:Organization ;
+    rdfs:label "Vanuatu Cultural Centre" ;
+    schema:name "Vanuatu Cultural Centre" ;
+    schema:foundingDate "1955"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Vanuatu_Cultural_Centre> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(168.31366 -17.73648)"^^geo:wktLiteral ;
+        schema:addressLocality "Port Vila" ;
+    ] ;
+    schema:url <https://vanuatuculturalcentre.gov.vu/> ;
+    schema:sameAs <http://isni.org/isni/0000000096211945> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1835725> ;
+             .

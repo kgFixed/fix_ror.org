@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/059sbje92> 
+    a org:Organization ;
+    rdfs:label "Ayush & Health Sciences University Chhattisgarh" ;
+    schema:name "Ayush & Health Sciences University Chhattisgarh" ;
+    schema:foundingDate "2009"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Pt._Deendayal_Upadhyay_Memorial_Health_Sciences_and_Ayush_University_of_Chhattisgarh> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(81.63333 21.23333)"^^geo:wktLiteral ;
+        schema:addressLocality "Raipur" ;
+    ] ;
+    schema:url <http://www.cghealthuniv.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q16773301> ;
+             .

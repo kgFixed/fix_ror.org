@@ -1,0 +1,57 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05d1e6v30> 
+    a org:Organization ;
+    rdfs:label "Institut des Biomolécules Max Mousseron" ;
+    schema:name "Institut des Biomolécules Max Mousseron" ;
+    schema:foundingDate "2006"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0275ye937> ;
+        rdfs:label "Centre Hospitalier Universitaire de Nîmes" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02cte4b68> ;
+        rdfs:label "Institut de Chimie" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00mfpxb84> ;
+        rdfs:label "Université d'Avignon et des Pays de Vaucluse" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/051escj72> ;
+        rdfs:label "Université de Montpellier" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/044t4x544> ;
+        rdfs:label "Université de Nîmes" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03sgyqj04> ;
+        rdfs:label "École Nationale Supérieure de Chimie de Montpellier" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(3.87635 43.61093)"^^geo:wktLiteral ;
+        schema:addressLocality "Montpellier" ;
+    ] ;
+    schema:url <https://ibmm.umontpellier.fr> ;
+     .

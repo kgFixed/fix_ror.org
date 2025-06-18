@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/056b4pm25> 
+    a org:Organization ;
+    rdfs:label "Hôpital Pasteur" ;
+    schema:name "Hôpital Pasteur" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05qsjq305> ;
+        rdfs:label "Centre Hospitalier Universitaire de Nice" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(7.26608 43.70313)"^^geo:wktLiteral ;
+        schema:addressLocality "Nice" ;
+    ] ;
+    schema:url <http://www.chu-nice.fr/chu-de-nice/nous-connaitre/hopitaux/pasteur-1-2> ;
+    schema:sameAs <http://isni.org/isni/0000000406394696> ;
+             .

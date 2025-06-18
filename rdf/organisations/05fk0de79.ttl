@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05fk0de79> 
+    a org:Organization ;
+    rdfs:label "Bassett Medical Center" ;
+    schema:name "Bassett Medical Center" ;
+    schema:foundingDate "1922"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Mary_Imogene_Bassett_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04qvzh720> ;
+        rdfs:label "Bassett Healthcare Network" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00hj8s172> ;
+        rdfs:label "Columbia University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-74.92426 42.70048)"^^geo:wktLiteral ;
+        schema:addressLocality "Cooperstown" ;
+    ] ;
+    schema:url <http://www.bassett.org/bassett-medical-center/> ;
+    schema:sameAs <http://isni.org/isni/0000000100884617> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q23303219> ;
+             .

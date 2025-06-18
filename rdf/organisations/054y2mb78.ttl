@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/054y2mb78> 
+    a org:Organization ;
+    rdfs:label "Ağrı İbrahim Çeçen University" ;
+    schema:name "Ağrı İbrahim Çeçen University" ;
+    schema:foundingDate "2007"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Ağrı_İbrahim_Çeçen_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(43.04015 39.71467)"^^geo:wktLiteral ;
+        schema:addressLocality "Ağrı" ;
+    ] ;
+    schema:url <https://www.agri.edu.tr> ;
+    schema:sameAs <http://isni.org/isni/0000000403992543> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3674354> ;
+             .

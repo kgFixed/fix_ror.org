@@ -1,0 +1,49 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05ggn0a85> 
+    a org:Organization ;
+    rdfs:label "University of Chemistry and Technology, Prague" ;
+    schema:name "University of Chemistry and Technology, Prague" ;
+    schema:foundingDate "1952"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/University_of_Chemistry_and_Technology,_Prague> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05me1q676> ;
+        rdfs:label "Infrastructure for Promoting Metrology in Food and Nutrition in the Czech Republic" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0286qer95> ;
+        rdfs:label "Czech National Infrastructure for Biological Data" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04xsmz457> ;
+        rdfs:label "Czech National Node to the European Infrastructure for Translational Medicine" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/023jyyg30> ;
+        rdfs:label "National Infrastructure for Chemical Biology" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(14.42076 50.08804)"^^geo:wktLiteral ;
+        schema:addressLocality "Prague" ;
+    ] ;
+    schema:url <https://www.vscht.cz> ;
+    schema:sameAs <http://isni.org/isni/0000000406356059> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1476341> ;
+             .

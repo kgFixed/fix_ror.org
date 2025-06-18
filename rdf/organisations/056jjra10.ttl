@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/056jjra10> 
+    a org:Organization ;
+    rdfs:label "Jewish General Hospital" ;
+    schema:name "Jewish General Hospital" ;
+    schema:foundingDate "1934"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Jewish_General_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01pxwe438> ;
+        rdfs:label "McGill University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-73.58781 45.50884)"^^geo:wktLiteral ;
+        schema:addressLocality "Montreal" ;
+    ] ;
+    schema:url <https://www.jgh.ca/> ;
+    schema:sameAs <http://isni.org/isni/0000000094012774> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3145341> ;
+             .

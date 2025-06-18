@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/054gk2851> 
+    a org:Organization ;
+    rdfs:label "St Thomas' Hospital" ;
+    schema:name "St Thomas' Hospital" ;
+    schema:foundingDate "1871"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/St_Thomas%27_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00j161312> ;
+        rdfs:label "Guy's and St Thomas' NHS Foundation Trust" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01n0k5m85> ;
+        rdfs:label "King's College Hospital NHS Foundation Trust" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04r33pf22> ;
+        rdfs:label "Guy's Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0220mzb33> ;
+        rdfs:label "King's College London" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.12574 51.50853)"^^geo:wktLiteral ;
+        schema:addressLocality "London" ;
+    ] ;
+    schema:url <https://www.guysandstthomas.nhs.uk/patients-and-visitors/getting-here/travel-st-thomas.aspx> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q1143779> ;
+             .

@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05kjchg44> 
+    a org:Organization ;
+    rdfs:label "Ara Parseghian Medical Research Foundation" ;
+    schema:name "Ara Parseghian Medical Research Foundation" ;
+    org:status "inactive" ;
+    org:classification "Nonprofit" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/02ps3ca75> ;
+        rdfs:label "Ara Parseghian Medical Research Fund" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-110.92648 32.22174)"^^geo:wktLiteral ;
+        schema:addressLocality "Tucson" ;
+    ] ;
+    schema:url <http://www.parseghian.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000459048498> ;
+             .

@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05kh5wx29> 
+    a org:Organization ;
+    rdfs:label "Agrifood Research Finland" ;
+    schema:name "Agrifood Research Finland" ;
+    schema:foundingDate "1898"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02hb7bm88> ;
+        rdfs:label "Natural Resources Institute Finland" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(23.48004 60.80162)"^^geo:wktLiteral ;
+        schema:addressLocality "Jokioinen" ;
+    ] ;
+    schema:url <https://portal.mtt.fi/portal/page/portal/mtt_en/mtt/about> ;
+    schema:sameAs <http://isni.org/isni/0000000112921454> ;
+             .

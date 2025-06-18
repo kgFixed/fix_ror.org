@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05maag353> 
+    a org:Organization ;
+    rdfs:label "Providence Willamette Falls Medical Center" ;
+    schema:name "Providence Willamette Falls Medical Center" ;
+    schema:foundingDate "1954"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Providence_Willamette_Falls_Medical_Center> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05a7hcs31> ;
+        rdfs:label "Providence Health & Services Oregon and Southwest Washington" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-122.60676 45.35734)"^^geo:wktLiteral ;
+        schema:addressLocality "Oregon City" ;
+    ] ;
+    schema:url <http://oregon.providence.org/location-directory/p/providence-willamette-falls-medical-center/overview/> ;
+    schema:sameAs <http://isni.org/isni/0000000403837877> ;
+             .

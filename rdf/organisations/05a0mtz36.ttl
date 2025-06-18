@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05a0mtz36> 
+    a org:Organization ;
+    rdfs:label "Renewable Energy Corporation of India" ;
+    schema:name "Renewable Energy Corporation of India" ;
+    schema:foundingDate "2011"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Solar_Energy_Corporation_of_India> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/052detg56> ;
+        rdfs:label "Ministry of New and Renewable Energy" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(77.2148 28.62137)"^^geo:wktLiteral ;
+        schema:addressLocality "New Delhi" ;
+    ] ;
+    schema:url <https://www.seci.co.in/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q24915599> ;
+             .

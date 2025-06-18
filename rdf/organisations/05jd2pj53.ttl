@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05jd2pj53> 
+    a org:Organization ;
+    rdfs:label "King Chulalongkorn Memorial Hospital" ;
+    schema:name "King Chulalongkorn Memorial Hospital" ;
+    schema:foundingDate "1914"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/King_Chulalongkorn_Memorial_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/028wp3y58> ;
+        rdfs:label "Chulalongkorn University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(100.50144 13.75398)"^^geo:wktLiteral ;
+        schema:addressLocality "Bangkok" ;
+    ] ;
+    schema:url <http://www.chulalongkornhospital.go.th/> ;
+    schema:sameAs <http://isni.org/isni/0000000097588584> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1588587> ;
+             .

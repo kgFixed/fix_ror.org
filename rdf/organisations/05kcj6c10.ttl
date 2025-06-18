@@ -1,0 +1,64 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05kcj6c10> 
+    a org:Organization ;
+    rdfs:label "VA Heartland Network" ;
+    schema:name "VA Heartland Network" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01a4gqp27> ;
+        rdfs:label "Harry S. Truman Memorial Veterans' Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/037nrh939> ;
+        rdfs:label "John J. Pershing VA Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/050mdr969> ;
+        rdfs:label "Kansas City VA Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04zkam251> ;
+        rdfs:label "Marion VA Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/052d8ge54> ;
+        rdfs:label "Robert J. Dole VA Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04qmkfe11> ;
+        rdfs:label "VA St. Louis Health Care System" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05eq41471> ;
+        rdfs:label "Veterans Health Administration" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-94.57857 39.09973)"^^geo:wktLiteral ;
+        schema:addressLocality "Kansas City" ;
+    ] ;
+    schema:url <https://www.visn15.va.gov/> ;
+    schema:sameAs <http://isni.org/isni/0000000404208319> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q33122027> ;
+             .

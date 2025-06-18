@@ -1,0 +1,39 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05hqvvq43> 
+    a org:Organization ;
+    rdfs:label "Government of Northwest Territories" ;
+    schema:name "Government of Northwest Territories" ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03b8sbf49> ;
+        rdfs:label "Industry, Tourism and Investment" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/046hez538> ;
+        rdfs:label "Northwest Territories Department of Environment and Natural Resources" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02w3bnx54> ;
+        rdfs:label "Institut de tourisme et d'hôtellerie du Québec" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-114.37248 62.45411)"^^geo:wktLiteral ;
+        schema:addressLocality "Yellowknife" ;
+    ] ;
+    schema:url <http://www.gov.nt.ca/> ;
+    schema:sameAs <http://isni.org/isni/0000000406076102> ;
+             .

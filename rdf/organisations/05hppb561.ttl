@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05hppb561> 
+    a org:Organization ;
+    rdfs:label "Finnish Meteorological Institute" ;
+    schema:name "Finnish Meteorological Institute" ;
+    schema:foundingDate "1838"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Finnish_Meteorological_Institute> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00r9rdf15> ;
+        rdfs:label "Ministry of Transport and Communications" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/010bg5245> ;
+        rdfs:label "EC-Earth Consortium" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(24.93545 60.16952)"^^geo:wktLiteral ;
+        schema:addressLocality "Helsinki" ;
+    ] ;
+    schema:url <http://en.ilmatieteenlaitos.fi/> ;
+    schema:sameAs <http://isni.org/isni/0000000122538678> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3266959> ;
+             .

@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05ked8481> 
+    a org:Organization ;
+    rdfs:label "University of South Carolina Beaufort" ;
+    schema:name "University of South Carolina Beaufort" ;
+    schema:foundingDate "1959"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/University_of_South_Carolina_Beaufort> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03rtgjq94> ;
+        rdfs:label "University of South Carolina System" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-80.66993 32.4317)"^^geo:wktLiteral ;
+        schema:addressLocality "Beaufort" ;
+    ] ;
+    schema:url <http://www.uscb.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000405778348> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7896318> ;
+             .

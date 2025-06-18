@@ -1,0 +1,217 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05bxb3784> 
+    a org:Organization ;
+    rdfs:label "Academia Sinica" ;
+    schema:name "Academia Sinica" ;
+    schema:foundingDate "1928"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Academia_Sinica> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04zkdcw61> ;
+        rdfs:label "Agricultural Biotechnology Research Center, Academia Sinica" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/040bb7493> ;
+        rdfs:label "Biodiversity Research Center, Academia Sinica" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01whq1k34> ;
+        rdfs:label "Biomedical Translation Research Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/002mmyt85> ;
+        rdfs:label "Genomics Research Center, Academia Sinica" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01hfpy566> ;
+        rdfs:label "Institute of Astronomy and Astrophysics, Academia Sinica" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03haqsp75> ;
+        rdfs:label "Institute of Atomic and Molecular Sciences, Academia Sinica" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00jt3dw39> ;
+        rdfs:label "Institute of Biological Chemistry, Academia Sinica" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00tk6s776> ;
+        rdfs:label "Institute of Biomedical Sciences, Academia Sinica" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/048evbw70> ;
+        rdfs:label "Institute of Cellular and Organismic Biology, Academia Sinica" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04xjjma71> ;
+        rdfs:label "Institute of Chemistry, Academia Sinica" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01mvkrv07> ;
+        rdfs:label "Institute of Chinese Literature and Philosophy, Academia Sinica" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03c4nqn69> ;
+        rdfs:label "Institute of Earth Sciences, Academia Sinica" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01y8gzr79> ;
+        rdfs:label "Institute of Economics, Academia Sinica" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01tvy6411> ;
+        rdfs:label "Institute of Ethnology, Academia Sinica" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0140nwe11> ;
+        rdfs:label "Institute of European and American Studies, Academia Sinica" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01bdefj47> ;
+        rdfs:label "Institute of History and Philology, Academia Sinica" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00z83z196> ;
+        rdfs:label "Institute of Information Science, Academia Sinica" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05r183591> ;
+        rdfs:label "Institute of Linguistics, Academia Sinica" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0120q3031> ;
+        rdfs:label "Institute of Mathematics, Academia Sinica" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04bq1zr90> ;
+        rdfs:label "Institute of Modern History, Academia Sinica" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/047sbcx71> ;
+        rdfs:label "Institute of Molecular Biology, Academia Sinica" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01tpvdq80> ;
+        rdfs:label "Institute of Physics, Academia Sinica" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00jj3h083> ;
+        rdfs:label "Institute of Plant and Microbial Biology, Academia Sinica" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/001agqs13> ;
+        rdfs:label "Institute of Political Science, Academia Sinica" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00nf7ms20> ;
+        rdfs:label "Institute of Sociology, Academia Sinica" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/044gv5910> ;
+        rdfs:label "Institute of Statistical Science, Academia Sinica" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02vf41z82> ;
+        rdfs:label "Institute of Taiwan History, Academia Sinica" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0565h3a31> ;
+        rdfs:label "Institutum Iurisprudentiae, Academia Sinica" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00ex2js61> ;
+        rdfs:label "Research Center for Applied Science, Academia Sinica" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/050qpg053> ;
+        rdfs:label "Research Center for Environmental Changes, Academia Sinica" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05n4swm55> ;
+        rdfs:label "Research Center for Humanities and Social Sciences, Academia Sinica" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/000zgvm20> ;
+        rdfs:label "Research Center for Information Technology Innovation, Academia Sinica" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(121.52639 25.05306)"^^geo:wktLiteral ;
+        schema:addressLocality "Taipei" ;
+    ] ;
+    schema:url <http://www.sinica.edu.tw/main_e.shtml> ;
+    schema:sameAs <http://isni.org/isni/0000000122871366> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q337266> ;
+             .

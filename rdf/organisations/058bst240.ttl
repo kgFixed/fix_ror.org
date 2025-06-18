@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/058bst240> 
+    a org:Organization ;
+    rdfs:label "Hamidia Hospital" ;
+    schema:name "Hamidia Hospital" ;
+    schema:foundingDate "1927"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Hamidia_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04npss011> ;
+        rdfs:label "Gandhi Medical College" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(77.40289 23.25469)"^^geo:wktLiteral ;
+        schema:addressLocality "Bhopal" ;
+    ] ;
+    schema:url <http://www.gmcbhopal.net/history.asp> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q17027547> ;
+             .

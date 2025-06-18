@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05fmdkk55> 
+    a org:Organization ;
+    rdfs:label "Memphis College of Art" ;
+    schema:name "Memphis College of Art" ;
+    schema:foundingDate "1936"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Memphis_College_of_Art> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-90.04898 35.14953)"^^geo:wktLiteral ;
+        schema:addressLocality "Memphis" ;
+    ] ;
+    schema:url <http://mca.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000089399302> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6815815> ;
+             .

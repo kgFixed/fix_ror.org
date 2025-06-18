@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/056rxwh87> 
+    a org:Organization ;
+    rdfs:label "General Paints (Ireland)" ;
+    schema:name "General Paints (Ireland)" ;
+    schema:foundingDate "1911"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-6.54419 53.34165)"^^geo:wktLiteral ;
+        schema:addressLocality "Celbridge" ;
+    ] ;
+    schema:url <https://www.generalpaintsgroup.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30256783> ;
+             .

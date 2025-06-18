@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05fnerq37> 
+    a org:Organization ;
+    rdfs:label "Parks and Wildlife Service" ;
+    schema:name "Parks and Wildlife Service" ;
+    schema:foundingDate "1971"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Tasmania_Parks_and_Wildlife_Service> ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(147.32941 -42.87936)"^^geo:wktLiteral ;
+        schema:addressLocality "Hobart" ;
+    ] ;
+    schema:url <http://www.parks.tas.gov.au/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q7687416> ;
+             .

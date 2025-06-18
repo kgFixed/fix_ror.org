@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05ec81r30> 
+    a org:Organization ;
+    rdfs:label "Napa State Hospital" ;
+    schema:name "Napa State Hospital" ;
+    schema:foundingDate "1875"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Napa_State_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-122.28553 38.29714)"^^geo:wktLiteral ;
+        schema:addressLocality "Napa" ;
+    ] ;
+    schema:url <http://www.dsh.ca.gov/napa/> ;
+    schema:sameAs <http://isni.org/isni/0000000404379222> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q14683459> ;
+             .

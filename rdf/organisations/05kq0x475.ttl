@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05kq0x475> 
+    a org:Organization ;
+    rdfs:label "ProSensus (Canada)" ;
+    schema:name "ProSensus (Canada)" ;
+    schema:foundingDate "2004"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-79.98716 43.21806)"^^geo:wktLiteral ;
+        schema:addressLocality "Ancaster" ;
+    ] ;
+    schema:url <http://www.prosensus.com/> ;
+     .

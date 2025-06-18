@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05jqagv40> 
+    a org:Organization ;
+    rdfs:label "L.E. Fletcher Technical Community College" ;
+    schema:name "L.E. Fletcher Technical Community College" ;
+    schema:foundingDate "1948"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/L._E._Fletcher_Technical_Community_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/052m3x230> ;
+        rdfs:label "Louisiana Community and Technical College System" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-90.81037 29.74215)"^^geo:wktLiteral ;
+        schema:addressLocality "Schriever" ;
+    ] ;
+    schema:url <https://www.fletcher.edu> ;
+    schema:sameAs <http://isni.org/isni/0000000100415722> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q55106540> ;
+             .

@@ -1,0 +1,32 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05a9avq33> 
+    a org:Organization ;
+    rdfs:label "Centre for Printing History and Culture" ;
+    schema:name "Centre for Printing History and Culture" ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00t67pt25> ;
+        rdfs:label "Birmingham City University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03angcq70> ;
+        rdfs:label "University of Birmingham" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.89983 52.48142)"^^geo:wktLiteral ;
+        schema:addressLocality "Birmingham" ;
+    ] ;
+    schema:url <https://www.cphc.org.uk/> ;
+     .

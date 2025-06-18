@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0560jvm78> 
+    a org:Organization ;
+    rdfs:label "Veer Bahadur Singh Purvanchal University" ;
+    schema:name "Veer Bahadur Singh Purvanchal University" ;
+    schema:foundingDate "1987"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Veer_Bahadur_Singh_Purvanchal_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/008aa2j83> ;
+        rdfs:label "Tilak Dhari Post Graduate College" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(82.68689 25.75356)"^^geo:wktLiteral ;
+        schema:addressLocality "Jaunpur" ;
+    ] ;
+    schema:url <http://www.vbspu.ac.in/> ;
+    schema:sameAs <http://isni.org/isni/0000000418039181> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7918099> ;
+             .

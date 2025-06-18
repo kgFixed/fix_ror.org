@@ -1,0 +1,48 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05gcat543> 
+    a org:Organization ;
+    rdfs:label "Barco (Belgium)" ;
+    schema:name "Barco (Belgium)" ;
+    schema:foundingDate "1934"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Barco_(manufacturer)> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00fb2p217> ;
+        rdfs:label "Barco (Czechia)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/017vj1d34> ;
+        rdfs:label "Barco (Netherlands)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05gawss62> ;
+        rdfs:label "Barco (Norway)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/027m81w73> ;
+        rdfs:label "Barco (United Kingdom)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(3.26487 50.82803)"^^geo:wktLiteral ;
+        schema:addressLocality "Kortrijk" ;
+    ] ;
+    schema:url <https://www.barco.com/en/> ;
+    schema:sameAs <http://isni.org/isni/0000000404221038> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q807964> ;
+             .

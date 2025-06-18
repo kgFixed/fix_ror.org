@@ -1,0 +1,83 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/054bs2v13> 
+    a org:Organization ;
+    rdfs:label "Mercy Health" ;
+    schema:name "Mercy Health" ;
+    schema:foundingDate "1986"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Mercy_Health_Partners> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04ysdg006> ;
+        rdfs:label "Anderson Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05csn7t20> ;
+        rdfs:label "Fairfield Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01h2jcs31> ;
+        rdfs:label "Jewish Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/016nh4b93> ;
+        rdfs:label "Mercy Children's Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00ngea848> ;
+        rdfs:label "Mercy Health - Lorain Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01cbjg783> ;
+        rdfs:label "Mercy St. Charles Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01t63bj13> ;
+        rdfs:label "Mercy Willard Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01jrr6c68> ;
+        rdfs:label "Springfield Regional Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02c944e82> ;
+        rdfs:label "St. Elizabeth Youngstown Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03f6gnd82> ;
+        rdfs:label "St. Rita's Medical Center" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-84.51439 39.12711)"^^geo:wktLiteral ;
+        schema:addressLocality "Cincinnati" ;
+    ] ;
+    schema:url <https://www.mercy.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q17021489> ;
+             .

@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05arjae42> 
+    a org:Organization ;
+    rdfs:label "Guilin University of Electronic Technology" ;
+    schema:name "Guilin University of Electronic Technology" ;
+    schema:foundingDate "1960"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Guilin_University_of_Electronic_Technology> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(110.29639 25.28022)"^^geo:wktLiteral ;
+        schema:addressLocality "Guilin" ;
+    ] ;
+    schema:url <http://www.gliet.edu.cn/> ;
+    schema:sameAs <http://isni.org/isni/000000010807124X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q461322> ;
+             .

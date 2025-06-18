@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05j19c061> 
+    a org:Organization ;
+    rdfs:label "Escola Nacional de Administração Pública" ;
+    schema:name "Escola Nacional de Administração Pública" ;
+    schema:foundingDate "1986"^^xsd:gYear ;
+    schema:sameAs <https://pt.wikipedia.org/wiki/Escola_Nacional_de_Administra%C3%A7%C3%A3o_P%C3%BAblica> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-47.92972 -15.77972)"^^geo:wktLiteral ;
+        schema:addressLocality "Brasília" ;
+    ] ;
+    schema:url <https://www.enap.gov.br> ;
+    schema:sameAs <http://isni.org/isni/0000000122923621> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q97378436> ;
+             .

@@ -1,0 +1,39 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05kgg0s20> 
+    a org:Organization ;
+    rdfs:label "Cancer Research UK Oxford Centre" ;
+    schema:name "Cancer Research UK Oxford Centre" ;
+    schema:foundingDate "2010"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/054225q67> ;
+        rdfs:label "Cancer Research UK" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03h2bh287> ;
+        rdfs:label "Oxford University Hospitals NHS Trust" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/052gg0110> ;
+        rdfs:label "University of Oxford" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.25596 51.75222)"^^geo:wktLiteral ;
+        schema:addressLocality "Oxford" ;
+    ] ;
+    schema:url <http://www.cancercentre.ox.ac.uk/> ;
+     .

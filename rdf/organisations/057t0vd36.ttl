@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/057t0vd36> 
+    a org:Organization ;
+    rdfs:label "Government Unani and Ayurvedic Degree College and Hospital" ;
+    schema:name "Government Unani and Ayurvedic Degree College and Hospital" ;
+    schema:foundingDate "1989"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Government_Unani_and_Ayurvedic_Degree_College_and_Hospital> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(90.40744 23.7104)"^^geo:wktLiteral ;
+        schema:addressLocality "Dhaka" ;
+    ] ;
+    schema:url <https://www.guamc.edu.bd/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q17053884> ;
+             .

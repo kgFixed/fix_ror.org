@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/056wg8a82> 
+    a org:Organization ;
+    rdfs:label "Le Bonheur Children's Hospital" ;
+    schema:name "Le Bonheur Children's Hospital" ;
+    schema:foundingDate "1952"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Le_Bonheur_Children%27s_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0011qv509> ;
+        rdfs:label "University of Tennessee Health Science Center" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-90.04898 35.14953)"^^geo:wktLiteral ;
+        schema:addressLocality "Memphis" ;
+    ] ;
+    schema:url <http://www.lebonheur.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000403836997> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6506577> ;
+             .

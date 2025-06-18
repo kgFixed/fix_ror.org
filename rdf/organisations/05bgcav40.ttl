@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05bgcav40> 
+    a org:Organization ;
+    rdfs:label "National Taichung University of Science and Technology" ;
+    schema:name "National Taichung University of Science and Technology" ;
+    schema:foundingDate "1919"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/National_Taichung_University_of_Science_and_Technology> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(120.6839 24.1469)"^^geo:wktLiteral ;
+        schema:addressLocality "Taichung" ;
+    ] ;
+    schema:url <http://www.nutc.edu.tw/bin/home.php> ;
+    schema:sameAs <http://isni.org/isni/000000010576506X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q10927162> ;
+             .

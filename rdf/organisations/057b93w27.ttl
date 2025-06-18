@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/057b93w27> 
+    a org:Organization ;
+    rdfs:label "Scientific Games (Austria)" ;
+    schema:name "Scientific Games (Austria)" ;
+    schema:foundingDate "1973"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Scientific_Games_Corporation> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03de5n431> ;
+        rdfs:label "Scientific Games (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(16.37208 48.20849)"^^geo:wktLiteral ;
+        schema:addressLocality "Vienna" ;
+    ] ;
+    schema:url <https://www.sggaming.com/> ;
+     .

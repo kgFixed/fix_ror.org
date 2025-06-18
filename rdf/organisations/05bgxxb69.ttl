@@ -1,0 +1,39 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05bgxxb69> 
+    a org:Organization ;
+    rdfs:label "CSIRO Environment" ;
+    schema:name "CSIRO Environment" ;
+    schema:foundingDate "2022"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03qn8fb07> ;
+        rdfs:label "Commonwealth Scientific and Industrial Research Organisation" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Predecessor" ;
+        org:member <https://ror.org/026nh4520> ;
+        rdfs:label "CSIRO Oceans and Atmosphere" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Predecessor" ;
+        org:member <https://ror.org/057xz1h85> ;
+        rdfs:label "CSIRO Land and Water" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(149.12807 -35.28346)"^^geo:wktLiteral ;
+        schema:addressLocality "Canberra" ;
+    ] ;
+    schema:url <https://www.csiro.au/en/about/people/business-units/environment> ;
+     .

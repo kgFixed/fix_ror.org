@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05cgahx56> 
+    a org:Organization ;
+    rdfs:label "Colombian Army Military Academy "General José María Córdova"" ;
+    schema:name "Colombian Army Military Academy "General José María Córdova"" ;
+    schema:foundingDate "1907"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Jos%C3%A9_Mar%C3%ADa_C%C3%B3rdova_Military_School> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-74.08175 4.60971)"^^geo:wktLiteral ;
+        schema:addressLocality "Bogotá" ;
+    ] ;
+    schema:url <https://www.esmic.edu.co/> ;
+    schema:sameAs <http://isni.org/isni/0000000104435931> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5838703> ;
+             .

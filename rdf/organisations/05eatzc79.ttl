@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05eatzc79> 
+    a org:Organization ;
+    rdfs:label "Blue Cross and Blue Shield of Kansas City" ;
+    schema:name "Blue Cross and Blue Shield of Kansas City" ;
+    schema:foundingDate "1938"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Blue_Cross_and_Blue_Shield_of_Kansas_City> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-94.57857 39.09973)"^^geo:wktLiteral ;
+        schema:addressLocality "Kansas City" ;
+    ] ;
+    schema:url <http://www.bluekc.com/> ;
+    schema:sameAs <http://isni.org/isni/000000040413601X> ;
+             .

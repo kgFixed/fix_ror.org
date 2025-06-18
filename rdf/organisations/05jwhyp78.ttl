@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05jwhyp78> 
+    a org:Organization ;
+    rdfs:label "Good Samaritan Hospital Medical Center" ;
+    schema:name "Good Samaritan Hospital Medical Center" ;
+    schema:foundingDate "1959"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Good_Samaritan_Hospital_Medical_Center_(West_Islip,_New_York)> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04a9tmd77> ;
+        rdfs:label "Icahn School of Medicine at Mount Sinai" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01bghzb51> ;
+        rdfs:label "New York Institute of Technology" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-73.30623 40.70621)"^^geo:wktLiteral ;
+        schema:addressLocality "West Islip" ;
+    ] ;
+    schema:url <http://goodsamaritan.chsli.org/> ;
+    schema:sameAs <http://isni.org/isni/000000040439553X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q14706292> ;
+             .

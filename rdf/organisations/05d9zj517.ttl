@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05d9zj517> 
+    a org:Organization ;
+    rdfs:label "Ormskirk District General Hospital" ;
+    schema:name "Ormskirk District General Hospital" ;
+    schema:foundingDate "1853"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Ormskirk_and_District_General_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0586bt104> ;
+        rdfs:label "Southport and Ormskirk Hospital NHS Trust" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-2.88178 53.56685)"^^geo:wktLiteral ;
+        schema:addressLocality "Ormskirk" ;
+    ] ;
+    schema:url <https://www.southportandormskirk.nhs.uk/our-hospitals/ormskirk-district-general-hospital/> ;
+    schema:sameAs <http://isni.org/isni/0000000404171421> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30292828> ;
+             .

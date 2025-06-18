@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05f560223> 
+    a org:Organization ;
+    rdfs:label "Skymark (United Kingdom)" ;
+    schema:name "Skymark (United Kingdom)" ;
+    schema:foundingDate "1987"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.30951 52.97055)"^^geo:wktLiteral ;
+        schema:addressLocality "Ilkeston" ;
+    ] ;
+    schema:url <https://www.skymark.co.uk/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30291892> ;
+             .

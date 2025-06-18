@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05aycsg86> 
+    a org:Organization ;
+    rdfs:label "Ministry of Aliyah and Immigrant Absorption" ;
+    schema:name "Ministry of Aliyah and Immigrant Absorption" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Ministry_of_Immigrant_Absorption> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(34.85992 32.33291)"^^geo:wktLiteral ;
+        schema:addressLocality "Netanya" ;
+    ] ;
+    schema:url <http://www.moia.gov.il/english/pages/default.aspx> ;
+    schema:sameAs <http://isni.org/isni/0000000119569510> ;
+             .

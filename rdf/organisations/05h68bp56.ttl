@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05h68bp56> 
+    a org:Organization ;
+    rdfs:label "Nippon Institute of Technology" ;
+    schema:name "Nippon Institute of Technology" ;
+    schema:foundingDate "1967"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Nippon_Institute_of_Technology> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(139.66034 36.01839)"^^geo:wktLiteral ;
+        schema:addressLocality "Shiraoka" ;
+    ] ;
+    schema:url <http://www.nit.ac.jp/english/> ;
+    schema:sameAs <http://isni.org/isni/000000012183810X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q8193063> ;
+             .

@@ -1,0 +1,39 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/054gdnq27> 
+    a org:Organization ;
+    rdfs:label "Bosch Health Campus" ;
+    schema:name "Bosch Health Campus" ;
+    schema:foundingDate "2022"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/012kqkf58> ;
+        rdfs:label "Robert Bosch Stiftung" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/034nkkr84> ;
+        rdfs:label "Robert Bosch Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02pnjnj33> ;
+        rdfs:label "Dr. Margarete Fischer-Bosch-Institute of Clinical Pharmacology" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(9.17702 48.78232)"^^geo:wktLiteral ;
+        schema:addressLocality "Stuttgart" ;
+    ] ;
+    schema:url <https://www.bosch-health-campus.de> ;
+     .

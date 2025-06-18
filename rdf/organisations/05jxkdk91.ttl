@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05jxkdk91> 
+    a org:Organization ;
+    rdfs:label "Charity Commission for England and Wales" ;
+    schema:name "Charity Commission for England and Wales" ;
+    schema:foundingDate "1853"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Charity_Commission_for_England_and_Wales> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.12574 51.50853)"^^geo:wktLiteral ;
+        schema:addressLocality "London" ;
+    ] ;
+    schema:url <https://www.gov.uk/government/organisations/charity-commission> ;
+    schema:sameAs <http://isni.org/isni/0000000406289132> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5074501> ;
+             .

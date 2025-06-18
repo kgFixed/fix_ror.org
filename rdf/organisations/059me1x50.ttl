@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/059me1x50> 
+    a org:Organization ;
+    rdfs:label "Institute of Infrastructure Technology Research and Management" ;
+    schema:name "Institute of Infrastructure Technology Research and Management" ;
+    schema:foundingDate "2013"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Institute_of_Infrastructure_Technology_Research_and_Management> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(72.58727 23.02579)"^^geo:wktLiteral ;
+        schema:addressLocality "Ahmedabad" ;
+    ] ;
+    schema:url <https://iitram.ac.in> ;
+    schema:sameAs <http://isni.org/isni/0000000446849034> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q19891935> ;
+             .

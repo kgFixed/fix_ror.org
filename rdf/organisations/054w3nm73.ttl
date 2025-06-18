@@ -1,0 +1,82 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/054w3nm73> 
+    a org:Organization ;
+    rdfs:label "VA Mid-Atlantic Health Care Network" ;
+    schema:name "VA Mid-Atlantic Health Care Network" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01r2s5391> ;
+        rdfs:label "Beckley VA Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03vwf8m18> ;
+        rdfs:label "Charles George VA Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/034adnw64> ;
+        rdfs:label "Durham VA Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00yfsq027> ;
+        rdfs:label "Fayetteville VA Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02x9bj444> ;
+        rdfs:label "Hampton VA Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04fp78s33> ;
+        rdfs:label "Hunter Holmes McGuire VA Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04hgm3062> ;
+        rdfs:label "Iowa City VA Health Care System" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/027mz0g68> ;
+        rdfs:label "Salem VA Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01bqvph43> ;
+        rdfs:label "W. G. (Bill) Hefner VA Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05eq41471> ;
+        rdfs:label "Veterans Health Administration" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-78.89862 35.99403)"^^geo:wktLiteral ;
+        schema:addressLocality "Durham" ;
+    ] ;
+    schema:url <https://www.visn6.va.gov/> ;
+    schema:sameAs <http://isni.org/isni/0000000404208001> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q33122022> ;
+             .

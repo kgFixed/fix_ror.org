@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05j5y0r89> 
+    a org:Organization ;
+    rdfs:label "Sir Paul Boffa Hospital" ;
+    schema:name "Sir Paul Boffa Hospital" ;
+    schema:foundingDate "1922"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(14.50833 35.89583)"^^geo:wktLiteral ;
+        schema:addressLocality "Floriana" ;
+    ] ;
+    schema:url <https://health.gov.mt/en/ahcs/Pages/physiotherapy/spbhphysio.aspx> ;
+    schema:sameAs <http://isni.org/isni/0000000449050404> ;
+             .

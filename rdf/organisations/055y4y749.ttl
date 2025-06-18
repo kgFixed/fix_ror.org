@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/055y4y749> 
+    a org:Organization ;
+    rdfs:label "Ministry for Primary Industries" ;
+    schema:name "Ministry for Primary Industries" ;
+    schema:foundingDate "2012"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Ministry_for_Primary_Industries_(New_Zealand)> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(174.77557 -41.28664)"^^geo:wktLiteral ;
+        schema:addressLocality "Wellington" ;
+    ] ;
+    schema:url <http://www.mpi.govt.nz/> ;
+    schema:sameAs <http://isni.org/isni/0000000106812788> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3315164> ;
+             .

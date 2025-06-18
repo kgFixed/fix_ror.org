@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/056ffv270> 
+    a org:Organization ;
+    rdfs:label "Imperial College Healthcare NHS Trust" ;
+    schema:name "Imperial College Healthcare NHS Trust" ;
+    schema:foundingDate "2007"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Imperial_College_Healthcare_NHS_Trust> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02gcp3110> ;
+        rdfs:label "Charing Cross Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05jg8yp15> ;
+        rdfs:label "Hammersmith Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03af1tj71> ;
+        rdfs:label "Queen Charlotte's and Chelsea Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01aysdw42> ;
+        rdfs:label "St Mary's Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04g0t2d47> ;
+        rdfs:label "Western Eye Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.12574 51.50853)"^^geo:wktLiteral ;
+        schema:addressLocality "London" ;
+    ] ;
+    schema:url <http://www.imperial.nhs.uk/> ;
+    schema:sameAs <http://isni.org/isni/0000000106932181> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q14956770> ;
+             .

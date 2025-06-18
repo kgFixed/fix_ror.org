@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05km8ys10> 
+    a org:Organization ;
+    rdfs:label "Islamic Azad University of Urmia" ;
+    schema:name "Islamic Azad University of Urmia" ;
+    schema:foundingDate "1943"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01kzn7k21> ;
+        rdfs:label "Islamic Azad University, Tehran" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(45.07605 37.55274)"^^geo:wktLiteral ;
+        schema:addressLocality "Urmia" ;
+    ] ;
+    schema:url <http://www.iaurmia.ac.ir/> ;
+    schema:sameAs <http://isni.org/isni/0000000404943292> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q101002496> ;
+             .

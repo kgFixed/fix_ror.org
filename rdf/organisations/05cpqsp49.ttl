@@ -1,0 +1,35 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05cpqsp49> 
+    a org:Organization ;
+    rdfs:label "Miami Transplant Institute" ;
+    schema:name "Miami Transplant Institute" ;
+    schema:foundingDate "1970"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00en6p903> ;
+        rdfs:label "Jackson Health System" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00zw9nc64> ;
+        rdfs:label "University of Miami Health System" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-80.19366 25.77427)"^^geo:wktLiteral ;
+        schema:addressLocality "Miami" ;
+    ] ;
+    schema:url <https://jacksonhealth.org/transplant/> ;
+    schema:sameAs <http://isni.org/isni/0000000485176864> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q97041197> ;
+             .

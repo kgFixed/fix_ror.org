@@ -1,0 +1,35 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05c6nxg16> 
+    a org:Organization ;
+    rdfs:label "St. Mary's Medical Center" ;
+    schema:name "St. Mary's Medical Center" ;
+    schema:foundingDate "1938"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05p8w6387> ;
+        rdfs:label "Florida Atlantic University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0155zta11> ;
+        rdfs:label "University of Vermont" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-80.05337 26.71534)"^^geo:wktLiteral ;
+        schema:addressLocality "West Palm Beach" ;
+    ] ;
+    schema:url <https://www.stmarysmc.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000404588059> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30287251> ;
+             .

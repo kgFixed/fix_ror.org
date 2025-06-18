@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05a8pa318> 
+    a org:Organization ;
+    rdfs:label "Vertex Pharmaceuticals (Canada)" ;
+    schema:name "Vertex Pharmaceuticals (Canada)" ;
+    schema:foundingDate "1989"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Vertex_Pharmaceuticals> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00anb1726> ;
+        rdfs:label "Vertex Pharmaceuticals (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-73.692 45.56995)"^^geo:wktLiteral ;
+        schema:addressLocality "Laval" ;
+    ] ;
+    schema:url <http://www.vpharm.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000446806528> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30292529> ;
+             .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05m615h78> 
+    a org:Organization ;
+    rdfs:label "Cork County Council" ;
+    schema:name "Cork County Council" ;
+    schema:foundingDate "1968"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Cork_County_Council> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-8.47061 51.89797)"^^geo:wktLiteral ;
+        schema:addressLocality "Cork" ;
+    ] ;
+    schema:url <http://www.corkcoco.ie/co/web/Global%20Nav/Home> ;
+    schema:sameAs <http://isni.org/isni/0000000087263719> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5170774> ;
+             .

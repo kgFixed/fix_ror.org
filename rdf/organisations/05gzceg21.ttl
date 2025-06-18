@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05gzceg21> 
+    a org:Organization ;
+    rdfs:label "Kasetsart University" ;
+    schema:name "Kasetsart University" ;
+    schema:foundingDate "1943"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Kasetsart_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/050519n85> ;
+        rdfs:label "Postharvest Technology Innovation Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00r4taj88> ;
+        rdfs:label "IRL HealthDEEP" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(100.50144 13.75398)"^^geo:wktLiteral ;
+        schema:addressLocality "Bangkok" ;
+    ] ;
+    schema:url <http://www.ku.ac.th/web2012/index.php?c=adms&m=mainpage1> ;
+    schema:sameAs <http://isni.org/isni/000000010944049X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q452406> ;
+             .

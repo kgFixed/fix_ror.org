@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05kx3hd68> 
+    a org:Organization ;
+    rdfs:label "Group Health Cooperative" ;
+    schema:name "Group Health Cooperative" ;
+    schema:foundingDate "1947"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Group_Health_Cooperative> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-122.33207 47.60621)"^^geo:wktLiteral ;
+        schema:addressLocality "Seattle" ;
+    ] ;
+    schema:url <https://www.ghc.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000404635476> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5611154> ;
+             .

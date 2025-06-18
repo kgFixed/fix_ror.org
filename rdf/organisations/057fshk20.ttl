@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/057fshk20> 
+    a org:Organization ;
+    rdfs:label "IHS Markit (Canada)" ;
+    schema:name "IHS Markit (Canada)" ;
+    schema:foundingDate "1959"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/IHS_Markit> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03qfmjv22> ;
+        rdfs:label "IHS Markit (United Kingdom)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-114.08529 51.05011)"^^geo:wktLiteral ;
+        schema:addressLocality "Calgary" ;
+    ] ;
+    schema:url <https://ihsmarkit.com/index.html> ;
+     .

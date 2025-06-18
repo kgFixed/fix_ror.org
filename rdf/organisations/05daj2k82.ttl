@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05daj2k82> 
+    a org:Organization ;
+    rdfs:label "Mann+Hummel (Germany)" ;
+    schema:name "Mann+Hummel (Germany)" ;
+    schema:foundingDate "1941"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Mann%2BHummel> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02vd4tk35> ;
+        rdfs:label "Mann+Hummel (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(9.19161 48.89731)"^^geo:wktLiteral ;
+        schema:addressLocality "Ludwigsburg" ;
+    ] ;
+    schema:url <https://www.mann-hummel.com/en/> ;
+    schema:sameAs <http://isni.org/isni/0000000405690434> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1890550> ;
+             .

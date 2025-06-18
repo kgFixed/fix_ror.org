@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05mknbx32> 
+    a org:Organization ;
+    rdfs:label "Åland University of Applied Sciences" ;
+    schema:name "Åland University of Applied Sciences" ;
+    schema:foundingDate "2003"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/%C3%85land_University_of_Applied_Sciences> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(19.93481 60.09726)"^^geo:wktLiteral ;
+        schema:addressLocality "Mariehamn" ;
+    ] ;
+    schema:url <https://www.ha.ax/> ;
+    schema:sameAs <http://isni.org/isni/0000000113232247> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6303953> ;
+             .

@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/055hnk386> 
+    a org:Organization ;
+    rdfs:label "Wuhu Institute of Technology" ;
+    schema:name "Wuhu Institute of Technology" ;
+    schema:foundingDate "1983"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(118.42947 31.35259)"^^geo:wktLiteral ;
+        schema:addressLocality "Wuhu" ;
+    ] ;
+    schema:url <https://www.whit.edu.cn> ;
+    schema:sameAs <http://isni.org/isni/000000047470502X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q52849878> ;
+             .

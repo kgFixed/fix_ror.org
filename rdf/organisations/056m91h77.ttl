@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/056m91h77> 
+    a org:Organization ;
+    rdfs:label "Shaanxi University of Technology" ;
+    schema:name "Shaanxi University of Technology" ;
+    schema:foundingDate "2001"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Shaanxi_University_of_Technology> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(107.02214 33.07507)"^^geo:wktLiteral ;
+        schema:addressLocality "Hanzhong" ;
+    ] ;
+    schema:url <https://www.snut.edu.cn> ;
+    schema:sameAs <http://isni.org/isni/0000000417572507> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q15902203> ;
+             .

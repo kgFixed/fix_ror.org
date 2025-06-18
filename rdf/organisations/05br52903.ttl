@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05br52903> 
+    a org:Organization ;
+    rdfs:label "Baba Raghav Das Medical College" ;
+    schema:name "Baba Raghav Das Medical College" ;
+    schema:foundingDate "1972"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Baba_Raghav_Das_Medical_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/004wf8x96> ;
+        rdfs:label "Deen Dayal Upadhyaya Gorakhpur University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(83.36889 26.76628)"^^geo:wktLiteral ;
+        schema:addressLocality "Gorakhpur" ;
+    ] ;
+    schema:url <http://www.brdmc.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000405063705> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q15664953> ;
+             .

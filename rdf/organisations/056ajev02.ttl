@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/056ajev02> 
+    a org:Organization ;
+    rdfs:label "Birmingham Women’s and Children’s NHS Foundation Trust" ;
+    schema:name "Birmingham Women’s and Children’s NHS Foundation Trust" ;
+    schema:foundingDate "2017"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Birmingham_Women%27s_and_Children%27s_NHS_Foundation_Trust> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/017k80q27> ;
+        rdfs:label "Birmingham Children's Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00xe5zs60> ;
+        rdfs:label "Birmingham Women's Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.89983 52.48142)"^^geo:wktLiteral ;
+        schema:addressLocality "Birmingham" ;
+    ] ;
+    schema:url <https://bwc.nhs.uk/> ;
+    schema:sameAs <http://isni.org/isni/0000000403766175> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30314935> ;
+             .

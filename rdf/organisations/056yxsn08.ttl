@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/056yxsn08> 
+    a org:Organization ;
+    rdfs:label "International Pole and Line Foundation" ;
+    schema:name "International Pole and Line Foundation" ;
+    schema:foundingDate "2011"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(73.50916 4.17521)"^^geo:wktLiteral ;
+        schema:addressLocality "Malé" ;
+    ] ;
+    schema:url <http://ipnlf.org/what-we-do/develop-support/the-maldives> ;
+     .

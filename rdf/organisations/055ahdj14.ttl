@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/055ahdj14> 
+    a org:Organization ;
+    rdfs:label "Baptist Hospital" ;
+    schema:name "Baptist Hospital" ;
+    schema:foundingDate "1951"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Baptist_Hospital_(Pensacola)> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01zdgf096> ;
+        rdfs:label "Baptist Health Care" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-87.21691 30.42131)"^^geo:wktLiteral ;
+        schema:addressLocality "Pensacola" ;
+    ] ;
+    schema:url <https://www.ebaptisthealthcare.org/BaptistHospital> ;
+    schema:sameAs <http://isni.org/isni/0000000404391678> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4857646> ;
+             .

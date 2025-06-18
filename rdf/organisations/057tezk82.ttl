@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/057tezk82> 
+    a org:Organization ;
+    rdfs:label "Northland Regional Council" ;
+    schema:name "Northland Regional Council" ;
+    schema:sameAs <https://mi.wikipedia.org/wiki/Te_Kaunihera_a-Rohe_o_Te_Tai_Tokerau> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(174.32391 -35.73167)"^^geo:wktLiteral ;
+        schema:addressLocality "Whangarei" ;
+    ] ;
+    schema:url <https://www.nrc.govt.nz> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q71639058> ;
+             .

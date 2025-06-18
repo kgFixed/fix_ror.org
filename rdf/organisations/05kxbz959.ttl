@@ -1,0 +1,61 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05kxbz959> 
+    a org:Organization ;
+    rdfs:label "Hyundai Motor Group (South Korea)" ;
+    schema:name "Hyundai Motor Group (South Korea)" ;
+    schema:foundingDate "2000"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Hyundai_Motor_Group> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/009z7vc79> ;
+        rdfs:label "Hyundai Card (South Korea)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/038b1qn73> ;
+        rdfs:label "Hyundai Mobis (South Korea)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/016kvft77> ;
+        rdfs:label "Hyundai Motors (South Korea)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00rzpns50> ;
+        rdfs:label "Hyundai Steel (South Korea)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00f5kdg89> ;
+        rdfs:label "Hyundai Kefico (South Korea)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04c9vp017> ;
+        rdfs:label "Supernal (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(126.9784 37.566)"^^geo:wktLiteral ;
+        schema:addressLocality "Seoul" ;
+    ] ;
+    schema:url <http://www.hyundaimotorgroup.com/Index.hub> ;
+    schema:sameAs <http://isni.org/isni/000000046400465X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q59243> ;
+             .

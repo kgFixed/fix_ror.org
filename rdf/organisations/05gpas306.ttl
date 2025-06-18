@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05gpas306> 
+    a org:Organization ;
+    rdfs:label "Hangzhou Medical College" ;
+    schema:name "Hangzhou Medical College" ;
+    schema:foundingDate "1925"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(120.16142 30.29365)"^^geo:wktLiteral ;
+        schema:addressLocality "Hangzhou" ;
+    ] ;
+    schema:url <http://www.hmc.edu.cn/> ;
+    schema:sameAs <http://isni.org/isni/0000000417577957> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q28414122> ;
+             .

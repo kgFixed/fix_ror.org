@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0567w8j84> 
+    a org:Organization ;
+    rdfs:label "Bowie State University" ;
+    schema:name "Bowie State University" ;
+    schema:foundingDate "1865"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Bowie_State_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01r0c1p88> ;
+        rdfs:label "University System of Maryland" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-76.73028 38.94278)"^^geo:wktLiteral ;
+        schema:addressLocality "Bowie" ;
+    ] ;
+    schema:url <http://bowiestate.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000088153378> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q895439> ;
+             .

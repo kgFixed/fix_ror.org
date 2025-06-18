@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05dmpdy49> 
+    a org:Organization ;
+    rdfs:label "NSW Department of Communities and Justice" ;
+    schema:name "NSW Department of Communities and Justice" ;
+    schema:foundingDate "2019"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Department_of_Communities_and_Justice> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0067dvq63> ;
+        rdfs:label "Government of New South Wales" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(151.20732 -33.86785)"^^geo:wktLiteral ;
+        schema:addressLocality "Sydney" ;
+    ] ;
+    schema:url <https://www.dcj.nsw.gov.au/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q65063344> ;
+             .

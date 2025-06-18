@@ -1,0 +1,48 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05eca5w86> 
+    a org:Organization ;
+    rdfs:label "Riverside Community College District" ;
+    schema:name "Riverside Community College District" ;
+    schema:foundingDate "1916"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Riverside_Community_College_District> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01zzpyg63> ;
+        rdfs:label "Moreno Valley College" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/000cnwx98> ;
+        rdfs:label "Norco College" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03x6axv89> ;
+        rdfs:label "Riverside City College" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04rhvbz32> ;
+        rdfs:label "California Community Colleges System" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-117.39616 33.95335)"^^geo:wktLiteral ;
+        schema:addressLocality "Riverside" ;
+    ] ;
+    schema:url <https://www.rccd.edu/pages/newsplash.aspx> ;
+    schema:sameAs <http://isni.org/isni/0000000404002185> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7338455> ;
+             .

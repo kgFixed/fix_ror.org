@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05mg7fy05> 
+    a org:Organization ;
+    rdfs:label "Coastal Pines Technical College" ;
+    schema:name "Coastal Pines Technical College" ;
+    schema:foundingDate "2014"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Coastal_Pines_Technical_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-82.3557 31.21368)"^^geo:wktLiteral ;
+        schema:addressLocality "Waycross" ;
+    ] ;
+    schema:url <http://www.coastalpines.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000405307247> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7081914> ;
+             .

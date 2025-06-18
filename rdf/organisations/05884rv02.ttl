@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05884rv02> 
+    a org:Organization ;
+    rdfs:label "Gdańskie Seminarium Duchowne" ;
+    schema:name "Gdańskie Seminarium Duchowne" ;
+    schema:foundingDate "1957"^^xsd:gYear ;
+    schema:sameAs <https://pl.wikipedia.org/wiki/Gda%C5%84skie_Seminarium_Duchowne> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05sdyjv16> ;
+        rdfs:label "Cardinal Stefan Wyszyński University in Warsaw" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(18.64912 54.35227)"^^geo:wktLiteral ;
+        schema:addressLocality "Gdansk" ;
+    ] ;
+    schema:url <https://gsd.gda.pl> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q9266580> ;
+             .

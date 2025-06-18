@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/059dtxg26> 
+    a org:Organization ;
+    rdfs:label "Simplex Manufacturing (United States)" ;
+    schema:name "Simplex Manufacturing (United States)" ;
+    schema:foundingDate "1935"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Simplex_Manufacturing_Corporation> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-122.67621 45.52345)"^^geo:wktLiteral ;
+        schema:addressLocality "Portland" ;
+    ] ;
+    schema:url <https://simplex.aero> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30286053> ;
+             .

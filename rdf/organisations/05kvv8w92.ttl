@@ -1,0 +1,20 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05kvv8w92> 
+    a org:Organization ;
+    rdfs:label "Foundation for promoting Information and Communication Technology" ;
+    schema:name "Foundation for promoting Information and Communication Technology" ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(28.63432 44.18073)"^^geo:wktLiteral ;
+        schema:addressLocality "Constanța" ;
+    ] ;
+    schema:url <http://www.fict.ro/en_details.html> ;
+     .

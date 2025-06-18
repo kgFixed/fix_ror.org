@@ -1,0 +1,54 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05jdqs103> 
+    a org:Organization ;
+    rdfs:label "Interior Health" ;
+    schema:name "Interior Health" ;
+    schema:foundingDate "2001"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Interior_Health> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/009xa9473> ;
+        rdfs:label "Arrow Lakes Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01j25h453> ;
+        rdfs:label "Kelowna General Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02g83kd39> ;
+        rdfs:label "Penticton Regional Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02c1pgm26> ;
+        rdfs:label "Royal Inland Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05pw47n55> ;
+        rdfs:label "Vernon Jubilee Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-119.48568 49.88307)"^^geo:wktLiteral ;
+        schema:addressLocality "Kelowna" ;
+    ] ;
+    schema:url <https://www.interiorhealth.ca> ;
+    schema:sameAs <http://isni.org/isni/0000000404802553> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6046681> ;
+             .

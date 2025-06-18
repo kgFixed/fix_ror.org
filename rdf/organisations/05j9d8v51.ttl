@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05j9d8v51> 
+    a org:Organization ;
+    rdfs:label "National Taitung University" ;
+    schema:name "National Taitung University" ;
+    schema:foundingDate "2003"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/National_Taitung_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(121.14457 22.75991)"^^geo:wktLiteral ;
+        schema:addressLocality "Taitung" ;
+    ] ;
+    schema:url <http://wwwen.nttu.edu.tw/bin/home.php> ;
+    schema:sameAs <http://isni.org/isni/0000000417971946> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q10927184> ;
+             .

@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05h2dda38> 
+    a org:Organization ;
+    rdfs:label "Geological Survey of Western Australia" ;
+    schema:name "Geological Survey of Western Australia" ;
+    schema:foundingDate "1886"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Geological_Survey_of_Western_Australia> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04mr78v45> ;
+        rdfs:label "Department of Mines, Industry Regulation and Safety" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(115.87109 -31.95872)"^^geo:wktLiteral ;
+        schema:addressLocality "East Perth" ;
+    ] ;
+    schema:url <http://www.dmp.wa.gov.au/> ;
+    schema:sameAs <http://isni.org/isni/0000000405998367> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1503203> ;
+             .

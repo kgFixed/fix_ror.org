@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05mj4yh71> 
+    a org:Organization ;
+    rdfs:label "Gobierno del Principado de Asturias" ;
+    schema:name "Gobierno del Principado de Asturias" ;
+    schema:foundingDate "1983"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Government_of_the_Principality_of_Asturias> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01azs0t89> ;
+        rdfs:label "Hospital Carmen y Severo Ochoa" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02cp22d42> ;
+        rdfs:label "Instituto Mixto de Investigación en Biodiversidad" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-5.84476 43.36029)"^^geo:wktLiteral ;
+        schema:addressLocality "Oviedo" ;
+    ] ;
+    schema:url <https://www.asturias.es> ;
+    schema:sameAs <http://isni.org/isni/0000000093206323> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q432220> ;
+             .

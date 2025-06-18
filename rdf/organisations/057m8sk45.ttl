@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/057m8sk45> 
+    a org:Organization ;
+    rdfs:label "Society of Early Americanists" ;
+    schema:name "Society of Early Americanists" ;
+    schema:foundingDate "1990"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Society_of_Early_Americanists> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-117.82311 33.66946)"^^geo:wktLiteral ;
+        schema:addressLocality "Irvine" ;
+    ] ;
+    schema:url <http://www.societyofearlyamericanists.org/> ;
+     .

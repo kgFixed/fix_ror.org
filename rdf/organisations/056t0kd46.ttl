@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/056t0kd46> 
+    a org:Organization ;
+    rdfs:label "Sandfire (Australia)" ;
+    schema:name "Sandfire (Australia)" ;
+    schema:foundingDate "2003"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Sandfire,_Western_Australia> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(115.84199 -31.94896)"^^geo:wktLiteral ;
+        schema:addressLocality "West Perth" ;
+    ] ;
+    schema:url <https://www.sandfire.com.au/site/content/> ;
+    schema:sameAs <http://isni.org/isni/000000040474500X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7416191> ;
+             .

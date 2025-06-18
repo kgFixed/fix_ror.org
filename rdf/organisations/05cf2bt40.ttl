@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05cf2bt40> 
+    a org:Organization ;
+    rdfs:label "International Fine Particle Research Institute" ;
+    schema:name "International Fine Particle Research Institute" ;
+    schema:foundingDate "1979"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/International_Fine_Particle_Research_Institute> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-92.95938 44.92386)"^^geo:wktLiteral ;
+        schema:addressLocality "Woodbury" ;
+    ] ;
+    schema:url <http://www.ifpri.net/> ;
+    schema:sameAs <http://isni.org/isni/0000000502770161> ;
+             .

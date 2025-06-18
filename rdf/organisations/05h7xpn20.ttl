@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05h7xpn20> 
+    a org:Organization ;
+    rdfs:label "Servicio Nacional de Meteorología e Hidrología del Perú" ;
+    schema:name "Servicio Nacional de Meteorología e Hidrología del Perú" ;
+    schema:foundingDate "1969"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.02824 -12.04318)"^^geo:wktLiteral ;
+        schema:addressLocality "Lima" ;
+    ] ;
+    schema:url <http://www.senamhi.gob.pe/> ;
+    schema:sameAs <http://isni.org/isni/0000000107460446> ;
+             .

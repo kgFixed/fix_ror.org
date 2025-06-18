@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05gxeae76> 
+    a org:Organization ;
+    rdfs:label "Connecticut Center for Primary Care" ;
+    schema:name "Connecticut Center for Primary Care" ;
+    schema:foundingDate "2002"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04cy3qv12> ;
+        rdfs:label "Connecticut Health Foundation" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-72.83204 41.71982)"^^geo:wktLiteral ;
+        schema:addressLocality "Farmington" ;
+    ] ;
+    schema:url <https://www.cthealth.org/grant/connecticut-center-for-primary-care/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30288888> ;
+             .

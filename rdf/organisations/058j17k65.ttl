@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/058j17k65> 
+    a org:Organization ;
+    rdfs:label "Magic Leap (United States)" ;
+    schema:name "Magic Leap (United States)" ;
+    schema:foundingDate "2010"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Magic_Leap> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-80.23184 26.13421)"^^geo:wktLiteral ;
+        schema:addressLocality "Plantation" ;
+    ] ;
+    schema:url <https://www.magicleap.com/en-us> ;
+    schema:sameAs <http://isni.org/isni/0000000463600759> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q18351488> ;
+             .

@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05an4ky72> 
+    a org:Organization ;
+    rdfs:label "Backbones" ;
+    schema:name "Backbones" ;
+    schema:foundingDate "2009"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-87.93757 42.0953)"^^geo:wktLiteral ;
+        schema:addressLocality "Prospect Heights" ;
+    ] ;
+    schema:url <https://backbonesonline.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30286574> ;
+             .

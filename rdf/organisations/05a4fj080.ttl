@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05a4fj080> 
+    a org:Organization ;
+    rdfs:label "Rockingham Community College" ;
+    schema:name "Rockingham Community College" ;
+    schema:foundingDate "1966"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Rockingham_Community_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-79.77448 36.40014)"^^geo:wktLiteral ;
+        schema:addressLocality "Wentworth" ;
+    ] ;
+    schema:url <http://www.rockinghamcc.edu/about-rcc/> ;
+    schema:sameAs <http://isni.org/isni/0000000096859274> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7355383> ;
+             .

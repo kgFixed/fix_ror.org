@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0547wea53> 
+    a org:Organization ;
+    rdfs:label "St George's Park" ;
+    schema:name "St George's Park" ;
+    schema:foundingDate "2006"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/St_George%27s_Park,_Morpeth> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01ajv0n48> ;
+        rdfs:label "Cumbria Northumberland Tyne and Wear NHS Foundation Trust" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.68893 55.16882)"^^geo:wktLiteral ;
+        schema:addressLocality "Morpeth" ;
+    ] ;
+    schema:url <https://www.cntw.nhs.uk/locations/st-georges-park/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q60760311> ;
+             .

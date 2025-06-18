@@ -1,0 +1,35 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05dvgav47> 
+    a org:Organization ;
+    rdfs:label "Generaldirektion Wasserstraßen und Schifffahrt" ;
+    schema:name "Generaldirektion Wasserstraßen und Schifffahrt" ;
+    schema:foundingDate "2013"^^xsd:gYear ;
+    schema:sameAs <https://de.wikipedia.org/wiki/Generaldirektion_Wasserstra%C3%9Fen_und_Schifffahrt> ;
+    org:status "withdrawn" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00e3ns026> ;
+        rdfs:label "Federal Ministry of Transport and Digital Infrastructure" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/0581em797> ;
+        rdfs:label "Generaldirektion Wasserstraßen und Schifffahrt" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(7.09549 50.73438)"^^geo:wktLiteral ;
+        schema:addressLocality "Bonn" ;
+    ] ;
+    schema:url <https://www.gdws.wsv.bund.de> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q12305647> ;
+             .

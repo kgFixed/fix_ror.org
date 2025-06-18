@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/055j3vp97> 
+    a org:Organization ;
+    rdfs:label "Enel (Poland)" ;
+    schema:name "Enel (Poland)" ;
+    schema:foundingDate "1962"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Enel> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/052fdp564> ;
+        rdfs:label "Enel (Italy)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(18.67658 50.29761)"^^geo:wktLiteral ;
+        schema:addressLocality "Gliwice" ;
+    ] ;
+    schema:url <https://www.enel.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30260989> ;
+             .

@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05mndst04> 
+    a org:Organization ;
+    rdfs:label "Fernbank Museum of Natural History" ;
+    schema:name "Fernbank Museum of Natural History" ;
+    schema:foundingDate "1992"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Fernbank_Museum_of_Natural_History> ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-84.38798 33.749)"^^geo:wktLiteral ;
+        schema:addressLocality "Atlanta" ;
+    ] ;
+    schema:url <https://www.fernbankmuseum.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000411609495> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5445032> ;
+             .

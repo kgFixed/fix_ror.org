@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05d81xr24> 
+    a org:Organization ;
+    rdfs:label "National Organization for the Professional Advancement of Black Chemists and Chemical Engineers" ;
+    schema:name "National Organization for the Professional Advancement of Black Chemists and Chemical Engineers" ;
+    schema:foundingDate "1972"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/National_Organization_for_the_Professional_Advancement_of_Black_Chemists_and_Chemical_Engineers> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-76.57108 39.119)"^^geo:wktLiteral ;
+        schema:addressLocality "Pasadena" ;
+    ] ;
+    schema:url <http://www.nobcche.org/> ;
+     .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05bywcp64> 
+    a org:Organization ;
+    rdfs:label "Austrian Centre for Electron Microscopy and Nanoanalysis" ;
+    schema:name "Austrian Centre for Electron Microscopy and Nanoanalysis" ;
+    schema:foundingDate "1951"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Austrian_Centre_for_Electron_Microscopy_and_Nanoanalysis> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(15.45 47.06667)"^^geo:wktLiteral ;
+        schema:addressLocality "Graz" ;
+    ] ;
+    schema:url <https://www.felmi-zfe.at/> ;
+    schema:sameAs <http://isni.org/isni/0000000417803168> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q21036429> ;
+             .

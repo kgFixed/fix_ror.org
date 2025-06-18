@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05c2gdy67> 
+    a org:Organization ;
+    rdfs:label "Reformed Episcopal Seminary" ;
+    schema:name "Reformed Episcopal Seminary" ;
+    schema:foundingDate "1887"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Reformed_Episcopal_Seminary> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-75.26629 40.15233)"^^geo:wktLiteral ;
+        schema:addressLocality "Blue Bell" ;
+    ] ;
+    schema:url <http://www.reseminary.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000405374941> ;
+             .

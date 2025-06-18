@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/058ddgs73> 
+    a org:Organization ;
+    rdfs:label "Center for Art and Media Karlsruhe" ;
+    schema:name "Center for Art and Media Karlsruhe" ;
+    schema:foundingDate "1989"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Center_for_Art_and_Media_Karlsruhe> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(8.40444 49.00937)"^^geo:wktLiteral ;
+        schema:addressLocality "Karlsruhe" ;
+    ] ;
+    schema:url <https://zkm.de/en> ;
+    schema:sameAs <http://isni.org/isni/0000000121498563> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q191228> ;
+             .

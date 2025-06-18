@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/058m30p27> 
+    a org:Organization ;
+    rdfs:label "National Society for Earthquake Technology" ;
+    schema:name "National Society for Earthquake Technology" ;
+    schema:foundingDate "1993"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/National_Society_for_Earthquake_Technology_-_Nepal> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(85.31417 27.67658)"^^geo:wktLiteral ;
+        schema:addressLocality "Patan" ;
+    ] ;
+    schema:url <http://www.nset.org.np/nset2012/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q17012096> ;
+             .

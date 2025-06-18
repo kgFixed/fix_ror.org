@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05ex5vz81> 
+    a org:Organization ;
+    rdfs:label "Federal Institute for Drugs and Medical Devices" ;
+    schema:name "Federal Institute for Drugs and Medical Devices" ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Federal_Institute_for_Drugs_and_Medical_Devices> ;
+    org:status "active" ;
+    org:classification "Funder" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(7.09549 50.73438)"^^geo:wktLiteral ;
+        schema:addressLocality "Bonn" ;
+    ] ;
+    schema:url <https://www.bfarm.de> ;
+    schema:sameAs <http://isni.org/isni/0000000095990422> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1006215> ;
+             .

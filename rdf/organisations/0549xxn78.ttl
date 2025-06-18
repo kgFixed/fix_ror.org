@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0549xxn78> 
+    a org:Organization ;
+    rdfs:label "Rusal (Ireland)" ;
+    schema:name "Rusal (Ireland)" ;
+    schema:foundingDate "2007"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Rusal> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/041c2wa38> ;
+        rdfs:label "Rusal (Russia)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-8.62306 52.66472)"^^geo:wktLiteral ;
+        schema:addressLocality "Limerick" ;
+    ] ;
+    schema:url <https://rusal.ru/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30254881> ;
+             .

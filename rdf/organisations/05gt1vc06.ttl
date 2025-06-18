@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05gt1vc06> 
+    a org:Organization ;
+    rdfs:label "Howard University" ;
+    schema:name "Howard University" ;
+    schema:foundingDate "1867"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Howard_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01w4jxn67> ;
+        rdfs:label "Howard University Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0212h5y77> ;
+        rdfs:label "Inova Fairfax Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.03637 38.89511)"^^geo:wktLiteral ;
+        schema:addressLocality "Washington" ;
+    ] ;
+    schema:url <http://www2.howard.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000105474545> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1068752> ;
+             .

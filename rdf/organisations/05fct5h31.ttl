@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05fct5h31> 
+    a org:Organization ;
+    rdfs:label "Military University of Technology in Warsaw" ;
+    schema:name "Military University of Technology in Warsaw" ;
+    schema:foundingDate "1951"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Military_University_of_Technology_in_Warsaw> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(21.01178 52.22977)"^^geo:wktLiteral ;
+        schema:addressLocality "Warsaw" ;
+    ] ;
+    schema:url <https://www.wojsko-polskie.pl/wat> ;
+    schema:sameAs <http://isni.org/isni/0000000115121639> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q11837925> ;
+             .

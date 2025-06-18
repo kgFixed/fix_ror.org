@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/056kd2x19> 
+    a org:Organization ;
+    rdfs:label "Moors for the Future Partnership" ;
+    schema:name "Moors for the Future Partnership" ;
+    schema:foundingDate "2002"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Moors_for_the_Future> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.74485 53.34819)"^^geo:wktLiteral ;
+        schema:addressLocality "Hope Valley" ;
+    ] ;
+    schema:url <http://www.moorsforthefuture.org.uk/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q6908475> ;
+             .

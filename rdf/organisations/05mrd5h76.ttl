@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05mrd5h76> 
+    a org:Organization ;
+    rdfs:label "U.S. Air Force Research Laboratory Aerospace Systems Directorate" ;
+    schema:name "U.S. Air Force Research Laboratory Aerospace Systems Directorate" ;
+    schema:foundingDate "1997"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02e2egq70> ;
+        rdfs:label "United States Air Force Research Laboratory" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-84.0368 39.82201)"^^geo:wktLiteral ;
+        schema:addressLocality "Wright-Patterson Air Force Base" ;
+    ] ;
+    schema:url <https://www.afrl.af.mil/RQ/> ;
+     .

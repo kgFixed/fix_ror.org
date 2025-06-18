@@ -1,0 +1,48 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05450eg98> 
+    a org:Organization ;
+    rdfs:label "Alamo Colleges" ;
+    schema:name "Alamo Colleges" ;
+    schema:foundingDate "1978"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/The_Alamo_Colleges> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04jg63q12> ;
+        rdfs:label "Northwest Vista College" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05sgnj165> ;
+        rdfs:label "Palo Alto College" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01hdk3d05> ;
+        rdfs:label "San Antonio College" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04v6cz278> ;
+        rdfs:label "St. Philip's College" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-98.49363 29.42412)"^^geo:wktLiteral ;
+        schema:addressLocality "San Antonio" ;
+    ] ;
+    schema:url <http://www.alamo.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000089355676> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7712972> ;
+             .

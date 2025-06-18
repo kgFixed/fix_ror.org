@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05mhdah91> 
+    a org:Organization ;
+    rdfs:label "Washington Association of School Administrators" ;
+    schema:name "Washington Association of School Administrators" ;
+    schema:foundingDate "1972"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-122.90169 47.04491)"^^geo:wktLiteral ;
+        schema:addressLocality "Olympia" ;
+    ] ;
+    schema:url <https://wasa-oly.org/wasa/wasa> ;
+    schema:sameAs <http://isni.org/isni/0000000449088007> ;
+             .

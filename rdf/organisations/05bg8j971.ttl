@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05bg8j971> 
+    a org:Organization ;
+    rdfs:label "American Oil Chemists Society" ;
+    schema:name "American Oil Chemists Society" ;
+    schema:foundingDate "1909"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/American_Oil_Chemists%27_Society> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-88.20727 40.11059)"^^geo:wktLiteral ;
+        schema:addressLocality "Urbana" ;
+    ] ;
+    schema:url <https://www.aocs.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000109431024> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q465900> ;
+             .

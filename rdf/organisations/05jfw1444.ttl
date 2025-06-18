@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05jfw1444> 
+    a org:Organization ;
+    rdfs:label "Jilin Provincial Academy of Forestry Science" ;
+    schema:name "Jilin Provincial Academy of Forestry Science" ;
+    schema:foundingDate "1956"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(125.32278 43.88)"^^geo:wktLiteral ;
+        schema:addressLocality "Changchun" ;
+    ] ;
+    schema:url <http://jl.jllyt.cn/lky/> ;
+    schema:sameAs <http://isni.org/isni/0000000459311233> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30264858> ;
+             .

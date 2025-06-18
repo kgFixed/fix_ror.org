@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/058thb585> 
+    a org:Organization ;
+    rdfs:label "Badan Pengkajian dan Penerapan Teknologi" ;
+    schema:name "Badan Pengkajian dan Penerapan Teknologi" ;
+    schema:foundingDate "1974"^^xsd:gYear ;
+    org:status "inactive" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/02hmjzt55> ;
+        rdfs:label "National Research and Innovation Agency" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(106.84513 -6.21462)"^^geo:wktLiteral ;
+        schema:addressLocality "Jakarta" ;
+    ] ;
+    schema:url <http://www.bppt.go.id/english/> ;
+    schema:sameAs <http://isni.org/isni/0000000107460534> ;
+             .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05m1pqv80> 
+    a org:Organization ;
+    rdfs:label "University of Music Würzburg" ;
+    schema:name "University of Music Würzburg" ;
+    schema:foundingDate "1797"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Hochschule_f%C3%BCr_Musik_W%C3%BCrzburg> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(9.95121 49.79391)"^^geo:wktLiteral ;
+        schema:addressLocality "Würzburg" ;
+    ] ;
+    schema:url <http://www.hfm-wuerzburg.de/en/> ;
+    schema:sameAs <http://isni.org/isni/0000000087022448> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q260107> ;
+             .

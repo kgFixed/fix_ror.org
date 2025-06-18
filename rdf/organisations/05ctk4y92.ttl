@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05ctk4y92> 
+    a org:Organization ;
+    rdfs:label "William W Backus Hospital" ;
+    schema:name "William W Backus Hospital" ;
+    schema:foundingDate "1893"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Backus_Hospital> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-72.07591 41.52426)"^^geo:wktLiteral ;
+        schema:addressLocality "Norwich" ;
+    ] ;
+    schema:url <https://backushospital.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000404457913> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4839808> ;
+             .

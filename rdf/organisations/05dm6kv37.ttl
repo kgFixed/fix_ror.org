@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05dm6kv37> 
+    a org:Organization ;
+    rdfs:label "Institute of Child and Mother Health" ;
+    schema:name "Institute of Child and Mother Health" ;
+    schema:foundingDate "1992"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Bangladesh_Institute_of_Child_and_Mother_Health> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(90.40744 23.7104)"^^geo:wktLiteral ;
+        schema:addressLocality "Dhaka" ;
+    ] ;
+    schema:url <http://www.icmh.org.bd/> ;
+    schema:sameAs <http://isni.org/isni/0000000406066895> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4855311> ;
+             .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05cqf4668> 
+    a org:Organization ;
+    rdfs:label "Haaga-Helia University of Applied Sciences" ;
+    schema:name "Haaga-Helia University of Applied Sciences" ;
+    schema:foundingDate "2007"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Haaga-Helia_University_of_Applied_Sciences> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(24.93545 60.16952)"^^geo:wktLiteral ;
+        schema:addressLocality "Helsinki" ;
+    ] ;
+    schema:url <http://www.haaga-helia.fi/fi/etusivu> ;
+    schema:sameAs <http://isni.org/isni/0000000406476405> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5636472> ;
+             .

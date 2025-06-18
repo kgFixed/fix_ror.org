@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/054tmk179> 
+    a org:Organization ;
+    rdfs:label "Isaac Newton Group" ;
+    schema:name "Isaac Newton Group" ;
+    schema:foundingDate "1984"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Isaac_Newton_Group_of_Telescopes> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03cmntr54> ;
+        rdfs:label "Instituto de Astrofísica de Canarias" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/057g20z61> ;
+        rdfs:label "Science and Technology Facilities Council" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-16.25462 28.46824)"^^geo:wktLiteral ;
+        schema:addressLocality "Tenerife" ;
+    ] ;
+    schema:url <http://www.ing.iac.es/> ;
+    schema:sameAs <http://isni.org/isni/0000000417936825> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6076864> ;
+             .

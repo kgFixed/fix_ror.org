@@ -1,0 +1,33 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05hj93b82> 
+    a org:Organization ;
+    rdfs:label "HOBAS (Germany)" ;
+    schema:name "HOBAS (Germany)" ;
+    schema:foundingDate "1957"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/021kzz686> ;
+        rdfs:label "HOBAS (Czechia)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02zhmsp02> ;
+        rdfs:label "HOBAS (Poland)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(13.29103 53.60706)"^^geo:wktLiteral ;
+        schema:addressLocality "Trollenhagen" ;
+    ] ;
+    schema:url <https://www.hobas.com/de/> ;
+     .

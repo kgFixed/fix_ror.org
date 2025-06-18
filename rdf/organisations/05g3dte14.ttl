@@ -1,0 +1,67 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05g3dte14> 
+    a org:Organization ;
+    rdfs:label "Florida State University" ;
+    schema:name "Florida State University" ;
+    schema:foundingDate "1851"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Florida_State_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01v4tq883> ;
+        rdfs:label "Florida A&M University - Florida State University College of Engineering" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03k9hrc16> ;
+        rdfs:label "Florida State University-Panama" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03s53g630> ;
+        rdfs:label "National High Magnetic Field Laboratory" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05sqd3t97> ;
+        rdfs:label "State University System of Florida" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/017vyhs10> ;
+        rdfs:label "Moorea Coral Reef Long Term Ecological Research" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05hnkta08> ;
+        rdfs:label "Santa Barbara Coastal Long Term Ecological Research" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00j8x3x80> ;
+        rdfs:label "FSU Coastal and Marine Laboratory" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-84.28073 30.43826)"^^geo:wktLiteral ;
+        schema:addressLocality "Tallahassee" ;
+    ] ;
+    schema:url <https://www.fsu.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000404720419> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q861548> ;
+             .

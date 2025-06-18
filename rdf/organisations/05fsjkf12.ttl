@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05fsjkf12> 
+    a org:Organization ;
+    rdfs:label "Guangdong Peizheng College" ;
+    schema:name "Guangdong Peizheng College" ;
+    schema:sameAs <https://zh.wikipedia.org/wiki/%E5%B9%BF%E4%B8%9C%E5%9F%B9%E6%AD%A3%E5%AD%A6%E9%99%A2> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(113.25 23.11667)"^^geo:wktLiteral ;
+        schema:addressLocality "Guangzhou" ;
+    ] ;
+    schema:url <http://www.peizheng.edu.cn> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q17498859> ;
+             .

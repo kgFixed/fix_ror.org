@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05e2f3x89> 
+    a org:Organization ;
+    rdfs:label "Universal Health Services (United States)" ;
+    schema:name "Universal Health Services (United States)" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Universal_Health_Services> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-75.39602 40.08927)"^^geo:wktLiteral ;
+        schema:addressLocality "King of Prussia" ;
+    ] ;
+    schema:url <https://uhs.com> ;
+    schema:sameAs <http://isni.org/isni/0000000404159289> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7893967> ;
+             .

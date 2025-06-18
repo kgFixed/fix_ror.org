@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05jrtrp47> 
+    a org:Organization ;
+    rdfs:label "Maple Grove Hospital" ;
+    schema:name "Maple Grove Hospital" ;
+    schema:foundingDate "2005"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Maple_Grove_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-93.45579 45.07246)"^^geo:wktLiteral ;
+        schema:addressLocality "Maple Grove" ;
+    ] ;
+    schema:url <http://www.maplegrovehospital.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000404118524> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q14692826> ;
+             .

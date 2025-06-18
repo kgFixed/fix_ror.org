@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05d89kr76> 
+    a org:Organization ;
+    rdfs:label "Johannes Wesling Klinikum Minden" ;
+    schema:name "Johannes Wesling Klinikum Minden" ;
+    schema:foundingDate "2006"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03zcpvf19> ;
+        rdfs:label "University Hospitals of the Ruhr-University of Bochum" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(8.91455 52.28953)"^^geo:wktLiteral ;
+        schema:addressLocality "Minden" ;
+    ] ;
+    schema:url <http://www.muehlenkreiskliniken.de/johannes-wesling-klinikum-minden.html> ;
+    schema:sameAs <http://isni.org/isni/0000000405573596> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30270012> ;
+             .

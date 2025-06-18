@@ -1,0 +1,54 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05fy2ba68> 
+    a org:Organization ;
+    rdfs:label "SKF (Sweden)" ;
+    schema:name "SKF (Sweden)" ;
+    schema:foundingDate "1907"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/SKF> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04eqf8242> ;
+        rdfs:label "SKF (France)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01mkrzp48> ;
+        rdfs:label "SKF (Germany)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00agrnm56> ;
+        rdfs:label "SKF (Italy)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01y13ze91> ;
+        rdfs:label "SKF (Netherlands)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/046k0vn34> ;
+        rdfs:label "SKF (United Kingdom)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(11.96679 57.70716)"^^geo:wktLiteral ;
+        schema:addressLocality "Gothenburg" ;
+    ] ;
+    schema:url <http://www.skf.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000114822994> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q52846> ;
+             .

@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05hr6q169> 
+    a org:Organization ;
+    rdfs:label "A.T. Still University" ;
+    schema:name "A.T. Still University" ;
+    schema:foundingDate "1892"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/A.T._Still_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-92.58325 40.19475)"^^geo:wktLiteral ;
+        schema:addressLocality "Kirksville" ;
+    ] ;
+    schema:url <http://www.atsu.edu/> ;
+    schema:sameAs <http://isni.org/isni/000000040383094X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4647420> ;
+             .

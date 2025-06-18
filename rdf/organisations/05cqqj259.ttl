@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05cqqj259> 
+    a org:Organization ;
+    rdfs:label "American Society of Transplantation" ;
+    schema:name "American Society of Transplantation" ;
+    schema:foundingDate "1982"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/American_Society_of_Transplantation> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-74.891 39.934)"^^geo:wktLiteral ;
+        schema:addressLocality "Mount Laurel" ;
+    ] ;
+    schema:url <https://www.myast.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000104093433> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4745115> ;
+             .

@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/056v5p787> 
+    a org:Organization ;
+    rdfs:label "Centre Hospitalier Saint-Nazaire" ;
+    schema:name "Centre Hospitalier Saint-Nazaire" ;
+    schema:foundingDate "1730"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-2.2179 47.27506)"^^geo:wktLiteral ;
+        schema:addressLocality "Saint-Nazaire" ;
+    ] ;
+    schema:url <http://www.hopital-saintnazaire.fr/> ;
+     .

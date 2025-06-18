@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05bmwgs04> 
+    a org:Organization ;
+    rdfs:label "Sabzevar University of New Technology" ;
+    schema:name "Sabzevar University of New Technology" ;
+    schema:foundingDate "2011"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Sabzevar_University_of_New_Technology> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(57.68191 36.2126)"^^geo:wktLiteral ;
+        schema:addressLocality "Sabzawār" ;
+    ] ;
+    schema:url <http://newtech.hsu.ac.ir/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q96404764> ;
+             .

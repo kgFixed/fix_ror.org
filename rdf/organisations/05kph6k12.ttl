@@ -1,0 +1,114 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05kph6k12> 
+    a org:Organization ;
+    rdfs:label "CHI Health" ;
+    schema:name "CHI Health" ;
+    schema:foundingDate "1996"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/CHI_Health> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03w45gf56> ;
+        rdfs:label "CHI Health Mercy Council Bluffs" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03z1w3b90> ;
+        rdfs:label "CHI Health Creighton University Medical Center - Bergan Mercy" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00znk2w36> ;
+        rdfs:label "CHI Health St. Francis" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02kms8a74> ;
+        rdfs:label "CHI Health Good Samaritan" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05n9txz34> ;
+        rdfs:label "CHI Health Immanuel" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01srwze89> ;
+        rdfs:label "CHI Health Nebraska Heart" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01vvxdp11> ;
+        rdfs:label "CHI Health Lakeside" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05kkc4t55> ;
+        rdfs:label "CHI Health Mercy Corning" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04yw9h429> ;
+        rdfs:label "CHI Health Missouri Valley" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/015p17h26> ;
+        rdfs:label "CHI Health Plainview" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05h149207> ;
+        rdfs:label "CHI Health Schuyler" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02pr3qd23> ;
+        rdfs:label "CHI Health St. Mary’s" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04h76v219> ;
+        rdfs:label "Lasting Hope Recovery Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05544cm43> ;
+        rdfs:label "Nebraska Spine Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/011kd6273> ;
+        rdfs:label "Catholic Health Initiatives" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-95.94043 41.25626)"^^geo:wktLiteral ;
+        schema:addressLocality "Omaha" ;
+    ] ;
+    schema:url <https://www.chihealth.com> ;
+    schema:sameAs <http://isni.org/isni/0000000403831256> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4714382> ;
+             .

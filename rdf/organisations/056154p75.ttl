@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/056154p75> 
+    a org:Organization ;
+    rdfs:label "Gestamp (Sweden)" ;
+    schema:name "Gestamp (Sweden)" ;
+    schema:foundingDate "1997"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Gestamp_Automoci%C3%B3n> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02fzm7221> ;
+        rdfs:label "Gestamp (Spain)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(22.15465 65.58415)"^^geo:wktLiteral ;
+        schema:addressLocality "Luleå" ;
+    ] ;
+    schema:url <http://www.gestamp.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30713906> ;
+             .

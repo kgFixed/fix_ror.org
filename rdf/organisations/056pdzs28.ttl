@@ -1,0 +1,33 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/056pdzs28> 
+    a org:Organization ;
+    rdfs:label "The Herbert Wertheim UF Scripps Institute for Biomedical Innovation & Technology" ;
+    schema:name "The Herbert Wertheim UF Scripps Institute for Biomedical Innovation & Technology" ;
+    schema:foundingDate "2022"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02y3ad647> ;
+        rdfs:label "University of Florida" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02dxx6824> ;
+        rdfs:label "Scripps Research Institute" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-80.09421 26.93422)"^^geo:wktLiteral ;
+        schema:addressLocality "Jupiter" ;
+    ] ;
+    schema:url <https://scripps.ufl.edu> ;
+     .

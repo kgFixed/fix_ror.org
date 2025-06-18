@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/055r0dt08> 
+    a org:Organization ;
+    rdfs:label "Faculdade do Futuro" ;
+    schema:name "Faculdade do Futuro" ;
+    schema:foundingDate "2003"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-42.03361 -20.25806)"^^geo:wktLiteral ;
+        schema:addressLocality "Manhuaçu" ;
+    ] ;
+    schema:url <https://faculdadedofuturo.com.br> ;
+    schema:sameAs <http://isni.org/isni/0000000474794237> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q56841178> ;
+             .

@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0593wzx95> 
+    a org:Organization ;
+    rdfs:label "Ballard Power Systems (United States)" ;
+    schema:name "Ballard Power Systems (United States)" ;
+    schema:foundingDate "1979"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Ballard_Power_Systems> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00184ca40> ;
+        rdfs:label "Ballard Power Systems (Canada)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-71.31617 42.63342)"^^geo:wktLiteral ;
+        schema:addressLocality "Lowell" ;
+    ] ;
+    schema:url <http://www.ballard.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30338479> ;
+             .

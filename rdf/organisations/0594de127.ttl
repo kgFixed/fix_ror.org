@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0594de127> 
+    a org:Organization ;
+    rdfs:label "Instituto de Botanica Darwinion" ;
+    schema:name "Instituto de Botanica Darwinion" ;
+    schema:foundingDate "1911"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03cqe8w59> ;
+        rdfs:label "Consejo Nacional de Investigaciones Científicas y Técnicas" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-58.52111 -34.46971)"^^geo:wktLiteral ;
+        schema:addressLocality "San Isidro" ;
+    ] ;
+    schema:url <http://www.darwin.edu.ar/> ;
+    schema:sameAs <http://isni.org/isni/0000000417554827> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q979012> ;
+             .

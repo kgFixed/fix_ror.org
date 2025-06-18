@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05m6adj80> 
+    a org:Organization ;
+    rdfs:label "Takasaki City University of Economics" ;
+    schema:name "Takasaki City University of Economics" ;
+    schema:foundingDate "1952"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Takasaki_City_University_of_Economics> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(139.01667 36.33333)"^^geo:wktLiteral ;
+        schema:addressLocality "Takasaki" ;
+    ] ;
+    schema:url <https://www.tcue.ac.jp/> ;
+    schema:sameAs <http://isni.org/isni/0000000087165721> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q845177> ;
+             .

@@ -1,0 +1,35 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05c24ew78> 
+    a org:Organization ;
+    rdfs:label "Walsall College" ;
+    schema:name "Walsall College" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Walsall_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03angcq70> ;
+        rdfs:label "University of Birmingham" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01k2y1055> ;
+        rdfs:label "University of Wolverhampton" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.98396 52.58528)"^^geo:wktLiteral ;
+        schema:addressLocality "Walsall" ;
+    ] ;
+    schema:url <https://www.walsallcollege.ac.uk/> ;
+    schema:sameAs <http://isni.org/isni/0000000406038309> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7963767> ;
+             .

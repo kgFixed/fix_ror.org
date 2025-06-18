@@ -1,0 +1,32 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/058hz8544> 
+    a org:Organization ;
+    rdfs:label "Institut des Sciences Cognitives" ;
+    schema:name "Institut des Sciences Cognitives" ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/029brtt94> ;
+        rdfs:label "Université Claude Bernard Lyon 1" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05nfypp21> ;
+        rdfs:label "Délégation Aquitaine" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(4.91303 45.73865)"^^geo:wktLiteral ;
+        schema:addressLocality "Bron" ;
+    ] ;
+    schema:url <http://www.isc.cnrs.fr/index_en.htm> ;
+     .

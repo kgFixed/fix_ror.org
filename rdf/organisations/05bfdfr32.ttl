@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05bfdfr32> 
+    a org:Organization ;
+    rdfs:label "Anoka-Hennepin School District" ;
+    schema:name "Anoka-Hennepin School District" ;
+    schema:foundingDate "1920"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Anoka-Hennepin_School_District_11> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-93.38718 45.19774)"^^geo:wktLiteral ;
+        schema:addressLocality "Anoka" ;
+    ] ;
+    schema:url <https://www.ahschools.us/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q4769880> ;
+             .

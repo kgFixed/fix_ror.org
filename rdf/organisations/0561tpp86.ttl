@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0561tpp86> 
+    a org:Organization ;
+    rdfs:label "Alzheimer's Association of Israel" ;
+    schema:name "Alzheimer's Association of Israel" ;
+    schema:foundingDate "1988"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(34.81065 32.08227)"^^geo:wktLiteral ;
+        schema:addressLocality "Ramat Gan" ;
+    ] ;
+    schema:url <http://www.alz-il.net/lang/186-english-2> ;
+     .

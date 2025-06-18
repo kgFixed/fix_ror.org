@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05m2de985> 
+    a org:Organization ;
+    rdfs:label "Exchange Income (Canada)" ;
+    schema:name "Exchange Income (Canada)" ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-97.14704 49.8844)"^^geo:wktLiteral ;
+        schema:addressLocality "Winnipeg" ;
+    ] ;
+    schema:url <http://www.exchangeincomecorp.ca/> ;
+    schema:sameAs <http://isni.org/isni/000000047411086X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30295400> ;
+             .

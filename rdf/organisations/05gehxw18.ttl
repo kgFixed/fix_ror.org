@@ -1,0 +1,66 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05gehxw18> 
+    a org:Organization ;
+    rdfs:label "Detroit Medical Center" ;
+    schema:name "Detroit Medical Center" ;
+    schema:foundingDate "1985"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Detroit_Medical_Center> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0429x9p85> ;
+        rdfs:label "Children's Hospital of Michigan" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00682eh61> ;
+        rdfs:label "Detroit Receiving Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00sxe0e68> ;
+        rdfs:label "Harper University Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02paek818> ;
+        rdfs:label "Hutzel Women's Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00hysg385> ;
+        rdfs:label "Sinai Grace Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04nqwjy64> ;
+        rdfs:label "Rehabilitation Institute of Michigan" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01070mq45> ;
+        rdfs:label "Wayne State University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-83.04575 42.33143)"^^geo:wktLiteral ;
+        schema:addressLocality "Detroit" ;
+    ] ;
+    schema:url <http://www.dmc.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000100886903> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5265970> ;
+             .

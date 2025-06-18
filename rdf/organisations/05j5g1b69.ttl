@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05j5g1b69> 
+    a org:Organization ;
+    rdfs:label "Public Policy Institute for Wales" ;
+    schema:name "Public Policy Institute for Wales" ;
+    schema:foundingDate "2014"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Public_Policy_Institute_for_Wales> ;
+    org:status "inactive" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/03y0ymy78> ;
+        rdfs:label "Wales Centre for Public Policy" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-3.18 51.48)"^^geo:wktLiteral ;
+        schema:addressLocality "Cardiff" ;
+    ] ;
+    schema:url <http://ppiw.org.uk/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q29025663> ;
+             .

@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/059n14w82> 
+    a org:Organization ;
+    rdfs:label "TomTom (Belgium)" ;
+    schema:name "TomTom (Belgium)" ;
+    schema:foundingDate "1991"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/TomTom> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04as6y835> ;
+        rdfs:label "TomTom (Netherlands)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(3.71667 51.05)"^^geo:wktLiteral ;
+        schema:addressLocality "Ghent" ;
+    ] ;
+    schema:url <https://www.tomtom.com/company/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30338625> ;
+             .

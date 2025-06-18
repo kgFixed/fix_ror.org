@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05as1na60> 
+    a org:Organization ;
+    rdfs:label "North Island College" ;
+    schema:name "North Island College" ;
+    schema:foundingDate "1975"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/North_Island_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-124.9936 49.68657)"^^geo:wktLiteral ;
+        schema:addressLocality "Courtenay" ;
+    ] ;
+    schema:url <https://www.nic.bc.ca> ;
+    schema:sameAs <http://isni.org/isni/0000000403930166> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7055721> ;
+             .

@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05c9p1x46> 
+    a org:Organization ;
+    rdfs:label "Bicêtre Hospital" ;
+    schema:name "Bicêtre Hospital" ;
+    schema:foundingDate "1642"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Bic%C3%AAtre_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00pg5jh14> ;
+        rdfs:label "Assistance Publique – Hôpitaux de Paris" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.36073 48.81471)"^^geo:wktLiteral ;
+        schema:addressLocality "Le Kremlin-Bicêtre" ;
+    ] ;
+    schema:url <http://hopital-bicetre.aphp.fr/> ;
+    schema:sameAs <http://isni.org/isni/0000000121817253> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q15217751> ;
+             .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05c9swc26> 
+    a org:Organization ;
+    rdfs:label "Museum of New Zealand Te Papa Tongarewa" ;
+    schema:name "Museum of New Zealand Te Papa Tongarewa" ;
+    schema:foundingDate "1992"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Museum_of_New_Zealand_Te_Papa_Tongarewa> ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(174.77557 -41.28664)"^^geo:wktLiteral ;
+        schema:addressLocality "Wellington" ;
+    ] ;
+    schema:url <http://www.tepapa.govt.nz/> ;
+    schema:sameAs <http://isni.org/isni/0000000404834475> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q915603> ;
+             .
