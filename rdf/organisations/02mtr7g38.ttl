@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02mtr7g38> 
+    a org:Organization ;
+    rdfs:label "Bandırma Onyedi Eylül University" ;
+    schema:name "Bandırma Onyedi Eylül University" ;
+    schema:foundingDate "2015"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Band%C4%B1rma_Onyedi_Eyl%C3%BCl_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(27.97667 40.35222)"^^geo:wktLiteral ;
+        schema:addressLocality "Bandırma" ;
+    ] ;
+    schema:url <https://bandirma.edu.tr> ;
+    schema:sameAs <http://isni.org/isni/000000045896227X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q20757715> ;
+             .

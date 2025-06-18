@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02qrt6d45> 
+    a org:Organization ;
+    rdfs:label "Institut Préparatoire aux Études d'Ingénieurs de Monastir" ;
+    schema:name "Institut Préparatoire aux Études d'Ingénieurs de Monastir" ;
+    schema:foundingDate "1992"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05v1m8q81> ;
+        rdfs:label "Ministry of Higher Education and Scientific Research" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(10.82617 35.77799)"^^geo:wktLiteral ;
+        schema:addressLocality "Monastir" ;
+    ] ;
+    schema:url <http://www.ipeim.rnu.tn/fra/> ;
+    schema:sameAs <http://isni.org/isni/0000000404826387> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30263821> ;
+             .

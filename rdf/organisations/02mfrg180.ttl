@@ -1,0 +1,67 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02mfrg180> 
+    a org:Organization ;
+    rdfs:label "United Technologies (United States)" ;
+    schema:name "United Technologies (United States)" ;
+    schema:foundingDate "1934"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/United_Technologies_Corporation> ;
+    org:status "inactive" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02pt3tp10> ;
+        rdfs:label "United Technologies (Canada)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/057a9rf33> ;
+        rdfs:label "United Technologies (Finland)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03svy9a26> ;
+        rdfs:label "United Technologies (France)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00hrhpx15> ;
+        rdfs:label "United Technologies (Germany)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04m96pa44> ;
+        rdfs:label "United Technologies (Netherlands)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03qhf8m78> ;
+        rdfs:label "United Technologies (United Kingdom)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/0354t7b78> ;
+        rdfs:label "Raytheon Technologies (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-72.83204 41.71982)"^^geo:wktLiteral ;
+        schema:addressLocality "Farmington" ;
+    ] ;
+    schema:url <http://www.utc.com/Pages/Home.aspx> ;
+    schema:sameAs <http://isni.org/isni/0000000404694927> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1045758> ;
+             .

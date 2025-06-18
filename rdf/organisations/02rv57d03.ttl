@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02rv57d03> 
+    a org:Organization ;
+    rdfs:label "International University of the Caribbean" ;
+    schema:name "International University of the Caribbean" ;
+    schema:foundingDate "2005"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/International_University_of_the_Caribbean> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-76.79358 17.99702)"^^geo:wktLiteral ;
+        schema:addressLocality "Kingston" ;
+    ] ;
+    schema:url <http://www.iuc2.edu.jm/> ;
+    schema:sameAs <http://isni.org/isni/0000000403685498> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1584721> ;
+             .

@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02pv2je48> 
+    a org:Organization ;
+    rdfs:label "Queen of the Valley Medical Center" ;
+    schema:name "Queen of the Valley Medical Center" ;
+    schema:foundingDate "1958"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Queen_of_the_Valley_Medical_Center> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03t995d97> ;
+        rdfs:label "St. Joseph Health System" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-122.28553 38.29714)"^^geo:wktLiteral ;
+        schema:addressLocality "Napa" ;
+    ] ;
+    schema:url <http://www.thequeen.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000092175895> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7270683> ;
+             .

@@ -1,0 +1,127 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02kgve346> 
+    a org:Organization ;
+    rdfs:label "NOAA Oceanic and Atmospheric Research" ;
+    schema:name "NOAA Oceanic and Atmospheric Research" ;
+    schema:foundingDate "1841"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Office_of_Oceanic_and_Atmospheric_Research> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0061q5f61> ;
+        rdfs:label "NOAA Air Resources Laboratory" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00mmmy130> ;
+        rdfs:label "NOAA Climate Program Office" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00bdqav06> ;
+        rdfs:label "Cooperative Institute for Research in Environmental Sciences" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/052pywd95> ;
+        rdfs:label "NOAA Office of Science Support" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/042r9xb17> ;
+        rdfs:label "NOAA Atlantic Oceanographic and Meteorological Laboratories" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03vmn1898> ;
+        rdfs:label "NOAA Geophysical Fluid Dynamics Laboratory" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03crn0n59> ;
+        rdfs:label "NOAA Pacific Marine Environmental Laboratory" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/033tt8e33> ;
+        rdfs:label "NOAA Earth System Research Laboratory" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01jeee804> ;
+        rdfs:label "NOAA Great Lakes Environmental Research Laboratory" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00gd1f947> ;
+        rdfs:label "NOAA National Severe Storms Laboratory" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/012sz6c52> ;
+        rdfs:label "NOAA Uncrewed Systems Research Transition Office" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02mnd0039> ;
+        rdfs:label "NOAA Technology Partnerships Office" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03pmw0n81> ;
+        rdfs:label "NOAA Office of Research, Transition, & Application" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02bfn4816> ;
+        rdfs:label "NOAA Ocean Acidification Program" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/037bamf06> ;
+        rdfs:label "NOAA Global Ocean Monitoring and Observing Program" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01q70bz83> ;
+        rdfs:label "NOAA Weather Program Office" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02z5nhe81> ;
+        rdfs:label "National Oceanic and Atmospheric Administration" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.02609 38.99067)"^^geo:wktLiteral ;
+        schema:addressLocality "Silver Spring" ;
+    ] ;
+    schema:url <https://research.noaa.gov> ;
+    schema:sameAs <http://isni.org/isni/000000040450306X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7079283> ;
+             .

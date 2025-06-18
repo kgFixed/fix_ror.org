@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/030ajmr16> 
+    a org:Organization ;
+    rdfs:label "Royal Society for the Conservation of Nature" ;
+    schema:name "Royal Society for the Conservation of Nature" ;
+    schema:foundingDate "1966"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Royal_Society_for_the_Conservation_of_Nature> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(35.89802 32.01071)"^^geo:wktLiteral ;
+        schema:addressLocality "Al Jubayhah" ;
+    ] ;
+    schema:url <http://www.rscn.org.jo/> ;
+    schema:sameAs <http://isni.org/isni/0000000460866420> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7374841> ;
+             .

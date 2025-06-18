@@ -1,0 +1,52 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02snf8m58> 
+    a org:Organization ;
+    rdfs:label "Laboratoire des Sciences du Numérique de Nantes" ;
+    schema:name "Laboratoire des Sciences du Numérique de Nantes" ;
+    schema:foundingDate "2017"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02t220m45> ;
+        rdfs:label "Délégation Bretagne et Pays de la Loire" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02kvxyf05> ;
+        rdfs:label "Institut national de recherche en informatique et en automatique" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/030hj3061> ;
+        rdfs:label "IMT Atlantique" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03gnr7b55> ;
+        rdfs:label "Nantes Université" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03nh7d505> ;
+        rdfs:label "École Centrale de Nantes" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.55336 47.21725)"^^geo:wktLiteral ;
+        schema:addressLocality "Nantes" ;
+    ] ;
+    schema:url <https://www.ls2n.fr/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30737807> ;
+             .

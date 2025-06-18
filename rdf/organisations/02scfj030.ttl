@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02scfj030> 
+    a org:Organization ;
+    rdfs:label "RELX Group (Netherlands)" ;
+    schema:name "RELX Group (Netherlands)" ;
+    schema:foundingDate "1993"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/RELX> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/055j8ya05> ;
+        rdfs:label "RELX Group (United Kingdom)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/013fhv752> ;
+        rdfs:label "Elsevier BV (Netherlands)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(4.88969 52.37403)"^^geo:wktLiteral ;
+        schema:addressLocality "Amsterdam" ;
+    ] ;
+    schema:url <https://www.relx.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000106729757> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q746413> ;
+             .

@@ -1,0 +1,20 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02n2tgb73> 
+    a org:Organization ;
+    rdfs:label "Bergen Kommune Byrådsavd for Helse og Omsorg" ;
+    schema:name "Bergen Kommune Byrådsavd for Helse og Omsorg" ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(5.32415 60.39299)"^^geo:wktLiteral ;
+        schema:addressLocality "Bergen" ;
+    ] ;
+    schema:url <https://www.bergen.kommune.no/omkommunen/avdelinger/byradsavd-for-helse-og-omsorg> ;
+     .

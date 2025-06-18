@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02x909r11> 
+    a org:Organization ;
+    rdfs:label "Fonterra (United States)" ;
+    schema:name "Fonterra (United States)" ;
+    schema:foundingDate "2001"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Fonterra> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01qjmkr85> ;
+        rdfs:label "Fonterra (New Zealand)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-87.88451 41.99531)"^^geo:wktLiteral ;
+        schema:addressLocality "Rosemont" ;
+    ] ;
+    schema:url <http://www.fonterra.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30274312> ;
+             .

@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/030h1vb90> 
+    a org:Organization ;
+    rdfs:label "AZ Sint-Jan" ;
+    schema:name "AZ Sint-Jan" ;
+    schema:foundingDate "1796"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(3.22424 51.20892)"^^geo:wktLiteral ;
+        schema:addressLocality "Bruges" ;
+    ] ;
+    schema:url <https://www.azsintjan.be> ;
+    schema:sameAs <http://isni.org/isni/0000000406263792> ;
+             .

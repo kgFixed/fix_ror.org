@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02sq1ad32> 
+    a org:Organization ;
+    rdfs:label "Unitika (Japan)" ;
+    schema:name "Unitika (Japan)" ;
+    schema:foundingDate "1889"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Unitika> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(135.50107 34.69379)"^^geo:wktLiteral ;
+        schema:addressLocality "Osaka" ;
+    ] ;
+    schema:url <https://www.unitika.co.jp/e/> ;
+    schema:sameAs <http://isni.org/isni/0000000105890936> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7893684> ;
+             .

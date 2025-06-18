@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02vb0gn74> 
+    a org:Organization ;
+    rdfs:label "TL & Associés" ;
+    schema:name "TL & Associés" ;
+    schema:foundingDate "2003"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.38487 48.81568)"^^geo:wktLiteral ;
+        schema:addressLocality "Ivry-sur-Seine" ;
+    ] ;
+    schema:url <http://www.tl-a.net/> ;
+     .

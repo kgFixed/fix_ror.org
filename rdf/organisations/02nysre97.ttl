@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02nysre97> 
+    a org:Organization ;
+    rdfs:label "Olathe Public Schools" ;
+    schema:name "Olathe Public Schools" ;
+    schema:foundingDate "1965"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Olathe_School_District_USD_233> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-94.81913 38.8814)"^^geo:wktLiteral ;
+        schema:addressLocality "Olathe" ;
+    ] ;
+    schema:url <https://www.olatheschools.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000405925870> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7083128> ;
+             .

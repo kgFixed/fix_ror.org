@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02nm6nb22> 
+    a org:Organization ;
+    rdfs:label "Sullivan College of Technology and Design" ;
+    schema:name "Sullivan College of Technology and Design" ;
+    schema:foundingDate "1961"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Sullivan_College_of_Technology_and_Design> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-85.75941 38.25424)"^^geo:wktLiteral ;
+        schema:addressLocality "Louisville" ;
+    ] ;
+    schema:url <http://sctd.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000405342819> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7636397> ;
+             .

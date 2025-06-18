@@ -1,0 +1,20 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02tqwr834> 
+    a org:Organization ;
+    rdfs:label "Pegas Gonda (Czechia)" ;
+    schema:name "Pegas Gonda (Czechia)" ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(16.87649 49.15325)"^^geo:wktLiteral ;
+        schema:addressLocality "Slavkov u Brna" ;
+    ] ;
+    schema:url <http://www.pegas-gonda.cz/en/> ;
+     .

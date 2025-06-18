@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02wcg0z91> 
+    a org:Organization ;
+    rdfs:label "Quebec Labrador Foundation" ;
+    schema:name "Quebec Labrador Foundation" ;
+    schema:foundingDate "1961"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Quebec-Labrador_Foundation> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-70.84116 42.67926)"^^geo:wktLiteral ;
+        schema:addressLocality "Ipswich" ;
+    ] ;
+    schema:url <https://www.qlf.org/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q7269737> ;
+             .

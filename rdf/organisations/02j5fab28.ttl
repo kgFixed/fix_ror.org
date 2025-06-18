@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02j5fab28> 
+    a org:Organization ;
+    rdfs:label "Institute of Economics and Management" ;
+    schema:name "Institute of Economics and Management" ;
+    schema:foundingDate "1996"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(43.05036 44.05)"^^geo:wktLiteral ;
+        schema:addressLocality "Pyatigorsk" ;
+    ] ;
+    schema:url <http://www.ineu.ru/> ;
+     .

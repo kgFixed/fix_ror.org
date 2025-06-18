@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02k4dcs46> 
+    a org:Organization ;
+    rdfs:label "National Engineering Research Center of Electromagnetic Radiation Control Materials" ;
+    schema:name "National Engineering Research Center of Electromagnetic Radiation Control Materials" ;
+    schema:foundingDate "2013"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(104.06667 30.66667)"^^geo:wktLiteral ;
+        schema:addressLocality "Chengdu" ;
+    ] ;
+    schema:url <http://www.erc.uestc.edu.cn/show/7/67/1.html> ;
+     .

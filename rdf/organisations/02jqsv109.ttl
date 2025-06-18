@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02jqsv109> 
+    a org:Organization ;
+    rdfs:label "Margarita Rudomino All-Russia State Library for Foreign Literature" ;
+    schema:name "Margarita Rudomino All-Russia State Library for Foreign Literature" ;
+    schema:foundingDate "1921"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Margarita_Rudomino_All-Russia_State_Library_for_Foreign_Literature> ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(37.61556 55.75222)"^^geo:wktLiteral ;
+        schema:addressLocality "Moscow" ;
+    ] ;
+    schema:url <https://libfl.ru/en> ;
+    schema:sameAs <http://isni.org/isni/000000011011726X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3888728> ;
+             .

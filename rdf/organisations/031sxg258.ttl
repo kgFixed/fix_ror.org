@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/031sxg258> 
+    a org:Organization ;
+    rdfs:label "Boehringer Ingelheim (Canada)" ;
+    schema:name "Boehringer Ingelheim (Canada)" ;
+    schema:foundingDate "1972"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Boehringer_Ingelheim> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00q32j219> ;
+        rdfs:label "Boehringer Ingelheim (Germany)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-79.83713 43.38621)"^^geo:wktLiteral ;
+        schema:addressLocality "Burlington" ;
+    ] ;
+    schema:url <http://www.boehringer-ingelheim.ca/en> ;
+    schema:sameAs <http://isni.org/isni/0000000404988634> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q50363506> ;
+             .

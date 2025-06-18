@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/031yrna52> 
+    a org:Organization ;
+    rdfs:label "Ajinomoto (United States)" ;
+    schema:name "Ajinomoto (United States)" ;
+    schema:foundingDate "1917"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Ajinomoto> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/044mkdq33> ;
+        rdfs:label "Ajinomoto (Japan)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-88.00729 41.97503)"^^geo:wktLiteral ;
+        schema:addressLocality "Itasca" ;
+    ] ;
+    schema:url <http://www.ajinorthamerica.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q50039423> ;
+             .

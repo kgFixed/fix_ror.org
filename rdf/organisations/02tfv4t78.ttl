@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02tfv4t78> 
+    a org:Organization ;
+    rdfs:label "Corning (United States)" ;
+    schema:name "Corning (United States)" ;
+    schema:foundingDate "1851"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Corning_Inc.> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02e1bds08> ;
+        rdfs:label "Corning (France)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01xs70477> ;
+        rdfs:label "Corning (Israel)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04asmh688> ;
+        rdfs:label "Corning (South Korea)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.05469 42.14285)"^^geo:wktLiteral ;
+        schema:addressLocality "Corning" ;
+    ] ;
+    schema:url <http://www.corning.com/in/en.html> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q5842736> ;
+             .

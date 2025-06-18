@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02p804s75> 
+    a org:Organization ;
+    rdfs:label "Saint Leo University" ;
+    schema:name "Saint Leo University" ;
+    schema:foundingDate "1889"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Saint_Leo_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-82.25842 28.33723)"^^geo:wktLiteral ;
+        schema:addressLocality "Saint Leo" ;
+    ] ;
+    schema:url <https://www.saintleo.edu> ;
+    schema:sameAs <http://isni.org/isni/0000000404603546> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q892503> ;
+             .

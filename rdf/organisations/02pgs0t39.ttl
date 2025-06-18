@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02pgs0t39> 
+    a org:Organization ;
+    rdfs:label "Saint Thomas Hospital" ;
+    schema:name "Saint Thomas Hospital" ;
+    schema:foundingDate "1702"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Hospital_Santo_Tomas> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-79.51973 8.9936)"^^geo:wktLiteral ;
+        schema:addressLocality "Panama City" ;
+    ] ;
+    schema:url <http://www.hospitalsantotomas.gob.pa/> ;
+    schema:sameAs <http://isni.org/isni/0000000404652778> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5400082> ;
+             .

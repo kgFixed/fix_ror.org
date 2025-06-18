@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02xa8s021> 
+    a org:Organization ;
+    rdfs:label "The Economic Research Institute for Northeast Asia" ;
+    schema:name "The Economic Research Institute for Northeast Asia" ;
+    schema:foundingDate "1993"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(139.04125 37.92259)"^^geo:wktLiteral ;
+        schema:addressLocality "Niigata" ;
+    ] ;
+    schema:url <https://www.erina.or.jp/en/> ;
+    schema:sameAs <http://isni.org/isni/0000000404804604> ;
+             .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02zdscb63> 
+    a org:Organization ;
+    rdfs:label "Thailand National Sports University" ;
+    schema:name "Thailand National Sports University" ;
+    schema:foundingDate "2005"^^xsd:gYear ;
+    schema:sameAs <https://th.wikipedia.org/wiki/%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%A7%E0%B8%B4%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%A5%E0%B8%B1%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%81%E0%B8%B5%E0%B8%AC%E0%B8%B2%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(100.98345 13.3622)"^^geo:wktLiteral ;
+        schema:addressLocality "Chon Buri" ;
+    ] ;
+    schema:url <http://www.tnsu.ac.th/web/web3/> ;
+    schema:sameAs <http://isni.org/isni/0000000503907115> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q13021897> ;
+             .

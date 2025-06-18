@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02sdz5p32> 
+    a org:Organization ;
+    rdfs:label "Fontanellas Y Marti (Spain)" ;
+    schema:name "Fontanellas Y Marti (Spain)" ;
+    schema:foundingDate "1954"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(1.6172 41.58098)"^^geo:wktLiteral ;
+        schema:addressLocality "Igualada" ;
+    ] ;
+    schema:url <http://fontanellasymarti.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30256531> ;
+             .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02y9rwc40> 
+    a org:Organization ;
+    rdfs:label "U-blox (Switzerland)" ;
+    schema:name "U-blox (Switzerland)" ;
+    schema:foundingDate "1997"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/U-blox> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(8.56351 47.29175)"^^geo:wktLiteral ;
+        schema:addressLocality "Thalwil" ;
+    ] ;
+    schema:url <https://www.u-blox.com/en> ;
+    schema:sameAs <http://isni.org/isni/0000000460928652> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2466238> ;
+             .

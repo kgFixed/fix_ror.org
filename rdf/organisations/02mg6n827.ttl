@@ -1,0 +1,41 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02mg6n827> 
+    a org:Organization ;
+    rdfs:label "CEA Grenoble" ;
+    schema:name "CEA Grenoble" ;
+    schema:foundingDate "2007"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00fwjkb59> ;
+        rdfs:label "Laboratoire d'Economie Appliquée de Grenoble" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/036zswm25> ;
+        rdfs:label "Laboratoire des Technologies de la Microélectronique" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00jjx8s55> ;
+        rdfs:label "Commissariat à l'Énergie Atomique et aux Énergies Alternatives" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(5.71479 45.17869)"^^geo:wktLiteral ;
+        schema:addressLocality "Grenoble" ;
+    ] ;
+    schema:url <http://portail.cea.fr/Pages/le-cea/les-centres-cea/grenoble.aspx> ;
+    schema:sameAs <http://isni.org/isni/0000000406301517> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2931224> ;
+             .

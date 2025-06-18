@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02jm1re07> 
+    a org:Organization ;
+    rdfs:label "Catholic University of Eastern Africa" ;
+    schema:name "Catholic University of Eastern Africa" ;
+    schema:foundingDate "1984"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Catholic_University_of_Eastern_Africa> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(36.81667 -1.28333)"^^geo:wktLiteral ;
+        schema:addressLocality "Nairobi" ;
+    ] ;
+    schema:url <https://cuea.edu> ;
+    schema:sameAs <http://isni.org/isni/000000012155887X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1736407> ;
+             .

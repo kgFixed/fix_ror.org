@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02wndzd81> 
+    a org:Organization ;
+    rdfs:label "Heart and Diabetes Center North Rhine-Westphalia" ;
+    schema:name "Heart and Diabetes Center North Rhine-Westphalia" ;
+    schema:foundingDate "1980"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Heart_and_Diabetes_Center_North_Rhine-Westphalia> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03zcpvf19> ;
+        rdfs:label "University Hospitals of the Ruhr-University of Bochum" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(8.80365 52.20699)"^^geo:wktLiteral ;
+        schema:addressLocality "Bad Oeynhausen" ;
+    ] ;
+    schema:url <http://www.hdz-nrw.de/en/home/?no_cache=1> ;
+    schema:sameAs <http://isni.org/isni/0000000107238327> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1615024> ;
+             .

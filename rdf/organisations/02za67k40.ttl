@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02za67k40> 
+    a org:Organization ;
+    rdfs:label "InnoLux (China)" ;
+    schema:name "InnoLux (China)" ;
+    schema:foundingDate "2003"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/InnoLux_Corporation> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05xf13p94> ;
+        rdfs:label "InnoLux (Taiwan)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(121.54945 29.87819)"^^geo:wktLiteral ;
+        schema:addressLocality "Ningbo" ;
+    ] ;
+    schema:url <http://www.innolux.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q50363519> ;
+             .

@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02nsvrr55> 
+    a org:Organization ;
+    rdfs:label "Centre for Conservation Biology & Sustainable Development" ;
+    schema:name "Centre for Conservation Biology & Sustainable Development" ;
+    schema:foundingDate "2007"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(74.83554 14.62072)"^^geo:wktLiteral ;
+        schema:addressLocality "Sirsi" ;
+    ] ;
+    schema:url <http://www.ccbsd.com/> ;
+     .

@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02ype5435> 
+    a org:Organization ;
+    rdfs:label "Louisiana Department of Education" ;
+    schema:name "Louisiana Department of Education" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Louisiana_Department_of_Education> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-91.18747 30.44332)"^^geo:wktLiteral ;
+        schema:addressLocality "Baton Rouge" ;
+    ] ;
+    schema:url <http://www.louisianabelieves.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000406252970> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q16949210> ;
+             .

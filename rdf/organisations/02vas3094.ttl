@@ -1,0 +1,32 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02vas3094> 
+    a org:Organization ;
+    rdfs:label "NXP (France)" ;
+    schema:name "NXP (France)" ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/059be4e97> ;
+        rdfs:label "NXP (Netherlands)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Predecessor" ;
+        org:member <https://ror.org/0438g3j88> ;
+        rdfs:label "Freescale Semiconductor (France)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(1.44367 43.60426)"^^geo:wktLiteral ;
+        schema:addressLocality "Toulouse" ;
+    ] ;
+    schema:url <https://www.nxp.com/company/about-nxp/worldwide-locations/france:FRANCE> ;
+     .

@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02jz99c72> 
+    a org:Organization ;
+    rdfs:label "Atlantic Health System" ;
+    schema:name "Atlantic Health System" ;
+    schema:foundingDate "2012"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Atlantic_Health_System> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0153wm704> ;
+        rdfs:label "Goryeb Children's Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03m6tev69> ;
+        rdfs:label "Morristown Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05resfq34> ;
+        rdfs:label "Overlook Medical Center" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-74.48154 40.79677)"^^geo:wktLiteral ;
+        schema:addressLocality "Morristown" ;
+    ] ;
+    schema:url <http://www.atlantichealth.org/atlantic/> ;
+    schema:sameAs <http://isni.org/isni/0000000404017408> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q16975669> ;
+             .

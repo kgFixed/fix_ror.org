@@ -1,0 +1,92 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02jbv0t02> 
+    a org:Organization ;
+    rdfs:label "Lawrence Berkeley National Laboratory" ;
+    schema:name "Lawrence Berkeley National Laboratory" ;
+    schema:foundingDate "1931"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Lawrence_Berkeley_National_Laboratory> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05jtgpc57> ;
+        rdfs:label "Joint Center for Artificial Photosynthesis" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00319zh75> ;
+        rdfs:label "Advanced Light Source" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04xm1d337> ;
+        rdfs:label "Joint Genome Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01t14bp54> ;
+        rdfs:label "Environmental System Science Data Infrastructure for a Virtual Ecosystem" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01fdhpk75> ;
+        rdfs:label "Molecular Foundry" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05v3mvq14> ;
+        rdfs:label "National Energy Research Scientific Computing Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0382bxa43> ;
+        rdfs:label "Energy Sciences Network" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05cwx3318> ;
+        rdfs:label "National Microbiome Data Collaborative" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00pjdza24> ;
+        rdfs:label "University of California System" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00mmn6b08> ;
+        rdfs:label "Office of Science" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01dvj3d25> ;
+        rdfs:label "Atmospheric Radiation Measurement User Facility" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-122.27275 37.87159)"^^geo:wktLiteral ;
+        schema:addressLocality "Berkeley" ;
+    ] ;
+    schema:url <https://www.lbl.gov/> ;
+    schema:sameAs <http://isni.org/isni/0000000122314551> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1133630> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4686229> ;
+             .

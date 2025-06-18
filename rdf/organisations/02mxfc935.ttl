@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02mxfc935> 
+    a org:Organization ;
+    rdfs:label "Andermatt Biocontrol (Switzerland)" ;
+    schema:name "Andermatt Biocontrol (Switzerland)" ;
+    schema:foundingDate "1988"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(7.99418 47.12183)"^^geo:wktLiteral ;
+        schema:addressLocality "Willisau" ;
+    ] ;
+    schema:url <https://www.biocontrol.ch/> ;
+    schema:sameAs <http://isni.org/isni/0000000464317007> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30255256> ;
+             .

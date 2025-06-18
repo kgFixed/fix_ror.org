@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02nb4b562> 
+    a org:Organization ;
+    rdfs:label "Recordati (Ireland)" ;
+    schema:name "Recordati (Ireland)" ;
+    schema:foundingDate "1926"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03ekprg18> ;
+        rdfs:label "Recordati (Italy)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-8.47061 51.89797)"^^geo:wktLiteral ;
+        schema:addressLocality "Cork" ;
+    ] ;
+    schema:url <https://www.recordati.com/en/> ;
+     .

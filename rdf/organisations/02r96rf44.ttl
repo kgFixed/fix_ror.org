@@ -1,0 +1,78 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02r96rf44> 
+    a org:Organization ;
+    rdfs:label "Qiagen (Germany)" ;
+    schema:name "Qiagen (Germany)" ;
+    schema:foundingDate "1984"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Qiagen> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03d5p6p20> ;
+        rdfs:label "Qiagen (Australia)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00233x252> ;
+        rdfs:label "Qiagen (Denmark)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/035eg8817> ;
+        rdfs:label "Qiagen (France)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05j88yh83> ;
+        rdfs:label "Qiagen (India)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02qyqxk84> ;
+        rdfs:label "Qiagen (Netherlands)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01ccnft78> ;
+        rdfs:label "Qiagen (Spain)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03h3r1n96> ;
+        rdfs:label "Qiagen (Switzerland)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04hyg4h58> ;
+        rdfs:label "Qiagen (United Kingdom)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04s4jww20> ;
+        rdfs:label "Qiagen (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(6.93093 51.16818)"^^geo:wktLiteral ;
+        schema:addressLocality "Hilden" ;
+    ] ;
+    schema:url <https://www.qiagen.com/in/> ;
+    schema:sameAs <http://isni.org/isni/0000000405521382> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q315287> ;
+             .

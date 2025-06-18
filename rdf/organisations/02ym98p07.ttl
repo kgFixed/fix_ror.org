@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02ym98p07> 
+    a org:Organization ;
+    rdfs:label "AMF Reece (Czechia)" ;
+    schema:name "AMF Reece (Czechia)" ;
+    schema:foundingDate "1991"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01gzzmb44> ;
+        rdfs:label "AMF Bakery Systems (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(17.11184 49.47188)"^^geo:wktLiteral ;
+        schema:addressLocality "Prostějov" ;
+    ] ;
+    schema:url <http://www.amfreece.cz/> ;
+     .

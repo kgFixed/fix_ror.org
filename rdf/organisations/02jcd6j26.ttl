@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02jcd6j26> 
+    a org:Organization ;
+    rdfs:label "Costa Rican Department of Social Security" ;
+    schema:name "Costa Rican Department of Social Security" ;
+    schema:foundingDate "1941"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Costa_Rican_Social_Security_Fund> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-84.08333 9.93333)"^^geo:wktLiteral ;
+        schema:addressLocality "San José" ;
+    ] ;
+    schema:url <https://www.ccss.sa.cr> ;
+    schema:sameAs <http://isni.org/isni/0000000121124705> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5174896> ;
+             .

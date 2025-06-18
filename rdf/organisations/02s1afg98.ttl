@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02s1afg98> 
+    a org:Organization ;
+    rdfs:label "Chromosome 18 Registry & Research Society" ;
+    schema:name "Chromosome 18 Registry & Research Society" ;
+    schema:foundingDate "1990"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-98.49363 29.42412)"^^geo:wktLiteral ;
+        schema:addressLocality "San Antonio" ;
+    ] ;
+    schema:url <https://www.chromosome18.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000405573553> ;
+             .

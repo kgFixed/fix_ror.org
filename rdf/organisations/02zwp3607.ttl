@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02zwp3607> 
+    a org:Organization ;
+    rdfs:label "Family Service Center of Galveston County" ;
+    schema:name "Family Service Center of Galveston County" ;
+    schema:foundingDate "1914"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-94.7977 29.30135)"^^geo:wktLiteral ;
+        schema:addressLocality "Galveston" ;
+    ] ;
+    schema:url <https://www.fsc-galveston.org/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30287105> ;
+             .

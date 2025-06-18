@@ -1,0 +1,26 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02nzxcb82> 
+    a org:Organization ;
+    rdfs:label "Center for Translational Neurophysiology of Speech and Communication" ;
+    schema:name "Center for Translational Neurophysiology of Speech and Communication" ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/042t93s57> ;
+        rdfs:label "Italian Institute of Technology" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(11.62057 44.83804)"^^geo:wktLiteral ;
+        schema:addressLocality "Ferrara" ;
+    ] ;
+    schema:url <https://www.iit.it/it/centers/ctnsc-unife> ;
+     .

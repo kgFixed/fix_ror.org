@@ -1,0 +1,73 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02ky6c719> 
+    a org:Organization ;
+    rdfs:label "Johnson Controls (United States)" ;
+    schema:name "Johnson Controls (United States)" ;
+    schema:foundingDate "1885"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Johnson_Controls> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02b0cb113> ;
+        rdfs:label "Johnson Controls (Australia)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/050332k40> ;
+        rdfs:label "Johnson Controls (Canada)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02dddyz58> ;
+        rdfs:label "Johnson Controls (Czechia)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02wakr002> ;
+        rdfs:label "Johnson Controls (France)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0184jv876> ;
+        rdfs:label "Johnson Controls (Germany)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/026jg0516> ;
+        rdfs:label "Johnson Controls (Japan)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00hcj0e04> ;
+        rdfs:label "Johnson Controls (Switzerland)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01ftbyb35> ;
+        rdfs:label "Johnson Controls (United Kingdom)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-87.90647 43.0389)"^^geo:wktLiteral ;
+        schema:addressLocality "Milwaukee" ;
+    ] ;
+    schema:url <http://www.jci.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000123240769> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q667865> ;
+             .

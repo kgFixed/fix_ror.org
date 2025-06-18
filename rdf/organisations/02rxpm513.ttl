@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02rxpm513> 
+    a org:Organization ;
+    rdfs:label "VLP Therapeutics (United States)" ;
+    schema:name "VLP Therapeutics (United States)" ;
+    schema:foundingDate "2013"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.20137 39.14344)"^^geo:wktLiteral ;
+        schema:addressLocality "Gaithersburg" ;
+    ] ;
+    schema:url <http://www.vlptherapeutics.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30289321> ;
+             .

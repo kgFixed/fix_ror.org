@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/031wyx077> 
+    a org:Organization ;
+    rdfs:label "Vorarlberg University of Applied Sciences" ;
+    schema:name "Vorarlberg University of Applied Sciences" ;
+    schema:foundingDate "1989"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Vorarlberg_University_of_Applied_Sciences> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(9.74195 47.41427)"^^geo:wktLiteral ;
+        schema:addressLocality "Dornbirn" ;
+    ] ;
+    schema:url <https://www.fhv.at/> ;
+    schema:sameAs <http://isni.org/isni/0000000404697490> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1391237> ;
+             .

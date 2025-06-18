@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02qp5ew04> 
+    a org:Organization ;
+    rdfs:label "Aquinas College" ;
+    schema:name "Aquinas College" ;
+    schema:foundingDate "1980"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Aquinas_College,_Stockport> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-2.15761 53.40979)"^^geo:wktLiteral ;
+        schema:addressLocality "Stockport" ;
+    ] ;
+    schema:url <https://www.aquinas.ac.uk> ;
+    schema:sameAs <http://isni.org/isni/0000000404692614> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4782977> ;
+             .

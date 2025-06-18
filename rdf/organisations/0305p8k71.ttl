@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0305p8k71> 
+    a org:Organization ;
+    rdfs:label "East Suffolk Council" ;
+    schema:name "East Suffolk Council" ;
+    schema:foundingDate "2008"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(1.32042 52.09332)"^^geo:wktLiteral ;
+        schema:addressLocality "Woodbridge" ;
+    ] ;
+    schema:url <http://www.eastsuffolk.gov.uk/> ;
+     .

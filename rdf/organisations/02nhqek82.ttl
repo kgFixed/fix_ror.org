@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02nhqek82> 
+    a org:Organization ;
+    rdfs:label "University Children’s Hospital Basel" ;
+    schema:name "University Children’s Hospital Basel" ;
+    schema:foundingDate "1862"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/University_Children%27s_Hospital_Basel> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02s6k3f65> ;
+        rdfs:label "University of Basel" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(7.57327 47.55839)"^^geo:wktLiteral ;
+        schema:addressLocality "Basel" ;
+    ] ;
+    schema:url <https://www.ukbb.ch/> ;
+    schema:sameAs <http://isni.org/isni/0000000405090981> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2496240> ;
+             .

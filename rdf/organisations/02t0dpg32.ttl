@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02t0dpg32> 
+    a org:Organization ;
+    rdfs:label "Caesars Foundation" ;
+    schema:name "Caesars Foundation" ;
+    schema:foundingDate "1937"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-115.13722 36.17497)"^^geo:wktLiteral ;
+        schema:addressLocality "Las Vegas" ;
+    ] ;
+    schema:url <http://www.caesarsfoundation.com/> ;
+    schema:sameAs <http://isni.org/isni/000000045905437X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q33121621> ;
+             .

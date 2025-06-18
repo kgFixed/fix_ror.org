@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02ymr0w73> 
+    a org:Organization ;
+    rdfs:label "University of Rizal System" ;
+    schema:name "University of Rizal System" ;
+    schema:foundingDate "2001"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/University_of_Rizal_System> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(121.2846 14.4968)"^^geo:wktLiteral ;
+        schema:addressLocality "Tanay" ;
+    ] ;
+    schema:url <http://www.urs.edu.ph/> ;
+    schema:sameAs <http://isni.org/isni/0000000502333076> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7896214> ;
+             .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02qrax274> 
+    a org:Organization ;
+    rdfs:label "Ras al-Khaimah Medical and Health Sciences University" ;
+    schema:name "Ras al-Khaimah Medical and Health Sciences University" ;
+    schema:foundingDate "2006"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Ras_Al_Khaimah_Medical_and_Health_Sciences_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(55.9432 25.78953)"^^geo:wktLiteral ;
+        schema:addressLocality "Ras al-Khaimah" ;
+    ] ;
+    schema:url <http://www.rakmhsu.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000417632047> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7294680> ;
+             .

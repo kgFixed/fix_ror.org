@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02ye8a398> 
+    a org:Organization ;
+    rdfs:label "Keystone Symposia On Molecular and Cellular Biology" ;
+    schema:name "Keystone Symposia On Molecular and Cellular Biology" ;
+    schema:foundingDate "1972"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-106.07428 39.63214)"^^geo:wktLiteral ;
+        schema:addressLocality "Silverthorne" ;
+    ] ;
+    schema:url <http://www.keystonesymposia.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000121676788> ;
+             .

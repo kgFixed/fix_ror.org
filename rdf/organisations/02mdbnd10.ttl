@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02mdbnd10> 
+    a org:Organization ;
+    rdfs:label "Van Hall Larenstein University of Applied Sciences" ;
+    schema:name "Van Hall Larenstein University of Applied Sciences" ;
+    schema:foundingDate "2003"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Van_Hall_Larenstein> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(5.80859 53.20139)"^^geo:wktLiteral ;
+        schema:addressLocality "Leeuwarden" ;
+    ] ;
+    schema:url <https://www.hvhl.nl> ;
+    schema:sameAs <http://isni.org/isni/0000000417934571> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3920759> ;
+             .

@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02mp2w060> 
+    a org:Organization ;
+    rdfs:label "Framingham State University" ;
+    schema:name "Framingham State University" ;
+    schema:foundingDate "1839"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Framingham_State_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05jbnbs36> ;
+        rdfs:label "Danforth at Framingham State University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-71.41617 42.27926)"^^geo:wktLiteral ;
+        schema:addressLocality "Framingham" ;
+    ] ;
+    schema:url <http://www.framingham.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000105781801> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4982077> ;
+             .

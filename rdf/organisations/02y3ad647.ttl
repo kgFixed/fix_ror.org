@@ -1,0 +1,79 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02y3ad647> 
+    a org:Organization ;
+    rdfs:label "University of Florida" ;
+    schema:name "University of Florida" ;
+    schema:foundingDate "1853"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/University_of_Florida> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02x2kaq51> ;
+        rdfs:label "Florida Medical Entomology Laboratory" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01j5kpq29> ;
+        rdfs:label "Florida Sea Grant" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03s53g630> ;
+        rdfs:label "National High Magnetic Field Laboratory" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/056pdzs28> ;
+        rdfs:label "The Herbert Wertheim UF Scripps Institute for Biomedical Innovation & Technology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02pjdv450> ;
+        rdfs:label "Florida Museum of Natural History" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05sqd3t97> ;
+        rdfs:label "State University System of Florida" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03kvbr153> ;
+        rdfs:label "UF Health Shands Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0419bgt07> ;
+        rdfs:label "University of Florida Health Science Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02wavzm11> ;
+        rdfs:label "Konza Prairie Long Term Ecological Research" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-82.32483 29.65163)"^^geo:wktLiteral ;
+        schema:addressLocality "Gainesville" ;
+    ] ;
+    schema:url <https://www.ufl.edu> ;
+    schema:sameAs <http://isni.org/isni/0000000419368091> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q501758> ;
+             .

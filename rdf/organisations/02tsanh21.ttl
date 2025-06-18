@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02tsanh21> 
+    a org:Organization ;
+    rdfs:label "National Cancer Center" ;
+    schema:name "National Cancer Center" ;
+    schema:foundingDate "2000"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00vxgjw72> ;
+        rdfs:label "Ministry of Health and Welfare" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(126.835 37.65639)"^^geo:wktLiteral ;
+        schema:addressLocality "Goyang-si" ;
+    ] ;
+    schema:url <http://ncc.re.kr/english/index.jsp> ;
+    schema:sameAs <http://isni.org/isni/0000000406289810> ;
+             .

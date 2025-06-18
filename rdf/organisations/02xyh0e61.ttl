@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02xyh0e61> 
+    a org:Organization ;
+    rdfs:label "École Africaine des Métiers de l'Architecture et de l'Urbanisme" ;
+    schema:name "École Africaine des Métiers de l'Architecture et de l'Urbanisme" ;
+    schema:foundingDate "1975"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(1.22154 6.12874)"^^geo:wktLiteral ;
+        schema:addressLocality "Lomé" ;
+    ] ;
+    schema:url <http://www.eamau.org> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q3577713> ;
+             .

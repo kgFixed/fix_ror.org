@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0321gjx92> 
+    a org:Organization ;
+    rdfs:label "The Salvation Army Zambia" ;
+    schema:name "The Salvation Army Zambia" ;
+    schema:foundingDate "1865"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/The_Salvation_Army> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00csd1970> ;
+        rdfs:label "The Salvation Army" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(27.748 -15.85601)"^^geo:wktLiteral ;
+        schema:addressLocality "Mazabuka" ;
+    ] ;
+    schema:url <https://www.salvationarmy.org/zambia> ;
+    schema:sameAs <http://isni.org/isni/000000040578078X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30289219> ;
+             .

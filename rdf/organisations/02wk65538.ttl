@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02wk65538> 
+    a org:Organization ;
+    rdfs:label "Delaware College of Art and Design" ;
+    schema:name "Delaware College of Art and Design" ;
+    schema:foundingDate "1997"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Delaware_College_of_Art_and_Design> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-75.54659 39.74595)"^^geo:wktLiteral ;
+        schema:addressLocality "Wilmington" ;
+    ] ;
+    schema:url <http://www.dcad.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000088895881> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5253252> ;
+             .

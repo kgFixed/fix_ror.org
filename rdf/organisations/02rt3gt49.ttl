@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02rt3gt49> 
+    a org:Organization ;
+    rdfs:label "Long Beach Medical Center" ;
+    schema:name "Long Beach Medical Center" ;
+    schema:foundingDate "1922"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Long_Beach_Medical_Center> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02gpy3h79> ;
+        rdfs:label "MemorialCare Health System" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/004q7z165> ;
+        rdfs:label "New York College of Podiatric Medicine" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01bghzb51> ;
+        rdfs:label "New York Institute of Technology" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-73.65791 40.58844)"^^geo:wktLiteral ;
+        schema:addressLocality "Long Beach" ;
+    ] ;
+    schema:url <https://www.memorialcare.org/locations/long-beach-medical-center> ;
+    schema:sameAs <http://isni.org/isni/0000000404547767> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6672308> ;
+             .

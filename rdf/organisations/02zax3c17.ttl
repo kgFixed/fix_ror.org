@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02zax3c17> 
+    a org:Organization ;
+    rdfs:label "Jerusalem Institute for Israel Studies" ;
+    schema:name "Jerusalem Institute for Israel Studies" ;
+    schema:foundingDate "1978"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Jerusalem_Institute_for_Israel_Studies> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(35.21633 31.76904)"^^geo:wktLiteral ;
+        schema:addressLocality "Jerusalem" ;
+    ] ;
+    schema:url <http://www.jiis.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000121579902> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q12409177> ;
+             .

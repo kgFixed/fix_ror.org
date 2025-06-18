@@ -1,0 +1,76 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/031qpfn56> 
+    a org:Organization ;
+    rdfs:label "VA Desert Pacific Healthcare Network" ;
+    schema:name "VA Desert Pacific Healthcare Network" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04n9z8z70> ;
+        rdfs:label "New Mexico VA Health Care System" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05t4ef339> ;
+        rdfs:label "Northern Arizona VA Health Care System" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/024b7e967> ;
+        rdfs:label "Phoenix VA Health Care System" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00xb4cb83> ;
+        rdfs:label "Southern Arizona VA Health Care System" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05xcarb80> ;
+        rdfs:label "VA Greater Los Angeles Healthcare System" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03z6z3n38> ;
+        rdfs:label "VA Loma Linda Healthcare System" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/058p1kn93> ;
+        rdfs:label "VA Long Beach Healthcare System" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00znqwq11> ;
+        rdfs:label "VA San Diego Healthcare System" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05eq41471> ;
+        rdfs:label "Veterans Health Administration" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-118.18923 33.76696)"^^geo:wktLiteral ;
+        schema:addressLocality "Long Beach" ;
+    ] ;
+    schema:url <https://www.desertpacific.va.gov/> ;
+    schema:sameAs <http://isni.org/isni/0000000404208503> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q33122033> ;
+             .

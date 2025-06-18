@@ -1,0 +1,35 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02qgf1459> 
+    a org:Organization ;
+    rdfs:label "Dora Nginza Hospital" ;
+    schema:name "Dora Nginza Hospital" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Dora_Nginza_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03r1jm528> ;
+        rdfs:label "Nelson Mandela University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02svzjn28> ;
+        rdfs:label "Walter Sisulu University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(25.61494 -33.96109)"^^geo:wktLiteral ;
+        schema:addressLocality "Port Elizabeth" ;
+    ] ;
+    schema:url <http://www.ecdoh.gov.za/hospitals/66/Dora_Nginza_Hospital> ;
+    schema:sameAs <http://isni.org/isni/0000000404894363> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5297438> ;
+             .

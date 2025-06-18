@@ -1,0 +1,26 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02mfamy34> 
+    a org:Organization ;
+    rdfs:label "Agriculture Research Center" ;
+    schema:name "Agriculture Research Center" ;
+    org:status "withdrawn" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/023v4bd62> ;
+        rdfs:label "National Agriculture and Food Research Organization" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(140.1 36.2)"^^geo:wktLiteral ;
+        schema:addressLocality "Tsukuba" ;
+    ] ;
+    schema:url <http://www.naro.affrc.go.jp/english/narc/index.html> ;
+     .

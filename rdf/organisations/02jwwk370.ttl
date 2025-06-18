@@ -1,0 +1,34 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02jwwk370> 
+    a org:Organization ;
+    rdfs:label "Fédération de recherche en sciences mathématiques de Paris centre" ;
+    schema:name "Fédération de recherche en sciences mathématiques de Paris centre" ;
+    schema:foundingDate "2005"^^xsd:gYear ;
+    schema:sameAs <https://fr.wikipedia.org/wiki/F%C3%A9d%C3%A9ration_de_recherche_en_math%C3%A9matiques_de_Paris_centre> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02en5vm52> ;
+        rdfs:label "Sorbonne Université" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05f82e368> ;
+        rdfs:label "Université Paris Cité" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.3488 48.85341)"^^geo:wktLiteral ;
+        schema:addressLocality "Paris" ;
+    ] ;
+    schema:sameAs <http://www.wikidata.org/entity/Q51780551> ;
+             .

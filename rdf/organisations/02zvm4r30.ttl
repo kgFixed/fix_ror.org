@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02zvm4r30> 
+    a org:Organization ;
+    rdfs:label "Black Hawk College" ;
+    schema:name "Black Hawk College" ;
+    schema:foundingDate "1946"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Black_Hawk_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-90.51513 41.5067)"^^geo:wktLiteral ;
+        schema:addressLocality "Moline" ;
+    ] ;
+    schema:url <http://www.bhc.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000090103775> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4920876> ;
+             .

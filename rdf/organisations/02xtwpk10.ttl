@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02xtwpk10> 
+    a org:Organization ;
+    rdfs:label "Universidad Externado de Colombia" ;
+    schema:name "Universidad Externado de Colombia" ;
+    schema:foundingDate "1886"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Universidad_Externado_de_Colombia> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-74.08175 4.60971)"^^geo:wktLiteral ;
+        schema:addressLocality "Bogotá" ;
+    ] ;
+    schema:url <https://www.uexternado.edu.co/> ;
+    schema:sameAs <http://isni.org/isni/0000000121543053> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7894273> ;
+             .

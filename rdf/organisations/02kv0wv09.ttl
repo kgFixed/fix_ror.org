@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02kv0wv09> 
+    a org:Organization ;
+    rdfs:label "Department of Human Resources and Social Security of Jiangsu Province" ;
+    schema:name "Department of Human Resources and Social Security of Jiangsu Province" ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/004svx814> ;
+        rdfs:label "Government of Jiangsu Province" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(118.77778 32.06167)"^^geo:wktLiteral ;
+        schema:addressLocality "Nanjing" ;
+    ] ;
+    schema:url <https://jshrss.jiangsu.gov.cn> ;
+    schema:sameAs <http://isni.org/isni/0000000476629454> ;
+             .

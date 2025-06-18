@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02y5rmj89> 
+    a org:Organization ;
+    rdfs:label "Xuzhou Construction Machinery Group (China)" ;
+    schema:name "Xuzhou Construction Machinery Group (China)" ;
+    schema:foundingDate "1989"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/XCMG> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01anzhw43> ;
+        rdfs:label "State Key Laboratory of Intelligent Manufacturing of High-end Construction Machinery" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(117.28386 34.20442)"^^geo:wktLiteral ;
+        schema:addressLocality "Xuzhou" ;
+    ] ;
+    schema:url <http://www.xcmg.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000446484012> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1353472> ;
+             .

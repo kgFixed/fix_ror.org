@@ -1,0 +1,49 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/030eybx10> 
+    a org:Organization ;
+    rdfs:label "Universidade de Santiago de Compostela" ;
+    schema:name "Universidade de Santiago de Compostela" ;
+    schema:foundingDate "1495"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/University_of_Santiago_de_Compostela> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03xw5ev35> ;
+        rdfs:label "ORFEO-CINQA Research Network" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04wx4nj18> ;
+        rdfs:label "Centro Singular de Investigación en Química Biológica y Materiales Moleculares" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00mpdg388> ;
+        rdfs:label "Complejo Hospitalario Universitario de Santiago" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03jdc5495> ;
+        rdfs:label "SANT Herbarium" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-8.54569 42.88052)"^^geo:wktLiteral ;
+        schema:addressLocality "Santiago de Compostela" ;
+    ] ;
+    schema:url <https://www.usc.gal> ;
+    schema:sameAs <http://isni.org/isni/0000000109410645> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1473677> ;
+             .

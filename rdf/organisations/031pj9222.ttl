@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/031pj9222> 
+    a org:Organization ;
+    rdfs:label "Hygiene-Institut des Ruhrgebiets" ;
+    schema:name "Hygiene-Institut des Ruhrgebiets" ;
+    schema:foundingDate "1902"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(7.09654 51.50508)"^^geo:wktLiteral ;
+        schema:addressLocality "Gelsenkirchen" ;
+    ] ;
+    schema:url <https://hygiene-institut.de/> ;
+    schema:sameAs <http://isni.org/isni/0000000110134350> ;
+             .

@@ -1,0 +1,54 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02y070a55> 
+    a org:Organization ;
+    rdfs:label "Jackson Memorial Hospital" ;
+    schema:name "Jackson Memorial Hospital" ;
+    schema:foundingDate "1918"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Jackson_Memorial_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00en6p903> ;
+        rdfs:label "Jackson Health System" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02hnxxp83> ;
+        rdfs:label "American University of the Caribbean School of Medicine" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02gz6gg07> ;
+        rdfs:label "Florida International University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02nd9e057> ;
+        rdfs:label "Ross University School of Medicine" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02dgjyy92> ;
+        rdfs:label "University of Miami" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-80.19366 25.77427)"^^geo:wktLiteral ;
+        schema:addressLocality "Miami" ;
+    ] ;
+    schema:url <https://jacksonhealth.org/locations/jackson-memorial-hospital/> ;
+    schema:sameAs <http://isni.org/isni/0000000085255459> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3157429> ;
+             .

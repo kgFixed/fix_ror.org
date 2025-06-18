@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/031ftjj55> 
+    a org:Organization ;
+    rdfs:label "Northumberland and Durham Family History Society" ;
+    schema:name "Northumberland and Durham Family History Society" ;
+    schema:foundingDate "1975"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Northumberland_and_Durham_Family_History_Society> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.61396 54.97328)"^^geo:wktLiteral ;
+        schema:addressLocality "Newcastle upon Tyne" ;
+    ] ;
+    schema:url <http://www.ndfhs.org.uk/> ;
+    schema:sameAs <http://isni.org/isni/000000012228839X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q17017257> ;
+             .

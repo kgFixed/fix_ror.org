@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02m8qhj08> 
+    a org:Organization ;
+    rdfs:label "Anton de Kom University of Suriname" ;
+    schema:name "Anton de Kom University of Suriname" ;
+    schema:foundingDate "1983"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Anton_de_Kom_University_of_Suriname> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01ky0w731> ;
+        rdfs:label "Academic Hospital Paramaribo" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-55.16682 5.86638)"^^geo:wktLiteral ;
+        schema:addressLocality "Paramaribo" ;
+    ] ;
+    schema:url <http://www.uvs.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000107001506> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1975617> ;
+             .

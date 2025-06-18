@@ -1,0 +1,54 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02we8vm03> 
+    a org:Organization ;
+    rdfs:label "Fiat Chrysler Automobiles (United Kingdom)" ;
+    schema:name "Fiat Chrysler Automobiles (United Kingdom)" ;
+    schema:foundingDate "2014"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Fiat_Chrysler_Automobiles> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04fyd6s73> ;
+        rdfs:label "Fiat Chrysler Automobiles (France)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03n3c3r21> ;
+        rdfs:label "Fiat Chrysler Automobiles (Germany)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/005m6rn77> ;
+        rdfs:label "Fiat Chrysler Automobiles (Italy)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/058zth179> ;
+        rdfs:label "Fiat Chrysler Automobiles (Japan)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03qxrge70> ;
+        rdfs:label "Fiat Chrysler Automobiles (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.12574 51.50853)"^^geo:wktLiteral ;
+        schema:addressLocality "London" ;
+    ] ;
+    schema:url <https://www.fcagroup.com/en-US/Pages/home.aspx> ;
+    schema:sameAs <http://isni.org/isni/0000000449019482> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q55454107> ;
+             .

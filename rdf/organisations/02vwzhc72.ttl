@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02vwzhc72> 
+    a org:Organization ;
+    rdfs:label "Kirklandside Hospital" ;
+    schema:name "Kirklandside Hospital" ;
+    schema:foundingDate "1909"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Kirklandside_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03kq24308> ;
+        rdfs:label "NHS Ayrshire and Arran" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-4.49581 55.61171)"^^geo:wktLiteral ;
+        schema:addressLocality "Kilmarnock" ;
+    ] ;
+    schema:url <http://www.nhsaaa.net/hospitals-and-health-centres/kirklandside-hospital.aspx> ;
+    schema:sameAs <http://isni.org/isni/0000000406245471> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6415749> ;
+             .

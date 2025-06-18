@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0310e9d31> 
+    a org:Organization ;
+    rdfs:label "Institute of Biotechnology and Veterinary Medicine" ;
+    schema:name "Institute of Biotechnology and Veterinary Medicine" ;
+    schema:foundingDate "2006"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03s5p4g14> ;
+        rdfs:label "Agrarian State University of Northern Zauralye" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(65.52722 57.15222)"^^geo:wktLiteral ;
+        schema:addressLocality "Tyumen" ;
+    ] ;
+    schema:url <https://ibvm.ru/> ;
+     .

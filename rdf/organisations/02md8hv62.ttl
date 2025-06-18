@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02md8hv62> 
+    a org:Organization ;
+    rdfs:label "Sheffield Children's NHS Foundation Trust" ;
+    schema:name "Sheffield Children's NHS Foundation Trust" ;
+    schema:foundingDate "1992"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Sheffield_Children%27s_NHS_Foundation_Trust> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05mshxb09> ;
+        rdfs:label "Sheffield Children's Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.4659 53.38297)"^^geo:wktLiteral ;
+        schema:addressLocality "Sheffield" ;
+    ] ;
+    schema:url <https://www.sheffieldchildrens.nhs.uk/> ;
+    schema:sameAs <http://isni.org/isni/0000000404639178> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7492606> ;
+             .

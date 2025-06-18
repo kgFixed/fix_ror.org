@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02kf0qx29> 
+    a org:Organization ;
+    rdfs:label "Centro Oceanográfico de Vigo" ;
+    schema:name "Centro Oceanográfico de Vigo" ;
+    schema:sameAs <https://es.wikipedia.org/wiki/Centro_Oceanogr%C3%A1fico_de_Vigo> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02gfc7t72> ;
+        rdfs:label "Consejo Superior de Investigaciones Científicas" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-8.72264 42.23282)"^^geo:wktLiteral ;
+        schema:addressLocality "Vigo" ;
+    ] ;
+    schema:url <https://www.ieo.es/en/web/vigo> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q96250819> ;
+             .

@@ -1,0 +1,34 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02ngbsn37> 
+    a org:Organization ;
+    rdfs:label "Gilson (United States)" ;
+    schema:name "Gilson (United States)" ;
+    schema:foundingDate "1940"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04nxqr324> ;
+        rdfs:label "Gilson (France)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02nephp76> ;
+        rdfs:label "Gilson (United Kingdom)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-90.15094 38.6245)"^^geo:wktLiteral ;
+        schema:addressLocality "East Saint Louis" ;
+    ] ;
+    schema:url <https://de.gilson.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q106518919> ;
+             .

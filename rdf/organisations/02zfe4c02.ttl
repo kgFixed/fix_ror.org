@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02zfe4c02> 
+    a org:Organization ;
+    rdfs:label "Dundee and Angus College" ;
+    schema:name "Dundee and Angus College" ;
+    schema:foundingDate "2014"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Dundee_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-2.97489 56.46913)"^^geo:wktLiteral ;
+        schema:addressLocality "Dundee" ;
+    ] ;
+    schema:url <https://dundeeandangus.ac.uk/> ;
+    schema:sameAs <http://isni.org/isni/000000040397189X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3041279> ;
+             .

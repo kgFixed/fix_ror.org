@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02wmkbh90> 
+    a org:Organization ;
+    rdfs:label "Rütgers (Germany)" ;
+    schema:name "Rütgers (Germany)" ;
+    schema:foundingDate "1992"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(7.31155 51.55657)"^^geo:wktLiteral ;
+        schema:addressLocality "Castrop-Rauxel" ;
+    ] ;
+    schema:url <http://www.ruetgers-group.com/de/unternehmen/business-lines/infratec.html> ;
+     .

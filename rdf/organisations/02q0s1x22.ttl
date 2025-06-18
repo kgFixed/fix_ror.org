@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02q0s1x22> 
+    a org:Organization ;
+    rdfs:label "Hitachi Global Storage Technologies (United States)" ;
+    schema:name "Hitachi Global Storage Technologies (United States)" ;
+    schema:foundingDate "2003"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/HGST> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-121.89496 37.33939)"^^geo:wktLiteral ;
+        schema:addressLocality "San Jose" ;
+    ] ;
+    schema:url <http://www.hgst.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000406345771> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q775196> ;
+             .

@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02wfhk785> 
+    a org:Organization ;
+    rdfs:label "International Institute for Applied Systems Analysis" ;
+    schema:name "International Institute for Applied Systems Analysis" ;
+    schema:foundingDate "1972"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/International_Institute_for_Applied_Systems_Analysis> ;
+    org:status "active" ;
+    org:classification "Funder" ;
+    org:classification "Nonprofit" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/023dz9m50> ;
+        rdfs:label "Complexity Science Hub Vienna" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(16.35607 48.06833)"^^geo:wktLiteral ;
+        schema:addressLocality "Laxenburg" ;
+    ] ;
+    schema:url <https://iiasa.ac.at> ;
+    schema:sameAs <http://isni.org/isni/0000000119559478> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q212102> ;
+             .

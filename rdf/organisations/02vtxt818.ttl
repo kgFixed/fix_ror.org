@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02vtxt818> 
+    a org:Organization ;
+    rdfs:label "Bucher Emhart Glass (United States)" ;
+    schema:name "Bucher Emhart Glass (United States)" ;
+    schema:foundingDate "1902"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05c3vdm18> ;
+        rdfs:label "Bucher Emhart Glass (Switzerland)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-72.6437 41.8526)"^^geo:wktLiteral ;
+        schema:addressLocality "Windsor" ;
+    ] ;
+    schema:url <http://www.emhartglass.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000404801817> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30338151> ;
+             .

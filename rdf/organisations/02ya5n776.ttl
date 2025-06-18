@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02ya5n776> 
+    a org:Organization ;
+    rdfs:label "Technicolor (France)" ;
+    schema:name "Technicolor (France)" ;
+    schema:foundingDate "1893"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Technicolor_SA> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00besvm65> ;
+        rdfs:label "Technicolor (Germany)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05ha8e826> ;
+        rdfs:label "Technicolor (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.3488 48.85341)"^^geo:wktLiteral ;
+        schema:addressLocality "Paris" ;
+    ] ;
+    schema:url <http://www.technicolor.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000446623510> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1365773> ;
+             .

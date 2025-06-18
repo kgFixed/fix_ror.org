@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02nr1jd69> 
+    a org:Organization ;
+    rdfs:label "Escola Superior de Hotelaria e Turismo do Estoril" ;
+    schema:name "Escola Superior de Hotelaria e Turismo do Estoril" ;
+    schema:foundingDate "1991"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-9.39773 38.70571)"^^geo:wktLiteral ;
+        schema:addressLocality "Estoril" ;
+    ] ;
+    schema:url <https://www.eshte.pt> ;
+    schema:sameAs <http://isni.org/isni/0000000403925906> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q10274496> ;
+             .

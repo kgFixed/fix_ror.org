@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02s4j2a36> 
+    a org:Organization ;
+    rdfs:label "Conquest Hospital" ;
+    schema:name "Conquest Hospital" ;
+    schema:foundingDate "1992"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Conquest_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04tvjvp97> ;
+        rdfs:label "East Sussex Healthcare NHS Trust" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(0.5452 50.85565)"^^geo:wktLiteral ;
+        schema:addressLocality "Saint Leonards-on-Sea" ;
+    ] ;
+    schema:url <http://www.esht.nhs.uk/hospitals/conquest/> ;
+    schema:sameAs <http://isni.org/isni/0000000403999761> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5162425> ;
+             .

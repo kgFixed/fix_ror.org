@@ -1,0 +1,59 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02sbvqb41> 
+    a org:Organization ;
+    rdfs:label "Revvity (United States)" ;
+    schema:name "Revvity (United States)" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Revvity> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04bfjpv87> ;
+        rdfs:label "Cisbio (France)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00q2y5s03> ;
+        rdfs:label "Horizon Discovery (United Kingdom)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05s8x7560> ;
+        rdfs:label "PerkinElmer (United States)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0428c0g78> ;
+        rdfs:label "Oxford Immunotec (United Kingdom)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01xh2mr27> ;
+        rdfs:label "Revvity Gene Delivery (Germany)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04yh84372> ;
+        rdfs:label "Nexcelom (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-71.24232 42.38892)"^^geo:wktLiteral ;
+        schema:addressLocality "City of Waltham" ;
+    ] ;
+    schema:url <https://www.revvity.com> ;
+    schema:sameAs <http://isni.org/isni/0000000511723578> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q120467527> ;
+             .

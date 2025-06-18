@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0305eqz85> 
+    a org:Organization ;
+    rdfs:label "Gbewaa College of Education" ;
+    schema:name "Gbewaa College of Education" ;
+    schema:foundingDate "1963"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Gbewaa_College_of_Education> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01r22mr83> ;
+        rdfs:label "University of Ghana" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.10522 11.06872)"^^geo:wktLiteral ;
+        schema:addressLocality "Pusiga" ;
+    ] ;
+    schema:url <http://gbce.edu.gh> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q46996970> ;
+             .

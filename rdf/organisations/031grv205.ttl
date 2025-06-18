@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/031grv205> 
+    a org:Organization ;
+    rdfs:label "Framingham Heart Study" ;
+    schema:name "Framingham Heart Study" ;
+    schema:foundingDate "1948"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Framingham_Heart_Study> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05qwgg493> ;
+        rdfs:label "Boston University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/012pb6c26> ;
+        rdfs:label "National Heart Lung and Blood Institute" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-71.41617 42.27926)"^^geo:wktLiteral ;
+        schema:addressLocality "Framingham" ;
+    ] ;
+    schema:url <https://framinghamheartstudy.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000404443861> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1440693> ;
+             .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02vzf2422> 
+    a org:Organization ;
+    rdfs:label "United States Merchant Marine Academy" ;
+    schema:name "United States Merchant Marine Academy" ;
+    schema:foundingDate "1943"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/United_States_Merchant_Marine_Academy> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-73.73513 40.81982)"^^geo:wktLiteral ;
+        schema:addressLocality "Kings Point" ;
+    ] ;
+    schema:url <http://www.usmma.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000094728350> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1806541> ;
+             .

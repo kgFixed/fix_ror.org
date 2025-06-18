@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/030chxw89> 
+    a org:Organization ;
+    rdfs:label "Yaba College of Technology" ;
+    schema:name "Yaba College of Technology" ;
+    schema:foundingDate "1947"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Yaba_College_of_Technology> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(3.39467 6.45407)"^^geo:wktLiteral ;
+        schema:addressLocality "Lagos" ;
+    ] ;
+    schema:url <https://www.yabatech.edu.ng> ;
+    schema:sameAs <http://isni.org/isni/0000000088623843> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q8046341> ;
+             .

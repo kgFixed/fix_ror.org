@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02yvd4j36> 
+    a org:Organization ;
+    rdfs:label "Federal Office for Radiation Protection" ;
+    schema:name "Federal Office for Radiation Protection" ;
+    schema:foundingDate "1989"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Bundesamt_f%C3%BCr_Strahlenschutz> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(10.4154 52.15705)"^^geo:wktLiteral ;
+        schema:addressLocality "Salzgitter" ;
+    ] ;
+    schema:url <http://www.bfs.de/en/bfs> ;
+    schema:sameAs <http://isni.org/isni/0000000405549860> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1005494> ;
+             .

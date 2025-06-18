@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02nkf1q06> 
+    a org:Organization ;
+    rdfs:label "University of Essex" ;
+    schema:name "University of Essex" ;
+    schema:foundingDate "1963"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/University_of_Essex> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05m3qrs33> ;
+        rdfs:label "Ipswich Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(0.90421 51.88921)"^^geo:wktLiteral ;
+        schema:addressLocality "Colchester" ;
+    ] ;
+    schema:url <https://www.essex.ac.uk> ;
+    schema:sameAs <http://isni.org/isni/0000000109426946> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1075104> ;
+             .

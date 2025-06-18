@@ -1,0 +1,20 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02vnhrp96> 
+    a org:Organization ;
+    rdfs:label "IGAD Sheikh Technical Veterinary School and Reference Centre" ;
+    schema:name "IGAD Sheikh Technical Veterinary School and Reference Centre" ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(45.53363 9.52213)"^^geo:wktLiteral ;
+        schema:addressLocality "Burao" ;
+    ] ;
+    schema:url <http://stvs-edu.org/> ;
+     .

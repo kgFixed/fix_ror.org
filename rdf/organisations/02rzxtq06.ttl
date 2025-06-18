@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02rzxtq06> 
+    a org:Organization ;
+    rdfs:label "Shijonawate Gakuen University" ;
+    schema:name "Shijonawate Gakuen University" ;
+    schema:foundingDate "1926"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Shijonawate_Gakuen_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/036vefa56> ;
+        rdfs:label "Shijonawate Gakuen Junior College" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(135.50107 34.69379)"^^geo:wktLiteral ;
+        schema:addressLocality "Osaka" ;
+    ] ;
+    schema:url <https://un.shijonawate-gakuen.ac.jp> ;
+    schema:sameAs <http://isni.org/isni/0000000459445709> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7496523> ;
+             .

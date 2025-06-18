@@ -1,0 +1,53 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/031npzc88> 
+    a org:Organization ;
+    rdfs:label "Mahle (Germany)" ;
+    schema:name "Mahle (Germany)" ;
+    schema:foundingDate "1920"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Mahle_GmbH> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0039sga55> ;
+        rdfs:label "Mahle (Austria)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02m2t8v35> ;
+        rdfs:label "Mahle (Brazil)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03mg4e956> ;
+        rdfs:label "Mahle (Poland)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01yykzy84> ;
+        rdfs:label "Mahle (Portugal)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01gfr8917> ;
+        rdfs:label "Mahle (United Kingdom)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(9.17702 48.78232)"^^geo:wktLiteral ;
+        schema:addressLocality "Stuttgart" ;
+    ] ;
+    schema:url <https://www.mahle.com/en/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30255312> ;
+             .

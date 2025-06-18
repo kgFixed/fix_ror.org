@@ -1,0 +1,67 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02jzgtq86> 
+    a org:Organization ;
+    rdfs:label "Dana-Farber Cancer Institute" ;
+    schema:name "Dana-Farber Cancer Institute" ;
+    schema:foundingDate "1947"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Dana%E2%80%93Farber_Cancer_Institute> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05k11pb55> ;
+        rdfs:label "Dana-Farber/Boston Children's Cancer and Blood Disorders Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05rgrbr06> ;
+        rdfs:label "Dana-Farber Brigham Cancer Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03pvyf116> ;
+        rdfs:label "Dana-Farber/Harvard Cancer Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00dvg7y05> ;
+        rdfs:label "Boston Children's Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03vek6s52> ;
+        rdfs:label "Harvard University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/002pd6e78> ;
+        rdfs:label "Massachusetts General Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/008cfmj78> ;
+        rdfs:label "Wyss Institute for Biologically Inspired Engineering" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-71.05977 42.35843)"^^geo:wktLiteral ;
+        schema:addressLocality "Boston" ;
+    ] ;
+    schema:url <http://www.dana-farber.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000121069910> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1159198> ;
+             .

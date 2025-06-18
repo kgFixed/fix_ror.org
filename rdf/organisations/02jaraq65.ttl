@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02jaraq65> 
+    a org:Organization ;
+    rdfs:label "Northwest Samar State University" ;
+    schema:name "Northwest Samar State University" ;
+    schema:foundingDate "1959"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Northwest_Samar_State_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(124.5962 12.0668)"^^geo:wktLiteral ;
+        schema:addressLocality "Calbayog City" ;
+    ] ;
+    schema:url <http://main.nwssu.edu.ph/> ;
+    schema:sameAs <http://isni.org/isni/000000049243637X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7060192> ;
+             .

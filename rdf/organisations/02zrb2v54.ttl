@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02zrb2v54> 
+    a org:Organization ;
+    rdfs:label "University Medical Center New Orleans" ;
+    schema:name "University Medical Center New Orleans" ;
+    schema:foundingDate "2015"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/University_Medical_Center_New_Orleans> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01qv8fp92> ;
+        rdfs:label "Louisiana State University Health Sciences Center New Orleans" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-90.07507 29.95465)"^^geo:wktLiteral ;
+        schema:addressLocality "New Orleans" ;
+    ] ;
+    schema:url <http://www.umcno.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000099725298> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q20899647> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6806289> ;
+             .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02r4khx44> 
+    a org:Organization ;
+    rdfs:label "King Hussein Medical Center" ;
+    schema:name "King Hussein Medical Center" ;
+    schema:foundingDate "1973"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/King_Hussein_Medical_Center> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(35.94503 31.95522)"^^geo:wktLiteral ;
+        schema:addressLocality "Amman" ;
+    ] ;
+    schema:url <http://www.jrms.mil.jo/Default.aspx?tabid=141&language=en-US> ;
+    schema:sameAs <http://isni.org/isni/0000000403884702> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6411730> ;
+             .

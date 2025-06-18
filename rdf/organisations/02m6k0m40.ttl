@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02m6k0m40> 
+    a org:Organization ;
+    rdfs:label "Zuyd University of Applied Sciences" ;
+    schema:name "Zuyd University of Applied Sciences" ;
+    schema:foundingDate "2001"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Zuyd_University_of_Applied_Sciences> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(5.98154 50.88365)"^^geo:wktLiteral ;
+        schema:addressLocality "Heerlen" ;
+    ] ;
+    schema:url <https://www.zuyd.nl> ;
+    schema:sameAs <http://isni.org/isni/0000000404299708> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3139317> ;
+             .

@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02qxa1v47> 
+    a org:Organization ;
+    rdfs:label "Centre Hospitalier Esquirol de Limoges" ;
+    schema:name "Centre Hospitalier Esquirol de Limoges" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(1.24759 45.83362)"^^geo:wktLiteral ;
+        schema:addressLocality "Limoges" ;
+    ] ;
+    schema:url <http://www.ch-esquirol-limoges.fr/> ;
+    schema:sameAs <http://isni.org/isni/0000000098839701> ;
+             .

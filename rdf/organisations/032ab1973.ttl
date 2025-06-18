@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/032ab1973> 
+    a org:Organization ;
+    rdfs:label "Geological Survey Department" ;
+    schema:name "Geological Survey Department" ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/048fraw27> ;
+        rdfs:label "Ministry of Agriculture, Natural Resources and Environment" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(33.3642 35.17531)"^^geo:wktLiteral ;
+        schema:addressLocality "Nicosia" ;
+    ] ;
+    schema:url <http://www.moa.gov.cy/moa/gsd/gsd.nsf/dmlIndex_en/dmlIndex_en?OpenDocument> ;
+    schema:sameAs <http://isni.org/isni/000000012200238X> ;
+             .

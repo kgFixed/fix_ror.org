@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02p5tqh12> 
+    a org:Organization ;
+    rdfs:label "Kromek (United Kingdom)" ;
+    schema:name "Kromek (United Kingdom)" ;
+    schema:foundingDate "2003"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/029aeh759> ;
+        rdfs:label "Kromek (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.44952 54.65329)"^^geo:wktLiteral ;
+        schema:addressLocality "Sedgefield" ;
+    ] ;
+    schema:url <https://www.kromek.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000474348173> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30256271> ;
+             .

@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02nbz6h12> 
+    a org:Organization ;
+    rdfs:label "Casting for Recovery" ;
+    schema:name "Casting for Recovery" ;
+    schema:foundingDate "1996"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-73.05705 43.17702)"^^geo:wktLiteral ;
+        schema:addressLocality "Manchester Center" ;
+    ] ;
+    schema:url <https://castingforrecovery.org/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30286719> ;
+             .

@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02t83f864> 
+    a org:Organization ;
+    rdfs:label "Wessex Regional Genetics Laboratory" ;
+    schema:name "Wessex Regional Genetics Laboratory" ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00ja2ye75> ;
+        rdfs:label "Salisbury NHS Foundation Trust" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.79569 51.06931)"^^geo:wktLiteral ;
+        schema:addressLocality "Salisbury" ;
+    ] ;
+    schema:url <http://www.wrgl.org.uk/Pages/home.aspx> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30256205> ;
+             .

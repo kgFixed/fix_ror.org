@@ -1,0 +1,133 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02j8pe645> 
+    a org:Organization ;
+    rdfs:label "National Academy of Sciences of Belarus" ;
+    schema:name "National Academy of Sciences of Belarus" ;
+    schema:foundingDate "1928"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/National_Academy_of_Sciences_of_Belarus> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03wfx2g43> ;
+        rdfs:label "Central Botanical Garden" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/014tv7j22> ;
+        rdfs:label "Department of Agrarian Sciences" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05dte6685> ;
+        rdfs:label "Department of Biological Sciences" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03bh65t82> ;
+        rdfs:label "Department of Chemistry and Earth Sciences" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02xk7ft96> ;
+        rdfs:label "Department of Humanities and Arts" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/049c9xv68> ;
+        rdfs:label "Department of Medical Sciences" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01y1re497> ;
+        rdfs:label "Department of Physical and Technical Sciences" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/023sm4k53> ;
+        rdfs:label "Department of Physics, Mathematics and Informatics" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01vf0ya40> ;
+        rdfs:label "I.S. Lupinovich Belarus Agricultural Library" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04twsjs66> ;
+        rdfs:label "Institute of Biochemistry of Biologically Active Compounds of the National Academy of Sciences of Belarus" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02sd7jn56> ;
+        rdfs:label "Institute of Chemistry of New Materials of the National Academy of Sciences of Belarus" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00rbyp854> ;
+        rdfs:label "Institute of Experimental Botany named after V.F. Kuprevich of the National Academy of Sciences of Belarus" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01tqdyq91> ;
+        rdfs:label "Institute of General and Inorganic Chemistry of National Academy of Sciences of Belarus" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/016e3th47> ;
+        rdfs:label "Institute of Genetics and Cytology of the National Academy of Sciences of Belarus" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00vbdjc22> ;
+        rdfs:label "Institute of Physiology National Academy of Sciences of Belarus" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0327c2165> ;
+        rdfs:label "Institute of Radiobiology of NAS of Belarus" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04g70yg97> ;
+        rdfs:label "Institute of Sociology of the National Academy of Sciences of Belarus" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/016fr7d87> ;
+        rdfs:label "The Institute of History of the National Academy of Sciences of Belarus" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(27.56667 53.9)"^^geo:wktLiteral ;
+        schema:addressLocality "Minsk" ;
+    ] ;
+    schema:url <http://nasb.gov.by/eng/> ;
+    schema:sameAs <http://isni.org/isni/0000000122712138> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1967977> ;
+             .

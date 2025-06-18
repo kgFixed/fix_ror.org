@@ -1,0 +1,106 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02xkdev90> 
+    a org:Organization ;
+    rdfs:label "Department of Mathematical Sciences" ;
+    schema:name "Department of Mathematical Sciences" ;
+    schema:foundingDate "1724"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01vgda714> ;
+        rdfs:label "Dorodnitsyn Computing Centre" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/048amsp50> ;
+        rdfs:label "Institute for Computer Aided Design" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/017ef8252> ;
+        rdfs:label "Institute for System Programming" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00h9jx107> ;
+        rdfs:label "Institute of Applied Mathematics" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01z686714> ;
+        rdfs:label "Institute of Computational Mathematics and Mathematical Geophysics" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04xtpdj18> ;
+        rdfs:label "Institute of Mathematical Problems of Biology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/029fhmb28> ;
+        rdfs:label "N.N. Krasovskii Institute of Mathematics and Mechanics of the Ural Branch of the Russian Academy of Sciences" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03vv7cm03> ;
+        rdfs:label "Institute of Mathematics with Computer Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00520ey40> ;
+        rdfs:label "Institute of Numerical Mathematics" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01dv3hq14> ;
+        rdfs:label "Keldysh Institute of Applied Mathematics" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00shc0s02> ;
+        rdfs:label "Sobolev Institute of Mathematics" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/030h9s280> ;
+        rdfs:label "St. Petersburg Department of Steklov Institute of Mathematics" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03zeg8w71> ;
+        rdfs:label "Steklov Mathematical Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05qrfxd25> ;
+        rdfs:label "Russian Academy of Sciences" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(37.61556 55.75222)"^^geo:wktLiteral ;
+        schema:addressLocality "Moscow" ;
+    ] ;
+    schema:url <http://www.ras.ru/win/db/show_org.asp?P=.oi-51.ln-ru> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30263602> ;
+             .

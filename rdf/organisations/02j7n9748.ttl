@@ -1,0 +1,66 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02j7n9748> 
+    a org:Organization ;
+    rdfs:label "Lancashire Teaching Hospitals NHS Foundation Trust" ;
+    schema:name "Lancashire Teaching Hospitals NHS Foundation Trust" ;
+    schema:foundingDate "1983"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Lancashire_Teaching_Hospitals_NHS_Foundation_Trust> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01hm85r97> ;
+        rdfs:label "Chorley and South Ribble Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04bk3rn37> ;
+        rdfs:label "Lytham Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05kpx1157> ;
+        rdfs:label "Royal Preston Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/010jbqd54> ;
+        rdfs:label "University of Central Lancashire" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05gd22996> ;
+        rdfs:label "University of Cumbria" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/027m9bs27> ;
+        rdfs:label "University of Manchester" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02wn5qz54> ;
+        rdfs:label "University of St Andrews" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-2.70452 53.76282)"^^geo:wktLiteral ;
+        schema:addressLocality "Preston" ;
+    ] ;
+    schema:url <http://www.lancsteachinghospitals.nhs.uk/> ;
+    schema:sameAs <http://isni.org/isni/0000000404564815> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6483045> ;
+             .

@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02s7sax82> 
+    a org:Organization ;
+    rdfs:label "Comisión de Investigaciones Científicas" ;
+    schema:name "Comisión de Investigaciones Científicas" ;
+    org:status "active" ;
+    org:classification "Funder" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-57.95453 -34.92145)"^^geo:wktLiteral ;
+        schema:addressLocality "La Plata" ;
+    ] ;
+    schema:url <https://www.cic.gba.gob.ar> ;
+    schema:sameAs <http://isni.org/isni/0000000417623757> ;
+             .

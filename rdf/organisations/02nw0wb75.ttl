@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02nw0wb75> 
+    a org:Organization ;
+    rdfs:label "Wycombe General Hospital" ;
+    schema:name "Wycombe General Hospital" ;
+    schema:foundingDate "1965"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Wycombe_General_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/037f2xv36> ;
+        rdfs:label "Buckinghamshire Healthcare NHS Trust" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.74934 51.62907)"^^geo:wktLiteral ;
+        schema:addressLocality "High Wycombe" ;
+    ] ;
+    schema:url <http://www.buckshealthcare.nhs.uk/For%20patients%20and%20visitors/wycombe-hospital.htm> ;
+    schema:sameAs <http://isni.org/isni/0000000403920515> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q8039641> ;
+             .

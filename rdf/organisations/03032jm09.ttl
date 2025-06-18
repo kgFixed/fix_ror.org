@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03032jm09> 
+    a org:Organization ;
+    rdfs:label "Levine Children's Hospital" ;
+    schema:name "Levine Children's Hospital" ;
+    schema:foundingDate "2007"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Levine_Children%27s_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0594s0e67> ;
+        rdfs:label "Carolinas Healthcare System" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0483mr804> ;
+        rdfs:label "Carolinas Medical Center" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-80.84313 35.22709)"^^geo:wktLiteral ;
+        schema:addressLocality "Charlotte" ;
+    ] ;
+    schema:url <http://www.carolinashealthcare.org/medical-services/childrens-services/levine-childrens-hospital> ;
+    schema:sameAs <http://isni.org/isni/0000000404117193> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6535653> ;
+             .

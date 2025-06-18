@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02zwv8f48> 
+    a org:Organization ;
+    rdfs:label "SPX Corporation (United States)" ;
+    schema:name "SPX Corporation (United States)" ;
+    schema:foundingDate "1912"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/SPX_Corporation> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03n9g7g16> ;
+        rdfs:label "SPX Corporation (United Kingdom)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-80.84313 35.22709)"^^geo:wktLiteral ;
+        schema:addressLocality "Charlotte" ;
+    ] ;
+    schema:url <http://www.spx.com/en/> ;
+    schema:sameAs <http://isni.org/isni/0000000404431625> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2207629> ;
+             .

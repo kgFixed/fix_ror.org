@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02rjj7s91> 
+    a org:Organization ;
+    rdfs:label "University Clinical Centre Maribor" ;
+    schema:name "University Clinical Centre Maribor" ;
+    schema:foundingDate "1799"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Funder" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01d5jce07> ;
+        rdfs:label "University of Maribor" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(15.64667 46.55472)"^^geo:wktLiteral ;
+        schema:addressLocality "Maribor" ;
+    ] ;
+    schema:url <https://www.ukc-mb.si> ;
+    schema:sameAs <http://isni.org/isni/0000000106851285> ;
+             .

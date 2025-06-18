@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02yv7k107> 
+    a org:Organization ;
+    rdfs:label "Wesley College of Education" ;
+    schema:name "Wesley College of Education" ;
+    schema:foundingDate "1922"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Wesley_College_of_Education%2C_Kumasi> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00cb23x68> ;
+        rdfs:label "Kwame Nkrumah University of Science and Technology" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.62443 6.68848)"^^geo:wktLiteral ;
+        schema:addressLocality "Kumasi" ;
+    ] ;
+    schema:url <https://www.wesco.edu.gh> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q7983889> ;
+             .

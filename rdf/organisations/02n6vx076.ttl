@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02n6vx076> 
+    a org:Organization ;
+    rdfs:label "BMI The Highfield Hospital" ;
+    schema:name "BMI The Highfield Hospital" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01btzfj32> ;
+        rdfs:label "BMI Healthcare" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-2.1552 53.61766)"^^geo:wktLiteral ;
+        schema:addressLocality "Rochdale" ;
+    ] ;
+    schema:url <https://www.bmihealthcare.co.uk/hospitals/bmi-the-highfield-hospital> ;
+    schema:sameAs <http://isni.org/isni/0000000405791892> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30293102> ;
+             .

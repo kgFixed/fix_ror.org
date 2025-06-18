@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02k3f4s48> 
+    a org:Organization ;
+    rdfs:label "Georgia Chamber of Commerce" ;
+    schema:name "Georgia Chamber of Commerce" ;
+    schema:foundingDate "1915"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Georgia_Chamber_of_Commerce> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-84.38798 33.749)"^^geo:wktLiteral ;
+        schema:addressLocality "Atlanta" ;
+    ] ;
+    schema:url <https://www.gachamber.com/> ;
+     .

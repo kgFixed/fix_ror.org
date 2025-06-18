@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/031vfrf75> 
+    a org:Organization ;
+    rdfs:label "Universidad Nacional de Piura" ;
+    schema:name "Universidad Nacional de Piura" ;
+    schema:foundingDate "1961"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-80.63282 -5.19449)"^^geo:wktLiteral ;
+        schema:addressLocality "Piura" ;
+    ] ;
+    schema:url <http://www.unp.edu.pe/> ;
+    schema:sameAs <http://isni.org/isni/0000000404188231> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q20022058> ;
+             .

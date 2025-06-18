@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02zan5e48> 
+    a org:Organization ;
+    rdfs:label "Menorah Park Center for Senior Living" ;
+    schema:name "Menorah Park Center for Senior Living" ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-81.50873 41.4645)"^^geo:wktLiteral ;
+        schema:addressLocality "Beachwood" ;
+    ] ;
+    schema:url <http://www.menorahpark.org/> ;
+    schema:sameAs <http://isni.org/isni/000000040419122X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30282232> ;
+             .

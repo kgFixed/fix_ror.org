@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02zynam48> 
+    a org:Organization ;
+    rdfs:label "MBF Bioscience (United States)" ;
+    schema:name "MBF Bioscience (United States)" ;
+    schema:foundingDate "1988"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/MBF_Bioscience> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-73.06818 44.43755)"^^geo:wktLiteral ;
+        schema:addressLocality "Williston" ;
+    ] ;
+    schema:url <http://www.mbfbioscience.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000459127102> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6714719> ;
+             .

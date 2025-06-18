@@ -1,0 +1,35 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02pt3tp10> 
+    a org:Organization ;
+    rdfs:label "United Technologies (Canada)" ;
+    schema:name "United Technologies (Canada)" ;
+    schema:foundingDate "1934"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/United_Technologies> ;
+    org:status "inactive" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02mfrg180> ;
+        rdfs:label "United Technologies (United States)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/04b38mm11> ;
+        rdfs:label "Raytheon Technologies (Canada)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-73.46818 45.5152)"^^geo:wktLiteral ;
+        schema:addressLocality "Longueuil" ;
+    ] ;
+    schema:url <http://utcaerospacesystems.com/Pages/Default.aspx> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q41566947> ;
+             .

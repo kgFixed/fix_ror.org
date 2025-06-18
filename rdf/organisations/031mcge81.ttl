@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/031mcge81> 
+    a org:Organization ;
+    rdfs:label "Nunavik Regional Board of Health and Social Services" ;
+    schema:name "Nunavik Regional Board of Health and Social Services" ;
+    schema:foundingDate "1995"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-71.21454 46.81228)"^^geo:wktLiteral ;
+        schema:addressLocality "Québec" ;
+    ] ;
+    schema:url <http://nrbhss.gouv.qc.ca/> ;
+    schema:sameAs <http://isni.org/isni/0000000096744768> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30293259> ;
+             .

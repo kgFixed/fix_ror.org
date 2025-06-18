@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02jwva135> 
+    a org:Organization ;
+    rdfs:label "Piramal (United States)" ;
+    schema:name "Piramal (United States)" ;
+    schema:foundingDate "1988"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Piramal_Enterprises> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00vj60w13> ;
+        rdfs:label "Piramal (India)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-84.47772 37.98869)"^^geo:wktLiteral ;
+        schema:addressLocality "Lexington" ;
+    ] ;
+    schema:url <http://www.piramal.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q55454595> ;
+             .

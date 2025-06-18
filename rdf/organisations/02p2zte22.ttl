@@ -1,0 +1,39 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02p2zte22> 
+    a org:Organization ;
+    rdfs:label "Centre de recherche Charles-Le Moyne" ;
+    schema:name "Centre de recherche Charles-Le Moyne" ;
+    schema:foundingDate "1995"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04qekdn52> ;
+        rdfs:label "Centre intégré de santé et de services sociaux de la Montérégie-Centre" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01jnc6p74> ;
+        rdfs:label "Hôpital Charles-Le Moyne" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00kybxq39> ;
+        rdfs:label "Université de Sherbrooke" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-73.46818 45.5152)"^^geo:wktLiteral ;
+        schema:addressLocality "Longueuil" ;
+    ] ;
+    schema:url <https://crclm.ca> ;
+     .

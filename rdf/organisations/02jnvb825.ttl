@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02jnvb825> 
+    a org:Organization ;
+    rdfs:label "Department of Cultural Heritage" ;
+    schema:name "Department of Cultural Heritage" ;
+    schema:foundingDate "1990"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Other" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05qraqp26> ;
+        rdfs:label "Ministry of Culture" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(25.2798 54.68916)"^^geo:wktLiteral ;
+        schema:addressLocality "Vilnius" ;
+    ] ;
+    schema:url <http://www.kpd.lt/en.html> ;
+    schema:sameAs <http://isni.org/isni/0000000110867132> ;
+             .

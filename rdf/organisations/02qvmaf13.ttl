@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02qvmaf13> 
+    a org:Organization ;
+    rdfs:label "Mahatma Basaveshwar Education Society's College of Engineering, Ambajogai" ;
+    schema:name "Mahatma Basaveshwar Education Society's College of Engineering, Ambajogai" ;
+    schema:foundingDate "1993"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05tc4vc39> ;
+        rdfs:label "Dr. Babasaheb Ambedkar Technological University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(76.48126 18.69981)"^^geo:wktLiteral ;
+        schema:addressLocality "Ambejogai" ;
+    ] ;
+    schema:url <https://www.coea.ac.in> ;
+     .

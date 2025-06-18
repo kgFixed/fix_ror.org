@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02ssn3c97> 
+    a org:Organization ;
+    rdfs:label "York College of Pennsylvania" ;
+    schema:name "York College of Pennsylvania" ;
+    schema:foundingDate "1787"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/York_College_of_Pennsylvania> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-76.72774 39.9626)"^^geo:wktLiteral ;
+        schema:addressLocality "York" ;
+    ] ;
+    schema:url <http://www.ycp.edu/> ;
+    schema:sameAs <http://isni.org/isni/000000010159358X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q8055408> ;
+             .

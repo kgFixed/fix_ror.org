@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02pc4ce72> 
+    a org:Organization ;
+    rdfs:label "Richardson Hospital" ;
+    schema:name "Richardson Hospital" ;
+    schema:foundingDate "1918"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03vamsh08> ;
+        rdfs:label "County Durham and Darlington NHS Foundation Trust" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.919 54.5415)"^^geo:wktLiteral ;
+        schema:addressLocality "Barnard Castle" ;
+    ] ;
+    schema:url <https://www.cddft.nhs.uk/our-hospitals/richardson-hospital.aspx> ;
+    schema:sameAs <http://isni.org/isni/0000000446916022> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30292898> ;
+             .
