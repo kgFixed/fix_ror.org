@@ -1,0 +1,41 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0277xgb12> 
+    a org:Organization ;
+    rdfs:label "Institute of Cytology and Genetics" ;
+    schema:name "Institute of Cytology and Genetics" ;
+    schema:foundingDate "1957"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Institute_of_Cytology_and_Genetics> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/038rjvd86> ;
+        rdfs:label "Department of Biological Sciences" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04t2ss102> ;
+        rdfs:label "Novosibirsk State University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02frkq021> ;
+        rdfs:label "Siberian Branch of the Russian Academy of Sciences" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(82.9346 55.0415)"^^geo:wktLiteral ;
+        schema:addressLocality "Novosibirsk" ;
+    ] ;
+    schema:url <http://www.bionet.nsc.ru/en> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q4201822> ;
+             .

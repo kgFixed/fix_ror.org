@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02c21vy68> 
+    a org:Organization ;
+    rdfs:label "Universidad Nacional de La Pampa" ;
+    schema:name "Universidad Nacional de La Pampa" ;
+    schema:foundingDate "1973"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/National_University_of_La_Pampa> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-64.28333 -36.61667)"^^geo:wktLiteral ;
+        schema:addressLocality "Santa Rosa" ;
+    ] ;
+    schema:url <https://www.unlpam.edu.ar> ;
+    schema:sameAs <http://isni.org/isni/0000000121619433> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6979257> ;
+             .

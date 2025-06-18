@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02bwd6p34> 
+    a org:Organization ;
+    rdfs:label "Ashfield Community Hospital" ;
+    schema:name "Ashfield Community Hospital" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04ce87537> ;
+        rdfs:label "Sherwood Forest Hospitals NHS Foundation Trust" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.15047 52.9536)"^^geo:wktLiteral ;
+        schema:addressLocality "Nottingham" ;
+    ] ;
+    schema:url <https://www.sfh-tr.nhs.uk/about-us/contact-us/find-us/getting-to-ashfield-health-village/> ;
+    schema:sameAs <http://isni.org/isni/0000000403752187> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30293157> ;
+             .

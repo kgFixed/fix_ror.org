@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02c7s8b77> 
+    a org:Organization ;
+    rdfs:label "National Archives and Library of Ethiopia" ;
+    schema:name "National Archives and Library of Ethiopia" ;
+    schema:foundingDate "1944"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/National_Archives_and_Library_of_Ethiopia> ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(38.74689 9.02497)"^^geo:wktLiteral ;
+        schema:addressLocality "Addis Ababa" ;
+    ] ;
+    schema:url <http://www.nala.gov.et/> ;
+    schema:sameAs <http://isni.org/isni/0000000096952807> ;
+             .

@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02ajr4b89> 
+    a org:Organization ;
+    rdfs:label "Korean Society of Comparision Labor Law" ;
+    schema:name "Korean Society of Comparision Labor Law" ;
+    schema:foundingDate "1997"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(127.13778 37.43861)"^^geo:wktLiteral ;
+        schema:addressLocality "Seongnam-si" ;
+    ] ;
+    schema:url <http://www.kscll.org> ;
+     .

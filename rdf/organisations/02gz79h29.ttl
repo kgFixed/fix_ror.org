@@ -1,0 +1,48 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02gz79h29> 
+    a org:Organization ;
+    rdfs:label "Shropshire Community Health NHS Trust" ;
+    schema:name "Shropshire Community Health NHS Trust" ;
+    schema:foundingDate "2011"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Shropshire_Community_Health_NHS_Trust> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00cants75> ;
+        rdfs:label "Bishop's Castle Community Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02gfnab20> ;
+        rdfs:label "Bridgnorth Community Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/000ttz716> ;
+        rdfs:label "Ludlow Community Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0026b6z69> ;
+        rdfs:label "Whitchurch Community Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-2.75208 52.71009)"^^geo:wktLiteral ;
+        schema:addressLocality "Shrewsbury" ;
+    ] ;
+    schema:url <https://www.shropscommunityhealth.nhs.uk/> ;
+    schema:sameAs <http://isni.org/isni/0000000405319213> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q17033893> ;
+             .

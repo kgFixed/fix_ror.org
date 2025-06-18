@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02dcqxm65> 
+    a org:Organization ;
+    rdfs:label "Universitätsbibliothek Johann Christian Senckenberg" ;
+    schema:name "Universitätsbibliothek Johann Christian Senckenberg" ;
+    schema:foundingDate "1484"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Frankfurt_University_Library> ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04cvxnb49> ;
+        rdfs:label "Goethe University Frankfurt" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(8.64538 50.12498)"^^geo:wktLiteral ;
+        schema:addressLocality "Bockenheim" ;
+    ] ;
+    schema:url <http://www.ub.uni-frankfurt.de> ;
+    schema:sameAs <http://isni.org/isni/0000000123217358> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q875587> ;
+             .

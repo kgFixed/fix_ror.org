@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02g702008> 
+    a org:Organization ;
+    rdfs:label "Kalasin University" ;
+    schema:name "Kalasin University" ;
+    schema:foundingDate "1997"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Kalasin_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01g4rg913> ;
+        rdfs:label "Rajabhat University System" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(103.50658 16.43281)"^^geo:wktLiteral ;
+        schema:addressLocality "Kalasin" ;
+    ] ;
+    schema:url <https://www.ksu.ac.th/> ;
+    schema:sameAs <http://isni.org/isni/0000000403992447> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2128631> ;
+             .

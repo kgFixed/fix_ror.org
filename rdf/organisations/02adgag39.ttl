@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02adgag39> 
+    a org:Organization ;
+    rdfs:label "Aixtron (Germany)" ;
+    schema:name "Aixtron (Germany)" ;
+    schema:foundingDate "1983"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Aixtron> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05p81fj60> ;
+        rdfs:label "Aixtron (United Kingdom)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(6.09317 50.86874)"^^geo:wktLiteral ;
+        schema:addressLocality "Herzogenrath" ;
+    ] ;
+    schema:url <http://www.aixtron.com/en/home/> ;
+    schema:sameAs <http://isni.org/isni/000000040463924X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q411528> ;
+             .

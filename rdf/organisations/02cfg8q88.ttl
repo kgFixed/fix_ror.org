@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02cfg8q88> 
+    a org:Organization ;
+    rdfs:label "Council of Christian Hospitals" ;
+    schema:name "Council of Christian Hospitals" ;
+    schema:foundingDate "1973"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Council_of_Christian_Hospitals> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/035b18p12> ;
+        rdfs:label "CBM Bethel Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(82.23809 16.96036)"^^geo:wktLiteral ;
+        schema:addressLocality "Kākināda" ;
+    ] ;
+    schema:sameAs <http://www.wikidata.org/entity/Q5176376> ;
+             .

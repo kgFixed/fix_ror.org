@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/029tw8r50> 
+    a org:Organization ;
+    rdfs:label "Eyesense (Germany)" ;
+    schema:name "Eyesense (Germany)" ;
+    schema:foundingDate "2006"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(9.07596 49.91985)"^^geo:wktLiteral ;
+        schema:addressLocality "Großostheim" ;
+    ] ;
+    schema:url <https://en.eyesense.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000404947445> ;
+             .

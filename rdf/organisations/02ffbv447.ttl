@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02ffbv447> 
+    a org:Organization ;
+    rdfs:label "Crowleys Ridge College" ;
+    schema:name "Crowleys Ridge College" ;
+    schema:foundingDate "1964"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Crowley%27s_Ridge_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-90.49733 36.0584)"^^geo:wktLiteral ;
+        schema:addressLocality "Paragould" ;
+    ] ;
+    schema:url <https://www.crc.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000088229133> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5189258> ;
+             .

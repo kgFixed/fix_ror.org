@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02h3vgm10> 
+    a org:Organization ;
+    rdfs:label "Zemaitija College" ;
+    schema:name "Zemaitija College" ;
+    schema:foundingDate "1859"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(21.92343 55.72708)"^^geo:wktLiteral ;
+        schema:addressLocality "Rietavas" ;
+    ] ;
+    schema:url <http://www.zemko.lt/go.php/lit/English> ;
+    schema:sameAs <http://isni.org/isni/0000000404096150> ;
+             .

@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/023sxys58> 
+    a org:Organization ;
+    rdfs:label "Purdue Pharma (Canada)" ;
+    schema:name "Purdue Pharma (Canada)" ;
+    schema:foundingDate "1892"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Purdue_Pharma> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/030vvs717> ;
+        rdfs:label "Purdue Pharma (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-79.13289 43.90012)"^^geo:wktLiteral ;
+        schema:addressLocality "Pickering" ;
+    ] ;
+    schema:url <http://purdue.ca/en/> ;
+    schema:sameAs <http://isni.org/isni/0000000406267320> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q43895249> ;
+             .

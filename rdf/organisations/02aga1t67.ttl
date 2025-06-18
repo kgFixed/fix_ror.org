@@ -1,0 +1,61 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02aga1t67> 
+    a org:Organization ;
+    rdfs:label "Emerson (United States)" ;
+    schema:name "Emerson (United States)" ;
+    schema:foundingDate "1890"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Emerson_Electric> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02cwjwn07> ;
+        rdfs:label "Emerson (China)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03pxknc36> ;
+        rdfs:label "Emerson (Czechia)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02tg5n396> ;
+        rdfs:label "Emerson (Germany)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/016gp0w25> ;
+        rdfs:label "Emerson (Norway)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00ej6x457> ;
+        rdfs:label "Emerson (Sweden)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00t6e2695> ;
+        rdfs:label "Emerson (United Kingdom)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-90.19789 38.62727)"^^geo:wktLiteral ;
+        schema:addressLocality "St Louis" ;
+    ] ;
+    schema:url <http://www.emerson.com/en-us> ;
+    schema:sameAs <http://isni.org/isni/0000000122668616> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1335585> ;
+             .

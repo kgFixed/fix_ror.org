@@ -1,0 +1,120 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0249rpb20> 
+    a org:Organization ;
+    rdfs:label "Mississippi Space Grant Consortium" ;
+    schema:name "Mississippi Space Grant Consortium" ;
+    schema:foundingDate "1991"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Other" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/027ka1x80> ;
+        rdfs:label "National Aeronautics and Space Administration" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00dr54257> ;
+        rdfs:label "Alcorn State University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04gzw7t05> ;
+        rdfs:label "Coahoma Community College" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0326egx05> ;
+        rdfs:label "Delta State University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00mcjxw34> ;
+        rdfs:label "Itawamba Community College" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01ecnnp60> ;
+        rdfs:label "Jackson State University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/049f03n31> ;
+        rdfs:label "Meridian Community College" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01zmrev66> ;
+        rdfs:label "Mississippi Delta Community College" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01vgd5418> ;
+        rdfs:label "Mississippi Gulf Coast Community College" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0432jq872> ;
+        rdfs:label "Mississippi State University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01hs43g67> ;
+        rdfs:label "Mississippi University for Women" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00rz5xc38> ;
+        rdfs:label "Mississippi Valley State University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05m42bs81> ;
+        rdfs:label "Northeast State Community College" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0403qeq92> ;
+        rdfs:label "Pearl River Community College" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02teq1165> ;
+        rdfs:label "University of Mississippi" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0270vfa57> ;
+        rdfs:label "University of Southern Mississippi" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-89.51925 34.3665)"^^geo:wktLiteral ;
+        schema:addressLocality "Oxford" ;
+    ] ;
+    schema:url <http://ms.spacegrant.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000459039647> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30264520> ;
+             .

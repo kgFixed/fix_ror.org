@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02en5gq32> 
+    a org:Organization ;
+    rdfs:label "Commission Scolaire des Hautes Rivières" ;
+    schema:name "Commission Scolaire des Hautes Rivières" ;
+    schema:foundingDate "1998"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Commission_scolaire_des_Hautes-Rivi%C3%A8res> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-73.26259 45.30713)"^^geo:wktLiteral ;
+        schema:addressLocality "Saint-Jean-sur-Richelieu" ;
+    ] ;
+    schema:url <http://www.csdhr.qc.ca/> ;
+    schema:sameAs <http://isni.org/isni/0000000403803116> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q18289158> ;
+             .

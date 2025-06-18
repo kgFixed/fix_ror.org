@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02gv8a673> 
+    a org:Organization ;
+    rdfs:label "Everett Community College" ;
+    schema:name "Everett Community College" ;
+    schema:foundingDate "1941"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Everett_Community_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-122.20208 47.97898)"^^geo:wktLiteral ;
+        schema:addressLocality "Everett" ;
+    ] ;
+    schema:url <http://www.everettcc.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000104082048> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5416998> ;
+             .

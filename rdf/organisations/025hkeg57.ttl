@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/025hkeg57> 
+    a org:Organization ;
+    rdfs:label "State Key Laboratory of Transient Optics and Photonics" ;
+    schema:name "State Key Laboratory of Transient Optics and Photonics" ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0444j5556> ;
+        rdfs:label "Xi'an Institute of Optics and Precision Mechanics" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(108.92861 34.25833)"^^geo:wktLiteral ;
+        schema:addressLocality "Xi'an" ;
+    ] ;
+    schema:url <http://skltop.opt.ac.cn> ;
+     .

@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0261rqq02> 
+    a org:Organization ;
+    rdfs:label "Wayne County Regional Educational Service Agency" ;
+    schema:name "Wayne County Regional Educational Service Agency" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Wayne_County_Regional_Educational_Service_Agency> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-83.38632 42.28143)"^^geo:wktLiteral ;
+        schema:addressLocality "Wayne" ;
+    ] ;
+    schema:url <https://www.resa.net/> ;
+    schema:sameAs <http://isni.org/isni/0000000406355793> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7976147> ;
+             .

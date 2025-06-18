@@ -1,0 +1,34 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0289cxp23> 
+    a org:Organization ;
+    rdfs:label "Hospital Virgen de la Salud" ;
+    schema:name "Hospital Virgen de la Salud" ;
+    schema:foundingDate "2010"^^xsd:gYear ;
+    org:status "inactive" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04q4ppz72> ;
+        rdfs:label "Complejo Hospitalario Universitario de Toledo" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/00wxgxz56> ;
+        rdfs:label "Hospital Universitario de Toledo" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-4.02263 39.8581)"^^geo:wktLiteral ;
+        schema:addressLocality "Toledo" ;
+    ] ;
+    schema:url <http://www.cht.es/cht/cm/cht/tkContent?pgseed=1493207263184&idContent=6060&locale=es_ES&textOnly=false> ;
+    schema:sameAs <http://isni.org/isni/0000000417950563> ;
+             .

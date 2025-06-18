@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/022bzg803> 
+    a org:Organization ;
+    rdfs:label "Ministry of Agriculture and Food" ;
+    schema:name "Ministry of Agriculture and Food" ;
+    schema:foundingDate "1900"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Ministry_of_Agriculture_and_Food_(Norway)> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03ht51987> ;
+        rdfs:label "Norwegian Agriculture Agency" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05a4cm665> ;
+        rdfs:label "Government of Norway" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(10.74609 59.91273)"^^geo:wktLiteral ;
+        schema:addressLocality "Oslo" ;
+    ] ;
+    schema:url <https://www.regjeringen.no/en/dep/lmd/id627/> ;
+    schema:sameAs <http://isni.org/isni/0000000404482086> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2607906> ;
+             .

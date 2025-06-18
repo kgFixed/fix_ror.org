@@ -1,0 +1,63 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02j17mb51> 
+    a org:Organization ;
+    rdfs:label "Presence Health" ;
+    schema:name "Presence Health" ;
+    schema:foundingDate "2011"^^xsd:gYear ;
+    org:status "withdrawn" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05hrhxs64> ;
+        rdfs:label "Presence St. Mary's Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04kvh1910> ;
+        rdfs:label "Resurrection Health Care" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/029dttz57> ;
+        rdfs:label "Resurrection Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02ttsvs52> ;
+        rdfs:label "Saint Joseph Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01ed3w678> ;
+        rdfs:label "St. Francis Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/047426m28> ;
+        rdfs:label "University of Illinois Urbana-Champaign" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/02z7tpb72> ;
+        rdfs:label "Amita Health" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-87.88922 41.52614)"^^geo:wktLiteral ;
+        schema:addressLocality "Mokena" ;
+    ] ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30288556> ;
+             .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/026b8w395> 
+    a org:Organization ;
+    rdfs:label "Girne American University" ;
+    schema:name "Girne American University" ;
+    schema:foundingDate "1985"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Girne_American_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(33.31729 35.33634)"^^geo:wktLiteral ;
+        schema:addressLocality "Kyrenia" ;
+    ] ;
+    schema:url <http://www.gau.edu.tr/> ;
+    schema:sameAs <http://isni.org/isni/0000000405957661> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q469399> ;
+             .

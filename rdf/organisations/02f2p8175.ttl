@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02f2p8175> 
+    a org:Organization ;
+    rdfs:label "Front Range Community College" ;
+    schema:name "Front Range Community College" ;
+    schema:foundingDate "1968"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Front_Range_Community_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05n07wm39> ;
+        rdfs:label "Colorado Community College System" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-105.0372 39.83665)"^^geo:wktLiteral ;
+        schema:addressLocality "Westminster" ;
+    ] ;
+    schema:url <https://www.frontrange.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000405280451> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5505816> ;
+             .

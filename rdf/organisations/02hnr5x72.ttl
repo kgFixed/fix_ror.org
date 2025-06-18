@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02hnr5x72> 
+    a org:Organization ;
+    rdfs:label "Harman (Germany)" ;
+    schema:name "Harman (Germany)" ;
+    schema:foundingDate "1980"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Harman_Becker_Automotive_Systems> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03yfbaq97> ;
+        rdfs:label "Harman (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(8.50412 48.90617)"^^geo:wktLiteral ;
+        schema:addressLocality "Karlsbad" ;
+    ] ;
+    schema:url <https://www.harman.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30289814> ;
+             .

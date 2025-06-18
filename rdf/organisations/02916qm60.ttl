@@ -1,0 +1,61 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02916qm60> 
+    a org:Organization ;
+    rdfs:label "United States Department of Justice" ;
+    schema:name "United States Department of Justice" ;
+    schema:foundingDate "1870"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/United_States_Department_of_Justice> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0568dpm54> ;
+        rdfs:label "Drug Enforcement Administration" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00ta5r839> ;
+        rdfs:label "Federal Bureau of Investigation" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00v8p7w89> ;
+        rdfs:label "National Institute of Justice" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05335sh79> ;
+        rdfs:label "Office of Juvenile Justice and Delinquency Prevention" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0006s4z66> ;
+        rdfs:label "Bureau of Justice Statistics" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02rcrvv70> ;
+        rdfs:label "Government of the United States of America" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.03637 38.89511)"^^geo:wktLiteral ;
+        schema:addressLocality "Washington" ;
+    ] ;
+    schema:url <http://www.justice.gov/> ;
+    schema:sameAs <http://isni.org/isni/000000012197809X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1553390> ;
+             .

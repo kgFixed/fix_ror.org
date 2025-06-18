@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/021v2ka51> 
+    a org:Organization ;
+    rdfs:label "Institut national supérieur de formation et de recherche pour l'éducation inclusive" ;
+    schema:name "Institut national supérieur de formation et de recherche pour l'éducation inclusive" ;
+    schema:foundingDate "2005"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Institut_national_sup%C3%A9rieur_de_formation_et_de_recherche_pour_l%27%C3%A9ducation_des_jeunes_handicap%C3%A9s_et_les_enseignements_adapt%C3%A9s> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.22929 48.87143)"^^geo:wktLiteral ;
+        schema:addressLocality "Suresnes" ;
+    ] ;
+    schema:url <https://www.insei.fr> ;
+    schema:sameAs <http://isni.org/isni/0000000121919209> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3152454> ;
+             .

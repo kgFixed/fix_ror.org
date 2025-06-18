@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02g36m681> 
+    a org:Organization ;
+    rdfs:label "Instituto Tecnológico de Soledad Atlántico" ;
+    schema:name "Instituto Tecnológico de Soledad Atlántico" ;
+    schema:foundingDate "1997"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-74.76459 10.91843)"^^geo:wktLiteral ;
+        schema:addressLocality "Soledad" ;
+    ] ;
+    schema:url <http://www.itsa.edu.co/> ;
+    schema:sameAs <http://isni.org/isni/0000000405414245> ;
+             .

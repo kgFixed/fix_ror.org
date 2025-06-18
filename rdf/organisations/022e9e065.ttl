@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/022e9e065> 
+    a org:Organization ;
+    rdfs:label "Shijiazhuang Tiedao University" ;
+    schema:name "Shijiazhuang Tiedao University" ;
+    schema:foundingDate "1950"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Shijiazhuang_Tiedao_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(114.47861 38.04139)"^^geo:wktLiteral ;
+        schema:addressLocality "Shijiazhuang" ;
+    ] ;
+    schema:url <https://www.stdu.edu.cn> ;
+    schema:sameAs <http://isni.org/isni/0000000417900486> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7496504> ;
+             .

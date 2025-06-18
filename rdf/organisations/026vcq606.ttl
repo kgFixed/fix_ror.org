@@ -1,0 +1,61 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/026vcq606> 
+    a org:Organization ;
+    rdfs:label "KTH Royal Institute of Technology" ;
+    schema:name "KTH Royal Institute of Technology" ;
+    schema:foundingDate "1827"^^xsd:gYear ;
+    schema:sameAs <https://en.m.wikipedia.org/wiki/KTH_Royal_Institute_of_Technology> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/058zxsr17> ;
+        rdfs:label "Bolin Centre for Climate Research" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/039qvmf95> ;
+        rdfs:label "Wallenberg Wood Science Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00enajs79> ;
+        rdfs:label "National Bioinformatics Infrastructure Sweden" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01mq2eh43> ;
+        rdfs:label "National Microscopy Infrastructure" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00ancw882> ;
+        rdfs:label "Swedish National Data Service" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0221pcv84> ;
+        rdfs:label "Swedish Biodiversity Data Infrastructure" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(18.06871 59.32938)"^^geo:wktLiteral ;
+        schema:addressLocality "Stockholm" ;
+    ] ;
+    schema:url <https://www.kth.se> ;
+    schema:sameAs <http://isni.org/isni/0000000121581746> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q854280> ;
+             .

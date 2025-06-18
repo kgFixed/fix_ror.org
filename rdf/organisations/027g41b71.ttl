@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/027g41b71> 
+    a org:Organization ;
+    rdfs:label "Picanol (Belgium)" ;
+    schema:name "Picanol (Belgium)" ;
+    schema:foundingDate "1936"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.88569 50.85114)"^^geo:wktLiteral ;
+        schema:addressLocality "Ieper" ;
+    ] ;
+    schema:url <http://www.picanolgroup.com/en> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q7190498> ;
+             .

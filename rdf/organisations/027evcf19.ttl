@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/027evcf19> 
+    a org:Organization ;
+    rdfs:label "Özel Ortadoğu 19 Mayıs Hastanesi" ;
+    schema:name "Özel Ortadoğu 19 Mayıs Hastanesi" ;
+    schema:foundingDate "1998"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(36.3361 41.27976)"^^geo:wktLiteral ;
+        schema:addressLocality "Samsun" ;
+    ] ;
+    schema:url <http://www.19mayishastanesi.com/> ;
+     .

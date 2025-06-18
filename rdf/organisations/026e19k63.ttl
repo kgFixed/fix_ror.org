@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/026e19k63> 
+    a org:Organization ;
+    rdfs:label "Stichting Aeres Groep" ;
+    schema:name "Stichting Aeres Groep" ;
+    schema:sameAs <https://nl.wikipedia.org/wiki/Aeres> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03jnx2c74> ;
+        rdfs:label "Aeres University of Applied Sciences" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(5.65833 52.03333)"^^geo:wktLiteral ;
+        schema:addressLocality "Ede" ;
+    ] ;
+    schema:url <https://www.aeres.eu> ;
+    schema:sameAs <http://isni.org/isni/0000000417846619> ;
+             .

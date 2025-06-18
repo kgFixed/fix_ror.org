@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/022mrwt29> 
+    a org:Organization ;
+    rdfs:label "Tzu Chi Foundation" ;
+    schema:name "Tzu Chi Foundation" ;
+    schema:foundingDate "1966"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Tzu_Chi> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(121.60444 23.97694)"^^geo:wktLiteral ;
+        schema:addressLocality "Hualien City" ;
+    ] ;
+    schema:url <http://www.tzuchi.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000405729079> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q717899> ;
+             .

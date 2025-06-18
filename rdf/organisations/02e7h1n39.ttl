@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02e7h1n39> 
+    a org:Organization ;
+    rdfs:label "Universidad Intercultural del Estado de México" ;
+    schema:name "Universidad Intercultural del Estado de México" ;
+    schema:foundingDate "2004"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-99.95197 19.7144)"^^geo:wktLiteral ;
+        schema:addressLocality "San Felipe del Progreso" ;
+    ] ;
+    schema:url <http://uiem.edu.mx/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30293906> ;
+             .

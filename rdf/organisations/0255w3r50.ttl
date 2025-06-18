@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0255w3r50> 
+    a org:Organization ;
+    rdfs:label "Amway (United States)" ;
+    schema:name "Amway (United States)" ;
+    schema:foundingDate "1959"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Amway> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-85.66809 42.96336)"^^geo:wktLiteral ;
+        schema:addressLocality "Grand Rapids" ;
+    ] ;
+    schema:url <http://www.amway.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000403921921> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q481800> ;
+             .

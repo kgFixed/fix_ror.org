@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02e4kkg71> 
+    a org:Organization ;
+    rdfs:label "ProMedica Monroe Regional Hospital" ;
+    schema:name "ProMedica Monroe Regional Hospital" ;
+    schema:foundingDate "1986"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-83.39771 41.91643)"^^geo:wktLiteral ;
+        schema:addressLocality "Monroe" ;
+    ] ;
+    schema:url <https://www.promedica.org/monroe-regional-hospital/Pages/default.aspx?utm_source=local-listing&utm_medium=organic&utm_campaign=website-link> ;
+     .

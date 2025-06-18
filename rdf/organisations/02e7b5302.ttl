@@ -1,0 +1,44 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02e7b5302> 
+    a org:Organization ;
+    rdfs:label "Nanyang Technological University" ;
+    schema:name "Nanyang Technological University" ;
+    schema:foundingDate "1991"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Nanyang_Technological_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/027jrtw17> ;
+        rdfs:label "UMI MajuLab" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02fhgbp51> ;
+        rdfs:label "National Institute of Education" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05yb3w112> ;
+        rdfs:label "Singapore-MIT Alliance for Research and Technology" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(103.85007 1.28967)"^^geo:wktLiteral ;
+        schema:addressLocality "Singapore" ;
+    ] ;
+    schema:url <http://www.ntu.edu.sg/Pages/home.aspx> ;
+    schema:sameAs <http://isni.org/isni/0000000122240361> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q721064> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6973642> ;
+             .

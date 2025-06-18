@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/027qdw603> 
+    a org:Organization ;
+    rdfs:label "Cadence Design Systems (India)" ;
+    schema:name "Cadence Design Systems (India)" ;
+    schema:foundingDate "1988"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Cadence_Design_Systems> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04w8xa018> ;
+        rdfs:label "Cadence Design Systems (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(77.33 28.58)"^^geo:wktLiteral ;
+        schema:addressLocality "Noida" ;
+    ] ;
+    schema:url <https://www.cadence.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q28971036> ;
+             .

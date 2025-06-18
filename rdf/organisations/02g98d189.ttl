@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02g98d189> 
+    a org:Organization ;
+    rdfs:label "ARIAD Pharmaceuticals (United Kingdom)" ;
+    schema:name "ARIAD Pharmaceuticals (United Kingdom)" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/ARIAD_Pharmaceuticals> ;
+    org:status "inactive" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/05c0v3585> ;
+        rdfs:label "Takeda (United Kingdom)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.3338 51.29652)"^^geo:wktLiteral ;
+        schema:addressLocality "Leatherhead" ;
+    ] ;
+    schema:url <http://www.ariad.com/> ;
+     .

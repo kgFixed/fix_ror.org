@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02369cb65> 
+    a org:Organization ;
+    rdfs:label "Presbyterian University, Ghana" ;
+    schema:name "Presbyterian University, Ghana" ;
+    schema:foundingDate "2003"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Presbyterian_University_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.08193 6.80004)"^^geo:wktLiteral ;
+        schema:addressLocality "Agogo" ;
+    ] ;
+    schema:url <https://www.presbyuniversity.edu.gh/site/> ;
+    schema:sameAs <http://isni.org/isni/0000000403986338> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1566634> ;
+             .

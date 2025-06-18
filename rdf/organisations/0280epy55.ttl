@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0280epy55> 
+    a org:Organization ;
+    rdfs:label "Arab Educational Information Network" ;
+    schema:name "Arab Educational Information Network" ;
+    schema:foundingDate "2007"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(35.50157 33.89332)"^^geo:wktLiteral ;
+        schema:addressLocality "Beirut" ;
+    ] ;
+    schema:url <http://shamaa.org/en/component/main/index.asp> ;
+     .

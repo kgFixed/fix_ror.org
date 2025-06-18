@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0262qgk29> 
+    a org:Organization ;
+    rdfs:label "National Research Mordovia State University" ;
+    schema:name "National Research Mordovia State University" ;
+    schema:foundingDate "1957"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Mordovian_State_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(45.1749 54.1838)"^^geo:wktLiteral ;
+        schema:addressLocality "Saransk" ;
+    ] ;
+    schema:url <https://www.mrsu.ru/en/> ;
+    schema:sameAs <http://isni.org/isni/0000000121617585> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4302550> ;
+             .

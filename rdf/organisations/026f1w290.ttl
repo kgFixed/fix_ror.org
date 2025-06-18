@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/026f1w290> 
+    a org:Organization ;
+    rdfs:label "Washington Water Science Center" ;
+    schema:name "Washington Water Science Center" ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/035a68863> ;
+        rdfs:label "United States Geological Survey" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-122.44429 47.25288)"^^geo:wktLiteral ;
+        schema:addressLocality "Tacoma" ;
+    ] ;
+    schema:url <https://www.usgs.gov/centers/washington-water-science-center> ;
+     .

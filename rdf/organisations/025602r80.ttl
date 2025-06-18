@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/025602r80> 
+    a org:Organization ;
+    rdfs:label "Scuola Superiore Sant'Anna" ;
+    schema:name "Scuola Superiore Sant'Anna" ;
+    schema:foundingDate "1987"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Sant%27Anna_School_of_Advanced_Studies> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01sgfhb12> ;
+        rdfs:label "National Enterprise for NanoScience and NanoTechnology" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(10.4036 43.70853)"^^geo:wktLiteral ;
+        schema:addressLocality "Pisa" ;
+    ] ;
+    schema:url <https://www.santannapisa.it> ;
+    schema:sameAs <http://isni.org/isni/000000041762600X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q774609> ;
+             .

@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0255jh689> 
+    a org:Organization ;
+    rdfs:label "King Danylo University" ;
+    schema:name "King Danylo University" ;
+    schema:foundingDate "1997"^^xsd:gYear ;
+    schema:sameAs <https://uk.wikipedia.org/wiki/%D0%A3%D0%BD%D1%96%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82_%D0%9A%D0%BE%D1%80%D0%BE%D0%BB%D1%8F_%D0%94%D0%B0%D0%BD%D0%B8%D0%BB%D0%B0> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(24.71248 48.92312)"^^geo:wktLiteral ;
+        schema:addressLocality "Ivano-Frankivsk" ;
+    ] ;
+    schema:url <http://ukd.edu.ua> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q12073707> ;
+             .

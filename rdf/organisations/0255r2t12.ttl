@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0255r2t12> 
+    a org:Organization ;
+    rdfs:label "Tronox (Australia)" ;
+    schema:name "Tronox (Australia)" ;
+    schema:foundingDate "2006"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Tronox> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03jc5ts66> ;
+        rdfs:label "Tronox (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(115.78128 -32.23013)"^^geo:wktLiteral ;
+        schema:addressLocality "Kwinana" ;
+    ] ;
+    schema:url <http://www.tronox.com/australia/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30713863> ;
+             .

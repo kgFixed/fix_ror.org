@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0237h9n51> 
+    a org:Organization ;
+    rdfs:label "Kagawa Prefectural School for the Blind" ;
+    schema:name "Kagawa Prefectural School for the Blind" ;
+    schema:foundingDate "1910"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(134.05 34.33333)"^^geo:wktLiteral ;
+        schema:addressLocality "Takamatsu" ;
+    ] ;
+    schema:url <http://www.kagawa-edu.jp/mogaku01/> ;
+     .

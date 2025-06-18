@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02he45g63> 
+    a org:Organization ;
+    rdfs:label "Discovery Center of Idaho" ;
+    schema:name "Discovery Center of Idaho" ;
+    schema:foundingDate "1988"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Discovery_Center_of_Idaho> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-116.20345 43.6135)"^^geo:wktLiteral ;
+        schema:addressLocality "Boise" ;
+    ] ;
+    schema:url <http://www.dcidaho.org/> ;
+     .

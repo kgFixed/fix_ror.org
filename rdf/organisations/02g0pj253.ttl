@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02g0pj253> 
+    a org:Organization ;
+    rdfs:label "Centegra Hospital McHenry" ;
+    schema:name "Centegra Hospital McHenry" ;
+    schema:foundingDate "1956"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Centegra_Hospital_-_McHenry> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-88.26675 42.33335)"^^geo:wktLiteral ;
+        schema:addressLocality "McHenry" ;
+    ] ;
+    schema:url <http://centegra.org/location/centegra-hospital-mchenry/> ;
+    schema:sameAs <http://isni.org/isni/0000000404398183> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5059054> ;
+             .

@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0259vv330> 
+    a org:Organization ;
+    rdfs:label "International Centre for Diffraction Data" ;
+    schema:name "International Centre for Diffraction Data" ;
+    schema:foundingDate "1941"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/International_Centre_for_Diffraction_Data> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-74.95489 40.26011)"^^geo:wktLiteral ;
+        schema:addressLocality "Newtown Grant" ;
+    ] ;
+    schema:url <http://www.icdd.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000104644004> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6049079> ;
+             .

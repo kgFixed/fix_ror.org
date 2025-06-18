@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0234wmv40> 
+    a org:Organization ;
+    rdfs:label "University of Bayreuth" ;
+    schema:name "University of Bayreuth" ;
+    schema:foundingDate "1975"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/University_of_Bayreuth> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/054zwas39> ;
+        rdfs:label "Bavarian Polymer Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03z8vj775> ;
+        rdfs:label "BF/M-Bayreuth" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(11.57893 49.94782)"^^geo:wktLiteral ;
+        schema:addressLocality "Bayreuth" ;
+    ] ;
+    schema:url <http://www.en.uni-bayreuth.de/home/index.html> ;
+    schema:sameAs <http://isni.org/isni/0000000404676972> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q702482> ;
+             .

@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02h7nc187> 
+    a org:Organization ;
+    rdfs:label "Aichi Prefectural Tsurugi hill high school" ;
+    schema:name "Aichi Prefectural Tsurugi hill high school" ;
+    schema:foundingDate "1909"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(137.05 34.86667)"^^geo:wktLiteral ;
+        schema:addressLocality "Nishio" ;
+    ] ;
+    schema:url <http://www.kakujogaoka-h.aichi-c.ed.jp/> ;
+     .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/024109974> 
+    a org:Organization ;
+    rdfs:label "José Benito Vives de Andréis Marine and Coastal Research Institute" ;
+    schema:name "José Benito Vives de Andréis Marine and Coastal Research Institute" ;
+    schema:foundingDate "2013"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Jos%C3%A9_Benito_Vives_de_Andr%C3%A9is_Marine_and_Coastal_Research_Institute> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-74.19904 11.24079)"^^geo:wktLiteral ;
+        schema:addressLocality "Santa Marta" ;
+    ] ;
+    schema:url <https://www.invemar.org.co> ;
+    schema:sameAs <http://isni.org/isni/0000000121099028> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6291683> ;
+             .

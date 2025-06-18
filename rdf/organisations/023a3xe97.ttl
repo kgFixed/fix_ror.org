@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/023a3xe97> 
+    a org:Organization ;
+    rdfs:label "Al-Mustaqbal University" ;
+    schema:name "Al-Mustaqbal University" ;
+    schema:foundingDate "2010"^^xsd:gYear ;
+    schema:sameAs <https://ar.wikipedia.org/wiki/%D9%83%D9%84%D9%8A%D8%A9_%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%82%D8%A8%D9%84_%D8%A7%D9%84%D8%AC%D8%A7%D9%85%D8%B9%D8%A9#:~:text=%D8%AC%D8%A7%D9%85%D8%B9%D8%A9%20%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%82%D8%A8%D9%84%20%D9%87%D9%8A%20%D8%AC%D8%A7%D9%85%D8%B9%D8%A9%20%D8%A3%D9%87%D9%84%D9%8A%D8%A9,%D9%81%D9%8A%2012%2D4%2D2023.> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(44.41963 32.46367)"^^geo:wktLiteral ;
+        schema:addressLocality "Hillah" ;
+    ] ;
+    schema:url <https://uomus.edu.iq> ;
+    schema:sameAs <http://isni.org/isni/0000000493604144> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q25450310> ;
+             .

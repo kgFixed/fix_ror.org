@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02fek2d03> 
+    a org:Organization ;
+    rdfs:label "GERFLINT" ;
+    schema:name "GERFLINT" ;
+    schema:foundingDate "2001"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0581esp57> ;
+        rdfs:label "Fondation Maison des Sciences de l'Homme" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(1.15082 49.02414)"^^geo:wktLiteral ;
+        schema:addressLocality "Évreux" ;
+    ] ;
+    schema:url <https://gerflint.fr> ;
+    schema:sameAs <http://isni.org/isni/0000000119565800> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q52663667> ;
+             .

@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0238awh09> 
+    a org:Organization ;
+    rdfs:label "UNE Partnerships (Australia)" ;
+    schema:name "UNE Partnerships (Australia)" ;
+    schema:foundingDate "1997"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04r659a56> ;
+        rdfs:label "University of New England" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(151.66553 -30.50123)"^^geo:wktLiteral ;
+        schema:addressLocality "Armidale" ;
+    ] ;
+    schema:url <https://www.unep.edu.au/> ;
+     .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/024qkwh22> 
+    a org:Organization ;
+    rdfs:label "Shangrao Normal University" ;
+    schema:name "Shangrao Normal University" ;
+    schema:foundingDate "1958"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Shangrao_Normal_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(117.94287 28.45179)"^^geo:wktLiteral ;
+        schema:addressLocality "Shangrao" ;
+    ] ;
+    schema:url <http://jwc.sru.jx.cn/> ;
+    schema:sameAs <http://isni.org/isni/0000000417597691> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q16499874> ;
+             .

@@ -1,0 +1,32 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/026zar759> 
+    a org:Organization ;
+    rdfs:label "U.S. Army Combat Capabilities Development Command Ground Vehicle System Center" ;
+    schema:name "U.S. Army Combat Capabilities Development Command Ground Vehicle System Center" ;
+    schema:foundingDate "1946"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/United_States_Army_CCDC_Ground_Vehicle_Systems_Center> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:classification "Funder" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02rdkx920> ;
+        rdfs:label "United States Army Combat Capabilities Development Command" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-83.01304 42.49044)"^^geo:wktLiteral ;
+        schema:addressLocality "Warren" ;
+    ] ;
+    schema:url <https://www.usarmygvsc.com> ;
+    schema:sameAs <http://isni.org/isni/0000000086797030> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7889528> ;
+             .

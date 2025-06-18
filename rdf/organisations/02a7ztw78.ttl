@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02a7ztw78> 
+    a org:Organization ;
+    rdfs:label "Microsemi (United Kingdom)" ;
+    schema:name "Microsemi (United Kingdom)" ;
+    schema:foundingDate "1959"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Microsemi> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01mvkzj41> ;
+        rdfs:label "Microsemi (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-2.75736 51.58661)"^^geo:wktLiteral ;
+        schema:addressLocality "Caldicot" ;
+    ] ;
+    schema:url <http://www.microsemi.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q29123718> ;
+             .

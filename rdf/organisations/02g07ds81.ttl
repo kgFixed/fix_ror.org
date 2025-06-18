@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02g07ds81> 
+    a org:Organization ;
+    rdfs:label "University of Duhok" ;
+    schema:name "University of Duhok" ;
+    schema:foundingDate "1992"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/University_of_Duhok> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(42.98845 36.86709)"^^geo:wktLiteral ;
+        schema:addressLocality "Dihok" ;
+    ] ;
+    schema:url <https://uod.ac> ;
+    schema:sameAs <http://isni.org/isni/0000000118951777> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3666468> ;
+             .

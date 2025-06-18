@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02hdqvp39> 
+    a org:Organization ;
+    rdfs:label "Institute for Systems and Technologies of Information, Control and Communication" ;
+    schema:name "Institute for Systems and Technologies of Information, Control and Communication" ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-8.8882 38.5244)"^^geo:wktLiteral ;
+        schema:addressLocality "Setúbal" ;
+    ] ;
+    schema:url <https://www.insticc.org/Portal/> ;
+    schema:sameAs <http://isni.org/isni/000000010693833X> ;
+             .

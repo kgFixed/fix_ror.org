@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0223xwb92> 
+    a org:Organization ;
+    rdfs:label "The Pevensey Court House Museum and Gaol" ;
+    schema:name "The Pevensey Court House Museum and Gaol" ;
+    schema:foundingDate "1714"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(0.33963 50.81966)"^^geo:wktLiteral ;
+        schema:addressLocality "Pevensey" ;
+    ] ;
+    schema:url <http://www.pevenseycourthouse.co.uk/> ;
+     .

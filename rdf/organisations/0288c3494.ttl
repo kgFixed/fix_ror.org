@@ -1,0 +1,32 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0288c3494> 
+    a org:Organization ;
+    rdfs:label "Instituto de Geografía, Historia y Ciencias Sociales" ;
+    schema:name "Instituto de Geografía, Historia y Ciencias Sociales" ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03cqe8w59> ;
+        rdfs:label "Consejo Nacional de Investigaciones Científicas y Técnicas" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/011gakh74> ;
+        rdfs:label "Universidad Nacional del Centro de la Provincia de Buenos Aires" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-59.1369 -37.3287)"^^geo:wktLiteral ;
+        schema:addressLocality "Tandil" ;
+    ] ;
+    schema:url <https://igehcs.conicet.gov.ar> ;
+     .

@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02acart68> 
+    a org:Organization ;
+    rdfs:label "Ames Research Center" ;
+    schema:name "Ames Research Center" ;
+    schema:foundingDate "1939"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Ames_Research_Center> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04hccab49> ;
+        rdfs:label "NASA Research Park" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0540g1c48> ;
+        rdfs:label "Radiation Biophysics Laboratory" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/027ka1x80> ;
+        rdfs:label "National Aeronautics and Space Administration" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Predecessor" ;
+        org:member <https://ror.org/02yhmtm27> ;
+        rdfs:label "Ames Aeronautical Laboratory" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/022qmyy53> ;
+        rdfs:label "Research Institute for Advanced Computer Science" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-122.08385 37.38605)"^^geo:wktLiteral ;
+        schema:addressLocality "Mountain View" ;
+    ] ;
+    schema:url <http://www.nasa.gov/centers/ames/home/index.html> ;
+    schema:sameAs <http://isni.org/isni/0000000119557990> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q181052> ;
+             .

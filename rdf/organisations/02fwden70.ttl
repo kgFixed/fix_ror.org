@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02fwden70> 
+    a org:Organization ;
+    rdfs:label "Astronomical Observatory of Capodimonte" ;
+    schema:name "Astronomical Observatory of Capodimonte" ;
+    schema:foundingDate "1812"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Astronomical_Observatory_of_Capodimonte> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02gh4kt33> ;
+        rdfs:label "National Institute for Astrophysics" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(14.26811 40.85216)"^^geo:wktLiteral ;
+        schema:addressLocality "Naples" ;
+    ] ;
+    schema:url <http://www.oacn.inaf.it/> ;
+    schema:sameAs <http://isni.org/isni/0000000122954049> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2034636> ;
+             .

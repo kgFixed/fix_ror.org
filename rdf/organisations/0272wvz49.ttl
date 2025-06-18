@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0272wvz49> 
+    a org:Organization ;
+    rdfs:label "Los Angeles Trade Technical College" ;
+    schema:name "Los Angeles Trade Technical College" ;
+    schema:foundingDate "1925"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Los_Angeles_Trade%E2%80%93Technical_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/058aed112> ;
+        rdfs:label "Los Angeles Community College District" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-118.24368 34.05223)"^^geo:wktLiteral ;
+        schema:addressLocality "Los Angeles" ;
+    ] ;
+    schema:url <http://www.lattc.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000404011575> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q9091546> ;
+             .

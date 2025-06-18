@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/029wb5j17> 
+    a org:Organization ;
+    rdfs:label "Our Lady of the Lake University" ;
+    schema:name "Our Lady of the Lake University" ;
+    schema:foundingDate "1895"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Our_Lady_of_the_Lake_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-98.49363 29.42412)"^^geo:wktLiteral ;
+        schema:addressLocality "San Antonio" ;
+    ] ;
+    schema:url <http://www.ollusa.edu/s/1190/hybrid/start-hybrid-ollu.aspx> ;
+    schema:sameAs <http://isni.org/isni/0000000121070428> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7111021> ;
+             .

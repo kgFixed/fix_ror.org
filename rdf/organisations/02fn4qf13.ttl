@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02fn4qf13> 
+    a org:Organization ;
+    rdfs:label "Benedictine College" ;
+    schema:name "Benedictine College" ;
+    schema:foundingDate "1971"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Benedictine_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-95.12164 39.56305)"^^geo:wktLiteral ;
+        schema:addressLocality "Atchison" ;
+    ] ;
+    schema:url <http://benedictine.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000403711342> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4887341> ;
+             .

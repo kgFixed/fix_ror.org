@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/023fas823> 
+    a org:Organization ;
+    rdfs:label "Motor Coach Industries (United States)" ;
+    schema:name "Motor Coach Industries (United States)" ;
+    schema:foundingDate "1933"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Motor_Coach_Industries> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-87.8834 42.03336)"^^geo:wktLiteral ;
+        schema:addressLocality "Des Plaines" ;
+    ] ;
+    schema:url <http://www.mcicoach.com/> ;
+     .

@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0257syp95> 
+    a org:Organization ;
+    rdfs:label "Friedrich-Ebert-Krankenhaus" ;
+    schema:name "Friedrich-Ebert-Krankenhaus" ;
+    schema:foundingDate "1930"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(9.98195 54.07477)"^^geo:wktLiteral ;
+        schema:addressLocality "Neumünster" ;
+    ] ;
+    schema:url <http://www.friedrich-ebert-krankenhaus.de/> ;
+    schema:sameAs <http://isni.org/isni/0000000106026891> ;
+             .

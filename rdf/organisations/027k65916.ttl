@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/027k65916> 
+    a org:Organization ;
+    rdfs:label "Jet Propulsion Laboratory" ;
+    schema:name "Jet Propulsion Laboratory" ;
+    schema:foundingDate "1936"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Jet_Propulsion_Laboratory> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05xkke381> ;
+        rdfs:label "Keck Institute for Space Studies" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/027ka1x80> ;
+        rdfs:label "National Aeronautics and Space Administration" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05dxps055> ;
+        rdfs:label "California Institute of Technology" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-118.18785 34.19917)"^^geo:wktLiteral ;
+        schema:addressLocality "La Cañada Flintridge" ;
+    ] ;
+    schema:url <http://www.jpl.nasa.gov/> ;
+    schema:sameAs <http://isni.org/isni/0000000406376500> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q189325> ;
+             .

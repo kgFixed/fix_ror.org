@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/022wfr829> 
+    a org:Organization ;
+    rdfs:label "Kaiser Permanente Rock Creek Medical Offices" ;
+    schema:name "Kaiser Permanente Rock Creek Medical Offices" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00t60zh31> ;
+        rdfs:label "Kaiser Permanente" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-105.08971 39.9936)"^^geo:wktLiteral ;
+        schema:addressLocality "Lafayette" ;
+    ] ;
+    schema:url <https://healthy.kaiserpermanente.org/colorado-denver-boulder-mountain-northern/facilities/Rock-Creek-Medical-Offices-100516> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q50039584> ;
+             .

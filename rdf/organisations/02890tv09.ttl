@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02890tv09> 
+    a org:Organization ;
+    rdfs:label "American Public University System" ;
+    schema:name "American Public University System" ;
+    schema:foundingDate "1991"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/American_Public_University_System> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00mm8q321> ;
+        rdfs:label "American Military University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.85972 39.28899)"^^geo:wktLiteral ;
+        schema:addressLocality "Charles Town" ;
+    ] ;
+    schema:url <http://www.apus.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000406266045> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q646842> ;
+             .

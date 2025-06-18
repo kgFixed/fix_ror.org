@@ -1,0 +1,160 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02ae4g054> 
+    a org:Organization ;
+    rdfs:label "Division of Historical and Philological Sciences" ;
+    schema:name "Division of Historical and Philological Sciences" ;
+    schema:foundingDate "1724"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04ef8pm25> ;
+        rdfs:label "Archive of the Russian Academy of Sciences" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/020frqf17> ;
+        rdfs:label "Gorky Institute of World Literature" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04xnqnd94> ;
+        rdfs:label "Institute for Humanities Research and Indigenous Studies of the North" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04f3vpm64> ;
+        rdfs:label "Institute of Anthropology and Ethnography" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00tnkbn59> ;
+        rdfs:label "Institute of Archaeology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05m3tag45> ;
+        rdfs:label "Institute of Archaeology and Ethnography" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02qpqb855> ;
+        rdfs:label "Institute of History" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05gmwtd57> ;
+        rdfs:label "Institute of History and Archaeology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04wbz7w60> ;
+        rdfs:label "Institute of History of Material Culture" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05nb4x016> ;
+        rdfs:label "Institute of Linguistic Studies" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/033px5146> ;
+        rdfs:label "Institute of Linguistics" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00je00x55> ;
+        rdfs:label "Institute of Mongolian Buddhist and Tibetan Studies" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02s6ww326> ;
+        rdfs:label "Institute of Oriental Manuscripts" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/056635736> ;
+        rdfs:label "Institute of Oriental Studies" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/028a8bc58> ;
+        rdfs:label "Institute of Russian Literature" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02e2pmn45> ;
+        rdfs:label "Institute of Slavic Studies" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02e1eph40> ;
+        rdfs:label "Institute of World History" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00z0g8n94> ;
+        rdfs:label "Kalmyk Institute for Humanities Research" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02bc50c05> ;
+        rdfs:label "Peter the Great's Museum of Anthropology and Ethnography" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05ct5rw58> ;
+        rdfs:label "Saint-Petersburg Institute of History" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0266a1t84> ;
+        rdfs:label "Udmurt Institute of History, Language and Literature" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/020e8vq13> ;
+        rdfs:label "V.V. Vinogradov Russian Language Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05qrfxd25> ;
+        rdfs:label "Russian Academy of Sciences" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(37.61556 55.75222)"^^geo:wktLiteral ;
+        schema:addressLocality "Moscow" ;
+    ] ;
+    schema:url <http://www.ras.ru/win/db/show_dpt.asp?P=.oi-2.id-4133.ln-ru> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q4339444> ;
+             .

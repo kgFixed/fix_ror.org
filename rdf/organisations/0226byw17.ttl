@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0226byw17> 
+    a org:Organization ;
+    rdfs:label "Charter Oak State College" ;
+    schema:name "Charter Oak State College" ;
+    schema:foundingDate "1973"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Charter_Oak_State_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-72.77954 41.66121)"^^geo:wktLiteral ;
+        schema:addressLocality "New Britain" ;
+    ] ;
+    schema:url <http://www.charteroak.edu/> ;
+    schema:sameAs <http://isni.org/isni/000000040528249X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q32287> ;
+             .

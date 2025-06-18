@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02dfnfz19> 
+    a org:Organization ;
+    rdfs:label "Women's International League for Peace and Freedom" ;
+    schema:name "Women's International League for Peace and Freedom" ;
+    schema:foundingDate "1915"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Women%27s_International_League_for_Peace_and_Freedom> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(7.49883 6.44132)"^^geo:wktLiteral ;
+        schema:addressLocality "Enugu" ;
+    ] ;
+    schema:url <http://wilpfnigeria.org/> ;
+     .

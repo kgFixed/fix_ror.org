@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02dxx6824> 
+    a org:Organization ;
+    rdfs:label "Scripps Research Institute" ;
+    schema:name "Scripps Research Institute" ;
+    schema:foundingDate "1991"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Scripps_Research_Institute> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/056pdzs28> ;
+        rdfs:label "The Herbert Wertheim UF Scripps Institute for Biomedical Innovation & Technology" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-117.16472 32.71571)"^^geo:wktLiteral ;
+        schema:addressLocality "San Diego" ;
+    ] ;
+    schema:url <https://www.scripps.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000122199231> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q793867> ;
+             .

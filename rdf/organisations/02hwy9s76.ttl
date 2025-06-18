@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02hwy9s76> 
+    a org:Organization ;
+    rdfs:label "Thong Nhat Hospital" ;
+    schema:name "Thong Nhat Hospital" ;
+    schema:foundingDate "1975"^^xsd:gYear ;
+    schema:sameAs <https://vi.wikipedia.org/wiki/B%E1%BB%87nh_vi%E1%BB%87n_Th%E1%BB%91ng_Nh%E1%BA%A5t> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(106.62965 10.82302)"^^geo:wktLiteral ;
+        schema:addressLocality "Ho Chi Minh City" ;
+    ] ;
+    schema:url <https://bvtn.org.vn> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q18456128> ;
+             .

@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02e97hq31> 
+    a org:Organization ;
+    rdfs:label "Krankenhaus Meran" ;
+    schema:name "Krankenhaus Meran" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(11.15953 46.66817)"^^geo:wktLiteral ;
+        schema:addressLocality "Meran" ;
+    ] ;
+    schema:url <http://www.sabes.it/de/kh-meran.asp> ;
+    schema:sameAs <http://isni.org/isni/0000000417601013> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30270038> ;
+             .

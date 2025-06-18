@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/024pk8k39> 
+    a org:Organization ;
+    rdfs:label "Amalia Kinderziekenhuis" ;
+    schema:name "Amalia Kinderziekenhuis" ;
+    schema:foundingDate "2005"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05wg1m734> ;
+        rdfs:label "Radboud University Medical Center" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(5.85278 51.8425)"^^geo:wktLiteral ;
+        schema:addressLocality "Nijmegen" ;
+    ] ;
+    schema:url <http://www.amaliakinderziekenhuis.nl/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30261221> ;
+             .

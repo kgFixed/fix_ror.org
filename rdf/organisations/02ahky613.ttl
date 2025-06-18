@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02ahky613> 
+    a org:Organization ;
+    rdfs:label "Universidad del Noreste" ;
+    schema:name "Universidad del Noreste" ;
+    schema:foundingDate "1970"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Universidad_del_Noreste> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-97.87777 22.28519)"^^geo:wktLiteral ;
+        schema:addressLocality "Tampico" ;
+    ] ;
+    schema:url <http://www.une.edu.mx/> ;
+    schema:sameAs <http://isni.org/isni/000000040484565X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7894342> ;
+             .

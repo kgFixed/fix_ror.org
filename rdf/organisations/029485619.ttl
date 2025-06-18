@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/029485619> 
+    a org:Organization ;
+    rdfs:label "Israel Sports Center for the Disabled" ;
+    schema:name "Israel Sports Center for the Disabled" ;
+    schema:foundingDate "1960"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Israel_Sports_Center_for_the_Disabled> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(34.81065 32.08227)"^^geo:wktLiteral ;
+        schema:addressLocality "Ramat Gan" ;
+    ] ;
+    schema:url <http://iscd.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q6087225> ;
+             .

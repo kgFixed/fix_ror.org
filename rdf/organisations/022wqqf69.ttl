@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/022wqqf69> 
+    a org:Organization ;
+    rdfs:label "Centro de Estudios e Investigaciones Técnicas de Gipuzkoa" ;
+    schema:name "Centro de Estudios e Investigaciones Técnicas de Gipuzkoa" ;
+    schema:foundingDate "1982"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Centro_de_Estudios_e_Investigaciones_T%C3%A9cnicas_de_Gipuzkoa> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.97499 43.31283)"^^geo:wktLiteral ;
+        schema:addressLocality "Donostia / San Sebastian" ;
+    ] ;
+    schema:url <http://ceit.es/en/> ;
+    schema:sameAs <http://isni.org/isni/0000000106601972> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5062911> ;
+             .

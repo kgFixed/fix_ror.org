@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0232r4451> 
+    a org:Organization ;
+    rdfs:label "Southern Illinois University School of Medicine" ;
+    schema:name "Southern Illinois University School of Medicine" ;
+    schema:foundingDate "1970"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Southern_Illinois_University_School_of_Medicine> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05vz28418> ;
+        rdfs:label "Southern Illinois University System" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02hxrag63> ;
+        rdfs:label "Memorial Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04p4s5b35> ;
+        rdfs:label "St. John's Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-89.64371 39.80172)"^^geo:wktLiteral ;
+        schema:addressLocality "Springfield" ;
+    ] ;
+    schema:url <http://www.siumed.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000107058684> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7570024> ;
+             .

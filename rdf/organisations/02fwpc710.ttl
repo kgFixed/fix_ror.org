@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02fwpc710> 
+    a org:Organization ;
+    rdfs:label "Esaote (Netherlands)" ;
+    schema:name "Esaote (Netherlands)" ;
+    schema:foundingDate "1982"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Esaote> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02vmgn461> ;
+        rdfs:label "Esaote (Italy)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(5.68889 50.84833)"^^geo:wktLiteral ;
+        schema:addressLocality "Maastricht" ;
+    ] ;
+    schema:url <https://www.esaote.com/en-NL/> ;
+    schema:sameAs <http://isni.org/isni/0000000406016150> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30256470> ;
+             .

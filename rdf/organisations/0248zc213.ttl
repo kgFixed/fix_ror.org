@@ -1,0 +1,90 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0248zc213> 
+    a org:Organization ;
+    rdfs:label "Christus Health" ;
+    schema:name "Christus Health" ;
+    schema:foundingDate "1999"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/CHRISTUS_Health> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/020wka979> ;
+        rdfs:label "CHRISTUS Highland Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02dg8v926> ;
+        rdfs:label "CHRISTUS Spohn Hospital Corpus Christi - Memorial" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05trqa150> ;
+        rdfs:label "CHRISTUS St. Frances Cabrini Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01zpsbf45> ;
+        rdfs:label "CHRISTUS St. Michael Health System" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04xg79b82> ;
+        rdfs:label "CHRISTUS St. Patrick Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02pg06c63> ;
+        rdfs:label "CHRISTUS St. Vincent Regional Cancer Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04b0ys521> ;
+        rdfs:label "CHRISTUS Transplant Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00t30f389> ;
+        rdfs:label "Children's Hospital of San Antonio" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01j3ge177> ;
+        rdfs:label "Christus Santa Rosa Health System" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/045wp1309> ;
+        rdfs:label "St. Vincent Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03e28fz53> ;
+        rdfs:label "Christus Stehlin Foundation for Cancer Research" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-96.94889 32.81402)"^^geo:wktLiteral ;
+        schema:addressLocality "Irving" ;
+    ] ;
+    schema:url <http://www.christushealth.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000403928787> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5011309> ;
+             .

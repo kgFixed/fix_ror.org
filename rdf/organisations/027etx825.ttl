@@ -1,0 +1,54 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/027etx825> 
+    a org:Organization ;
+    rdfs:label "Imerys (France)" ;
+    schema:name "Imerys (France)" ;
+    schema:foundingDate "1880"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Imerys> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/057nzpd74> ;
+        rdfs:label "Imerys (Austria)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02v26hv54> ;
+        rdfs:label "Imerys (Germany)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/050c2ya64> ;
+        rdfs:label "Imerys (Greece)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05b88kk95> ;
+        rdfs:label "Imerys (Switzerland)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05jff7p65> ;
+        rdfs:label "Imerys (United Kingdom)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.3488 48.85341)"^^geo:wktLiteral ;
+        schema:addressLocality "Paris" ;
+    ] ;
+    schema:url <https://www.imerys.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000406237295> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q917717> ;
+             .

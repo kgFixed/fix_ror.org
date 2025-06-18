@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/028t43p77> 
+    a org:Organization ;
+    rdfs:label "United States Department of the Treasury" ;
+    schema:name "United States Department of the Treasury" ;
+    schema:foundingDate "1789"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/United_States_Department_of_the_Treasury> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/033trmh69> ;
+        rdfs:label "Bureau of the Fiscal Service" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0188dhg98> ;
+        rdfs:label "Office of the Comptroller of the Currency" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02rcrvv70> ;
+        rdfs:label "Government of the United States of America" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.03637 38.89511)"^^geo:wktLiteral ;
+        schema:addressLocality "Washington" ;
+    ] ;
+    schema:url <http://www.treasury.gov/Pages/default.aspx> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q648666> ;
+             .

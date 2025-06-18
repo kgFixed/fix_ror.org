@@ -1,0 +1,58 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/025yjfh46> 
+    a org:Organization ;
+    rdfs:label "VA MidSouth Healthcare Network" ;
+    schema:name "VA MidSouth Healthcare Network" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01dm04760> ;
+        rdfs:label "Lexington VA Health Care System" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01zd7yk57> ;
+        rdfs:label "Louisville VA Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/000vjzq57> ;
+        rdfs:label "Memphis VA Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02z87mf86> ;
+        rdfs:label "Mountain Home VA Healthcare System" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01c9rqr26> ;
+        rdfs:label "VA Tennessee Valley Healthcare System" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05eq41471> ;
+        rdfs:label "Veterans Health Administration" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-86.78444 36.16589)"^^geo:wktLiteral ;
+        schema:addressLocality "Nashville" ;
+    ] ;
+    schema:url <https://www.visn9.va.gov/> ;
+    schema:sameAs <http://isni.org/isni/0000000404208087> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q33122028> ;
+             .

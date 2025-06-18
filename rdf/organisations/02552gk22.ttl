@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02552gk22> 
+    a org:Organization ;
+    rdfs:label "Islamic University of Rotterdam" ;
+    schema:name "Islamic University of Rotterdam" ;
+    schema:foundingDate "1997"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Islamic_University_of_Rotterdam> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(4.47917 51.9225)"^^geo:wktLiteral ;
+        schema:addressLocality "Rotterdam" ;
+    ] ;
+    schema:url <http://www.iur.nl/en/home-2/> ;
+    schema:sameAs <http://isni.org/isni/0000000110909080> ;
+             .

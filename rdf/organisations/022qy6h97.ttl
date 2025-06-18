@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/022qy6h97> 
+    a org:Organization ;
+    rdfs:label "Alcide De Gasperi University of Euroregional Economy in Józefów" ;
+    schema:name "Alcide De Gasperi University of Euroregional Economy in Józefów" ;
+    schema:foundingDate "2002"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(21.23589 52.13707)"^^geo:wktLiteral ;
+        schema:addressLocality "Józefów" ;
+    ] ;
+    schema:url <https://en.wsge.edu.pl> ;
+    schema:sameAs <http://isni.org/isni/0000000093078894> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30257236> ;
+             .

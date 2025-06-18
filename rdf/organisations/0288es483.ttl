@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0288es483> 
+    a org:Organization ;
+    rdfs:label "Ewing Marion Kauffman Foundation" ;
+    schema:name "Ewing Marion Kauffman Foundation" ;
+    schema:foundingDate "1966"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Ewing_Marion_Kauffman_Foundation> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-94.57857 39.09973)"^^geo:wktLiteral ;
+        schema:addressLocality "Kansas City" ;
+    ] ;
+    schema:url <http://www.kauffman.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000084166577> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5419044> ;
+             .

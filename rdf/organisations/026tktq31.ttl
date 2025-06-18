@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/026tktq31> 
+    a org:Organization ;
+    rdfs:label "Solapur University" ;
+    schema:name "Solapur University" ;
+    schema:foundingDate "2004"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/University_of_Solapur> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(75.91044 17.67152)"^^geo:wktLiteral ;
+        schema:addressLocality "Solapur" ;
+    ] ;
+    schema:url <http://su.digitaluniversity.ac/> ;
+    schema:sameAs <http://isni.org/isni/0000000417569463> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7896311> ;
+             .

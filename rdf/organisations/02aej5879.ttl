@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02aej5879> 
+    a org:Organization ;
+    rdfs:label "University of Pennsylvania Museum of Archaeology and Anthropology" ;
+    schema:name "University of Pennsylvania Museum of Archaeology and Anthropology" ;
+    schema:foundingDate "1887"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/University_of_Pennsylvania_Museum_of_Archaeology_and_Anthropology> ;
+    org:status "withdrawn" ;
+    org:classification "Archive" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/00b30xv10> ;
+        rdfs:label "University of Pennsylvania" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-75.16362 39.95238)"^^geo:wktLiteral ;
+        schema:addressLocality "Philadelphia" ;
+    ] ;
+    schema:url <https://www.penn.museum> ;
+    schema:sameAs <http://isni.org/isni/0000000115342992> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1285902> ;
+             .

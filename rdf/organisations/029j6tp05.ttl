@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/029j6tp05> 
+    a org:Organization ;
+    rdfs:label "Zimmer Biomet (France)" ;
+    schema:name "Zimmer Biomet (France)" ;
+    schema:foundingDate "1927"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Zimmer_Biomet> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02bn55144> ;
+        rdfs:label "Zimmer Biomet (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(6.35104 46.92788)"^^geo:wktLiteral ;
+        schema:addressLocality "Doubs" ;
+    ] ;
+    schema:url <http://www.zimmerbiomet.fr/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30273445> ;
+             .

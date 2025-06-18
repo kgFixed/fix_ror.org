@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/023c9tc12> 
+    a org:Organization ;
+    rdfs:label "University of Belgrade – Faculty of Philosophy" ;
+    schema:name "University of Belgrade – Faculty of Philosophy" ;
+    schema:sameAs <https://sr.wikipedia.org/wiki/%D0%A4%D0%B8%D0%BB%D0%BE%D0%B7%D0%BE%D1%84%D1%81%D0%BA%D0%B8_%D1%84%D0%B0%D0%BA%D1%83%D0%BB%D1%82%D0%B5%D1%82_%D0%A3%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D0%B7%D0%B8%D1%82%D0%B5%D1%82%D0%B0_%D1%83_%D0%91%D0%B5%D0%BE%D0%B3%D1%80%D0%B0%D0%B4%D1%83> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02qsmb048> ;
+        rdfs:label "University of Belgrade" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(20.46513 44.80401)"^^geo:wktLiteral ;
+        schema:addressLocality "Belgrade" ;
+    ] ;
+    schema:url <https://www.f.bg.ac.rs> ;
+    schema:sameAs <http://isni.org/isni/0000000088487204> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1282917> ;
+             .

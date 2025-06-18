@@ -1,0 +1,61 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/023b0x485> 
+    a org:Organization ;
+    rdfs:label "Johannes Gutenberg University Mainz" ;
+    schema:name "Johannes Gutenberg University Mainz" ;
+    schema:foundingDate "1946"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/University_of_Mainz> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05ym69k36> ;
+        rdfs:label "Max Planck Graduate Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/040x6j734> ;
+        rdfs:label "DRK Krankenhaus Alzey" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00q1fsf04> ;
+        rdfs:label "University Medical Center of the Johannes Gutenberg University Mainz" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00ma6s786> ;
+        rdfs:label "Westpfalz Klinikum" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/002c9p632> ;
+        rdfs:label "Institut für Geschichtliche Landeskunde Rheinland-Pfalz e.V." ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/054qg2939> ;
+        rdfs:label "Helmholtz Institute for Translational Oncology Mainz" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(8.2791 49.98419)"^^geo:wktLiteral ;
+        schema:addressLocality "Mainz" ;
+    ] ;
+    schema:url <https://www.uni-mainz.de> ;
+    schema:sameAs <http://isni.org/isni/0000000119417111> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q161982> ;
+             .

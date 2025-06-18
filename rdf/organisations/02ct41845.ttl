@@ -1,0 +1,35 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02ct41845> 
+    a org:Organization ;
+    rdfs:label "Centre d'Investigation Clinique de Nantes" ;
+    schema:name "Centre d'Investigation Clinique de Nantes" ;
+    schema:foundingDate "2001"^^xsd:gYear ;
+    org:status "inactive" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05c1qsg97> ;
+        rdfs:label "Centre Hospitalier Universitaire de Nantes" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01qa4rf46> ;
+        rdfs:label "Délégation Régionale Grand Ouest" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.55336 47.21725)"^^geo:wktLiteral ;
+        schema:addressLocality "Nantes" ;
+    ] ;
+    schema:url <http://www.cicnantes.fr/> ;
+    schema:sameAs <http://isni.org/isni/0000000404504986> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30288028> ;
+             .

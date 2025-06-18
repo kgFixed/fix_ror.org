@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/022r3pj76> 
+    a org:Organization ;
+    rdfs:label "Instituto Universitario Asociación Cristiana de Jóvenes" ;
+    schema:name "Instituto Universitario Asociación Cristiana de Jóvenes" ;
+    schema:foundingDate "2000"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-56.18816 -34.90328)"^^geo:wktLiteral ;
+        schema:addressLocality "Montevideo" ;
+    ] ;
+    schema:url <http://www.iuacj.edu.uy/> ;
+    schema:sameAs <http://isni.org/isni/0000000405282828> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30294072> ;
+             .

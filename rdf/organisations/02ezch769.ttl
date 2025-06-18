@@ -1,0 +1,49 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02ezch769> 
+    a org:Organization ;
+    rdfs:label "Université Polytechnique Hauts-de-France" ;
+    schema:name "Université Polytechnique Hauts-de-France" ;
+    schema:foundingDate "1964"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Polytechnic_University_of_Hauts-de-France> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02q4res37> ;
+        rdfs:label "Institut d'électronique de microélectronique et de nanotechnologie" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/006z7v557> ;
+        rdfs:label "Laboratoire d'Automatique, de Mécanique et d'Informatique Industrielles et Humaines" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00m090414> ;
+        rdfs:label "Maison Européenne des Sciences de l'Homme et de la Société" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/041rsh762> ;
+        rdfs:label "INSA Hauts-de-France" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(3.52506 50.35909)"^^geo:wktLiteral ;
+        schema:addressLocality "Valenciennes" ;
+    ] ;
+    schema:url <https://www.uphf.fr> ;
+    schema:sameAs <http://isni.org/isni/0000000107901416> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1548539> ;
+             .

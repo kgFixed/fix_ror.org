@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0239tnv53> 
+    a org:Organization ;
+    rdfs:label "Omdurman Ahlia University" ;
+    schema:name "Omdurman Ahlia University" ;
+    schema:foundingDate "1986"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Omdurman_Ahlia_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(32.47773 15.64453)"^^geo:wktLiteral ;
+        schema:addressLocality "Omdurman" ;
+    ] ;
+    schema:url <http://www.oau.edu.sd/> ;
+    schema:sameAs <http://isni.org/isni/0000000091525486> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7089954> ;
+             .

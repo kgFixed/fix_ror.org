@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/026s2hr03> 
+    a org:Organization ;
+    rdfs:label "Pioneer Pacific College" ;
+    schema:name "Pioneer Pacific College" ;
+    schema:foundingDate "1981"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Pioneer_Pacific_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-122.77371 45.29984)"^^geo:wktLiteral ;
+        schema:addressLocality "Wilsonville" ;
+    ] ;
+    schema:url <http://www.pioneerpacific.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000405368226> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7196741> ;
+             .

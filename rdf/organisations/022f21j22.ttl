@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/022f21j22> 
+    a org:Organization ;
+    rdfs:label "Mount Hagen Provincial Hospital" ;
+    schema:name "Mount Hagen Provincial Hospital" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(144.23058 -5.85746)"^^geo:wktLiteral ;
+        schema:addressLocality "Mt Hagen" ;
+    ] ;
+    schema:url <https://www.whhs.gov.pg/mt-hagen-provincial-hospital/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30288489> ;
+             .

@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/026mp1041> 
+    a org:Organization ;
+    rdfs:label "St. Joseph Hospital" ;
+    schema:name "St. Joseph Hospital" ;
+    schema:foundingDate "1908"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/St._Joseph_Hospital_(Nashua,_New_Hampshire)> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04q0ja294> ;
+        rdfs:label "Covenant Health System" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-71.46757 42.76537)"^^geo:wktLiteral ;
+        schema:addressLocality "Nashua" ;
+    ] ;
+    schema:url <http://www.stjosephhospital.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q7589334> ;
+             .

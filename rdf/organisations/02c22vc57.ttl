@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02c22vc57> 
+    a org:Organization ;
+    rdfs:label "Leibniz Institute for Prevention Research and Epidemiology - BIPS" ;
+    schema:name "Leibniz Institute for Prevention Research and Epidemiology - BIPS" ;
+    schema:foundingDate "1981"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01n6r0e97> ;
+        rdfs:label "Leibniz Association" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(8.80717 53.07582)"^^geo:wktLiteral ;
+        schema:addressLocality "Bremen" ;
+    ] ;
+    schema:url <https://www.bips-institut.de/en/home.html> ;
+    schema:sameAs <http://isni.org/isni/0000000097503253> ;
+             .

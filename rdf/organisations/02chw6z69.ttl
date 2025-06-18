@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02chw6z69> 
+    a org:Organization ;
+    rdfs:label "Kavli Institute for the Physics and Mathematics of the Universe" ;
+    schema:name "Kavli Institute for the Physics and Mathematics of the Universe" ;
+    schema:foundingDate "2007"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Kavli_Institute_for_the_Physics_and_Mathematics_of_the_Universe> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(139.97732 35.86224)"^^geo:wktLiteral ;
+        schema:addressLocality "Kashiwa" ;
+    ] ;
+    schema:url <https://www.ipmu.jp/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q5041424> ;
+             .

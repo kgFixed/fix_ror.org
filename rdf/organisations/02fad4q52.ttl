@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02fad4q52> 
+    a org:Organization ;
+    rdfs:label "Appalachian Bible College" ;
+    schema:name "Appalachian Bible College" ;
+    schema:foundingDate "1950"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Appalachian_Bible_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-81.16427 37.89539)"^^geo:wktLiteral ;
+        schema:addressLocality "Mount Hope" ;
+    ] ;
+    schema:url <https://abc.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000405857388> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4780834> ;
+             .

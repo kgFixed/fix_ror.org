@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02bh93636> 
+    a org:Organization ;
+    rdfs:label "Holtzbrinck Publishing Group (Germany)" ;
+    schema:name "Holtzbrinck Publishing Group (Germany)" ;
+    schema:foundingDate "1948"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Holtzbrinck_Publishing_Group> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02ktfc112> ;
+        rdfs:label "Digital Science (United Kingdom)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/056fndr85> ;
+        rdfs:label "Holtzbrinck Publishing Group (United States)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02ntsjr39> ;
+        rdfs:label "Prognos (Switzerland)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(9.17702 48.78232)"^^geo:wktLiteral ;
+        schema:addressLocality "Stuttgart" ;
+    ] ;
+    schema:url <https://www.holtzbrinck.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000106698559> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q127005> ;
+             .

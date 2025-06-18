@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02d9dbv29> 
+    a org:Organization ;
+    rdfs:label "Law and Advocacy for Women in Uganda" ;
+    schema:name "Law and Advocacy for Women in Uganda" ;
+    schema:foundingDate "1997"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(32.58219 0.31628)"^^geo:wktLiteral ;
+        schema:addressLocality "Kampala" ;
+    ] ;
+    schema:url <http://www.lawuganda.org/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30287928> ;
+             .

@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02hr4zq26> 
+    a org:Organization ;
+    rdfs:label "Beckman Coulter (United States)" ;
+    schema:name "Beckman Coulter (United States)" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Beckman_Coulter> ;
+    org:status "inactive" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/02tmx5588> ;
+        rdfs:label "Danaher (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-117.90006 33.91668)"^^geo:wktLiteral ;
+        schema:addressLocality "Brea" ;
+    ] ;
+    schema:url <https://www.beckmancoulter.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000121552777> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q479952> ;
+             .

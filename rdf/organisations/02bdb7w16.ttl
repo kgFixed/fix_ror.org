@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02bdb7w16> 
+    a org:Organization ;
+    rdfs:label "Tongji Zhejiang College" ;
+    schema:name "Tongji Zhejiang College" ;
+    schema:sameAs <https://zh.wikipedia.org/zh-hans/%E5%90%8C%E6%B5%8E%E5%A4%A7%E5%AD%A6%E6%B5%99%E6%B1%9F%E5%AD%A6%E9%99%A2> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(120.75 30.7522)"^^geo:wktLiteral ;
+        schema:addressLocality "Jiaxing" ;
+    ] ;
+    schema:url <http://www.tjzj.edu.cn> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q15927405> ;
+             .

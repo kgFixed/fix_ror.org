@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02f0m7778> 
+    a org:Organization ;
+    rdfs:label "Fomento de Construcciones y Contratas (Spain)" ;
+    schema:name "Fomento de Construcciones y Contratas (Spain)" ;
+    schema:foundingDate "1900"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Fomento_de_Construcciones_y_Contratas> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.15899 41.38879)"^^geo:wktLiteral ;
+        schema:addressLocality "Barcelona" ;
+    ] ;
+    schema:url <https://www.fcc.es/es/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q549127> ;
+             .

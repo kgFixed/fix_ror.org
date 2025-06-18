@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02718ec78> 
+    a org:Organization ;
+    rdfs:label "KraussMaffei (Germany)" ;
+    schema:name "KraussMaffei (Germany)" ;
+    schema:foundingDate "1838"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Krauss-Maffei> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02tggj648> ;
+        rdfs:label "KraussMaffei (Slovakia)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02cbhvc53> ;
+        rdfs:label "China National Chemical Corporation (China)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(9.73322 52.37052)"^^geo:wktLiteral ;
+        schema:addressLocality "Hanover" ;
+    ] ;
+    schema:url <https://www.kraussmaffei.com/en/home> ;
+    schema:sameAs <http://isni.org/isni/0000000460072057> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30256934> ;
+             .

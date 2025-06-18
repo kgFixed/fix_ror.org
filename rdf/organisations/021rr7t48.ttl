@@ -1,0 +1,35 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/021rr7t48> 
+    a org:Organization ;
+    rdfs:label "Instituto de Investigaciones Bioquímicas de Bahía Blanca, CONICET-UNS" ;
+    schema:name "Instituto de Investigaciones Bioquímicas de Bahía Blanca, CONICET-UNS" ;
+    schema:foundingDate "1970"^^xsd:gYear ;
+    schema:sameAs <https://es.wikipedia.org/wiki/Instituto_de_Investigaciones_Bioqu%C3%ADmicas_de_Bah%C3%ADa_Blanca> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/028crwz56> ;
+        rdfs:label "Universidad Nacional del Sur" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03cqe8w59> ;
+        rdfs:label "Consejo Nacional de Investigaciones Científicas y Técnicas" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-62.26545 -38.7176)"^^geo:wktLiteral ;
+        schema:addressLocality "Bahía Blanca" ;
+    ] ;
+    schema:url <https://www.inibibb-conicet.gob.ar> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q21573158> ;
+             .

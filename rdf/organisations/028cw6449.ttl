@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/028cw6449> 
+    a org:Organization ;
+    rdfs:label "Forillon National Park" ;
+    schema:name "Forillon National Park" ;
+    schema:foundingDate "1974"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Forillon_National_Park> ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/008sy4716> ;
+        rdfs:label "Parks Canada" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-64.34864 48.90011)"^^geo:wktLiteral ;
+        schema:addressLocality "Parc national de Forillon" ;
+    ] ;
+    schema:url <https://www.pc.gc.ca/fr/pn-np/qc/forillon> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q1437338> ;
+             .

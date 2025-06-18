@@ -1,0 +1,33 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02ftc8763> 
+    a org:Organization ;
+    rdfs:label "Bocas del Toro Research Station" ;
+    schema:name "Bocas del Toro Research Station" ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/035jbxr46> ;
+        rdfs:label "Smithsonian Tropical Research Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01pp8nd67> ;
+        rdfs:label "Smithsonian Institution" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-82.24204 9.34031)"^^geo:wktLiteral ;
+        schema:addressLocality "Bocas del Toro" ;
+    ] ;
+    schema:url <https://stri.si.edu/facility/bocas-del-toro> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q4936149> ;
+             .

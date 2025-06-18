@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/029m96t80> 
+    a org:Organization ;
+    rdfs:label "Ministère de l'Agriculture et de la Souveraineté alimentaire" ;
+    schema:name "Ministère de l'Agriculture et de la Souveraineté alimentaire" ;
+    schema:foundingDate "1836"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Ministry_of_Agriculture_(France)> ;
+    org:status "active" ;
+    org:classification "Funder" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/041yk0b68> ;
+        rdfs:label "Interaction Hôtes Agents Pathogènes" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03m3gzv89> ;
+        rdfs:label "École Nationale Vétérinaire de Toulouse" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04f5ctv63> ;
+        rdfs:label "Office Français de la Biodiversité" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/056ms9a36> ;
+        rdfs:label "GEVES" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01dkyve95> ;
+        rdfs:label "L'Institut Agro" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.3488 48.85341)"^^geo:wktLiteral ;
+        schema:addressLocality "Paris" ;
+    ] ;
+    schema:url <http://agriculture.gouv.fr/> ;
+    schema:sameAs <http://isni.org/isni/0000000119549050> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3315187> ;
+             .

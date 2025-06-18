@@ -1,0 +1,34 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0261qw820> 
+    a org:Organization ;
+    rdfs:label "Institute of Steppe" ;
+    schema:name "Institute of Steppe" ;
+    schema:foundingDate "1997"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0554h7e84> ;
+        rdfs:label "Department of Earth Sciences" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02s4h3z39> ;
+        rdfs:label "Ural Branch of the Russian Academy of Sciences" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(55.0988 51.7727)"^^geo:wktLiteral ;
+        schema:addressLocality "Orenburg" ;
+    ] ;
+    schema:url <http://orensteppe.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000405628315> ;
+             .

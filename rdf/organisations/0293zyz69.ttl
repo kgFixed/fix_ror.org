@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0293zyz69> 
+    a org:Organization ;
+    rdfs:label "Cantor Spine Institute" ;
+    schema:name "Cantor Spine Institute" ;
+    schema:foundingDate "2009"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-80.14338 26.12231)"^^geo:wktLiteral ;
+        schema:addressLocality "Fort Lauderdale" ;
+    ] ;
+    schema:url <https://cantorspine.com/> ;
+     .

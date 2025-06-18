@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02dhjed84> 
+    a org:Organization ;
+    rdfs:label "South Tipperary General Hospital" ;
+    schema:name "South Tipperary General Hospital" ;
+    schema:foundingDate "2007"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/South_Tipperary_General_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04zke5364> ;
+        rdfs:label "Health Service Executive" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-8.15583 52.47333)"^^geo:wktLiteral ;
+        schema:addressLocality "Tipperary" ;
+    ] ;
+    schema:url <http://www.hse.ie/eng/services/list/3/acutehospitals/hospitals/Southtipp/> ;
+    schema:sameAs <http://isni.org/isni/000000040617807X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7568661> ;
+             .

@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/024xs2z82> 
+    a org:Organization ;
+    rdfs:label "ArcelorMittal (France)" ;
+    schema:name "ArcelorMittal (France)" ;
+    schema:foundingDate "2006"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02bez8p50> ;
+        rdfs:label "ArcelorMittal (Luxembourg)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.43777 49.259)"^^geo:wktLiteral ;
+        schema:addressLocality "Montataire" ;
+    ] ;
+    schema:url <http://www.arcelormittalinfrance.com/> ;
+     .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02gen2282> 
+    a org:Organization ;
+    rdfs:label "Universidade Federal dos Vales do Jequitinhonha e Mucuri" ;
+    schema:name "Universidade Federal dos Vales do Jequitinhonha e Mucuri" ;
+    schema:foundingDate "1953"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Federal_University_of_Vales_do_Jequitinhonha_e_Mucuri> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-43.60345 -18.24692)"^^geo:wktLiteral ;
+        schema:addressLocality "Diamantina" ;
+    ] ;
+    schema:url <http://www.ufvjm.edu.br/> ;
+    schema:sameAs <http://isni.org/isni/0000000406439823> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q10387836> ;
+             .

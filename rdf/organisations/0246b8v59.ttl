@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0246b8v59> 
+    a org:Organization ;
+    rdfs:label "Linking Employment, Abilities and Potential" ;
+    schema:name "Linking Employment, Abilities and Potential" ;
+    schema:foundingDate "1981"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-81.69541 41.4995)"^^geo:wktLiteral ;
+        schema:addressLocality "Cleveland" ;
+    ] ;
+    schema:url <https://www.leapinfo.org/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30288071> ;
+             .

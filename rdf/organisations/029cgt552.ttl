@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/029cgt552> 
+    a org:Organization ;
+    rdfs:label "Tunis El Manar University" ;
+    schema:name "Tunis El Manar University" ;
+    schema:foundingDate "2000"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Tunis_El_Manar_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03b1zjt31> ;
+        rdfs:label "National Engineering School of Tunis" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03pyhhg10> ;
+        rdfs:label "Faculté de médecine de Tunis" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01thp0k37> ;
+        rdfs:label "Faculty of Sciences of Sfax" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(10.16579 36.81897)"^^geo:wktLiteral ;
+        schema:addressLocality "Tunis" ;
+    ] ;
+    schema:url <http://www.utm.rnu.tn/utm/fr/> ;
+    schema:sameAs <http://isni.org/isni/0000000122959819> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3551684> ;
+             .

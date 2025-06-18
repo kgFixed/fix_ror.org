@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/026ksq202> 
+    a org:Organization ;
+    rdfs:label "Presidency of the Republic of Türkiye, Directorate of State Archives" ;
+    schema:name "Presidency of the Republic of Türkiye, Directorate of State Archives" ;
+    schema:foundingDate "2018"^^xsd:gYear ;
+    schema:sameAs <https://tr.wikipedia.org/wiki/Devlet_Ar%C5%9Fivleri_Ba%C5%9Fkanl%C4%B1%C4%9F%C4%B1> ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(32.85427 39.91987)"^^geo:wktLiteral ;
+        schema:addressLocality "Ankara" ;
+    ] ;
+    schema:url <https://www.devletarsivleri.gov.tr> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q125258116> ;
+             .

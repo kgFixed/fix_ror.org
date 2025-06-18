@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/023cara48> 
+    a org:Organization ;
+    rdfs:label "Center for Epidemiology and Animal Health" ;
+    schema:name "Center for Epidemiology and Animal Health" ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-105.08442 40.58526)"^^geo:wktLiteral ;
+        schema:addressLocality "Fort Collins" ;
+    ] ;
+    schema:url <https://www.aphis.usda.gov/aphis/ourfocus/animalhealth/program-overview/ceah/!ut/p/z1/tVG7csIwEPyWFCk9Jxs_S0MY7IRAwdNqNLIssBJbMkKQ8PcRHlrIpMh1t3e3s3sLGLaAJT2LPTVCSdrYvsAhmbmjCYp9dzoZv7gozZL8LYtC5OcRrAEDZtJ0poaCdrU4Eqak4dKQRpSa6sszOlKiTprsFDsd-45K0dKG1Jw2pu6RTqu9pi1RZ67Pgn_1IOO0vtJ3TFRQVB4KaBBVTsITz_ErnjhxUHKHVSWiHh-UO5bA5je92I7RnUqRvcf9ynTuj9zhAk3n6yxE6Xi5Ws5id5gn3m3hAUdhNUR3NaQBbK4OYSWVtl-AxR8tZgheewkPXNrYxMfhgFObzTWNbwPb_wina9t4cHE-d-_jgY-Lpx8nL4KG/dz/d5/L2dBISEvZ0FBIS9nQSEh/?urile=wcm%3Apath%3A/APHIS_Content_Library/SA_Our_Focus/SA_Animal_Health/SA_Program_Overview/SA_CEAH> ;
+    schema:sameAs <http://isni.org/isni/0000000406368949> ;
+             .
