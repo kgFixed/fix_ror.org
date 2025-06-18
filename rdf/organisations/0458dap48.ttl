@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0458dap48> 
+    a org:Organization ;
+    rdfs:label "Atlantic Technological University" ;
+    schema:name "Atlantic Technological University" ;
+    schema:foundingDate "2021"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Atlantic_Technological_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Predecessor" ;
+        org:member <https://ror.org/024j9sx72> ;
+        rdfs:label "Galway-Mayo Institute of Technology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Predecessor" ;
+        org:member <https://ror.org/04ps1tq95> ;
+        rdfs:label "Letterkenny Institute of Technology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Predecessor" ;
+        org:member <https://ror.org/032fvf508> ;
+        rdfs:label "Institute of Technology Sligo" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05c347015> ;
+        rdfs:label "Irish Research eLibrary" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-8 53)"^^geo:wktLiteral ;
+        schema:addressLocality "Ireland" ;
+    ] ;
+    schema:url <https://www.atu.ie> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q58310020> ;
+             .

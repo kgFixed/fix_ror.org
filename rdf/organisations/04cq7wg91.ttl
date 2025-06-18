@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04cq7wg91> 
+    a org:Organization ;
+    rdfs:label "Melbourne Polytechnic" ;
+    schema:name "Melbourne Polytechnic" ;
+    schema:foundingDate "1912"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Melbourne_Polytechnic> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02p34hm58> ;
+        rdfs:label "Fuzhou Melbourne Polytechnic" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(144.96332 -37.814)"^^geo:wktLiteral ;
+        schema:addressLocality "Melbourne" ;
+    ] ;
+    schema:url <http://www.melbournepolytechnic.edu.au> ;
+    schema:sameAs <http://isni.org/isni/0000000103907722> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7058747> ;
+             .

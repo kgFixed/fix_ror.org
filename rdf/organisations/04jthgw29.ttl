@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04jthgw29> 
+    a org:Organization ;
+    rdfs:label "Center for Digital Narrative" ;
+    schema:name "Center for Digital Narrative" ;
+    schema:foundingDate "2023"^^xsd:gYear ;
+    schema:sameAs <https://no.wikipedia.org/wiki/Senter_for_digitale_fortellinger> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03zga2b32> ;
+        rdfs:label "University of Bergen" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(5.32415 60.39299)"^^geo:wktLiteral ;
+        schema:addressLocality "Bergen" ;
+    ] ;
+    schema:url <https://www.uib.no/en/cdn> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q123763371> ;
+             .

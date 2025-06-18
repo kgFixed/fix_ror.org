@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04a3akw68> 
+    a org:Organization ;
+    rdfs:label "Airbus (Germany)" ;
+    schema:name "Airbus (Germany)" ;
+    schema:foundingDate "1970"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Airbus> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01msdga41> ;
+        rdfs:label "Dornier Flugzeugwerke (Germany)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01818mf51> ;
+        rdfs:label "Messerschmitt-Bölkow-Blohm (Germany)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02z4rsp10> ;
+        rdfs:label "Airbus (Netherlands)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(9.99302 53.55073)"^^geo:wktLiteral ;
+        schema:addressLocality "Hamburg" ;
+    ] ;
+    schema:url <https://www.airbus.com> ;
+    schema:sameAs <http://isni.org/isni/0000000405720912> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q67> ;
+             .

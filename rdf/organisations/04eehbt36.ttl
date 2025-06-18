@@ -1,0 +1,34 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04eehbt36> 
+    a org:Organization ;
+    rdfs:label "Nevada Space Grant Consortium" ;
+    schema:name "Nevada Space Grant Consortium" ;
+    schema:foundingDate "1988"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Other" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/027ka1x80> ;
+        rdfs:label "National Aeronautics and Space Administration" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03sxdvx36> ;
+        rdfs:label "Nevada System of Higher Education" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-115.13722 36.17497)"^^geo:wktLiteral ;
+        schema:addressLocality "Las Vegas" ;
+    ] ;
+    schema:url <http://www.nvspacegrant.org/> ;
+     .

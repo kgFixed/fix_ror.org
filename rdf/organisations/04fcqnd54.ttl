@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04fcqnd54> 
+    a org:Organization ;
+    rdfs:label "Ottery St Mary Hospital" ;
+    schema:name "Ottery St Mary Hospital" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-3.26667 50.75)"^^geo:wktLiteral ;
+        schema:addressLocality "Ottery St Mary" ;
+    ] ;
+    schema:url <https://www.rdehospital.nhs.uk/patients/services/community-hospitals/ottery-hospital.html> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30292833> ;
+             .

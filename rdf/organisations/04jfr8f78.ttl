@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04jfr8f78> 
+    a org:Organization ;
+    rdfs:label "Hyland Software (United States)" ;
+    schema:name "Hyland Software (United States)" ;
+    schema:foundingDate "1991"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Hyland_Software> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-81.91792 41.45532)"^^geo:wktLiteral ;
+        schema:addressLocality "Westlake" ;
+    ] ;
+    schema:url <https://www.hyland.com> ;
+    schema:sameAs <http://isni.org/isni/0000000446685981> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5956012> ;
+             .

@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04c9sd914> 
+    a org:Organization ;
+    rdfs:label "Griggs International Academy" ;
+    schema:name "Griggs International Academy" ;
+    schema:foundingDate "1909"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Griggs_International_Academy> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04aaa2n62> ;
+        rdfs:label "Andrews University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-86.3389 41.94643)"^^geo:wktLiteral ;
+        schema:addressLocality "Berrien Springs" ;
+    ] ;
+    schema:url <https://www.griggs.edu/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q5608974> ;
+             .

@@ -1,0 +1,26 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/046nba540> 
+    a org:Organization ;
+    rdfs:label "St. Mary's Medical Center" ;
+    schema:name "St. Mary's Medical Center" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/019ssje31> ;
+        rdfs:label "Essentia Health" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-92.10658 46.78327)"^^geo:wktLiteral ;
+        schema:addressLocality "Duluth" ;
+    ] ;
+    schema:url <http://www.essentiahealth.org/stmarysmedicalcenter/find-a-clinic/essentia-healthst-marys-medical-center-duluth-46.aspx> ;
+     .

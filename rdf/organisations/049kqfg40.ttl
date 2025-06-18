@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/049kqfg40> 
+    a org:Organization ;
+    rdfs:label "High Intensity Heavy-ion Accelerator Facility" ;
+    schema:name "High Intensity Heavy-ion Accelerator Facility" ;
+    schema:foundingDate "2018"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(114.41523 23.11147)"^^geo:wktLiteral ;
+        schema:addressLocality "Huizhou" ;
+    ] ;
+    schema:url <http://hiaf.impcas.ac.cn/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q78083568> ;
+             .

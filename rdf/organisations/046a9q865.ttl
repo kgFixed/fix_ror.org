@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/046a9q865> 
+    a org:Organization ;
+    rdfs:label "Space Science Institute" ;
+    schema:name "Space Science Institute" ;
+    schema:foundingDate "1992"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Space_Science_Institute> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02ttsq026> ;
+        rdfs:label "University of Colorado Boulder" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-105.27055 40.01499)"^^geo:wktLiteral ;
+        schema:addressLocality "Boulder" ;
+    ] ;
+    schema:url <http://www.spacescience.org/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q7572480> ;
+             .

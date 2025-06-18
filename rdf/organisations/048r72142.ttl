@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/048r72142> 
+    a org:Organization ;
+    rdfs:label "Scion" ;
+    schema:name "Scion" ;
+    schema:foundingDate "1947"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Scion_(Crown_Research_Institute)> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00t28mr39> ;
+        rdfs:label "Crown Research Institutes" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(176.24516 -38.13874)"^^geo:wktLiteral ;
+        schema:addressLocality "Rotorua" ;
+    ] ;
+    schema:url <https://www.scionresearch.com> ;
+    schema:sameAs <http://isni.org/isni/0000000419369203> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7433962> ;
+             .

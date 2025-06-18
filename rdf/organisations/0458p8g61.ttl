@@ -1,0 +1,39 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0458p8g61> 
+    a org:Organization ;
+    rdfs:label "Anti-infectieux : supports moléculaires des résistances et innovations thérapeutiques" ;
+    schema:name "Anti-infectieux : supports moléculaires des résistances et innovations thérapeutiques" ;
+    schema:foundingDate "2012"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02cp04407> ;
+        rdfs:label "Université de Limoges" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02vjkv261> ;
+        rdfs:label "Inserm" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01tc2d264> ;
+        rdfs:label "Centre Hospitalier Universitaire de Limoges" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(1.24759 45.83362)"^^geo:wktLiteral ;
+        schema:addressLocality "Limoges" ;
+    ] ;
+    schema:url <https://www.unilim.fr/recherche/laboratoires/omegahealth/resinfit/> ;
+     .

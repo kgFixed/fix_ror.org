@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04a7cz929> 
+    a org:Organization ;
+    rdfs:label "Kids Saving the Rainforest" ;
+    schema:name "Kids Saving the Rainforest" ;
+    schema:foundingDate "1999"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Kids_Saving_the_Rainforest> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-84.8379 9.97691)"^^geo:wktLiteral ;
+        schema:addressLocality "Puntarenas" ;
+    ] ;
+    schema:url <https://www.kidssavingtherainforest.org/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q48974756> ;
+             .

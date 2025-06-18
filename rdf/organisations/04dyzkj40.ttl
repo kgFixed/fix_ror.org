@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04dyzkj40> 
+    a org:Organization ;
+    rdfs:label "Texas Woman's University" ;
+    schema:name "Texas Woman's University" ;
+    schema:foundingDate "1901"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Texas_Woman's_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01nzxq896> ;
+        rdfs:label "VA North Texas Health Care System" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-97.13307 33.21484)"^^geo:wktLiteral ;
+        schema:addressLocality "Denton" ;
+    ] ;
+    schema:url <https://twu.edu> ;
+    schema:sameAs <http://isni.org/isni/0000000100168186> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3468361> ;
+             .

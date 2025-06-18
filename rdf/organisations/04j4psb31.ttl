@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04j4psb31> 
+    a org:Organization ;
+    rdfs:label "Australia Council for the Arts" ;
+    schema:name "Australia Council for the Arts" ;
+    schema:foundingDate "1967"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Australia_Council_for_the_Arts> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/043rbr770> ;
+        rdfs:label "Department of Infrastructure, Transport, Regional Development, Communications and the Arts" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(151.20732 -33.86785)"^^geo:wktLiteral ;
+        schema:addressLocality "Sydney" ;
+    ] ;
+    schema:url <http://www.australiacouncil.gov.au/> ;
+    schema:sameAs <http://isni.org/isni/0000000107007844> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4823575> ;
+             .

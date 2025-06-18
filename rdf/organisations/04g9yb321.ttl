@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04g9yb321> 
+    a org:Organization ;
+    rdfs:label "West Pharmaceutical Services (United Kingdom)" ;
+    schema:name "West Pharmaceutical Services (United Kingdom)" ;
+    schema:foundingDate "1923"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/West_Pharmaceutical_Services> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02sba6v14> ;
+        rdfs:label "West Pharmaceutical Services (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-4.77442 50.3425)"^^geo:wktLiteral ;
+        schema:addressLocality "St Austell" ;
+    ] ;
+    schema:url <http://www.westpharma.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q1660662> ;
+             .

@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0447s2m06> 
+    a org:Organization ;
+    rdfs:label "Hartmann Group (Germany)" ;
+    schema:name "Hartmann Group (Germany)" ;
+    schema:foundingDate "1818"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(10.15162 48.67798)"^^geo:wktLiteral ;
+        schema:addressLocality "Heidenheim" ;
+    ] ;
+    schema:url <https://hartmann.info/de-DE> ;
+    schema:sameAs <http://isni.org/isni/000000011499047X> ;
+             .

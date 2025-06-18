@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04dk78q10> 
+    a org:Organization ;
+    rdfs:label "BioVinc (United States)" ;
+    schema:name "BioVinc (United States)" ;
+    schema:foundingDate "2013"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-118.39647 34.02112)"^^geo:wktLiteral ;
+        schema:addressLocality "Culver City" ;
+    ] ;
+    schema:url <https://www.biovinc.com/> ;
+     .

@@ -1,0 +1,72 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0492nfe34> 
+    a org:Organization ;
+    rdfs:label "University of Cape Coast" ;
+    schema:name "University of Cape Coast" ;
+    schema:foundingDate "1962"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/University_of_Cape_Coast> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01y434850> ;
+        rdfs:label "Abetifi Presbyterian College of Education" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01428y038> ;
+        rdfs:label "Kibi Presbyterian College of Education" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04t59f227> ;
+        rdfs:label "Our Lady of Apostles College of Education" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05gedzg25> ;
+        rdfs:label "Foso College of Education" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00etztf89> ;
+        rdfs:label "Holy Child College of Education" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02z1r3k29> ;
+        rdfs:label "St. Ambrose College of Education" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04nx64s73> ;
+        rdfs:label "Offinso College of Education" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03q7tj736> ;
+        rdfs:label "St. Monica's College of Education" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.2466 5.10535)"^^geo:wktLiteral ;
+        schema:addressLocality "Cape Coast" ;
+    ] ;
+    schema:url <http://www.ucc.edu.gh/> ;
+    schema:sameAs <http://isni.org/isni/0000000123228567> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q746079> ;
+             .

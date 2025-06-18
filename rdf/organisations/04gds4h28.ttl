@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04gds4h28> 
+    a org:Organization ;
+    rdfs:label "Drew University" ;
+    schema:name "Drew University" ;
+    schema:foundingDate "1867"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Drew_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-74.4171 40.75982)"^^geo:wktLiteral ;
+        schema:addressLocality "Madison" ;
+    ] ;
+    schema:url <https://drew.edu> ;
+    schema:sameAs <http://isni.org/isni/0000000122903196> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1795487> ;
+             .

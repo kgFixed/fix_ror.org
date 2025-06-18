@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04gzcxt97> 
+    a org:Organization ;
+    rdfs:label "Korea Railroad Research Institute" ;
+    schema:name "Korea Railroad Research Institute" ;
+    schema:foundingDate "1996"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(126.94778 37.36528)"^^geo:wktLiteral ;
+        schema:addressLocality "Uiwang" ;
+    ] ;
+    schema:url <https://www.krri.re.kr/web/main/index.do> ;
+    schema:sameAs <http://isni.org/isni/000000010685622X> ;
+             .

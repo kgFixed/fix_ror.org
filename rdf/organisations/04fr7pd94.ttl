@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04fr7pd94> 
+    a org:Organization ;
+    rdfs:label "Institut de Chimie Séparative de Marcoule" ;
+    schema:name "Institut de Chimie Séparative de Marcoule" ;
+    schema:foundingDate "2007"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00jjx8s55> ;
+        rdfs:label "Commissariat à l'Énergie Atomique et aux Énergies Alternatives" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02cte4b68> ;
+        rdfs:label "Institut de Chimie" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/051escj72> ;
+        rdfs:label "Université de Montpellier" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03sgyqj04> ;
+        rdfs:label "École Nationale Supérieure de Chimie de Montpellier" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(4.61974 44.16259)"^^geo:wktLiteral ;
+        schema:addressLocality "Bagnols-sur-Cèze" ;
+    ] ;
+    schema:url <https://www.icsm.fr> ;
+    schema:sameAs <http://isni.org/isni/0000000403841091> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30261373> ;
+             .

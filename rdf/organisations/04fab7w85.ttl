@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04fab7w85> 
+    a org:Organization ;
+    rdfs:label "Centro de Estudos Sociais" ;
+    schema:name "Centro de Estudos Sociais" ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04z8k9a98> ;
+        rdfs:label "University of Coimbra" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-8.41955 40.20564)"^^geo:wktLiteral ;
+        schema:addressLocality "Coimbra" ;
+    ] ;
+    schema:url <https://www.ces.uc.pt> ;
+     .

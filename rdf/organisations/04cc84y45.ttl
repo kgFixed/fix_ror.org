@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04cc84y45> 
+    a org:Organization ;
+    rdfs:label "Instituto de Pesquisas Científicas e Tecnológicas do Estado do Amapá" ;
+    schema:name "Instituto de Pesquisas Científicas e Tecnológicas do Estado do Amapá" ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-51.06639 0.03889)"^^geo:wktLiteral ;
+        schema:addressLocality "Macapá" ;
+    ] ;
+    schema:url <http://www.iepa.ap.gov.br> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q47080015> ;
+             .

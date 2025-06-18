@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0458ehh05> 
+    a org:Organization ;
+    rdfs:label "Free Form Fibers (United States)" ;
+    schema:name "Free Form Fibers (United States)" ;
+    schema:foundingDate "2006"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-73.78457 43.08313)"^^geo:wktLiteral ;
+        schema:addressLocality "Saratoga Springs" ;
+    ] ;
+    schema:url <http://fffibers.com/> ;
+     .

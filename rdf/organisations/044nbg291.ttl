@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/044nbg291> 
+    a org:Organization ;
+    rdfs:label "National Bank of Romania" ;
+    schema:name "National Bank of Romania" ;
+    schema:foundingDate "1880"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/National_Bank_of_Romania> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(26.10626 44.43225)"^^geo:wktLiteral ;
+        schema:addressLocality "Bucharest" ;
+    ] ;
+    schema:url <https://www.bnr.ro/> ;
+    schema:sameAs <http://isni.org/isni/0000000121871268> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q967861> ;
+             .

@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04bzrt549> 
+    a org:Organization ;
+    rdfs:label "Boston Medical Group (Colombia)" ;
+    schema:name "Boston Medical Group (Colombia)" ;
+    schema:foundingDate "1997"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Boston_Medical_Group> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-74.78132 10.96854)"^^geo:wktLiteral ;
+        schema:addressLocality "Barranquilla" ;
+    ] ;
+    schema:url <http://bostonmedical.com.co/> ;
+     .

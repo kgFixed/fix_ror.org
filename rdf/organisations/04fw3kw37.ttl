@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04fw3kw37> 
+    a org:Organization ;
+    rdfs:label "Shri Maharaja Hari Singh Hospital" ;
+    schema:name "Shri Maharaja Hari Singh Hospital" ;
+    schema:foundingDate "1948"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/SMHS_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(74.80555 34.08565)"^^geo:wktLiteral ;
+        schema:addressLocality "Srinagar" ;
+    ] ;
+    schema:url <http://www.gmcs.edu.in/SMHS_Hospital> ;
+    schema:sameAs <http://isni.org/isni/0000000417620994> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q19898416> ;
+             .

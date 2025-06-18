@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/049zsmy36> 
+    a org:Organization ;
+    rdfs:label "TÜV SÜD (United Kingdom)" ;
+    schema:name "TÜV SÜD (United Kingdom)" ;
+    schema:foundingDate "1866"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01k9hhd91> ;
+        rdfs:label "TÜV SÜD (Germany)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.17929 50.85162)"^^geo:wktLiteral ;
+        schema:addressLocality "Fareham" ;
+    ] ;
+    schema:url <http://www.tuv-sud.co.uk/> ;
+    schema:sameAs <http://isni.org/isni/0000000417823863> ;
+             .

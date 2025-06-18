@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04k5rxe29> 
+    a org:Organization ;
+    rdfs:label "Guangdong Medical College" ;
+    schema:name "Guangdong Medical College" ;
+    schema:foundingDate "1958"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Guangdong_Medical_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/057p7h461> ;
+        rdfs:label "Affiliated Hospital of Guangdong Medical College Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(110.38749 21.23391)"^^geo:wktLiteral ;
+        schema:addressLocality "Zhanjiang" ;
+    ] ;
+    schema:url <https://www.gdmu.edu.cn> ;
+    schema:sameAs <http://isni.org/isni/0000000417603078> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q11061654> ;
+             .

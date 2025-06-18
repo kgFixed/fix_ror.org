@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/047g2hq96> 
+    a org:Organization ;
+    rdfs:label "Illinois Department of Natural Resources" ;
+    schema:name "Illinois Department of Natural Resources" ;
+    schema:foundingDate "1995"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Illinois_Department_of_Natural_Resources> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-89.64371 39.80172)"^^geo:wktLiteral ;
+        schema:addressLocality "Springfield" ;
+    ] ;
+    schema:url <http://www.dnr.illinois.gov/> ;
+    schema:sameAs <http://isni.org/isni/0000000405913300> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q16846582> ;
+             .

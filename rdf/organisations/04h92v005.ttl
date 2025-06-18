@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04h92v005> 
+    a org:Organization ;
+    rdfs:label "Waldo County Healthcare" ;
+    schema:name "Waldo County Healthcare" ;
+    schema:foundingDate "1901"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-69.00642 44.42591)"^^geo:wktLiteral ;
+        schema:addressLocality "Belfast" ;
+    ] ;
+    schema:url <http://www.wcgh.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000404105651> ;
+             .

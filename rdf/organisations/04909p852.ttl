@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04909p852> 
+    a org:Organization ;
+    rdfs:label "National Institute of Technology Kurukshetra" ;
+    schema:name "National Institute of Technology Kurukshetra" ;
+    schema:foundingDate "1963"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/National_Institute_of_Technology,_Kurukshetra> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(76.75 30)"^^geo:wktLiteral ;
+        schema:addressLocality "Kurukshetra" ;
+    ] ;
+    schema:url <https://nitkkr.ac.in> ;
+    schema:sameAs <http://isni.org/isni/0000000405004975> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6973715> ;
+             .

@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/047g8vk19> 
+    a org:Organization ;
+    rdfs:label "Erciyes University" ;
+    schema:name "Erciyes University" ;
+    schema:foundingDate "1978"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Erciyes_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01vmfza15> ;
+        rdfs:label "Erciyes Üniversitesi Tıp Fakültesi Hastaneleri" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(35.48528 38.73222)"^^geo:wktLiteral ;
+        schema:addressLocality "Kayseri" ;
+    ] ;
+    schema:url <https://erciyes.edu.tr> ;
+    schema:sameAs <http://isni.org/isni/0000000123312603> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4810943> ;
+             .

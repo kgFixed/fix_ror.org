@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0499r1e09> 
+    a org:Organization ;
+    rdfs:label "Archer Daniels Midland (United States)" ;
+    schema:name "Archer Daniels Midland (United States)" ;
+    schema:foundingDate "1902"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Archer_Daniels_Midland> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-87.65005 41.85003)"^^geo:wktLiteral ;
+        schema:addressLocality "Chicago" ;
+    ] ;
+    schema:url <http://www.adm.com/en-US/Pages/default.aspx> ;
+    schema:sameAs <http://isni.org/isni/0000000121653324> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q632694> ;
+             .

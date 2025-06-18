@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04h347b80> 
+    a org:Organization ;
+    rdfs:label "Institute of Art and Ideas" ;
+    schema:name "Institute of Art and Ideas" ;
+    schema:foundingDate "2008"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Institute_of_Art_and_Ideas> ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-3.12741 52.07049)"^^geo:wktLiteral ;
+        schema:addressLocality "Hay-on-wye" ;
+    ] ;
+    schema:url <https://iai.tv> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q6039881> ;
+             .

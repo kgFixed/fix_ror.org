@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04fm9y474> 
+    a org:Organization ;
+    rdfs:label "North East University" ;
+    schema:name "North East University" ;
+    schema:foundingDate "2012"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/North_East_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(91.87198 24.89904)"^^geo:wktLiteral ;
+        schema:addressLocality "Sylhet" ;
+    ] ;
+    schema:url <http://www.neub.edu.bd/> ;
+    schema:sameAs <http://isni.org/isni/000000044683422X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q16895923> ;
+             .

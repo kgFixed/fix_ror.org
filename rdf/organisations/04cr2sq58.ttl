@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04cr2sq58> 
+    a org:Organization ;
+    rdfs:label "Botswana International University of Science and Technology" ;
+    schema:name "Botswana International University of Science and Technology" ;
+    schema:foundingDate "2005"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Botswana_International_University_of_Science_and_Technology> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(27.12507 -22.54605)"^^geo:wktLiteral ;
+        schema:addressLocality "Palapye" ;
+    ] ;
+    schema:url <https://www.biust.ac.bw> ;
+    schema:sameAs <http://isni.org/isni/0000000417852090> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2856101> ;
+             .

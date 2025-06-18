@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04gegbz50> 
+    a org:Organization ;
+    rdfs:label "Bay Medical Center" ;
+    schema:name "Bay Medical Center" ;
+    schema:foundingDate "1949"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-85.65983 30.15946)"^^geo:wktLiteral ;
+        schema:addressLocality "Panama City" ;
+    ] ;
+    schema:url <http://www.baymedical.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000404239668> ;
+             .

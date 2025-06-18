@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04g1f3s05> 
+    a org:Organization ;
+    rdfs:label "Gemeente Leiden" ;
+    schema:name "Gemeente Leiden" ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(4.49306 52.15833)"^^geo:wktLiteral ;
+        schema:addressLocality "Leiden" ;
+    ] ;
+    schema:url <https://www.visitleiden.nl/nl> ;
+    schema:sameAs <http://isni.org/isni/0000000404053310> ;
+             .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/044asbp74> 
+    a org:Organization ;
+    rdfs:label "San Antonio Area Foundation" ;
+    schema:name "San Antonio Area Foundation" ;
+    schema:foundingDate "1964"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/San_Antonio_Area_Foundation> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-98.49363 29.42412)"^^geo:wktLiteral ;
+        schema:addressLocality "San Antonio" ;
+    ] ;
+    schema:url <http://www.saafdn.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000459070951> ;
+             .

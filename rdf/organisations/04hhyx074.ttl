@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04hhyx074> 
+    a org:Organization ;
+    rdfs:label "Goldey–Beacom College" ;
+    schema:name "Goldey–Beacom College" ;
+    schema:foundingDate "1886"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Goldey%E2%80%93Beacom_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-75.54659 39.74595)"^^geo:wktLiteral ;
+        schema:addressLocality "Wilmington" ;
+    ] ;
+    schema:url <https://www.gbc.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000404852518> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q14685417> ;
+             .

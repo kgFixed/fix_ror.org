@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/048kmjm50> 
+    a org:Organization ;
+    rdfs:label "Hradec Králové City Library" ;
+    schema:name "Hradec Králové City Library" ;
+    schema:foundingDate "1896"^^xsd:gYear ;
+    schema:sameAs <https://cs.wikipedia.org/wiki/Knihovna_m%C4%9Bsta_Hradce_Kr%C3%A1lov%C3%A9> ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0290eg024> ;
+        rdfs:label "Hradec Králové Region" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(15.83277 50.20923)"^^geo:wktLiteral ;
+        schema:addressLocality "Hradec Králové" ;
+    ] ;
+    schema:url <https://www.knihovnahk.cz> ;
+    schema:sameAs <http://isni.org/isni/0000000459055460> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q23929385> ;
+             .

@@ -1,0 +1,41 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04f5ctv63> 
+    a org:Organization ;
+    rdfs:label "Office Français de la Biodiversité" ;
+    schema:name "Office Français de la Biodiversité" ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/037eda396> ;
+        rdfs:label "PatriNat" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00g8rx069> ;
+        rdfs:label "Ministère de la Transition écologique et de la Cohésion des territoires" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/029m96t80> ;
+        rdfs:label "Ministère de l'Agriculture et de la Souveraineté alimentaire" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.3488 48.85341)"^^geo:wktLiteral ;
+        schema:addressLocality "Paris" ;
+    ] ;
+    schema:url <https://www.ofb.gouv.fr> ;
+    schema:sameAs <http://isni.org/isni/0000000492260378> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q96378553> ;
+             .

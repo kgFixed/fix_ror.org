@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/048htbx03> 
+    a org:Organization ;
+    rdfs:label "Sandvik (Finland)" ;
+    schema:name "Sandvik (Finland)" ;
+    schema:foundingDate "1862"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Sandvik> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00qp5gr06> ;
+        rdfs:label "Sandvik (Sweden)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(23.78712 61.49911)"^^geo:wktLiteral ;
+        schema:addressLocality "Tampere" ;
+    ] ;
+    schema:url <https://www.home.sandvik/en/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30338258> ;
+             .

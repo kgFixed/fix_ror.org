@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04bpn0t57> 
+    a org:Organization ;
+    rdfs:label "WorldFish" ;
+    schema:name "WorldFish" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/WorldFish> ;
+    org:status "withdrawn" ;
+    org:classification "Nonprofit" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/04bd4pk40> ;
+        rdfs:label "WorldFish" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(121.24181 14.17025)"^^geo:wktLiteral ;
+        schema:addressLocality "Los Baños" ;
+    ] ;
+    schema:url <http://www.worldfishcenter.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000405929046> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q50376948> ;
+             .

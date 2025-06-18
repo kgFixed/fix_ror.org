@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04h71df97> 
+    a org:Organization ;
+    rdfs:label "Flentrop Orgelbouw (Netherlands)" ;
+    schema:name "Flentrop Orgelbouw (Netherlands)" ;
+    schema:foundingDate "1903"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(4.82643 52.43854)"^^geo:wktLiteral ;
+        schema:addressLocality "Zaandam" ;
+    ] ;
+    schema:url <https://www.flentrop.nl/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q2250535> ;
+             .

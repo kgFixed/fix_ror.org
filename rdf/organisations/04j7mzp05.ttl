@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04j7mzp05> 
+    a org:Organization ;
+    rdfs:label "Kagawa University" ;
+    schema:name "Kagawa University" ;
+    schema:foundingDate "1949"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Kagawa_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/033sspj46> ;
+        rdfs:label "Kagawa University Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(134.05 34.33333)"^^geo:wktLiteral ;
+        schema:addressLocality "Takamatsu" ;
+    ] ;
+    schema:url <http://www.kagawa-u.ac.jp/> ;
+    schema:sameAs <http://isni.org/isni/000000008662309X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1069400> ;
+             .

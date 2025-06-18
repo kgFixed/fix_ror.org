@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04dwx7104> 
+    a org:Organization ;
+    rdfs:label "College of the Desert" ;
+    schema:name "College of the Desert" ;
+    schema:foundingDate "1958"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/College_of_the_Desert> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-116.37697 33.72255)"^^geo:wktLiteral ;
+        schema:addressLocality "Palm Desert" ;
+    ] ;
+    schema:url <http://www.collegeofthedesert.edu/Pages/default.aspx> ;
+    schema:sameAs <http://isni.org/isni/0000000121526499> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5146883> ;
+             .

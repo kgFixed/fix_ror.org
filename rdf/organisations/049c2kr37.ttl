@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/049c2kr37> 
+    a org:Organization ;
+    rdfs:label "Kalaidos University of Applied Sciences" ;
+    schema:name "Kalaidos University of Applied Sciences" ;
+    schema:foundingDate "1995"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Kalaidos_University_of_Applied_Sciences> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(8.55 47.36667)"^^geo:wktLiteral ;
+        schema:addressLocality "Zurich" ;
+    ] ;
+    schema:url <https://www.kalaidos-fh.ch/de-CH> ;
+    schema:sameAs <http://isni.org/isni/0000000404539054> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q681372> ;
+             .

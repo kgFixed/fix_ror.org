@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04kfz4b98> 
+    a org:Organization ;
+    rdfs:label "Harbin Finance University" ;
+    schema:name "Harbin Finance University" ;
+    schema:sameAs <https://zh.wikipedia.org/wiki/%E5%93%88%E5%B0%94%E6%BB%A8%E9%87%91%E8%9E%8D%E5%AD%A6%E9%99%A2> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(126.65 45.75)"^^geo:wktLiteral ;
+        schema:addressLocality "Harbin" ;
+    ] ;
+    schema:url <https://www.hrbfu.edu.cn> ;
+    schema:sameAs <http://isni.org/isni/0000000417615108> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q56271941> ;
+             .

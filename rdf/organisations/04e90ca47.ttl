@@ -1,0 +1,40 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04e90ca47> 
+    a org:Organization ;
+    rdfs:label "Faculty of Electrical Engineering and Computing in Zagreb" ;
+    schema:name "Faculty of Electrical Engineering and Computing in Zagreb" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Faculty_of_Electrical_Engineering_and_Computing%2C_University_of_Zagreb> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00mv6sv71> ;
+        rdfs:label "University of Zagreb" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02w0r2764> ;
+        rdfs:label "MAGIC Telescopes" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0057w2a90> ;
+        rdfs:label "CoE MARBLE - Centre of Excellence in Maritime Robotics and Technologies for Sustainable Blue Economy" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(15.97798 45.81444)"^^geo:wktLiteral ;
+        schema:addressLocality "Zagreb" ;
+    ] ;
+    schema:url <https://www.fer.unizg.hr> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q3514081> ;
+             .

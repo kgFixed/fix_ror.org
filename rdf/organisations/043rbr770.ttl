@@ -1,0 +1,90 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/043rbr770> 
+    a org:Organization ;
+    rdfs:label "Department of Infrastructure, Transport, Regional Development, Communications and the Arts" ;
+    schema:name "Department of Infrastructure, Transport, Regional Development, Communications and the Arts" ;
+    schema:foundingDate "2020"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Department_of_Infrastructure,_Transport,_Regional_Development_and_Communications> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04j4psb31> ;
+        rdfs:label "Australia Council for the Arts" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05vb5av34> ;
+        rdfs:label "Australian Broadcasting Corporation (Australia)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/048a3wm97> ;
+        rdfs:label "Australian Communications and Media Authority" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02asztc31> ;
+        rdfs:label "Australian Film, Television and Radio School" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01x0h1806> ;
+        rdfs:label "Australian National Maritime Museum" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02gdbm217> ;
+        rdfs:label "Creative Victoria" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/011j4zc17> ;
+        rdfs:label "National Gallery of Australia" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04yvjg468> ;
+        rdfs:label "National Library of Australia" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00j4a3b86> ;
+        rdfs:label "National Museum of Australia" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05hqpps66> ;
+        rdfs:label "Screen Australia" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0314h5y94> ;
+        rdfs:label "Australian Government" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(149.12807 -35.28346)"^^geo:wktLiteral ;
+        schema:addressLocality "Canberra" ;
+    ] ;
+    schema:url <https://www.infrastructure.gov.au/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q96418307> ;
+             .

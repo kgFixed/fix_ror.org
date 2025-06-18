@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/048vjc278> 
+    a org:Organization ;
+    rdfs:label "AdventHealth Celebration" ;
+    schema:name "AdventHealth Celebration" ;
+    schema:foundingDate "1997"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/AdventHealth_Celebration> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-81.53313 28.32529)"^^geo:wktLiteral ;
+        schema:addressLocality "Celebration" ;
+    ] ;
+    schema:url <https://www.adventhealth.com/hospital/adventhealth-celebration> ;
+    schema:sameAs <http://isni.org/isni/0000000088777703> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5461445> ;
+             .

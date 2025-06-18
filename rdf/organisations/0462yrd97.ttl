@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0462yrd97> 
+    a org:Organization ;
+    rdfs:label "Leukemia & Lymphoma Society of Canada" ;
+    schema:name "Leukemia & Lymphoma Society of Canada" ;
+    schema:foundingDate "1955"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Leukemia_%26_Lymphoma_Society_of_Canada> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-79.39864 43.70643)"^^geo:wktLiteral ;
+        schema:addressLocality "Toronto" ;
+    ] ;
+    schema:url <http://www.llscanada.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000459067429> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6534496> ;
+             .

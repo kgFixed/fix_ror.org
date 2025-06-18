@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04a8v6p14> 
+    a org:Organization ;
+    rdfs:label "Hisense (United States)" ;
+    schema:name "Hisense (United States)" ;
+    schema:foundingDate "1969"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Hisense> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0276vcd78> ;
+        rdfs:label "Hisense (China)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-84.0713 34.05149)"^^geo:wktLiteral ;
+        schema:addressLocality "Suwanee" ;
+    ] ;
+    schema:url <http://www.hisense-usa.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30297741> ;
+             .

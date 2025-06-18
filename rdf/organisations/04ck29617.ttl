@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04ck29617> 
+    a org:Organization ;
+    rdfs:label "GN Store Nord (Denmark)" ;
+    schema:name "GN Store Nord (Denmark)" ;
+    schema:foundingDate "1869"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/GN_Store_Nord> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(12.36328 55.73165)"^^geo:wktLiteral ;
+        schema:addressLocality "Ballerup Municipality" ;
+    ] ;
+    schema:url <http://www.gn.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000404259239> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1544339> ;
+             .

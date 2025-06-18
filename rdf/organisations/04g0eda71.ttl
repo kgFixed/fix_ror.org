@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04g0eda71> 
+    a org:Organization ;
+    rdfs:label "University of Belgrade – Faculty of Political Sciences" ;
+    schema:name "University of Belgrade – Faculty of Political Sciences" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Faculty_of_Political_Sciences%2C_University_of_Belgrade> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02qsmb048> ;
+        rdfs:label "University of Belgrade" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(20.46513 44.80401)"^^geo:wktLiteral ;
+        schema:addressLocality "Belgrade" ;
+    ] ;
+    schema:url <http://www.fpn.bg.ac.rs> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q6592266> ;
+             .

@@ -1,0 +1,216 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/044s9gr80> 
+    a org:Organization ;
+    rdfs:label "Japanese Red Cross Society, Japan" ;
+    schema:name "Japanese Red Cross Society, Japan" ;
+    schema:foundingDate "1877"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Japanese_Red_Cross> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/043h2w593> ;
+        rdfs:label "Akita Red Cross Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0093xcb35> ;
+        rdfs:label "Ashikaga Red Cross Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0549ak978> ;
+        rdfs:label "Gifu Red Cross Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/047s1ww61> ;
+        rdfs:label "Ise Red Cross Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04mhtp952> ;
+        rdfs:label "Japanese Red Cross Akita College of Nursing" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/037m3rm63> ;
+        rdfs:label "Japanese Red Cross Asahikawa Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/022mjvt30> ;
+        rdfs:label "Japanese Red Cross Fukuoka Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04fr3ga66> ;
+        rdfs:label "Japanese Red Cross Hiroshima College of Nursing" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04fyc4m54> ;
+        rdfs:label "Japanese Red Cross Kanazawa Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02z7dnx86> ;
+        rdfs:label "Japanese Red Cross Katsushika Maternity Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01qd25655> ;
+        rdfs:label "Japanese Red Cross Kobe Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03f918r09> ;
+        rdfs:label "Japanese Red Cross Nagoya Daiichi Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/043pqsk20> ;
+        rdfs:label "Japanese Red Cross Nagoya Daini Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04xesg978> ;
+        rdfs:label "Japanese Red Cross Society Kyoto Daini Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05ajyt645> ;
+        rdfs:label "Japanese Red Cross Society Wakayama Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0460s9920> ;
+        rdfs:label "Kyoto first Red Cross hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00kfr4659> ;
+        rdfs:label "Mito Red Cross Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05bz4s011> ;
+        rdfs:label "Musashino Red Cross Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/041mcya16> ;
+        rdfs:label "Nagano Red Cross Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02tsjqn73> ;
+        rdfs:label "Nagaoka Red Cross Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00jvf9d33> ;
+        rdfs:label "Okinawa Red Cross Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05h4q5j46> ;
+        rdfs:label "Osaka Red Cross Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/033647p67> ;
+        rdfs:label "Otsu Red Cross Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05j40pq70> ;
+        rdfs:label "Saitama Red Cross Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/004106086> ;
+        rdfs:label "Sendai Red Cross Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05t626n88> ;
+        rdfs:label "Suwa Red Cross Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00n3egs77> ;
+        rdfs:label "Takamatsu Red Cross Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02wpa5731> ;
+        rdfs:label "Takatsuki Red Cross Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/053zey189> ;
+        rdfs:label "Takayama Red Cross Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03384k835> ;
+        rdfs:label "Tokushima Red Cross Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03c3s0k29> ;
+        rdfs:label "Yamaguchi Red Cross Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04krwby50> ;
+        rdfs:label "Yokohama Municipal Minato Red Cross Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(139.69171 35.6895)"^^geo:wktLiteral ;
+        schema:addressLocality "Tokyo" ;
+    ] ;
+    schema:url <http://www.jrc.or.jp/english/> ;
+    schema:sameAs <http://isni.org/isni/0000000417622623> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4538440> ;
+             .

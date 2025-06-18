@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04g3t6s80> 
+    a org:Organization ;
+    rdfs:label "National Institute of Occupational Health" ;
+    schema:name "National Institute of Occupational Health" ;
+    schema:foundingDate "1963"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/National_Institute_of_Occupational_Health> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(10.74609 59.91273)"^^geo:wktLiteral ;
+        schema:addressLocality "Oslo" ;
+    ] ;
+    schema:url <https://stami.no/> ;
+    schema:sameAs <http://isni.org/isni/0000000406303985> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6973684> ;
+             .

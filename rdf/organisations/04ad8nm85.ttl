@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04ad8nm85> 
+    a org:Organization ;
+    rdfs:label "Davis Phinney Foundation" ;
+    schema:name "Davis Phinney Foundation" ;
+    schema:foundingDate "2004"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Davis_Phinney_Foundation> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-105.27055 40.01499)"^^geo:wktLiteral ;
+        schema:addressLocality "Boulder" ;
+    ] ;
+    schema:url <http://www.davisphinneyfoundation.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000414872774> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q18350725> ;
+             .

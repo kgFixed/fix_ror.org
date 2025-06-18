@@ -1,0 +1,20 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/049gtbp49> 
+    a org:Organization ;
+    rdfs:label "ProCare Odessa Heart Institute" ;
+    schema:name "ProCare Odessa Heart Institute" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-102.36764 31.84568)"^^geo:wktLiteral ;
+        schema:addressLocality "Odessa" ;
+    ] ;
+    schema:url <http://procareodessa.com/?lipi=urn%3Ali%3Apage%3Ad_flagship3_company%3BIcpLNTQgQty01vWgEUeL4g%3D%3D> ;
+     .

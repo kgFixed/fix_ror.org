@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0492gsr48> 
+    a org:Organization ;
+    rdfs:label "Brain Research Foundation" ;
+    schema:name "Brain Research Foundation" ;
+    schema:foundingDate "1953"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Brain_Research_Foundation> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-87.65005 41.85003)"^^geo:wktLiteral ;
+        schema:addressLocality "Chicago" ;
+    ] ;
+    schema:url <https://www.thebrf.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000100772682> ;
+             .

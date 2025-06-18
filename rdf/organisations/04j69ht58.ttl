@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04j69ht58> 
+    a org:Organization ;
+    rdfs:label "Hewu Hospital" ;
+    schema:name "Hewu Hospital" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Hewu_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(26.82437 -32.17588)"^^geo:wktLiteral ;
+        schema:addressLocality "Whittlesea" ;
+    ] ;
+    schema:url <http://www.echealth.gov.za/?page_id=32> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q5748576> ;
+             .

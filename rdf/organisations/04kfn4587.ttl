@@ -1,0 +1,61 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04kfn4587> 
+    a org:Organization ;
+    rdfs:label "Mount Sinai Health System" ;
+    schema:name "Mount Sinai Health System" ;
+    schema:foundingDate "2013"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Mount_Sinai_Health_System> ;
+    org:status "active" ;
+    org:classification "Funder" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02xa5mk57> ;
+        rdfs:label "Brooklyn Hospital Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04a9tmd77> ;
+        rdfs:label "Icahn School of Medicine at Mount Sinai" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01742jq13> ;
+        rdfs:label "Mount Sinai Beth Israel" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01zkyz108> ;
+        rdfs:label "Mount Sinai Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01h9y0t02> ;
+        rdfs:label "Mount Sinai Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01jaw0925> ;
+        rdfs:label "Mount Sinai Queens" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-74.00597 40.71427)"^^geo:wktLiteral ;
+        schema:addressLocality "New York" ;
+    ] ;
+    schema:url <http://www.mountsinaihealth.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000099636690> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5165549> ;
+             .

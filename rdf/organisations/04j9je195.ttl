@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04j9je195> 
+    a org:Organization ;
+    rdfs:label "Berks County Community Foundation" ;
+    schema:name "Berks County Community Foundation" ;
+    schema:foundingDate "1994"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Berks_County_Community_Foundation> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-75.92687 40.33565)"^^geo:wktLiteral ;
+        schema:addressLocality "Reading" ;
+    ] ;
+    schema:url <https://bccf.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000459027910> ;
+             .

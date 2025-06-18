@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04c2h1p08> 
+    a org:Organization ;
+    rdfs:label "State Farm (United States)" ;
+    schema:name "State Farm (United States)" ;
+    schema:foundingDate "1922"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/State_Farm_Insurance> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-88.99369 40.4842)"^^geo:wktLiteral ;
+        schema:addressLocality "Bloomington" ;
+    ] ;
+    schema:url <https://www.statefarm.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000087396458> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2007336> ;
+             .

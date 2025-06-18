@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04dqdxv39> 
+    a org:Organization ;
+    rdfs:label "Consejo Latinoamericano de Ciencias Sociales" ;
+    schema:name "Consejo Latinoamericano de Ciencias Sociales" ;
+    schema:foundingDate "1967"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Latin_American_Council_of_Social_Sciences> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-58.37723 -34.61315)"^^geo:wktLiteral ;
+        schema:addressLocality "Buenos Aires" ;
+    ] ;
+    schema:url <https://www.clacso.org> ;
+    schema:sameAs <http://isni.org/isni/0000000406108282> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1127222> ;
+             .

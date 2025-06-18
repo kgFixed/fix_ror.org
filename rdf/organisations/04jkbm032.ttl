@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04jkbm032> 
+    a org:Organization ;
+    rdfs:label "Stratheden Hospital" ;
+    schema:name "Stratheden Hospital" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05x1ves75> ;
+        rdfs:label "NHS Fife" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-3.01204 56.31876)"^^geo:wktLiteral ;
+        schema:addressLocality "Cupar" ;
+    ] ;
+    schema:url <http://www.nhsfife.org/nhs/index.cfm?fuseaction=nhs.facilitydisplay&p2sid=A5622D35-CCE8-A40B-AA6605D104C35FE8&themeid=E4689E2B-5056-8C6F-C0BF8FA7CD6A38D0> ;
+    schema:sameAs <http://isni.org/isni/0000000406249181> ;
+             .

@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04fbnx371> 
+    a org:Organization ;
+    rdfs:label "West Virginia University Hospitals" ;
+    schema:name "West Virginia University Hospitals" ;
+    schema:foundingDate "1984"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/West_Virginia_University_Hospitals> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/005535379> ;
+        rdfs:label "Blanchette Rockefeller Neurosciences Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/011vxgd24> ;
+        rdfs:label "West Virginia University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-79.9559 39.62953)"^^geo:wktLiteral ;
+        schema:addressLocality "Morgantown" ;
+    ] ;
+    schema:url <http://wvumedicine.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000404555644> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7986927> ;
+             .

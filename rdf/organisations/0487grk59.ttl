@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0487grk59> 
+    a org:Organization ;
+    rdfs:label "Salzgitter Group (Singapore)" ;
+    schema:name "Salzgitter Group (Singapore)" ;
+    schema:foundingDate "1937"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Salzgitter_AG> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/047yd6g50> ;
+        rdfs:label "Salzgitter Group (Germany)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(103.85007 1.28967)"^^geo:wktLiteral ;
+        schema:addressLocality "Singapore" ;
+    ] ;
+    schema:url <http://www.salzgitter-mannesmann-international.info/> ;
+     .

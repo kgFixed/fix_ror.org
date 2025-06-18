@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04dtt7385> 
+    a org:Organization ;
+    rdfs:label "The Casco Bay Assyriological Institute" ;
+    schema:name "The Casco Bay Assyriological Institute" ;
+    schema:foundingDate "1997"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-89.69039 45.02716)"^^geo:wktLiteral ;
+        schema:addressLocality "Maine" ;
+    ] ;
+    schema:url <http://www.cba-inst.org/> ;
+     .

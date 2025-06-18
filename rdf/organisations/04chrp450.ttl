@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04chrp450> 
+    a org:Organization ;
+    rdfs:label "Nagoya University" ;
+    schema:name "Nagoya University" ;
+    schema:foundingDate "1871"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Nagoya_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04d139241> ;
+        rdfs:label "Tokai National Higher Education and Research System" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/008zz8m46> ;
+        rdfs:label "Nagoya University Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02w0r2764> ;
+        rdfs:label "MAGIC Telescopes" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(136.90641 35.18147)"^^geo:wktLiteral ;
+        schema:addressLocality "Nagoya" ;
+    ] ;
+    schema:url <http://en.nagoya-u.ac.jp/> ;
+    schema:sameAs <http://isni.org/isni/000000010943978X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1191132> ;
+             .

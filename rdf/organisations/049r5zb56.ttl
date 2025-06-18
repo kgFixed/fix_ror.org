@@ -1,0 +1,32 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/049r5zb56> 
+    a org:Organization ;
+    rdfs:label "State Key Laboratory For Conservation and Utilization of Subtropical Agro-Bioresources" ;
+    schema:name "State Key Laboratory For Conservation and Utilization of Subtropical Agro-Bioresources" ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02c9qn167> ;
+        rdfs:label "Guangxi University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05v9jqt67> ;
+        rdfs:label "South China Agricultural University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(108.31667 22.81667)"^^geo:wktLiteral ;
+        schema:addressLocality "Nanning" ;
+    ] ;
+    schema:url <https://sklcusa.gxu.edu.cn> ;
+     .

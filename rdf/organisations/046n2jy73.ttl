@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/046n2jy73> 
+    a org:Organization ;
+    rdfs:label "Canadian Statistical Sciences Institute" ;
+    schema:name "Canadian Statistical Sciences Institute" ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0213rcc28> ;
+        rdfs:label "Simon Fraser University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-122.95263 49.26636)"^^geo:wktLiteral ;
+        schema:addressLocality "Burnaby" ;
+    ] ;
+    schema:url <https://canssi.ca> ;
+    schema:sameAs <http://isni.org/isni/0000000512315867> ;
+             .

@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/044eeh010> 
+    a org:Organization ;
+    rdfs:label "BSH Home Appliances (United States)" ;
+    schema:name "BSH Home Appliances (United States)" ;
+    schema:foundingDate "1967"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/BSH_Hausger%C3%A4te> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0231f9890> ;
+        rdfs:label "BSH Hausgeräte (Germany)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-117.82311 33.66946)"^^geo:wktLiteral ;
+        schema:addressLocality "Irvine" ;
+    ] ;
+    schema:url <http://www.bsh-group.info/laender/us/> ;
+     .

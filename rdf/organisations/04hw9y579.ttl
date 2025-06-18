@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04hw9y579> 
+    a org:Organization ;
+    rdfs:label "Pall Corporation (United Kingdom)" ;
+    schema:name "Pall Corporation (United Kingdom)" ;
+    schema:foundingDate "1946"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Pall_Corporation> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/057jpj338> ;
+        rdfs:label "Pall Corporation (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.09125 50.79899)"^^geo:wktLiteral ;
+        schema:addressLocality "Portsmouth" ;
+    ] ;
+    schema:url <https://aerospace.pall.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30284276> ;
+             .

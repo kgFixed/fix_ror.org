@@ -1,0 +1,48 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04ce87537> 
+    a org:Organization ;
+    rdfs:label "Sherwood Forest Hospitals NHS Foundation Trust" ;
+    schema:name "Sherwood Forest Hospitals NHS Foundation Trust" ;
+    schema:foundingDate "2001"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Sherwood_Forest_Hospitals_NHS_Foundation_Trust> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02bwd6p34> ;
+        rdfs:label "Ashfield Community Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05wyncb52> ;
+        rdfs:label "Kings Mill Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04t83hz09> ;
+        rdfs:label "Mansfield Community Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03s1cky33> ;
+        rdfs:label "Newark Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.2 53.13333)"^^geo:wktLiteral ;
+        schema:addressLocality "Mansfield" ;
+    ] ;
+    schema:url <http://www.sfh-tr.nhs.uk/> ;
+    schema:sameAs <http://isni.org/isni/0000000404698549> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q17020997> ;
+             .

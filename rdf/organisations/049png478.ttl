@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/049png478> 
+    a org:Organization ;
+    rdfs:label "Materion (United Kingdom)" ;
+    schema:name "Materion (United Kingdom)" ;
+    schema:foundingDate "1931"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.077 51.43694)"^^geo:wktLiteral ;
+        schema:addressLocality "Theale" ;
+    ] ;
+    schema:url <https://materion.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30255314> ;
+             .

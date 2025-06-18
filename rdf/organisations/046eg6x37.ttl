@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/046eg6x37> 
+    a org:Organization ;
+    rdfs:label "Ecole Nationale Supérieure des Sciences de la Mer et de l'Aménagement du Littoral" ;
+    schema:name "Ecole Nationale Supérieure des Sciences de la Mer et de l'Aménagement du Littoral" ;
+    schema:foundingDate "2008"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(3.08746 36.73225)"^^geo:wktLiteral ;
+        schema:addressLocality "Algiers" ;
+    ] ;
+    schema:url <https://www.enssmal.edu.dz> ;
+    schema:sameAs <http://isni.org/isni/0000000417861552> ;
+             .

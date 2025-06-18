@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04d5vba33> 
+    a org:Organization ;
+    rdfs:label "The University of Texas at El Paso" ;
+    schema:name "The University of Texas at El Paso" ;
+    schema:foundingDate "1914"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/University_of_Texas_at_El_Paso> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01gek1696> ;
+        rdfs:label "The University of Texas System" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01z3yjr32> ;
+        rdfs:label "El Paso Children's Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00nmnnk78> ;
+        rdfs:label "University Medical Center of El Paso" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/055a54548> ;
+        rdfs:label "Beaufort Lagoon Ecosystems Long Term Ecological Research Network" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05976ta47> ;
+        rdfs:label "Jornada Basin Long Term Ecological Research" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-106.48693 31.75872)"^^geo:wktLiteral ;
+        schema:addressLocality "El Paso" ;
+    ] ;
+    schema:url <http://www.utep.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000106680420> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2093110> ;
+             .

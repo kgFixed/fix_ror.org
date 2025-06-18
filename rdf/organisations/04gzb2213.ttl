@@ -1,0 +1,56 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04gzb2213> 
+    a org:Organization ;
+    rdfs:label "University of Delhi" ;
+    schema:name "University of Delhi" ;
+    schema:foundingDate "1922"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/University_of_Delhi> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03x8jdc94> ;
+        rdfs:label "Lady Hardinge Medical College" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03dwx1z96> ;
+        rdfs:label "Maulana Azad Medical College" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01h3fm945> ;
+        rdfs:label "University College of Medical Sciences" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/058fy8f68> ;
+        rdfs:label "Govind Ballabh Pant Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02v8rz176> ;
+        rdfs:label "Guru Teg Bahadur Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(77.2148 28.62137)"^^geo:wktLiteral ;
+        schema:addressLocality "New Delhi" ;
+    ] ;
+    schema:url <http://www.du.ac.in> ;
+    schema:sameAs <http://isni.org/isni/0000000121094999> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q665105> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q24914761> ;
+             .

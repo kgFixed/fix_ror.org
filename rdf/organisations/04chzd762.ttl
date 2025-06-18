@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04chzd762> 
+    a org:Organization ;
+    rdfs:label "National University of Tucumán" ;
+    schema:name "National University of Tucumán" ;
+    schema:foundingDate "1914"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/National_University_of_Tucum%C3%A1n> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00bv27459> ;
+        rdfs:label "Instituto Superior de Investigaciones Biológicas" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02e2v3e15> ;
+        rdfs:label "Instituto de Química del Noroeste Argentino" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03w8cva37> ;
+        rdfs:label "Centro Científico Tecnológico - Tucumán" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-65.2226 -26.82414)"^^geo:wktLiteral ;
+        schema:addressLocality "Tucumán" ;
+    ] ;
+    schema:url <http://www.unt.edu.ar/> ;
+    schema:sameAs <http://isni.org/isni/0000000121496664> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6979284> ;
+             .

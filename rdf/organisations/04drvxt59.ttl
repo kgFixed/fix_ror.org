@@ -1,0 +1,67 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04drvxt59> 
+    a org:Organization ;
+    rdfs:label "Beth Israel Deaconess Medical Center" ;
+    schema:name "Beth Israel Deaconess Medical Center" ;
+    schema:foundingDate "1996"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Beth_Israel_Deaconess_Medical_Center> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03hj6c016> ;
+        rdfs:label "Berenson Allen Center for Noninvasive Brain Stimulation" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04wsv7966> ;
+        rdfs:label "Center for Vascular Biology Research" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05xckek43> ;
+        rdfs:label "Boston IVF" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05a0ya142> ;
+        rdfs:label "Broad Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/059c3mv67> ;
+        rdfs:label "Cambridge Health Alliance" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03vek6s52> ;
+        rdfs:label "Harvard University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04v00sg98> ;
+        rdfs:label "VA Boston Healthcare System" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-71.05977 42.35843)"^^geo:wktLiteral ;
+        schema:addressLocality "Boston" ;
+    ] ;
+    schema:url <http://www.bidmc.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000090118547> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4897536> ;
+             .

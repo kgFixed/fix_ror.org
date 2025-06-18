@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/044h88456> 
+    a org:Organization ;
+    rdfs:label "South Bend Museum of Art" ;
+    schema:name "South Bend Museum of Art" ;
+    schema:foundingDate "1947"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/South_Bend_Museum_of_Art> ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-86.25001 41.68338)"^^geo:wktLiteral ;
+        schema:addressLocality "South Bend" ;
+    ] ;
+    schema:url <https://southbendart.org/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q7566307> ;
+             .

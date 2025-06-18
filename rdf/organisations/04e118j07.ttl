@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04e118j07> 
+    a org:Organization ;
+    rdfs:label "Dallas Baptist University" ;
+    schema:name "Dallas Baptist University" ;
+    schema:foundingDate "1898"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Dallas_Baptist_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-96.80667 32.78306)"^^geo:wktLiteral ;
+        schema:addressLocality "Dallas" ;
+    ] ;
+    schema:url <http://www.dbu.edu/> ;
+    schema:sameAs <http://isni.org/isni/000000009765510X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5211272> ;
+             .

@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04jmqe852> 
+    a org:Organization ;
+    rdfs:label "Klinikum Fulda" ;
+    schema:name "Klinikum Fulda" ;
+    schema:foundingDate "1976"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01rdrb571> ;
+        rdfs:label "Philipps University of Marburg" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(9.67518 50.55162)"^^geo:wktLiteral ;
+        schema:addressLocality "Fulda" ;
+    ] ;
+    schema:url <http://www.klinikum-fulda.de/> ;
+    schema:sameAs <http://isni.org/isni/0000000100025193> ;
+             .

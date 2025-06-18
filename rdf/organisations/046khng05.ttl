@@ -1,0 +1,39 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/046khng05> 
+    a org:Organization ;
+    rdfs:label "Gaziosmanpaşa Taksim Eğitim ve Araştırma Hastanesi" ;
+    schema:name "Gaziosmanpaşa Taksim Eğitim ve Araştırma Hastanesi" ;
+    org:status "inactive" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01rpe9k96> ;
+        rdfs:label "Gaziosmanpaşa University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/03hda5c25> ;
+        rdfs:label "Gaziosmanpaşa Eğitim Ve Araştırma Hastanesi" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/05qvd2e93> ;
+        rdfs:label "Taksim Eğitim ve Araştırma Hastanesi" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(28.94966 41.01384)"^^geo:wktLiteral ;
+        schema:addressLocality "Istanbul" ;
+    ] ;
+    schema:url <http://www.taksimhastanesi.gov.tr/> ;
+    schema:sameAs <http://isni.org/isni/0000000404191780> ;
+             .

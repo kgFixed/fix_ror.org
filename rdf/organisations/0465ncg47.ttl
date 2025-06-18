@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0465ncg47> 
+    a org:Organization ;
+    rdfs:label "South Country Central School District" ;
+    schema:name "South Country Central School District" ;
+    schema:foundingDate "1950"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/South_Country_Central_School_District> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-72.91538 40.77927)"^^geo:wktLiteral ;
+        schema:addressLocality "Brookhaven" ;
+    ] ;
+    schema:url <http://www.southcountry.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000403949676> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7566901> ;
+             .

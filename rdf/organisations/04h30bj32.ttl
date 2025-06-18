@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04h30bj32> 
+    a org:Organization ;
+    rdfs:label "Boehringer Ingelheim (Portugal)" ;
+    schema:name "Boehringer Ingelheim (Portugal)" ;
+    schema:foundingDate "1885"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Boehringer_Ingelheim> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00q32j219> ;
+        rdfs:label "Boehringer Ingelheim (Germany)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-9.13333 38.71667)"^^geo:wktLiteral ;
+        schema:addressLocality "Lisbon" ;
+    ] ;
+    schema:url <https://www.boehringer-ingelheim.pt/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q43896450> ;
+             .

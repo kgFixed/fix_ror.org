@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/047zg7c19> 
+    a org:Organization ;
+    rdfs:label "K. J. Somaiya Hospital & Research Centre" ;
+    schema:name "K. J. Somaiya Hospital & Research Centre" ;
+    schema:foundingDate "1991"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(72.88261 19.07283)"^^geo:wktLiteral ;
+        schema:addressLocality "Mumbai" ;
+    ] ;
+    schema:url <http://www.somaiya-ayurvihar.org/en> ;
+     .

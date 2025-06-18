@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04cecjb61> 
+    a org:Organization ;
+    rdfs:label "Lancaster City Museum" ;
+    schema:name "Lancaster City Museum" ;
+    schema:foundingDate "1923"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Lancaster_City_Museum> ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-2.79988 54.04649)"^^geo:wktLiteral ;
+        schema:addressLocality "Lancaster" ;
+    ] ;
+    schema:url <http://www.lancaster.gov.uk/sport-and-leisure/museums/city-museum> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q6483133> ;
+             .

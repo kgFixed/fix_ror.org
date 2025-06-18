@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04dkt5d63> 
+    a org:Organization ;
+    rdfs:label "Greek Atomic Energy Commission" ;
+    schema:name "Greek Atomic Energy Commission" ;
+    schema:foundingDate "1954"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Greek_Atomic_Energy_Commission> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(23.72784 37.98376)"^^geo:wktLiteral ;
+        schema:addressLocality "Athens" ;
+    ] ;
+    schema:url <http://eeae.gr/en/> ;
+    schema:sameAs <http://isni.org/isni/0000000404405232> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5601739> ;
+             .

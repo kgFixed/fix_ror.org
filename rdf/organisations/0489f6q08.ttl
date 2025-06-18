@@ -1,0 +1,65 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0489f6q08> 
+    a org:Organization ;
+    rdfs:label "Cardiff and Vale University Health Board" ;
+    schema:name "Cardiff and Vale University Health Board" ;
+    schema:foundingDate "2009"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Cardiff_and_Vale_University_Health_Board> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04742vj55> ;
+        rdfs:label "Cardiff Royal Infirmary" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/029mrrs96> ;
+        rdfs:label "Noah's Ark Children's Hospital for Wales" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00ftwze80> ;
+        rdfs:label "University Dental Hospital on Cardiff University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05fcrn131> ;
+        rdfs:label "University Hospital Llandough" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04fgpet95> ;
+        rdfs:label "University Hospital of Wales" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00xc08717> ;
+        rdfs:label "Whitchurch Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04a496k07> ;
+        rdfs:label "National Health Service Wales" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-3.18 51.48)"^^geo:wktLiteral ;
+        schema:addressLocality "Cardiff" ;
+    ] ;
+    schema:url <http://www.cardiffandvaleuhb.wales.nhs.uk/home> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q5038490> ;
+             .

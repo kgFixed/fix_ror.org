@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/049ams583> 
+    a org:Organization ;
+    rdfs:label "Northwestern State University" ;
+    schema:name "Northwestern State University" ;
+    schema:foundingDate "1884"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Northwestern_State_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02sqt9870> ;
+        rdfs:label "University of Louisiana System" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-93.08627 31.76072)"^^geo:wktLiteral ;
+        schema:addressLocality "Natchitoches" ;
+    ] ;
+    schema:url <http://www.nsula.edu/> ;
+    schema:sameAs <http://isni.org/isni/000000041936869X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2001231> ;
+             .

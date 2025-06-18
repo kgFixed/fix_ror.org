@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04c3cen15> 
+    a org:Organization ;
+    rdfs:label "Institut de Chimie et des Matériaux Paris-Est" ;
+    schema:name "Institut de Chimie et des Matériaux Paris-Est" ;
+    schema:foundingDate "2007"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02cte4b68> ;
+        rdfs:label "Institut de Chimie" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05ggc9x40> ;
+        rdfs:label "Université Paris-Est Créteil" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.39139 48.76444)"^^geo:wktLiteral ;
+        schema:addressLocality "Thiais" ;
+    ] ;
+    schema:url <https://www.icmpe.cnrs.fr> ;
+    schema:sameAs <http://isni.org/isni/0000000086261156> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q33121454> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30261461> ;
+             .

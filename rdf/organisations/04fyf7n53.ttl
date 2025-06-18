@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04fyf7n53> 
+    a org:Organization ;
+    rdfs:label "Escola Superior Pedagógica do Bengo" ;
+    schema:name "Escola Superior Pedagógica do Bengo" ;
+    schema:foundingDate "2009"^^xsd:gYear ;
+    schema:sameAs <https://pt.wikipedia.org/wiki/Escola_Superior_Pedag%C3%B3gica_do_Bengo> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(13.66425 -8.57848)"^^geo:wktLiteral ;
+        schema:addressLocality "Caxito" ;
+    ] ;
+    schema:url <https://espbengo.ed.ao> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q65171866> ;
+             .

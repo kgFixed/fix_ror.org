@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04b8mkk85> 
+    a org:Organization ;
+    rdfs:label "Honey Bee Breeding, Genetics, and Physiology Laboratory" ;
+    schema:name "Honey Bee Breeding, Genetics, and Physiology Laboratory" ;
+    schema:foundingDate "1929"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02pfwxe49> ;
+        rdfs:label "Agricultural Research Service - Southeast Area" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-91.18747 30.44332)"^^geo:wktLiteral ;
+        schema:addressLocality "Baton Rouge" ;
+    ] ;
+    schema:url <https://www.ars.usda.gov/southeast-area/baton-rouge-la/honeybeelab/> ;
+     .

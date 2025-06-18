@@ -1,0 +1,72 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/048vrgr14> 
+    a org:Organization ;
+    rdfs:label "Becton Dickinson (United States)" ;
+    schema:name "Becton Dickinson (United States)" ;
+    schema:foundingDate "1897"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Becton_Dickinson> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/031dsww89> ;
+        rdfs:label "Becton Dickinson (Canada)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/016nn9d26> ;
+        rdfs:label "Becton Dickinson (France)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02kzqwr97> ;
+        rdfs:label "Becton Dickinson (Germany)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0339vxy90> ;
+        rdfs:label "Becton Dickinson (India)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02pdacs91> ;
+        rdfs:label "Becton Dickinson (Ireland)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03qdj6986> ;
+        rdfs:label "Becton Dickinson (Netherlands)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05dwa3c44> ;
+        rdfs:label "Becton Dickinson (United Kingdom)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02h9td068> ;
+        rdfs:label "BD Biosciences (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-74.2057 41.01676)"^^geo:wktLiteral ;
+        schema:addressLocality "Franklin Lakes" ;
+    ] ;
+    schema:url <http://bd.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000404023971> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q813780> ;
+             .

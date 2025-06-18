@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/046z54t28> 
+    a org:Organization ;
+    rdfs:label "Indiana University East" ;
+    schema:name "Indiana University East" ;
+    schema:foundingDate "1971"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Indiana_University_East> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01kg8sb98> ;
+        rdfs:label "Indiana University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-84.89024 39.82894)"^^geo:wktLiteral ;
+        schema:addressLocality "Richmond" ;
+    ] ;
+    schema:url <http://www.iue.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000105589641> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6023582> ;
+             .

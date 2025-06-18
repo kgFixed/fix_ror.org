@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04encyw73> 
+    a org:Organization ;
+    rdfs:label "Instituto de Desenvolvimento Sustentável Mamirauá" ;
+    schema:name "Instituto de Desenvolvimento Sustentável Mamirauá" ;
+    schema:foundingDate "1999"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Funder" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-64.72054 -3.36841)"^^geo:wktLiteral ;
+        schema:addressLocality "Tefé" ;
+    ] ;
+    schema:url <https://mamiraua.org.br> ;
+    schema:sameAs <http://isni.org/isni/0000000458991409> ;
+             .

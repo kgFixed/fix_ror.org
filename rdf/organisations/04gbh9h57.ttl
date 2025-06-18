@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04gbh9h57> 
+    a org:Organization ;
+    rdfs:label "Perkins School for Blind" ;
+    schema:name "Perkins School for Blind" ;
+    schema:foundingDate "1829"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Perkins_School_for_the_Blind> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-71.18283 42.37093)"^^geo:wktLiteral ;
+        schema:addressLocality "Watertown" ;
+    ] ;
+    schema:url <https://www.perkins.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000121561198> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q114071> ;
+             .

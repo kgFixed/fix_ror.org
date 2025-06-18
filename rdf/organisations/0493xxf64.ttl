@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0493xxf64> 
+    a org:Organization ;
+    rdfs:label "Eurofins (Denmark)" ;
+    schema:name "Eurofins (Denmark)" ;
+    schema:foundingDate "1980"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Eurofins_Scientific> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04p977q83> ;
+        rdfs:label "Eurofins (Luxembourg)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(9.91691 56.15902)"^^geo:wktLiteral ;
+        schema:addressLocality "Galten" ;
+    ] ;
+    schema:url <http://www.eurofins.dk/> ;
+    schema:sameAs <http://isni.org/isni/0000000406076794> ;
+             .

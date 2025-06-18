@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04b0jpj80> 
+    a org:Organization ;
+    rdfs:label "Texarkana College" ;
+    schema:name "Texarkana College" ;
+    schema:foundingDate "1927"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Texarkana_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-94.04769 33.42513)"^^geo:wktLiteral ;
+        schema:addressLocality "Texarkana" ;
+    ] ;
+    schema:url <https://www.texarkanacollege.edu/> ;
+    schema:sameAs <http://isni.org/isni/000000008680072X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7707344> ;
+             .

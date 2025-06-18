@@ -1,0 +1,33 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04kgp9g48> 
+    a org:Organization ;
+    rdfs:label "Universidad de Ciencias Médicas de la Habana" ;
+    schema:name "Universidad de Ciencias Médicas de la Habana" ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02zttza43> ;
+        rdfs:label "Ministerio de Salud Pública" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04wr3ta36> ;
+        rdfs:label "Universidad de Ciencias Médicas de Matanzas" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-82.38304 23.13302)"^^geo:wktLiteral ;
+        schema:addressLocality "Havana" ;
+    ] ;
+    schema:url <http://instituciones.sld.cu/ucmh/english/> ;
+    schema:sameAs <http://isni.org/isni/0000000121064394> ;
+             .

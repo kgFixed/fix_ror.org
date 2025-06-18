@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/049cbmb74> 
+    a org:Organization ;
+    rdfs:label "Children's Hospital of Wisconsin" ;
+    schema:name "Children's Hospital of Wisconsin" ;
+    schema:foundingDate "1894"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Children%27s_Hospital_of_Wisconsin> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00qqv6244> ;
+        rdfs:label "Medical College of Wisconsin" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-87.90647 43.0389)"^^geo:wktLiteral ;
+        schema:addressLocality "Milwaukee" ;
+    ] ;
+    schema:url <http://www.chw.org/> ;
+    schema:sameAs <http://isni.org/isni/000000010568442X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q14714426> ;
+             .

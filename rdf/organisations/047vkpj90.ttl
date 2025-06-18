@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/047vkpj90> 
+    a org:Organization ;
+    rdfs:label "San Cristóbal of Huamanga University" ;
+    schema:name "San Cristóbal of Huamanga University" ;
+    schema:foundingDate "1677"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/San_Crist%C3%B3bal_of_Huamanga_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-74.22321 -13.15878)"^^geo:wktLiteral ;
+        schema:addressLocality "Ayacucho" ;
+    ] ;
+    schema:url <http://www.unsch.edu.pe/> ;
+    schema:sameAs <http://isni.org/isni/000000012322462X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7413580> ;
+             .

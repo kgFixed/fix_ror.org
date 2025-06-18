@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04fm6gx83> 
+    a org:Organization ;
+    rdfs:label "Vernon Verona Sherrill School District" ;
+    schema:name "Vernon Verona Sherrill School District" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Vernon-Verona-Sherrill_Central_School_District> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-75.45573 43.21285)"^^geo:wktLiteral ;
+        schema:addressLocality "Rome" ;
+    ] ;
+    schema:url <https://www.vvsschools.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000405784983> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30286260> ;
+             .

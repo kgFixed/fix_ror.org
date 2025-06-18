@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04d9kk613> 
+    a org:Organization ;
+    rdfs:label "Iranian Research Center for HIV/AIDS" ;
+    schema:name "Iranian Research Center for HIV/AIDS" ;
+    schema:foundingDate "2005"^^xsd:gYear ;
+    schema:sameAs <https://fa.wikipedia.org/wiki/%D9%85%D8%B1%DA%A9%D8%B2_%D8%AA%D8%AD%D9%82%DB%8C%D9%82%D8%A7%D8%AA_%D8%A7%DB%8C%D8%AF%D8%B2_%D8%A7%DB%8C%D8%B1%D8%A7%D9%86> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01c4pz451> ;
+        rdfs:label "Tehran University of Medical Sciences" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(51.42151 35.69439)"^^geo:wktLiteral ;
+        schema:addressLocality "Tehran" ;
+    ] ;
+    schema:url <https://ircha.tums.ac.ir> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q97219552> ;
+             .

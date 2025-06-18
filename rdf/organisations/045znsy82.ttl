@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/045znsy82> 
+    a org:Organization ;
+    rdfs:label "River Valley Community College" ;
+    schema:name "River Valley Community College" ;
+    schema:foundingDate "1968"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/River_Valley_Community_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-72.34676 43.37674)"^^geo:wktLiteral ;
+        schema:addressLocality "Claremont" ;
+    ] ;
+    schema:url <http://www.rivervalley.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000406267881> ;
+             .

@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/045c2a463> 
+    a org:Organization ;
+    rdfs:label "Comanche National Museum and Cultural Center" ;
+    schema:name "Comanche National Museum and Cultural Center" ;
+    schema:foundingDate "2007"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-98.39033 34.60869)"^^geo:wktLiteral ;
+        schema:addressLocality "Lawton" ;
+    ] ;
+    schema:url <http://www.comanchemuseum.com> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30257922> ;
+             .

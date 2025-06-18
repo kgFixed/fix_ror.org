@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04hemee20> 
+    a org:Organization ;
+    rdfs:label "Southwestern Indian Polytechnic Institute" ;
+    schema:name "Southwestern Indian Polytechnic Institute" ;
+    schema:foundingDate "1971"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Southwestern_Indian_Polytechnic_Institute> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-106.65114 35.08449)"^^geo:wktLiteral ;
+        schema:addressLocality "Albuquerque" ;
+    ] ;
+    schema:url <http://www.sipi.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000086620462> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7571422> ;
+             .

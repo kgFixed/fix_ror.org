@@ -1,0 +1,20 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/046sbgc47> 
+    a org:Organization ;
+    rdfs:label "Envirex" ;
+    schema:name "Envirex" ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(15.67018 49.72072)"^^geo:wktLiteral ;
+        schema:addressLocality "Chotěboř" ;
+    ] ;
+    schema:url <http://www.envirex-chotebor.cz/> ;
+     .

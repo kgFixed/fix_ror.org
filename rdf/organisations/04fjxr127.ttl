@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04fjxr127> 
+    a org:Organization ;
+    rdfs:label "The Silesian Planetarium" ;
+    schema:name "The Silesian Planetarium" ;
+    schema:foundingDate "1955"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Silesian_Planetarium> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(18.9742 50.30582)"^^geo:wktLiteral ;
+        schema:addressLocality "Chorzów" ;
+    ] ;
+    schema:url <https://www.planetarium.edu.pl/english/> ;
+     .

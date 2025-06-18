@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/049n6n725> 
+    a org:Organization ;
+    rdfs:label "National Hansen's Disease Program" ;
+    schema:name "National Hansen's Disease Program" ;
+    schema:foundingDate "1894"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0121dpf30> ;
+        rdfs:label "Health Resources and Services Administration" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-91.18747 30.44332)"^^geo:wktLiteral ;
+        schema:addressLocality "Baton Rouge" ;
+    ] ;
+    schema:url <https://www.hrsa.gov/hansens-disease/index.html> ;
+    schema:sameAs <http://isni.org/isni/0000000404893328> ;
+             .

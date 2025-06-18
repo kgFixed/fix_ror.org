@@ -1,0 +1,67 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04d5w7479> 
+    a org:Organization ;
+    rdfs:label "Aurora Health Care" ;
+    schema:name "Aurora Health Care" ;
+    schema:foundingDate "1984"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Aurora_Health_Care> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/056nn5n22> ;
+        rdfs:label "Aurora Sinai Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02kak3e04> ;
+        rdfs:label "Aurora St. Luke's Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/007vvce33> ;
+        rdfs:label "Aurora West Allis Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/006p1hv79> ;
+        rdfs:label "Bay Area Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03kgjaz64> ;
+        rdfs:label "Vince Lombardi Cancer Clinic" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01efeew70> ;
+        rdfs:label "Vince Lombardi Cancer Clinic" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01736k933> ;
+        rdfs:label "Vince Lombardi Cancer Clinic" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-87.90647 43.0389)"^^geo:wktLiteral ;
+        schema:addressLocality "Milwaukee" ;
+    ] ;
+    schema:url <https://www.aurorahealthcare.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000096164376> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4822546> ;
+             .

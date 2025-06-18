@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04b82qh04> 
+    a org:Organization ;
+    rdfs:label "Institute for Philosophy, Political Science and Religion Studies" ;
+    schema:name "Institute for Philosophy, Political Science and Religion Studies" ;
+    schema:foundingDate "1999"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05tyne317> ;
+        rdfs:label "Ministry of Science and Higher Education of the Republic of Kazakhstan" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(76.91667 43.25)"^^geo:wktLiteral ;
+        schema:addressLocality "Almaty" ;
+    ] ;
+    schema:url <http://iph.kz/en/> ;
+     .

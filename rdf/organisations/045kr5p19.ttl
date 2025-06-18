@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/045kr5p19> 
+    a org:Organization ;
+    rdfs:label "Life Groenkloof Hospital" ;
+    schema:name "Life Groenkloof Hospital" ;
+    schema:foundingDate "1957"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Little_Company_of_Mary_Hospital_(Pretoria)> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(28.18783 -25.74486)"^^geo:wktLiteral ;
+        schema:addressLocality "Pretoria" ;
+    ] ;
+    schema:url <http://www.lifehealthcare.co.za/Hospitals/DisplayHospital.aspx?nHospitalId=54> ;
+    schema:sameAs <http://isni.org/isni/0000000406352402> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6649618> ;
+             .

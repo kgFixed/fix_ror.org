@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04bg1hy68> 
+    a org:Organization ;
+    rdfs:label "Saint Thomas West Hospital" ;
+    schema:name "Saint Thomas West Hospital" ;
+    schema:foundingDate "1898"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Saint_Thomas_-_West_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04y40x506> ;
+        rdfs:label "Saint Thomas Health" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-86.78444 36.16589)"^^geo:wktLiteral ;
+        schema:addressLocality "Nashville" ;
+    ] ;
+    schema:url <http://www.sthealth.com/locations/saint-thomas-west-hospital> ;
+    schema:sameAs <http://isni.org/isni/0000000404359301> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7402238> ;
+             .

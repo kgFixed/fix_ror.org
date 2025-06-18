@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04d7e4m76> 
+    a org:Organization ;
+    rdfs:label "I-Shou University" ;
+    schema:name "I-Shou University" ;
+    schema:foundingDate "1986"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/I-Shou_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00eh7f421> ;
+        rdfs:label "E-Da Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(120.31333 22.61626)"^^geo:wktLiteral ;
+        schema:addressLocality "Kaohsiung" ;
+    ] ;
+    schema:url <http://www.isu.edu.tw/en1/> ;
+    schema:sameAs <http://isni.org/isni/0000000406371806> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2592553> ;
+             .

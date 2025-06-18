@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04j47vk14> 
+    a org:Organization ;
+    rdfs:label "Austrian Research Institute for Artificial Intelligence" ;
+    schema:name "Austrian Research Institute for Artificial Intelligence" ;
+    schema:foundingDate "1984"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Austrian_Research_Institute_for_Artificial_Intelligence> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01rckyv04> ;
+        rdfs:label "Austrian Society for Cybernetic Studies" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(16.37208 48.20849)"^^geo:wktLiteral ;
+        schema:addressLocality "Vienna" ;
+    ] ;
+    schema:url <http://www.ofai.at/> ;
+    schema:sameAs <http://isni.org/isni/000000044665013X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q306606> ;
+             .

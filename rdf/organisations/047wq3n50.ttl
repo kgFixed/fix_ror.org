@@ -1,0 +1,20 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/047wq3n50> 
+    a org:Organization ;
+    rdfs:label "Clinique Ambroise Paré" ;
+    schema:name "Clinique Ambroise Paré" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.26965 48.8846)"^^geo:wktLiteral ;
+        schema:addressLocality "Neuilly-sur-Seine" ;
+    ] ;
+    schema:url <https://www.ambroisepare.fr/> ;
+     .

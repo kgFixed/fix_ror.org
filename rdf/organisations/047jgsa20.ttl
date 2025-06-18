@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/047jgsa20> 
+    a org:Organization ;
+    rdfs:label "Universitas Muhammadiyah Madiun" ;
+    schema:name "Universitas Muhammadiyah Madiun" ;
+    schema:foundingDate "2020"^^xsd:gYear ;
+    schema:sameAs <https://id.wikipedia.org/wiki/Universitas_Muhammadiyah_Madiun> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(111.5239 -7.6298)"^^geo:wktLiteral ;
+        schema:addressLocality "Madiun" ;
+    ] ;
+    schema:url <https://ummad.ac.id> ;
+    schema:sameAs <http://isni.org/isni/0000000513718887> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q97705035> ;
+             .

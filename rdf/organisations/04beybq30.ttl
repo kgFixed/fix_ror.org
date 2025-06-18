@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04beybq30> 
+    a org:Organization ;
+    rdfs:label "Association to Contribute to Improve the Governance of Land, Water and Natural Resources" ;
+    schema:name "Association to Contribute to Improve the Governance of Land, Water and Natural Resources" ;
+    schema:foundingDate "2005"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.48255 48.83669)"^^geo:wktLiteral ;
+        schema:addressLocality "Nogent-sur-Marne" ;
+    ] ;
+    schema:url <http://www.agter.asso.fr/> ;
+     .

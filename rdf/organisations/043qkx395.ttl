@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/043qkx395> 
+    a org:Organization ;
+    rdfs:label "Centre for Ultrahigh Bandwidth Devices for Optical Systems" ;
+    schema:name "Centre for Ultrahigh Bandwidth Devices for Optical Systems" ;
+    schema:foundingDate "2003"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Centre_for_Ultrahigh_Bandwidth_Devices_for_Optical_Systems> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(151.20732 -33.86785)"^^geo:wktLiteral ;
+        schema:addressLocality "Sydney" ;
+    ] ;
+    schema:url <http://www.cudos.org.au/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q5062602> ;
+             .

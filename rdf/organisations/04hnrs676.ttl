@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04hnrs676> 
+    a org:Organization ;
+    rdfs:label "Universidade de Mogi das Cruzes" ;
+    schema:name "Universidade de Mogi das Cruzes" ;
+    schema:foundingDate "1962"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Universidade_de_Mogi_das_Cruzes> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-46.18833 -23.52278)"^^geo:wktLiteral ;
+        schema:addressLocality "Mogi das Cruzes" ;
+    ] ;
+    schema:url <http://www.umc.br/> ;
+    schema:sameAs <http://isni.org/isni/0000000088489293> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q10387895> ;
+             .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04axt3e70> 
+    a org:Organization ;
+    rdfs:label "Autonomous Intercultural University of Sinaloa" ;
+    schema:name "Autonomous Intercultural University of Sinaloa" ;
+    schema:foundingDate "2001"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Universidad_Aut%C3%B3noma_Intercultural_de_Sinaloa> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-108.61828 26.41686)"^^geo:wktLiteral ;
+        schema:addressLocality "El Fuerte" ;
+    ] ;
+    schema:url <http://uais.edu.mx/> ;
+    schema:sameAs <http://isni.org/isni/0000000090261781> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2495665> ;
+             .

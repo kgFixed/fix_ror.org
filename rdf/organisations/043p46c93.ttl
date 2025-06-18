@@ -1,0 +1,20 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/043p46c93> 
+    a org:Organization ;
+    rdfs:label "SalvageBlue (Saint Vincent and the Grenadines)" ;
+    schema:name "SalvageBlue (Saint Vincent and the Grenadines)" ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-61.22742 13.15527)"^^geo:wktLiteral ;
+        schema:addressLocality "Kingstown" ;
+    ] ;
+    schema:url <https://www.salvageblue.org/> ;
+     .

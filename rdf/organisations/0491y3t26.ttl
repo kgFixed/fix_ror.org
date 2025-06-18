@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0491y3t26> 
+    a org:Organization ;
+    rdfs:label "National Remote Sensing Centre" ;
+    schema:name "National Remote Sensing Centre" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/National_Remote_Sensing_Centre> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00cwrns71> ;
+        rdfs:label "Indian Space Research Organisation" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(78.45636 17.38405)"^^geo:wktLiteral ;
+        schema:addressLocality "Hyderabad" ;
+    ] ;
+    schema:url <https://www.nrsc.gov.in/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q3633295> ;
+             .

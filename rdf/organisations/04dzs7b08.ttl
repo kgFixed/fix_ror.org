@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04dzs7b08> 
+    a org:Organization ;
+    rdfs:label "Wofford College" ;
+    schema:name "Wofford College" ;
+    schema:foundingDate "1854"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Wofford_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-81.93205 34.94957)"^^geo:wktLiteral ;
+        schema:addressLocality "Spartanburg" ;
+    ] ;
+    schema:url <https://www.wofford.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000404655303> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q8029049> ;
+             .

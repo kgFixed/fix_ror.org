@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/048w9r832> 
+    a org:Organization ;
+    rdfs:label "Albany Law School" ;
+    schema:name "Albany Law School" ;
+    schema:foundingDate "1851"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Albany_Law_School> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-73.75623 42.65258)"^^geo:wktLiteral ;
+        schema:addressLocality "Albany" ;
+    ] ;
+    schema:url <http://www.albanylaw.edu/Pages/home.aspx> ;
+    schema:sameAs <http://isni.org/isni/000000010662666X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4709336> ;
+             .

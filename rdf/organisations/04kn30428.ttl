@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04kn30428> 
+    a org:Organization ;
+    rdfs:label "BSD Crown (Israel)" ;
+    schema:name "BSD Crown (Israel)" ;
+    schema:foundingDate "1994"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(34.78057 32.08088)"^^geo:wktLiteral ;
+        schema:addressLocality "Tel Aviv" ;
+    ] ;
+    schema:url <http://www.bsd-c.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000403668532> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30292490> ;
+             .

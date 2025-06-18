@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04gv91m66> 
+    a org:Organization ;
+    rdfs:label "Chartered Society of Designers" ;
+    schema:name "Chartered Society of Designers" ;
+    schema:foundingDate "1930"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Chartered_Society_of_Designers> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.12574 51.50853)"^^geo:wktLiteral ;
+        schema:addressLocality "London" ;
+    ] ;
+    schema:url <https://www.csd.org.uk> ;
+    schema:sameAs <http://isni.org/isni/000000012176258X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5086860> ;
+             .

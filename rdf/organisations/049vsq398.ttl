@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/049vsq398> 
+    a org:Organization ;
+    rdfs:label "Affiliated Hospital of Hebei University" ;
+    schema:name "Affiliated Hospital of Hebei University" ;
+    schema:foundingDate "1909"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(115.46246 38.87288)"^^geo:wktLiteral ;
+        schema:addressLocality "Baoding" ;
+    ] ;
+    schema:url <http://www.hbdxfy.cn/> ;
+     .

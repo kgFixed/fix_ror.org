@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04776hp32> 
+    a org:Organization ;
+    rdfs:label "Prospectors & Developers Association of Canada" ;
+    schema:name "Prospectors & Developers Association of Canada" ;
+    schema:foundingDate "1932"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Prospectors_%26_Developers_Association_of_Canada> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-79.39864 43.70643)"^^geo:wktLiteral ;
+        schema:addressLocality "Toronto" ;
+    ] ;
+    schema:url <http://www.pdac.ca/> ;
+     .
