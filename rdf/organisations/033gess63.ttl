@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/033gess63> 
+    a org:Organization ;
+    rdfs:label "Zentralbibliothek Zürich" ;
+    schema:name "Zentralbibliothek Zürich" ;
+    schema:foundingDate "1917"^^xsd:gYear ;
+    schema:sameAs <https://de.wikipedia.org/wiki/Zentralbibliothek_Z%C3%BCrich> ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02crff812> ;
+        rdfs:label "University of Zurich" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(8.55 47.36667)"^^geo:wktLiteral ;
+        schema:addressLocality "Zurich" ;
+    ] ;
+    schema:url <https://www.zb.uzh.ch> ;
+    schema:sameAs <http://isni.org/isni/000000012308337X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q190260> ;
+             .

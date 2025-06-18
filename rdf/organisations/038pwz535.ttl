@@ -1,0 +1,40 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/038pwz535> 
+    a org:Organization ;
+    rdfs:label "NSW Department of Climate Change, Energy, the Environment and Water" ;
+    schema:name "NSW Department of Climate Change, Energy, the Environment and Water" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Department_of_Climate_Change%2C_Energy%2C_the_Environment_and_Water_%28New_South_Wales%29> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0067dvq63> ;
+        rdfs:label "Government of New South Wales" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Predecessor" ;
+        org:member <https://ror.org/00067tc54> ;
+        rdfs:label "NSW Department of Planning and Environment" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00ck0kh03> ;
+        rdfs:label "NSW Environment and Heritage" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(151.20732 -33.86785)"^^geo:wktLiteral ;
+        schema:addressLocality "Sydney" ;
+    ] ;
+    schema:url <https://www.nsw.gov.au/departments-and-agencies/dcceew> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q124465960> ;
+             .

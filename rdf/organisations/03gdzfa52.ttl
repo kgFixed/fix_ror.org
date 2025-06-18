@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03gdzfa52> 
+    a org:Organization ;
+    rdfs:label "Seminario Arcivescovile di Milano" ;
+    schema:name "Seminario Arcivescovile di Milano" ;
+    schema:foundingDate "1564"^^xsd:gYear ;
+    schema:sameAs <https://it.wikipedia.org/wiki/Seminario_arcivescovile_di_Milano> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(8.89545 45.73569)"^^geo:wktLiteral ;
+        schema:addressLocality "Venegono Inferiore" ;
+    ] ;
+    schema:url <https://www.seminario.milano.it> ;
+    schema:sameAs <http://isni.org/isni/0000000121561307> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1470949> ;
+             .

@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0353n6963> 
+    a org:Organization ;
+    rdfs:label "Hospital São Lucas da PUCRS" ;
+    schema:name "Hospital São Lucas da PUCRS" ;
+    schema:foundingDate "1976"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/025vmq686> ;
+        rdfs:label "Pontifícia Universidade Católica do Rio Grande do Sul" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-51.23019 -30.03283)"^^geo:wktLiteral ;
+        schema:addressLocality "Porto Alegre" ;
+    ] ;
+    schema:url <http://www.hospitalsaolucas.pucrs.br/novo_site/index.php> ;
+    schema:sameAs <http://isni.org/isni/0000000121987041> ;
+             .

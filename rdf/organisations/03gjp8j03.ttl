@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03gjp8j03> 
+    a org:Organization ;
+    rdfs:label "Pratt & Miller (United States)" ;
+    schema:name "Pratt & Miller (United States)" ;
+    schema:foundingDate "1989"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Pratt_%26_Miller> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-83.53633 42.52476)"^^geo:wktLiteral ;
+        schema:addressLocality "Wixom" ;
+    ] ;
+    schema:url <https://prattmiller.com> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q2998151> ;
+             .

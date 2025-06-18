@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03h5v7z82> 
+    a org:Organization ;
+    rdfs:label "Connolly Hospital Blanchardstown" ;
+    schema:name "Connolly Hospital Blanchardstown" ;
+    schema:foundingDate "1955"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Connolly_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04zke5364> ;
+        rdfs:label "Health Service Executive" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04a1a1e81> ;
+        rdfs:label "Dublin City University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01hxy9878> ;
+        rdfs:label "Royal College of Surgeons in Ireland" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-6.24889 53.33306)"^^geo:wktLiteral ;
+        schema:addressLocality "Dublin" ;
+    ] ;
+    schema:url <http://www.hse.ie/eng/services/list/3/acutehospitals/hospitals/Connolly/> ;
+    schema:sameAs <http://isni.org/isni/0000000417943275> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5161992> ;
+             .

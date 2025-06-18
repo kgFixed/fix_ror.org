@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03hzyvt65> 
+    a org:Organization ;
+    rdfs:label "Universitas Pahlawan Tuanku Tambusai" ;
+    schema:name "Universitas Pahlawan Tuanku Tambusai" ;
+    schema:foundingDate "2017"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(101.02361 0.33833)"^^geo:wktLiteral ;
+        schema:addressLocality "Bangkinang" ;
+    ] ;
+    schema:url <https://universitaspahlawan.ac.id/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q52636219> ;
+             .

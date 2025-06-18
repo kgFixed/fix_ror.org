@@ -1,0 +1,20 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03dp8ay82> 
+    a org:Organization ;
+    rdfs:label "Chitungwiza Municipality" ;
+    schema:name "Chitungwiza Municipality" ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(31.07555 -18.01274)"^^geo:wktLiteral ;
+        schema:addressLocality "Chitungwiza" ;
+    ] ;
+    schema:url <http://www.chitungwiza.co.zw/> ;
+     .

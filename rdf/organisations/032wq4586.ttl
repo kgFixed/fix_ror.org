@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/032wq4586> 
+    a org:Organization ;
+    rdfs:label "Associazione Regionale Allevatori della Lombardia" ;
+    schema:name "Associazione Regionale Allevatori della Lombardia" ;
+    schema:foundingDate "1970"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(9.68176 45.36264)"^^geo:wktLiteral ;
+        schema:addressLocality "Crema" ;
+    ] ;
+    schema:url <http://www.aral.lom.it/> ;
+     .

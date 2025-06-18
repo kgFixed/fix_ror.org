@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03fs0qz59> 
+    a org:Organization ;
+    rdfs:label "Türksat (Turkey)" ;
+    schema:name "Türksat (Turkey)" ;
+    schema:foundingDate "1990"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/T%C3%BCrksat_(company)> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(32.80903 39.79043)"^^geo:wktLiteral ;
+        schema:addressLocality "Gölbaşı" ;
+    ] ;
+    schema:url <https://www.turksat.com.tr/en> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q12812126> ;
+             .

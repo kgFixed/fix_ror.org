@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03jms8710> 
+    a org:Organization ;
+    rdfs:label "Centre Gabriel Naudé" ;
+    schema:name "Centre Gabriel Naudé" ;
+    schema:foundingDate "1999"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/059qr5h87> ;
+        rdfs:label "École nationale supérieure des sciences de l'information et des bibliothèques" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(4.8795 45.76601)"^^geo:wktLiteral ;
+        schema:addressLocality "Villeurbanne" ;
+    ] ;
+    schema:url <https://cgn.enssib.fr> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q51780523> ;
+             .

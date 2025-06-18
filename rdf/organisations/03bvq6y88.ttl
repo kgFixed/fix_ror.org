@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03bvq6y88> 
+    a org:Organization ;
+    rdfs:label "Wagner College" ;
+    schema:name "Wagner College" ;
+    schema:foundingDate "1883"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Wagner_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-74.13986 40.56233)"^^geo:wktLiteral ;
+        schema:addressLocality "Staten Island" ;
+    ] ;
+    schema:url <http://wagner.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000104937966> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1605513> ;
+             .

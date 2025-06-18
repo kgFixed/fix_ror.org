@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/037w1y594> 
+    a org:Organization ;
+    rdfs:label "International Hospital of Bahrain" ;
+    schema:name "International Hospital of Bahrain" ;
+    schema:foundingDate "1978"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/International_Hospital_of_Bahrain> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(50.58565 26.22787)"^^geo:wktLiteral ;
+        schema:addressLocality "Manama" ;
+    ] ;
+    schema:url <http://www.ihb.net/> ;
+    schema:sameAs <http://isni.org/isni/000000040621312X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q12060763> ;
+             .

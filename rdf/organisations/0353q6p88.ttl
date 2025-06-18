@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0353q6p88> 
+    a org:Organization ;
+    rdfs:label "Sydney South West Area Health Service" ;
+    schema:name "Sydney South West Area Health Service" ;
+    schema:foundingDate "2005"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Sydney_South_West_Area_Health_Service> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(151.17642 -33.88965)"^^geo:wktLiteral ;
+        schema:addressLocality "Camperdown" ;
+    ] ;
+    schema:url <http://www.sswahs.nsw.gov.au/default.htm> ;
+    schema:sameAs <http://isni.org/isni/0000000405867041> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q17040242> ;
+             .

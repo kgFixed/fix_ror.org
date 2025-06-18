@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03hnyzp26> 
+    a org:Organization ;
+    rdfs:label "Fortune Brands Home and Security (United States)" ;
+    schema:name "Fortune Brands Home and Security (United States)" ;
+    schema:foundingDate "2011"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Fortune_Brands_Home_%26_Security> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-87.84451 42.17114)"^^geo:wktLiteral ;
+        schema:addressLocality "Deerfield" ;
+    ] ;
+    schema:url <https://www.fbhs.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000405188778> ;
+             .

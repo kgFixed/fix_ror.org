@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/039c0bt50> 
+    a org:Organization ;
+    rdfs:label "Fraunhofer Research Institution for Individualized and Cell-Based Medical Engineering" ;
+    schema:name "Fraunhofer Research Institution for Individualized and Cell-Based Medical Engineering" ;
+    schema:foundingDate "2008"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05hkkdn48> ;
+        rdfs:label "Fraunhofer Society" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(10.68729 53.86893)"^^geo:wktLiteral ;
+        schema:addressLocality "Lübeck" ;
+    ] ;
+    schema:url <https://www.imte.fraunhofer.de> ;
+    schema:sameAs <http://isni.org/isni/0000000404968481> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q17321716> ;
+             .

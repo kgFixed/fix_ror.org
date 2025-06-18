@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03d68c571> 
+    a org:Organization ;
+    rdfs:label "Penn State Altoona" ;
+    schema:name "Penn State Altoona" ;
+    schema:foundingDate "1939"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Penn_State_Altoona> ;
+    org:status "withdrawn" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/04p491231> ;
+        rdfs:label "Pennsylvania State University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-78.39474 40.51868)"^^geo:wktLiteral ;
+        schema:addressLocality "Altoona" ;
+    ] ;
+    schema:url <http://www.altoona.psu.edu/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q7163226> ;
+             .

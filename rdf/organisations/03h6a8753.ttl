@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03h6a8753> 
+    a org:Organization ;
+    rdfs:label "Education and Early Childhood Development" ;
+    schema:name "Education and Early Childhood Development" ;
+    schema:foundingDate "2010"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Department_of_Education_and_Early_Childhood_Development_(New_Brunswick)> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-66.66558 45.94541)"^^geo:wktLiteral ;
+        schema:addressLocality "Fredericton" ;
+    ] ;
+    schema:url <http://www2.gnb.ca/content/gnb/biling/eecd-edpe.html> ;
+     .

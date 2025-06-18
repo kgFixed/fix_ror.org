@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/033env547> 
+    a org:Organization ;
+    rdfs:label "Laskeek Bay Conservation Society" ;
+    schema:name "Laskeek Bay Conservation Society" ;
+    schema:foundingDate "1989"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-131.99069 53.26614)"^^geo:wktLiteral ;
+        schema:addressLocality "Skidegate" ;
+    ] ;
+    schema:url <http://www.laskeekbay.org/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30290573> ;
+             .

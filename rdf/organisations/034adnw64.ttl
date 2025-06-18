@@ -1,0 +1,53 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/034adnw64> 
+    a org:Organization ;
+    rdfs:label "Durham VA Medical Center" ;
+    schema:name "Durham VA Medical Center" ;
+    schema:foundingDate "1953"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02d29d188> ;
+        rdfs:label "Durham VA Health Care System" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/054w3nm73> ;
+        rdfs:label "VA Mid-Atlantic Health Care Network" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00py81415> ;
+        rdfs:label "Duke University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01vx35703> ;
+        rdfs:label "East Carolina University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0130frc33> ;
+        rdfs:label "University of North Carolina at Chapel Hill" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-78.89862 35.99403)"^^geo:wktLiteral ;
+        schema:addressLocality "Durham" ;
+    ] ;
+    schema:url <https://www.durham.va.gov/locations/directions.asp> ;
+    schema:sameAs <http://isni.org/isni/0000000404199846> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30253631> ;
+             .

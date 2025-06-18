@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/035fp5e48> 
+    a org:Organization ;
+    rdfs:label "Scientific Consulting Group" ;
+    schema:name "Scientific Consulting Group" ;
+    schema:foundingDate "1991"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.20137 39.14344)"^^geo:wktLiteral ;
+        schema:addressLocality "Gaithersburg" ;
+    ] ;
+    schema:url <http://www.scgcorp.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000090885359> ;
+             .

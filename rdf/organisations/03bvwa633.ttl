@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03bvwa633> 
+    a org:Organization ;
+    rdfs:label "Ibaraki National College of Technology" ;
+    schema:name "Ibaraki National College of Technology" ;
+    schema:foundingDate "1964"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(140.53479 36.39659)"^^geo:wktLiteral ;
+        schema:addressLocality "Hitachi-Naka" ;
+    ] ;
+    schema:url <http://www.ibaraki-ct.ac.jp/?page_id=942> ;
+    schema:sameAs <http://isni.org/isni/0000000087056146> ;
+             .

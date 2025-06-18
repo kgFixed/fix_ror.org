@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03h41b845> 
+    a org:Organization ;
+    rdfs:label "Royal Shakespeare Company (United Kingdom)" ;
+    schema:name "Royal Shakespeare Company (United Kingdom)" ;
+    schema:foundingDate "1875"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Royal_Shakespeare_Company> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.70734 52.19166)"^^geo:wktLiteral ;
+        schema:addressLocality "Stratford-upon-Avon" ;
+    ] ;
+    schema:url <https://www.rsc.org.uk> ;
+    schema:sameAs <http://isni.org/isni/0000000110343574> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1146254> ;
+             .

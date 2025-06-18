@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/037gpje79> 
+    a org:Organization ;
+    rdfs:label "Colleges of Medicine of South Africa" ;
+    schema:name "Colleges of Medicine of South Africa" ;
+    schema:foundingDate "1954"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Colleges_of_Medicine_of_South_Africa> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(18.47639 -33.96333)"^^geo:wktLiteral ;
+        schema:addressLocality "Rondebosch" ;
+    ] ;
+    schema:url <http://www.collegemedsa.ac.za/> ;
+    schema:sameAs <http://isni.org/isni/0000000404355976> ;
+             .

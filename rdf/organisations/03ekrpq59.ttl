@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03ekrpq59> 
+    a org:Organization ;
+    rdfs:label "Dubai International Financial Centre" ;
+    schema:name "Dubai International Financial Centre" ;
+    schema:foundingDate "2002"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Dubai_International_Financial_Centre> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(55.30927 25.07725)"^^geo:wktLiteral ;
+        schema:addressLocality "Dubai" ;
+    ] ;
+    schema:url <https://www.difc.ae/> ;
+    schema:sameAs <http://isni.org/isni/000000009533701X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3269086> ;
+             .

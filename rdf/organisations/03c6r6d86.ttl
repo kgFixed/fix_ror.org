@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03c6r6d86> 
+    a org:Organization ;
+    rdfs:label "Escuela Campo Alegre" ;
+    schema:name "Escuela Campo Alegre" ;
+    schema:foundingDate "1937"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Escuela_Campo_Alegre> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-66.87919 10.48801)"^^geo:wktLiteral ;
+        schema:addressLocality "Caracas" ;
+    ] ;
+    schema:url <https://www.ecak12.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000404267984> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q10274757> ;
+             .

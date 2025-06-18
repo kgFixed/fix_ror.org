@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03cyvdv85> 
+    a org:Organization ;
+    rdfs:label "First Affiliated Hospital of Wenzhou Medical University" ;
+    schema:name "First Affiliated Hospital of Wenzhou Medical University" ;
+    schema:foundingDate "1919"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/The_1st_Affiliated_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00rd5t069> ;
+        rdfs:label "Wenzhou Medical University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(120.66682 27.99942)"^^geo:wktLiteral ;
+        schema:addressLocality "Wenzhou" ;
+    ] ;
+    schema:url <http://www.hosp1.ac.cn/wyyy/web/home/default.aspx> ;
+    schema:sameAs <http://isni.org/isni/0000000418080918> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7711812> ;
+             .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03d3pnq21> 
+    a org:Organization ;
+    rdfs:label "Christendom College" ;
+    schema:name "Christendom College" ;
+    schema:foundingDate "1977"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Christendom_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-78.19444 38.91817)"^^geo:wktLiteral ;
+        schema:addressLocality "Front Royal" ;
+    ] ;
+    schema:url <http://www.christendom.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000110880361> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q737940> ;
+             .

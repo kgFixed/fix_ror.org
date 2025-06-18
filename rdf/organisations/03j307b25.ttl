@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03j307b25> 
+    a org:Organization ;
+    rdfs:label "Observatoire de Lyon" ;
+    schema:name "Observatoire de Lyon" ;
+    schema:foundingDate "1878"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Lyon_Observatory> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04kdfz702> ;
+        rdfs:label "Institut National des Sciences de l'Univers" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/029brtt94> ;
+        rdfs:label "Université Claude Bernard Lyon 1" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04zmssz18> ;
+        rdfs:label "École Normale Supérieure de Lyon" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(4.84671 45.74846)"^^geo:wktLiteral ;
+        schema:addressLocality "Lyon" ;
+    ] ;
+    schema:url <http://observatoire.univ-lyon1.fr/> ;
+    schema:sameAs <http://isni.org/isni/0000000115079856> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3348374> ;
+             .

@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03fef0h61> 
+    a org:Organization ;
+    rdfs:label "Luminex (United States)" ;
+    schema:name "Luminex (United States)" ;
+    schema:foundingDate "1995"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Luminex_Corporation> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02f1dqm79> ;
+        rdfs:label "Luminex (Canada)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-97.74306 30.26715)"^^geo:wktLiteral ;
+        schema:addressLocality "Austin" ;
+    ] ;
+    schema:url <https://www.luminexcorp.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000404101036> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6703279> ;
+             .

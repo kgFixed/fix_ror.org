@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03a4d8673> 
+    a org:Organization ;
+    rdfs:label "Escola Superior de Educação de Paula Frassinetti" ;
+    schema:name "Escola Superior de Educação de Paula Frassinetti" ;
+    schema:foundingDate "1963"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05c68ap48> ;
+        rdfs:label "Centro de Investigação Paula Frassinetti" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-8.61099 41.14961)"^^geo:wktLiteral ;
+        schema:addressLocality "Porto" ;
+    ] ;
+    schema:url <http://www.esepf.pt/> ;
+    schema:sameAs <http://isni.org/isni/000000009919508X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30253882> ;
+             .

@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/037695w38> 
+    a org:Organization ;
+    rdfs:label "National Association for Black Veterans" ;
+    schema:name "National Association for Black Veterans" ;
+    schema:foundingDate "1812"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/National_Association_for_Black_Veterans> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-78.87836 35.05266)"^^geo:wktLiteral ;
+        schema:addressLocality "Fayetteville" ;
+    ] ;
+    schema:url <https://nabvets.org> ;
+     .

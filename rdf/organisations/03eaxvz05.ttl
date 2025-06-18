@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03eaxvz05> 
+    a org:Organization ;
+    rdfs:label "Institute of Applied Physics" ;
+    schema:name "Institute of Applied Physics" ;
+    schema:foundingDate "1964"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01w01n720> ;
+        rdfs:label "Academy of Sciences of Moldova" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(28.8575 47.00556)"^^geo:wktLiteral ;
+        schema:addressLocality "Chisinau" ;
+    ] ;
+    schema:url <http://www.phys.asm.md/en> ;
+     .

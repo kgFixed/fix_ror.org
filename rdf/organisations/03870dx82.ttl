@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03870dx82> 
+    a org:Organization ;
+    rdfs:label "Alisher Navo'i Tashkent State University of Uzbek Language and Literature" ;
+    schema:name "Alisher Navo'i Tashkent State University of Uzbek Language and Literature" ;
+    schema:foundingDate "2016"^^xsd:gYear ;
+    schema:sameAs <https://uz.wikipedia.org/wiki/Toshkent_davlat_o%CA%BBzbek_tili_va_adabiyoti_universiteti> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(69.21627 41.26465)"^^geo:wktLiteral ;
+        schema:addressLocality "Tashkent" ;
+    ] ;
+    schema:url <https://tsuull.uz> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q28006255> ;
+             .

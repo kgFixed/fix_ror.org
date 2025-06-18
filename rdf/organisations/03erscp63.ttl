@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03erscp63> 
+    a org:Organization ;
+    rdfs:label "Heidelberger Druckmaschinen (Germany)" ;
+    schema:name "Heidelberger Druckmaschinen (Germany)" ;
+    schema:foundingDate "1850"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Heidelberger_Druckmaschinen> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(8.69079 49.40768)"^^geo:wktLiteral ;
+        schema:addressLocality "Heidelberg" ;
+    ] ;
+    schema:url <https://www.heidelberg.com/global/en/index.jsp> ;
+    schema:sameAs <http://isni.org/isni/0000000088357733> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q697106> ;
+             .

@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03jpj9789> 
+    a org:Organization ;
+    rdfs:label "Glan Clwyd Hospital" ;
+    schema:name "Glan Clwyd Hospital" ;
+    schema:foundingDate "1980"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Glan_Clwyd_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03awsb125> ;
+        rdfs:label "Betsi Cadwaladr University Health Board" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-3.49228 53.31929)"^^geo:wktLiteral ;
+        schema:addressLocality "Rhyl" ;
+    ] ;
+    schema:url <https://bcuhb.nhs.wales/patients-and-visitors/hospitals-and-health-centres/glan-clwyd-hospital/> ;
+    schema:sameAs <http://isni.org/isni/0000000098315916> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q20713687> ;
+             .

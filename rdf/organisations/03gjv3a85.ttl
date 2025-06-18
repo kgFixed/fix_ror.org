@@ -1,0 +1,26 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03gjv3a85> 
+    a org:Organization ;
+    rdfs:label "State Key Laboratory of Laser Technology" ;
+    schema:name "State Key Laboratory of Laser Technology" ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00p991c53> ;
+        rdfs:label "Huazhong University of Science and Technology" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(112.25 31)"^^geo:wktLiteral ;
+        schema:addressLocality "Hubei" ;
+    ] ;
+    schema:url <http://www.laserlab.hust.edu.cn> ;
+     .

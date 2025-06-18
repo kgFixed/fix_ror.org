@@ -1,0 +1,52 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/034c6s521> 
+    a org:Organization ;
+    rdfs:label "Amarillo VA Health Care System" ;
+    schema:name "Amarillo VA Health Care System" ;
+    schema:foundingDate "1940"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0527v1v90> ;
+        rdfs:label "VA Heart of Texas Health Care Network" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/003frhn24> ;
+        rdfs:label "Amarillo College" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01z7kzb45> ;
+        rdfs:label "Northeastern State University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/033ztpr93> ;
+        rdfs:label "Texas Tech University Health Sciences Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04gnp7x40> ;
+        rdfs:label "West Texas A&M University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-101.8313 35.222)"^^geo:wktLiteral ;
+        schema:addressLocality "Amarillo" ;
+    ] ;
+    schema:url <http://www.amarillo.va.gov/> ;
+    schema:sameAs <http://isni.org/isni/0000000404205126> ;
+             .

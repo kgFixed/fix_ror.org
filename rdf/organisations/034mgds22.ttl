@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/034mgds22> 
+    a org:Organization ;
+    rdfs:label "Siberian State University of Water Transport" ;
+    schema:name "Siberian State University of Water Transport" ;
+    schema:foundingDate "1951"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(82.9346 55.0415)"^^geo:wktLiteral ;
+        schema:addressLocality "Novosibirsk" ;
+    ] ;
+    schema:url <http://www.ssuwt.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30257326> ;
+             .

@@ -1,0 +1,49 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/036x6gt55> 
+    a org:Organization ;
+    rdfs:label "North Bristol NHS Trust" ;
+    schema:name "North Bristol NHS Trust" ;
+    schema:foundingDate "2014"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/North_Bristol_NHS_Trust> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04ny9jk61> ;
+        rdfs:label "Clevedon Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04e0p7290> ;
+        rdfs:label "Cossham Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03z8x2j90> ;
+        rdfs:label "Frenchay Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05d576879> ;
+        rdfs:label "Southmead Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-2.59665 51.45523)"^^geo:wktLiteral ;
+        schema:addressLocality "Bristol" ;
+    ] ;
+    schema:url <http://www.nbt.nhs.uk/> ;
+    schema:sameAs <http://isni.org/isni/0000000403807221> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7054285> ;
+             .

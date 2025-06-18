@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0378cd528> 
+    a org:Organization ;
+    rdfs:label "Institute for Cognitive Science Studies" ;
+    schema:name "Institute for Cognitive Science Studies" ;
+    schema:foundingDate "1998"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Institute_for_Cognitive_Science_Studies> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(51.42151 35.69439)"^^geo:wktLiteral ;
+        schema:addressLocality "Tehran" ;
+    ] ;
+    schema:url <http://www.iricss.org/en/Pages/default.htm> ;
+    schema:sameAs <http://isni.org/isni/0000000403824515> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q10860432> ;
+             .

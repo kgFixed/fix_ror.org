@@ -1,0 +1,121 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03df8gj37> 
+    a org:Organization ;
+    rdfs:label "Defense Health Agency" ;
+    schema:name "Defense Health Agency" ;
+    schema:foundingDate "2013"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Defense_Health_Agency> ;
+    org:status "active" ;
+    org:classification "Funder" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03b7pda13> ;
+        rdfs:label "Military Health System" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05xde4j27> ;
+        rdfs:label "United States Naval Hospital Okinawa" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02n14ez29> ;
+        rdfs:label "Naval Medical Center San Diego" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04vxq1969> ;
+        rdfs:label "Naval Medical Center Portsmouth" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0278h4n28> ;
+        rdfs:label "Naval Hospital Bremerton" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00ajwxp03> ;
+        rdfs:label "Womack Army Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/025cem651> ;
+        rdfs:label "Walter Reed National Military Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05p4q8207> ;
+        rdfs:label "Tripler Army Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00m1mwc36> ;
+        rdfs:label "Brooke Army Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02157xr58> ;
+        rdfs:label "Naval Hospital Pensacola" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0421f6a14> ;
+        rdfs:label "Naval Hospital Jacksonville" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04ydm6t76> ;
+        rdfs:label "Malcolm Grow Medical Clinic" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01sfyq865> ;
+        rdfs:label "Madigan Army Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02knc1802> ;
+        rdfs:label "Alexander T. Augusta Military Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05ya3ee02> ;
+        rdfs:label "David Grant USAF Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02zda6x08> ;
+        rdfs:label "Carl R. Darnall Army Medical Center" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.17109 38.88233)"^^geo:wktLiteral ;
+        schema:addressLocality "Falls Church" ;
+    ] ;
+    schema:url <https://www.health.mil/About-MHS/OASDHA/Defense-Health-Agency> ;
+    schema:sameAs <http://isni.org/isni/0000000459982926> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q16829238> ;
+             .

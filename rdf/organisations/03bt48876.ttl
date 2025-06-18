@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03bt48876> 
+    a org:Organization ;
+    rdfs:label "Yantaishan Hospital" ;
+    schema:name "Yantaishan Hospital" ;
+    schema:foundingDate "1860"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(121.44081 37.47649)"^^geo:wktLiteral ;
+        schema:addressLocality "Yantai" ;
+    ] ;
+    schema:url <http://www.ytsyy.com/> ;
+    schema:sameAs <http://isni.org/isni/000000047641244X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30296506> ;
+             .

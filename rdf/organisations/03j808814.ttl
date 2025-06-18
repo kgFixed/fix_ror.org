@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03j808814> 
+    a org:Organization ;
+    rdfs:label "Hokkaido Central Hospital" ;
+    schema:name "Hokkaido Central Hospital" ;
+    schema:foundingDate "1948"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03q11y497> ;
+        rdfs:label "Japan Community Healthcare Organization" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(141.35 43.06667)"^^geo:wktLiteral ;
+        schema:addressLocality "Sapporo" ;
+    ] ;
+    schema:url <http://mypage.fukanavi.com/central/> ;
+     .

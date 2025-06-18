@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/039w8qr24> 
+    a org:Organization ;
+    rdfs:label "North Bengal University" ;
+    schema:name "North Bengal University" ;
+    schema:foundingDate "1962"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/University_of_North_Bengal> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(88.42851 26.71004)"^^geo:wktLiteral ;
+        schema:addressLocality "Siliguri" ;
+    ] ;
+    schema:url <http://www.nbu.ac.in/> ;
+    schema:sameAs <http://isni.org/isni/0000000111885260> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2342183> ;
+             .

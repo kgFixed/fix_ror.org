@@ -1,0 +1,20 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03jbr4b58> 
+    a org:Organization ;
+    rdfs:label "Munktell Science Park (Sweden)" ;
+    schema:name "Munktell Science Park (Sweden)" ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(16.5077 59.36661)"^^geo:wktLiteral ;
+        schema:addressLocality "Eskilstuna" ;
+    ] ;
+    schema:url <http://www.munktellsciencepark.se/> ;
+     .

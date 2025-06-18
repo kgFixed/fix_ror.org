@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/039m3s961> 
+    a org:Organization ;
+    rdfs:label "Micron (Italy)" ;
+    schema:name "Micron (Italy)" ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02fv52296> ;
+        rdfs:label "Micron (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(9.34793 45.57431)"^^geo:wktLiteral ;
+        schema:addressLocality "Agrate Brianza" ;
+    ] ;
+    schema:url <https://www.micron.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30285067> ;
+             .

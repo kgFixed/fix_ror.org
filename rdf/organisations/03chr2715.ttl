@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03chr2715> 
+    a org:Organization ;
+    rdfs:label "Colorado Geological Survey" ;
+    schema:name "Colorado Geological Survey" ;
+    schema:foundingDate "1969"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04raf6v53> ;
+        rdfs:label "Colorado School of Mines" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-105.2211 39.75554)"^^geo:wktLiteral ;
+        schema:addressLocality "Golden" ;
+    ] ;
+    schema:url <https://coloradogeologicalsurvey.org> ;
+     .

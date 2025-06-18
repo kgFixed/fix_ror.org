@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03fk15c97> 
+    a org:Organization ;
+    rdfs:label "Itaconix (United Kingdom)" ;
+    schema:name "Itaconix (United Kingdom)" ;
+    schema:foundingDate "2008"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-3.03841 53.20053)"^^geo:wktLiteral ;
+        schema:addressLocality "Deeside" ;
+    ] ;
+    schema:url <http://itaconix.com/> ;
+     .

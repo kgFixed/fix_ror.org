@@ -1,0 +1,156 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03e8tm275> 
+    a org:Organization ;
+    rdfs:label "Shriners Hospitals for Children" ;
+    schema:name "Shriners Hospitals for Children" ;
+    schema:foundingDate "1922"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Shriners_Hospitals_for_Children> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02g397b52> ;
+        rdfs:label "Shriners Hospitals for Children - Boston" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01z1dtf94> ;
+        rdfs:label "Shriners Hospitals for Children - Canada" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/033fn9j44> ;
+        rdfs:label "Shriners Hospitals for Children - Chicago" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01aeq1t78> ;
+        rdfs:label "Shriners Hospitals for Children - Cincinnati" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02gffk937> ;
+        rdfs:label "Shriners Hospitals for Children - Erie" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01v95tx09> ;
+        rdfs:label "Shriners Hospitals for Children - Galveston" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00trhvv58> ;
+        rdfs:label "Shriners Hospitals for Children - Greenville" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03jg6sy07> ;
+        rdfs:label "Shriners Hospitals for Children - Honolulu" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/037dvnz29> ;
+        rdfs:label "Shriners Hospitals for Children - Houston" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01450df76> ;
+        rdfs:label "Shriners Hospitals for Children - Mexico" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01dmyj570> ;
+        rdfs:label "Shriners Hospitals for Children - Northern California" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/036z11b33> ;
+        rdfs:label "Shriners Hospitals for Children - Philadelphia" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00snwj435> ;
+        rdfs:label "Shriners Hospitals for Children - Portland" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04zzepa29> ;
+        rdfs:label "Shriners Hospitals for Children - Salt Lake City" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00z9sw951> ;
+        rdfs:label "Shriners Hospitals for Children - Shreveport" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01t6qh616> ;
+        rdfs:label "Shriners Hospitals for Children - Spokane" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00w824191> ;
+        rdfs:label "Shriners Hospitals for Children - Springfield" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/049mpkx27> ;
+        rdfs:label "Shriners Hospitals for Children - St. Louis" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02w8sz675> ;
+        rdfs:label "Shriners Hospitals for Children - Tampa" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02qvjf193> ;
+        rdfs:label "Shriners Hospitals for Children - Twin Cities" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05k7z2b58> ;
+        rdfs:label "Shriners Hospitals for Children Medical Center - Lexington" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03pjgt842> ;
+        rdfs:label "Shriners for Children Medical Center - Pasadena" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-82.45843 27.94752)"^^geo:wktLiteral ;
+        schema:addressLocality "Tampa" ;
+    ] ;
+    schema:url <https://www.shrinershospitalsforchildren.org/shc> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q7504109> ;
+             .

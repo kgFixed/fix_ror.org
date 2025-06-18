@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03gk81f96> 
+    a org:Organization ;
+    rdfs:label "Kaohsiung Medical University" ;
+    schema:name "Kaohsiung Medical University" ;
+    schema:foundingDate "1954"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Kaohsiung_Medical_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02xmkec90> ;
+        rdfs:label "Kaohsiung Medical University Chung-Ho Memorial Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04gn22j10> ;
+        rdfs:label "Kaohsiung Municipal Hsiao-Kang Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(120.31333 22.61626)"^^geo:wktLiteral ;
+        schema:addressLocality "Kaohsiung" ;
+    ] ;
+    schema:url <http://english2.kmu.edu.tw/front/bin/home.phtml> ;
+    schema:sameAs <http://isni.org/isni/0000000094765696> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q700801> ;
+             .

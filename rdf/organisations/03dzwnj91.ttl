@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03dzwnj91> 
+    a org:Organization ;
+    rdfs:label "Society for the Improvement of Psychological Science" ;
+    schema:name "Society for the Improvement of Psychological Science" ;
+    schema:foundingDate "2016"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Society_for_the_Improvement_of_Psychological_Science> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-80.41394 37.22957)"^^geo:wktLiteral ;
+        schema:addressLocality "Blacksburg" ;
+    ] ;
+    schema:url <https://improvingpsych.org> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q55648638> ;
+             .

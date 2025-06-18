@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03dhrm424> 
+    a org:Organization ;
+    rdfs:label "Mercy College of Health Sciences" ;
+    schema:name "Mercy College of Health Sciences" ;
+    schema:foundingDate "1899"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Mercy_College_of_Health_Sciences> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-93.60911 41.60054)"^^geo:wktLiteral ;
+        schema:addressLocality "Des Moines" ;
+    ] ;
+    schema:url <http://www.mchs.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000403955822> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q17010017> ;
+             .

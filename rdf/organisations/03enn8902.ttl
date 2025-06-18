@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03enn8902> 
+    a org:Organization ;
+    rdfs:label "Northeast Mississippi Community College" ;
+    schema:name "Northeast Mississippi Community College" ;
+    schema:foundingDate "1948"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Northeast_Mississippi_Community_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-88.56672 34.65815)"^^geo:wktLiteral ;
+        schema:addressLocality "Booneville" ;
+    ] ;
+    schema:url <http://www.nemcc.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000095696725> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7057941> ;
+             .

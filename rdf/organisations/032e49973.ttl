@@ -1,0 +1,90 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/032e49973> 
+    a org:Organization ;
+    rdfs:label "Ministry of Science ICT and Future Planning" ;
+    schema:name "Ministry of Science ICT and Future Planning" ;
+    schema:foundingDate "2013"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Ministry_of_Science,_ICT_and_Future_Planning> ;
+    org:status "inactive" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03tjeg502> ;
+        rdfs:label "Center for Advanced Soft Electronics" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04r6shn89> ;
+        rdfs:label "Central Radio Management Service" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01g0hqq23> ;
+        rdfs:label "Institute for Information and Communications Technology Promotion" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/047v1x836> ;
+        rdfs:label "Korea Carbon Capture & Sequestration R&D Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/020r4p198> ;
+        rdfs:label "Korea Education and Research Information Service" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04hmt0j25> ;
+        rdfs:label "Korea Foundation for Max Planck POSTECH" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02ntw5v16> ;
+        rdfs:label "Korea Information & Communication Contractors Association" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01qcq9d74> ;
+        rdfs:label "Korea Institute of Machinery and Materials" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00p45d091> ;
+        rdfs:label "Korea Post" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/019xm3p48> ;
+        rdfs:label "Government of the Republic of Korea" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/01wpjm123> ;
+        rdfs:label "Ministry of Science and ICT" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(126.92694 37.3925)"^^geo:wktLiteral ;
+        schema:addressLocality "Anyang-si" ;
+    ] ;
+    schema:url <http://english.msip.go.kr/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q482761> ;
+             .

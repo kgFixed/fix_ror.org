@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03j6dmn04> 
+    a org:Organization ;
+    rdfs:label "MSP (Poland)" ;
+    schema:name "MSP (Poland)" ;
+    schema:foundingDate "1996"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(18.75727 49.86964)"^^geo:wktLiteral ;
+        schema:addressLocality "Drogomyśl" ;
+    ] ;
+    schema:url <http://www.uav.com.pl/index_eng.html> ;
+     .

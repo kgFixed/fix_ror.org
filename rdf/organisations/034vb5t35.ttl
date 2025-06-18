@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/034vb5t35> 
+    a org:Organization ;
+    rdfs:label "Royal Marsden Hospital" ;
+    schema:name "Royal Marsden Hospital" ;
+    schema:foundingDate "1851"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Royal_Marsden_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/058ne9w36> ;
+        rdfs:label "Royal Marsden Cancer Charity" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0008wzh48> ;
+        rdfs:label "Royal Marsden NHS Foundation Trust" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/041kmwe10> ;
+        rdfs:label "Imperial College London" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/043jzw605> ;
+        rdfs:label "Institute of Cancer Research" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04cw6st05> ;
+        rdfs:label "University of London" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.12574 51.50853)"^^geo:wktLiteral ;
+        schema:addressLocality "London" ;
+    ] ;
+    schema:url <http://www.nhs.uk/Services/hospitals/Overview/DefaultView.aspx?id=1416> ;
+    schema:sameAs <http://isni.org/isni/0000000404170461> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q50575536> ;
+             .

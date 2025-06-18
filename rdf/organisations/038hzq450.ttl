@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/038hzq450> 
+    a org:Organization ;
+    rdfs:label "Xinxiang Medical University" ;
+    schema:name "Xinxiang Medical University" ;
+    schema:foundingDate "1950"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Xinxiang_Medical_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/006zn6z18> ;
+        rdfs:label "Xinxiang Central Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(113.80151 35.19033)"^^geo:wktLiteral ;
+        schema:addressLocality "Xinxiang" ;
+    ] ;
+    schema:url <https://www.xxmu.edu.cn> ;
+    schema:sameAs <http://isni.org/isni/000000041808322X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q8044666> ;
+             .

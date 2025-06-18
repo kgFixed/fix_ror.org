@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03jbq7a32> 
+    a org:Organization ;
+    rdfs:label "Austrian Federal Railways" ;
+    schema:name "Austrian Federal Railways" ;
+    schema:foundingDate "1923"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Austrian_Federal_Railways> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(16.37208 48.20849)"^^geo:wktLiteral ;
+        schema:addressLocality "Vienna" ;
+    ] ;
+    schema:url <http://www.oebb.at/en/index.jsp> ;
+    schema:sameAs <http://isni.org/isni/0000000095159807> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q83822> ;
+             .

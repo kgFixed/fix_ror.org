@@ -1,0 +1,48 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03jc1ps31> 
+    a org:Organization ;
+    rdfs:label "Exide Technologies (United States)" ;
+    schema:name "Exide Technologies (United States)" ;
+    schema:foundingDate "1888"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Exide> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04kxasy49> ;
+        rdfs:label "Exide Technologies (France)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05fsqxg82> ;
+        rdfs:label "Exide Technologies (Germany)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00w3cxa42> ;
+        rdfs:label "Exide Technologies (Spain)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0213syy24> ;
+        rdfs:label "Exide Technologies (United Kingdom)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-84.30067 34.13216)"^^geo:wktLiteral ;
+        schema:addressLocality "Milton" ;
+    ] ;
+    schema:url <http://www.exide.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000459955944> ;
+             .

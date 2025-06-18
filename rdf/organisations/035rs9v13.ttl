@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/035rs9v13> 
+    a org:Organization ;
+    rdfs:label "Second Affiliated Hospital of Shantou University Medical College" ;
+    schema:name "Second Affiliated Hospital of Shantou University Medical College" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02gxych78> ;
+        rdfs:label "Shantou University Medical College" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(116.67876 23.35489)"^^geo:wktLiteral ;
+        schema:addressLocality "Shantou" ;
+    ] ;
+    schema:url <http://www.st120.cn/> ;
+    schema:sameAs <http://isni.org/isni/0000000417981271> ;
+             .

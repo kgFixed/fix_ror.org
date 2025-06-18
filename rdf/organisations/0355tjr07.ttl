@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0355tjr07> 
+    a org:Organization ;
+    rdfs:label "Hôpital Maritime de Berck" ;
+    schema:name "Hôpital Maritime de Berck" ;
+    schema:foundingDate "1861"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00pg5jh14> ;
+        rdfs:label "Assistance Publique – Hôpitaux de Paris" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(1.6 50.4)"^^geo:wktLiteral ;
+        schema:addressLocality "Berck" ;
+    ] ;
+    schema:url <http://maritimeberck.aphp.fr/> ;
+    schema:sameAs <http://isni.org/isni/0000000417993483> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3145347> ;
+             .

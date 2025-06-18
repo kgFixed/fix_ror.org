@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03dm7dd93> 
+    a org:Organization ;
+    rdfs:label "Austrian Centre of Industrial Biotechnology (Austria)" ;
+    schema:name "Austrian Centre of Industrial Biotechnology (Austria)" ;
+    schema:foundingDate "2010"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(15.45 47.06667)"^^geo:wktLiteral ;
+        schema:addressLocality "Graz" ;
+    ] ;
+    schema:url <https://www.acib.at> ;
+    schema:sameAs <http://isni.org/isni/0000000405914434> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30254974> ;
+             .

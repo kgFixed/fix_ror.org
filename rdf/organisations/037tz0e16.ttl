@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/037tz0e16> 
+    a org:Organization ;
+    rdfs:label "London Health Sciences Centre" ;
+    schema:name "London Health Sciences Centre" ;
+    schema:foundingDate "1995"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/London_Health_Sciences_Centre> ;
+    org:status "active" ;
+    org:classification "Funder" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04v84zt52> ;
+        rdfs:label "Children's Hospital of Western Ontario" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00r664k32> ;
+        rdfs:label "University Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/014tg6596> ;
+        rdfs:label "Victoria Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02grkyz14> ;
+        rdfs:label "Western University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04m7cgp86> ;
+        rdfs:label "London Health Sciences Centre Research Institute" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-81.23304 42.98339)"^^geo:wktLiteral ;
+        schema:addressLocality "London" ;
+    ] ;
+    schema:url <http://www.lhsc.on.ca/> ;
+    schema:sameAs <http://isni.org/isni/0000000091321600> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6670463> ;
+             .

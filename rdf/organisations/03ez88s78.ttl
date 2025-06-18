@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03ez88s78> 
+    a org:Organization ;
+    rdfs:label "Sup de Co Marrakech" ;
+    schema:name "Sup de Co Marrakech" ;
+    schema:foundingDate "1987"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Sup_de_Co_Marrakech> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-7.99994 31.63416)"^^geo:wktLiteral ;
+        schema:addressLocality "Marrakesh" ;
+    ] ;
+    schema:url <https://supdeco.ma/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q3578437> ;
+             .

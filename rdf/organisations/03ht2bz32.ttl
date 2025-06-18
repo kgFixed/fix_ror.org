@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03ht2bz32> 
+    a org:Organization ;
+    rdfs:label "Institute of Medical Sciences and Sum Hospital" ;
+    schema:name "Institute of Medical Sciences and Sum Hospital" ;
+    schema:foundingDate "2007"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Institute_of_Medical_Sciences_and_Sum_Hospital> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/056ep7w45> ;
+        rdfs:label "Siksha O Anusandhan University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(85.83385 20.27241)"^^geo:wktLiteral ;
+        schema:addressLocality "Bhubaneswar" ;
+    ] ;
+    schema:url <http://soauniversity.ac.in/> ;
+    schema:sameAs <http://isni.org/isni/0000000459024955> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q16958268> ;
+             .

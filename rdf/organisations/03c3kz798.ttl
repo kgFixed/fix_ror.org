@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03c3kz798> 
+    a org:Organization ;
+    rdfs:label "ATECA - Applications Technologie Avancée" ;
+    schema:name "ATECA - Applications Technologie Avancée" ;
+    schema:foundingDate "1981"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(1.3542 44.01759)"^^geo:wktLiteral ;
+        schema:addressLocality "Montauban" ;
+    ] ;
+    schema:url <http://www.ateca-fr.com/> ;
+     .

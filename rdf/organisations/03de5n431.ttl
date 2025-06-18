@@ -1,0 +1,41 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03de5n431> 
+    a org:Organization ;
+    rdfs:label "Scientific Games (United States)" ;
+    schema:name "Scientific Games (United States)" ;
+    schema:foundingDate "1973"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Scientific_Games_Corporation> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03f5vkk69> ;
+        rdfs:label "Scientific Games (Australia)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/057b93w27> ;
+        rdfs:label "Scientific Games (Austria)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00xpxz171> ;
+        rdfs:label "Scientific Games (United Kingdom)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-115.24194 36.02525)"^^geo:wktLiteral ;
+        schema:addressLocality "Enterprise" ;
+    ] ;
+    schema:url <http://scientificgames.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q7433758> ;
+             .

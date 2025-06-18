@@ -1,0 +1,41 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03cwzta72> 
+    a org:Organization ;
+    rdfs:label "Direction des énergies" ;
+    schema:name "Direction des énergies" ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01rs1gy10> ;
+        rdfs:label "CEA Cadarache" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04140y156> ;
+        rdfs:label "CEA Marcoule" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00jjx8s55> ;
+        rdfs:label "Commissariat à l'Énergie Atomique et aux Énergies Alternatives" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.13333 48.68333)"^^geo:wktLiteral ;
+        schema:addressLocality "Gif-sur-Yvette" ;
+    ] ;
+    schema:url <https://www.cea.fr/Pages/domaines-recherche/energies.aspx> ;
+    schema:sameAs <http://isni.org/isni/0000000121804137> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30299415> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q121913443> ;
+             .

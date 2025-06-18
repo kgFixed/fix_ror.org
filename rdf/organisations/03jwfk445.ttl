@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03jwfk445> 
+    a org:Organization ;
+    rdfs:label "IUCN Commission on Environmental, Economic and Social Policy" ;
+    schema:name "IUCN Commission on Environmental, Economic and Social Policy" ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04tehfn33> ;
+        rdfs:label "International Union for Conservation of Nature" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(6.2701 46.42082)"^^geo:wktLiteral ;
+        schema:addressLocality "Gland" ;
+    ] ;
+    schema:url <https://iucn.org/our-union/commissions/commission-environmental-economic-and-social-policy> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q122733793> ;
+             .

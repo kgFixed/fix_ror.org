@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03dtebk39> 
+    a org:Organization ;
+    rdfs:label "National Observatory of Athens" ;
+    schema:name "National Observatory of Athens" ;
+    schema:foundingDate "1842"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/National_Observatory_of_Athens> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(23.72784 37.98376)"^^geo:wktLiteral ;
+        schema:addressLocality "Athens" ;
+    ] ;
+    schema:url <https://www.noa.gr> ;
+    schema:sameAs <http://isni.org/isni/000000040635693X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1816405> ;
+             .

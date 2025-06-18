@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/039wqxn34> 
+    a org:Organization ;
+    rdfs:label "Cherkasy Institute of Fire Safety named after Chornobyl Heroes of National University of Civil Defence of Ukraine" ;
+    schema:name "Cherkasy Institute of Fire Safety named after Chornobyl Heroes of National University of Civil Defence of Ukraine" ;
+    schema:foundingDate "1973"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(32.05738 49.44452)"^^geo:wktLiteral ;
+        schema:addressLocality "Cherkasy" ;
+    ] ;
+    schema:url <http://fire.ck.ua/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30257332> ;
+             .

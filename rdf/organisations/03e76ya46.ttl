@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03e76ya46> 
+    a org:Organization ;
+    rdfs:label "Max Planck Institute for Biophysical Chemistry" ;
+    schema:name "Max Planck Institute for Biophysical Chemistry" ;
+    schema:foundingDate "1971"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Max_Planck_Institute_for_Biophysical_Chemistry> ;
+    org:status "inactive" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01hhn8329> ;
+        rdfs:label "Max Planck Society" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/03av75f26> ;
+        rdfs:label "Max Planck Institute for Multidisciplinary Sciences" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(9.93228 51.53443)"^^geo:wktLiteral ;
+        schema:addressLocality "Göttingen" ;
+    ] ;
+    schema:url <http://www.mpibpc.mpg.de/en> ;
+    schema:sameAs <http://isni.org/isni/0000000121044211> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q836125> ;
+             .

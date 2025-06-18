@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0398xj847> 
+    a org:Organization ;
+    rdfs:label "Montana Fish, Wildlife & Parks" ;
+    schema:name "Montana Fish, Wildlife & Parks" ;
+    schema:foundingDate "1895"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Montana_Department_of_Fish,_Wildlife_and_Parks> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-112.03611 46.59271)"^^geo:wktLiteral ;
+        schema:addressLocality "Helena" ;
+    ] ;
+    schema:url <http://fwp.mt.gov/> ;
+    schema:sameAs <http://isni.org/isni/0000000097466632> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q17019742> ;
+             .

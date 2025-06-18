@@ -1,0 +1,54 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/038jp4m40> 
+    a org:Organization ;
+    rdfs:label "National Centre of Scientific Research "Demokritos"" ;
+    schema:name "National Centre of Scientific Research "Demokritos"" ;
+    schema:foundingDate "1959"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/National_Centre_of_Scientific_Research_%22Demokritos%22> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03znpfq81> ;
+        rdfs:label "Institute of Nuclear and Particle Physics" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00rhzk043> ;
+        rdfs:label "Institute of Biosciences & Applications" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/022j9ve58> ;
+        rdfs:label "Institute of Nanoscience and Nanotechnology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00tq5n859> ;
+        rdfs:label "Institute of Nuclear & Radiological Sciences and Technology, Energy & Safety" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0396t6k89> ;
+        rdfs:label "Institute of Informatics & Telecommunications" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(23.72784 37.98376)"^^geo:wktLiteral ;
+        schema:addressLocality "Athens" ;
+    ] ;
+    schema:url <https://www.demokritos.gr> ;
+    schema:sameAs <http://isni.org/isni/0000000406356999> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3559155> ;
+             .

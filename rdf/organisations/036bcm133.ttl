@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/036bcm133> 
+    a org:Organization ;
+    rdfs:label "Asian Development Bank" ;
+    schema:name "Asian Development Bank" ;
+    schema:foundingDate "1966"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Asian_Development_Bank> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04p4ws960> ;
+        rdfs:label "Asian Development Bank Institute" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(120.9822 14.6042)"^^geo:wktLiteral ;
+        schema:addressLocality "Manila" ;
+    ] ;
+    schema:url <http://www.adb.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000121634182> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q188822> ;
+             .

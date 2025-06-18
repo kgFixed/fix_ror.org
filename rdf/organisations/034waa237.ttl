@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/034waa237> 
+    a org:Organization ;
+    rdfs:label "Cluster of Excellence on Plant Sciences" ;
+    schema:name "Cluster of Excellence on Plant Sciences" ;
+    schema:foundingDate "2012"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02nv7yv05> ;
+        rdfs:label "Forschungszentrum Jülich" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/024z2rq82> ;
+        rdfs:label "Heinrich Heine University Düsseldorf" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/044g3zk14> ;
+        rdfs:label "Max Planck Institute for Plant Breeding Research" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00rcxh774> ;
+        rdfs:label "University of Cologne" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(6.77616 51.22172)"^^geo:wktLiteral ;
+        schema:addressLocality "Düsseldorf" ;
+    ] ;
+    schema:url <https://www.ceplas.eu/en/home/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q56612632> ;
+             .

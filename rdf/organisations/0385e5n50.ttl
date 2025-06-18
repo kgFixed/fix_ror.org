@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0385e5n50> 
+    a org:Organization ;
+    rdfs:label "Ineos (Norway)" ;
+    schema:name "Ineos (Norway)" ;
+    schema:foundingDate "1998"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Ineos> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05qzbtg69> ;
+        rdfs:label "Ineos (United Kingdom)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(9.68333 59.05)"^^geo:wktLiteral ;
+        schema:addressLocality "Stathelle" ;
+    ] ;
+    schema:url <http://www.ineos.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30338616> ;
+             .

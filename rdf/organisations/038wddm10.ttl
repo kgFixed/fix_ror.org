@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/038wddm10> 
+    a org:Organization ;
+    rdfs:label "Gyeongnam Provincial Geochang College" ;
+    schema:name "Gyeongnam Provincial Geochang College" ;
+    schema:foundingDate "1994"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Gyeongnam_Provincial_Geochang_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(127.90149 35.73034)"^^geo:wktLiteral ;
+        schema:addressLocality "Geochang-gun" ;
+    ] ;
+    schema:url <http://www.gc.ac.kr/index/index.asp> ;
+    schema:sameAs <http://isni.org/isni/0000000460184745> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5624074> ;
+             .

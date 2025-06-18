@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/038n73266> 
+    a org:Organization ;
+    rdfs:label "St Michael's Hospital" ;
+    schema:name "St Michael's Hospital" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0280r7h11> ;
+        rdfs:label "Mid Essex Hospital Services NHS Trust" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(0.55292 51.87819)"^^geo:wktLiteral ;
+        schema:addressLocality "Braintree" ;
+    ] ;
+    schema:url <https://www.meht.nhs.uk/patients-and-visitors/our-hospitals/st-michaels-hospital/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q26415635> ;
+             .

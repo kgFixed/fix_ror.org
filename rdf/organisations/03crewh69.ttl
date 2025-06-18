@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03crewh69> 
+    a org:Organization ;
+    rdfs:label "Nablus University for Vocational and Technical Education" ;
+    schema:name "Nablus University for Vocational and Technical Education" ;
+    schema:foundingDate "2021"^^xsd:gYear ;
+    schema:sameAs <https://ar.wikipedia.org/wiki/%D8%AC%D8%A7%D9%85%D8%B9%D8%A9_%D9%86%D8%A7%D8%A8%D9%84%D8%B3_%D9%84%D9%84%D8%AA%D8%B9%D9%84%D9%8A%D9%85_%D8%A7%D9%84%D9%85%D9%87%D9%86%D9%8A_%D9%88%D8%A7%D9%84%D8%AA%D9%82%D9%86%D9%8A#%D9%83%D9%84%D9%8A%D8%A7%D8%AA> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(35.25444 32.22111)"^^geo:wktLiteral ;
+        schema:addressLocality "Nablus" ;
+    ] ;
+    schema:url <https://nu-vte.edu.ps> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q118142559> ;
+             .

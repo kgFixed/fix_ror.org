@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03bg2rq25> 
+    a org:Organization ;
+    rdfs:label "American Public Health Association" ;
+    schema:name "American Public Health Association" ;
+    schema:foundingDate "1872"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/American_Public_Health_Association> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.03637 38.89511)"^^geo:wktLiteral ;
+        schema:addressLocality "Washington" ;
+    ] ;
+    schema:url <https://www.apha.org/> ;
+    schema:sameAs <http://isni.org/isni/000000040615131X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4744758> ;
+             .

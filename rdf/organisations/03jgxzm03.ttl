@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03jgxzm03> 
+    a org:Organization ;
+    rdfs:label "Rochester Institute of Technology Croatia" ;
+    schema:name "Rochester Institute of Technology Croatia" ;
+    schema:foundingDate "1997"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Rochester_Institute_of_Technology_Croatia> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00v4yb702> ;
+        rdfs:label "Rochester Institute of Technology" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(18.10909 42.64125)"^^geo:wktLiteral ;
+        schema:addressLocality "Dubrovnik" ;
+    ] ;
+    schema:url <http://www.croatia.rit.edu//> ;
+    schema:sameAs <http://isni.org/isni/0000000404367176> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3512154> ;
+             .

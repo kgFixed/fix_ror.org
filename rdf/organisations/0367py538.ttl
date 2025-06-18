@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0367py538> 
+    a org:Organization ;
+    rdfs:label "White Rose College of the Arts and Humanities" ;
+    schema:name "White Rose College of the Arts and Humanities" ;
+    schema:foundingDate "2013"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/White_Rose_College_of_the_Arts_%26_Humanities> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0251f2x81> ;
+        rdfs:label "White Rose University Consortium" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.08271 53.95763)"^^geo:wktLiteral ;
+        schema:addressLocality "York" ;
+    ] ;
+    schema:url <https://wrocah.ac.uk> ;
+    schema:sameAs <http://isni.org/isni/0000000509756258> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q18163163> ;
+             .

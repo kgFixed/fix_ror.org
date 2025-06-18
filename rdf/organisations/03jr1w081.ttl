@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03jr1w081> 
+    a org:Organization ;
+    rdfs:label "Bandvulc (United Kingdom)" ;
+    schema:name "Bandvulc (United Kingdom)" ;
+    schema:foundingDate "1971"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-3.91914 50.39039)"^^geo:wktLiteral ;
+        schema:addressLocality "Ivybridge" ;
+    ] ;
+    schema:url <https://www.bandvulc.co.uk/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30255141> ;
+             .

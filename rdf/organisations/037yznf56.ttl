@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/037yznf56> 
+    a org:Organization ;
+    rdfs:label "Ministry of Natural Resources and Environment" ;
+    schema:name "Ministry of Natural Resources and Environment" ;
+    schema:foundingDate "2004"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Ministry_of_Water,_Land_and_Natural_Resources_(Malaysia)> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(101.69112 2.93527)"^^geo:wktLiteral ;
+        schema:addressLocality "Putrajaya" ;
+    ] ;
+    schema:url <http://www.nre.gov.my/en-my/Pages/default.aspx> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q6867411> ;
+             .

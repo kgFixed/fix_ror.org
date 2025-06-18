@@ -1,0 +1,20 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/035f5kg94> 
+    a org:Organization ;
+    rdfs:label "Teikyo Gakuen Junior College" ;
+    schema:name "Teikyo Gakuen Junior College" ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(138.69743 35.79691)"^^geo:wktLiteral ;
+        schema:addressLocality "Yamanashi Shi" ;
+    ] ;
+    schema:url <https://teikyo-gjc.ac.jp> ;
+     .

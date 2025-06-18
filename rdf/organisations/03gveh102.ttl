@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03gveh102> 
+    a org:Organization ;
+    rdfs:label "University of Wisconsin–Fond du Lac" ;
+    schema:name "University of Wisconsin–Fond du Lac" ;
+    schema:foundingDate "1968"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/University_of_Wisconsin%E2%80%93Fond_du_Lac> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-88.43883 43.775)"^^geo:wktLiteral ;
+        schema:addressLocality "Fond du Lac" ;
+    ] ;
+    schema:url <https://uwosh.edu> ;
+    schema:sameAs <http://isni.org/isni/0000000403873800> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7896642> ;
+             .

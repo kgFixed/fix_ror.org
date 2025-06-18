@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03cd72537> 
+    a org:Organization ;
+    rdfs:label "Studijní a vědecká knihovna v Hradci Králové" ;
+    schema:name "Studijní a vědecká knihovna v Hradci Králové" ;
+    schema:foundingDate "1949"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(15.83277 50.20923)"^^geo:wktLiteral ;
+        schema:addressLocality "Hradec Králové" ;
+    ] ;
+    schema:url <https://svkhk.cz> ;
+    schema:sameAs <http://isni.org/isni/0000000084924032> ;
+             .

@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/033d95m27> 
+    a org:Organization ;
+    rdfs:label "Centre d'études sur la sécurité internationale et les coopérations européennes" ;
+    schema:name "Centre d'études sur la sécurité internationale et les coopérations européennes" ;
+    schema:foundingDate "1995"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02rx3b187> ;
+        rdfs:label "Université Grenoble Alpes" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(5.71479 45.17869)"^^geo:wktLiteral ;
+        schema:addressLocality "Grenoble" ;
+    ] ;
+    schema:url <https://cesice.univ-grenoble-alpes.fr> ;
+    schema:sameAs <http://isni.org/isni/0000000406230878> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q51778818> ;
+             .

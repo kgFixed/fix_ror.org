@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03dr26375> 
+    a org:Organization ;
+    rdfs:label "Jinwen University of Science and Technology" ;
+    schema:name "Jinwen University of Science and Technology" ;
+    schema:foundingDate "1990"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Jinwen_University_of_Science_and_Technology> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(121.53892 24.96005)"^^geo:wktLiteral ;
+        schema:addressLocality "Xindian District" ;
+    ] ;
+    schema:url <https://www.just.edu.tw/> ;
+    schema:sameAs <http://isni.org/isni/0000000406388157> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q11090053> ;
+             .

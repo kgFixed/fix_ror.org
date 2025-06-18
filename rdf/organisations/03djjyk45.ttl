@@ -1,0 +1,41 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03djjyk45> 
+    a org:Organization ;
+    rdfs:label "Center for Effective Global Action" ;
+    schema:name "Center for Effective Global Action" ;
+    schema:foundingDate "2008"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Center_for_Effective_Global_Action> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00f54p054> ;
+        rdfs:label "Stanford University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01an7q238> ;
+        rdfs:label "University of California, Berkeley" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00cvxb145> ;
+        rdfs:label "University of Washington" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-122.27275 37.87159)"^^geo:wktLiteral ;
+        schema:addressLocality "Berkeley" ;
+    ] ;
+    schema:url <http://cega.berkeley.edu/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q5059607> ;
+             .

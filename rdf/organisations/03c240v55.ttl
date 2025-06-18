@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03c240v55> 
+    a org:Organization ;
+    rdfs:label "American Malacological Society" ;
+    schema:name "American Malacological Society" ;
+    schema:sameAs <https://pl.wikipedia.org/wiki/American_Malacological_Society> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-157.85833 21.30694)"^^geo:wktLiteral ;
+        schema:addressLocality "Honolulu" ;
+    ] ;
+    schema:url <https://www.malacological.org> ;
+    schema:sameAs <http://isni.org/isni/0000000107410692> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q25404164> ;
+             .

@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/034dczg46> 
+    a org:Organization ;
+    rdfs:label "Chandka Medical College" ;
+    schema:name "Chandka Medical College" ;
+    schema:foundingDate "1973"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Chandka_Medical_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03nw0tx25> ;
+        rdfs:label "Shaheed Mohtarma Benazir Bhutto Medical University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(68.21204 27.55898)"^^geo:wktLiteral ;
+        schema:addressLocality "Larkana" ;
+    ] ;
+    schema:url <http://www.cmc.edu.pk/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q5071114> ;
+             .

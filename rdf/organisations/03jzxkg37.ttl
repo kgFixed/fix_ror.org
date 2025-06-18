@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03jzxkg37> 
+    a org:Organization ;
+    rdfs:label "Senshu University" ;
+    schema:name "Senshu University" ;
+    schema:foundingDate "1880"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Senshu_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03qg42k57> ;
+        rdfs:label "Ishinomaki Senshu University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(139.69171 35.6895)"^^geo:wktLiteral ;
+        schema:addressLocality "Tokyo" ;
+    ] ;
+    schema:url <http://www.senshu-u.ac.jp/> ;
+    schema:sameAs <http://isni.org/isni/0000000121509437> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1062568> ;
+             .

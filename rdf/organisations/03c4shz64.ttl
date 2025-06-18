@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03c4shz64> 
+    a org:Organization ;
+    rdfs:label "Abdelmalek Essaâdi University" ;
+    schema:name "Abdelmalek Essaâdi University" ;
+    schema:foundingDate "1989"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Abdelmalek_Essa%C3%A2di_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03yj8bt58> ;
+        rdfs:label "École Nationale de Commerce et de Gestion de Tanger" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-5.36837 35.57845)"^^geo:wktLiteral ;
+        schema:addressLocality "Tétouan" ;
+    ] ;
+    schema:url <http://www.uae.ma/portail/FR/index.php> ;
+    schema:sameAs <http://isni.org/isni/0000000106757133> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3551367> ;
+             .

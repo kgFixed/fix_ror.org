@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03h2dv749> 
+    a org:Organization ;
+    rdfs:label "Hokkaido Museum of Northern Peoples" ;
+    schema:name "Hokkaido Museum of Northern Peoples" ;
+    schema:foundingDate "1991"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(144.26971 44.02127)"^^geo:wktLiteral ;
+        schema:addressLocality "Abashiri" ;
+    ] ;
+    schema:url <http://hoppohm.org/index2.htm> ;
+    schema:sameAs <http://isni.org/isni/0000000107392420> ;
+             .

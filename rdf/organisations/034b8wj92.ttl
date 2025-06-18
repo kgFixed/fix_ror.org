@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/034b8wj92> 
+    a org:Organization ;
+    rdfs:label "Yorkshire Dales Rivers Trust" ;
+    schema:name "Yorkshire Dales Rivers Trust" ;
+    schema:foundingDate "2004"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Yorkshire_Dales_Rivers_Trust> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.5373 53.99078)"^^geo:wktLiteral ;
+        schema:addressLocality "Harrogate" ;
+    ] ;
+    schema:url <http://www.yorkshiredalesriverstrust.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q8055704> ;
+             .

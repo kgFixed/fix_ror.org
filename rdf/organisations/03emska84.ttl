@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03emska84> 
+    a org:Organization ;
+    rdfs:label "University of Niigata Prefecture" ;
+    schema:name "University of Niigata Prefecture" ;
+    schema:foundingDate "2009"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/University_of_Niigata_Prefecture> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(139.04125 37.92259)"^^geo:wktLiteral ;
+        schema:addressLocality "Niigata" ;
+    ] ;
+    schema:url <https://www.unii.ac.jp> ;
+    schema:sameAs <http://isni.org/isni/0000000446486237> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q11503053> ;
+             .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0364xxv33> 
+    a org:Organization ;
+    rdfs:label "Efacec (Portugal)" ;
+    schema:name "Efacec (Portugal)" ;
+    schema:foundingDate "1948"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/EFACEC> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-8.68908 41.18207)"^^geo:wktLiteral ;
+        schema:addressLocality "Matosinhos Municipality" ;
+    ] ;
+    schema:url <http://www.efacec.pt/presentationLayer/efacec_home_00.aspx?idioma=2> ;
+    schema:sameAs <http://isni.org/isni/0000000460805396> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5322956> ;
+             .

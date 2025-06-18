@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03adm0793> 
+    a org:Organization ;
+    rdfs:label "South China Business College Guangdong University of Foreign Studies" ;
+    schema:name "South China Business College Guangdong University of Foreign Studies" ;
+    schema:sameAs <https://zh.wikipedia.org/zh-hans/%E5%B9%BF%E4%B8%9C%E5%A4%96%E8%AF%AD%E5%A4%96%E8%B4%B8%E5%A4%A7%E5%AD%A6%E5%8D%97%E5%9B%BD%E5%95%86%E5%AD%A6%E9%99%A2> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00fhc9y79> ;
+        rdfs:label "Guangdong University of Foreign Studies" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(113.25 23.11667)"^^geo:wktLiteral ;
+        schema:addressLocality "Guangzhou" ;
+    ] ;
+    schema:url <https://www.gwng.edu.cn> ;
+    schema:sameAs <http://isni.org/isni/0000000449142333> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q112676957> ;
+             .

@@ -1,0 +1,137 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03hkzcg46> 
+    a org:Organization ;
+    rdfs:label "Scottish Confederation of University and Research Libraries" ;
+    schema:name "Scottish Confederation of University and Research Libraries" ;
+    schema:foundingDate "2009"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05geg6f02> ;
+        rdfs:label "Scottish Universities Press" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04mwwnx67> ;
+        rdfs:label "Abertay University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03h2bxq36> ;
+        rdfs:label "University of Dundee" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01nrxwf90> ;
+        rdfs:label "University of Edinburgh" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03zjvnn91> ;
+        rdfs:label "Edinburgh Napier University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00vtgdb53> ;
+        rdfs:label "University of Glasgow" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03dvm1235> ;
+        rdfs:label "Glasgow Caledonian University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01s033b11> ;
+        rdfs:label "Glasgow School of Art" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0059w0420> ;
+        rdfs:label "Heriot-Watt University Malaysia" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05mzfcs16> ;
+        rdfs:label "The Open University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/002g3cb31> ;
+        rdfs:label "Queen Margaret University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04f0qj703> ;
+        rdfs:label "Robert Gordon University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/037wqvd92> ;
+        rdfs:label "Royal Conservatoire of Scotland" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/044e2ja82> ;
+        rdfs:label "Scotland's Rural College" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02wn5qz54> ;
+        rdfs:label "University of St Andrews" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/045wgfr59> ;
+        rdfs:label "University of Stirling" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00n3w3b69> ;
+        rdfs:label "University of Strathclyde" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02s08xt61> ;
+        rdfs:label "University of the Highlands and Islands" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04w3d2v20> ;
+        rdfs:label "University of the West of Scotland" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-3.19648 55.95206)"^^geo:wktLiteral ;
+        schema:addressLocality "Edinburgh" ;
+    ] ;
+    schema:url <https://www.scurl.ac.uk> ;
+    schema:sameAs <http://isni.org/isni/0000000085089534> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30259580> ;
+             .

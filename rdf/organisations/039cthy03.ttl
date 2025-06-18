@@ -1,0 +1,54 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/039cthy03> 
+    a org:Organization ;
+    rdfs:label "Bamfield Marine Sciences Centre" ;
+    schema:name "Bamfield Marine Sciences Centre" ;
+    schema:foundingDate "1972"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Bamfield_Marine_Sciences_Centre> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0213rcc28> ;
+        rdfs:label "Simon Fraser University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0160cpw27> ;
+        rdfs:label "University of Alberta" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03rmrcq20> ;
+        rdfs:label "University of British Columbia" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03yjb2x39> ;
+        rdfs:label "University of Calgary" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04s5mat29> ;
+        rdfs:label "University of Victoria" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-125.54635 48.94153)"^^geo:wktLiteral ;
+        schema:addressLocality "Ucluelet" ;
+    ] ;
+    schema:url <http://www.bamfieldmsc.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000403738836> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4853480> ;
+             .

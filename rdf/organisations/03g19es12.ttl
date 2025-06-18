@@ -1,0 +1,32 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03g19es12> 
+    a org:Organization ;
+    rdfs:label "Labex Synorg" ;
+    schema:name "Labex Synorg" ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04q1kbj36> ;
+        rdfs:label "Délégation Normandie" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01k40cz91> ;
+        rdfs:label "Normandie Université" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(1.09364 49.46307)"^^geo:wktLiteral ;
+        schema:addressLocality "Mont-Saint-Aignan" ;
+    ] ;
+    schema:url <http://www.labex-synorg.fr/en/> ;
+     .

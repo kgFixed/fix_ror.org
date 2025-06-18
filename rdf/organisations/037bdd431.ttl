@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/037bdd431> 
+    a org:Organization ;
+    rdfs:label "Arab Open University" ;
+    schema:name "Arab Open University" ;
+    schema:foundingDate "2002"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Arab_Open_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00fp9k450> ;
+        rdfs:label "Arab Open University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(31.24967 30.06263)"^^geo:wktLiteral ;
+        schema:addressLocality "Cairo" ;
+    ] ;
+    schema:url <http://www.aou.edu.eg/> ;
+    schema:sameAs <http://isni.org/isni/0000000403774247> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q50379241> ;
+             .

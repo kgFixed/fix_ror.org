@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03afbx254> 
+    a org:Organization ;
+    rdfs:label "Waldkrankenhaus Protestant Hospital" ;
+    schema:name "Waldkrankenhaus Protestant Hospital" ;
+    schema:foundingDate "1945"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/001w7jn25> ;
+        rdfs:label "Charité - Universitätsmedizin Berlin" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(13.41053 52.52437)"^^geo:wktLiteral ;
+        schema:addressLocality "Berlin" ;
+    ] ;
+    schema:url <http://www.pgd-healthcare.com/en/waldkrankenhaus-protestant-hospital> ;
+    schema:sameAs <http://isni.org/isni/000000041795066X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q50037209> ;
+             .

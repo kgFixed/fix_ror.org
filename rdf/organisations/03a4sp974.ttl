@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03a4sp974> 
+    a org:Organization ;
+    rdfs:label "NFDI4Microbiota" ;
+    schema:name "NFDI4Microbiota" ;
+    schema:foundingDate "2021"^^xsd:gYear ;
+    schema:sameAs <https://de.wikipedia.org/wiki/NFDI4Microbiota> ;
+    org:status "withdrawn" ;
+    org:classification "Other" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05qj6w324> ;
+        rdfs:label "Nationale Forschungsdateninfrastruktur" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(6.95 50.93333)"^^geo:wktLiteral ;
+        schema:addressLocality "Cologne" ;
+    ] ;
+    schema:url <https://nfdi4microbiota.de> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q99534506> ;
+             .

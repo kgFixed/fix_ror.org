@@ -1,0 +1,297 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/038rjvd86> 
+    a org:Organization ;
+    rdfs:label "Department of Biological Sciences" ;
+    schema:name "Department of Biological Sciences" ;
+    schema:foundingDate "1724"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0009wsb17> ;
+        rdfs:label "A N Bach Institute of Biochemistry" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05nb54h69> ;
+        rdfs:label "Komarov Botanical Institute of the Russian Academy of Sciences" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02cge6w61> ;
+        rdfs:label "Central Siberian Botanical Garden" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02ygqdd77> ;
+        rdfs:label "Centre for Forest Ecology and Productivity" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/027hwkg23> ;
+        rdfs:label "Engelhardt Institute of Molecular Biology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/045sc8e83> ;
+        rdfs:label "Federal Center Research Fundamentals of Biotechnology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/023r5tg35> ;
+        rdfs:label "Federal Scientific Center of the East Asia Terrestrial Biodiversity FEB RAS" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0362x2g28> ;
+        rdfs:label "Forestry Research Institute of Karelian Research Centre" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01tyr1g37> ;
+        rdfs:label "Institute for Biological Instrumentation" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05b9eba69> ;
+        rdfs:label "Institute for Soil Science and Agricultural Chemistry" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01a0xxp39> ;
+        rdfs:label "Institute of Basic Biological Problems" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02a9vnt59> ;
+        rdfs:label "Institute of Biochemistry and Genetics of Ufa Scientific Centre" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/048zssa22> ;
+        rdfs:label "G. K. Skryabin Institute of Biochemistry and Physiology of Microorganisms" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/021kjh741> ;
+        rdfs:label "Institute of Biochemistry and Physiology of Plants and Microorganisms" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0324qh176> ;
+        rdfs:label "Institute of Biology Ufa Science Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03nj29395> ;
+        rdfs:label "Institute of Biology of Inland Waters named Ivan Dmitrievich Papanin" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/035y1ap70> ;
+        rdfs:label "Institute of Biology of Karelian Research Centre" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01dg04253> ;
+        rdfs:label "Institute of Bioorganic Chemistry" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01mq8sh52> ;
+        rdfs:label "Institute of Biophysics" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05gbnpz65> ;
+        rdfs:label "Institute of Cell Biophysics" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00gmz2d02> ;
+        rdfs:label "Institute of Chemical Biology and Fundamental Medicine" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01p3q4q56> ;
+        rdfs:label "Institute of Cytology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0277xgb12> ;
+        rdfs:label "Institute of Cytology and Genetics" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04e09qg36> ;
+        rdfs:label "Institute of Ecology and Genetics of Microorganisms" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/039hpv827> ;
+        rdfs:label "Institute of Forest Science" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01yq9ya27> ;
+        rdfs:label "Institute of Gene Biology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05nyr7981> ;
+        rdfs:label "Institute of General and Experimental Biology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03q3a8095> ;
+        rdfs:label "A.V. Zhirmunsky National Scientific Center of Marine Biology Far Eastern Branch of the Russian Academy of Sciences" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03apz2q12> ;
+        rdfs:label "Institute of Molecular Genetics" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02fsfnf94> ;
+        rdfs:label "Institute of Molecular and Cell Biology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/015y4fr56> ;
+        rdfs:label "Institute of Paleontology A A Borisyak" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00ejeex29> ;
+        rdfs:label "Institute of Physical-Chemical and Biological Problems in Soil Science" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0489f0s93> ;
+        rdfs:label "Institute of Protein Research" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/006btmz82> ;
+        rdfs:label "Institute of Systematics and Ecology of Animals" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/008ebms37> ;
+        rdfs:label "Institute of Theoretical and Experimental Biophysics" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01pphqm45> ;
+        rdfs:label "Kazan Institute of Biochemistry and Biophysics" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02mh2cd26> ;
+        rdfs:label "Koltzov Institute of Developmental Biology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00hqnxt08> ;
+        rdfs:label "Murmansk Marine Biological Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02x9fc857> ;
+        rdfs:label "Pacific Institute of Bioorganic Chemistry. GB Elyakova Far Eastern Branch of the Russian Academy of Sciences" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0577sef82> ;
+        rdfs:label "Severtsov Institute of Ecology and Evolution" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01ryjjz47> ;
+        rdfs:label "Siberian Institute of Plant Physiology and Biochemistry" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/012a18r91> ;
+        rdfs:label "Sukachev Institute of Forest" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03hg8g849> ;
+        rdfs:label "Timiryazev Institute of Plant Physiology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05ermrg42> ;
+        rdfs:label "Vavilov Institute of General Genetics" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05snbjh64> ;
+        rdfs:label "Zoological Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05qrfxd25> ;
+        rdfs:label "Russian Academy of Sciences" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(37.61556 55.75222)"^^geo:wktLiteral ;
+        schema:addressLocality "Moscow" ;
+    ] ;
+    schema:url <http://www.ras.ru/win/db/show_dpt.asp?P=.oi-2.id-4130.ln-ru> ;
+     .

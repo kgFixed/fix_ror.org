@@ -1,0 +1,61 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/038c3w259> 
+    a org:Organization ;
+    rdfs:label "Kunming Medical University" ;
+    schema:name "Kunming Medical University" ;
+    schema:foundingDate "1933"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Kunming_Medical_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02g01ht84> ;
+        rdfs:label "First Affiliated Hospital of Kunming Medical University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00fjv1g65> ;
+        rdfs:label "Kunming Children's Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01kq6mv68> ;
+        rdfs:label "Second Affiliated Hospital of Kunming Medical College" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00c639s42> ;
+        rdfs:label "Second People's Hospital of Yunnan Province" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05tv5ra11> ;
+        rdfs:label "Sixth Affiliated Hospital of Kunming Medical University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05ctyj936> ;
+        rdfs:label "Yan'an Hospital Affiliated To Kunming Medical University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(102.71833 25.03889)"^^geo:wktLiteral ;
+        schema:addressLocality "Kunming" ;
+    ] ;
+    schema:url <http://www.admissions.cn/kmmu/> ;
+    schema:sameAs <http://isni.org/isni/0000000095880960> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6444884> ;
+             .

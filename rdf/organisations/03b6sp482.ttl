@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03b6sp482> 
+    a org:Organization ;
+    rdfs:label "Southern University System" ;
+    schema:name "Southern University System" ;
+    schema:foundingDate "1974"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Southern_University_System> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04r3m2882> ;
+        rdfs:label "Southern University and Agricultural and Mechanical College" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05q8e6988> ;
+        rdfs:label "Southern University at New Orleans" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04y71bh49> ;
+        rdfs:label "Southern University at Shreveport" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-91.18747 30.44332)"^^geo:wktLiteral ;
+        schema:addressLocality "Baton Rouge" ;
+    ] ;
+    schema:url <http://www.sus.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000093411423> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7570575> ;
+             .

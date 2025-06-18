@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/033svsm10> 
+    a org:Organization ;
+    rdfs:label "Cancer Research UK Manchester Centre" ;
+    schema:name "Cancer Research UK Manchester Centre" ;
+    schema:foundingDate "2006"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Manchester_Cancer_Research_Centre> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/054225q67> ;
+        rdfs:label "Cancer Research UK" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/027m9bs27> ;
+        rdfs:label "University of Manchester" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03v9efr22> ;
+        rdfs:label "The Christie NHS Foundation Trust" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-2.23333 53.45)"^^geo:wktLiteral ;
+        schema:addressLocality "Greater Manchester" ;
+    ] ;
+    schema:url <https://www.crukcentre.manchester.ac.uk> ;
+    schema:sameAs <http://isni.org/isni/0000000406124047> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q24060265> ;
+             .

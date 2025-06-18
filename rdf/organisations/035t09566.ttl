@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/035t09566> 
+    a org:Organization ;
+    rdfs:label "University of Tourism" ;
+    schema:name "University of Tourism" ;
+    schema:foundingDate "1996"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-84.08333 9.93333)"^^geo:wktLiteral ;
+        schema:addressLocality "San José" ;
+    ] ;
+    schema:url <https://www.utur.ac.cr> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30293737> ;
+             .

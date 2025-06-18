@@ -1,0 +1,156 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03fag5224> 
+    a org:Organization ;
+    rdfs:label "West Bengal University of Health Sciences" ;
+    schema:name "West Bengal University of Health Sciences" ;
+    schema:foundingDate "2003"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/West_Bengal_University_of_Health_Sciences> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05nmzkr23> ;
+        rdfs:label "Bankura Sammilani Medical College" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02e2dtd78> ;
+        rdfs:label "Calcutta National Medical College and Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00ysvbp68> ;
+        rdfs:label "Institute of Post Graduate Medical Education and Research" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01d00rw04> ;
+        rdfs:label "KPC Medical College and Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/021nb2v44> ;
+        rdfs:label "Medical College and Hospital, Kolkata" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04zpy9a42> ;
+        rdfs:label "Nil Ratan Sircar Medical College and Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05fyf7995> ;
+        rdfs:label "R. G. Kar Medical College and Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01m46xf39> ;
+        rdfs:label "All India Institute of Hygiene and Public Health" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/031yk2194> ;
+        rdfs:label "Bangur Institute of Neurosciences" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/042bhxs14> ;
+        rdfs:label "Burdwan Medical College & Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03v372z22> ;
+        rdfs:label "College of Medicine & JNM Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02r0eqd13> ;
+        rdfs:label "College of Medicine & Sagore Dutta Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/021aj5d10> ;
+        rdfs:label "Dr. R. Ahmed Dental College and Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01eskr961> ;
+        rdfs:label "ESI - Post Graduate Institute of Medical Science and Research" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05d585f89> ;
+        rdfs:label "Mahesh Bhattacharyya Homeopathic Medical College and Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0175hgp63> ;
+        rdfs:label "Malda Medical College and Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0176h5851> ;
+        rdfs:label "Midnapore Homeopathic Medical College and Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03p37kd86> ;
+        rdfs:label "Midnapore Medical College and Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03tsk0927> ;
+        rdfs:label "Murshidabad Medical College and Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05xhkqs13> ;
+        rdfs:label "North Bengal Medical College and Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/027sf5r98> ;
+        rdfs:label "Peerless Hospital & B.K.Roy Research Centre" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02j4gdg91> ;
+        rdfs:label "Vivekananda Institute of Medical Sciences" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(88.36304 22.56263)"^^geo:wktLiteral ;
+        schema:addressLocality "Kolkata" ;
+    ] ;
+    schema:url <http://www.wbuhs.ac.in/> ;
+    schema:sameAs <http://isni.org/isni/000000041799577X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7984451> ;
+             .

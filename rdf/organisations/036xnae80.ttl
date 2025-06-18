@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/036xnae80> 
+    a org:Organization ;
+    rdfs:label "Kathmandu University" ;
+    schema:name "Kathmandu University" ;
+    schema:foundingDate "1991"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Kathmandu_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/032e4ps38> ;
+        rdfs:label "Kathmandu College of Management" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00tcmr651> ;
+        rdfs:label "Kathmandu Medical College Teaching Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01qemgb02> ;
+        rdfs:label "Manipal Teaching Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05m5pc269> ;
+        rdfs:label "Nepal Medical College Teaching Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/017xv2t04> ;
+        rdfs:label "Lumbini Medical College" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(85.3206 27.70169)"^^geo:wktLiteral ;
+        schema:addressLocality "Kathmandu" ;
+    ] ;
+    schema:url <http://www.ku.edu.np/> ;
+    schema:sameAs <http://isni.org/isni/0000000106807778> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6376965> ;
+             .

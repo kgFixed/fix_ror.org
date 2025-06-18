@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/032dee662> 
+    a org:Organization ;
+    rdfs:label "Southern District Health Board" ;
+    schema:name "Southern District Health Board" ;
+    schema:foundingDate "2010"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(170.50361 -45.87416)"^^geo:wktLiteral ;
+        schema:addressLocality "Dunedin" ;
+    ] ;
+    schema:url <https://www.southernhealth.nz/about-us/about-southern-dhb> ;
+    schema:sameAs <http://isni.org/isni/0000000091593497> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q88986871> ;
+             .

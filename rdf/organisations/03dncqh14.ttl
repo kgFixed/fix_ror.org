@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03dncqh14> 
+    a org:Organization ;
+    rdfs:label "Ichimaru Pharcos (Japan)" ;
+    schema:name "Ichimaru Pharcos (Japan)" ;
+    schema:foundingDate "1959"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(136.76039 35.42291)"^^geo:wktLiteral ;
+        schema:addressLocality "Gifu" ;
+    ] ;
+    schema:url <http://www.ichimaru.co.jp/english/> ;
+     .

@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/034m9g361> 
+    a org:Organization ;
+    rdfs:label "Athenex (United States)" ;
+    schema:name "Athenex (United States)" ;
+    schema:foundingDate "2003"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0032hsp73> ;
+        rdfs:label "Athenex (China)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-78.87837 42.88645)"^^geo:wktLiteral ;
+        schema:addressLocality "Buffalo" ;
+    ] ;
+    schema:url <https://www.athenex.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000460001312> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30288003> ;
+             .

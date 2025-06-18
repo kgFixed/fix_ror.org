@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0398jd975> 
+    a org:Organization ;
+    rdfs:label "IMM Graduate School of Marketing" ;
+    schema:name "IMM Graduate School of Marketing" ;
+    schema:foundingDate "1960"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/IMM_Graduate_School_of_Marketing> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(28.04363 -26.20227)"^^geo:wktLiteral ;
+        schema:addressLocality "Johannesburg" ;
+    ] ;
+    schema:url <https://www.immgsm.ac.za/> ;
+    schema:sameAs <http://isni.org/isni/0000000417642026> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5972037> ;
+             .

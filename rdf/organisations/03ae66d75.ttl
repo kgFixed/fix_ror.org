@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03ae66d75> 
+    a org:Organization ;
+    rdfs:label "Nuance Communications (United Kingdom)" ;
+    schema:name "Nuance Communications (United Kingdom)" ;
+    schema:foundingDate "1992"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Nuance_Communications> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0311h6702> ;
+        rdfs:label "Nuance Communications (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.77415 51.56933)"^^geo:wktLiteral ;
+        schema:addressLocality "Marlow" ;
+    ] ;
+    schema:url <http://www.nuance.co.uk/dragon/index.htm> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30273520> ;
+             .

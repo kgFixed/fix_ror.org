@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03hm8w204> 
+    a org:Organization ;
+    rdfs:label "Pharmacyclics (United States)" ;
+    schema:name "Pharmacyclics (United States)" ;
+    schema:foundingDate "1991"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Pharmacyclics> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-122.03635 37.36883)"^^geo:wktLiteral ;
+        schema:addressLocality "Sunnyvale" ;
+    ] ;
+    schema:url <https://www.pharmacyclics.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000404696981> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q20065324> ;
+             .

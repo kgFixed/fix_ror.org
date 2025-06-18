@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/036wf7b34> 
+    a org:Organization ;
+    rdfs:label "Benteler (Norway)" ;
+    schema:name "Benteler (Norway)" ;
+    schema:foundingDate "1876"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Benteler_International> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00awr5166> ;
+        rdfs:label "Benteler (Austria)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(6.80468 58.09479)"^^geo:wktLiteral ;
+        schema:addressLocality "Farsund" ;
+    ] ;
+    schema:url <http://www.benteler.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30299590> ;
+             .

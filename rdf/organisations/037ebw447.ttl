@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/037ebw447> 
+    a org:Organization ;
+    rdfs:label "Helen Hay Whitney Foundation" ;
+    schema:name "Helen Hay Whitney Foundation" ;
+    schema:foundingDate "1943"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Helen_Hay_Whitney_Foundation> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-73.98931 41.1476)"^^geo:wktLiteral ;
+        schema:addressLocality "New City" ;
+    ] ;
+    schema:url <http://www.hhwf.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000097871486> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5702440> ;
+             .

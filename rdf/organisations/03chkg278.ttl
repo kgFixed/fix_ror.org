@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03chkg278> 
+    a org:Organization ;
+    rdfs:label "Coe College" ;
+    schema:name "Coe College" ;
+    schema:foundingDate "1851"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Coe_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-91.64407 42.00833)"^^geo:wktLiteral ;
+        schema:addressLocality "Cedar Rapids" ;
+    ] ;
+    schema:url <http://www.coe.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000096145984> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5140489> ;
+             .

@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03aearw79> 
+    a org:Organization ;
+    rdfs:label "Devon Guild of Craftsmen" ;
+    schema:name "Devon Guild of Craftsmen" ;
+    schema:foundingDate "1955"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-3.67543 50.59259)"^^geo:wktLiteral ;
+        schema:addressLocality "Bovey Tracey" ;
+    ] ;
+    schema:url <https://www.crafts.org.uk/Home> ;
+     .

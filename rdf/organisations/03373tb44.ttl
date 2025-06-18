@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03373tb44> 
+    a org:Organization ;
+    rdfs:label "Toyama University of International Studies" ;
+    schema:name "Toyama University of International Studies" ;
+    schema:foundingDate "1963"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Toyama_University_of_International_Studies> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(137.21667 36.7)"^^geo:wktLiteral ;
+        schema:addressLocality "Toyama" ;
+    ] ;
+    schema:url <https://www.tuins.ac.jp/> ;
+    schema:sameAs <http://isni.org/isni/0000000403745235> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7830591> ;
+             .

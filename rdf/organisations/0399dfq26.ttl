@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0399dfq26> 
+    a org:Organization ;
+    rdfs:label "United States Pacific Air Forces" ;
+    schema:name "United States Pacific Air Forces" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Pacific_Air_Forces> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01973x930> ;
+        rdfs:label "United States Department of the Air Force" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-157.94397 21.34927)"^^geo:wktLiteral ;
+        schema:addressLocality "Joint Base Pearl Harbor-Hickam" ;
+    ] ;
+    schema:url <https://www.pacaf.af.mil> ;
+     .

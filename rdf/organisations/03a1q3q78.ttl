@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03a1q3q78> 
+    a org:Organization ;
+    rdfs:label "The Evaluation Center" ;
+    schema:name "The Evaluation Center" ;
+    schema:foundingDate "1965"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Other" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04j198w64> ;
+        rdfs:label "Western Michigan University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-85.58723 42.29171)"^^geo:wktLiteral ;
+        schema:addressLocality "Kalamazoo" ;
+    ] ;
+    schema:url <https://wmich.edu/evaluation> ;
+    schema:sameAs <http://isni.org/isni/0000000458985703> ;
+             .

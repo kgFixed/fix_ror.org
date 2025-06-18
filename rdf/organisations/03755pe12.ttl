@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03755pe12> 
+    a org:Organization ;
+    rdfs:label "Satyajit Ray Film and Television Institute" ;
+    schema:name "Satyajit Ray Film and Television Institute" ;
+    schema:foundingDate "1995"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Satyajit_Ray_Film_and_Television_Institute> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(88.36304 22.56263)"^^geo:wktLiteral ;
+        schema:addressLocality "Kolkata" ;
+    ] ;
+    schema:url <http://srfti.ac.in/> ;
+    schema:sameAs <http://isni.org/isni/0000000417746845> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3348711> ;
+             .

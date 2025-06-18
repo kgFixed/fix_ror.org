@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03hzkp562> 
+    a org:Organization ;
+    rdfs:label "Hochschule für Grafik und Buchkunst Leipzig" ;
+    schema:name "Hochschule für Grafik und Buchkunst Leipzig" ;
+    schema:foundingDate "1764"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Hochschule_f%C3%BCr_Grafik_und_Buchkunst_Leipzig> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(12.37129 51.33962)"^^geo:wktLiteral ;
+        schema:addressLocality "Leipzig" ;
+    ] ;
+    schema:url <http://www.hgb-leipzig.de/index.php?a=aktuell&js=2> ;
+    schema:sameAs <http://isni.org/isni/0000000106711864> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q315175> ;
+             .

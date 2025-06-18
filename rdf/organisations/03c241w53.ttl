@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03c241w53> 
+    a org:Organization ;
+    rdfs:label "Universitäts- und Landesbibliothek Sachsen-Anhalt" ;
+    schema:name "Universitäts- und Landesbibliothek Sachsen-Anhalt" ;
+    schema:foundingDate "1696"^^xsd:gYear ;
+    schema:sameAs <https://de.wikipedia.org/wiki/Universit%C3%A4ts-_und_Landesbibliothek_Sachsen-Anhalt> ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05gqaka33> ;
+        rdfs:label "Martin Luther University Halle-Wittenberg" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(11.98556 51.48139)"^^geo:wktLiteral ;
+        schema:addressLocality "Kreisfreie Stadt Halle" ;
+    ] ;
+    schema:url <https://bibliothek.uni-halle.de> ;
+    schema:sameAs <http://isni.org/isni/0000000121923902> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1600777> ;
+             .

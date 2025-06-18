@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0354a0368> 
+    a org:Organization ;
+    rdfs:label "Sahelian Solutions Foundation" ;
+    schema:name "Sahelian Solutions Foundation" ;
+    schema:foundingDate "1990"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(38.01055 -1.36696)"^^geo:wktLiteral ;
+        schema:addressLocality "Kitui" ;
+    ] ;
+    schema:url <http://www.sasolfoundation.co.ke/> ;
+     .

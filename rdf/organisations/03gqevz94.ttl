@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03gqevz94> 
+    a org:Organization ;
+    rdfs:label "Herguan University" ;
+    schema:name "Herguan University" ;
+    schema:foundingDate "2008"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Herguan_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-122.03635 37.36883)"^^geo:wktLiteral ;
+        schema:addressLocality "Sunnyvale" ;
+    ] ;
+    schema:url <http://www.herguanuniversity.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000403990564> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5738412> ;
+             .

@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03jn9cy69> 
+    a org:Organization ;
+    rdfs:label "Harry S. Truman Presidential Library and Museum" ;
+    schema:name "Harry S. Truman Presidential Library and Museum" ;
+    schema:foundingDate "1957"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Harry_S._Truman_Presidential_Library_and_Museum> ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/032214n64> ;
+        rdfs:label "National Archives and Records Administration" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-94.41551 39.09112)"^^geo:wktLiteral ;
+        schema:addressLocality "Independence" ;
+    ] ;
+    schema:url <https://www.trumanlibrary.org/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q525981> ;
+             .

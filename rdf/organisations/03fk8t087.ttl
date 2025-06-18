@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03fk8t087> 
+    a org:Organization ;
+    rdfs:label "Tetra Tech (United States)" ;
+    schema:name "Tetra Tech (United States)" ;
+    schema:foundingDate "1966"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Tetra_Tech> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02y0fdf18> ;
+        rdfs:label "Tetra Tech (Brazil)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05y6c0296> ;
+        rdfs:label "Tetra Tech (Canada)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-118.14452 34.14778)"^^geo:wktLiteral ;
+        schema:addressLocality "Pasadena" ;
+    ] ;
+    schema:url <https://www.tetratech.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000091348627> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7706196> ;
+             .

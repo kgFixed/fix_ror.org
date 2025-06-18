@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/036bxpj43> 
+    a org:Organization ;
+    rdfs:label "Varsinais-Suomen Sairaanhoitopiiri" ;
+    schema:name "Varsinais-Suomen Sairaanhoitopiiri" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05dbzj528> ;
+        rdfs:label "Turku University Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(22.26869 60.45148)"^^geo:wktLiteral ;
+        schema:addressLocality "Turku" ;
+    ] ;
+    schema:url <http://www.vsshp.fi/fi/Sivut/default.aspx> ;
+    schema:sameAs <http://isni.org/isni/0000000403669623> ;
+             .

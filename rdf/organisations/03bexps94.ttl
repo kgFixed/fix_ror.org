@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03bexps94> 
+    a org:Organization ;
+    rdfs:label "Universidad Pedagógica de Durango" ;
+    schema:name "Universidad Pedagógica de Durango" ;
+    schema:foundingDate "1978"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-104.65756 24.02032)"^^geo:wktLiteral ;
+        schema:addressLocality "Durango" ;
+    ] ;
+    schema:url <http://www.upd.edu.mx/> ;
+    schema:sameAs <http://isni.org/isni/0000000417639900> ;
+             .

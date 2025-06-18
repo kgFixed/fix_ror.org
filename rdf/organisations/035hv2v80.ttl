@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/035hv2v80> 
+    a org:Organization ;
+    rdfs:label "Observatoire des sciences de l'univers de l'Université Versailles Saint-Quentin" ;
+    schema:name "Observatoire des sciences de l'univers de l'Université Versailles Saint-Quentin" ;
+    schema:foundingDate "2010"^^xsd:gYear ;
+    schema:sameAs <https://fr.wikipedia.org/wiki/Observatoire_de_Versailles_Saint-Quentin-en-Yvelines> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01bt3e159> ;
+        rdfs:label "Cultures, Environnements, Arctique, Représentations, Climat" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.07306 48.77056)"^^geo:wktLiteral ;
+        schema:addressLocality "Guyancourt" ;
+    ] ;
+    schema:url <http://www.ovsq.uvsq.fr> ;
+    schema:sameAs <http://isni.org/isni/0000000406005881> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q27825818> ;
+             .

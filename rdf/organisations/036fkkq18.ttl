@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/036fkkq18> 
+    a org:Organization ;
+    rdfs:label "Fortune Institute of Technology" ;
+    schema:name "Fortune Institute of Technology" ;
+    schema:foundingDate "1989"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Fortune_Institute_of_Technology> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(120.31333 22.61626)"^^geo:wktLiteral ;
+        schema:addressLocality "Kaohsiung" ;
+    ] ;
+    schema:url <http://cust.fotech.edu.tw/bin/home.php> ;
+    schema:sameAs <http://isni.org/isni/0000000406386880> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q10921575> ;
+             .

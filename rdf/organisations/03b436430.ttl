@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03b436430> 
+    a org:Organization ;
+    rdfs:label "University of Utah Hospital" ;
+    schema:name "University of Utah Hospital" ;
+    schema:foundingDate "1965"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/University_of_Utah_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03r0ha626> ;
+        rdfs:label "University of Utah" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/047s7ex42> ;
+        rdfs:label "University of Utah Health Care" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-111.89105 40.76078)"^^geo:wktLiteral ;
+        schema:addressLocality "Salt Lake City" ;
+    ] ;
+    schema:url <http://healthcare.utah.edu/hospital/> ;
+    schema:sameAs <http://isni.org/isni/0000000404150524> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7896515> ;
+             .

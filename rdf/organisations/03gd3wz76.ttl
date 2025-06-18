@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03gd3wz76> 
+    a org:Organization ;
+    rdfs:label "Sher-i-Kashmir Institute of Medical Sciences" ;
+    schema:name "Sher-i-Kashmir Institute of Medical Sciences" ;
+    schema:foundingDate "1977"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Sher-i-Kashmir_Institute_of_Medical_Sciences> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(74.80555 34.08565)"^^geo:wktLiteral ;
+        schema:addressLocality "Srinagar" ;
+    ] ;
+    schema:url <http://skimsmc.edu.in/> ;
+    schema:sameAs <http://isni.org/isni/0000000101742901> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7494599> ;
+             .

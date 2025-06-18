@@ -1,0 +1,20 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03b69tw84> 
+    a org:Organization ;
+    rdfs:label "HNO Bad Bramstedt" ;
+    schema:name "HNO Bad Bramstedt" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(9.88424 53.9183)"^^geo:wktLiteral ;
+        schema:addressLocality "Bad Bramstedt" ;
+    ] ;
+    schema:url <http://www.hnoarzt-bad-bramstedt.de/> ;
+     .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03ftejk10> 
+    a org:Organization ;
+    rdfs:label "V. N. Karazin Kharkiv National University" ;
+    schema:name "V. N. Karazin Kharkiv National University" ;
+    schema:foundingDate "1804"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/University_of_Kharkiv> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(36.25272 49.98081)"^^geo:wktLiteral ;
+        schema:addressLocality "Kharkiv" ;
+    ] ;
+    schema:url <https://karazin.ua> ;
+    schema:sameAs <http://isni.org/isni/0000000405176080> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1458695> ;
+             .

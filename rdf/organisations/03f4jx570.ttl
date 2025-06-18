@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03f4jx570> 
+    a org:Organization ;
+    rdfs:label "Immungenetics (Germany)" ;
+    schema:name "Immungenetics (Germany)" ;
+    schema:foundingDate "2009"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(12.14049 54.0887)"^^geo:wktLiteral ;
+        schema:addressLocality "Rostock" ;
+    ] ;
+    schema:url <http://www.immungenetics.com/> ;
+     .

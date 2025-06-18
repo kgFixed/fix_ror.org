@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0381kjh19> 
+    a org:Organization ;
+    rdfs:label "Northeast Wisconsin Technical College" ;
+    schema:name "Northeast Wisconsin Technical College" ;
+    schema:foundingDate "1912"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Northeast_Wisconsin_Technical_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-88.01983 44.51916)"^^geo:wktLiteral ;
+        schema:addressLocality "Green Bay" ;
+    ] ;
+    schema:url <https://www.nwtc.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000405685512> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7057999> ;
+             .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03jnj0435> 
+    a org:Organization ;
+    rdfs:label "Scottish and Southern Energy (United Kingdom)" ;
+    schema:name "Scottish and Southern Energy (United Kingdom)" ;
+    schema:foundingDate "1998"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/SSE_plc> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-3.43139 56.39522)"^^geo:wktLiteral ;
+        schema:addressLocality "Perth" ;
+    ] ;
+    schema:url <http://sse.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000406306860> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q493854> ;
+             .

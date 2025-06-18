@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03dv91853> 
+    a org:Organization ;
+    rdfs:label "Dortmund University of Applied Sciences and Arts" ;
+    schema:name "Dortmund University of Applied Sciences and Arts" ;
+    schema:foundingDate "1971"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Dortmund_University_of_Applied_Sciences_and_Arts> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(7.466 51.51494)"^^geo:wktLiteral ;
+        schema:addressLocality "Dortmund" ;
+    ] ;
+    schema:url <http://www.fh-dortmund.de/> ;
+    schema:sameAs <http://isni.org/isni/0000000405487321> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1324675> ;
+             .

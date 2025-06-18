@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03jbgaw48> 
+    a org:Organization ;
+    rdfs:label "Women for Peace and Democracy – Nepal" ;
+    schema:name "Women for Peace and Democracy – Nepal" ;
+    schema:foundingDate "2010"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(85.3206 27.70169)"^^geo:wktLiteral ;
+        schema:addressLocality "Kathmandu" ;
+    ] ;
+    schema:url <http://wpdnepal.org.np/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30289282> ;
+             .

@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03enna516> 
+    a org:Organization ;
+    rdfs:label "Z Group Steel Holding (Czechia)" ;
+    schema:name "Z Group Steel Holding (Czechia)" ;
+    schema:foundingDate "1959"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(17.37648 48.95363)"^^geo:wktLiteral ;
+        schema:addressLocality "Veselí nad Moravou" ;
+    ] ;
+    schema:url <https://www.steel-holding.cz/index.php/en/> ;
+     .

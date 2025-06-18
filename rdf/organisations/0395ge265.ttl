@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0395ge265> 
+    a org:Organization ;
+    rdfs:label "Weybridge Community Hospital" ;
+    schema:name "Weybridge Community Hospital" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.45975 51.37178)"^^geo:wktLiteral ;
+        schema:addressLocality "Weybridge" ;
+    ] ;
+    schema:url <https://www.cshsurrey.co.uk/our-services/location/weybridge-community-hospital> ;
+    schema:sameAs <http://isni.org/isni/0000000449043220> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30293159> ;
+             .

@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/034ebnm46> 
+    a org:Organization ;
+    rdfs:label "Minnesota Geological Survey" ;
+    schema:name "Minnesota Geological Survey" ;
+    schema:foundingDate "1872"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Minnesota_Geological_Survey> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/017zqws13> ;
+        rdfs:label "University of Minnesota" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-93.09327 44.94441)"^^geo:wktLiteral ;
+        schema:addressLocality "Saint Paul" ;
+    ] ;
+    schema:url <https://cse.umn.edu/mgs> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q13415296> ;
+             .

@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03gatys88> 
+    a org:Organization ;
+    rdfs:label "Ministerio de Salud Pública y Bienestar Social" ;
+    schema:name "Ministerio de Salud Pública y Bienestar Social" ;
+    schema:foundingDate "1936"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01d540m14> ;
+        rdfs:label "Instituto de Medicina Tropical" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-57.647 -25.28646)"^^geo:wktLiteral ;
+        schema:addressLocality "Asunción" ;
+    ] ;
+    schema:url <https://www.mspbs.gov.py/index.php> ;
+    schema:sameAs <http://isni.org/isni/0000000404536902> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q84498729> ;
+             .

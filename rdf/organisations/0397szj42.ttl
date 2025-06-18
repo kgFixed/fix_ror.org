@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0397szj42> 
+    a org:Organization ;
+    rdfs:label "Tarsus University" ;
+    schema:name "Tarsus University" ;
+    schema:foundingDate "2018"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Tarsus_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(34.89277 36.91766)"^^geo:wktLiteral ;
+        schema:addressLocality "Tarsus" ;
+    ] ;
+    schema:url <http://www.tarsus.edu.tr/Website/Default.aspx> ;
+    schema:sameAs <http://isni.org/isni/0000000480329163> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q52162280> ;
+             .

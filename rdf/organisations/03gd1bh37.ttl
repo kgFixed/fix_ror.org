@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03gd1bh37> 
+    a org:Organization ;
+    rdfs:label "Thailand Research Fund" ;
+    schema:name "Thailand Research Fund" ;
+    schema:foundingDate "1992"^^xsd:gYear ;
+    org:status "inactive" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04vy95b61> ;
+        rdfs:label "National Science and Technology Development Agency" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/000025p04> ;
+        rdfs:label "Thailand Science Research and Innovation" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(100.50144 13.75398)"^^geo:wktLiteral ;
+        schema:addressLocality "Bangkok" ;
+    ] ;
+    schema:url <http://www.trf.or.th/eng/> ;
+    schema:sameAs <http://isni.org/isni/0000000459019777> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1702646> ;
+             .

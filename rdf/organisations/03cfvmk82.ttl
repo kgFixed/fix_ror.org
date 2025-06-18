@@ -1,0 +1,33 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03cfvmk82> 
+    a org:Organization ;
+    rdfs:label "VA Sierra Nevada Health Care System" ;
+    schema:name "VA Sierra Nevada Health Care System" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03vay2m05> ;
+        rdfs:label "Ioannis A. Lougaris Veterans Affairs Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/030j39b93> ;
+        rdfs:label "VA Sierra Pacific Network" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-119.8138 39.52963)"^^geo:wktLiteral ;
+        schema:addressLocality "Reno" ;
+    ] ;
+    schema:url <http://www.reno.va.gov/> ;
+    schema:sameAs <http://isni.org/isni/0000000404200771> ;
+             .

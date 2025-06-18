@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03h8kn192> 
+    a org:Organization ;
+    rdfs:label "International Union of Police Associations" ;
+    schema:name "International Union of Police Associations" ;
+    schema:foundingDate "1979"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/International_Union_of_Police_Associations> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-82.53065 27.33643)"^^geo:wktLiteral ;
+        schema:addressLocality "Sarasota" ;
+    ] ;
+    schema:url <https://iupa.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000105505479> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6054120> ;
+             .

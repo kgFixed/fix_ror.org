@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03j9nh870> 
+    a org:Organization ;
+    rdfs:label "Pikes Peak Library District" ;
+    schema:name "Pikes Peak Library District" ;
+    schema:foundingDate "1975"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Pikes_Peak_Library_District> ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-104.82136 38.83388)"^^geo:wktLiteral ;
+        schema:addressLocality "Colorado Springs" ;
+    ] ;
+    schema:url <http://ppld.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000094288471> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7193653> ;
+             .

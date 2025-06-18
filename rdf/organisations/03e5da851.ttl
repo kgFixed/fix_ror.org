@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03e5da851> 
+    a org:Organization ;
+    rdfs:label "Tianjin Renai College" ;
+    schema:name "Tianjin Renai College" ;
+    schema:foundingDate "2006"^^xsd:gYear ;
+    schema:sameAs <https://zh.wikipedia.org/wiki/%E5%A4%A9%E6%B4%A5%E4%BB%81%E6%84%9B%E5%AD%B8%E9%99%A2> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(117.17667 39.14222)"^^geo:wktLiteral ;
+        schema:addressLocality "Tianjin" ;
+    ] ;
+    schema:url <https://www.tjrac.edu.cn> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q28416420> ;
+             .

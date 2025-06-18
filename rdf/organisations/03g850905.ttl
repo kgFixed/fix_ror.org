@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03g850905> 
+    a org:Organization ;
+    rdfs:label "Carl Gellert and Celia Berta Gellert Foundation" ;
+    schema:name "Carl Gellert and Celia Berta Gellert Foundation" ;
+    schema:foundingDate "1970"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Other" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-122.46192 37.70577)"^^geo:wktLiteral ;
+        schema:addressLocality "Daly City" ;
+    ] ;
+    schema:url <http://www.gellertfoundation.org/> ;
+    schema:sameAs <http://isni.org/isni/000000045898951X> ;
+             .

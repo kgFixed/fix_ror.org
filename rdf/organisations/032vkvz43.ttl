@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/032vkvz43> 
+    a org:Organization ;
+    rdfs:label "State Organization "Institute of Market and Economic&Ecological Researches of NAS of Ukraine"" ;
+    schema:name "State Organization "Institute of Market and Economic&Ecological Researches of NAS of Ukraine"" ;
+    schema:foundingDate "1970"^^xsd:gYear ;
+    schema:sameAs <https://uk.wikipedia.org/wiki/Об%27єднаний_інститут_економіки_НАН_України> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00je4t102> ;
+        rdfs:label "National Academy of Sciences of Ukraine" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(30.74383 46.48572)"^^geo:wktLiteral ;
+        schema:addressLocality "Odesa" ;
+    ] ;
+    schema:url <https://impeer.org.ua> ;
+     .

@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03fjxhp48> 
+    a org:Organization ;
+    rdfs:label "Hoard Historical Museum" ;
+    schema:name "Hoard Historical Museum" ;
+    schema:foundingDate "1939"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-88.83705 42.92889)"^^geo:wktLiteral ;
+        schema:addressLocality "Fort Atkinson" ;
+    ] ;
+    schema:url <https://hoardmuseum.org/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30289595> ;
+             .

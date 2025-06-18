@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03befa582> 
+    a org:Organization ;
+    rdfs:label "Centre Hospitalier Gabriel-Martin" ;
+    schema:name "Centre Hospitalier Gabriel-Martin" ;
+    schema:foundingDate "1848"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(6.62483 46.37958)"^^geo:wktLiteral ;
+        schema:addressLocality "Saint-Paul-en-Chablais" ;
+    ] ;
+    schema:url <http://www.chgm.re/> ;
+    schema:sameAs <http://isni.org/isni/0000000446862255> ;
+             .

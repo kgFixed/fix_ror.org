@@ -1,0 +1,60 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/035gna214> 
+    a org:Organization ;
+    rdfs:label "Nova Scotia Health Authority" ;
+    schema:name "Nova Scotia Health Authority" ;
+    schema:foundingDate "2015"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Nova_Scotia_Health_Authority> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05m7vf540> ;
+        rdfs:label "Capital District Health Authority" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02rgjy857> ;
+        rdfs:label "Dartmouth General Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02dtaqx81> ;
+        rdfs:label "Nova Scotia Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01mhbkr88> ;
+        rdfs:label "St Martha's Regional Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/025qrzc85> ;
+        rdfs:label "Queen Elizabeth II Health Sciences Centre" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01e6qks80> ;
+        rdfs:label "Dalhousie University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-63.57688 44.64269)"^^geo:wktLiteral ;
+        schema:addressLocality "Halifax" ;
+    ] ;
+    schema:url <http://www.nshealth.ca/> ;
+    schema:sameAs <http://isni.org/isni/0000000446892163> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q24190346> ;
+             .

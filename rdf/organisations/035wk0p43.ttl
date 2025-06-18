@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/035wk0p43> 
+    a org:Organization ;
+    rdfs:label "E.ON (United States)" ;
+    schema:name "E.ON (United States)" ;
+    schema:foundingDate "2000"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/E.ON> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/013gjg633> ;
+        rdfs:label "E.ON (Germany)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-97.74306 30.26715)"^^geo:wktLiteral ;
+        schema:addressLocality "Austin" ;
+    ] ;
+    schema:url <https://www.eon.com/en.html> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30282923> ;
+             .
