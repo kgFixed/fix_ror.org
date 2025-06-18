@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01wyqb997> 
+    a org:Organization ;
+    rdfs:label "Centre International de Recherches Médicales de Franceville" ;
+    schema:name "Centre International de Recherches Médicales de Franceville" ;
+    org:status "active" ;
+    org:classification "Other" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(13.58357 -1.63333)"^^geo:wktLiteral ;
+        schema:addressLocality "Franceville" ;
+    ] ;
+    schema:url <http://cirmf.org/> ;
+    schema:sameAs <http://isni.org/isni/000000041808058X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30281590> ;
+             .

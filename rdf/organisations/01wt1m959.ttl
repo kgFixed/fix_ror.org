@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01wt1m959> 
+    a org:Organization ;
+    rdfs:label "Prince George's County Health Department" ;
+    schema:name "Prince George's County Health Department" ;
+    schema:foundingDate "1696"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-76.83025 38.89761)"^^geo:wktLiteral ;
+        schema:addressLocality "Largo" ;
+    ] ;
+    schema:url <http://www.princegeorgescountymd.gov/Pages/default.aspx> ;
+    schema:sameAs <http://isni.org/isni/0000000406230683> ;
+             .

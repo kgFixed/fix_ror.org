@@ -1,0 +1,40 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01x2d9f70> 
+    a org:Organization ;
+    rdfs:label "Amsterdam Neuroscience" ;
+    schema:name "Amsterdam Neuroscience" ;
+    schema:foundingDate "2016"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/008xxew50> ;
+        rdfs:label "Vrije Universiteit Amsterdam" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04dkp9463> ;
+        rdfs:label "University of Amsterdam" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05grdyy37> ;
+        rdfs:label "Amsterdam University Medical Centers" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(4.88969 52.37403)"^^geo:wktLiteral ;
+        schema:addressLocality "Amsterdam" ;
+    ] ;
+    schema:url <https://www.amsterdamumc.org/en/research/institutes/amsterdam-neuroscience/information.htm> ;
+     .

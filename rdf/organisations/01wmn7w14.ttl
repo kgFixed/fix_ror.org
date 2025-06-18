@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01wmn7w14> 
+    a org:Organization ;
+    rdfs:label "Institute of Advanced Media Arts and Sciences" ;
+    schema:name "Institute of Advanced Media Arts and Sciences" ;
+    schema:foundingDate "2001"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Institute_of_Advanced_Media_Arts_and_Sciences> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(136.61667 35.35)"^^geo:wktLiteral ;
+        schema:addressLocality "Ōgaki" ;
+    ] ;
+    schema:url <http://www.iamas.ac.jp/en/> ;
+    schema:sameAs <http://isni.org/isni/0000000105373007> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4845601> ;
+             .

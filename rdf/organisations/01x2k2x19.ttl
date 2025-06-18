@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01x2k2x19> 
+    a org:Organization ;
+    rdfs:label "Epicentre (South Africa)" ;
+    schema:name "Epicentre (South Africa)" ;
+    schema:foundingDate "2001"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/034w22c34> ;
+        rdfs:label "Epicentre" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(18.42322 -33.92584)"^^geo:wktLiteral ;
+        schema:addressLocality "Cape Town" ;
+    ] ;
+    schema:url <http://epicentre.org.za/> ;
+     .

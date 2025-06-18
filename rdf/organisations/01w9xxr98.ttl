@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01w9xxr98> 
+    a org:Organization ;
+    rdfs:label "Freed–Hardeman University" ;
+    schema:name "Freed–Hardeman University" ;
+    schema:foundingDate "1869"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Freed%E2%80%93Hardeman_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-86.62 36.30477)"^^geo:wktLiteral ;
+        schema:addressLocality "Hendersonville" ;
+    ] ;
+    schema:url <https://www.fhu.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000104991647> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5500864> ;
+             .

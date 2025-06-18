@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01tphmj73> 
+    a org:Organization ;
+    rdfs:label "Atlantic Cape Community College" ;
+    schema:name "Atlantic Cape Community College" ;
+    schema:foundingDate "1964"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Atlantic_Cape_Community_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-74.72766 39.45234)"^^geo:wktLiteral ;
+        schema:addressLocality "Mays Landing" ;
+    ] ;
+    schema:url <http://www.atlantic.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000405235343> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4816324> ;
+             .

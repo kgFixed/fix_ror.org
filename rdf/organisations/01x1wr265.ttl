@@ -1,0 +1,35 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01x1wr265> 
+    a org:Organization ;
+    rdfs:label "Tata Technologies (India)" ;
+    schema:name "Tata Technologies (India)" ;
+    schema:foundingDate "1989"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Tata_Technologies> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01x1jk522> ;
+        rdfs:label "Tata Technologies (Singapore)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/000628g58> ;
+        rdfs:label "Tata Sons (India)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(73.85535 18.51957)"^^geo:wktLiteral ;
+        schema:addressLocality "Pune" ;
+    ] ;
+    schema:url <http://www.tatatechnologies.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q7687835> ;
+             .

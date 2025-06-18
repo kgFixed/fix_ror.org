@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01jysap10> 
+    a org:Organization ;
+    rdfs:label "West Yorkshire Joint Services" ;
+    schema:name "West Yorkshire Joint Services" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/West_Yorkshire_Joint_Services> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.59877 53.74013)"^^geo:wktLiteral ;
+        schema:addressLocality "Morley" ;
+    ] ;
+    schema:url <http://www.wyjs.org.uk/> ;
+    schema:sameAs <http://isni.org/isni/0000000406200046> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7987039> ;
+             .

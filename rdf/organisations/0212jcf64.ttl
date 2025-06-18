@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0212jcf64> 
+    a org:Organization ;
+    rdfs:label "Hubei University of Arts and Science" ;
+    schema:name "Hubei University of Arts and Science" ;
+    schema:foundingDate "1905"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Hubei_University_of_Arts_and_Science> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(112.14479 32.0422)"^^geo:wktLiteral ;
+        schema:addressLocality "Xiangfan" ;
+    ] ;
+    schema:url <http://www.hbuas.edu.cn/> ;
+    schema:sameAs <http://isni.org/isni/000000041759225X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q15928983> ;
+             .

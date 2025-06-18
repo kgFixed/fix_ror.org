@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01mtkd993> 
+    a org:Organization ;
+    rdfs:label "University of Alaska System" ;
+    schema:name "University of Alaska System" ;
+    schema:foundingDate "1975"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/University_of_Alaska_system> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03k3c2t50> ;
+        rdfs:label "University of Alaska Anchorage" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01j7nq853> ;
+        rdfs:label "University of Alaska Fairbanks" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02y8nb297> ;
+        rdfs:label "University of Alaska Southeast" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-147.71639 64.83778)"^^geo:wktLiteral ;
+        schema:addressLocality "Fairbanks" ;
+    ] ;
+    schema:url <http://www.alaska.edu/alaska/> ;
+    schema:sameAs <http://isni.org/isni/0000000122061080> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2002043> ;
+             .

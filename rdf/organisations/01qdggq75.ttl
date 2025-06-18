@@ -1,0 +1,20 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01qdggq75> 
+    a org:Organization ;
+    rdfs:label "Institut Restaurování a Konzervačních Technik" ;
+    schema:name "Institut Restaurování a Konzervačních Technik" ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(16.31298 49.86809)"^^geo:wktLiteral ;
+        schema:addressLocality "Litomyšl" ;
+    ] ;
+    schema:url <http://www.irkt.cz/> ;
+     .

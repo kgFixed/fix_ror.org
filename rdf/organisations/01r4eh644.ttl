@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01r4eh644> 
+    a org:Organization ;
+    rdfs:label "Lunar and Planetary Institute" ;
+    schema:name "Lunar and Planetary Institute" ;
+    schema:foundingDate "1969"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Lunar_and_Planetary_Institute> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/043pgqy52> ;
+        rdfs:label "Universities Space Research Association" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-95.36327 29.76328)"^^geo:wktLiteral ;
+        schema:addressLocality "Houston" ;
+    ] ;
+    schema:url <https://www.lpi.usra.edu/> ;
+    schema:sameAs <http://isni.org/isni/000000010944145X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q239221> ;
+             .

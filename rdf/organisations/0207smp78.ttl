@@ -1,0 +1,35 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0207smp78> 
+    a org:Organization ;
+    rdfs:label "Ascension Providence Hospital" ;
+    schema:name "Ascension Providence Hospital" ;
+    schema:foundingDate "1861"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00s1szh94> ;
+        rdfs:label "Ascension" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01070mq45> ;
+        rdfs:label "Wayne State University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-83.22187 42.47337)"^^geo:wktLiteral ;
+        schema:addressLocality "Southfield" ;
+    ] ;
+    schema:url <https://healthcare.ascension.org/Locations/Michigan/MIDET/Southfield-Ascension-Providence-Hospital-Southfield-Campus?_ga=2.142884275.787900410.1570527361-558817569.1570527361> ;
+    schema:sameAs <http://isni.org/isni/0000000404654685> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30280416> ;
+             .

@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01pv48e96> 
+    a org:Organization ;
+    rdfs:label "Research Centre of Medical Technology and Biotechnology" ;
+    schema:name "Research Centre of Medical Technology and Biotechnology" ;
+    schema:foundingDate "1994"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(10.646 51.10771)"^^geo:wktLiteral ;
+        schema:addressLocality "Bad Langensalza" ;
+    ] ;
+    schema:url <http://www.fzmb.de> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30256609> ;
+             .

@@ -1,0 +1,60 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01jtrvx49> 
+    a org:Organization ;
+    rdfs:label "World Glacier Monitoring Service" ;
+    schema:name "World Glacier Monitoring Service" ;
+    schema:foundingDate "1986"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/World_Glacier_Monitoring_Service> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02crff812> ;
+        rdfs:label "University of Zurich" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01jachm79> ;
+        rdfs:label "International Union of Geodesy and Geophysics" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/034s44556> ;
+        rdfs:label "International Science Council" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/015z29x25> ;
+        rdfs:label "United Nations Environment Programme" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04h4z8k05> ;
+        rdfs:label "UNESCO" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/011pjwf87> ;
+        rdfs:label "World Meteorological Organization" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(8.55 47.36667)"^^geo:wktLiteral ;
+        schema:addressLocality "Zurich" ;
+    ] ;
+    schema:url <https://wgms.ch> ;
+    schema:sameAs <http://isni.org/isni/0000000109421088> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q656311> ;
+             .

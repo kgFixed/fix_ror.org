@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01xjv7358> 
+    a org:Organization ;
+    rdfs:label "Japan Synchrotron Radiation Research Institute" ;
+    schema:name "Japan Synchrotron Radiation Research Institute" ;
+    schema:foundingDate "1990"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01d1kv753> ;
+        rdfs:label "SPring-8" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(134.35896 35.00268)"^^geo:wktLiteral ;
+        schema:addressLocality "Sayō" ;
+    ] ;
+    schema:url <http://www.jasri.jp/ja/> ;
+    schema:sameAs <http://isni.org/isni/000000012170091X> ;
+             .

@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/02191hv61> 
+    a org:Organization ;
+    rdfs:label "Zyberwear (United States)" ;
+    schema:name "Zyberwear (United States)" ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-81.54396 28.56917)"^^geo:wktLiteral ;
+        schema:addressLocality "Ocoee" ;
+    ] ;
+    schema:url <http://zyberwear.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30292768> ;
+             .

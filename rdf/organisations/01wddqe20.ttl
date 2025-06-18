@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01wddqe20> 
+    a org:Organization ;
+    rdfs:label "The Alfred Hospital" ;
+    schema:name "The Alfred Hospital" ;
+    schema:foundingDate "1871"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/The_Alfred_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04scfb908> ;
+        rdfs:label "Alfred Health" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02bfwt286> ;
+        rdfs:label "Monash University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(144.96332 -37.814)"^^geo:wktLiteral ;
+        schema:addressLocality "Melbourne" ;
+    ] ;
+    schema:url <https://www.alfredhealth.org.au/the-alfred> ;
+    schema:sameAs <http://isni.org/isni/000000040432511X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7713086> ;
+             .

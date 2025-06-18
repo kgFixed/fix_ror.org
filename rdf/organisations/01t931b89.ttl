@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01t931b89> 
+    a org:Organization ;
+    rdfs:label "Dais Analytic Corporation (United States)" ;
+    schema:name "Dais Analytic Corporation (United States)" ;
+    schema:foundingDate "1999"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-82.59176 28.1939)"^^geo:wktLiteral ;
+        schema:addressLocality "Odessa" ;
+    ] ;
+    schema:url <http://www.daisanalytic.com/> ;
+     .

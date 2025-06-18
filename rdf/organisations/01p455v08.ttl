@@ -1,0 +1,49 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01p455v08> 
+    a org:Organization ;
+    rdfs:label "Xinjiang Medical University" ;
+    schema:name "Xinjiang Medical University" ;
+    schema:foundingDate "1956"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Xinjiang_Medical_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04f970v93> ;
+        rdfs:label "Fifth Affiliated Hospital of Xinjiang Medical University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02qx1ae98> ;
+        rdfs:label "First Affiliated Hospital of Xinjiang Medical University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01w3v1s67> ;
+        rdfs:label "Second Affiliated Hospital of Xinjiang Medical University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03r4az639> ;
+        rdfs:label "Sixth Affiliated Hospital of Xinjiang Medical University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(87.60046 43.80096)"^^geo:wktLiteral ;
+        schema:addressLocality "Ürümqi" ;
+    ] ;
+    schema:url <https://xjmu.edu.cn> ;
+    schema:sameAs <http://isni.org/isni/0000000417993993> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5977995> ;
+             .

@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01jqked53> 
+    a org:Organization ;
+    rdfs:label "South Devon College" ;
+    schema:name "South Devon College" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/South_Devon_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-3.56789 50.43565)"^^geo:wktLiteral ;
+        schema:addressLocality "Paignton" ;
+    ] ;
+    schema:url <https://www.southdevon.ac.uk> ;
+    schema:sameAs <http://isni.org/isni/0000000404740911> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7567040> ;
+             .

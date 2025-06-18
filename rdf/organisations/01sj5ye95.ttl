@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01sj5ye95> 
+    a org:Organization ;
+    rdfs:label "Gen9 (United States)" ;
+    schema:name "Gen9 (United States)" ;
+    org:status "withdrawn" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/01t4t8r38> ;
+        rdfs:label "Gen-9 (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-84.50855 39.08367)"^^geo:wktLiteral ;
+        schema:addressLocality "Covington" ;
+    ] ;
+    schema:url <http://www.gen9.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30256742> ;
+             .

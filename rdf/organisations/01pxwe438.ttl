@@ -1,0 +1,145 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01pxwe438> 
+    a org:Organization ;
+    rdfs:label "McGill University" ;
+    schema:name "McGill University" ;
+    schema:foundingDate "1821"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/McGill_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/003sgap07> ;
+        rdfs:label "Canadian Institute for International Peace and Security" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02pkvpx84> ;
+        rdfs:label "Group for Research in Decision Analysis" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05yfz9t60> ;
+        rdfs:label "International Laboratory for Brain, Music and Sound Research" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02bkw1m29> ;
+        rdfs:label "International Laboratory on Learning Systems" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03wx0vn75> ;
+        rdfs:label "CentrEau - Quebec Water Management Research Centre" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02dhqpj43> ;
+        rdfs:label "Centre de réadaptation Lethbridge-Layton-Mackay" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05dk2r620> ;
+        rdfs:label "Douglas Mental Health University Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/056jjra10> ;
+        rdfs:label "Jewish General Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/047eze012> ;
+        rdfs:label "Jewish Rehabilitation Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/046j4d739> ;
+        rdfs:label "Lakeshore General Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04cpxjv19> ;
+        rdfs:label "McGill University Health Centre" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/018sv0913> ;
+        rdfs:label "McGill-Queen's University Press" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04wc5jk96> ;
+        rdfs:label "Montreal Children's Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05m8pzq90> ;
+        rdfs:label "Montreal Clinical Research Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04gbhgc79> ;
+        rdfs:label "Montreal General Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05ghs6f64> ;
+        rdfs:label "Montreal Neurological Institute and Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00arwy491> ;
+        rdfs:label "Royal Victoria Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01z1dtf94> ;
+        rdfs:label "Shriners Hospitals for Children - Canada" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03s3dhf22> ;
+        rdfs:label "St Mary's Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05fdt6816> ;
+        rdfs:label "Obvia" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-73.58781 45.50884)"^^geo:wktLiteral ;
+        schema:addressLocality "Montreal" ;
+    ] ;
+    schema:url <https://www.mcgill.ca> ;
+    schema:sameAs <http://isni.org/isni/0000000419368649> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q201492> ;
+             .

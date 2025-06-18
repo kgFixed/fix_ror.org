@@ -1,0 +1,33 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01tg7a346> 
+    a org:Organization ;
+    rdfs:label "SA Health" ;
+    schema:name "SA Health" ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03pa4y709> ;
+        rdfs:label "Modbury Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04g3scy39> ;
+        rdfs:label "Government of South Australia" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(138.59863 -34.92866)"^^geo:wktLiteral ;
+        schema:addressLocality "Adelaide" ;
+    ] ;
+    schema:url <http://www.sahealth.sa.gov.au/> ;
+    schema:sameAs <http://isni.org/isni/0000000405401022> ;
+             .

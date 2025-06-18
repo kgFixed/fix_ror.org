@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01m7qnr31> 
+    a org:Organization ;
+    rdfs:label "Ente Vasco de la Energía" ;
+    schema:name "Ente Vasco de la Energía" ;
+    schema:foundingDate "1982"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-2.92528 43.26271)"^^geo:wktLiteral ;
+        schema:addressLocality "Bilbao" ;
+    ] ;
+    schema:url <http://www.eve.es/index.aspx> ;
+     .

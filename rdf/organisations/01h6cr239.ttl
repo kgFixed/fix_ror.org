@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01h6cr239> 
+    a org:Organization ;
+    rdfs:label "International University of Kagoshima" ;
+    schema:name "International University of Kagoshima" ;
+    schema:foundingDate "1960"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/The_International_University_of_Kagoshima> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(130.55 31.56667)"^^geo:wktLiteral ;
+        schema:addressLocality "Kagoshima" ;
+    ] ;
+    schema:url <http://www.iuk.ac.jp/english/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q7742343> ;
+             .

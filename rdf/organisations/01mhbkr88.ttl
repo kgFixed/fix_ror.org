@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01mhbkr88> 
+    a org:Organization ;
+    rdfs:label "St Martha's Regional Hospital" ;
+    schema:name "St Martha's Regional Hospital" ;
+    schema:foundingDate "1906"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/035gna214> ;
+        rdfs:label "Nova Scotia Health Authority" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-61.99858 45.61685)"^^geo:wktLiteral ;
+        schema:addressLocality "Antigonish" ;
+    ] ;
+    schema:url <http://www.nshealth.ca/locations-details/St.%20Martha's%20Regional%20Hospital> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30280906> ;
+             .

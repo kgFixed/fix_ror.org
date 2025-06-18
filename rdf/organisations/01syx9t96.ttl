@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01syx9t96> 
+    a org:Organization ;
+    rdfs:label "Fond du Lac Reservation" ;
+    schema:name "Fond du Lac Reservation" ;
+    schema:foundingDate "1854"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Fond_du_Lac_Band_of_Lake_Superior_Chippewa> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-92.45936 46.72161)"^^geo:wktLiteral ;
+        schema:addressLocality "Cloquet" ;
+    ] ;
+    schema:url <http://www.fdlrez.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000404018048> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5464969> ;
+             .

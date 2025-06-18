@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01jnyam78> 
+    a org:Organization ;
+    rdfs:label "Jarvis Christian College" ;
+    schema:name "Jarvis Christian College" ;
+    schema:foundingDate "1912"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Jarvis_Christian_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-95.20411 32.58847)"^^geo:wktLiteral ;
+        schema:addressLocality "Hawkins" ;
+    ] ;
+    schema:url <http://www.jarvis.edu/> ;
+    schema:sameAs <http://isni.org/isni/000000040587599X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6161219> ;
+             .

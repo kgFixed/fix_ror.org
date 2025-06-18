@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01ja11s84> 
+    a org:Organization ;
+    rdfs:label "School of the Museum of Fine Arts" ;
+    schema:name "School of the Museum of Fine Arts" ;
+    schema:foundingDate "1876"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/School_of_the_Museum_of_Fine_Arts,_Boston> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00nsa3x45> ;
+        rdfs:label "Museum of Fine Arts, Boston" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04t5xt781> ;
+        rdfs:label "Northeastern University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05wvpxv85> ;
+        rdfs:label "Tufts University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-71.05977 42.35843)"^^geo:wktLiteral ;
+        schema:addressLocality "Boston" ;
+    ] ;
+    schema:url <http://www.smfa.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000121909334> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1298529> ;
+             .

@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01h9c4672> 
+    a org:Organization ;
+    rdfs:label "American Society for Gastrointestinal Endoscopy" ;
+    schema:name "American Society for Gastrointestinal Endoscopy" ;
+    schema:foundingDate "1941"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/American_Society_for_Gastrointestinal_Endoscopy> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-88.01117 41.80892)"^^geo:wktLiteral ;
+        schema:addressLocality "Downers Grove" ;
+    ] ;
+    schema:url <http://www.asge.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000110914349> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4745024> ;
+             .

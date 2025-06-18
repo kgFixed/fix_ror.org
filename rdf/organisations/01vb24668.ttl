@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01vb24668> 
+    a org:Organization ;
+    rdfs:label "Southern Poverty Law Center" ;
+    schema:name "Southern Poverty Law Center" ;
+    schema:foundingDate "1971"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Southern_Poverty_Law_Center> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-86.29997 32.36681)"^^geo:wktLiteral ;
+        schema:addressLocality "Montgomery" ;
+    ] ;
+    schema:url <https://www.splcenter.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000093377667> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2061914> ;
+             .

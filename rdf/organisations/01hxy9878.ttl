@@ -1,0 +1,109 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01hxy9878> 
+    a org:Organization ;
+    rdfs:label "Royal College of Surgeons in Ireland" ;
+    schema:name "Royal College of Surgeons in Ireland" ;
+    schema:foundingDate "1784"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Royal_College_of_Surgeons_in_Ireland> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01c4rxk68> ;
+        rdfs:label "Advanced Materials and BioEngineering Research" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01h4bh480> ;
+        rdfs:label "Royal College of Surgeons in Ireland - Bahrain" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/043mzjj67> ;
+        rdfs:label "Beaumont Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/031fazd56> ;
+        rdfs:label "Cavan General Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/025qedy81> ;
+        rdfs:label "Children's Health Ireland at Crumlin" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03h5v7z82> ;
+        rdfs:label "Connolly Hospital Blanchardstown" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03jcxa214> ;
+        rdfs:label "National Maternity Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/029sr1j73> ;
+        rdfs:label "Our Lady of Lourdes Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05t4vgv93> ;
+        rdfs:label "Rotunda Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05p668j08> ;
+        rdfs:label "St. Luke's General Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0527gjc91> ;
+        rdfs:label "Temple Street Children's University Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/007pvy114> ;
+        rdfs:label "University Hospital Waterford" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05c347015> ;
+        rdfs:label "Irish Research eLibrary" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03z0mke78> ;
+        rdfs:label "Royal Victoria Eye and Ear Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-6.24889 53.33306)"^^geo:wktLiteral ;
+        schema:addressLocality "Dublin" ;
+    ] ;
+    schema:url <https://www.rcsi.com> ;
+    schema:sameAs <http://isni.org/isni/0000000404887120> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1124228> ;
+             .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01v7qfc32> 
+    a org:Organization ;
+    rdfs:label "National Department of Health" ;
+    schema:name "National Department of Health" ;
+    schema:foundingDate "2007"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/National_Department_of_Health_of_Papua_New_Guinea> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(147.15089 -9.47723)"^^geo:wktLiteral ;
+        schema:addressLocality "Port Moresby" ;
+    ] ;
+    schema:url <http://www.health.gov.pg/> ;
+    schema:sameAs <http://isni.org/isni/0000000403682932> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6972265> ;
+             .

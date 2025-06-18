@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01p30rj34> 
+    a org:Organization ;
+    rdfs:label "Calcutta State Transport Corporation" ;
+    schema:name "Calcutta State Transport Corporation" ;
+    schema:foundingDate "1948"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Calcutta_State_Transport_Corporation> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(88.36304 22.56263)"^^geo:wktLiteral ;
+        schema:addressLocality "Kolkata" ;
+    ] ;
+    schema:url <http://cstc.org.in/> ;
+     .

@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/020rbyg91> 
+    a org:Organization ;
+    rdfs:label "National Institutes for Quantum Science and Technology" ;
+    schema:name "National Institutes for Quantum Science and Technology" ;
+    schema:foundingDate "2016"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04399kt07> ;
+        rdfs:label "Takasaki Advanced Radiation Research Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05mzhke23> ;
+        rdfs:label "Kansai Photon Science Institute" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(140.11667 35.6)"^^geo:wktLiteral ;
+        schema:addressLocality "Chiba" ;
+    ] ;
+    schema:url <https://www.qst.go.jp> ;
+    schema:sameAs <http://isni.org/isni/000000045900003X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q24067079> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q39022389> ;
+             .

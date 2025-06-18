@@ -1,0 +1,76 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01y1re497> 
+    a org:Organization ;
+    rdfs:label "Department of Physical and Technical Sciences" ;
+    schema:name "Department of Physical and Technical Sciences" ;
+    schema:foundingDate "1940"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02pfhsd84> ;
+        rdfs:label "A.V. Luikov Heat and Mass Transfer Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05djstx53> ;
+        rdfs:label "Institute of Applied Physics" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0037rj917> ;
+        rdfs:label "Institute of Mechanics of Metal-Polymer Systems" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00ayxy168> ;
+        rdfs:label "Institute of Technical Acoustics" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/019taje90> ;
+        rdfs:label "Institute of Technology of Metals" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03rkhvv36> ;
+        rdfs:label "Physical and Technical Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02c900574> ;
+        rdfs:label "Powder Metallurgy Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/043qcaa25> ;
+        rdfs:label "The Joint Institute of Mechanical Engineering" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02j8pe645> ;
+        rdfs:label "National Academy of Sciences of Belarus" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(27.56667 53.9)"^^geo:wktLiteral ;
+        schema:addressLocality "Minsk" ;
+    ] ;
+    schema:url <https://nasb.gov.by/eng/about/otdeleniya-nauk/ft_nauk.php> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q17560657> ;
+             .

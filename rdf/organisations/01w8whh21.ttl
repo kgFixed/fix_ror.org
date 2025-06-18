@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01w8whh21> 
+    a org:Organization ;
+    rdfs:label "University of Oklahoma Medical Center" ;
+    schema:name "University of Oklahoma Medical Center" ;
+    schema:foundingDate "1910"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/OU_Medicine> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02aqsxs83> ;
+        rdfs:label "University of Oklahoma" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-97.51643 35.46756)"^^geo:wktLiteral ;
+        schema:addressLocality "Oklahoma City" ;
+    ] ;
+    schema:url <https://www.oumedicine.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000403752136> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7073144> ;
+             .

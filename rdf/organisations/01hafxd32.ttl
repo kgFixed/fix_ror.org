@@ -1,0 +1,61 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01hafxd32> 
+    a org:Organization ;
+    rdfs:label "Motorola (United States)" ;
+    schema:name "Motorola (United States)" ;
+    schema:foundingDate "1928"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Motorola> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/047zhzq42> ;
+        rdfs:label "Motorola (Canada)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05m34fq04> ;
+        rdfs:label "Motorola (France)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/045193y93> ;
+        rdfs:label "Motorola (Germany)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00chw7248> ;
+        rdfs:label "Motorola (Italy)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00y09zk14> ;
+        rdfs:label "Motorola (South Korea)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0396gxt62> ;
+        rdfs:label "Motorola (United Kingdom)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-88.08341 42.03336)"^^geo:wktLiteral ;
+        schema:addressLocality "Schaumburg" ;
+    ] ;
+    schema:url <http://www.motorola.com/us/home> ;
+    schema:sameAs <http://isni.org/isni/0000000123338563> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q259011> ;
+             .

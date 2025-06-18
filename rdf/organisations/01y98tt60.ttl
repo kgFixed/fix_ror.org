@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01y98tt60> 
+    a org:Organization ;
+    rdfs:label "Olusegun Agagu University of Science and Technology" ;
+    schema:name "Olusegun Agagu University of Science and Technology" ;
+    schema:foundingDate "2010"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Olusegun_Agagu_University_of_Science_and_Technology> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(4.83528 7.09316)"^^geo:wktLiteral ;
+        schema:addressLocality "Ondo" ;
+    ] ;
+    schema:url <https://www.oaustech.edu.ng> ;
+    schema:sameAs <http://isni.org/isni/0000000417796762> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q17109279> ;
+             .

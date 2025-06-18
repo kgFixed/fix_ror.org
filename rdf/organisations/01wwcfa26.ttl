@@ -1,0 +1,52 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01wwcfa26> 
+    a org:Organization ;
+    rdfs:label "Institut des Géosciences de l'Environnement" ;
+    schema:name "Institut des Géosciences de l'Environnement" ;
+    schema:foundingDate "2017"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04px4e658> ;
+        rdfs:label "Délégation Alpes" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02rx3b187> ;
+        rdfs:label "Université Grenoble Alpes" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05sbt2524> ;
+        rdfs:label "Institut polytechnique de Grenoble" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04kdfz702> ;
+        rdfs:label "Institut National des Sciences de l'Univers" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05q3vnk25> ;
+        rdfs:label "Institut de Recherche pour le Développement" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(5.76281 45.1787)"^^geo:wktLiteral ;
+        schema:addressLocality "Saint-Martin-d'Hères" ;
+    ] ;
+    schema:url <http://www.ige-grenoble.fr/?lang=fr> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q52604595> ;
+             .

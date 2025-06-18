@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01rt0fh70> 
+    a org:Organization ;
+    rdfs:label "Center for International Forestry Research" ;
+    schema:name "Center for International Forestry Research" ;
+    schema:foundingDate "1993"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Center_for_International_Forestry_Research> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01jbzz330> ;
+        rdfs:label "Center for International Forestry Research" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.02824 -12.04318)"^^geo:wktLiteral ;
+        schema:addressLocality "Lima" ;
+    ] ;
+    schema:url <https://www.cifor.org/> ;
+     .

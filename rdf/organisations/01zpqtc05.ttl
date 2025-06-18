@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01zpqtc05> 
+    a org:Organization ;
+    rdfs:label "Portsmouth City Council" ;
+    schema:name "Portsmouth City Council" ;
+    schema:foundingDate "1973"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Portsmouth_City_Council> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.09125 50.79899)"^^geo:wktLiteral ;
+        schema:addressLocality "Portsmouth" ;
+    ] ;
+    schema:url <https://www.portsmouth.gov.uk/> ;
+    schema:sameAs <http://isni.org/isni/0000000405132117> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q17104656> ;
+             .

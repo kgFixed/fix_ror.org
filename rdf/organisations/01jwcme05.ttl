@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01jwcme05> 
+    a org:Organization ;
+    rdfs:label "Fontys University of Applied Sciences" ;
+    schema:name "Fontys University of Applied Sciences" ;
+    schema:foundingDate "1996"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Fontys_University_of_Applied_Sciences> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(5.47778 51.44083)"^^geo:wktLiteral ;
+        schema:addressLocality "Eindhoven" ;
+    ] ;
+    schema:url <http://fontys.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000106694689> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1435898> ;
+             .

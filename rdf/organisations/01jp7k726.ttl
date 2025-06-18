@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01jp7k726> 
+    a org:Organization ;
+    rdfs:label "Asian Development Research Institute" ;
+    schema:name "Asian Development Research Institute" ;
+    schema:foundingDate "1991"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Asian_Development_Research_Institute> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(85.13563 25.59408)"^^geo:wktLiteral ;
+        schema:addressLocality "Patna" ;
+    ] ;
+    schema:url <http://www.adriindia.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000417746490> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4806616> ;
+             .

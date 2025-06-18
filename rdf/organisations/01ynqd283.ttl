@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01ynqd283> 
+    a org:Organization ;
+    rdfs:label "United States Immunodeficiency Network" ;
+    schema:name "United States Immunodeficiency Network" ;
+    schema:foundingDate "2003"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-76.60191 39.4015)"^^geo:wktLiteral ;
+        schema:addressLocality "Towson" ;
+    ] ;
+    schema:url <https://usidnet.org/> ;
+     .

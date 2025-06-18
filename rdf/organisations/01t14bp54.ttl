@@ -1,0 +1,64 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01t14bp54> 
+    a org:Organization ;
+    rdfs:label "Environmental System Science Data Infrastructure for a Virtual Ecosystem" ;
+    schema:name "Environmental System Science Data Infrastructure for a Virtual Ecosystem" ;
+    schema:foundingDate "2018"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01bj3aw27> ;
+        rdfs:label "United States Department of Energy" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00mmn6b08> ;
+        rdfs:label "Office of Science" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02jbv0t02> ;
+        rdfs:label "Lawrence Berkeley National Laboratory" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0114b2m14> ;
+        rdfs:label "Office of Biological and Environmental Research" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05v3mvq14> ;
+        rdfs:label "National Energy Research Scientific Computing Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0146z4r19> ;
+        rdfs:label "National Center for Ecological Analysis and Synthesis" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00hr5y405> ;
+        rdfs:label "DataONE" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-122.27275 37.87159)"^^geo:wktLiteral ;
+        schema:addressLocality "Berkeley" ;
+    ] ;
+    schema:url <https://ess-dive.lbl.gov> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q105299349> ;
+             .

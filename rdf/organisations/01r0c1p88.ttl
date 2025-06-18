@@ -1,0 +1,109 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01r0c1p88> 
+    a org:Organization ;
+    rdfs:label "University System of Maryland" ;
+    schema:name "University System of Maryland" ;
+    schema:foundingDate "1988"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/University_System_of_Maryland> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0567w8j84> ;
+        rdfs:label "Bowie State University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05exmrf24> ;
+        rdfs:label "Coppin State University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/048drzm61> ;
+        rdfs:label "Frostburg State University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/029gwvs11> ;
+        rdfs:label "Salisbury University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/044w7a341> ;
+        rdfs:label "Towson University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00yfjng44> ;
+        rdfs:label "Universities at Shady Grove" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/024gw2733> ;
+        rdfs:label "University of Baltimore" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04dqdxm60> ;
+        rdfs:label "University of Maryland Center for Environmental Science" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/006cymg18> ;
+        rdfs:label "University of Maryland Eastern Shore" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01w1pbe36> ;
+        rdfs:label "University of Maryland Global Campus" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04rq5mt64> ;
+        rdfs:label "University of Maryland, Baltimore" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02qskvh78> ;
+        rdfs:label "University of Maryland, Baltimore County" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/047s2c258> ;
+        rdfs:label "University of Maryland, College Park" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03db51w68> ;
+        rdfs:label "Maryland Sea Grant" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-76.97192 39.00317)"^^geo:wktLiteral ;
+        schema:addressLocality "Adelphi" ;
+    ] ;
+    schema:url <http://www.usmd.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000403703414> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1480532> ;
+             .

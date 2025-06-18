@@ -1,0 +1,41 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01v6fb724> 
+    a org:Organization ;
+    rdfs:label "Repubblica e Cantone Ticino" ;
+    schema:name "Repubblica e Cantone Ticino" ;
+    schema:foundingDate "1803"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05r8zkn09> ;
+        rdfs:label "Dipartimento dell Educazione della Cultura e dello Sport" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05gkz0v31> ;
+        rdfs:label "Istituto Cantonale di Patologia" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00znqyv98> ;
+        rdfs:label "Museo Cantonale di Storia Naturale di Lugano" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(9.01703 46.19278)"^^geo:wktLiteral ;
+        schema:addressLocality "Bellinzona" ;
+    ] ;
+    schema:url <http://www4.ti.ch/stato-e-organizzazione/> ;
+    schema:sameAs <http://isni.org/isni/0000000405092899> ;
+             .

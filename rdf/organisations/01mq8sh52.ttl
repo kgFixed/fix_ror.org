@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01mq8sh52> 
+    a org:Organization ;
+    rdfs:label "Institute of Biophysics" ;
+    schema:name "Institute of Biophysics" ;
+    schema:foundingDate "1981"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/038rjvd86> ;
+        rdfs:label "Department of Biological Sciences" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(92.90765 56.02668)"^^geo:wktLiteral ;
+        schema:addressLocality "Krasnoyarsk" ;
+    ] ;
+    schema:url <http://www.ibp.ru/index_eng.php> ;
+    schema:sameAs <http://isni.org/isni/0000000406379162> ;
+             .

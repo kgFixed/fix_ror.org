@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01s9pbd40> 
+    a org:Organization ;
+    rdfs:label "Universidad Técnica Nacional" ;
+    schema:name "Universidad Técnica Nacional" ;
+    schema:foundingDate "2008"^^xsd:gYear ;
+    schema:sameAs <https://es.wikipedia.org/wiki/Universidad_T%C3%A9cnica_Nacional_(Costa_Rica)> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-84.21163 10.01625)"^^geo:wktLiteral ;
+        schema:addressLocality "Alajuela" ;
+    ] ;
+    schema:url <https://www.utn.ac.cr> ;
+    schema:sameAs <http://isni.org/isni/0000000405128855> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q9091616> ;
+             .

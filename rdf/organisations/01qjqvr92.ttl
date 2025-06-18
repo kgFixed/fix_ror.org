@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01qjqvr92> 
+    a org:Organization ;
+    rdfs:label "Translational Health Science and Technology Institute" ;
+    schema:name "Translational Health Science and Technology Institute" ;
+    schema:foundingDate "2009"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Translational_Health_Science_and_Technology_Institute> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03emtbt60> ;
+        rdfs:label "Ministry of Science and Technology" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(77.02635 28.4601)"^^geo:wktLiteral ;
+        schema:addressLocality "Gurugram" ;
+    ] ;
+    schema:url <http://thsti.res.in/> ;
+    schema:sameAs <http://isni.org/isni/0000000417632258> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q18394815> ;
+             .

@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01wz97s39> 
+    a org:Organization ;
+    rdfs:label "Senckenberg Research Institute and Natural History Museum Frankfurt/M" ;
+    schema:name "Senckenberg Research Institute and Natural History Museum Frankfurt/M" ;
+    schema:foundingDate "1914"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Naturmuseum_Senckenberg> ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00xmqmx64> ;
+        rdfs:label "Senckenberg Society for Nature Research" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(8.68417 50.11552)"^^geo:wktLiteral ;
+        schema:addressLocality "Frankfurt am Main" ;
+    ] ;
+    schema:url <https://museumfrankfurt.senckenberg.de/en/> ;
+    schema:sameAs <http://isni.org/isni/0000000121845457> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q706441> ;
+             .

@@ -1,0 +1,20 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01pva1129> 
+    a org:Organization ;
+    rdfs:label "Ministarstvo Gospodarstva" ;
+    schema:name "Ministarstvo Gospodarstva" ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(17.00746 43.82695)"^^geo:wktLiteral ;
+        schema:addressLocality "Livno" ;
+    ] ;
+    schema:url <http://www.vladahbz.com/ministarstvo-gospodarstva/> ;
+     .

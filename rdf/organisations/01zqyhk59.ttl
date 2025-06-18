@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01zqyhk59> 
+    a org:Organization ;
+    rdfs:label "Defense Technical Information Center" ;
+    schema:name "Defense Technical Information Center" ;
+    schema:foundingDate "2004"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Defense_Technical_Information_Center> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00q4sx826> ;
+        rdfs:label "Office of the Secretary of Defense" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0447fe631> ;
+        rdfs:label "United States Department of Defense" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.14589 38.7119)"^^geo:wktLiteral ;
+        schema:addressLocality "Fort Belvoir" ;
+    ] ;
+    schema:url <http://www.dtic.mil/dtic/> ;
+    schema:sameAs <http://isni.org/isni/0000000122890161> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5251426> ;
+             .

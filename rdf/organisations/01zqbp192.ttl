@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01zqbp192> 
+    a org:Organization ;
+    rdfs:label "Missouri Southern State University" ;
+    schema:name "Missouri Southern State University" ;
+    schema:foundingDate "1937"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Missouri_Southern_State_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-94.51328 37.08423)"^^geo:wktLiteral ;
+        schema:addressLocality "Joplin" ;
+    ] ;
+    schema:url <http://www.mssu.edu/> ;
+    schema:sameAs <http://isni.org/isni/000000010235576X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6879708> ;
+             .

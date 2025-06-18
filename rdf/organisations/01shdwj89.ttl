@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01shdwj89> 
+    a org:Organization ;
+    rdfs:label "Korea Academic Society of Tourism Management" ;
+    schema:name "Korea Academic Society of Tourism Management" ;
+    schema:foundingDate "1986"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(126.665 36.6009)"^^geo:wktLiteral ;
+        schema:addressLocality "Hongseong" ;
+    ] ;
+    schema:url <http://www.kastm.or.kr/> ;
+    schema:sameAs <http://isni.org/isni/0000000459305175> ;
+             .

@@ -1,0 +1,35 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01xhmje49> 
+    a org:Organization ;
+    rdfs:label "Birmingham Dental Hospital" ;
+    schema:name "Birmingham Dental Hospital" ;
+    schema:foundingDate "1880"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04r10g051> ;
+        rdfs:label "Birmingham Community Healthcare NHS Trust" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03angcq70> ;
+        rdfs:label "University of Birmingham" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.89983 52.48142)"^^geo:wktLiteral ;
+        schema:addressLocality "Birmingham" ;
+    ] ;
+    schema:url <http://www.bhamcommunity.nhs.uk/about-us/services/dental/birmingham-dental-hospital/> ;
+    schema:sameAs <http://isni.org/isni/0000000405657562> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30280075> ;
+             .

@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01s434164> 
+    a org:Organization ;
+    rdfs:label "Nathan Kline Institute for Psychiatric Research" ;
+    schema:name "Nathan Kline Institute for Psychiatric Research" ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Nathan_Kline_Institute_for_Psychiatric_Research> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-73.94958 41.04649)"^^geo:wktLiteral ;
+        schema:addressLocality "Orangeburg" ;
+    ] ;
+    schema:url <http://www.rfmh.org/nki/> ;
+    schema:sameAs <http://isni.org/isni/0000000121894777> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6969183> ;
+             .

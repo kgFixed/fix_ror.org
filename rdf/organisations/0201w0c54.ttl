@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0201w0c54> 
+    a org:Organization ;
+    rdfs:label "Shijiazhuang Academy of Agriculture and Forestry Sciences" ;
+    schema:name "Shijiazhuang Academy of Agriculture and Forestry Sciences" ;
+    schema:foundingDate "1974"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(114.47861 38.04139)"^^geo:wktLiteral ;
+        schema:addressLocality "Shijiazhuang" ;
+    ] ;
+    schema:url <http://www.sjznky.com/> ;
+     .

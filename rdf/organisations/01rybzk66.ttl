@@ -1,0 +1,58 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01rybzk66> 
+    a org:Organization ;
+    rdfs:label "VA Capitol Health Care Network" ;
+    schema:name "VA Capitol Health Care Network" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04p162q02> ;
+        rdfs:label "Hershel Woody Williams VA Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0218d9s98> ;
+        rdfs:label "Louis A. Johnson VA Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/020xhpf63> ;
+        rdfs:label "Martinsburg VA Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05ax3zh38> ;
+        rdfs:label "VA Maryland Health Care System" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/050fz5z96> ;
+        rdfs:label "Washington DC VA Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05eq41471> ;
+        rdfs:label "Veterans Health Administration" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-76.65275 39.20511)"^^geo:wktLiteral ;
+        schema:addressLocality "Linthicum" ;
+    ] ;
+    schema:url <https://www.va.gov/visn5/> ;
+    schema:sameAs <http://isni.org/isni/0000000404208773> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q33122054> ;
+             .

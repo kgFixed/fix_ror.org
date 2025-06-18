@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01rrq9s86> 
+    a org:Organization ;
+    rdfs:label "Chinese Mechanical Engineering Society" ;
+    schema:name "Chinese Mechanical Engineering Society" ;
+    schema:sameAs <https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E6%9C%BA%E6%A2%B0%E5%B7%A5%E7%A8%8B%E5%AD%A6%E4%BC%9A> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(116.39723 39.9075)"^^geo:wktLiteral ;
+        schema:addressLocality "Beijing" ;
+    ] ;
+    schema:url <https://www.cmes.org> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q74557192> ;
+             .

@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01pdtb768> 
+    a org:Organization ;
+    rdfs:label "Health Protection Agency" ;
+    schema:name "Health Protection Agency" ;
+    schema:foundingDate "2013"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(73.50916 4.17521)"^^geo:wktLiteral ;
+        schema:addressLocality "Malé" ;
+    ] ;
+    schema:url <http://www.hpa.gov.mv/English/> ;
+     .

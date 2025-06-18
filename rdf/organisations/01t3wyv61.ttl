@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01t3wyv61> 
+    a org:Organization ;
+    rdfs:label "National Institute for Fusion Science" ;
+    schema:name "National Institute for Fusion Science" ;
+    schema:foundingDate "1989"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/055n47h92> ;
+        rdfs:label "National Institutes of Natural Sciences" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(137.18333 35.35)"^^geo:wktLiteral ;
+        schema:addressLocality "Toki" ;
+    ] ;
+    schema:url <https://www.nifs.ac.jp> ;
+    schema:sameAs <http://isni.org/isni/0000000406323468> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q11536220> ;
+             .

@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01n8j6z65> 
+    a org:Organization ;
+    rdfs:label "German Centre for Higher Education Research and Science Studies" ;
+    schema:name "German Centre for Higher Education Research and Science Studies" ;
+    schema:foundingDate "2013"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(9.73322 52.37052)"^^geo:wktLiteral ;
+        schema:addressLocality "Hanover" ;
+    ] ;
+    schema:url <http://www.dzhw.eu/en/> ;
+     .

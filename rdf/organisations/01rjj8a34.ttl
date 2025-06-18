@@ -1,0 +1,26 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01rjj8a34> 
+    a org:Organization ;
+    rdfs:label "Bruce W. Carter VA Medical Center" ;
+    schema:name "Bruce W. Carter VA Medical Center" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05myvb614> ;
+        rdfs:label "Miami VA Healthcare System" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-80.19366 25.77427)"^^geo:wktLiteral ;
+        schema:addressLocality "Miami" ;
+    ] ;
+    schema:url <https://www.miami.va.gov/pressreleases/MVAMCRenaming.asp> ;
+     .

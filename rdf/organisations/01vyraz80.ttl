@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01vyraz80> 
+    a org:Organization ;
+    rdfs:label "DSM (Sweden)" ;
+    schema:name "DSM (Sweden)" ;
+    schema:foundingDate "1902"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00k01kt20> ;
+        rdfs:label "DSM (Netherlands)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(12.9443 56.13566)"^^geo:wktLiteral ;
+        schema:addressLocality "Åstorp" ;
+    ] ;
+    schema:url <http://www.dsm.com/corporate/home.html> ;
+     .

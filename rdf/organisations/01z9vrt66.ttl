@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01z9vrt66> 
+    a org:Organization ;
+    rdfs:label "Okazaki City Hospital" ;
+    schema:name "Okazaki City Hospital" ;
+    schema:foundingDate "1878"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(137.16667 34.95)"^^geo:wktLiteral ;
+        schema:addressLocality "Okazaki" ;
+    ] ;
+    schema:url <http://www.okazakihospital.jp/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q11472851> ;
+             .

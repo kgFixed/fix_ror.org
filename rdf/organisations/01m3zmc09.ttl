@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01m3zmc09> 
+    a org:Organization ;
+    rdfs:label "What Kids Can Do" ;
+    schema:name "What Kids Can Do" ;
+    schema:foundingDate "2001"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-71.41283 41.82399)"^^geo:wktLiteral ;
+        schema:addressLocality "Providence" ;
+    ] ;
+    schema:url <http://whatkidscando.org/index.html> ;
+     .

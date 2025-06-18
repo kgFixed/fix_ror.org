@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01hb90y08> 
+    a org:Organization ;
+    rdfs:label "Protestant Theological Institute of Cluj-Napoca" ;
+    schema:name "Protestant Theological Institute of Cluj-Napoca" ;
+    schema:foundingDate "1948"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Protestant_Theological_Institute_of_Cluj> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(23.6 46.76667)"^^geo:wktLiteral ;
+        schema:addressLocality "Cluj-Napoca" ;
+    ] ;
+    schema:url <http://www.proteo.cj.edu.ro/en> ;
+    schema:sameAs <http://isni.org/isni/0000000446496259> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q532460> ;
+             .

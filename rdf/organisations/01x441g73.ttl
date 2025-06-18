@@ -1,0 +1,72 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01x441g73> 
+    a org:Organization ;
+    rdfs:label "École Centrale de Lille" ;
+    schema:name "École Centrale de Lille" ;
+    schema:foundingDate "1854"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/%C3%89cole_centrale_de_Lille> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0186z1m53> ;
+        rdfs:label "Laboratoire d'Électrotechnique et d'Électronique de Puissance de Lille" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02w8awt17> ;
+        rdfs:label "Laboratoire de Mécanique des Fluides de Lille - Kampé de Fériet" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04vrqzz54> ;
+        rdfs:label "Unité de catalyse et de chimie du solide de Lille" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05vrs3189> ;
+        rdfs:label "Centre de Recherche en Informatique, Signal et Automatique de Lille" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04f5rw142> ;
+        rdfs:label "Laboratoire de Mécanique, Multiphysique, Multiéchelle" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00tt79z10> ;
+        rdfs:label "Unité de Mécanique de Lille - Joseph Boussinesq" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/041yg4h55> ;
+        rdfs:label "École Nationale Supérieure de Chimie de Lille" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01x6z5t49> ;
+        rdfs:label "Fédération de Recherche Spectroscopies de Photoémission" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(3.16664 50.61669)"^^geo:wktLiteral ;
+        schema:addressLocality "Villeneuve-d'Ascq" ;
+    ] ;
+    schema:url <https://centralelille.fr> ;
+    schema:sameAs <http://isni.org/isni/0000000122034461> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q273461> ;
+             .

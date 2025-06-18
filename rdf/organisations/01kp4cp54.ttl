@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01kp4cp54> 
+    a org:Organization ;
+    rdfs:label "All Russia Research Institute of Automatics" ;
+    schema:name "All Russia Research Institute of Automatics" ;
+    schema:foundingDate "1954"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/NL_Dukhov_All-Russian_Research_Institute_of_Automation> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0560q5470> ;
+        rdfs:label "Rosatom (Russia)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(37.61556 55.75222)"^^geo:wktLiteral ;
+        schema:addressLocality "Moscow" ;
+    ] ;
+    schema:url <http://www.vniia.ru/eng/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q4127504> ;
+             .

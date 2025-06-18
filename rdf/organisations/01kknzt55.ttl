@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01kknzt55> 
+    a org:Organization ;
+    rdfs:label "Toyota Boshoku (Japan)" ;
+    schema:name "Toyota Boshoku (Japan)" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Toyota_Boshoku> ;
+    org:status "withdrawn" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/02zqm6r10> ;
+        rdfs:label "Toyota Motor Corporation (Japan)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(136.98333 34.98333)"^^geo:wktLiteral ;
+        schema:addressLocality "Kariya" ;
+    ] ;
+    schema:url <http://www.toyota-boshoku.com/jp/> ;
+    schema:sameAs <http://isni.org/isni/0000000417898363> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7830755> ;
+             .

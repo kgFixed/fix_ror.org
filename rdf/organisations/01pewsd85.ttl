@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01pewsd85> 
+    a org:Organization ;
+    rdfs:label "Estonian Academy of Sciences" ;
+    schema:name "Estonian Academy of Sciences" ;
+    schema:foundingDate "1938"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Estonian_Academy_of_Sciences> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02xdb6745> ;
+        rdfs:label "Emakeele Selts" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04mc23283> ;
+        rdfs:label "Tartu Observatory" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04nsrjg86> ;
+        rdfs:label "Underi ja Tuglase Kirjanduskeskus" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(24.75353 59.43696)"^^geo:wktLiteral ;
+        schema:addressLocality "Tallinn" ;
+    ] ;
+    schema:url <http://www.akadeemia.ee/> ;
+    schema:sameAs <http://isni.org/isni/0000000109404982> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1370215> ;
+             .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01p6xxb83> 
+    a org:Organization ;
+    rdfs:label "Belarusian State University of Culture and Arts" ;
+    schema:name "Belarusian State University of Culture and Arts" ;
+    schema:foundingDate "1975"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Belarusian_State_University_of_Culture_and_Arts> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(27.56667 53.9)"^^geo:wktLiteral ;
+        schema:addressLocality "Minsk" ;
+    ] ;
+    schema:url <http://buk.by/> ;
+    schema:sameAs <http://isni.org/isni/0000000406128435> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3646646> ;
+             .

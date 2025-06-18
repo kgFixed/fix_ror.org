@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01z5z6p69> 
+    a org:Organization ;
+    rdfs:label "Alston Community Hospital" ;
+    schema:name "Alston Community Hospital" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/003hq9m95> ;
+        rdfs:label "North Cumbria Integrated Care NHS Foundation Trust" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.90982 53.25741)"^^geo:wktLiteral ;
+        schema:addressLocality "Buxton" ;
+    ] ;
+    schema:url <https://www.ncic.nhs.uk/locations/alston-community-hospital> ;
+    schema:sameAs <http://isni.org/isni/0000000449046456> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30292821> ;
+             .

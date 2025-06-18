@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01vmqaq17> 
+    a org:Organization ;
+    rdfs:label "Norwegian Institute for Sustainability Research" ;
+    schema:name "Norwegian Institute for Sustainability Research" ;
+    schema:foundingDate "1988"^^xsd:gYear ;
+    schema:sameAs <https://no.wikipedia.org/wiki/Norsk_institutt_for_bærekraftsforskning_AS> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(10.93333 59.2)"^^geo:wktLiteral ;
+        schema:addressLocality "Kråkerøy" ;
+    ] ;
+    schema:url <https://norsus.no/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30259809> ;
+             .

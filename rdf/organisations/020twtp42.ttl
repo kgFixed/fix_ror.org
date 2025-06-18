@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/020twtp42> 
+    a org:Organization ;
+    rdfs:label "Swiss Institute for Management and Hospitality" ;
+    schema:name "Swiss Institute for Management and Hospitality" ;
+    schema:foundingDate "2011"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Swiss_Institute_for_Management_and_Hospitality> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(8.43219 47.03208)"^^geo:wktLiteral ;
+        schema:addressLocality "Weggis" ;
+    ] ;
+    schema:url <http://www.swissimh.ch/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q7658879> ;
+             .

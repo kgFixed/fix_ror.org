@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/020ggem82> 
+    a org:Organization ;
+    rdfs:label "Ball Brothers Foundation" ;
+    schema:name "Ball Brothers Foundation" ;
+    schema:foundingDate "1926"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Ball_Brothers> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-85.38636 40.19338)"^^geo:wktLiteral ;
+        schema:addressLocality "Muncie" ;
+    ] ;
+    schema:url <https://www.ballfdn.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000459021033> ;
+             .

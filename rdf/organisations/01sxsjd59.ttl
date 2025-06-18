@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01sxsjd59> 
+    a org:Organization ;
+    rdfs:label "Rajiv Gandhi University of Knowledge Technologies" ;
+    schema:name "Rajiv Gandhi University of Knowledge Technologies" ;
+    schema:foundingDate "2008"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Rajiv_Gandhi_University_of_Knowledge_Technologies> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(78.5359 19.67203)"^^geo:wktLiteral ;
+        schema:addressLocality "Adilabad" ;
+    ] ;
+    schema:url <http://www.rgukt.ac.in/> ;
+    schema:sameAs <http://isni.org/isni/0000000417754642> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q17056734> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6051151> ;
+             .

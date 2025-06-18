@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01q8vz920> 
+    a org:Organization ;
+    rdfs:label "Stavropol Research Institute of Animal Production and Feed Production" ;
+    schema:name "Stavropol Research Institute of Animal Production and Feed Production" ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(41.9734 45.0428)"^^geo:wktLiteral ;
+        schema:addressLocality "Stavropol" ;
+    ] ;
+    schema:url <http://sniizhk.stavropolie.ru/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q52847752> ;
+             .

@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01qjmkr85> 
+    a org:Organization ;
+    rdfs:label "Fonterra (New Zealand)" ;
+    schema:name "Fonterra (New Zealand)" ;
+    schema:foundingDate "2001"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Fonterra> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00cr5zh57> ;
+        rdfs:label "Fonterra (Australia)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02x909r11> ;
+        rdfs:label "Fonterra (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(174.76349 -36.84853)"^^geo:wktLiteral ;
+        schema:addressLocality "Auckland" ;
+    ] ;
+    schema:url <https://www.fonterra.com/nz/en.html> ;
+    schema:sameAs <http://isni.org/isni/0000000405011120> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q946370> ;
+             .

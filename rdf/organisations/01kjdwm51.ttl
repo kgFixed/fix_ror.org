@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01kjdwm51> 
+    a org:Organization ;
+    rdfs:label "Department of the Prime Minister and Cabinet" ;
+    schema:name "Department of the Prime Minister and Cabinet" ;
+    schema:foundingDate "1971"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Department_of_the_Prime_Minister_and_Cabinet_(Australia)> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/029dswp54> ;
+        rdfs:label "Central Land Council" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01q0r1k14> ;
+        rdfs:label "Office of National Intelligence" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0314h5y94> ;
+        rdfs:label "Australian Government" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(149.12807 -35.28346)"^^geo:wktLiteral ;
+        schema:addressLocality "Canberra" ;
+    ] ;
+    schema:url <https://www.dpmc.gov.au/> ;
+    schema:sameAs <http://isni.org/isni/0000000406240291> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1191489> ;
+             .

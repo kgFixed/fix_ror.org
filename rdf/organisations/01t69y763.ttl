@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01t69y763> 
+    a org:Organization ;
+    rdfs:label "St. Luke's Hospital" ;
+    schema:name "St. Luke's Hospital" ;
+    schema:foundingDate "1872"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01qc17q17> ;
+        rdfs:label "St. Luke's University Health Network" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-75.37046 40.62593)"^^geo:wktLiteral ;
+        schema:addressLocality "Bethlehem" ;
+    ] ;
+    schema:url <http://bethlehem.slhn.org/About> ;
+    schema:sameAs <http://isni.org/isni/0000000403760953> ;
+             .

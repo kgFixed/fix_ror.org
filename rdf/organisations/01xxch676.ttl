@@ -1,0 +1,20 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01xxch676> 
+    a org:Organization ;
+    rdfs:label "Institut für Sozialforschung und Berufliche Weiterbildung" ;
+    schema:name "Institut für Sozialforschung und Berufliche Weiterbildung" ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(13.07292 53.3613)"^^geo:wktLiteral ;
+        schema:addressLocality "Neustrelitz" ;
+    ] ;
+    schema:url <https://unternehmen.isbw.de/> ;
+     .

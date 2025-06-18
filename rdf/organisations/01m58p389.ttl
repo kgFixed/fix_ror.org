@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01m58p389> 
+    a org:Organization ;
+    rdfs:label "Washington County Schools" ;
+    schema:name "Washington County Schools" ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-76.74856 35.86683)"^^geo:wktLiteral ;
+        schema:addressLocality "Plymouth" ;
+    ] ;
+    schema:url <https://www.wcde.org> ;
+    schema:sameAs <http://isni.org/isni/0000000404182251> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30289181> ;
+             .

@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01kfp4j62> 
+    a org:Organization ;
+    rdfs:label "UNICOM Global (United States)" ;
+    schema:name "UNICOM Global (United States)" ;
+    schema:foundingDate "1981"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/UNICOM_Global> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-120.43683 34.68609)"^^geo:wktLiteral ;
+        schema:addressLocality "Mission Hills" ;
+    ] ;
+    schema:url <https://www.unicomglobal.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30282588> ;
+             .

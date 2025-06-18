@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01zvw4x71> 
+    a org:Organization ;
+    rdfs:label "Ministry of Ecology and Natural Resources of Ukraine" ;
+    schema:name "Ministry of Ecology and Natural Resources of Ukraine" ;
+    schema:foundingDate "2010"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Ministry_of_Ecology_and_Natural_Resources_(Ukraine)> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/035q1h929> ;
+        rdfs:label "Pryazovskyi National Nature Park" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(30.5238 50.45466)"^^geo:wktLiteral ;
+        schema:addressLocality "Kyiv" ;
+    ] ;
+    schema:url <http://eng.menr.gov.ua/> ;
+     .

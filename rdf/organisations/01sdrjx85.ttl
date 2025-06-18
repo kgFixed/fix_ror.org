@@ -1,0 +1,48 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01sdrjx85> 
+    a org:Organization ;
+    rdfs:label "Institute for High Energy Physics" ;
+    schema:name "Institute for High Energy Physics" ;
+    schema:foundingDate "1991"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/IFAE> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03kpps236> ;
+        rdfs:label "Barcelona Institute for Science and Technology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01bkbaq61> ;
+        rdfs:label "CERCA Institution" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/052g8jq94> ;
+        rdfs:label "Universitat Autònoma de Barcelona" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02w0r2764> ;
+        rdfs:label "MAGIC Telescopes" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.15899 41.38879)"^^geo:wktLiteral ;
+        schema:addressLocality "Barcelona" ;
+    ] ;
+    schema:url <https://www.ifae.es/> ;
+    schema:sameAs <http://isni.org/isni/0000000459304594> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5970626> ;
+             .

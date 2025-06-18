@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01jj26143> 
+    a org:Organization ;
+    rdfs:label "Ospedale di Santo Spirito" ;
+    schema:name "Ospedale di Santo Spirito" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Ospedale_di_Santo_Spirito_in_Sassia> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(12.51133 41.89193)"^^geo:wktLiteral ;
+        schema:addressLocality "Rome" ;
+    ] ;
+    schema:url <http://www.asl-rme.it/index.php?p=servizi&os=223> ;
+    schema:sameAs <http://isni.org/isni/0000000122312265> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3621743> ;
+             .

@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01shctp43> 
+    a org:Organization ;
+    rdfs:label "Statistical and Applied Mathematical Sciences Institute" ;
+    schema:name "Statistical and Applied Mathematical Sciences Institute" ;
+    schema:foundingDate "2002"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Statistical_and_Applied_Mathematical_Sciences_Institute> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/021nxhr62> ;
+        rdfs:label "U.S. National Science Foundation" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-78.89862 35.99403)"^^geo:wktLiteral ;
+        schema:addressLocality "Durham" ;
+    ] ;
+    schema:url <http://www.samsi.info/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q15995498> ;
+             .

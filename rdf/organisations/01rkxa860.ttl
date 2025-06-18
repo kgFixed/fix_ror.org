@@ -1,0 +1,60 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01rkxa860> 
+    a org:Organization ;
+    rdfs:label "Dr. Reddy's Laboratories (India)" ;
+    schema:name "Dr. Reddy's Laboratories (India)" ;
+    schema:foundingDate "1984"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Dr._Reddy%27s_Laboratories> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/022fkpc23> ;
+        rdfs:label "Dr. Reddy's Laboratories (Germany)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01dn4wg45> ;
+        rdfs:label "Dr. Reddy's Laboratories (Netherlands)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05wg5bj23> ;
+        rdfs:label "Dr. Reddy's Laboratories (Spain)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01t8cv576> ;
+        rdfs:label "Dr. Reddy's Laboratories (Switzerland)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02g8p3m28> ;
+        rdfs:label "Dr. Reddy's Laboratories (United Kingdom)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05x7k6a83> ;
+        rdfs:label "Dr. Reddy's Laboratories (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(78.45636 17.38405)"^^geo:wktLiteral ;
+        schema:addressLocality "Hyderabad" ;
+    ] ;
+    schema:url <http://www.drreddys.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000417671409> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q908961> ;
+             .

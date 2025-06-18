@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01qdbbk19> 
+    a org:Organization ;
+    rdfs:label "Special Astrophysical Observatory" ;
+    schema:name "Special Astrophysical Observatory" ;
+    schema:foundingDate "1966"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Special_Astrophysical_Observatory_of_the_Russian_Academy_of_Science> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00ns9pc83> ;
+        rdfs:label "Physical Sciences Division" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(41.45977 43.67817)"^^geo:wktLiteral ;
+        schema:addressLocality "Nizhniy Arkhyz" ;
+    ] ;
+    schema:url <http://www.sao.ru/Doc-en/index.html> ;
+    schema:sameAs <http://isni.org/isni/000000009785087X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1937388> ;
+             .

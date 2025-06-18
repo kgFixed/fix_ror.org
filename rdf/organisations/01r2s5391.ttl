@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01r2s5391> 
+    a org:Organization ;
+    rdfs:label "Beckley VA Medical Center" ;
+    schema:name "Beckley VA Medical Center" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/054w3nm73> ;
+        rdfs:label "VA Mid-Atlantic Health Care Network" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-81.18816 37.77817)"^^geo:wktLiteral ;
+        schema:addressLocality "Beckley" ;
+    ] ;
+    schema:url <https://www.beckley.va.gov/> ;
+    schema:sameAs <http://isni.org/isni/0000000404207244> ;
+             .

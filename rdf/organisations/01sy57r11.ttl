@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01sy57r11> 
+    a org:Organization ;
+    rdfs:label "Kazan State Conservatoire named after N. Zhiganov" ;
+    schema:name "Kazan State Conservatoire named after N. Zhiganov" ;
+    schema:foundingDate "1945"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(49.12214 55.78874)"^^geo:wktLiteral ;
+        schema:addressLocality "Kazan’" ;
+    ] ;
+    schema:url <http://www.kazanconservatoire.ru/index.php?option=com_content&view=article&id=21&Itemid=286> ;
+     .

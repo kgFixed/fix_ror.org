@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01vz3ga16> 
+    a org:Organization ;
+    rdfs:label "Seqwater" ;
+    schema:name "Seqwater" ;
+    schema:foundingDate "2008"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Seqwater> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/037405308> ;
+        rdfs:label "Queensland Government" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(153.02809 -27.46794)"^^geo:wktLiteral ;
+        schema:addressLocality "Brisbane" ;
+    ] ;
+    schema:url <http://www.seqwater.com.au/> ;
+    schema:sameAs <http://isni.org/isni/0000000404601858> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7452585> ;
+             .

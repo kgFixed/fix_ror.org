@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01xv1wj76> 
+    a org:Organization ;
+    rdfs:label "Nuclear Waste Management Organization" ;
+    schema:name "Nuclear Waste Management Organization" ;
+    schema:foundingDate "2002"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Nuclear_Waste_Management_Organization_(Canada)> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-79.39864 43.70643)"^^geo:wktLiteral ;
+        schema:addressLocality "Toronto" ;
+    ] ;
+    schema:url <http://www.nwmo.ca/home?language=en_CA> ;
+    schema:sameAs <http://isni.org/isni/0000000100077436> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3487952> ;
+             .

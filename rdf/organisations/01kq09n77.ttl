@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01kq09n77> 
+    a org:Organization ;
+    rdfs:label "Altarum Institute" ;
+    schema:name "Altarum Institute" ;
+    schema:foundingDate "1946"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Altarum_Institute> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02av0ty63> ;
+        rdfs:label "Palladian Partners" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-83.74088 42.27756)"^^geo:wktLiteral ;
+        schema:addressLocality "Ann Arbor" ;
+    ] ;
+    schema:url <http://altarum.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000122982867> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4736189> ;
+             .

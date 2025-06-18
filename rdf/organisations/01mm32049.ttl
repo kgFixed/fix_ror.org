@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01mm32049> 
+    a org:Organization ;
+    rdfs:label "University of Caloocan City" ;
+    schema:name "University of Caloocan City" ;
+    schema:foundingDate "1971"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/University_of_Caloocan_City> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(125.53056 9.04694)"^^geo:wktLiteral ;
+        schema:addressLocality "Caloc-an" ;
+    ] ;
+    schema:url <http://ucc-caloocan.edu.ph/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q3547539> ;
+             .

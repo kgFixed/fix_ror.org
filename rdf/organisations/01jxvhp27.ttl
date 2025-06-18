@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01jxvhp27> 
+    a org:Organization ;
+    rdfs:label "Hisamitsu Pharmaceutical (Japan)" ;
+    schema:name "Hisamitsu Pharmaceutical (Japan)" ;
+    schema:foundingDate "1847"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Hisamitsu_Pharmaceutical> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02sqp6x70> ;
+        rdfs:label "Hisamitsu Pharmaceutical (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(130.51667 33.36667)"^^geo:wktLiteral ;
+        schema:addressLocality "Tosu" ;
+    ] ;
+    schema:url <http://www.hisamitsu.co.jp/english/> ;
+    schema:sameAs <http://isni.org/isni/0000000405960393> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5772307> ;
+             .

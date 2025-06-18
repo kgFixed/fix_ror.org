@@ -1,0 +1,72 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01h4ywk72> 
+    a org:Organization ;
+    rdfs:label "World Health Organization Regional Office for the Eastern Mediterranean" ;
+    schema:name "World Health Organization Regional Office for the Eastern Mediterranean" ;
+    schema:foundingDate "1948"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/World_Health_Organization#Regional_offices> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03911p935> ;
+        rdfs:label "World Health Organization - Afghanistan" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/055ttwk14> ;
+        rdfs:label "World Health Organization - Egypt" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0292bqz47> ;
+        rdfs:label "World Health Organization - Jordan" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/035g8xb75> ;
+        rdfs:label "World Health Organization - Lebanon" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/005xgxx88> ;
+        rdfs:label "World Health Organization - Morocco" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/047bn1w15> ;
+        rdfs:label "World Health Organization - Pakistan" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02vvkyr96> ;
+        rdfs:label "World Health Organization - Uganda" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01f80g185> ;
+        rdfs:label "World Health Organization" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(31.24967 30.06263)"^^geo:wktLiteral ;
+        schema:addressLocality "Cairo" ;
+    ] ;
+    schema:url <http://www.emro.who.int/index.html> ;
+    schema:sameAs <http://isni.org/isni/0000000119424602> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5330286> ;
+             .

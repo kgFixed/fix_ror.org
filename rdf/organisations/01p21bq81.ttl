@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01p21bq81> 
+    a org:Organization ;
+    rdfs:label "Shima Seiki (Japan)" ;
+    schema:name "Shima Seiki (Japan)" ;
+    schema:foundingDate "1962"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(135.16667 34.23333)"^^geo:wktLiteral ;
+        schema:addressLocality "Wakayama" ;
+    ] ;
+    schema:url <http://www.shimaseiki.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000417784497> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q11477023> ;
+             .

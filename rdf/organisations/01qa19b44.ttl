@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01qa19b44> 
+    a org:Organization ;
+    rdfs:label "Mars (United Kingdom)" ;
+    schema:name "Mars (United Kingdom)" ;
+    schema:foundingDate "1911"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Mars,_Incorporated> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/028vrr082> ;
+        rdfs:label "Mars (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.59541 51.50949)"^^geo:wktLiteral ;
+        schema:addressLocality "Slough" ;
+    ] ;
+    schema:url <http://www.mars.com/uk/en/index.aspx> ;
+    schema:sameAs <http://isni.org/isni/0000000405974939> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q29123751> ;
+             .

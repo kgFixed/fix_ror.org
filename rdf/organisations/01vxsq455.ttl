@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01vxsq455> 
+    a org:Organization ;
+    rdfs:label "Quadient (Netherlands)" ;
+    schema:name "Quadient (Netherlands)" ;
+    schema:foundingDate "1924"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Neopost> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02r3ht216> ;
+        rdfs:label "Quadient (France)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(6.0989 53.11254)"^^geo:wktLiteral ;
+        schema:addressLocality "Drachten" ;
+    ] ;
+    schema:url <http://www.neopost-technologies.nl/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30273375> ;
+             .

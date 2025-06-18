@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01xjgpq49> 
+    a org:Organization ;
+    rdfs:label "Sakushin Gakuin University" ;
+    schema:name "Sakushin Gakuin University" ;
+    schema:foundingDate "1967"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Sakushin_Gakuin_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(139.88333 36.56667)"^^geo:wktLiteral ;
+        schema:addressLocality "Utsunomiya" ;
+    ] ;
+    schema:url <http://www.sakushin-u.ac.jp/> ;
+    schema:sameAs <http://isni.org/isni/0000000417947399> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7403226> ;
+             .

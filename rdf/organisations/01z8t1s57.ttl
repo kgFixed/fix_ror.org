@@ -1,0 +1,20 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01z8t1s57> 
+    a org:Organization ;
+    rdfs:label "International Center for Public Health" ;
+    schema:name "International Center for Public Health" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-74.17237 40.73566)"^^geo:wktLiteral ;
+        schema:addressLocality "Newark" ;
+    ] ;
+    schema:url <http://www.phri.org/about/about_directions.asp> ;
+     .

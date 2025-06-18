@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01q928n88> 
+    a org:Organization ;
+    rdfs:label "Baltimore City Health Department" ;
+    schema:name "Baltimore City Health Department" ;
+    schema:foundingDate "1793"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Baltimore_City_Health_Department> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-76.61219 39.29038)"^^geo:wktLiteral ;
+        schema:addressLocality "Baltimore" ;
+    ] ;
+    schema:url <http://health.baltimorecity.gov/> ;
+    schema:sameAs <http://isni.org/isni/0000000406301592> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q21028393> ;
+             .

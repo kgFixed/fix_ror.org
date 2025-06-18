@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01tpms519> 
+    a org:Organization ;
+    rdfs:label "Cad Modelling Ergonomics (Italy)" ;
+    schema:name "Cad Modelling Ergonomics (Italy)" ;
+    schema:foundingDate "1968"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(11.24626 43.77925)"^^geo:wktLiteral ;
+        schema:addressLocality "Florence" ;
+    ] ;
+    schema:url <https://www.cadmodellingfit.com/en/what-we-do/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30255612> ;
+             .

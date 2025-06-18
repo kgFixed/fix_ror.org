@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01qe4kz15> 
+    a org:Organization ;
+    rdfs:label "Goldwind (China)" ;
+    schema:name "Goldwind (China)" ;
+    schema:foundingDate "1998"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Goldwind> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(87.60046 43.80096)"^^geo:wktLiteral ;
+        schema:addressLocality "Ürümqi" ;
+    ] ;
+    schema:url <http://www.goldwindglobal.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q1090900> ;
+             .

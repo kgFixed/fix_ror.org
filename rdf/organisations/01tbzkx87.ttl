@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01tbzkx87> 
+    a org:Organization ;
+    rdfs:label "Crime Prevention Center" ;
+    schema:name "Crime Prevention Center" ;
+    schema:foundingDate "2009"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(19.82303 48.16374)"^^geo:wktLiteral ;
+        schema:addressLocality "Somoskőújfalu" ;
+    ] ;
+    schema:url <http://5mp.eu/web.php?a=bkke> ;
+     .

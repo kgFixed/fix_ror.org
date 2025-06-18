@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01k9rsw84> 
+    a org:Organization ;
+    rdfs:label "Shell (Canada)" ;
+    schema:name "Shell (Canada)" ;
+    schema:foundingDate "1911"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Shell_Canada> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00b5m4j81> ;
+        rdfs:label "Shell (Netherlands)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-114.08529 51.05011)"^^geo:wktLiteral ;
+        schema:addressLocality "Calgary" ;
+    ] ;
+    schema:url <http://www.shell.ca/> ;
+    schema:sameAs <http://isni.org/isni/0000000404032560> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1360622> ;
+             .

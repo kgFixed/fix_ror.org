@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01nb9ks67> 
+    a org:Organization ;
+    rdfs:label "Itasca Consultants (France)" ;
+    schema:name "Itasca Consultants (France)" ;
+    schema:foundingDate "1981"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05g5rgx31> ;
+        rdfs:label "Itasca Consultants (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(4.77758 45.77437)"^^geo:wktLiteral ;
+        schema:addressLocality "Écully" ;
+    ] ;
+    schema:url <http://www.itasca.fr/> ;
+     .

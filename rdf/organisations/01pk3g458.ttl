@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01pk3g458> 
+    a org:Organization ;
+    rdfs:label "Westchester County Department of Public Safety" ;
+    schema:name "Westchester County Department of Public Safety" ;
+    schema:foundingDate "1979"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Westchester_County_Department_of_Public_Safety> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-73.79597 41.10732)"^^geo:wktLiteral ;
+        schema:addressLocality "Hawthorne" ;
+    ] ;
+    schema:url <https://publicsafety.westchestergov.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q7987242> ;
+             .

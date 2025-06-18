@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01qj9e285> 
+    a org:Organization ;
+    rdfs:label "Yuhan University" ;
+    schema:name "Yuhan University" ;
+    schema:foundingDate "1977"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Yuhan_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(126.78306 37.49889)"^^geo:wktLiteral ;
+        schema:addressLocality "Bucheon-si" ;
+    ] ;
+    schema:url <http://www.yuhan.ac.kr/en/enterInfo/ei1001.jsp> ;
+    schema:sameAs <http://isni.org/isni/0000000404344388> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q8060443> ;
+             .

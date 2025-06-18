@@ -1,0 +1,60 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0212h5y77> 
+    a org:Organization ;
+    rdfs:label "Inova Fairfax Hospital" ;
+    schema:name "Inova Fairfax Hospital" ;
+    schema:foundingDate "1961"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Inova_Fairfax_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04mrb6c22> ;
+        rdfs:label "Inova Health System" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00y4zzh67> ;
+        rdfs:label "George Washington University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05vzafd60> ;
+        rdfs:label "Georgetown University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05gt1vc06> ;
+        rdfs:label "Howard University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0153tk833> ;
+        rdfs:label "University of Virginia" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02nkdxk79> ;
+        rdfs:label "Virginia Commonwealth University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.17109 38.88233)"^^geo:wktLiteral ;
+        schema:addressLocality "Falls Church" ;
+    ] ;
+    schema:url <http://www.inova.org/ifh> ;
+    schema:sameAs <http://isni.org/isni/0000000098253727> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6036707> ;
+             .

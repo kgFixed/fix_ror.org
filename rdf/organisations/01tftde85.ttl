@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01tftde85> 
+    a org:Organization ;
+    rdfs:label "Cymdeithas Thomas Pennant" ;
+    schema:name "Cymdeithas Thomas Pennant" ;
+    schema:foundingDate "1989"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-2.89189 53.1905)"^^geo:wktLiteral ;
+        schema:addressLocality "Chester" ;
+    ] ;
+    schema:url <http://www.cymdeithasthomaspennant.com/> ;
+     .

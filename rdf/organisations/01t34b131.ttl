@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01t34b131> 
+    a org:Organization ;
+    rdfs:label "Quaid-e-Awam University of Engineering, Science and Technology" ;
+    schema:name "Quaid-e-Awam University of Engineering, Science and Technology" ;
+    schema:foundingDate "1974"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Quaid-e-Awam_University_of_Engineering,_Science_and_Technology> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(68.40369 26.23939)"^^geo:wktLiteral ;
+        schema:addressLocality "Nawabshah" ;
+    ] ;
+    schema:url <https://www.quest.edu.pk> ;
+    schema:sameAs <http://isni.org/isni/0000000406091767> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7268472> ;
+             .

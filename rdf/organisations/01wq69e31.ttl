@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01wq69e31> 
+    a org:Organization ;
+    rdfs:label "Kostrzyca Forest Gene Bank" ;
+    schema:name "Kostrzyca Forest Gene Bank" ;
+    schema:foundingDate "1995"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(15.68161 50.83261)"^^geo:wktLiteral ;
+        schema:addressLocality "Podgórzyn" ;
+    ] ;
+    schema:url <http://lbg.home.pl/en/index.htm> ;
+    schema:sameAs <http://isni.org/isni/0000000405344451> ;
+             .

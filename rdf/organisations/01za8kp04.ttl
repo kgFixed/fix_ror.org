@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01za8kp04> 
+    a org:Organization ;
+    rdfs:label "National University of Catamarca" ;
+    schema:name "National University of Catamarca" ;
+    schema:foundingDate "1972"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/National_University_of_Catamarca> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03w8cva37> ;
+        rdfs:label "Centro Científico Tecnológico - Tucumán" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-65.78524 -28.46957)"^^geo:wktLiteral ;
+        schema:addressLocality "Catamarca" ;
+    ] ;
+    schema:url <http://www.unca.edu.ar/> ;
+    schema:sameAs <http://isni.org/isni/0000000122247520> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6979234> ;
+             .

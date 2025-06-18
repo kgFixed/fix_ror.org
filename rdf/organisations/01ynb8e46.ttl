@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01ynb8e46> 
+    a org:Organization ;
+    rdfs:label "Mills College" ;
+    schema:name "Mills College" ;
+    schema:foundingDate "1852"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Mills_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05rfek682> ;
+        rdfs:label "Kaiser Permanente Oakland Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04t5xt781> ;
+        rdfs:label "Northeastern University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-122.2708 37.80437)"^^geo:wktLiteral ;
+        schema:addressLocality "Oakland" ;
+    ] ;
+    schema:url <https://www.mills.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000122226252> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q638859> ;
+             .

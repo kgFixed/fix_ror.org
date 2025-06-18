@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01q61vc37> 
+    a org:Organization ;
+    rdfs:label "Devan (Portugal)" ;
+    schema:name "Devan (Portugal)" ;
+    schema:foundingDate "1977"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04831wp37> ;
+        rdfs:label "Devan Chemicals (Belgium)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-8.6199 41.23574)"^^geo:wktLiteral ;
+        schema:addressLocality "Maia" ;
+    ] ;
+    schema:url <https://devan.net/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30284790> ;
+             .

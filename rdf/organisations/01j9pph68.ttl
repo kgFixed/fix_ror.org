@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01j9pph68> 
+    a org:Organization ;
+    rdfs:label "Orlando Regional Medical Center" ;
+    schema:name "Orlando Regional Medical Center" ;
+    schema:foundingDate "1918"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Orlando_Regional_Medical_Center> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0488cct49> ;
+        rdfs:label "Orlando Health" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-81.37924 28.53834)"^^geo:wktLiteral ;
+        schema:addressLocality "Orlando" ;
+    ] ;
+    schema:url <http://www.orlandohealth.com/facilities/orlando-regional-medical-center> ;
+    schema:sameAs <http://isni.org/isni/0000000404563783> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7103171> ;
+             .

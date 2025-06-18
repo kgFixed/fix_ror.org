@@ -1,0 +1,20 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01vz7g950> 
+    a org:Organization ;
+    rdfs:label "Seaford Day Hospital" ;
+    schema:name "Seaford Day Hospital" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(0.10268 50.77141)"^^geo:wktLiteral ;
+        schema:addressLocality "Seaford" ;
+    ] ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30293126> ;
+             .

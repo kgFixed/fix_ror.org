@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01ryjjz47> 
+    a org:Organization ;
+    rdfs:label "Siberian Institute of Plant Physiology and Biochemistry" ;
+    schema:name "Siberian Institute of Plant Physiology and Biochemistry" ;
+    schema:foundingDate "1961"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/038rjvd86> ;
+        rdfs:label "Department of Biological Sciences" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(104.29639 52.29778)"^^geo:wktLiteral ;
+        schema:addressLocality "Irkutsk" ;
+    ] ;
+    schema:url <http://www.sifibr.irk.ru/en/> ;
+    schema:sameAs <http://isni.org/isni/000000011703538X> ;
+             .

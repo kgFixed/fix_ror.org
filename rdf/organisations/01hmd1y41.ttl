@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01hmd1y41> 
+    a org:Organization ;
+    rdfs:label "Federal Police of Brazil" ;
+    schema:name "Federal Police of Brazil" ;
+    schema:foundingDate "1944"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Federal_Police_of_Brazil> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/024f22429> ;
+        rdfs:label "Ministry of Justice and Public Security" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-47.92972 -15.77972)"^^geo:wktLiteral ;
+        schema:addressLocality "Brasília" ;
+    ] ;
+    schema:url <https://www.gov.br/pf/pt-br> ;
+    schema:sameAs <http://isni.org/isni/0000000446540870> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2289697> ;
+             .

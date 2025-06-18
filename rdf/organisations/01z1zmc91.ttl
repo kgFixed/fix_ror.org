@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01z1zmc91> 
+    a org:Organization ;
+    rdfs:label "Moscow State Forest University" ;
+    schema:name "Moscow State Forest University" ;
+    schema:foundingDate "1919"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Moscow_State_Forest_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(37.61556 55.75222)"^^geo:wktLiteral ;
+        schema:addressLocality "Moscow" ;
+    ] ;
+    schema:url <http://www.mgul.ac.ru/eng/> ;
+    schema:sameAs <http://isni.org/isni/0000000098335108> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4304099> ;
+             .

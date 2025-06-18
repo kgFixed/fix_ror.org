@@ -1,0 +1,61 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/020hgte69> 
+    a org:Organization ;
+    rdfs:label "Fermi National Accelerator Laboratory" ;
+    schema:name "Fermi National Accelerator Laboratory" ;
+    schema:foundingDate "1967"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Fermilab> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0415p6x27> ;
+        rdfs:label "Fermilab Accelerator Complex" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00mmn6b08> ;
+        rdfs:label "Office of Science" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02j58f715> ;
+        rdfs:label "Fermi Research Alliance" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/009djdq91> ;
+        rdfs:label "Universities Research Association" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/024mw5h28> ;
+        rdfs:label "University of Chicago" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02mebaz96> ;
+        rdfs:label "Research Infrastructure for Fermilab Experiments" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-88.31257 41.85003)"^^geo:wktLiteral ;
+        schema:addressLocality "Batavia" ;
+    ] ;
+    schema:url <https://www.fnal.gov> ;
+    schema:sameAs <http://isni.org/isni/0000000106750679> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q337641> ;
+             .

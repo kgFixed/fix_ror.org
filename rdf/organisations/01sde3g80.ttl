@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01sde3g80> 
+    a org:Organization ;
+    rdfs:label "Nomad Tech (Portugal)" ;
+    schema:name "Nomad Tech (Portugal)" ;
+    schema:foundingDate "2013"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-8.61099 41.14961)"^^geo:wktLiteral ;
+        schema:addressLocality "Porto" ;
+    ] ;
+    schema:url <https://www.nomadtech.pt/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30290784> ;
+             .

@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01jzgmh92> 
+    a org:Organization ;
+    rdfs:label "TRW Automotive (United States)" ;
+    schema:name "TRW Automotive (United States)" ;
+    schema:foundingDate "2002"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/TRW_Automotive> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04p89va55> ;
+        rdfs:label "TRW Automotive (France)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02j8awh30> ;
+        rdfs:label "TRW Automotive (Germany)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05m0yjz71> ;
+        rdfs:label "TRW Automotive (United Kingdom)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-111.82264 33.42227)"^^geo:wktLiteral ;
+        schema:addressLocality "Mesa" ;
+    ] ;
+    schema:url <http://www.trw.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000406114797> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1117943> ;
+             .

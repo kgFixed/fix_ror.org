@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01xrnpj63> 
+    a org:Organization ;
+    rdfs:label "Sahara Hospital" ;
+    schema:name "Sahara Hospital" ;
+    schema:foundingDate "2009"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Sahara_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00gvw6327> ;
+        rdfs:label "King George's Medical University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(80.92313 26.83928)"^^geo:wktLiteral ;
+        schema:addressLocality "Lucknow" ;
+    ] ;
+    schema:url <http://www.saharahospitals.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000459023442> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q15075385> ;
+             .

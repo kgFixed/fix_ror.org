@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01wdf5p42> 
+    a org:Organization ;
+    rdfs:label "Independent Authority for Public Revenue" ;
+    schema:name "Independent Authority for Public Revenue" ;
+    schema:foundingDate "2017"^^xsd:gYear ;
+    schema:sameAs <https://el.wikipedia.org/wiki/%CE%91%CE%BD%CE%B5%CE%BE%CE%AC%CF%81%CF%84%CE%B7%CF%84%CE%B7_%CE%91%CF%81%CF%87%CE%AE_%CE%94%CE%B7%CE%BC%CE%BF%CF%83%CE%AF%CF%89%CE%BD_%CE%95%CF%83%CF%8C%CE%B4%CF%89%CE%BD> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01zzvcj05> ;
+        rdfs:label "General Chemical State Laboratory" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(23.72784 37.98376)"^^geo:wktLiteral ;
+        schema:addressLocality "Athens" ;
+    ] ;
+    schema:url <https://www.aade.gr> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q50970689> ;
+             .

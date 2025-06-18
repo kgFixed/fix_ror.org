@@ -1,0 +1,35 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01nvz9x61> 
+    a org:Organization ;
+    rdfs:label "Sartorius (Germany)" ;
+    schema:name "Sartorius (Germany)" ;
+    schema:foundingDate "1870"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Sartorius_AG> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/051de0s21> ;
+        rdfs:label "Sartorius (United Kingdom)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02x4grb16> ;
+        rdfs:label "Sartorius (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(9.93228 51.53443)"^^geo:wktLiteral ;
+        schema:addressLocality "Göttingen" ;
+    ] ;
+    schema:url <https://www.sartorius.com> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30285175> ;
+             .

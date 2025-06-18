@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01qheje62> 
+    a org:Organization ;
+    rdfs:label "Shokei Gakuin University" ;
+    schema:name "Shokei Gakuin University" ;
+    schema:foundingDate "1892"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Shokei_Gakuin_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(140.86667 38.26667)"^^geo:wktLiteral ;
+        schema:addressLocality "Sendai" ;
+    ] ;
+    schema:url <http://www.shokei.jp/> ;
+    schema:sameAs <http://isni.org/isni/0000000406412831> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7500178> ;
+             .

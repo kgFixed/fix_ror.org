@@ -1,0 +1,20 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01rd6m198> 
+    a org:Organization ;
+    rdfs:label "BioFact Environmental Health Research Center" ;
+    schema:name "BioFact Environmental Health Research Center" ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(12.26904 57.77051)"^^geo:wktLiteral ;
+        schema:addressLocality "Lerum" ;
+    ] ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30286777> ;
+             .

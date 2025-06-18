@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01qjnmr21> 
+    a org:Organization ;
+    rdfs:label "Redwood Memorial Hospital" ;
+    schema:name "Redwood Memorial Hospital" ;
+    schema:foundingDate "1904"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Redwood_Memorial_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/045gxp391> ;
+        rdfs:label "Aneurin Bevan University Health Board" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-3.28553 51.75998)"^^geo:wktLiteral ;
+        schema:addressLocality "Rhymney" ;
+    ] ;
+    schema:sameAs <http://isni.org/isni/0000000406489732> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7306517> ;
+             .

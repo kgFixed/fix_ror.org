@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01nvd0q76> 
+    a org:Organization ;
+    rdfs:label "Chettinad Health City" ;
+    schema:name "Chettinad Health City" ;
+    schema:foundingDate "2007"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Chettinad_Health_City> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0394w2w14> ;
+        rdfs:label "Chettinad Academy of Research and Education" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(80.27847 13.08784)"^^geo:wktLiteral ;
+        schema:addressLocality "Chennai" ;
+    ] ;
+    schema:url <http://www.chettinadhealthcity.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000417563328> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5094205> ;
+             .

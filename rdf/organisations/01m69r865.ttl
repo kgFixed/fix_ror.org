@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01m69r865> 
+    a org:Organization ;
+    rdfs:label "Genetic Resources Center" ;
+    schema:name "Genetic Resources Center" ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/023v4bd62> ;
+        rdfs:label "National Agriculture and Food Research Organization" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(140.1 36.2)"^^geo:wktLiteral ;
+        schema:addressLocality "Tsukuba" ;
+    ] ;
+    schema:url <http://www.naro.affrc.go.jp/english/laboratory/ngrc/index.html> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q90571491> ;
+             .

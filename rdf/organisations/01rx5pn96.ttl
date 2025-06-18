@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01rx5pn96> 
+    a org:Organization ;
+    rdfs:label "Mashantucket Pequot Museum and Research Center" ;
+    schema:name "Mashantucket Pequot Museum and Research Center" ;
+    schema:foundingDate "1998"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Mashantucket_Pequot_Museum_and_Research_Center> ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-72.01424 41.43982)"^^geo:wktLiteral ;
+        schema:addressLocality "Ledyard Center" ;
+    ] ;
+    schema:url <http://www.pequotmuseum.org/default.aspx> ;
+    schema:sameAs <http://isni.org/isni/0000000094282694> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6783079> ;
+             .

@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01m631n05> 
+    a org:Organization ;
+    rdfs:label "Southern Sakhalin Institute of Economics, Law and Computer Science" ;
+    schema:name "Southern Sakhalin Institute of Economics, Law and Computer Science" ;
+    schema:foundingDate "1991"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(142.73603 46.95407)"^^geo:wktLiteral ;
+        schema:addressLocality "Yuzhno-Sakhalinsk" ;
+    ] ;
+    schema:url <http://www.sakhiepi.ru/> ;
+     .

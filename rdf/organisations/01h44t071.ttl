@@ -1,0 +1,20 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01h44t071> 
+    a org:Organization ;
+    rdfs:label "Therapeutische Drug Monitoring Kinder-und Jugendpsychiatrie" ;
+    schema:name "Therapeutische Drug Monitoring Kinder-und Jugendpsychiatrie" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(9.99155 48.39841)"^^geo:wktLiteral ;
+        schema:addressLocality "Ulm" ;
+    ] ;
+    schema:url <http://www.tdm-kjp.de/eng/> ;
+     .

@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01q5d1g38> 
+    a org:Organization ;
+    rdfs:label "Thurrock Community Hospital" ;
+    schema:name "Thurrock Community Hospital" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05v823t63> ;
+        rdfs:label "South Essex Partnership University Foundation NHS Trust" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(0.32521 51.47566)"^^geo:wktLiteral ;
+        schema:addressLocality "Grays" ;
+    ] ;
+    schema:url <https://www.nhs.uk/Services/hospitals/overview/DefaultView.aspx?id=130229> ;
+    schema:sameAs <http://isni.org/isni/0000000417727345> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30293229> ;
+             .

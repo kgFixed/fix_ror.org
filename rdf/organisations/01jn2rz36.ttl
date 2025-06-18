@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01jn2rz36> 
+    a org:Organization ;
+    rdfs:label "Hôpital de Jolimont" ;
+    schema:name "Hôpital de Jolimont" ;
+    schema:foundingDate "1881"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(4.18785 50.48657)"^^geo:wktLiteral ;
+        schema:addressLocality "La Louvière" ;
+    ] ;
+    schema:url <http://www.jolimont.be/hopitaux-et-polycliniques/hopital-de-jolimont> ;
+     .

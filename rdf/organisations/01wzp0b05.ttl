@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01wzp0b05> 
+    a org:Organization ;
+    rdfs:label "Milford Elementary School" ;
+    schema:name "Milford Elementary School" ;
+    schema:foundingDate "1902"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-113.01079 38.39691)"^^geo:wktLiteral ;
+        schema:addressLocality "Milford" ;
+    ] ;
+    schema:url <https://www.milfordschools.org/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30290984> ;
+             .

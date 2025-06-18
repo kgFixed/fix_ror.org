@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01k97gp34> 
+    a org:Organization ;
+    rdfs:label "TU Dortmund University" ;
+    schema:name "TU Dortmund University" ;
+    schema:foundingDate "1968"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Technical_University_of_Dortmund> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01z1qnm06> ;
+        rdfs:label "Institute for Advanced Study in the Humanities Essen" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02w0r2764> ;
+        rdfs:label "MAGIC Telescopes" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04s11ea33> ;
+        rdfs:label "Lamarr Institute for Machine Learning and Artificial Intelligence" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(7.466 51.51494)"^^geo:wktLiteral ;
+        schema:addressLocality "Dortmund" ;
+    ] ;
+    schema:url <https://www.tu-dortmund.de/en/> ;
+    schema:sameAs <http://isni.org/isni/0000000104169637> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q685557> ;
+             .

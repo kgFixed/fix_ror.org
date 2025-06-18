@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01r3ms014> 
+    a org:Organization ;
+    rdfs:label "U-Hopper (Italy)" ;
+    schema:name "U-Hopper (Italy)" ;
+    schema:foundingDate "2010"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(10.91246 46.35356)"^^geo:wktLiteral ;
+        schema:addressLocality "Malé" ;
+    ] ;
+    schema:url <https://www.u-hopper.com> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30292493> ;
+             .

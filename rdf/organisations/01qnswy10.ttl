@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01qnswy10> 
+    a org:Organization ;
+    rdfs:label "University Press of Kansas" ;
+    schema:name "University Press of Kansas" ;
+    schema:foundingDate "1946"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/University_Press_of_Kansas> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-95.23525 38.97167)"^^geo:wktLiteral ;
+        schema:addressLocality "Lawrence" ;
+    ] ;
+    schema:url <https://kuecprd.ku.edu/~upress/cgi-bin/> ;
+    schema:sameAs <http://isni.org/isni/0000000104321774> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7894894> ;
+             .

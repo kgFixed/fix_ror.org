@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01y946378> 
+    a org:Organization ;
+    rdfs:label "Sarawak General Hospital" ;
+    schema:name "Sarawak General Hospital" ;
+    schema:foundingDate "1870"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Sarawak_General_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05b307002> ;
+        rdfs:label "Universiti Malaysia Sarawak" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(110.33333 1.55)"^^geo:wktLiteral ;
+        schema:addressLocality "Kuching" ;
+    ] ;
+    schema:url <http://hus.moh.gov.my/bm/> ;
+    schema:sameAs <http://isni.org/isni/0000000417945377> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7423421> ;
+             .

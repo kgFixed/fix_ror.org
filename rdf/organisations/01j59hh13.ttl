@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01j59hh13> 
+    a org:Organization ;
+    rdfs:label "Bank of Cape Verde" ;
+    schema:name "Bank of Cape Verde" ;
+    schema:foundingDate "1975"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Bank_of_Cape_Verde> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-23.51254 14.93152)"^^geo:wktLiteral ;
+        schema:addressLocality "Praia" ;
+    ] ;
+    schema:url <http://www.bcv.cv/vEN/Pages/Homepage.aspx> ;
+    schema:sameAs <http://isni.org/isni/0000000096364933> ;
+             .

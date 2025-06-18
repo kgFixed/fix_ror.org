@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01t2rqa20> 
+    a org:Organization ;
+    rdfs:label "Annie Penn Hospital" ;
+    schema:name "Annie Penn Hospital" ;
+    schema:foundingDate "1930"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03jeg4p28> ;
+        rdfs:label "Cone Health" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-79.66447 36.35486)"^^geo:wktLiteral ;
+        schema:addressLocality "Reidsville" ;
+    ] ;
+    schema:url <https://www.conehealth.com/locations/annie-penn-hospital/> ;
+    schema:sameAs <http://isni.org/isni/0000000404570246> ;
+             .

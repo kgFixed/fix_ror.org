@@ -1,0 +1,20 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01ktyn983> 
+    a org:Organization ;
+    rdfs:label "Muzeum jihovýchodní Moravy ve Zlíně" ;
+    schema:name "Muzeum jihovýchodní Moravy ve Zlíně" ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(17.67065 49.22645)"^^geo:wktLiteral ;
+        schema:addressLocality "Zlín" ;
+    ] ;
+    schema:url <http://www.muzeum-zlin.cz/cs/> ;
+     .

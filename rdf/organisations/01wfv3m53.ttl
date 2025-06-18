@@ -1,0 +1,97 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01wfv3m53> 
+    a org:Organization ;
+    rdfs:label "Teva Pharmaceuticals (Israel)" ;
+    schema:name "Teva Pharmaceuticals (Israel)" ;
+    schema:foundingDate "1901"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Teva_Pharmaceutical_Industries> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02wtsha51> ;
+        rdfs:label "Teva Pharmaceuticals (Australia)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01c6k3h93> ;
+        rdfs:label "Teva Pharmaceuticals (Canada)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/054v7pb78> ;
+        rdfs:label "Teva Pharmaceuticals (Czechia)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02c01q628> ;
+        rdfs:label "Teva Pharmaceuticals (France)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03xa4xh46> ;
+        rdfs:label "Teva Pharmaceuticals (Germany)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03xjfns22> ;
+        rdfs:label "Teva Pharmaceuticals (Hungary)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/059tq0w82> ;
+        rdfs:label "Teva Pharmaceuticals (Ireland)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02s6t9r74> ;
+        rdfs:label "Teva Pharmaceuticals (Netherlands)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05tja9q19> ;
+        rdfs:label "Teva Pharmaceuticals (Spain)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0136jw687> ;
+        rdfs:label "Teva Pharmaceuticals (Switzerland)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01dvqbh84> ;
+        rdfs:label "Teva Pharmaceuticals (United Kingdom)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03etg4523> ;
+        rdfs:label "Teva Pharmaceuticals (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(34.88747 32.08707)"^^geo:wktLiteral ;
+        schema:addressLocality "Petah Tikva" ;
+    ] ;
+    schema:url <http://www.tevapharm.com/> ;
+    schema:sameAs <http://isni.org/isni/000000012189710X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q898750> ;
+             .

@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/01ph39d13> 
+    a org:Organization ;
+    rdfs:label "Laboratoire National de Métrologie et d'Essais" ;
+    schema:name "Laboratoire National de Métrologie et d'Essais" ;
+    schema:foundingDate "1901"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Laboratoire_national_de_m%C3%A9trologie_et_d%27essais> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0557mft23> ;
+        rdfs:label "Formation, Innovation, Recherche, Services et Transfert en Temps-Fréquence" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03hgsyv65> ;
+        rdfs:label "Laboratoire Temps Espace" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.3488 48.85341)"^^geo:wktLiteral ;
+        schema:addressLocality "Paris" ;
+    ] ;
+    schema:url <https://www.lne.fr/en> ;
+    schema:sameAs <http://isni.org/isni/0000000121768498> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3214502> ;
+             .
