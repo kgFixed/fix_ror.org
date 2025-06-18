@@ -1,30 +1,17 @@
-import os
+from sema.subyt import Subyt
+from sema.subyt.sources import SourceFactory
+from pathlib import Path
 
-# utilisation de sema.subyt
-from sema.subyt import (
-    Generator,
-    GeneratorSettings,
-    Sink,
-    Source,
-    SinkFactory,
-    SourceFactory,
-    JinjaBasedGenerator,
+def json_to_rdf(json_path, template_path, output_path):
+    Subyt(
+        template_name="template.ttl",
+        template_folder=str(Path(template_path).parent),
+        sink=str(Path(output_path).resolve()),
+        extra_sources={"qres": str(Path(json_path).resolve())},
+    ).process()
+
+json_to_rdf(
+    json_path="data/v1.66-2025-05-20-ror-data.json",
+    template_path="template/template.ttl",
+    output_path="rdf/all_organisation.ttl"
 )
-
-def json_to_rdf(path_json_file, template_name, template_directory, ouput_directory):
-    input_json = f"{path_json_file}"
-
-    output_ttl = f"{ouput_directory}/all_grouped_organisation.ttl"
-    template_file = f"{template_name}.ttl"
-    template_path = os.path.join(os.path.dirname(__file__), f"{template_directory}")
-
-    # Initialisation
-    generator = JinjaBasedGenerator(template_path)
-    sink = SinkFactory.make_sink(output_ttl, False)
-    inputs = {"qres": SourceFactory.make_source(input_json)}
-
-    # Génération
-    generator.process(template_file, inputs, GeneratorSettings(), sink, {})
-
-# Appel de la fonction
-json_to_rdf("data/v1.66-2025-05-20-ror-data.json", "template", "template", "rdf")

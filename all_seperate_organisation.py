@@ -1,61 +1,37 @@
-import os
 import json
-import tempfile
 from pathlib import Path
+import tempfile
+from sema.subyt import Subyt
 
-from sema.subyt import (
-    Generator,
-    GeneratorSettings,
-    Sink,
-    Source,
-    SinkFactory,
-    SourceFactory,
-    JinjaBasedGenerator,
-)
-
-def json_to_rdf(path_json_file, template_name, template_directory, output_directory):
-    """Convertit un JSON en multiples fichiers TTL (un par objet)"""
-    # Création du dossier de sortie
-    Path(output_directory).mkdir(parents=True, exist_ok=True)
+def json_to_individual_rdf(json_path, template_path, output_dir):
+    output_dir = Path(output_dir) / "organisations"
+    output_dir.mkdir(parents=True, exist_ok=True)
     
-    # Configuration des chemins
-    template_path = os.path.join(os.path.dirname(__file__), template_directory)
-    generator = JinjaBasedGenerator(template_path)
-    
-    # Chargement des données JSON
-    with open(path_json_file, 'r', encoding='utf-8') as f:
-        data = json.load(f)  # Doit être une liste d'objets
-    
-    # Traitement par objet
-    for i, obj in enumerate(data, start=1):
-        # Création d'un fichier temporaire pour l'objet courant
-        with tempfile.NamedTemporaryFile(mode='w', suffix='.json', delete=False) as tmp:
-            json.dump(obj, tmp)
-            tmp_path = tmp.name
-        
-        try:
-            # Fichier de sortie pour cet objet
-            ror_id = obj["id"].split("/")[-1]
-            output_file = os.path.join(output_directory, f"{ror_id}.ttl")
+    with open(json_path, encoding='utf-8') as f:
+        for org in json.load(f):
+            ror_id = org['id'].split('/')[-1]
             
-            # Configuration avec le fichier temporaire comme source
-            sink = SinkFactory.make_sink(output_file, False)
-            inputs = {"qres": SourceFactory.make_source(tmp_path)}  # Utilise le chemin du fichier
+            # Créez un fichier JSON temporaire
+            with tempfile.NamedTemporaryFile(mode='w', suffix='.json', delete=False, encoding='utf-8') as tmp:
+                json.dump({"sets": {"qres": [org]}}, tmp, ensure_ascii=False, indent=2)
+                tmp_path = tmp.name
             
-            # Génération
-            generator.process(f"{template_name}.ttl", inputs, GeneratorSettings(), sink, {})
-            
-            print(f"Généré : {output_file}")
-        finally:
-            # Nettoyage du fichier temporaire
-            os.unlink(tmp_path)
-
-    print(f"Terminé ! {len(data)} fichiers créés dans {output_directory}")
+            try:
+                # Utilisez le fichier comme source
+                Subyt(
+                    template_name=Path(template_path).name,
+                    template_folder=str(Path(template_path).parent),
+                    extra_sources={"qres": str(Path(tmp_path).resolve())},
+                    sink=str(output_dir / f"{ror_id}.ttl"),
+                    overwrite_sink=True,
+                    conditional=False
+                ).process()
+            finally:
+                Path(tmp_path).unlink()  # Nettoyage
 
 # Exemple d'utilisation
-json_to_rdf(
-    path_json_file="data/v1.66-2025-05-20-ror-data.json",
-    template_name="template",
-    template_directory="template",
-    output_directory="rdf/organisations"
+json_to_individual_rdf(
+    json_path="data/v1.66-2025-05-20-ror-data.json",
+    template_path="template/template.ttl",
+    output_dir="rdf"
 )
