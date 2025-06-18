@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05tqgjy81> 
+    a org:Organization ;
+    rdfs:label "Ministry of Education" ;
+    schema:name "Ministry of Education" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Ministry_of_Education_%28Iraq%29> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(44.40088 33.34058)"^^geo:wktLiteral ;
+        schema:addressLocality "Baghdad" ;
+    ] ;
+    schema:url <https://moedu.gov.iq> ;
+    schema:sameAs <http://isni.org/isni/0000000107043079> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4117215> ;
+             .

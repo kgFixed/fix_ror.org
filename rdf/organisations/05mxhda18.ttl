@@ -1,0 +1,77 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05mxhda18> 
+    a org:Organization ;
+    rdfs:label "University Hospital Cologne" ;
+    schema:name "University Hospital Cologne" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04f2wf871> ;
+        rdfs:label "Centrum für Integrierte Onkologie" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/009nhnc47> ;
+        rdfs:label "Klinik und Poliklinik für Hals-, Nasen-, Ohrenheilkunde" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0101mv631> ;
+        rdfs:label "Klinik und Poliklinik für Kinder- und Jugendmedizin" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04s3ast04> ;
+        rdfs:label "Klinik und Poliklinik für Neurologie" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00qqw1b44> ;
+        rdfs:label "Klinik und Poliklinik für Nuklearmedizin" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04zys7342> ;
+        rdfs:label "Klinik und Poliklinik für Psychiatrie und Psychotherapie des Kindes- und Jugendalters" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00f180m78> ;
+        rdfs:label "Klinik und Poliklinik für Psychosomatik und Psychotherapie" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/013ne8p22> ;
+        rdfs:label "Poliklinik für Endokrinologie, Diabetologie und Präventivmedizin" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00rcxh774> ;
+        rdfs:label "University of Cologne" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(6.95 50.93333)"^^geo:wktLiteral ;
+        schema:addressLocality "Cologne" ;
+    ] ;
+    schema:url <http://www.uk-koeln.de/> ;
+    schema:sameAs <http://isni.org/isni/000000008852305X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2494398> ;
+             .

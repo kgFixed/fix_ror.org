@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05pzmdf74> 
+    a org:Organization ;
+    rdfs:label "Popular University of Cesar" ;
+    schema:name "Popular University of Cesar" ;
+    schema:foundingDate "1973"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Popular_University_of_Cesar> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-73.25322 10.46314)"^^geo:wktLiteral ;
+        schema:addressLocality "Valledupar" ;
+    ] ;
+    schema:url <https://www.unicesar.edu.co> ;
+    schema:sameAs <http://isni.org/isni/0000000404872367> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7229746> ;
+             .

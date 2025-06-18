@@ -1,0 +1,34 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05sz9gw20> 
+    a org:Organization ;
+    rdfs:label "Fraunhofer USA Center Mid-Atlantic CMA" ;
+    schema:name "Fraunhofer USA Center Mid-Atlantic CMA" ;
+    schema:foundingDate "1997"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05aah2q92> ;
+        rdfs:label "Fraunhofer USA" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/047s2c258> ;
+        rdfs:label "University of Maryland, College Park" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-76.93692 38.98067)"^^geo:wktLiteral ;
+        schema:addressLocality "College Park" ;
+    ] ;
+    schema:url <https://www.cma.fraunhofer.org> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30265281> ;
+             .

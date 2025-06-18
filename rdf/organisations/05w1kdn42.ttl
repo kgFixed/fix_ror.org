@@ -1,0 +1,34 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05w1kdn42> 
+    a org:Organization ;
+    rdfs:label "LWL-Universitätsklinik Hamm" ;
+    schema:name "LWL-Universitätsklinik Hamm" ;
+    schema:foundingDate "1951"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03cdgfs84> ;
+        rdfs:label "Landschaftsverband Westfalen-Lippe" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03zcpvf19> ;
+        rdfs:label "University Hospitals of the Ruhr-University of Bochum" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(7.82089 51.68033)"^^geo:wktLiteral ;
+        schema:addressLocality "Hamm" ;
+    ] ;
+    schema:url <https://www.lwl-uk-hamm.de/de/unsere-klinik/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q18410588> ;
+             .

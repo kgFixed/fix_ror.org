@@ -1,0 +1,35 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05tensj89> 
+    a org:Organization ;
+    rdfs:label "Swiss Academy of Sciences" ;
+    schema:name "Swiss Academy of Sciences" ;
+    schema:foundingDate "1815"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Other" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05b2r4b98> ;
+        rdfs:label "Swiss Academies of Arts and Sciences" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02shtak05> ;
+        rdfs:label "Stiftung für Technologiefolgen-Abschätzung" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(7.44744 46.94809)"^^geo:wktLiteral ;
+        schema:addressLocality "Bern" ;
+    ] ;
+    schema:url <http://www.naturalsciences.ch/?_ga=1.43343781.1874359181.1462174030> ;
+    schema:sameAs <http://isni.org/isni/0000000107198070> ;
+             .

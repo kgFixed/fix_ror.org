@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05tpt3034> 
+    a org:Organization ;
+    rdfs:label "Stapledon Memorial Trust" ;
+    schema:name "Stapledon Memorial Trust" ;
+    schema:foundingDate "1962"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Other" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-3.52751 50.7236)"^^geo:wktLiteral ;
+        schema:addressLocality "Exeter" ;
+    ] ;
+    schema:url <http://www.stapledontrust.org.uk/> ;
+    schema:sameAs <http://isni.org/isni/0000000459017990> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30264692> ;
+             .

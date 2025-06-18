@@ -1,0 +1,39 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05vjwz959> 
+    a org:Organization ;
+    rdfs:label "Centre de Recherche Interdisciplinaire en Histoire, Histoire de l’art et Musicologie" ;
+    schema:name "Centre de Recherche Interdisciplinaire en Histoire, Histoire de l’art et Musicologie" ;
+    schema:foundingDate "2008"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/023vkeb66> ;
+        rdfs:label "Délégation Centre Limousin Poitou-Charentes" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02cp04407> ;
+        rdfs:label "Université de Limoges" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04xhy8q59> ;
+        rdfs:label "Université de Poitiers" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(0.34348 46.58261)"^^geo:wktLiteral ;
+        schema:addressLocality "Poitiers" ;
+    ] ;
+    schema:url <http://criham.labo.univ-poitiers.fr/> ;
+     .

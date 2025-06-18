@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05r9r2f34> 
+    a org:Organization ;
+    rdfs:label "Indian Institute of Technology Mandi" ;
+    schema:name "Indian Institute of Technology Mandi" ;
+    schema:foundingDate "2009"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Indian_Institute_of_Technology_Mandi> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(76.93273 31.71194)"^^geo:wktLiteral ;
+        schema:addressLocality "Mandi" ;
+    ] ;
+    schema:url <https://www.iitmandi.ac.in> ;
+    schema:sameAs <http://isni.org/isni/0000000417757851> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3532713> ;
+             .

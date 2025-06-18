@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05pz4ws32> 
+    a org:Organization ;
+    rdfs:label "Children's Hospital of Chongqing Medical University" ;
+    schema:name "Children's Hospital of Chongqing Medical University" ;
+    schema:foundingDate "1956"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/017z00e58> ;
+        rdfs:label "Chongqing Medical University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(106.55771 29.56026)"^^geo:wktLiteral ;
+        schema:addressLocality "Chongqing" ;
+    ] ;
+    schema:url <http://www.cqhmaen.com/b_nr.asp?id=7&type_id=2> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q43896360> ;
+             .

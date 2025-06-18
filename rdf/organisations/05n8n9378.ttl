@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05n8n9378> 
+    a org:Organization ;
+    rdfs:label "Eduardo Mondlane University" ;
+    schema:name "Eduardo Mondlane University" ;
+    schema:foundingDate "1962"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Eduardo_Mondlane_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(32.58322 -25.96553)"^^geo:wktLiteral ;
+        schema:addressLocality "Maputo" ;
+    ] ;
+    schema:url <http://www.uem.mz/index.php> ;
+    schema:sameAs <http://isni.org/isni/0000000109435818> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q890884> ;
+             .

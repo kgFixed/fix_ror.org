@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05w7ta844> 
+    a org:Organization ;
+    rdfs:label "Dnepropetrovsk State Institute of Physical Culture and Sport" ;
+    schema:name "Dnepropetrovsk State Institute of Physical Culture and Sport" ;
+    schema:foundingDate "1980"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(35.04066 48.46664)"^^geo:wktLiteral ;
+        schema:addressLocality "Dnipro" ;
+    ] ;
+    schema:url <http://infiz.dp.ua/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30257361> ;
+             .

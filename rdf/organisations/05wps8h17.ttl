@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05wps8h17> 
+    a org:Organization ;
+    rdfs:label "Deutsches Archäologisches Institut, Abteilung Cairo" ;
+    schema:name "Deutsches Archäologisches Institut, Abteilung Cairo" ;
+    schema:foundingDate "1832"^^xsd:gYear ;
+    schema:sameAs <https://de.wikipedia.org/wiki/Deutsches_Arch%C3%A4ologisches_Institut_Kairo> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/041qv0h25> ;
+        rdfs:label "Deutsches Archäologisches Institut, Zentrale" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(31.24967 30.06263)"^^geo:wktLiteral ;
+        schema:addressLocality "Cairo" ;
+    ] ;
+    schema:url <https://www.dainst.org/kairo> ;
+    schema:sameAs <http://isni.org/isni/000000012097680X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1205541> ;
+             .

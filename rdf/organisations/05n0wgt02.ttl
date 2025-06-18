@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05n0wgt02> 
+    a org:Organization ;
+    rdfs:label "King Faisal Specialist Hospital & Research Centre" ;
+    schema:name "King Faisal Specialist Hospital & Research Centre" ;
+    schema:foundingDate "1975"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/King_Faisal_Specialist_Hospital_and_Research_Centre> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(46.72185 24.68773)"^^geo:wktLiteral ;
+        schema:addressLocality "Riyadh" ;
+    ] ;
+    schema:url <http://www.kfshrc.edu.sa/wps/portal/En> ;
+    schema:sameAs <http://isni.org/isni/0000000121914301> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6856599> ;
+             .

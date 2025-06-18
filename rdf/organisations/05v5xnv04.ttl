@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05v5xnv04> 
+    a org:Organization ;
+    rdfs:label "Tung Fang Design Institute" ;
+    schema:name "Tung Fang Design Institute" ;
+    schema:foundingDate "1966"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Tung_Fang_Design_Institute> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(120.31333 22.61626)"^^geo:wktLiteral ;
+        schema:addressLocality "Kaohsiung" ;
+    ] ;
+    schema:url <http://www.tf.edu.tw/en> ;
+    schema:sameAs <http://isni.org/isni/0000000406391970> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q11103504> ;
+             .

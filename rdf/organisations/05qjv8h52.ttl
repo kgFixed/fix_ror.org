@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05qjv8h52> 
+    a org:Organization ;
+    rdfs:label "Artistic Realization Technologies" ;
+    schema:name "Artistic Realization Technologies" ;
+    schema:foundingDate "1995"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-74.56377 40.33177)"^^geo:wktLiteral ;
+        schema:addressLocality "Princeton Meadows" ;
+    ] ;
+    schema:url <http://artrealization.org/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30286853> ;
+             .

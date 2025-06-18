@@ -1,0 +1,38 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05vv9dr68> 
+    a org:Organization ;
+    rdfs:label "Medizinisches Zentrum für Seelische Gesundheit" ;
+    schema:name "Medizinisches Zentrum für Seelische Gesundheit" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04zzd2n41> ;
+        rdfs:label "Krankenhaus Lübbecke-Rahden, Universitätsklinik für Psychiatrie und Psychotherapie" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01c577389> ;
+        rdfs:label "Krankenhaus Lübbecke-Rahden, Universitätsklinik für Psychosomatik und Psychotherapie" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03zcpvf19> ;
+        rdfs:label "University Hospitals of the Ruhr-University of Bochum" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(8.61423 52.30699)"^^geo:wktLiteral ;
+        schema:addressLocality "Lübbecke" ;
+    ] ;
+    schema:url <https://www.muehlenkreiskliniken.de/medizinisches-zentrum-fuer-seelische-gesundheit/> ;
+     .

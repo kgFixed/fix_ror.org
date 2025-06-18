@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05srvzs48> 
+    a org:Organization ;
+    rdfs:label "Warsaw University of Life Sciences" ;
+    schema:name "Warsaw University of Life Sciences" ;
+    schema:foundingDate "1816"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Warsaw_University_of_Life_Sciences> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05qk4xh70> ;
+        rdfs:label "Center for Translational Medicine" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(21.01178 52.22977)"^^geo:wktLiteral ;
+        schema:addressLocality "Warsaw" ;
+    ] ;
+    schema:url <http://www.sggw.pl/en/> ;
+    schema:sameAs <http://isni.org/isni/0000000119557966> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q681> ;
+             .

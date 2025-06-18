@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05s8mns17> 
+    a org:Organization ;
+    rdfs:label "Association for Clinical Biochemistry and Laboratory Medicine" ;
+    schema:name "Association for Clinical Biochemistry and Laboratory Medicine" ;
+    schema:foundingDate "1953"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Association_for_Clinical_Biochemistry_and_Laboratory_Medicine> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.12574 51.50853)"^^geo:wktLiteral ;
+        schema:addressLocality "London" ;
+    ] ;
+    schema:url <http://www.acb.org.uk/> ;
+    schema:sameAs <http://isni.org/isni/0000000122953409> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4809420> ;
+             .

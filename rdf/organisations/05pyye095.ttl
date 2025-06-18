@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05pyye095> 
+    a org:Organization ;
+    rdfs:label "Kinshasa General Hospital" ;
+    schema:name "Kinshasa General Hospital" ;
+    schema:foundingDate "1924"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Kinshasa_General_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(15.31357 -4.32758)"^^geo:wktLiteral ;
+        schema:addressLocality "Kinshasa" ;
+    ] ;
+    schema:sameAs <http://www.wikidata.org/entity/Q3145337> ;
+             .

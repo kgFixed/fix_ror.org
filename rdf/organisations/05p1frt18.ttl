@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05p1frt18> 
+    a org:Organization ;
+    rdfs:label "Glostrup Hospital" ;
+    schema:name "Glostrup Hospital" ;
+    schema:foundingDate "1958"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Glostrup_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03mchdq19> ;
+        rdfs:label "Rigshospitalet" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/035b05819> ;
+        rdfs:label "University of Copenhagen" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(12.40377 55.6666)"^^geo:wktLiteral ;
+        schema:addressLocality "Glostrup Municipality" ;
+    ] ;
+    schema:url <https://www.glostruphospital.dk/> ;
+    schema:sameAs <http://isni.org/isni/0000000406300311> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5571986> ;
+             .

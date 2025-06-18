@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05qr1wq31> 
+    a org:Organization ;
+    rdfs:label "Ministry of Industries and Production" ;
+    schema:name "Ministry of Industries and Production" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Ministry_of_Industries_and_Production_(Pakistan)> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(73.04329 33.72148)"^^geo:wktLiteral ;
+        schema:addressLocality "Islamabad" ;
+    ] ;
+    schema:url <http://www.moip.gov.pk/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q6867182> ;
+             .

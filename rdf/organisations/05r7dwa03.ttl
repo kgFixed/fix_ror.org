@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05r7dwa03> 
+    a org:Organization ;
+    rdfs:label "Lanier Technical College" ;
+    schema:name "Lanier Technical College" ;
+    schema:foundingDate "1964"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Lanier_Technical_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00k9r5g94> ;
+        rdfs:label "Technical College System of Georgia" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-83.88435 34.2276)"^^geo:wktLiteral ;
+        schema:addressLocality "Oakwood" ;
+    ] ;
+    schema:url <http://www.laniertech.edu/default2.aspx> ;
+    schema:sameAs <http://isni.org/isni/0000000405305436> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6487078> ;
+             .

@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05yd19040> 
+    a org:Organization ;
+    rdfs:label "Institut Supérieur d'Ingénierie et Gestion de l'Environnement - ISIGE" ;
+    schema:name "Institut Supérieur d'Ingénierie et Gestion de l'Environnement - ISIGE" ;
+    schema:foundingDate "1992"^^xsd:gYear ;
+    schema:sameAs <https://fr.wikipedia.org/wiki/Institut_sup%C3%A9rieur_d%27ing%C3%A9nierie_et_de_gestion_de_l%27environnement> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04y8cs423> ;
+        rdfs:label "École Nationale Supérieure des Mines de Paris" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.70177 48.40908)"^^geo:wktLiteral ;
+        schema:addressLocality "Fontainebleau" ;
+    ] ;
+    schema:url <https://www.isige.minesparis.psl.eu> ;
+    schema:sameAs <http://isni.org/isni/0000000121590642> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3152544> ;
+             .

@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05xqycm14> 
+    a org:Organization ;
+    rdfs:label "Tripura University" ;
+    schema:name "Tripura University" ;
+    schema:foundingDate "1987"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Tripura_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05t86wg70> ;
+        rdfs:label "Agartala Government Medical College" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/046vamx76> ;
+        rdfs:label "Tripura Medical College & Dr. B.R. Ambedkar Memorial Teaching Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(91.27939 23.83605)"^^geo:wktLiteral ;
+        schema:addressLocality "Agartala" ;
+    ] ;
+    schema:url <https://www.tripurauniv.ac.in> ;
+    schema:sameAs <http://isni.org/isni/0000000086686322> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6454069> ;
+             .

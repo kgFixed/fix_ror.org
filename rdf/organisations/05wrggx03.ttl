@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05wrggx03> 
+    a org:Organization ;
+    rdfs:label "Dentsply Sirona (United States)" ;
+    schema:name "Dentsply Sirona (United States)" ;
+    schema:foundingDate "1899"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Dentsply_Sirona> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05p5z9518> ;
+        rdfs:label "Dentsply Sirona (Sweden)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02zv3jm94> ;
+        rdfs:label "Dentsply Sirona (Switzerland)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-76.72774 39.9626)"^^geo:wktLiteral ;
+        schema:addressLocality "York" ;
+    ] ;
+    schema:url <https://www.dentsplysirona.com/en> ;
+    schema:sameAs <http://isni.org/isni/0000000460074386> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q23781052> ;
+             .

@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05sb89p83> 
+    a org:Organization ;
+    rdfs:label "Greater Manchester Mental Health NHS Foundation Trust" ;
+    schema:name "Greater Manchester Mental Health NHS Foundation Trust" ;
+    schema:foundingDate "2002"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Greater_Manchester_Mental_Health_NHS_Foundation_Trust> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/050j7sq19> ;
+        rdfs:label "Woodlands Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-2.28333 53.53333)"^^geo:wktLiteral ;
+        schema:addressLocality "Prestwich" ;
+    ] ;
+    schema:url <https://www.gmmh.nhs.uk//> ;
+    schema:sameAs <http://isni.org/isni/0000000404306955> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q16993309> ;
+             .

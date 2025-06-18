@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05rbkcx47> 
+    a org:Organization ;
+    rdfs:label "Indiana University Hospital" ;
+    schema:name "Indiana University Hospital" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/IU_Health_University_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01aaptx40> ;
+        rdfs:label "Indiana University Health" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02k40bc56> ;
+        rdfs:label "Indiana University Bloomington" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/052133d12> ;
+        rdfs:label "University of Indianapolis" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03eftgw80> ;
+        rdfs:label "Indiana University Indianapolis" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-86.15804 39.76838)"^^geo:wktLiteral ;
+        schema:addressLocality "Indianapolis" ;
+    ] ;
+    schema:url <http://iuhealth.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000404402445> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q14688467> ;
+             .

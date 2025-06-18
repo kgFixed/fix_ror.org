@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05ybfpg54> 
+    a org:Organization ;
+    rdfs:label "Société de Mathématiques Appliquées et Industrielles" ;
+    schema:name "Société de Mathématiques Appliquées et Industrielles" ;
+    schema:foundingDate "1983"^^xsd:gYear ;
+    schema:sameAs <https://fr.wikipedia.org/wiki/Soci%C3%A9t%C3%A9_de_math%C3%A9matiques_appliqu%C3%A9es_et_industrielles_(association_fran%C3%A7aise)> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.3488 48.85341)"^^geo:wktLiteral ;
+        schema:addressLocality "Paris" ;
+    ] ;
+    schema:url <http://smai.emath.fr> ;
+    schema:sameAs <http://isni.org/isni/0000000108604245> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3487989> ;
+             .

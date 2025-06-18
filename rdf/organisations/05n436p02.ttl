@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05n436p02> 
+    a org:Organization ;
+    rdfs:label "South Ural State Humanitarian Pedagogical University" ;
+    schema:name "South Ural State Humanitarian Pedagogical University" ;
+    schema:foundingDate "1934"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Chelyabinsk_State_Pedagogical_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(61.42915 55.15402)"^^geo:wktLiteral ;
+        schema:addressLocality "Chelyabinsk" ;
+    ] ;
+    schema:url <https://en.cspu.ru/> ;
+    schema:sameAs <http://isni.org/isni/000000047895471X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2333286> ;
+             .

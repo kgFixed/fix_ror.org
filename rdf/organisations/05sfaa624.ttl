@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05sfaa624> 
+    a org:Organization ;
+    rdfs:label "Tibiscus University of Timișoara" ;
+    schema:name "Tibiscus University of Timișoara" ;
+    schema:foundingDate "1991"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Tibiscus_University_of_Timi%C8%99oara> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(21.22571 45.75372)"^^geo:wktLiteral ;
+        schema:addressLocality "Timișoara" ;
+    ] ;
+    schema:url <http://www.tibiscus.ro/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q1128467> ;
+             .

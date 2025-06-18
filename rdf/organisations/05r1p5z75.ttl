@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05r1p5z75> 
+    a org:Organization ;
+    rdfs:label "KVG Dental College & Hospital" ;
+    schema:name "KVG Dental College & Hospital" ;
+    schema:foundingDate "1991"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(75.38741 12.561)"^^geo:wktLiteral ;
+        schema:addressLocality "Sullia" ;
+    ] ;
+    schema:url <http://www.kvgdentalcollege.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000417659565> ;
+             .

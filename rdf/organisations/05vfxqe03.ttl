@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05vfxqe03> 
+    a org:Organization ;
+    rdfs:label "Devon Energy (Canada)" ;
+    schema:name "Devon Energy (Canada)" ;
+    schema:foundingDate "1971"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Devon_Energy> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/014mx8j54> ;
+        rdfs:label "Devon Energy (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-113.73533 53.36683)"^^geo:wktLiteral ;
+        schema:addressLocality "Devon" ;
+    ] ;
+    schema:url <http://www.devonenergy.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30338132> ;
+             .

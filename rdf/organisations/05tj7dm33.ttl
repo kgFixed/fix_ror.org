@@ -1,0 +1,126 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05tj7dm33> 
+    a org:Organization ;
+    rdfs:label "Office of Nuclear Energy" ;
+    schema:name "Office of Nuclear Energy" ;
+    schema:foundingDate "2009"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Office_of_Nuclear_Energy> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03naxhj05> ;
+        rdfs:label "Spent Fuel and Waste Disposition" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01ez1vb97> ;
+        rdfs:label "Reactor Fleet and Advanced Reactor Deployment" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04p0mdy95> ;
+        rdfs:label "Office of Spent Fuel and Waste Science and Technology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02gy5dj09> ;
+        rdfs:label "Office of Nuclear Materials Production, Management, and Protection" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/009pn2s74> ;
+        rdfs:label "Office of Nuclear Facilities Management" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/004nzga04> ;
+        rdfs:label "Office of Materials and Chemical Technologies" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01xenw941> ;
+        rdfs:label "Office of International Nuclear Safety" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/031mgyp05> ;
+        rdfs:label "Office of Integrated Waste Management" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04n45zg06> ;
+        rdfs:label "Office of Bilateral, Multilateral, and Commercial Cooperation" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01j67h539> ;
+        rdfs:label "Office of Advanced Fuels Technologies" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03gjh3k29> ;
+        rdfs:label "Nuclear Infrastructure Programs" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04bfwqa71> ;
+        rdfs:label "Nuclear Fuel Cycle and Supply Chain" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00qywr187> ;
+        rdfs:label "Nuclear Energy University Program" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05t41kv40> ;
+        rdfs:label "Nuclear Energy Enabling Technologies" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/049t0bn51> ;
+        rdfs:label "International Nuclear Energy Policy and Cooperation" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00ty2a548> ;
+        rdfs:label "Idaho National Laboratory" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01bj3aw27> ;
+        rdfs:label "United States Department of Energy" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.03637 38.89511)"^^geo:wktLiteral ;
+        schema:addressLocality "Washington" ;
+    ] ;
+    schema:url <http://energy.gov/ne/office-nuclear-energy> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q7079279> ;
+             .

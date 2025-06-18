@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05s9t8c95> 
+    a org:Organization ;
+    rdfs:label "Jawaharlal Nehru Technological University, Kakinada" ;
+    schema:name "Jawaharlal Nehru Technological University, Kakinada" ;
+    schema:foundingDate "1946"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Jawaharlal_Nehru_Technological_University,_Kakinada> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/038qac964> ;
+        rdfs:label "SRKR Engineering College" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(82.23809 16.96036)"^^geo:wktLiteral ;
+        schema:addressLocality "Kākināda" ;
+    ] ;
+    schema:url <http://www.jntuk.edu.in/> ;
+    schema:sameAs <http://isni.org/isni/0000000417754749> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6166000> ;
+             .

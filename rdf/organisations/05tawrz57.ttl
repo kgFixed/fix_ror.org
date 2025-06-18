@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05tawrz57> 
+    a org:Organization ;
+    rdfs:label "Megger (Germany)" ;
+    schema:name "Megger (Germany)" ;
+    schema:foundingDate "1889"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Megger_Group_Limited> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04c5xat66> ;
+        rdfs:label "Megger (United Kingdom)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(8.57747 50.20731)"^^geo:wktLiteral ;
+        schema:addressLocality "Oberursel" ;
+    ] ;
+    schema:url <http://de.megger.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q3745138> ;
+             .

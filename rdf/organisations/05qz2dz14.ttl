@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05qz2dz14> 
+    a org:Organization ;
+    rdfs:label "Max Stern Academic College of Emek Yezreel" ;
+    schema:name "Max Stern Academic College of Emek Yezreel" ;
+    schema:foundingDate "1965"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Max_Stern_Academic_College_of_Emek_Yezreel> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(35.2892 32.60907)"^^geo:wktLiteral ;
+        schema:addressLocality "Afula" ;
+    ] ;
+    schema:url <https://www.yvc.ac.il> ;
+    schema:sameAs <http://isni.org/isni/0000000121500053> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q794566> ;
+             .

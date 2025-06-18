@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05w62hv45> 
+    a org:Organization ;
+    rdfs:label "Murray District Hospital" ;
+    schema:name "Murray District Hospital" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04j413049> ;
+        rdfs:label "Rockingham Peel Group" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(115.87351 -32.6298)"^^geo:wktLiteral ;
+        schema:addressLocality "Pinjarra" ;
+    ] ;
+    schema:url <https://www.rkpg.health.wa.gov.au/Our-services/Murray-District-Hospital> ;
+    schema:sameAs <http://isni.org/isni/0000000406419398> ;
+             .

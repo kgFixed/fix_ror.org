@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05vt9rv16> 
+    a org:Organization ;
+    rdfs:label "European Space Research Institute" ;
+    schema:name "European Space Research Institute" ;
+    schema:foundingDate "1968"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/ESA_Centre_for_Earth_Observation> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03wd9za21> ;
+        rdfs:label "European Space Agency" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(12.67942 41.8091)"^^geo:wktLiteral ;
+        schema:addressLocality "Frascati" ;
+    ] ;
+    schema:url <http://www.esa.int/About_Us/ESRIN> ;
+    schema:sameAs <http://isni.org/isni/0000000110139346> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q175492> ;
+             .

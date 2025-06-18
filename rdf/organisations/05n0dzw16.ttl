@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05n0dzw16> 
+    a org:Organization ;
+    rdfs:label "Instituto Nacional de Tecnología, Normalización y Metrología" ;
+    schema:name "Instituto Nacional de Tecnología, Normalización y Metrología" ;
+    schema:sameAs <https://es.wikipedia.org/wiki/Instituto_Nacional_de_Tecnolog%C3%ADa,_Normalizaci%C3%B3n_y_Metrolog%C3%ADa_(Paraguay)> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-57.647 -25.28646)"^^geo:wktLiteral ;
+        schema:addressLocality "Asunción" ;
+    ] ;
+    schema:url <https://www.intn.gov.py> ;
+    schema:sameAs <http://isni.org/isni/0000000493408450> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q20024746> ;
+             .

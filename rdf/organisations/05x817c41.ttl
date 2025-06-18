@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05x817c41> 
+    a org:Organization ;
+    rdfs:label "Bahauddin Zakariya University" ;
+    schema:name "Bahauddin Zakariya University" ;
+    schema:foundingDate "1975"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Bahauddin_Zakariya_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02e4fn963> ;
+        rdfs:label "University of Sahiwal" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(71.47824 30.19679)"^^geo:wktLiteral ;
+        schema:addressLocality "Multan" ;
+    ] ;
+    schema:url <http://www.bzu.edu.pk/> ;
+    schema:sameAs <http://isni.org/isni/000000010228333X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4842499> ;
+             .

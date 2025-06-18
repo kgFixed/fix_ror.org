@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05ndyzk28> 
+    a org:Organization ;
+    rdfs:label "Luftfartsverket (Sweden)" ;
+    schema:name "Luftfartsverket (Sweden)" ;
+    schema:foundingDate "1947"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Civil_Aviation_Administration_(Sweden)> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(16.1826 58.59419)"^^geo:wktLiteral ;
+        schema:addressLocality "Norrköping" ;
+    ] ;
+    schema:url <http://www.lfv.se/> ;
+    schema:sameAs <http://isni.org/isni/0000000110089836> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q470990> ;
+             .

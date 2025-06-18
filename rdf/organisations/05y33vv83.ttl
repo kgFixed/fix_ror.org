@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05y33vv83> 
+    a org:Organization ;
+    rdfs:label "Universidad del Desarrollo" ;
+    schema:name "Universidad del Desarrollo" ;
+    schema:foundingDate "1990"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Universidad_del_Desarrollo> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/028ynny55> ;
+        rdfs:label "Clínica Alemana" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03b3qq257> ;
+        rdfs:label "Hospital Padre Hurtado" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-70.64827 -33.45694)"^^geo:wktLiteral ;
+        schema:addressLocality "Santiago" ;
+    ] ;
+    schema:url <http://www.udd.cl/> ;
+    schema:sameAs <http://isni.org/isni/0000000096314901> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1778689> ;
+             .

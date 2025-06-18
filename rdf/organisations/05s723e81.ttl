@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05s723e81> 
+    a org:Organization ;
+    rdfs:label "Women's & Children's Hospital Foundation" ;
+    schema:name "Women's & Children's Hospital Foundation" ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(138.59141 -34.90733)"^^geo:wktLiteral ;
+        schema:addressLocality "North Adelaide" ;
+    ] ;
+    schema:url <https://wchfoundation.org.au/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q61931103> ;
+             .

@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05vbaw293> 
+    a org:Organization ;
+    rdfs:label "Communauté d'universités et établissements d'Aquitaine" ;
+    schema:name "Communauté d'universités et établissements d'Aquitaine" ;
+    schema:foundingDate "1997"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Community_of_universities_and_higher_education_institutions_of_Aquitaine> ;
+    org:status "inactive" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.5805 44.84044)"^^geo:wktLiteral ;
+        schema:addressLocality "Bordeaux" ;
+    ] ;
+    schema:url <http://www.cue-aquitaine.fr/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q16541346> ;
+             .

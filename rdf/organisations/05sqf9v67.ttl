@@ -1,0 +1,85 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05sqf9v67> 
+    a org:Organization ;
+    rdfs:label "Safran (France)" ;
+    schema:name "Safran (France)" ;
+    schema:foundingDate "2005"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Safran> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01racwh88> ;
+        rdfs:label "Laboratoire Hydrazines et Composés Energétiques Polyazotés" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02n2h9t24> ;
+        rdfs:label "Laboratoire des Composites Thermo Structuraux" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/020tnvw92> ;
+        rdfs:label "Safran (Belgium)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03n3hc844> ;
+        rdfs:label "Safran (Brazil)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02qpg3d02> ;
+        rdfs:label "Safran (Germany)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03kfyg105> ;
+        rdfs:label "Safran (Poland)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00ay2hv83> ;
+        rdfs:label "Safran (Singapore)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00dymss37> ;
+        rdfs:label "Safran (United Kingdom)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/039d46111> ;
+        rdfs:label "Safran (United States)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03q961f45> ;
+        rdfs:label "Safran Ceramics (France)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.3488 48.85341)"^^geo:wktLiteral ;
+        schema:addressLocality "Paris" ;
+    ] ;
+    schema:url <http://www.safran-group.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000100417410> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1886126> ;
+             .

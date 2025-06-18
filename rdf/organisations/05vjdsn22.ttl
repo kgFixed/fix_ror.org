@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05vjdsn22> 
+    a org:Organization ;
+    rdfs:label "Institut Pprime" ;
+    schema:name "Institut Pprime" ;
+    schema:foundingDate "2010"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Institut_Pprime> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00s19x989> ;
+        rdfs:label "CNRS Ingénierie" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04xhy8q59> ;
+        rdfs:label "Université de Poitiers" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04jx68594> ;
+        rdfs:label "École Nationale Supérieure de Mécanique et d'Aérotechnique" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(0.34348 46.58261)"^^geo:wktLiteral ;
+        schema:addressLocality "Poitiers" ;
+    ] ;
+    schema:url <http://www.pprime.fr/?q=en> ;
+    schema:sameAs <http://isni.org/isni/0000000121643230> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3151798> ;
+             .

@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05vzn8153> 
+    a org:Organization ;
+    rdfs:label "Department of Correctional Services" ;
+    schema:name "Department of Correctional Services" ;
+    schema:foundingDate "1910"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Department_of_Correctional_Services_(South_Africa)> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01gwm7a05> ;
+        rdfs:label "Government of South Africa" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(28.18783 -25.74486)"^^geo:wktLiteral ;
+        schema:addressLocality "Pretoria" ;
+    ] ;
+    schema:url <http://www.dcs.gov.za/> ;
+    schema:sameAs <http://isni.org/isni/0000000406232208> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4294426> ;
+             .

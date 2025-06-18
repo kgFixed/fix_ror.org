@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05mzp7213> 
+    a org:Organization ;
+    rdfs:label "WYSO Radio Station" ;
+    schema:name "WYSO Radio Station" ;
+    schema:foundingDate "1958"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/WYSO> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-83.88687 39.80645)"^^geo:wktLiteral ;
+        schema:addressLocality "Yellow Springs" ;
+    ] ;
+    schema:url <http://wyso.org/#stream/0> ;
+     .

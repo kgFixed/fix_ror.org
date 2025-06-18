@@ -1,0 +1,61 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05p61mv27> 
+    a org:Organization ;
+    rdfs:label "The Dodd-Walls Centre for Photonic and Quantum Technologies" ;
+    schema:name "The Dodd-Walls Centre for Photonic and Quantum Technologies" ;
+    schema:foundingDate "2015"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Dodd-Walls_Centre> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/052czxv31> ;
+        rdfs:label "Massey University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03b94tp07> ;
+        rdfs:label "University of Auckland" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03y7q9t39> ;
+        rdfs:label "University of Canterbury" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01jmxt844> ;
+        rdfs:label "University of Otago" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/013fsnh78> ;
+        rdfs:label "University of Waikato" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0040r6f76> ;
+        rdfs:label "Victoria University of Wellington" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(170.50361 -45.87416)"^^geo:wktLiteral ;
+        schema:addressLocality "Dunedin" ;
+    ] ;
+    schema:url <https://doddwalls.ac.nz/> ;
+    schema:sameAs <http://isni.org/isni/0000000502729070> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q55231873> ;
+             .

@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05rs7tq63> 
+    a org:Organization ;
+    rdfs:label "Fresenius Medical Care North America (United States)" ;
+    schema:name "Fresenius Medical Care North America (United States)" ;
+    schema:foundingDate "1996"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Fresenius_Medical_Care> ;
+    org:status "inactive" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04sk0bj73> ;
+        rdfs:label "Fresenius Medical Care (Germany)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/02avws951> ;
+        rdfs:label "Fresenius Medical Care (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-71.23561 42.37649)"^^geo:wktLiteral ;
+        schema:addressLocality "Waltham" ;
+    ] ;
+    schema:url <https://fmcna.com> ;
+    schema:sameAs <http://isni.org/isni/0000000406002525> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30281969> ;
+             .

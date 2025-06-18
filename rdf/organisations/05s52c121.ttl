@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05s52c121> 
+    a org:Organization ;
+    rdfs:label "Santa Clara County Behavioral Health Services" ;
+    schema:name "Santa Clara County Behavioral Health Services" ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/028fd8812> ;
+        rdfs:label "Santa Clara Valley Health and Hospital System" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-121.89496 37.33939)"^^geo:wktLiteral ;
+        schema:addressLocality "San Jose" ;
+    ] ;
+    schema:url <https://www.sccgov.org/sites/bhd/Pages/home.aspx> ;
+    schema:sameAs <http://isni.org/isni/0000000468387299> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30288567> ;
+             .

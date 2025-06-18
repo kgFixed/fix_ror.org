@@ -1,0 +1,35 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05qj6w324> 
+    a org:Organization ;
+    rdfs:label "Nationale Forschungsdateninfrastruktur" ;
+    schema:name "Nationale Forschungsdateninfrastruktur" ;
+    schema:foundingDate "2020"^^xsd:gYear ;
+    schema:sameAs <https://de.wikipedia.org/wiki/Nationale_Forschungsdateninfrastruktur> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04ncnzm65> ;
+        rdfs:label "Mathematical Research Data Initiative" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00bb4nn95> ;
+        rdfs:label "NFDI4DS" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(8.40444 49.00937)"^^geo:wktLiteral ;
+        schema:addressLocality "Karlsruhe" ;
+    ] ;
+    schema:url <https://www.nfdi.de> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q105757481> ;
+             .

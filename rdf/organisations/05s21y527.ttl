@@ -1,0 +1,33 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05s21y527> 
+    a org:Organization ;
+    rdfs:label "Sierra Leone Urban Research Centre" ;
+    schema:name "Sierra Leone Urban Research Centre" ;
+    schema:foundingDate "2015"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02zy6dj62> ;
+        rdfs:label "Njala University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02jx3x895> ;
+        rdfs:label "University College London" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-13.2356 8.48714)"^^geo:wktLiteral ;
+        schema:addressLocality "Freetown" ;
+    ] ;
+    schema:url <https://www.slurc.org/> ;
+     .

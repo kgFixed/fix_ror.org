@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05retmr68> 
+    a org:Organization ;
+    rdfs:label "European Consortium for Political Research" ;
+    schema:name "European Consortium for Political Research" ;
+    schema:foundingDate "1970"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/European_Consortium_for_Political_Research> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(0.90421 51.88921)"^^geo:wktLiteral ;
+        schema:addressLocality "Colchester" ;
+    ] ;
+    schema:url <https://ecpr.eu/> ;
+    schema:sameAs <http://isni.org/isni/0000000417899198> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q595879> ;
+             .

@@ -1,0 +1,34 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05prysf28> 
+    a org:Organization ;
+    rdfs:label "Ministry of Health" ;
+    schema:name "Ministry of Health" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Ministry_of_Health_(Rwanda)> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/038vngd42> ;
+        rdfs:label "Centre Hospitalier Universitaire de Kigali" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03jggqf79> ;
+        rdfs:label "Rwanda Biomedical Center" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(30.05885 -1.94995)"^^geo:wktLiteral ;
+        schema:addressLocality "Kigali" ;
+    ] ;
+    schema:url <http://moh.gov.rw/index.php?id=188> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q5421497> ;
+             .

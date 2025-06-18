@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05wn3mp32> 
+    a org:Organization ;
+    rdfs:label "Institut des sciences de la mer" ;
+    schema:name "Institut des sciences de la mer" ;
+    schema:foundingDate "1999"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/049jtt335> ;
+        rdfs:label "Université du Québec à Rimouski" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-68.60294 48.39654)"^^geo:wktLiteral ;
+        schema:addressLocality "Rimouski" ;
+    ] ;
+    schema:url <https://www.uqar.ca/institut-des-sciences-de-la-mer-ismer/> ;
+    schema:sameAs <http://isni.org/isni/0000000098787075> ;
+             .

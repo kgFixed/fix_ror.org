@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05resfq34> 
+    a org:Organization ;
+    rdfs:label "Overlook Medical Center" ;
+    schema:name "Overlook Medical Center" ;
+    schema:foundingDate "1906"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Overlook_Medical_Center> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02jz99c72> ;
+        rdfs:label "Atlantic Health System" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05vt9qd57> ;
+        rdfs:label "Rutgers, The State University of New Jersey" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-74.36468 40.71562)"^^geo:wktLiteral ;
+        schema:addressLocality "Summit" ;
+    ] ;
+    schema:url <http://www.atlantichealth.org/overlook/> ;
+    schema:sameAs <http://isni.org/isni/0000000089458587> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7113810> ;
+             .

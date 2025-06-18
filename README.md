@@ -91,3 +91,5 @@ from sema.subyt import (
 )
 ```
 Cela ne devrait pas s'afficher en rouge si les installations ont bien fonctionnées.
+
+Au lieu de cela, une autre approche a été abordé et utilisé

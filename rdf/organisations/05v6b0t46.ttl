@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05v6b0t46> 
+    a org:Organization ;
+    rdfs:label "Magdalena Villegas de Martínez el Hospital" ;
+    schema:name "Magdalena Villegas de Martínez el Hospital" ;
+    schema:foundingDate "1901"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-58.57962 -34.42603)"^^geo:wktLiteral ;
+        schema:addressLocality "Tigre" ;
+    ] ;
+    schema:url <http://www.ms.gba.gov.ar/sitios/hmartinez/> ;
+     .

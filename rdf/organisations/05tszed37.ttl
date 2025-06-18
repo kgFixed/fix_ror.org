@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05tszed37> 
+    a org:Organization ;
+    rdfs:label "Yale New Haven Hospital" ;
+    schema:name "Yale New Haven Hospital" ;
+    schema:foundingDate "1826"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Yale%E2%80%93New_Haven_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0471xz330> ;
+        rdfs:label "Bridgeport Hospital Foundation" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01s1hsq14> ;
+        rdfs:label "Yale New Haven Health System" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03v76x132> ;
+        rdfs:label "Yale University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-72.92816 41.30815)"^^geo:wktLiteral ;
+        schema:addressLocality "New Haven" ;
+    ] ;
+    schema:url <http://www.ynhh.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000122912914> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q12073283> ;
+             .

@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05vpj2s72> 
+    a org:Organization ;
+    rdfs:label "Instituto Tecnologico de Orizaba" ;
+    schema:name "Instituto Tecnologico de Orizaba" ;
+    schema:foundingDate "1957"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-97.09957 18.85195)"^^geo:wktLiteral ;
+        schema:addressLocality "Orizaba" ;
+    ] ;
+    schema:url <http://ssfe.itorizaba.edu.mx/ntec13/> ;
+    schema:sameAs <http://isni.org/isni/0000000403694079> ;
+             .

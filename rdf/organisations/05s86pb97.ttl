@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05s86pb97> 
+    a org:Organization ;
+    rdfs:label "Royal College of Ophthalmologists" ;
+    schema:name "Royal College of Ophthalmologists" ;
+    schema:foundingDate "1988"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Royal_College_of_Ophthalmologists> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/021a7d287> ;
+        rdfs:label "Royal College of Surgeons of Edinburgh" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02qrg5a24> ;
+        rdfs:label "Royal College of Surgeons of England" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.12574 51.50853)"^^geo:wktLiteral ;
+        schema:addressLocality "London" ;
+    ] ;
+    schema:url <https://www.rcophth.ac.uk/> ;
+    schema:sameAs <http://isni.org/isni/0000000123238925> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q16932510> ;
+             .

@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05vzasa79> 
+    a org:Organization ;
+    rdfs:label "Kurmangazy Kazakh National Conservatory" ;
+    schema:name "Kurmangazy Kazakh National Conservatory" ;
+    schema:foundingDate "1944"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(76.91667 43.25)"^^geo:wktLiteral ;
+        schema:addressLocality "Almaty" ;
+    ] ;
+    schema:url <http://www.conservatoire.kz/kz/> ;
+    schema:sameAs <http://isni.org/isni/0000000417934651> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30294492> ;
+             .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05qrjdq75> 
+    a org:Organization ;
+    rdfs:label "Volga State University of Water Transport" ;
+    schema:name "Volga State University of Water Transport" ;
+    schema:foundingDate "1930"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Volga_State_University_of_Water_Transport> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(44.00205 56.32867)"^^geo:wktLiteral ;
+        schema:addressLocality "Nizhny Novgorod" ;
+    ] ;
+    schema:url <http://www.vsuwt.ru> ;
+    schema:sameAs <http://isni.org/isni/0000000404516178> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4123106> ;
+             .

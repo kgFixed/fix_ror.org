@@ -1,0 +1,49 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05xmzbk80> 
+    a org:Organization ;
+    rdfs:label "Nidec (Japan)" ;
+    schema:name "Nidec (Japan)" ;
+    schema:foundingDate "1973"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Nidec> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0133m4g32> ;
+        rdfs:label "Nidec (France)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02prth598> ;
+        rdfs:label "Nidec (Germany)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/035fxx726> ;
+        rdfs:label "Nidec (United Kingdom)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02sdrd464> ;
+        rdfs:label "Nidec (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(135.75385 35.02107)"^^geo:wktLiteral ;
+        schema:addressLocality "Kyoto" ;
+    ] ;
+    schema:url <http://www.nidec.com/en-Global/> ;
+    schema:sameAs <http://isni.org/isni/0000000404982910> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3341241> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1989911> ;
+             .
