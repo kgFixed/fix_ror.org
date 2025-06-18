@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03wg5pr04> 
+    a org:Organization ;
+    rdfs:label "Pacific Islands University" ;
+    schema:name "Pacific Islands University" ;
+    schema:foundingDate "1978"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Pacific_Islands_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(144.80109 13.44761)"^^geo:wktLiteral ;
+        schema:addressLocality "Mangilao Village" ;
+    ] ;
+    schema:url <https://piu.edu> ;
+    schema:sameAs <http://isni.org/isni/0000000406345982> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7122532> ;
+             .

@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03qafw071> 
+    a org:Organization ;
+    rdfs:label "Vitos" ;
+    schema:name "Vitos" ;
+    schema:foundingDate "1876"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(8.77069 50.80904)"^^geo:wktLiteral ;
+        schema:addressLocality "Marburg" ;
+    ] ;
+    schema:url <http://www.vitos-giessen-marburg.de/giessen-marburg/giessen-marburg-homepage.html> ;
+     .

@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03sm30m06> 
+    a org:Organization ;
+    rdfs:label "Raincoast Conservation Foundation" ;
+    schema:name "Raincoast Conservation Foundation" ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-123.35155 48.4359)"^^geo:wktLiteral ;
+        schema:addressLocality "Victoria" ;
+    ] ;
+    schema:url <http://www.raincoast.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000491565700> ;
+             .

@@ -1,0 +1,53 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03vz6gs79> 
+    a org:Organization ;
+    rdfs:label "AMS (Austria)" ;
+    schema:name "AMS (Austria)" ;
+    schema:foundingDate "1981"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Ams_AG> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05c4twb82> ;
+        rdfs:label "AMS (Finland)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/031h48w98> ;
+        rdfs:label "AMS (Germany)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/008hf2578> ;
+        rdfs:label "AMS (Singapore)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/033eygk88> ;
+        rdfs:label "AMS (Slovenia)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/013acqk67> ;
+        rdfs:label "AMS (United Kingdom)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(15.40417 46.96472)"^^geo:wktLiteral ;
+        schema:addressLocality "Unterpremstätten" ;
+    ] ;
+    schema:url <http://ams.com/eng> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q477875> ;
+             .

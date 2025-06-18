@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/042me8y77> 
+    a org:Organization ;
+    rdfs:label "Stepan Gzhytskyi National University of Veterinary Medicine and Biotechnologies Lviv" ;
+    schema:name "Stepan Gzhytskyi National University of Veterinary Medicine and Biotechnologies Lviv" ;
+    schema:foundingDate "1784"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Lviv_National_Stepan_Gzhytsky_University_of_Veterinary_Medicine_and_Biotechnology> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(24.02324 49.83826)"^^geo:wktLiteral ;
+        schema:addressLocality "Lviv" ;
+    ] ;
+    schema:url <https://www.lvet.edu.ua> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q3700546> ;
+             .

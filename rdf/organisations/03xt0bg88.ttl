@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03xt0bg88> 
+    a org:Organization ;
+    rdfs:label "Dr. B. R. Ambedkar National Institute of Technology Jalandhar" ;
+    schema:name "Dr. B. R. Ambedkar National Institute of Technology Jalandhar" ;
+    schema:foundingDate "1987"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Dr._B._R._Ambedkar_National_Institute_of_Technology_Jalandhar> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(75.57917 31.32556)"^^geo:wktLiteral ;
+        schema:addressLocality "Jalandhar" ;
+    ] ;
+    schema:url <https://nitj.ac.in> ;
+    schema:sameAs <http://isni.org/isni/0000000417672962> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q12430577> ;
+             .

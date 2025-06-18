@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03wtvtx73> 
+    a org:Organization ;
+    rdfs:label "Faculty of Humanities and Social Sciences in Zagreb" ;
+    schema:name "Faculty of Humanities and Social Sciences in Zagreb" ;
+    schema:foundingDate "1669"^^xsd:gYear ;
+    schema:sameAs <https://hr.wikipedia.org/wiki/Filozofski_fakultet_u_Zagrebu> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00mv6sv71> ;
+        rdfs:label "University of Zagreb" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(15.97798 45.81444)"^^geo:wktLiteral ;
+        schema:addressLocality "Zagreb" ;
+    ] ;
+    schema:url <https://web2020.ffzg.unizg.hr> ;
+    schema:sameAs <http://isni.org/isni/0000000114565174> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3445232> ;
+             .

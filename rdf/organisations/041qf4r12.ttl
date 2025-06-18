@@ -1,0 +1,44 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/041qf4r12> 
+    a org:Organization ;
+    rdfs:label "China University of Petroleum, Beijing" ;
+    schema:name "China University of Petroleum, Beijing" ;
+    schema:foundingDate "1953"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/China_University_of_Petroleum> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/006rwj939> ;
+        rdfs:label "State Key Laboratory of Heavy Oil" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00cvv0r95> ;
+        rdfs:label "State Key Laboratory of Oil and Gas Resources and Exploration" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05gbn2817> ;
+        rdfs:label "China University of Petroleum, East China" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(116.39723 39.9075)"^^geo:wktLiteral ;
+        schema:addressLocality "Beijing" ;
+    ] ;
+    schema:url <http://www.cup.edu.cn/internationaloffice/en/> ;
+    schema:sameAs <http://isni.org/isni/0000000406445174> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q15899144> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q15703466> ;
+             .

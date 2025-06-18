@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03zsp3p94> 
+    a org:Organization ;
+    rdfs:label "University of the Aegean" ;
+    schema:name "University of the Aegean" ;
+    schema:foundingDate "1984"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/University_of_the_Aegean> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(26.55529 39.10772)"^^geo:wktLiteral ;
+        schema:addressLocality "Mytilene" ;
+    ] ;
+    schema:url <https://www.aegean.gr> ;
+    schema:sameAs <http://isni.org/isni/0000000406222931> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q593556> ;
+             .

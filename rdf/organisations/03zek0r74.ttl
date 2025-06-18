@@ -1,0 +1,66 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03zek0r74> 
+    a org:Organization ;
+    rdfs:label "Institut Agro Dijon" ;
+    schema:name "Institut Agro Dijon" ;
+    schema:foundingDate "2009"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Funder" ;
+    org:classification "Other" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00mkad321> ;
+        rdfs:label "Agroécologie" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00zgas264> ;
+        rdfs:label "Procédés Alimentaires et Microbiologiques" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0334tmt82> ;
+        rdfs:label "Centre d'Economie et de Sociologie Appliquées à l'Agriculture et aux Espaces Ruraux" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04d70nb60> ;
+        rdfs:label "Centre de recherche Translationnelle en Médecine moléculaire" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05s1rff82> ;
+        rdfs:label "Centre des Sciences du Goût et de l'Alimentation" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01dkyve95> ;
+        rdfs:label "L'Institut Agro" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05k9wmt43> ;
+        rdfs:label "Formation et apprentissages professionnels" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(5.01667 47.31667)"^^geo:wktLiteral ;
+        schema:addressLocality "Dijon" ;
+    ] ;
+    schema:url <https://institut-agro-dijon.fr> ;
+    schema:sameAs <http://isni.org/isni/0000000122997292> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q8077943> ;
+             .

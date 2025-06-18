@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/043kmeg51> 
+    a org:Organization ;
+    rdfs:label "Tadiran Batteries (Israel)" ;
+    schema:name "Tadiran Batteries (Israel)" ;
+    org:status "withdrawn" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/04zyzzh22> ;
+        rdfs:label "Saft (France)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(34.84646 31.85357)"^^geo:wktLiteral ;
+        schema:addressLocality "Mazkeret Batya" ;
+    ] ;
+    schema:url <http://www.tadiranbat.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30285333> ;
+             .

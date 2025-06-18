@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03r6k1a05> 
+    a org:Organization ;
+    rdfs:label "Institute of Occupational Medicine" ;
+    schema:name "Institute of Occupational Medicine" ;
+    schema:foundingDate "1969"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Institute_of_Occupational_Medicine> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-3.19648 55.95206)"^^geo:wktLiteral ;
+        schema:addressLocality "Edinburgh" ;
+    ] ;
+    schema:url <http://www.iom-world.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000122240230> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q17163473> ;
+             .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03t3y2m33> 
+    a org:Organization ;
+    rdfs:label "International Behavioral Neuroscience Society" ;
+    schema:name "International Behavioral Neuroscience Society" ;
+    schema:foundingDate "1992"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/International_Behavioral_Neuroscience_Society> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-98.49363 29.42412)"^^geo:wktLiteral ;
+        schema:addressLocality "San Antonio" ;
+    ] ;
+    schema:url <http://www.ibnsconnect.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000413535071> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q15647985> ;
+             .

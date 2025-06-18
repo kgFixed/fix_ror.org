@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03xnr5143> 
+    a org:Organization ;
+    rdfs:label "Barking, Havering And Redbridge University Hospitals NHS Trust" ;
+    schema:name "Barking, Havering And Redbridge University Hospitals NHS Trust" ;
+    schema:foundingDate "2000"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Barking,_Havering_and_Redbridge_University_Hospitals_NHS_Trust> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04tpqnr72> ;
+        rdfs:label "Harold Wood Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00qp1n828> ;
+        rdfs:label "King George Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02rnep118> ;
+        rdfs:label "Queen's Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.12574 51.50853)"^^geo:wktLiteral ;
+        schema:addressLocality "London" ;
+    ] ;
+    schema:url <https://www.bhrhospitals.nhs.uk/> ;
+    schema:sameAs <http://isni.org/isni/0000000404597289> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4861025> ;
+             .

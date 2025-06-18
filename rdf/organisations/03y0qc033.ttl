@@ -1,0 +1,40 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03y0qc033> 
+    a org:Organization ;
+    rdfs:label "Institut National des Sciences Appliquées Centre Val de Loire" ;
+    schema:name "Institut National des Sciences Appliquées Centre Val de Loire" ;
+    schema:foundingDate "2014"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00sbth994> ;
+        rdfs:label "Laboratoire Pluridisciplinaire de Recherche en Ingénierie des Systèmes, Mécanique et Energétique" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01nr3td38> ;
+        rdfs:label "Laboratoire d'Informatique Fondamentale d'Orléans" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04f9thq51> ;
+        rdfs:label "Laboratoire de Mécanique Gabriel Lamé" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(1.32912 47.59432)"^^geo:wktLiteral ;
+        schema:addressLocality "Blois" ;
+    ] ;
+    schema:url <http://www.insa-centrevaldeloire.fr/en/> ;
+    schema:sameAs <http://isni.org/isni/0000000446850174> ;
+             .

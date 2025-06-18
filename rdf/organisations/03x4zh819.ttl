@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03x4zh819> 
+    a org:Organization ;
+    rdfs:label "Asian Social Institute" ;
+    schema:name "Asian Social Institute" ;
+    schema:foundingDate "1962"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Asian_Social_Institute> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(120.9822 14.6042)"^^geo:wktLiteral ;
+        schema:addressLocality "Manila" ;
+    ] ;
+    schema:url <http://www.asinet-online.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000122227116> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4806742> ;
+             .

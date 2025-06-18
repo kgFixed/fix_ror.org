@@ -1,0 +1,50 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03n6nwv02> 
+    a org:Organization ;
+    rdfs:label "Universidad Politécnica de Madrid" ;
+    schema:name "Universidad Politécnica de Madrid" ;
+    schema:foundingDate "1971"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Technical_University_of_Madrid> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02wh02235> ;
+        rdfs:label "Centre for Automation and Robotics" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01vhjs264> ;
+        rdfs:label "Reference Center for Research, Development and Innovation in ATM" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04rbss527> ;
+        rdfs:label "Banco de Germoplasma Vegetal de la UPM "César Gómez Campo"" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04mfzb702> ;
+        rdfs:label "Centre for Plant Biotechnology and Genomics" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-3.70256 40.4165)"^^geo:wktLiteral ;
+        schema:addressLocality "Madrid" ;
+    ] ;
+    schema:url <https://www.upm.es> ;
+    schema:sameAs <http://isni.org/isni/0000000121512978> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q25864> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5838945> ;
+             .

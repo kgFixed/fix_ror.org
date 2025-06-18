@@ -1,0 +1,35 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03vht8z34> 
+    a org:Organization ;
+    rdfs:label "Observatori de l'Ebre" ;
+    schema:name "Observatori de l'Ebre" ;
+    schema:foundingDate "1904"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02gfc7t72> ;
+        rdfs:label "Consejo Superior de Investigaciones Científicas" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04p9k2z50> ;
+        rdfs:label "Universitat Ramon Llull" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(1.24544 41.11905)"^^geo:wktLiteral ;
+        schema:addressLocality "Tarragona" ;
+    ] ;
+    schema:url <https://www.obsebre.es> ;
+    schema:sameAs <http://isni.org/isni/000000041793925X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q19257162> ;
+             .

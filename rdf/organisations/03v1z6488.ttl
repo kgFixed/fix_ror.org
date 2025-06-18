@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03v1z6488> 
+    a org:Organization ;
+    rdfs:label "Inter Tribal Council of Arizona" ;
+    schema:name "Inter Tribal Council of Arizona" ;
+    schema:foundingDate "1952"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-112.07404 33.44838)"^^geo:wktLiteral ;
+        schema:addressLocality "Phoenix" ;
+    ] ;
+    schema:url <http://itcaonline.com/?page_id=6> ;
+    schema:sameAs <http://isni.org/isni/0000000100233814> ;
+             .

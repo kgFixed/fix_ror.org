@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0434c4478> 
+    a org:Organization ;
+    rdfs:label "King George V Memorial Hospital" ;
+    schema:name "King George V Memorial Hospital" ;
+    schema:foundingDate "1941"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/King_George_V_Memorial_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0384j8v12> ;
+        rdfs:label "The University of Sydney" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(151.17642 -33.88965)"^^geo:wktLiteral ;
+        schema:addressLocality "Camperdown" ;
+    ] ;
+    schema:sameAs <http://www.wikidata.org/entity/Q6411651> ;
+             .

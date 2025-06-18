@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03zjevq63> 
+    a org:Organization ;
+    rdfs:label "Korea Air Force Academy" ;
+    schema:name "Korea Air Force Academy" ;
+    schema:foundingDate "1949"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Korea_Air_Force_Academy> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(127.48972 36.63722)"^^geo:wktLiteral ;
+        schema:addressLocality "Cheongju-si" ;
+    ] ;
+    schema:url <http://www.afa.ac.kr:8081/user/indexMain.action?command=&siteId=afa> ;
+    schema:sameAs <http://isni.org/isni/000000040647440X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q482676> ;
+             .

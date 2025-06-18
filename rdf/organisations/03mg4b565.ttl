@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03mg4b565> 
+    a org:Organization ;
+    rdfs:label "Autorità di bacino dei fiumi Isonzo, Tagliamento, Livenza, Piave, Brenta-Bacchiglione" ;
+    schema:name "Autorità di bacino dei fiumi Isonzo, Tagliamento, Livenza, Piave, Brenta-Bacchiglione" ;
+    schema:foundingDate "1989"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(12.33265 45.43713)"^^geo:wktLiteral ;
+        schema:addressLocality "Venice" ;
+    ] ;
+    schema:url <http://www.adbve.it/> ;
+     .

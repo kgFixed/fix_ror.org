@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03mhrjr30> 
+    a org:Organization ;
+    rdfs:label "Hiroshima Prefectural Library" ;
+    schema:name "Hiroshima Prefectural Library" ;
+    schema:foundingDate "1951"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(132.45 34.4)"^^geo:wktLiteral ;
+        schema:addressLocality "Hiroshima" ;
+    ] ;
+    schema:url <http://www2.hplibra.pref.hiroshima.jp/> ;
+    schema:sameAs <http://isni.org/isni/0000000100838047> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q11484791> ;
+             .

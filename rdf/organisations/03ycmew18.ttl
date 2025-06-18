@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03ycmew18> 
+    a org:Organization ;
+    rdfs:label "Matsushita Memorial Hospital" ;
+    schema:name "Matsushita Memorial Hospital" ;
+    schema:foundingDate "1940"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(135.50107 34.69379)"^^geo:wktLiteral ;
+        schema:addressLocality "Osaka" ;
+    ] ;
+    schema:url <http://phio.panasonic.co.jp/kinen/> ;
+    schema:sameAs <http://isni.org/isni/0000000405957741> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q11528992> ;
+             .

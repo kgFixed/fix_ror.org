@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03n6z5186> 
+    a org:Organization ;
+    rdfs:label "CEDUC UCN" ;
+    schema:name "CEDUC UCN" ;
+    schema:foundingDate "1998"^^xsd:gYear ;
+    schema:sameAs <https://es.wikipedia.org/wiki/CEDUC_UCN> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02akpm128> ;
+        rdfs:label "Universidad Católica del Norte" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-71.33947 -29.95332)"^^geo:wktLiteral ;
+        schema:addressLocality "Coquimbo" ;
+    ] ;
+    schema:url <https://ceduc.cl> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q24933786> ;
+             .

@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0431vax36> 
+    a org:Organization ;
+    rdfs:label "Wasserstraßen-Neubauamt Datteln" ;
+    schema:name "Wasserstraßen-Neubauamt Datteln" ;
+    schema:sameAs <https://de.wikipedia.org/wiki/Wasserstra%C3%9Fen-Neubauamt_Datteln> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0581em797> ;
+        rdfs:label "Generaldirektion Wasserstraßen und Schifffahrt" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(7.3453 51.65598)"^^geo:wktLiteral ;
+        schema:addressLocality "Datteln" ;
+    ] ;
+    schema:url <http://www.wna-datteln.wsv.de> ;
+    schema:sameAs <http://isni.org/isni/000000047867868X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2551569> ;
+             .

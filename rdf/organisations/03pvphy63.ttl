@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03pvphy63> 
+    a org:Organization ;
+    rdfs:label "Byzantine Catholic Seminary of Saints Cyril and Methodius" ;
+    schema:name "Byzantine Catholic Seminary of Saints Cyril and Methodius" ;
+    schema:foundingDate "1950"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Byzantine_Catholic_Seminary_of_SS._Cyril_and_Methodius> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-79.99589 40.44062)"^^geo:wktLiteral ;
+        schema:addressLocality "Pittsburgh" ;
+    ] ;
+    schema:url <http://www.bcs.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000405345454> ;
+             .

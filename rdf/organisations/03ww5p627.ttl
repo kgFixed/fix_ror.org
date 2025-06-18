@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03ww5p627> 
+    a org:Organization ;
+    rdfs:label "Florence Crittenton Agency" ;
+    schema:name "Florence Crittenton Agency" ;
+    schema:foundingDate "1895"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-83.92074 35.96064)"^^geo:wktLiteral ;
+        schema:addressLocality "Knoxville" ;
+    ] ;
+    schema:url <http://www.fcaknox.org/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30288942> ;
+             .

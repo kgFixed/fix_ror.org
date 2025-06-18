@@ -1,0 +1,163 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03r8z3t63> 
+    a org:Organization ;
+    rdfs:label "UNSW Sydney" ;
+    schema:name "UNSW Sydney" ;
+    schema:foundingDate "1949"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/University_of_New_South_Wales> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04ayaw261> ;
+        rdfs:label "Australian Centre for Advanced Photovoltaics" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0125wpx05> ;
+        rdfs:label "UNSW Canberra" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00qrpt643> ;
+        rdfs:label "Bankstown Lidcombe Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04rfr1008> ;
+        rdfs:label "Black Dog Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01x784220> ;
+        rdfs:label "Children's Cancer Institute Australia" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04xx5ce35> ;
+        rdfs:label "Fairfield Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/023331s46> ;
+        rdfs:label "The George Institute for Global Health" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03y4rnb63> ;
+        rdfs:label "Ingham Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01gn4gb91> ;
+        rdfs:label "Kenvale College" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01g7s6g79> ;
+        rdfs:label "Neuroscience Research Australia" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/022arq532> ;
+        rdfs:label "Prince of Wales Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/021cxfs56> ;
+        rdfs:label "Royal Hospital for Women" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01dvjey82> ;
+        rdfs:label "Shellharbour Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04p6jw654> ;
+        rdfs:label "Shoalhaven District Memorial Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02pk13h45> ;
+        rdfs:label "St George Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01xcx0382> ;
+        rdfs:label "Sutherland Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02tj04e91> ;
+        rdfs:label "Sydney Children's Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0402tt118> ;
+        rdfs:label "Sydney Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03trvqr13> ;
+        rdfs:label "Victor Chang Cardiac Research Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05newpx76> ;
+        rdfs:label "Wagga Wagga Base Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04f0vbp79> ;
+        rdfs:label "Mindgardens Neuroscience Network" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00qq77n27> ;
+        rdfs:label "Consortium for Ocean-Sea Ice Modelling in Australia" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/024jkkf40> ;
+        rdfs:label "Australian Centre for Excellence in Antarctic Science" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(151.20732 -33.86785)"^^geo:wktLiteral ;
+        schema:addressLocality "Sydney" ;
+    ] ;
+    schema:url <https://www.unsw.edu.au/> ;
+    schema:sameAs <http://isni.org/isni/0000000449020432> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q734764> ;
+             .

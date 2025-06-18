@@ -1,0 +1,44 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/040ss6920> 
+    a org:Organization ;
+    rdfs:label "Beaumont Hospital" ;
+    schema:name "Beaumont Hospital" ;
+    org:status "withdrawn" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00t64mp36> ;
+        rdfs:label "Beaumont Eye Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05g2hd893> ;
+        rdfs:label "Beaumont Health" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01ythxj32> ;
+        rdfs:label "Oakland University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/03artm726> ;
+        rdfs:label "Beaumont Hospital, Royal Oak" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-83.14465 42.48948)"^^geo:wktLiteral ;
+        schema:addressLocality "Royal Oak" ;
+    ] ;
+    schema:url <http://www.beaumonthospitals.com/> ;
+     .

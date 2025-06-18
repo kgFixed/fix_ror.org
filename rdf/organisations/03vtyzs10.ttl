@@ -1,0 +1,54 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03vtyzs10> 
+    a org:Organization ;
+    rdfs:label "Mersey Care NHS Trust" ;
+    schema:name "Mersey Care NHS Trust" ;
+    schema:foundingDate "2001"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Mersey_Care_NHS_Foundation_Trust> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04ssgxk51> ;
+        rdfs:label "Ashworth Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/000kfx178> ;
+        rdfs:label "Calderstones Partnership NHS Foundation Trust" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05yd3zv45> ;
+        rdfs:label "Clock View Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/031swr525> ;
+        rdfs:label "Mossley Hill Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03jjx5w61> ;
+        rdfs:label "Rathbone Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-2.97794 53.41058)"^^geo:wktLiteral ;
+        schema:addressLocality "Liverpool" ;
+    ] ;
+    schema:url <http://www.merseycare.nhs.uk/> ;
+    schema:sameAs <http://isni.org/isni/0000000404209813> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q16997646> ;
+             .

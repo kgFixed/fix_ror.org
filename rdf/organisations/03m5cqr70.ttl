@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03m5cqr70> 
+    a org:Organization ;
+    rdfs:label "Akademia Wychowania Fizycznego im. Bronisława Czecha w Krakowie" ;
+    schema:name "Akademia Wychowania Fizycznego im. Bronisława Czecha w Krakowie" ;
+    org:status "withdrawn" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/05vy8np18> ;
+        rdfs:label "University School of Physical Education in Kraków" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(19.93658 50.06143)"^^geo:wktLiteral ;
+        schema:addressLocality "Krakow" ;
+    ] ;
+     .

@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/042edgv29> 
+    a org:Organization ;
+    rdfs:label "Institut National de Police Scientifique" ;
+    schema:name "Institut National de Police Scientifique" ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/015jj1011> ;
+        rdfs:label "Ministère de l'Intérieur" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(4.84671 45.74846)"^^geo:wktLiteral ;
+        schema:addressLocality "Lyon" ;
+    ] ;
+    schema:url <http://www.police-nationale.interieur.gouv.fr/Organisation/Etablissements-publics/INPS> ;
+    schema:sameAs <http://isni.org/isni/0000000406178379> ;
+             .

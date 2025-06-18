@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03yzt0q73> 
+    a org:Organization ;
+    rdfs:label "Penn State Beaver" ;
+    schema:name "Penn State Beaver" ;
+    schema:foundingDate "1965"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Penn_State_Beaver> ;
+    org:status "withdrawn" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/04p491231> ;
+        rdfs:label "Pennsylvania State University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-80.27145 40.68729)"^^geo:wktLiteral ;
+        schema:addressLocality "Monaca" ;
+    ] ;
+    schema:url <http://www.br.psu.edu/default.htm?cn7115> ;
+    schema:sameAs <http://isni.org/isni/0000000090227487> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q15265893> ;
+             .

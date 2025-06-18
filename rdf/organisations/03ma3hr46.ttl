@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03ma3hr46> 
+    a org:Organization ;
+    rdfs:label "St. Mary-Corwin Medical Center" ;
+    schema:name "St. Mary-Corwin Medical Center" ;
+    schema:foundingDate "1957"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/St._Mary-Corwin_Medical_Center> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-104.60914 38.25445)"^^geo:wktLiteral ;
+        schema:addressLocality "Pueblo" ;
+    ] ;
+    schema:url <https://www.centura.org/locations/st-mary-corwin-medical-center> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q28225941> ;
+             .

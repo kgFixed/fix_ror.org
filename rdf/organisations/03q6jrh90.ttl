@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03q6jrh90> 
+    a org:Organization ;
+    rdfs:label "Centro Universitário das Faculdades Metropolitanas Unidas" ;
+    schema:name "Centro Universitário das Faculdades Metropolitanas Unidas" ;
+    schema:foundingDate "1968"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Centro_Universit%C3%A1rio_das_Faculdades_Metropolitanas_Unidas> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-46.63611 -23.5475)"^^geo:wktLiteral ;
+        schema:addressLocality "São Paulo" ;
+    ] ;
+    schema:url <http://www.fmu.br> ;
+    schema:sameAs <http://isni.org/isni/000000040603165X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q18370083> ;
+             .

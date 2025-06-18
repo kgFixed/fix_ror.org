@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03tbpfn25> 
+    a org:Organization ;
+    rdfs:label "Global Call to Action Against Poverty" ;
+    schema:name "Global Call to Action Against Poverty" ;
+    schema:foundingDate "2005"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Global_Call_to_Action_Against_Poverty> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(28.04363 -26.20227)"^^geo:wktLiteral ;
+        schema:addressLocality "Johannesburg" ;
+    ] ;
+    schema:url <http://whiteband.org/en/> ;
+     .

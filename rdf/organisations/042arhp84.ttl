@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/042arhp84> 
+    a org:Organization ;
+    rdfs:label "Hartford Public Library" ;
+    schema:name "Hartford Public Library" ;
+    schema:foundingDate "1774"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Hartford_Public_Library> ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-72.68509 41.76371)"^^geo:wktLiteral ;
+        schema:addressLocality "Hartford" ;
+    ] ;
+    schema:url <https://www.hplct.org/> ;
+    schema:sameAs <http://isni.org/isni/000000040509304X> ;
+             .

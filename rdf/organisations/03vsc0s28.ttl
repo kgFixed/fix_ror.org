@@ -1,0 +1,26 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03vsc0s28> 
+    a org:Organization ;
+    rdfs:label "Fondation CentraleSupélec" ;
+    schema:name "Fondation CentraleSupélec" ;
+    org:status "active" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/019tcpt25> ;
+        rdfs:label "CentraleSupélec" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.13333 48.68333)"^^geo:wktLiteral ;
+        schema:addressLocality "Gif-sur-Yvette" ;
+    ] ;
+    schema:url <https://www.fondation-centralesupelec.fr> ;
+     .

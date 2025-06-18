@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03zsdhz84> 
+    a org:Organization ;
+    rdfs:label "LabCorp (United States)" ;
+    schema:name "LabCorp (United States)" ;
+    schema:foundingDate "1978"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/LabCorp> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-79.4378 36.09569)"^^geo:wktLiteral ;
+        schema:addressLocality "Burlington" ;
+    ] ;
+    schema:url <https://www.labcorp.com/wps/portal> ;
+    schema:sameAs <http://isni.org/isni/0000000405501859> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6466630> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6901605> ;
+             .

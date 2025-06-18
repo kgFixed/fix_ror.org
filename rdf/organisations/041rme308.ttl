@@ -1,0 +1,49 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/041rme308> 
+    a org:Organization ;
+    rdfs:label "Heart of England NHS Foundation Trust" ;
+    schema:name "Heart of England NHS Foundation Trust" ;
+    schema:foundingDate "1895"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Heart_of_England_NHS_Foundation_Trust> ;
+    org:status "inactive" ;
+    org:classification "Healthcare" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/015hfw664> ;
+        rdfs:label "Good Hope Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01bd5gh54> ;
+        rdfs:label "Heartlands Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04gedeb17> ;
+        rdfs:label "Solihull Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/014ja3n03> ;
+        rdfs:label "University Hospitals Birmingham NHS Foundation Trust" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.89983 52.48142)"^^geo:wktLiteral ;
+        schema:addressLocality "Birmingham" ;
+    ] ;
+    schema:url <http://www.heartofengland.nhs.uk/> ;
+    schema:sameAs <http://isni.org/isni/0000000403765981> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q16993822> ;
+             .

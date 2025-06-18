@@ -1,0 +1,64 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03m04df46> 
+    a org:Organization ;
+    rdfs:label "University Hospital Magdeburg" ;
+    schema:name "University Hospital Magdeburg" ;
+    schema:foundingDate "1891"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01ezw9n40> ;
+        rdfs:label "Orthopädische Universitätsklinik" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0137q5a72> ;
+        rdfs:label "University Clinic for Nephrology and Hypertension, Diabetology and Endocrinology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01vzx5p25> ;
+        rdfs:label "Universitätsaugenklinik Magdeburg" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04rr26086> ;
+        rdfs:label "Universitätskinderklinik" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/037tkh273> ;
+        rdfs:label "Universitätsklinik für Hals-, Nasen- und Ohrenheilkunde" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05c06xk76> ;
+        rdfs:label "Universitätsklinik für Stereotaktische Neurochirurgie" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02w0smy45> ;
+        rdfs:label "Universitätsklinik für Strahlentherapie" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(11.62916 52.12773)"^^geo:wktLiteral ;
+        schema:addressLocality "Magdeburg" ;
+    ] ;
+    schema:url <http://www.med.uni-magdeburg.de/en/Strukturuebersicht.html> ;
+    schema:sameAs <http://isni.org/isni/0000000095924695> ;
+             .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03njnhv57> 
+    a org:Organization ;
+    rdfs:label "Etobicoke School of the Arts" ;
+    schema:name "Etobicoke School of the Arts" ;
+    schema:foundingDate "1981"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Etobicoke_School_of_the_Arts> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-79.56711 43.65421)"^^geo:wktLiteral ;
+        schema:addressLocality "Etobicoke" ;
+    ] ;
+    schema:url <http://www.esainfo.ca/> ;
+    schema:sameAs <http://isni.org/isni/000000040481305X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q14875148> ;
+             .

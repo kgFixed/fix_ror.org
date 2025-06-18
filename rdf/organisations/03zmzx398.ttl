@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03zmzx398> 
+    a org:Organization ;
+    rdfs:label "Community Foundation of Elmira Corning and the Finger Lakes" ;
+    schema:name "Community Foundation of Elmira Corning and the Finger Lakes" ;
+    schema:foundingDate "1976"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-76.82051 42.16702)"^^geo:wktLiteral ;
+        schema:addressLocality "Horseheads" ;
+    ] ;
+    schema:url <http://www.communityfund.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000459066338> ;
+             .

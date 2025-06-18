@@ -1,0 +1,48 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03k95y741> 
+    a org:Organization ;
+    rdfs:label "South Warwickshire NHS Foundation Trust" ;
+    schema:name "South Warwickshire NHS Foundation Trust" ;
+    schema:foundingDate "2010"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/South_Warwickshire_NHS_Foundation_Trust> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0411fwb51> ;
+        rdfs:label "Ellen Badger Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/017bt7t72> ;
+        rdfs:label "Leamington Spa Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04g3zjj79> ;
+        rdfs:label "Stratford Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02z6cxz02> ;
+        rdfs:label "Warwick Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.58333 52.28333)"^^geo:wktLiteral ;
+        schema:addressLocality "Warwick" ;
+    ] ;
+    schema:url <https://www.swft.nhs.uk/> ;
+    schema:sameAs <http://isni.org/isni/0000000404784463> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q18162383> ;
+             .

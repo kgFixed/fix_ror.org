@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/043hpt843> 
+    a org:Organization ;
+    rdfs:label "BorgWarner (Sweden)" ;
+    schema:name "BorgWarner (Sweden)" ;
+    schema:foundingDate "1928"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/BorgWarner> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02c6kb837> ;
+        rdfs:label "BorgWarner (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(12.83016 55.8708)"^^geo:wktLiteral ;
+        schema:addressLocality "Landskrona" ;
+    ] ;
+    schema:url <http://www.borgwarner.com/en/default.aspx> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30338748> ;
+             .

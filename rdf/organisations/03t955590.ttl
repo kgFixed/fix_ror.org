@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03t955590> 
+    a org:Organization ;
+    rdfs:label "Crimean State Humanitarian University" ;
+    schema:name "Crimean State Humanitarian University" ;
+    org:status "withdrawn" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/05erbjx97> ;
+        rdfs:label "V.I. Vernadsky Crimean Federal University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(34.16624 44.50218)"^^geo:wktLiteral ;
+        schema:addressLocality "Yalta" ;
+    ] ;
+     .

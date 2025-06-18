@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/040gghh09> 
+    a org:Organization ;
+    rdfs:label "Chugoku Gakuen University" ;
+    schema:name "Chugoku Gakuen University" ;
+    schema:foundingDate "1962"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Chugoku_Gakuen_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(133.93333 34.65)"^^geo:wktLiteral ;
+        schema:addressLocality "Okayama" ;
+    ] ;
+    schema:url <https://www.cjc.ac.jp/> ;
+    schema:sameAs <http://isni.org/isni/0000000406429297> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5115970> ;
+             .

@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/043k4kk20> 
+    a org:Organization ;
+    rdfs:label "Korea Research Institute of Chemical Technology" ;
+    schema:name "Korea Research Institute of Chemical Technology" ;
+    schema:foundingDate "1976"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Korea_Research_Institute_of_Chemical_Technology> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/039fwba89> ;
+        rdfs:label "Korea Research Council for Industrial Science and Technology" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(127.38493 36.34913)"^^geo:wktLiteral ;
+        schema:addressLocality "Daejeon" ;
+    ] ;
+    schema:url <https://www.krict.re.kr> ;
+    schema:sameAs <http://isni.org/isni/0000000122968192> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q25212523> ;
+             .

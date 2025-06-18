@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03sv4d295> 
+    a org:Organization ;
+    rdfs:label "Williamson College of the Trades" ;
+    schema:name "Williamson College of the Trades" ;
+    schema:foundingDate "1888"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Williamson_Free_School_of_Mechanical_Trades> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-75.38769 39.91678)"^^geo:wktLiteral ;
+        schema:addressLocality "Media" ;
+    ] ;
+    schema:url <https://www.williamson.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000404132342> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q8021215> ;
+             .

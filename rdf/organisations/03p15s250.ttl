@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03p15s250> 
+    a org:Organization ;
+    rdfs:label "National Center for Health Statistics" ;
+    schema:name "National Center for Health Statistics" ;
+    schema:foundingDate "1960"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/National_Center_for_Health_Statistics> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02p7sht55> ;
+        rdfs:label "National Vital Statistics System" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/042twtr12> ;
+        rdfs:label "Centers for Disease Control and Prevention" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-76.94553 38.95594)"^^geo:wktLiteral ;
+        schema:addressLocality "Hyattsville" ;
+    ] ;
+    schema:url <http://www.cdc.gov/nchs/> ;
+    schema:sameAs <http://isni.org/isni/0000000119585959> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3336854> ;
+             .

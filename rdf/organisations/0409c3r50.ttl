@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0409c3r50> 
+    a org:Organization ;
+    rdfs:label "Institute for Fundamental Physics of the Universe" ;
+    schema:name "Institute for Fundamental Physics of the Universe" ;
+    schema:foundingDate "2018"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(13.77678 45.64953)"^^geo:wktLiteral ;
+        schema:addressLocality "Trieste" ;
+    ] ;
+    schema:url <https://www.ifpu.it/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q77968443> ;
+             .

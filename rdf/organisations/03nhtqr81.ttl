@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03nhtqr81> 
+    a org:Organization ;
+    rdfs:label "Kibuli Hospital" ;
+    schema:name "Kibuli Hospital" ;
+    schema:foundingDate "1975"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Kibuli_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03ph49z03> ;
+        rdfs:label "Islamic University in Uganda" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(32.58219 0.31628)"^^geo:wktLiteral ;
+        schema:addressLocality "Kampala" ;
+    ] ;
+    schema:url <http://www.kibulimuslimhospital.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000405049401> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6404079> ;
+             .

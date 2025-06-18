@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03q2kkx59> 
+    a org:Organization ;
+    rdfs:label "Touchstone Research Laboratory (United States)" ;
+    schema:name "Touchstone Research Laboratory (United States)" ;
+    schema:foundingDate "1983"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-80.72091 40.06396)"^^geo:wktLiteral ;
+        schema:addressLocality "Wheeling" ;
+    ] ;
+    schema:url <https://www.trl.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000404794813> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30292275> ;
+             .

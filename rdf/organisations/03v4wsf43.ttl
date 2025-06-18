@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03v4wsf43> 
+    a org:Organization ;
+    rdfs:label "Mecachrome (France)" ;
+    schema:name "Mecachrome (France)" ;
+    schema:foundingDate "1937"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Mecachrome> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(0.98266 47.41249)"^^geo:wktLiteral ;
+        schema:addressLocality "Amboise" ;
+    ] ;
+    schema:url <http://www.mecachrome.com/5-36802-Home.php> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q172978> ;
+             .

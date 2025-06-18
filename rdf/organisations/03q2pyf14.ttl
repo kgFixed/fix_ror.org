@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03q2pyf14> 
+    a org:Organization ;
+    rdfs:label "Herzstiftung Olten" ;
+    schema:name "Herzstiftung Olten" ;
+    schema:foundingDate "2011"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(7.90329 47.34999)"^^geo:wktLiteral ;
+        schema:addressLocality "Olten" ;
+    ] ;
+    schema:url <http://www.herzstiftung-olten.ch/> ;
+    schema:sameAs <http://isni.org/isni/0000000459007581> ;
+             .

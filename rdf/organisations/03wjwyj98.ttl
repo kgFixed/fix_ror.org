@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03wjwyj98> 
+    a org:Organization ;
+    rdfs:label "Eppendorf (Germany)" ;
+    schema:name "Eppendorf (Germany)" ;
+    schema:foundingDate "1945"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Eppendorf_(company)> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0431y1695> ;
+        rdfs:label "Eppendorf (Belgium)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(6.9747 50.82709)"^^geo:wktLiteral ;
+        schema:addressLocality "Wesseling" ;
+    ] ;
+    schema:url <https://www.eppendorf.com/DE-de/> ;
+    schema:sameAs <http://isni.org/isni/0000000405533068> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q443211> ;
+             .

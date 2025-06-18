@@ -1,0 +1,85 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03xy0wx88> 
+    a org:Organization ;
+    rdfs:label "Biomedical Research Council" ;
+    schema:name "Biomedical Research Council" ;
+    schema:foundingDate "2000"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Biomedical_Research_Council> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/044w3nw43> ;
+        rdfs:label "Bioinformatics Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/049fnxe71> ;
+        rdfs:label "Bioprocessing Technology Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03kx02w94> ;
+        rdfs:label "Experimental Drug Development Centre" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05k8wg936> ;
+        rdfs:label "Genome Institute of Singapore" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/022xyn875> ;
+        rdfs:label "Institute of Bioengineering and Nanotechnology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04frzv033> ;
+        rdfs:label "Institute of Medical Biology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04xpsrn94> ;
+        rdfs:label "Institute of Molecular and Cell Biology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/046rtjc87> ;
+        rdfs:label "Singapore Bioimaging Consortium" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03vmmgg57> ;
+        rdfs:label "Singapore Immunology Network" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/036wvzt09> ;
+        rdfs:label "Agency for Science, Technology and Research" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(103.85007 1.28967)"^^geo:wktLiteral ;
+        schema:addressLocality "Singapore" ;
+    ] ;
+    schema:url <https://www.a-star.edu.sg/About-A-STAR/biomedical-research-council> ;
+    schema:sameAs <http://isni.org/isni/0000000406210201> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4915119> ;
+             .

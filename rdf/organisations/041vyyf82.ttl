@@ -1,0 +1,49 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/041vyyf82> 
+    a org:Organization ;
+    rdfs:label "Avaya (United States)" ;
+    schema:name "Avaya (United States)" ;
+    schema:foundingDate "2000"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Avaya> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01ye7b264> ;
+        rdfs:label "Avaya (Bermuda)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05bvn1m61> ;
+        rdfs:label "Avaya (Germany)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04yytzs50> ;
+        rdfs:label "Avaya (Israel)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00hh8pd76> ;
+        rdfs:label "Avaya (United Kingdom)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-121.95524 37.35411)"^^geo:wktLiteral ;
+        schema:addressLocality "Santa Clara" ;
+    ] ;
+    schema:url <http://www.avaya.com/usa/> ;
+    schema:sameAs <http://isni.org/isni/0000000404341486> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q212433> ;
+             .

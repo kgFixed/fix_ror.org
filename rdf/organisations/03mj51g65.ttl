@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03mj51g65> 
+    a org:Organization ;
+    rdfs:label "Ospedaliero Santa Barbara" ;
+    schema:name "Ospedaliero Santa Barbara" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(8.5372 39.3092)"^^geo:wktLiteral ;
+        schema:addressLocality "Iglesias" ;
+    ] ;
+    schema:url <https://www.aslcarbonia.it/servizicittadino/ospedali/santabarbara.html> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30293557> ;
+             .

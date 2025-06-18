@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03m2s7186> 
+    a org:Organization ;
+    rdfs:label "Alcatel-Lucent (China)" ;
+    schema:name "Alcatel-Lucent (China)" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Alcatel-Lucent> ;
+    org:status "inactive" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/01607kg94> ;
+        rdfs:label "Nokia (China)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(121.45806 31.22222)"^^geo:wktLiteral ;
+        schema:addressLocality "Shanghai" ;
+    ] ;
+    schema:url <http://www.alcatel-sbell.com.cn/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q10868043> ;
+             .

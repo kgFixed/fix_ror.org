@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03kgj1y58> 
+    a org:Organization ;
+    rdfs:label "Takada Junior College" ;
+    schema:name "Takada Junior College" ;
+    schema:foundingDate "1966"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Takada_Junior_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(136.51667 34.73333)"^^geo:wktLiteral ;
+        schema:addressLocality "Tsu" ;
+    ] ;
+    schema:url <http://www.takada-jc.ac.jp/> ;
+    schema:sameAs <http://isni.org/isni/0000000417681711> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q11672192> ;
+             .

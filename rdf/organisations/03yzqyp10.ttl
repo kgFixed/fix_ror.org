@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03yzqyp10> 
+    a org:Organization ;
+    rdfs:label "Ministry of Energy" ;
+    schema:name "Ministry of Energy" ;
+    schema:foundingDate "2002"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Ministry_of_Energy_%28Thailand%29> ;
+    org:status "active" ;
+    org:classification "Funder" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05fp08r12> ;
+        rdfs:label "Government of Thailand" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(100.50144 13.75398)"^^geo:wktLiteral ;
+        schema:addressLocality "Bangkok" ;
+    ] ;
+    schema:url <https://energy.go.th> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q6866887> ;
+             .

@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/042hqyj67> 
+    a org:Organization ;
+    rdfs:label "Higher Technological Institute, 6th of October City" ;
+    schema:name "Higher Technological Institute, 6th of October City" ;
+    schema:foundingDate "1996"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(31.05 29.81667)"^^geo:wktLiteral ;
+        schema:addressLocality "6th of October City" ;
+    ] ;
+    schema:url <https://hti-o.edu.eg/site/home> ;
+     .

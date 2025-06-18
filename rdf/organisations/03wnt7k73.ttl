@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03wnt7k73> 
+    a org:Organization ;
+    rdfs:label "Hormel (United States)" ;
+    schema:name "Hormel (United States)" ;
+    schema:foundingDate "1891"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Hormel> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-92.97464 43.66663)"^^geo:wktLiteral ;
+        schema:addressLocality "Austin" ;
+    ] ;
+    schema:url <http://www.hormel.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000088131451> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1454852> ;
+             .

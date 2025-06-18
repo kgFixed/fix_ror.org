@@ -1,0 +1,72 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03vamsh08> 
+    a org:Organization ;
+    rdfs:label "County Durham and Darlington NHS Foundation Trust" ;
+    schema:name "County Durham and Darlington NHS Foundation Trust" ;
+    schema:foundingDate "2007"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/County_Durham_and_Darlington_NHS_Foundation_Trust> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0457avm18> ;
+        rdfs:label "Bishop Auckland Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01j9fyk40> ;
+        rdfs:label "Chester le Street Community Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00vwfb160> ;
+        rdfs:label "Darlington Memorial Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/051s9as34> ;
+        rdfs:label "Hundens Lane Day Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02pc4ce72> ;
+        rdfs:label "Richardson Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01d97fd71> ;
+        rdfs:label "Sedgefield Community Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02q97rh88> ;
+        rdfs:label "Shotley Bridge Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04qgcgz06> ;
+        rdfs:label "University Hospital of North Durham" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.34575 54.83903)"^^geo:wktLiteral ;
+        schema:addressLocality "Seaham" ;
+    ] ;
+    schema:url <https://www.cddft.nhs.uk/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q7894770> ;
+             .

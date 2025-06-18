@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03n8qgc13> 
+    a org:Organization ;
+    rdfs:label "Bács-Kiskun Megyei Csillagvizsgáló Intézet" ;
+    schema:name "Bács-Kiskun Megyei Csillagvizsgáló Intézet" ;
+    schema:foundingDate "1955"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/037b5pv06> ;
+        rdfs:label "University of Pecs" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(18.95307 46.18299)"^^geo:wktLiteral ;
+        schema:addressLocality "Baja" ;
+    ] ;
+    schema:url <http://www.bajaobs.hu/bajaobs_start/index.php> ;
+     .

@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03yhymv35> 
+    a org:Organization ;
+    rdfs:label "Timber Research and Development Association (United Kingdom)" ;
+    schema:name "Timber Research and Development Association (United Kingdom)" ;
+    schema:foundingDate "1934"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.74934 51.62907)"^^geo:wktLiteral ;
+        schema:addressLocality "High Wycombe" ;
+    ] ;
+    schema:url <http://www.trada.co.uk/> ;
+    schema:sameAs <http://isni.org/isni/000000010941809X> ;
+             .

@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03qbxj466> 
+    a org:Organization ;
+    rdfs:label "University of North Texas System" ;
+    schema:name "University of North Texas System" ;
+    schema:foundingDate "1890"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/University_of_North_Texas_System> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00v97ad02> ;
+        rdfs:label "University of North Texas" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05msxaq47> ;
+        rdfs:label "University of North Texas Health Science Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01n51v443> ;
+        rdfs:label "University of North Texas at Dallas" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-96.80667 32.78306)"^^geo:wktLiteral ;
+        schema:addressLocality "Dallas" ;
+    ] ;
+    schema:url <https://www.untsystem.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000099708287> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q385046> ;
+             .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03r9jhj30> 
+    a org:Organization ;
+    rdfs:label "Saratov State Conservatory named after L. V. Sobinov" ;
+    schema:name "Saratov State Conservatory named after L. V. Sobinov" ;
+    schema:foundingDate "1912"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Saratov_Conservatory> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(46.00861 51.54056)"^^geo:wktLiteral ;
+        schema:addressLocality "Saratov" ;
+    ] ;
+    schema:url <http://sarcons.ru/> ;
+    schema:sameAs <http://isni.org/isni/000000047905967X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2022998> ;
+             .

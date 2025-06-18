@@ -1,0 +1,44 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03vqjtg68> 
+    a org:Organization ;
+    rdfs:label "Biju Patnaik University of Technology" ;
+    schema:name "Biju Patnaik University of Technology" ;
+    schema:foundingDate "2002"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Biju_Patnaik_University_of_Technology> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0010jkx06> ;
+        rdfs:label "Indira Gandhi Institute of Technology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00qryer39> ;
+        rdfs:label "International Institute of Information Technology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05ag2zv50> ;
+        rdfs:label "Srusti Academy of Management" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(84.86414 22.22496)"^^geo:wktLiteral ;
+        schema:addressLocality "Rourkela" ;
+    ] ;
+    schema:url <http://www.bput.ac.in/> ;
+    schema:sameAs <http://isni.org/isni/0000000418049507> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4907286> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5146710> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5006919> ;
+             .

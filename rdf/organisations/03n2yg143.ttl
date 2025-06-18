@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03n2yg143> 
+    a org:Organization ;
+    rdfs:label "Centro Universitario en Periodismo y Publicidad" ;
+    schema:name "Centro Universitario en Periodismo y Publicidad" ;
+    schema:foundingDate "1992"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-99.12766 19.42847)"^^geo:wktLiteral ;
+        schema:addressLocality "Mexico City" ;
+    ] ;
+    schema:url <https://cupp.mx/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30293941> ;
+             .

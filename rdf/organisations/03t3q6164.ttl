@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03t3q6164> 
+    a org:Organization ;
+    rdfs:label "Rancho Los Amigos National Rehabilitation Center" ;
+    schema:name "Rancho Los Amigos National Rehabilitation Center" ;
+    schema:foundingDate "1888"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Rancho_Los_Amigos_National_Rehabilitation_Center> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03xyjdy64> ;
+        rdfs:label "Los Angeles County Department of Health Services" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03taz7m60> ;
+        rdfs:label "University of Southern California" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-118.13257 33.94001)"^^geo:wktLiteral ;
+        schema:addressLocality "Downey" ;
+    ] ;
+    schema:url <http://dhs.lacounty.gov/wps/portal/dhs/rancho> ;
+    schema:sameAs <http://isni.org/isni/0000000095653004> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7291084> ;
+             .

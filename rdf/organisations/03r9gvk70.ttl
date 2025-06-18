@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03r9gvk70> 
+    a org:Organization ;
+    rdfs:label "Kalongo Hospital" ;
+    schema:name "Kalongo Hospital" ;
+    schema:foundingDate "1934"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Kalongo_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(33.33361 2.83383)"^^geo:wktLiteral ;
+        schema:addressLocality "Agago" ;
+    ] ;
+    schema:sameAs <http://isni.org/isni/0000000405044037> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6354247> ;
+             .

@@ -1,0 +1,118 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03sqy6516> 
+    a org:Organization ;
+    rdfs:label "Agricultural Research Service - Plains Area" ;
+    schema:name "Agricultural Research Service - Plains Area" ;
+    schema:foundingDate "1953"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Agricultural_Research_Service> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0135db650> ;
+        rdfs:label "Center for Agricultural Resources Research" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/004m0sc28> ;
+        rdfs:label "Center for Grain and Animal Health Research" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03s936v76> ;
+        rdfs:label "Children's Nutrition Research Center at Baylor College of Medicine" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05x4p3529> ;
+        rdfs:label "Conservation and Production Research Laboratory" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01982z663> ;
+        rdfs:label "Cropping Systems Research Laboratory" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04x68p008> ;
+        rdfs:label "Edward T. Schafer Agricultural Research Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05xy09e29> ;
+        rdfs:label "Fort Keogh Livestock and Range Research Laboratory" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02wzb5b52> ;
+        rdfs:label "Grand Forks Human Nutrition Research Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05mfs3k63> ;
+        rdfs:label "Grassland, Soil and Water Research Laboratory" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01hzjpk73> ;
+        rdfs:label "Grazinglands Research Laboratory" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0432sks47> ;
+        rdfs:label "Knipling-Bushland U.S. Livestock Insects Research Laboratory" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0474dxd36> ;
+        rdfs:label "Northern Great Plains Research Laboratory" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/005kqqf02> ;
+        rdfs:label "Northern Plains Agricultural Research Laboratory" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03hya7h57> ;
+        rdfs:label "Roman L. Hruska U.S. Meat Animal Research Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03s4wsx37> ;
+        rdfs:label "Southern Plains Agricultural Research Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02d2m2044> ;
+        rdfs:label "Agricultural Research Service" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-105.08442 40.58526)"^^geo:wktLiteral ;
+        schema:addressLocality "Fort Collins" ;
+    ] ;
+    schema:url <https://www.ars.usda.gov/plains-area/> ;
+     .

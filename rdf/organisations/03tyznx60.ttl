@@ -1,0 +1,51 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03tyznx60> 
+    a org:Organization ;
+    rdfs:label "Neuroimaging and Psychiatry" ;
+    schema:name "Neuroimaging and Psychiatry" ;
+    org:status "inactive" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03rt48n94> ;
+        rdfs:label "Délégation Paris 6" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/001z21q04> ;
+        rdfs:label "Sorbonne Paris Cité" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05f82e368> ;
+        rdfs:label "Université Paris Cité" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03xjwb503> ;
+        rdfs:label "University of Paris-Saclay" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/028rypz17> ;
+        rdfs:label "University of Paris-Sud" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.13333 48.68333)"^^geo:wktLiteral ;
+        schema:addressLocality "Gif-sur-Yvette" ;
+    ] ;
+    schema:url <https://www.inserm-u1000.u-psud.fr/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q51779726> ;
+             .

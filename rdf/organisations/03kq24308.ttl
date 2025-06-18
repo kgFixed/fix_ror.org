@@ -1,0 +1,48 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03kq24308> 
+    a org:Organization ;
+    rdfs:label "NHS Ayrshire and Arran" ;
+    schema:name "NHS Ayrshire and Arran" ;
+    schema:foundingDate "2004"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/NHS_Ayrshire_and_Arran> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05aqcx827> ;
+        rdfs:label "Ayrshire Central Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02vwzhc72> ;
+        rdfs:label "Kirklandside Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01dsy9055> ;
+        rdfs:label "University Hospital Ayr" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/041f0qb31> ;
+        rdfs:label "University Hospital Crosshouse" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-4.63393 55.46273)"^^geo:wktLiteral ;
+        schema:addressLocality "Ayr" ;
+    ] ;
+    schema:url <http://www.nhsaaa.net/> ;
+    schema:sameAs <http://isni.org/isni/000000009975243X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6954112> ;
+             .

@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03m2gb193> 
+    a org:Organization ;
+    rdfs:label "Food Allergy Research and Education" ;
+    schema:name "Food Allergy Research and Education" ;
+    schema:foundingDate "2012"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Food_Allergy_Research_%26_Education> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.17748 38.93428)"^^geo:wktLiteral ;
+        schema:addressLocality "McLean" ;
+    ] ;
+    schema:url <http://www.foodallergy.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000106396710> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5465287> ;
+             .

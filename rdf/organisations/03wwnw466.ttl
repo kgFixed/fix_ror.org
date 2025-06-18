@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03wwnw466> 
+    a org:Organization ;
+    rdfs:label "Milpark Hospital" ;
+    schema:name "Milpark Hospital" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Milpark_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(28.04363 -26.20227)"^^geo:wktLiteral ;
+        schema:addressLocality "Johannesburg" ;
+    ] ;
+    schema:url <https://www.netcare.co.za/live/netcare_content.php?Item_ID=5585> ;
+    schema:sameAs <http://isni.org/isni/0000000406349246> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6860699> ;
+             .

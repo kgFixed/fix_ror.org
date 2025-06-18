@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03ytd3n75> 
+    a org:Organization ;
+    rdfs:label "All-Russian Research Institute of Oil Crops by V.S. Pustovoit" ;
+    schema:name "All-Russian Research Institute of Oil Crops by V.S. Pustovoit" ;
+    schema:foundingDate "1912"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(38.97603 45.04484)"^^geo:wktLiteral ;
+        schema:addressLocality "Krasnodar" ;
+    ] ;
+    schema:url <http://vniimk.ru/-en> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q52845618> ;
+             .

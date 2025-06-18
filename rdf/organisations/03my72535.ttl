@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03my72535> 
+    a org:Organization ;
+    rdfs:label "Merck (Spain)" ;
+    schema:name "Merck (Spain)" ;
+    schema:foundingDate "1668"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Merck_Group> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04b2dty93> ;
+        rdfs:label "Merck (Germany)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-3.70256 40.4165)"^^geo:wktLiteral ;
+        schema:addressLocality "Madrid" ;
+    ] ;
+    schema:url <http://www.merck.es/es/index.html> ;
+    schema:sameAs <http://isni.org/isni/0000000417684111> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30269113> ;
+             .

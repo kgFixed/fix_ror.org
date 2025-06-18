@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03kasac21> 
+    a org:Organization ;
+    rdfs:label "Groupe de Recherche en Fertilité Humaine" ;
+    schema:name "Groupe de Recherche en Fertilité Humaine" ;
+    schema:foundingDate "2003"^^xsd:gYear ;
+    org:status "inactive" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/042t83k43> ;
+        rdfs:label "Délégation Midi Pyrénées" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(1.44367 43.60426)"^^geo:wktLiteral ;
+        schema:addressLocality "Toulouse" ;
+    ] ;
+    schema:url <https://edutheque.inserm.fr/ressources/groupe-de-recherche-en-fertilite-humaine> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q51781764> ;
+             .

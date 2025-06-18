@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03k7qz240> 
+    a org:Organization ;
+    rdfs:label "Maharaja Ranjit Singh Punjab Technical University" ;
+    schema:name "Maharaja Ranjit Singh Punjab Technical University" ;
+    schema:foundingDate "2015"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Giani_Zail_Singh_Campus_College_of_Engineering_%26_Technology> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(74.93893 30.20747)"^^geo:wktLiteral ;
+        schema:addressLocality "Bathinda" ;
+    ] ;
+    schema:url <http://www.mrsptu.ac.in/> ;
+    schema:sameAs <http://isni.org/isni/000000041774214X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q21190798> ;
+             .

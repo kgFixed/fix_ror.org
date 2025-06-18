@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03q5fwy02> 
+    a org:Organization ;
+    rdfs:label "Notre Dame of Marbel University" ;
+    schema:name "Notre Dame of Marbel University" ;
+    schema:foundingDate "1945"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Notre_Dame_of_Marbel_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(124.98743 6.24501)"^^geo:wktLiteral ;
+        schema:addressLocality "Koronadal" ;
+    ] ;
+    schema:url <http://www.ndmu.edu.ph/> ;
+    schema:sameAs <http://isni.org/isni/0000000406396632> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q10965600> ;
+             .

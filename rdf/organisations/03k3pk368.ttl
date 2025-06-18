@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03k3pk368> 
+    a org:Organization ;
+    rdfs:label "Allen County Public Library" ;
+    schema:name "Allen County Public Library" ;
+    schema:foundingDate "1895"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Allen_County_Public_Library> ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-85.12886 41.1306)"^^geo:wktLiteral ;
+        schema:addressLocality "Fort Wayne" ;
+    ] ;
+    schema:url <http://www.acpl.lib.in.us/> ;
+    schema:sameAs <http://isni.org/isni/0000000121776164> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4731600> ;
+             .

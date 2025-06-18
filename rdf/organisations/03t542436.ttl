@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03t542436> 
+    a org:Organization ;
+    rdfs:label "Berkshire Healthcare NHS Foundation Trust" ;
+    schema:name "Berkshire Healthcare NHS Foundation Trust" ;
+    schema:foundingDate "2000"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Berkshire_Healthcare_NHS_Foundation_Trust> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01m6agm53> ;
+        rdfs:label "Prospect Park Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0423jvm15> ;
+        rdfs:label "Upton Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03cej9w90> ;
+        rdfs:label "Wokingham Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.75054 51.41363)"^^geo:wktLiteral ;
+        schema:addressLocality "Bracknell" ;
+    ] ;
+    schema:url <http://www.berkshirehealthcare.nhs.uk/> ;
+    schema:sameAs <http://isni.org/isni/0000000403794387> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4892263> ;
+             .

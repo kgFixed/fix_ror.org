@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03y02pg02> 
+    a org:Organization ;
+    rdfs:label "University of Music Detmold" ;
+    schema:name "University of Music Detmold" ;
+    schema:foundingDate "2007"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Hochschule_f%C3%BCr_Musik_Detmold> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/023392c84> ;
+        rdfs:label "Musikwissenschaftliches Seminar Detmold/Paderborn" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(8.87318 51.93855)"^^geo:wktLiteral ;
+        schema:addressLocality "Detmold" ;
+    ] ;
+    schema:url <http://www.hfm-detmold.de/en/> ;
+    schema:sameAs <http://isni.org/isni/000000010754536X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q317855> ;
+             .

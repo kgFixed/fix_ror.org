@@ -1,0 +1,26 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03qhydd02> 
+    a org:Organization ;
+    rdfs:label "North Carolina Geological Survey" ;
+    schema:name "North Carolina Geological Survey" ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01ftg8r37> ;
+        rdfs:label "North Carolina Department of Environmental Quality" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-78.63861 35.7721)"^^geo:wktLiteral ;
+        schema:addressLocality "Raleigh" ;
+    ] ;
+    schema:url <https://deq.nc.gov/about/divisions/energy-mineral-land-resources/north-carolina-geological-survey> ;
+     .

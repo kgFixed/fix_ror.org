@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03m13r221> 
+    a org:Organization ;
+    rdfs:label "Port of Morrow" ;
+    schema:name "Port of Morrow" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Port_of_Morrow> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-119.70058 45.83986)"^^geo:wktLiteral ;
+        schema:addressLocality "Boardman" ;
+    ] ;
+    schema:url <http://www.portofmorrow.com/> ;
+     .

@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03r5zec51> 
+    a org:Organization ;
+    rdfs:label "HES-SO Valais-Wallis" ;
+    schema:name "HES-SO Valais-Wallis" ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00x1rrc95> ;
+        rdfs:label "Institute of Life Sciences" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01xkakk17> ;
+        rdfs:label "HES-SO University of Applied Sciences and Arts Western Switzerland" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01eas9a07> ;
+        rdfs:label "The Sense Innovation and Research Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04wz3qh02> ;
+        rdfs:label "School of Health Sciences - HES-SO Valais-Wallis" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(7.35559 46.22739)"^^geo:wktLiteral ;
+        schema:addressLocality "Sion" ;
+    ] ;
+    schema:url <https://www.hevs.ch/en/> ;
+    schema:sameAs <http://isni.org/isni/0000000404532100> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3128597> ;
+             .

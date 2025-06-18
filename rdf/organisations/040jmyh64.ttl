@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/040jmyh64> 
+    a org:Organization ;
+    rdfs:label "Jaypee University of Engineering and Technology" ;
+    schema:name "Jaypee University of Engineering and Technology" ;
+    schema:foundingDate "2003"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Jaypee_University_of_Engineering_and_Technology> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(77.3113 24.64691)"^^geo:wktLiteral ;
+        schema:addressLocality "Guna" ;
+    ] ;
+    schema:url <https://www.juet.ac.in/> ;
+    schema:sameAs <http://isni.org/isni/0000000417687718> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q15229463> ;
+             .

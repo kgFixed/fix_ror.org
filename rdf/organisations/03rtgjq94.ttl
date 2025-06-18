@@ -1,0 +1,60 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03rtgjq94> 
+    a org:Organization ;
+    rdfs:label "University of South Carolina System" ;
+    schema:name "University of South Carolina System" ;
+    schema:foundingDate "1957"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/University_of_South_Carolina_System> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02b6qw903> ;
+        rdfs:label "University of South Carolina" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02d9k9g58> ;
+        rdfs:label "University of South Carolina Aiken" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05ked8481> ;
+        rdfs:label "University of South Carolina Beaufort" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04m6dqx50> ;
+        rdfs:label "University of South Carolina Salkehatchie" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04nk82x68> ;
+        rdfs:label "University of South Carolina Sumter" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00t9hhv14> ;
+        rdfs:label "University of South Carolina Upstate" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-81.03481 34.00071)"^^geo:wktLiteral ;
+        schema:addressLocality "Columbia" ;
+    ] ;
+    schema:url <http://www.sc.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000446589818> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1537299> ;
+             .

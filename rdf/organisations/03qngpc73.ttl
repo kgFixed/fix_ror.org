@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03qngpc73> 
+    a org:Organization ;
+    rdfs:label "Mitsuba (Japan)" ;
+    schema:name "Mitsuba (Japan)" ;
+    schema:foundingDate "1946"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Mitsuba_Corporation> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(139.33333 36.4)"^^geo:wktLiteral ;
+        schema:addressLocality "Kiryū" ;
+    ] ;
+    schema:url <http://www.mitsuba.co.jp/english/> ;
+    schema:sameAs <http://isni.org/isni/0000000417802333> ;
+             .

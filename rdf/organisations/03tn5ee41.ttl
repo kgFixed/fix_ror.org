@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03tn5ee41> 
+    a org:Organization ;
+    rdfs:label "Benha University" ;
+    schema:name "Benha University" ;
+    schema:foundingDate "1976"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Banha_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(31.1842 30.45977)"^^geo:wktLiteral ;
+        schema:addressLocality "Banhā" ;
+    ] ;
+    schema:url <http://www.bu.edu.eg/en/> ;
+    schema:sameAs <http://isni.org/isni/0000000406212741> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1042722> ;
+             .

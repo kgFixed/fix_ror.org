@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/040w2fg16> 
+    a org:Organization ;
+    rdfs:label "Bergens Rederiforening" ;
+    schema:name "Bergens Rederiforening" ;
+    schema:foundingDate "1899"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(5.32415 60.39299)"^^geo:wktLiteral ;
+        schema:addressLocality "Bergen" ;
+    ] ;
+    schema:url <http://rederiforeningen.no/> ;
+    schema:sameAs <http://isni.org/isni/000000010730104X> ;
+             .

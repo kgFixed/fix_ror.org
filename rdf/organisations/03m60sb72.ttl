@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03m60sb72> 
+    a org:Organization ;
+    rdfs:label "Crozet BioPharma (United States)" ;
+    schema:name "Crozet BioPharma (United States)" ;
+    schema:foundingDate "2017"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-71.61318 42.5447)"^^geo:wktLiteral ;
+        schema:addressLocality "Devens" ;
+    ] ;
+    schema:url <https://www.crozetbiopharma.com/> ;
+     .

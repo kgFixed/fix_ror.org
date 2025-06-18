@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03q6w3828> 
+    a org:Organization ;
+    rdfs:label "International Paper (United States)" ;
+    schema:name "International Paper (United States)" ;
+    schema:foundingDate "1898"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/International_Paper> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-90.04898 35.14953)"^^geo:wktLiteral ;
+        schema:addressLocality "Memphis" ;
+    ] ;
+    schema:url <http://www.internationalpaper.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000406012600> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q202972> ;
+             .

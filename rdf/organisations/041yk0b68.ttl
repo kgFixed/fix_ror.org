@@ -1,0 +1,39 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/041yk0b68> 
+    a org:Organization ;
+    rdfs:label "Interaction Hôtes Agents Pathogènes" ;
+    schema:name "Interaction Hôtes Agents Pathogènes" ;
+    schema:foundingDate "2003"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02sxjwh33> ;
+        rdfs:label "Centre Occitanie-Toulouse" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/029m96t80> ;
+        rdfs:label "Ministère de l'Agriculture et de la Souveraineté alimentaire" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03m3gzv89> ;
+        rdfs:label "École Nationale Vétérinaire de Toulouse" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(1.44367 43.60426)"^^geo:wktLiteral ;
+        schema:addressLocality "Toulouse" ;
+    ] ;
+    schema:url <http://www.envt.fr/menu-og-32/ihap> ;
+     .

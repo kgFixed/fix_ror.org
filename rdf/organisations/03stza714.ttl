@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03stza714> 
+    a org:Organization ;
+    rdfs:label "Shanxi Museum" ;
+    schema:name "Shanxi Museum" ;
+    schema:foundingDate "2005"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Shanxi_Museum> ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(112.56028 37.86944)"^^geo:wktLiteral ;
+        schema:addressLocality "Taiyuan" ;
+    ] ;
+    schema:url <http://www.shanximuseum.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000417555272> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q11046984> ;
+             .

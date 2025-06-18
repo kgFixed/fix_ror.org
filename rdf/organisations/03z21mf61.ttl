@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03z21mf61> 
+    a org:Organization ;
+    rdfs:label "Lawrence Livermore National Security" ;
+    schema:name "Lawrence Livermore National Security" ;
+    schema:foundingDate "2006"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/041nk4h53> ;
+        rdfs:label "Lawrence Livermore National Laboratory" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-121.76801 37.68187)"^^geo:wktLiteral ;
+        schema:addressLocality "Livermore" ;
+    ] ;
+    schema:url <https://www.llnsllc.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000403986848> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30285689> ;
+             .

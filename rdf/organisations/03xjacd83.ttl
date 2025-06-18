@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03xjacd83> 
+    a org:Organization ;
+    rdfs:label "Cleveland Clinic" ;
+    schema:name "Cleveland Clinic" ;
+    schema:foundingDate "1921"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Cleveland_Clinic> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0155k7414> ;
+        rdfs:label "Cleveland Clinic Florida" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02x4b0932> ;
+        rdfs:label "Cleveland Clinic Lerner College of Medicine" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/059xepj08> ;
+        rdfs:label "Akron General Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/051fd9666> ;
+        rdfs:label "Case Western Reserve University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/020wf1g18> ;
+        rdfs:label "Huron Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-81.69541 41.4995)"^^geo:wktLiteral ;
+        schema:addressLocality "Cleveland" ;
+    ] ;
+    schema:url <http://my.clevelandclinic.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000106754725> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4117596> ;
+             .

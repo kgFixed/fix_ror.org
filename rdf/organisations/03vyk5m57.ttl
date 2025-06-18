@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03vyk5m57> 
+    a org:Organization ;
+    rdfs:label "Connecticut Center for Advanced Technology" ;
+    schema:name "Connecticut Center for Advanced Technology" ;
+    schema:foundingDate "2004"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-72.61203 41.78232)"^^geo:wktLiteral ;
+        schema:addressLocality "East Hartford" ;
+    ] ;
+    schema:url <https://ccat.us/> ;
+     .

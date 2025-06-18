@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03mw5zj47> 
+    a org:Organization ;
+    rdfs:label "Research Centre Imarat" ;
+    schema:name "Research Centre Imarat" ;
+    schema:foundingDate "1988"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Research_Centre_Imarat> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05k37v296> ;
+        rdfs:label "Defence Research and Development Organisation" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(78.45636 17.38405)"^^geo:wktLiteral ;
+        schema:addressLocality "Hyderabad" ;
+    ] ;
+    schema:url <https://www.drdo.gov.in/labs-and-establishments/research-centre-imarat-rci> ;
+    schema:sameAs <http://isni.org/isni/0000000417650851> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q24945256> ;
+             .

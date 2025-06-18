@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03mxqcg82> 
+    a org:Organization ;
+    rdfs:label "Leipzig/Halle Airport" ;
+    schema:name "Leipzig/Halle Airport" ;
+    schema:foundingDate "1927"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Leipzig/Halle_Airport> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(12.22141 51.39678)"^^geo:wktLiteral ;
+        schema:addressLocality "Schkeuditz" ;
+    ] ;
+    schema:url <https://www.leipzig-halle-airport.de/en/> ;
+    schema:sameAs <http://isni.org/isni/0000000121965897> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q668382> ;
+             .

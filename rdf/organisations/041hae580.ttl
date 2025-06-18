@@ -1,0 +1,48 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/041hae580> 
+    a org:Organization ;
+    rdfs:label "Countess of Chester Hospital" ;
+    schema:name "Countess of Chester Hospital" ;
+    schema:foundingDate "1984"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Countess_of_Chester_Hospital_NHS_Foundation_Trust> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0149cpy58> ;
+        rdfs:label "Countess of Chester Hospital NHS Foundation Trust" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/053fq8t95> ;
+        rdfs:label "Swansea University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01drpwb22> ;
+        rdfs:label "University of Chester" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04xs57h96> ;
+        rdfs:label "University of Liverpool" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-2.89189 53.1905)"^^geo:wktLiteral ;
+        schema:addressLocality "Chester" ;
+    ] ;
+    schema:url <https://www.nhs.uk/Services/Hospitals/Overview/DefaultView.aspx?id=870> ;
+    schema:sameAs <http://isni.org/isni/0000000403999999> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q26568022> ;
+             .

@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03rzp5127> 
+    a org:Organization ;
+    rdfs:label "James Hutton Institute" ;
+    schema:name "James Hutton Institute" ;
+    schema:foundingDate "2011"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/James_Hutton_Institute> ;
+    org:status "active" ;
+    org:classification "Funder" ;
+    org:classification "Nonprofit" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03jwrz939> ;
+        rdfs:label "Biomathematics and Statistics Scotland" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03h2bxq36> ;
+        rdfs:label "University of Dundee" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-2.97489 56.46913)"^^geo:wktLiteral ;
+        schema:addressLocality "Dundee" ;
+    ] ;
+    schema:url <https://www.hutton.ac.uk> ;
+    schema:sameAs <http://isni.org/isni/0000000110146626> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6136486> ;
+             .

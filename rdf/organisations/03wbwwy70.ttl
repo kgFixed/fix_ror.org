@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03wbwwy70> 
+    a org:Organization ;
+    rdfs:label "Pontifical University of Saint Thomas Aquinas" ;
+    schema:name "Pontifical University of Saint Thomas Aquinas" ;
+    schema:foundingDate "1963"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Pontifical_University_of_Saint_Thomas_Aquinas> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(12.51133 41.89193)"^^geo:wktLiteral ;
+        schema:addressLocality "Rome" ;
+    ] ;
+    schema:url <https://angelicum.it/> ;
+    schema:sameAs <http://isni.org/isni/0000000119564277> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q246887> ;
+             .

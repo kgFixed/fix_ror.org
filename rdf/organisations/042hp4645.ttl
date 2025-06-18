@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/042hp4645> 
+    a org:Organization ;
+    rdfs:label "Stratasys (Israel)" ;
+    schema:name "Stratasys (Israel)" ;
+    schema:foundingDate "1989"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Stratasys> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05f2srq42> ;
+        rdfs:label "Stratasys (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(34.78057 32.08088)"^^geo:wktLiteral ;
+        schema:addressLocality "Tel Aviv" ;
+    ] ;
+    schema:url <http://www.stratasys.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q3975878> ;
+             .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03rqy4d08> 
+    a org:Organization ;
+    rdfs:label "Emir Abdelkader University of Islamic Sciences" ;
+    schema:name "Emir Abdelkader University of Islamic Sciences" ;
+    schema:foundingDate "1984"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Emir_Abdelkader_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(6.61472 36.365)"^^geo:wktLiteral ;
+        schema:addressLocality "Constantine" ;
+    ] ;
+    schema:url <http://www.univ-emir.dz/> ;
+    schema:sameAs <http://isni.org/isni/0000000417863697> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5372520> ;
+             .

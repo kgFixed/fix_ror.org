@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03nm0d152> 
+    a org:Organization ;
+    rdfs:label "Media Archive for Central England" ;
+    schema:name "Media Archive for Central England" ;
+    schema:foundingDate "1995"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Media_Archive_for_Central_England> ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.53792 53.22683)"^^geo:wktLiteral ;
+        schema:addressLocality "Lincoln" ;
+    ] ;
+    schema:url <https://www.macearchive.org/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q6805452> ;
+             .

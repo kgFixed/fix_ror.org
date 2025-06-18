@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03zkja782> 
+    a org:Organization ;
+    rdfs:label "Luton and Dunstable University Hospital NHS Foundation Trust" ;
+    schema:name "Luton and Dunstable University Hospital NHS Foundation Trust" ;
+    schema:foundingDate "2004"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Luton_and_Dunstable_University_Hospital_NHS_Foundation_Trust> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05b81av32> ;
+        rdfs:label "Luton and Dunstable Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.41748 51.87967)"^^geo:wktLiteral ;
+        schema:addressLocality "Luton" ;
+    ] ;
+    schema:url <https://www.ldh.nhs.uk/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q20979091> ;
+             .

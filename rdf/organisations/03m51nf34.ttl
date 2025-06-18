@@ -1,0 +1,41 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03m51nf34> 
+    a org:Organization ;
+    rdfs:label "NIHR Barts Cardiovascular Biomedical Research Unit" ;
+    schema:name "NIHR Barts Cardiovascular Biomedical Research Unit" ;
+    schema:foundingDate "2012"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00b31g692> ;
+        rdfs:label "Barts Health NHS Trust" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0187kwz08> ;
+        rdfs:label "National Institute for Health Research" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/026zzn846> ;
+        rdfs:label "Queen Mary University of London" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.12574 51.50853)"^^geo:wktLiteral ;
+        schema:addressLocality "London" ;
+    ] ;
+    schema:url <https://www.qmul.ac.uk/whri/research/cardiovascular/nihr-barts-biomedical-research-centre-/> ;
+    schema:sameAs <http://isni.org/isni/0000000404955357> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30297176> ;
+             .

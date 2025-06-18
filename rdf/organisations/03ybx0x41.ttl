@@ -1,0 +1,46 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03ybx0x41> 
+    a org:Organization ;
+    rdfs:label "Department of Biomedicine Basel" ;
+    schema:name "Department of Biomedicine Basel" ;
+    schema:foundingDate "2000"^^xsd:gYear ;
+    org:status "withdrawn" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02nhqek82> ;
+        rdfs:label "University Children’s Hospital Basel" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04k51q396> ;
+        rdfs:label "University Hospital of Basel" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02s6k3f65> ;
+        rdfs:label "University of Basel" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/02s6k3f65> ;
+        rdfs:label "University of Basel" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(7.57327 47.55839)"^^geo:wktLiteral ;
+        schema:addressLocality "Basel" ;
+    ] ;
+    schema:url <https://biomedizin.unibas.ch/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q22387380> ;
+             .

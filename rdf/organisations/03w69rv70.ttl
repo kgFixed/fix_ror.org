@@ -1,0 +1,35 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03w69rv70> 
+    a org:Organization ;
+    rdfs:label "Eastern Iowa Community College" ;
+    schema:name "Eastern Iowa Community College" ;
+    schema:foundingDate "1965"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Eastern_Iowa_Community_Colleges> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0186tjy74> ;
+        rdfs:label "Muscatine Community College" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05b2mj890> ;
+        rdfs:label "Scott Community College" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-90.57764 41.52364)"^^geo:wktLiteral ;
+        schema:addressLocality "Davenport" ;
+    ] ;
+    schema:url <http://www.eicc.edu/> ;
+    schema:sameAs <http://isni.org/isni/000000044650137X> ;
+             .

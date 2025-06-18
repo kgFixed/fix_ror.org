@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03wa1wy25> 
+    a org:Organization ;
+    rdfs:label "Tottori University Hospital" ;
+    schema:name "Tottori University Hospital" ;
+    schema:foundingDate "1893"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/024yc3q36> ;
+        rdfs:label "Tottori University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(133.33333 35.43333)"^^geo:wktLiteral ;
+        schema:addressLocality "Yonago" ;
+    ] ;
+    schema:url <http://www2.hosp.med.tottori-u.ac.jp/en/> ;
+    schema:sameAs <http://isni.org/isni/0000000406190992> ;
+             .

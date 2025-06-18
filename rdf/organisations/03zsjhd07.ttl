@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03zsjhd07> 
+    a org:Organization ;
+    rdfs:label "University of Arkansas at Pine Bluff" ;
+    schema:name "University of Arkansas at Pine Bluff" ;
+    schema:foundingDate "1873"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/University_of_Arkansas_at_Pine_Bluff> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05vvhh982> ;
+        rdfs:label "University of Arkansas System" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-92.0032 34.22843)"^^geo:wktLiteral ;
+        schema:addressLocality "Pine Bluff" ;
+    ] ;
+    schema:url <https://www.uapb.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000098824761> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2495825> ;
+             .

@@ -1,0 +1,34 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03qrhd488> 
+    a org:Organization ;
+    rdfs:label "Edwards Comprehensive Cancer Center" ;
+    schema:name "Edwards Comprehensive Cancer Center" ;
+    schema:foundingDate "2006"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01q1nqh97> ;
+        rdfs:label "Cabell Huntington Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02erqft81> ;
+        rdfs:label "Marshall University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-82.44515 38.41925)"^^geo:wktLiteral ;
+        schema:addressLocality "Huntington" ;
+    ] ;
+    schema:url <http://edwardsccc.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000404462165> ;
+             .

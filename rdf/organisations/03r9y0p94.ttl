@@ -1,0 +1,32 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03r9y0p94> 
+    a org:Organization ;
+    rdfs:label "UL Solutions (United States)" ;
+    schema:name "UL Solutions (United States)" ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04dpwfd08> ;
+        rdfs:label "UL (Germany)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/045n75910> ;
+        rdfs:label "UL Research Institutes" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-87.82895 42.12753)"^^geo:wktLiteral ;
+        schema:addressLocality "Northbrook" ;
+    ] ;
+    schema:url <https://www.ul.com> ;
+     .

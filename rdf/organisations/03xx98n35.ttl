@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03xx98n35> 
+    a org:Organization ;
+    rdfs:label "Institut de Recherche pour le Développement" ;
+    schema:name "Institut de Recherche pour le Développement" ;
+    schema:foundingDate "1937"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Institut_de_recherche_pour_le_d%C3%A9veloppement> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05q3vnk25> ;
+        rdfs:label "Institut de Recherche pour le Développement" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-68.15 -16.5)"^^geo:wktLiteral ;
+        schema:addressLocality "La Paz" ;
+    ] ;
+    schema:url <http://www.bolivie.ird.fr/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q28974593> ;
+             .

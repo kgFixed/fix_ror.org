@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03psxy088> 
+    a org:Organization ;
+    rdfs:label "Monroe Community College" ;
+    schema:name "Monroe Community College" ;
+    schema:foundingDate "1961"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Monroe_Community_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01q1z8k08> ;
+        rdfs:label "State University of New York" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.55055 43.14756)"^^geo:wktLiteral ;
+        schema:addressLocality "Brighton" ;
+    ] ;
+    schema:url <https://www.monroecc.edu> ;
+    schema:sameAs <http://isni.org/isni/0000000093423918> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6902141> ;
+             .

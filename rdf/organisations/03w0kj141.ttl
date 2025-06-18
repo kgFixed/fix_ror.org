@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03w0kj141> 
+    a org:Organization ;
+    rdfs:label "Army Medical College" ;
+    schema:name "Army Medical College" ;
+    schema:foundingDate "1977"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Army_Medical_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05mya2w74> ;
+        rdfs:label "Combined Military Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(73.0479 33.59733)"^^geo:wktLiteral ;
+        schema:addressLocality "Rawalpindi" ;
+    ] ;
+    schema:url <https://www.pakistanarmy.gov.pk/AWPReview/TextContent.aspx?pId=276> ;
+    schema:sameAs <http://isni.org/isni/0000000115523961> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4794177> ;
+             .

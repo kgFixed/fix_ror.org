@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03y3e3s17> 
+    a org:Organization ;
+    rdfs:label "Shanxi University" ;
+    schema:name "Shanxi University" ;
+    schema:foundingDate "1902"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Shanxi_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/035z18f46> ;
+        rdfs:label "State Key Laboratory of Quantum Optics and Quantum Optics Devices" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(112.56028 37.86944)"^^geo:wktLiteral ;
+        schema:addressLocality "Taiyuan" ;
+    ] ;
+    schema:url <https://www.sxu.edu.cn> ;
+    schema:sameAs <http://isni.org/isni/0000000417602008> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7489128> ;
+             .

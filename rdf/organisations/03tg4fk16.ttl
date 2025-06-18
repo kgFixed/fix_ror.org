@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03tg4fk16> 
+    a org:Organization ;
+    rdfs:label "Fresno Metro Ministry" ;
+    schema:name "Fresno Metro Ministry" ;
+    schema:foundingDate "1970"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-119.77237 36.74773)"^^geo:wktLiteral ;
+        schema:addressLocality "Fresno" ;
+    ] ;
+    schema:url <https://www.fresnometmin.org/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30285670> ;
+             .

@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03y76pe29> 
+    a org:Organization ;
+    rdfs:label "Albany Molecular Research (United States)" ;
+    schema:name "Albany Molecular Research (United States)" ;
+    schema:foundingDate "1991"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/AMRI_Global> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/012p2hd37> ;
+        rdfs:label "Albany Molecular Research (Singapore)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03fmc9y65> ;
+        rdfs:label "Albany Molecular Research (United Kingdom)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-73.75623 42.65258)"^^geo:wktLiteral ;
+        schema:addressLocality "Albany" ;
+    ] ;
+    schema:url <http://www.amriglobal.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000404080677> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q16974949> ;
+             .

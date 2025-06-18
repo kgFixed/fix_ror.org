@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03zkbs573> 
+    a org:Organization ;
+    rdfs:label "Seismological Society of America" ;
+    schema:name "Seismological Society of America" ;
+    schema:foundingDate "1903"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Seismological_Society_of_America> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-122.29775 37.88687)"^^geo:wktLiteral ;
+        schema:addressLocality "Albany" ;
+    ] ;
+    schema:url <http://www.seismosoc.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000092418965> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7446981> ;
+             .

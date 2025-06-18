@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/040p70661> 
+    a org:Organization ;
+    rdfs:label "Universidad Intercultural de Chiapas" ;
+    schema:name "Universidad Intercultural de Chiapas" ;
+    schema:foundingDate "2004"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-92.64126 16.73176)"^^geo:wktLiteral ;
+        schema:addressLocality "San Cristóbal de las Casas" ;
+    ] ;
+    schema:url <https://www.unich.edu.mx> ;
+    schema:sameAs <http://isni.org/isni/0000000446771302> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q15845947> ;
+             .

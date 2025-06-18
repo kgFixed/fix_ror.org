@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03tx2pf91> 
+    a org:Organization ;
+    rdfs:label "Institute of Socio-Economic Development of Territories" ;
+    schema:name "Institute of Socio-Economic Development of Territories" ;
+    schema:foundingDate "1990"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01twn9665> ;
+        rdfs:label "Department of Social Sciences" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(39.88398 59.2239)"^^geo:wktLiteral ;
+        schema:addressLocality "Vologda" ;
+    ] ;
+    schema:url <http://www.vscc.ac.ru/> ;
+    schema:sameAs <http://isni.org/isni/0000000403833024> ;
+             .

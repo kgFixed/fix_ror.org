@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03mz4b890> 
+    a org:Organization ;
+    rdfs:label "Hillsborough County Public Schools" ;
+    schema:name "Hillsborough County Public Schools" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Hillsborough_County_Public_Schools> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-82.45843 27.94752)"^^geo:wktLiteral ;
+        schema:addressLocality "Tampa" ;
+    ] ;
+    schema:url <http://www.sdhc.k12.fl.us/> ;
+    schema:sameAs <http://isni.org/isni/0000000446549330> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q8778311> ;
+             .

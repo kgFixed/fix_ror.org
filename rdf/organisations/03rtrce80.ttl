@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03rtrce80> 
+    a org:Organization ;
+    rdfs:label "National Centre for Infectious Diseases" ;
+    schema:name "National Centre for Infectious Diseases" ;
+    schema:foundingDate "2019"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/National_Centre_for_Infectious_Diseases> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(103.85007 1.28967)"^^geo:wktLiteral ;
+        schema:addressLocality "Singapore" ;
+    ] ;
+    schema:url <https://www.ncid.sg/Pages/default.aspx> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q5154059> ;
+             .

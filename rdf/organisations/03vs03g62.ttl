@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03vs03g62> 
+    a org:Organization ;
+    rdfs:label "Montreal Heart Institute" ;
+    schema:name "Montreal Heart Institute" ;
+    schema:foundingDate "1954"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Montreal_Heart_Institute> ;
+    org:status "active" ;
+    org:classification "Funder" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0161xgx34> ;
+        rdfs:label "Université de Montréal" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-73.58781 45.50884)"^^geo:wktLiteral ;
+        schema:addressLocality "Montreal" ;
+    ] ;
+    schema:url <https://icm-mhi.org> ;
+    schema:sameAs <http://isni.org/isni/0000000089959090> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3151984> ;
+             .

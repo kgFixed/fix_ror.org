@@ -1,0 +1,20 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03tqbke55> 
+    a org:Organization ;
+    rdfs:label "Ministry of Science and Technology" ;
+    schema:name "Ministry of Science and Technology" ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(17.19386 44.77842)"^^geo:wktLiteral ;
+        schema:addressLocality "Banja Luka" ;
+    ] ;
+    schema:url <http://www.vladars.net/eng/vlada/ministries/MST/Pages/default.aspx> ;
+     .

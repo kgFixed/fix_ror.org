@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03rw9a524> 
+    a org:Organization ;
+    rdfs:label "Northern California Indian Development Council" ;
+    schema:name "Northern California Indian Development Council" ;
+    schema:foundingDate "1976"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Northern_California_Indian_Development_Council> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-124.16367 40.80207)"^^geo:wktLiteral ;
+        schema:addressLocality "Eureka" ;
+    ] ;
+    schema:url <http://ncidc.org> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q7058197> ;
+             .

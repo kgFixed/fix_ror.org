@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03yegf956> 
+    a org:Organization ;
+    rdfs:label "Alice Springs Hospital" ;
+    schema:name "Alice Springs Hospital" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(133.88362 -23.69748)"^^geo:wktLiteral ;
+        schema:addressLocality "Alice Springs" ;
+    ] ;
+    schema:url <http://www.health.nt.gov.au/hospitals/alice_springs_hospital/> ;
+    schema:sameAs <http://isni.org/isni/0000000095760221> ;
+             .

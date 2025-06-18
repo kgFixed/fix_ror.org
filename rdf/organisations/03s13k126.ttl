@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03s13k126> 
+    a org:Organization ;
+    rdfs:label "Hospital das Clínicas Samuel Libânio" ;
+    schema:name "Hospital das Clínicas Samuel Libânio" ;
+    schema:foundingDate "1965"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-45.93639 -22.23)"^^geo:wktLiteral ;
+        schema:addressLocality "Pouso Alegre" ;
+    ] ;
+    schema:url <http://www.hcsl.edu.br/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q20059836> ;
+             .

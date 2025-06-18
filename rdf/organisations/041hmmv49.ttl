@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/041hmmv49> 
+    a org:Organization ;
+    rdfs:label "Bronx Psychiatric Center" ;
+    schema:name "Bronx Psychiatric Center" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01b2wv937> ;
+        rdfs:label "New York State Office of Mental Health" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-73.86641 40.84985)"^^geo:wktLiteral ;
+        schema:addressLocality "Bronx" ;
+    ] ;
+    schema:url <https://www.omh.ny.gov/omhweb/facilities/brpc/> ;
+    schema:sameAs <http://isni.org/isni/0000000085259388> ;
+             .

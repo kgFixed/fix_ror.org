@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03w6qq889> 
+    a org:Organization ;
+    rdfs:label "College of the Ozarks" ;
+    schema:name "College of the Ozarks" ;
+    schema:foundingDate "1907"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/College_of_the_Ozarks> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-93.21851 36.64367)"^^geo:wktLiteral ;
+        schema:addressLocality "Branson" ;
+    ] ;
+    schema:url <http://www.cofo.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000089357735> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5146892> ;
+             .

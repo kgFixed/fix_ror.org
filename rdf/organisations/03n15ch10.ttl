@@ -1,0 +1,56 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03n15ch10> 
+    a org:Organization ;
+    rdfs:label "CEA Paris-Saclay" ;
+    schema:name "CEA Paris-Saclay" ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04dy97z61> ;
+        rdfs:label "Laboratoire Interactions, Dynamiques et Lasers" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01fv25t22> ;
+        rdfs:label "CEA Paris-Saclay - Etablissement de Saclay" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01ydb3330> ;
+        rdfs:label "Synchrotron soleil" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/010j2gw05> ;
+        rdfs:label "CEA Paris-Saclay - Etablissement de Fontenay-aux-roses" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00jjx8s55> ;
+        rdfs:label "Commissariat à l'Énergie Atomique et aux Énergies Alternatives" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03xjwb503> ;
+        rdfs:label "Université Paris-Saclay" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.13333 48.68333)"^^geo:wktLiteral ;
+        schema:addressLocality "Gif-sur-Yvette" ;
+    ] ;
+    schema:url <https://www.cea.fr/paris-saclay> ;
+     .

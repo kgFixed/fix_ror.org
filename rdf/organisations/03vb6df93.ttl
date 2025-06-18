@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03vb6df93> 
+    a org:Organization ;
+    rdfs:label "Nepean Hospital" ;
+    schema:name "Nepean Hospital" ;
+    schema:foundingDate "1860"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Nepean_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0384j8v12> ;
+        rdfs:label "The University of Sydney" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(150.7 -33.75)"^^geo:wktLiteral ;
+        schema:addressLocality "Penrith" ;
+    ] ;
+    schema:url <http://www.nbmlhd.health.nsw.gov.au/nepean-hospital> ;
+    schema:sameAs <http://isni.org/isni/0000000404531183> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6994600> ;
+             .

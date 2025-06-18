@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03s2x9d90> 
+    a org:Organization ;
+    rdfs:label "Ramapo College" ;
+    schema:name "Ramapo College" ;
+    schema:foundingDate "1969"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Ramapo_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-74.14376 41.08871)"^^geo:wktLiteral ;
+        schema:addressLocality "Mahwah" ;
+    ] ;
+    schema:url <https://www.ramapo.edu> ;
+    schema:sameAs <http://isni.org/isni/0000000121085881> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7289009> ;
+             .

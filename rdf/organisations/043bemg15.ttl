@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/043bemg15> 
+    a org:Organization ;
+    rdfs:label "Lakeview College of Nursing" ;
+    schema:name "Lakeview College of Nursing" ;
+    schema:foundingDate "1894"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Lakeview_College_of_Nursing> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-87.63002 40.12448)"^^geo:wktLiteral ;
+        schema:addressLocality "Danville" ;
+    ] ;
+    schema:url <https://www.lakeviewcol.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000403955777> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6479236> ;
+             .

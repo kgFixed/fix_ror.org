@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03ynpnz81> 
+    a org:Organization ;
+    rdfs:label "Atlantia Food Clinical Trials" ;
+    schema:name "Atlantia Food Clinical Trials" ;
+    schema:foundingDate "1984"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-8.47061 51.89797)"^^geo:wktLiteral ;
+        schema:addressLocality "Cork" ;
+    ] ;
+    schema:url <http://www.atlantiafoodclinicaltrials.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000493429761> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q50036534> ;
+             .

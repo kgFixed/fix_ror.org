@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03twgdg85> 
+    a org:Organization ;
+    rdfs:label "Medizinische Zentrum für Gesundheit" ;
+    schema:name "Medizinische Zentrum für Gesundheit" ;
+    schema:foundingDate "1901"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(8.81683 51.78333)"^^geo:wktLiteral ;
+        schema:addressLocality "Bad Lippspringe" ;
+    ] ;
+    schema:url <https://www.medizinisches-zentrum.de/> ;
+    schema:sameAs <http://isni.org/isni/0000000405579234> ;
+             .

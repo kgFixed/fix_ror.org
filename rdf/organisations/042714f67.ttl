@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/042714f67> 
+    a org:Organization ;
+    rdfs:label "Universidad Virtual del Estado de Guanajuato" ;
+    schema:name "Universidad Virtual del Estado de Guanajuato" ;
+    schema:foundingDate "2007"^^xsd:gYear ;
+    schema:sameAs <https://es.wikipedia.org/wiki/Universidad_Virtual_del_Estado_de_Guanajuato> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-101.90939 20.94704)"^^geo:wktLiteral ;
+        schema:addressLocality "Purísima del Rincón" ;
+    ] ;
+    schema:url <https://uveg.edu.mx> ;
+    schema:sameAs <http://isni.org/isni/0000000404533576> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q65165405> ;
+             .

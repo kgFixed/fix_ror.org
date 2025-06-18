@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03w7j1z86> 
+    a org:Organization ;
+    rdfs:label "Centre de Recherche et de Veille sur les Maladies Emergentes dans l’Océan Indien" ;
+    schema:name "Centre de Recherche et de Veille sur les Maladies Emergentes dans l’Océan Indien" ;
+    schema:foundingDate "2007"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(3.17456 50.69421)"^^geo:wktLiteral ;
+        schema:addressLocality "Roubaix" ;
+    ] ;
+    schema:url <http://www.crvoi.org/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30296082> ;
+             .

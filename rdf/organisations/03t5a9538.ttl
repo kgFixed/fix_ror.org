@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03t5a9538> 
+    a org:Organization ;
+    rdfs:label "Instituto Tecnologico Superior de Misantla" ;
+    schema:name "Instituto Tecnologico Superior de Misantla" ;
+    schema:foundingDate "1994"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00davry38> ;
+        rdfs:label "Tecnológico Nacional de México" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-96.89248 19.98196)"^^geo:wktLiteral ;
+        schema:addressLocality "Misantla" ;
+    ] ;
+    schema:url <https://misantla.tecnm.mx> ;
+    schema:sameAs <http://isni.org/isni/0000000417703984> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q24880628> ;
+             .

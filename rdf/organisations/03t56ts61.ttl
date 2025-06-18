@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03t56ts61> 
+    a org:Organization ;
+    rdfs:label "Livingstone College" ;
+    schema:name "Livingstone College" ;
+    schema:foundingDate "1879"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Livingstone_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-80.47423 35.67097)"^^geo:wktLiteral ;
+        schema:addressLocality "Salisbury" ;
+    ] ;
+    schema:url <http://www.livingstone.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000088620124> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6659715> ;
+             .

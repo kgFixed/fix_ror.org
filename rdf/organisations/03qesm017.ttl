@@ -1,0 +1,96 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03qesm017> 
+    a org:Organization ;
+    rdfs:label "Southern Health NHS Foundation Trust" ;
+    schema:name "Southern Health NHS Foundation Trust" ;
+    schema:foundingDate "2011"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Southern_Health_NHS_Foundation_Trust> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01wx3s220> ;
+        rdfs:label "Alton Community Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00p5pgq41> ;
+        rdfs:label "Elmleigh Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03774pf85> ;
+        rdfs:label "Fareham Community Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04rxffs27> ;
+        rdfs:label "Fleet Community Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05be09h62> ;
+        rdfs:label "Fordingbridge Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/055qs4r72> ;
+        rdfs:label "Gosport War Memorial Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05pvtn103> ;
+        rdfs:label "Hythe Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/035xbae69> ;
+        rdfs:label "Lymington New Forest Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02jb7ng92> ;
+        rdfs:label "Moorgreen Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01bnxkh93> ;
+        rdfs:label "Petersfield Community Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05myvnr67> ;
+        rdfs:label "Romsey Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03qc71575> ;
+        rdfs:label "Western Community Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.40428 50.90395)"^^geo:wktLiteral ;
+        schema:addressLocality "Southampton" ;
+    ] ;
+    schema:url <http://www.southernhealth.nhs.uk/> ;
+    schema:sameAs <http://isni.org/isni/0000000404654159> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q17062049> ;
+             .

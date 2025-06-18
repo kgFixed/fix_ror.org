@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03pvs5g92> 
+    a org:Organization ;
+    rdfs:label "University of Wollongong Malaysia" ;
+    schema:name "University of Wollongong Malaysia" ;
+    schema:foundingDate "1983"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/UOW_Malaysia> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00jtmb277> ;
+        rdfs:label "University of Wollongong" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(101.53281 3.08507)"^^geo:wktLiteral ;
+        schema:addressLocality "Shah Alam" ;
+    ] ;
+    schema:url <https://www.uow.edu.my> ;
+    schema:sameAs <http://isni.org/isni/0000000093551442> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6328148> ;
+             .

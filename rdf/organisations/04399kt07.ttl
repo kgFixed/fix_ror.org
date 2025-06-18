@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04399kt07> 
+    a org:Organization ;
+    rdfs:label "Takasaki Advanced Radiation Research Institute" ;
+    schema:name "Takasaki Advanced Radiation Research Institute" ;
+    schema:foundingDate "2005"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/020rbyg91> ;
+        rdfs:label "National Institutes for Quantum Science and Technology" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(139.01667 36.33333)"^^geo:wktLiteral ;
+        schema:addressLocality "Takasaki" ;
+    ] ;
+    schema:url <https://www.qst.go.jp/site/taka> ;
+    schema:sameAs <http://isni.org/isni/0000000090459544> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q39652817> ;
+             .

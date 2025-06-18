@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03xjasx48> 
+    a org:Organization ;
+    rdfs:label "Semikron (Slovakia)" ;
+    schema:name "Semikron (Slovakia)" ;
+    schema:foundingDate "1951"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Semikron> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02pvszw76> ;
+        rdfs:label "Semikron (Germany)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(17.7226 48.61973)"^^geo:wktLiteral ;
+        schema:addressLocality "Vrbové" ;
+    ] ;
+    schema:url <http://www.semikron.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30338414> ;
+             .

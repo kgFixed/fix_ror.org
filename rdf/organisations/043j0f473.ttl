@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/043j0f473> 
+    a org:Organization ;
+    rdfs:label "German Center for Neurodegenerative Diseases" ;
+    schema:name "German Center for Neurodegenerative Diseases" ;
+    schema:foundingDate "2009"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/German_Center_for_Neurodegenerative_Diseases> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0281dp749> ;
+        rdfs:label "Helmholtz Association of German Research Centres" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(7.09549 50.73438)"^^geo:wktLiteral ;
+        schema:addressLocality "Bonn" ;
+    ] ;
+    schema:url <https://www.dzne.de/> ;
+    schema:sameAs <http://isni.org/isni/0000000404380426> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1206136> ;
+             .

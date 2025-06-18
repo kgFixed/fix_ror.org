@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03q1ded50> 
+    a org:Organization ;
+    rdfs:label "Midrand Graduate Institute" ;
+    schema:name "Midrand Graduate Institute" ;
+    schema:foundingDate "1989"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Midrand_Graduate_Institute> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(28.118 -25.976)"^^geo:wktLiteral ;
+        schema:addressLocality "Midrand" ;
+    ] ;
+    schema:url <https://www.mgi.ac.za/> ;
+    schema:sameAs <http://isni.org/isni/0000000404705657> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6842964> ;
+             .

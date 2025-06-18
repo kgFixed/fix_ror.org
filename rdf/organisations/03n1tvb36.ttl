@@ -1,0 +1,26 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03n1tvb36> 
+    a org:Organization ;
+    rdfs:label "Humanitas Mater Domini" ;
+    schema:name "Humanitas Mater Domini" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05d538656> ;
+        rdfs:label "IRCCS Humanitas Research Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(8.89616 45.61079)"^^geo:wktLiteral ;
+        schema:addressLocality "Castellanza" ;
+    ] ;
+    schema:url <http://www.materdomini.it/> ;
+     .

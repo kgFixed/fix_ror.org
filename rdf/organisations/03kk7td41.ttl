@@ -1,0 +1,67 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/03kk7td41> 
+    a org:Organization ;
+    rdfs:label "Cardiff University" ;
+    schema:name "Cardiff University" ;
+    schema:foundingDate "1883"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Cardiff_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0526zh358> ;
+        rdfs:label "Life Sciences Research Network Wales" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01p830915> ;
+        rdfs:label "Morriston Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04fgpet95> ;
+        rdfs:label "University Hospital of Wales" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00xc08717> ;
+        rdfs:label "Whitchurch Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/022p86748> ;
+        rdfs:label "GW4 Facility for High-Resolution Electron Cryo-Microscopy" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/000vekr11> ;
+        rdfs:label "GW4" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03y0ymy78> ;
+        rdfs:label "Wales Centre for Public Policy" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-3.18 51.48)"^^geo:wktLiteral ;
+        schema:addressLocality "Cardiff" ;
+    ] ;
+    schema:url <http://www.cardiff.ac.uk/> ;
+    schema:sameAs <http://isni.org/isni/0000000108075670> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1035745> ;
+             .

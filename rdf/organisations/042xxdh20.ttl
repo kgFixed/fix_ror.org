@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/042xxdh20> 
+    a org:Organization ;
+    rdfs:label "Ludwigshafen University of Business and Society" ;
+    schema:name "Ludwigshafen University of Business and Society" ;
+    schema:foundingDate "1965"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Ludwigshafen_University_of_Applied_Sciences> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(8.44641 49.48121)"^^geo:wktLiteral ;
+        schema:addressLocality "Ludwigshafen am Rhein" ;
+    ] ;
+    schema:url <https://www.hwg-lu.de> ;
+    schema:sameAs <http://isni.org/isni/0000000406474338> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1622125> ;
+             .

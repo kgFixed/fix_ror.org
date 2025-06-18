@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0430rna51> 
+    a org:Organization ;
+    rdfs:label "Christopher and Dana Reeve Foundation" ;
+    schema:name "Christopher and Dana Reeve Foundation" ;
+    schema:foundingDate "1982"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Christopher_and_Dana_Reeve_Foundation> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-74.32543 40.74788)"^^geo:wktLiteral ;
+        schema:addressLocality "Short Hills" ;
+    ] ;
+    schema:url <http://www.christopherreeve.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000103026132> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3075422> ;
+             .
