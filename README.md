@@ -92,4 +92,17 @@ from sema.subyt import (
 ```
 Cela ne devrait pas s'afficher en rouge si les installations ont bien fonctionnées.
 
-Au lieu de cela, une autre approche a été abordé et utilisé
+Au lieu de cela, une autre approche a été abordé et utilisée. En effet voici le code:
+
+```
+from sema.subyt import Subyt
+
+Subyt(
+    template_name="template.ttl",
+    template_folder=str(Path(template_path).parent),
+    sink=str(Path(output_path).resolve()),
+    extra_sources={"qres": str(Path(json_path).resolve())},
+).process()
+```
+
+C'est l'utilisation de la classe de subyt qui nous évite de nombreuses étapes directement faite par la classe elle même.
