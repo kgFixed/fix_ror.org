@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04tp44r29> 
+    a org:Organization ;
+    rdfs:label "Anton Paar (Austria)" ;
+    schema:name "Anton Paar (Austria)" ;
+    schema:foundingDate "1922"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Anton_Paar> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01ag4vf25> ;
+        rdfs:label "Anton Paar (Switzerland)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/037tmrg70> ;
+        rdfs:label "Anton Paar (United Kingdom)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05ts5ga89> ;
+        rdfs:label "Anton Paar (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(15.45 47.06667)"^^geo:wktLiteral ;
+        schema:addressLocality "Graz" ;
+    ] ;
+    schema:url <https://www.anton-paar.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000404887112> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30255358> ;
+             .

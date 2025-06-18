@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04v0v0306> 
+    a org:Organization ;
+    rdfs:label "European Association for the Study of Diabetes" ;
+    schema:name "European Association for the Study of Diabetes" ;
+    schema:foundingDate "1965"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/European_Association_for_the_Study_of_Diabetes> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05tgz4m05> ;
+        rdfs:label "European Foundation for the Study of Diabetes" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(6.77616 51.22172)"^^geo:wktLiteral ;
+        schema:addressLocality "Düsseldorf" ;
+    ] ;
+    schema:url <https://www.easd.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000101869865> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1376332> ;
+             .

@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04ptve456> 
+    a org:Organization ;
+    rdfs:label "Dominikanerkloster Prenzlau" ;
+    schema:name "Dominikanerkloster Prenzlau" ;
+    schema:foundingDate "1250"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(13.86261 53.31625)"^^geo:wktLiteral ;
+        schema:addressLocality "Prenzlau" ;
+    ] ;
+    schema:url <https://www.prenzlau.eu/cms/detail.php/land_bb_boa_01.c.362837.de> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q56572601> ;
+             .

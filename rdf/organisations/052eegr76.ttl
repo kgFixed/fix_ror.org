@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/052eegr76> 
+    a org:Organization ;
+    rdfs:label "National Health and Family Planning Commission" ;
+    schema:name "National Health and Family Planning Commission" ;
+    schema:foundingDate "2013"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/National_Health_and_Family_Planning_Commission> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/018zra666> ;
+        rdfs:label "Health and Family Planning Commission of Hubei Province" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/003cpqh10> ;
+        rdfs:label "State Administration of Traditional Chinese Medicine of the People's Republic of China" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00njsck89> ;
+        rdfs:label "China Health Promotion Foundation" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/054659c28> ;
+        rdfs:label "State Key Laboratory of Reproductive Biology for Family Planning" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02fzqav45> ;
+        rdfs:label "State Council of the People's Republic of China" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(116.39723 39.9075)"^^geo:wktLiteral ;
+        schema:addressLocality "Beijing" ;
+    ] ;
+    schema:url <http://www.nhfpc.gov.cn/> ;
+    schema:sameAs <http://isni.org/isni/0000000417693691> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7477846> ;
+             .

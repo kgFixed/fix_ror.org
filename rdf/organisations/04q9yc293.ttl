@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04q9yc293> 
+    a org:Organization ;
+    rdfs:label "Universitas Tama Jagakarsa" ;
+    schema:name "Universitas Tama Jagakarsa" ;
+    schema:foundingDate "1985"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(106.84513 -6.21462)"^^geo:wktLiteral ;
+        schema:addressLocality "Jakarta" ;
+    ] ;
+    schema:url <http://www.jagakarsa.ac.id> ;
+    schema:sameAs <http://isni.org/isni/0000000404990451> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q28950092> ;
+             .

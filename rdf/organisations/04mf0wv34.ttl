@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04mf0wv34> 
+    a org:Organization ;
+    rdfs:label "CEA LETI" ;
+    schema:name "CEA LETI" ;
+    schema:foundingDate "1967"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/CEA-Leti:_Laboratoire_d%27%C3%A9lectronique_des_technologies_de_l%27information> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02ggzyd20> ;
+        rdfs:label "Direction de la Recherche Technologique" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(5.71479 45.17869)"^^geo:wktLiteral ;
+        schema:addressLocality "Grenoble" ;
+    ] ;
+    schema:url <http://www-leti.cea.fr/fr> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q1023249> ;
+             .

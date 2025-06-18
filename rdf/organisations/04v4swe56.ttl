@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04v4swe56> 
+    a org:Organization ;
+    rdfs:label "Uganda Martyrs University" ;
+    schema:name "Uganda Martyrs University" ;
+    schema:foundingDate "1993"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Uganda_Martyrs_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/002kk4g03> ;
+        rdfs:label "Nkozi Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0331bk778> ;
+        rdfs:label "Nsambya Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04hfdry06> ;
+        rdfs:label "Virika Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(32.58219 0.31628)"^^geo:wktLiteral ;
+        schema:addressLocality "Kampala" ;
+    ] ;
+    schema:url <https://umu.ac.ug> ;
+    schema:sameAs <http://isni.org/isni/000000012173196X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7877609> ;
+             .

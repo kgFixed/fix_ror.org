@@ -1,0 +1,84 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04vzsq290> 
+    a org:Organization ;
+    rdfs:label "Mississippi Alabama Sea Grant Consortium" ;
+    schema:name "Mississippi Alabama Sea Grant Consortium" ;
+    schema:foundingDate "1972"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Other" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02z5nhe81> ;
+        rdfs:label "National Oceanic and Atmospheric Administration" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02v80fc35> ;
+        rdfs:label "Auburn University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01mfrg562> ;
+        rdfs:label "Dauphin Island Sea Lab" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01ecnnp60> ;
+        rdfs:label "Jackson State University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0432jq872> ;
+        rdfs:label "Mississippi State University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03xrrjk67> ;
+        rdfs:label "University of Alabama" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/008s83205> ;
+        rdfs:label "University of Alabama at Birmingham" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02teq1165> ;
+        rdfs:label "University of Mississippi" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01s7b5y08> ;
+        rdfs:label "University of South Alabama" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0270vfa57> ;
+        rdfs:label "University of Southern Mississippi" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-88.82781 30.41131)"^^geo:wktLiteral ;
+        schema:addressLocality "Ocean Springs" ;
+    ] ;
+    schema:url <http://www.masgc.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000104006328> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30258934> ;
+             .

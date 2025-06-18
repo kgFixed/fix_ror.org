@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04vk90r05> 
+    a org:Organization ;
+    rdfs:label "Sochi Institute of Economics and Information Technology" ;
+    schema:name "Sochi Institute of Economics and Information Technology" ;
+    schema:foundingDate "1996"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(39.72569 43.59917)"^^geo:wktLiteral ;
+        schema:addressLocality "Sochi" ;
+    ] ;
+    schema:url <http://www.sieit.ru/> ;
+     .

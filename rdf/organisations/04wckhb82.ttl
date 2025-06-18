@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04wckhb82> 
+    a org:Organization ;
+    rdfs:label "University Hospital Hradec Králové" ;
+    schema:name "University Hospital Hradec Králové" ;
+    schema:foundingDate "1887"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Funder" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05k238v14> ;
+        rdfs:label "University of Hradec Králové" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(15.83277 50.20923)"^^geo:wktLiteral ;
+        schema:addressLocality "Hradec Králové" ;
+    ] ;
+    schema:url <https://www.fnhk.cz/> ;
+    schema:sameAs <http://isni.org/isni/0000000406092284> ;
+             .

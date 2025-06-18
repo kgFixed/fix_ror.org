@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04xzj3x20> 
+    a org:Organization ;
+    rdfs:label "LAC+USC Medical Center" ;
+    schema:name "LAC+USC Medical Center" ;
+    schema:foundingDate "1878"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/LAC%2BUSC_Medical_Center> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03xyjdy64> ;
+        rdfs:label "Los Angeles County Department of Health Services" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03taz7m60> ;
+        rdfs:label "University of Southern California" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-118.24368 34.05223)"^^geo:wktLiteral ;
+        schema:addressLocality "Los Angeles" ;
+    ] ;
+    schema:url <http://dhs.lacounty.gov/wps/portal/dhs/lacusc/> ;
+    schema:sameAs <http://isni.org/isni/0000000100841895> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6682058> ;
+             .

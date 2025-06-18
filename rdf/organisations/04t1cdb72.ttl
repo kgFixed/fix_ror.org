@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04t1cdb72> 
+    a org:Organization ;
+    rdfs:label "Institute of Geographic Sciences and Natural Resources Research" ;
+    schema:name "Institute of Geographic Sciences and Natural Resources Research" ;
+    schema:foundingDate "1999"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03w41by72> ;
+        rdfs:label "State Key Laboratory of Resources and Environmental Information System" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/034t30j35> ;
+        rdfs:label "Chinese Academy of Sciences" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(116.39723 39.9075)"^^geo:wktLiteral ;
+        schema:addressLocality "Beijing" ;
+    ] ;
+    schema:url <http://english.igsnrr.cas.cn/> ;
+    schema:sameAs <http://isni.org/isni/0000000086158685> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q22100889> ;
+             .

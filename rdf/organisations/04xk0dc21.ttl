@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04xk0dc21> 
+    a org:Organization ;
+    rdfs:label "Burdur Mehmet Akif Ersoy Üniversitesi" ;
+    schema:name "Burdur Mehmet Akif Ersoy Üniversitesi" ;
+    schema:foundingDate "2006"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Mehmet_Akif_Ersoy_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(30.29083 37.72028)"^^geo:wktLiteral ;
+        schema:addressLocality "Burdur" ;
+    ] ;
+    schema:url <https://www.mehmetakif.edu.tr> ;
+    schema:sameAs <http://isni.org/isni/000000040386420X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q924465> ;
+             .

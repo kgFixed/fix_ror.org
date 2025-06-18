@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0500yaj74> 
+    a org:Organization ;
+    rdfs:label "Victoria Police" ;
+    schema:name "Victoria Police" ;
+    schema:foundingDate "1853"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02xvc5r05> ;
+        rdfs:label "Government of Victoria" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(144.95052 -37.8149)"^^geo:wktLiteral ;
+        schema:addressLocality "Docklands" ;
+    ] ;
+    schema:url <http://www.police.vic.gov.au/> ;
+     .

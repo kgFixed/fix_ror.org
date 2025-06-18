@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04wpdcq98> 
+    a org:Organization ;
+    rdfs:label "Institut de recherche sur le cinéma et l'audiovisuel" ;
+    schema:name "Institut de recherche sur le cinéma et l'audiovisuel" ;
+    schema:foundingDate "1983"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03z6jp965> ;
+        rdfs:label "Université Sorbonne Nouvelle" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.3488 48.85341)"^^geo:wktLiteral ;
+        schema:addressLocality "Paris" ;
+    ] ;
+    schema:url <https://www.sorbonne-nouvelle.fr/ircav-institut-de-recherche-sur-le-cinema-et-l-audiovisuel-ea-185-3445.kjsp> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q51782255> ;
+             .

@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0515mqy80> 
+    a org:Organization ;
+    rdfs:label "Nortek (United Kingdom)" ;
+    schema:name "Nortek (United Kingdom)" ;
+    schema:foundingDate "1967"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05tdzsq49> ;
+        rdfs:label "Nortek (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-2.12139 52.48173)"^^geo:wktLiteral ;
+        schema:addressLocality "Brierley Hill" ;
+    ] ;
+    schema:url <http://www.nortek.com/> ;
+     .

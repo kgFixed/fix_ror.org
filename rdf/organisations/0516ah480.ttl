@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0516ah480> 
+    a org:Organization ;
+    rdfs:label "The Graduate University for Advanced Studies, SOKENDAI" ;
+    schema:name "The Graduate University for Advanced Studies, SOKENDAI" ;
+    schema:foundingDate "1988"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Graduate_University_for_Advanced_Studies> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(139.57733 35.27651)"^^geo:wktLiteral ;
+        schema:addressLocality "Hayama" ;
+    ] ;
+    schema:url <https://www.soken.ac.jp/en/> ;
+    schema:sameAs <http://isni.org/isni/000000041763208X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2983844> ;
+             .

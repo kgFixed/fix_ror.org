@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04rx5bj15> 
+    a org:Organization ;
+    rdfs:label "Petnica Science Center" ;
+    schema:name "Petnica Science Center" ;
+    schema:foundingDate "1982"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Petnica_Science_Center> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(19.89821 44.27513)"^^geo:wktLiteral ;
+        schema:addressLocality "Valjevo" ;
+    ] ;
+    schema:url <https://pi.petnica.rs/> ;
+    schema:sameAs <http://isni.org/isni/0000000406443566> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7178472> ;
+             .

@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04xkqms46> 
+    a org:Organization ;
+    rdfs:label "European Multidisciplinary Seafloor and water column Observatory" ;
+    schema:name "European Multidisciplinary Seafloor and water column Observatory" ;
+    schema:foundingDate "2016"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/European_Multidisciplinary_Seafloor_and_water_column_Observatory> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00qps9a02> ;
+        rdfs:label "Istituto Nazionale di Geofisica e Vulcanologia" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0312sjw67> ;
+        rdfs:label "EMSO-France" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(12.51133 41.89193)"^^geo:wktLiteral ;
+        schema:addressLocality "Rome" ;
+    ] ;
+    schema:url <https://www.emso.eu> ;
+    schema:sameAs <http://isni.org/isni/0000000506322948> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q17075202> ;
+             .

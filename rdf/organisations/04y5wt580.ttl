@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04y5wt580> 
+    a org:Organization ;
+    rdfs:label "Overhalla Kommune" ;
+    schema:name "Overhalla Kommune" ;
+    schema:foundingDate "1838"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(11.94912 64.49447)"^^geo:wktLiteral ;
+        schema:addressLocality "Ranemsletta" ;
+    ] ;
+    schema:url <http://www.overhalla.kommune.no/> ;
+     .

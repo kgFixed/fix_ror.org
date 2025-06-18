@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04tsk2644> 
+    a org:Organization ;
+    rdfs:label "Ruhr University Bochum" ;
+    schema:name "Ruhr University Bochum" ;
+    schema:foundingDate "1962"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Ruhr_University_Bochum> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01z1qnm06> ;
+        rdfs:label "Institute for Advanced Study in the Humanities Essen" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03jqa2c59> ;
+        rdfs:label "Institute for Prevention and Occupational Medicine" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03zcpvf19> ;
+        rdfs:label "University Hospitals of the Ruhr-University of Bochum" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(7.21648 51.48165)"^^geo:wktLiteral ;
+        schema:addressLocality "Bochum" ;
+    ] ;
+    schema:url <https://www.ruhr-uni-bochum.de> ;
+    schema:sameAs <http://isni.org/isni/000000040490981X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q309948> ;
+             .

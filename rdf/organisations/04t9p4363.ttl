@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04t9p4363> 
+    a org:Organization ;
+    rdfs:label "Joseph Ayo Babalola University" ;
+    schema:name "Joseph Ayo Babalola University" ;
+    schema:foundingDate "2006"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Joseph_Ayo_Babalola_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(5.19312 7.25256)"^^geo:wktLiteral ;
+        schema:addressLocality "Akure" ;
+    ] ;
+    schema:url <http://www.jabu.edu.ng/> ;
+    schema:sameAs <http://isni.org/isni/0000000111439471> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q915400> ;
+             .

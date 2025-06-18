@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04v2xzv40> 
+    a org:Organization ;
+    rdfs:label "Building Research Association of New Zealand" ;
+    schema:name "Building Research Association of New Zealand" ;
+    schema:foundingDate "1950"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Other" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(174.85 -41.13333)"^^geo:wktLiteral ;
+        schema:addressLocality "Porirua" ;
+    ] ;
+    schema:url <http://www.branz.co.nz/cms_display.php> ;
+    schema:sameAs <http://isni.org/isni/0000000095149051> ;
+             .

@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04tegn361> 
+    a org:Organization ;
+    rdfs:label "Independent University Banja Luka" ;
+    schema:name "Independent University Banja Luka" ;
+    schema:foundingDate "2005"^^xsd:gYear ;
+    schema:sameAs <https://sr.wikipedia.org/wiki/Nezavisni_univerzitet_Banja_Luka> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(17.19386 44.77842)"^^geo:wktLiteral ;
+        schema:addressLocality "Banja Luka" ;
+    ] ;
+    schema:url <https://nubl.org> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q20436551> ;
+             .

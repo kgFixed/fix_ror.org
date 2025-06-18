@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04w4aze46> 
+    a org:Organization ;
+    rdfs:label "LaGrange College" ;
+    schema:name "LaGrange College" ;
+    schema:foundingDate "1831"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/LaGrange_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-85.03133 33.03929)"^^geo:wktLiteral ;
+        schema:addressLocality "La Grange" ;
+    ] ;
+    schema:url <http://www.lagrange.edu/index.html> ;
+    schema:sameAs <http://isni.org/isni/0000000404178666> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6460745> ;
+             .

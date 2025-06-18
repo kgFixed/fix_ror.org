@@ -1,0 +1,127 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04xs57h96> 
+    a org:Organization ;
+    rdfs:label "University of Liverpool" ;
+    schema:name "University of Liverpool" ;
+    schema:foundingDate "1882"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/University_of_Liverpool> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/047d2d387> ;
+        rdfs:label "Centre for the Observation and Modelling of Earthquakes, Volcanoes and Tectonics" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00ke0d331> ;
+        rdfs:label "Marie Curie Palliative Care Institute Liverpool" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/036g3b009> ;
+        rdfs:label "NERC Environmental Omics Facility" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/008j59125> ;
+        rdfs:label "Aintree University Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02h67vt10> ;
+        rdfs:label "Aintree University Hospitals NHS Foundation Trust" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04z61sd03> ;
+        rdfs:label "Alder Hey Children's Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01r9ea713> ;
+        rdfs:label "Blackpool Victoria Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/041hae580> ;
+        rdfs:label "Countess of Chester Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/000849h34> ;
+        rdfs:label "Liverpool Heart and Chest Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00eysw063> ;
+        rdfs:label "Liverpool Women's Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04q5r0746> ;
+        rdfs:label "Liverpool Womens NHS Foundation Trust" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03tebt685> ;
+        rdfs:label "Malawi-Liverpool-Wellcome Trust Clinical Research Programme" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0298hp073> ;
+        rdfs:label "NIHR Liverpool Pancreatic Biomedical Research Unit" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01ycr6b80> ;
+        rdfs:label "Royal Liverpool University Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02pz3nt69> ;
+        rdfs:label "Truman Bodden Law School" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/05cvxat96> ;
+        rdfs:label "Walton Centre" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/003xxrm77> ;
+        rdfs:label "Wirral Women and Children's Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-2.97794 53.41058)"^^geo:wktLiteral ;
+        schema:addressLocality "Liverpool" ;
+    ] ;
+    schema:url <http://www.liv.ac.uk/> ;
+    schema:sameAs <http://isni.org/isni/0000000419368470> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q499510> ;
+             .

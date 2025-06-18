@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04v3pva14> 
+    a org:Organization ;
+    rdfs:label "Almirall (Germany)" ;
+    schema:name "Almirall (Germany)" ;
+    schema:foundingDate "1943"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Almirall> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03qsven24> ;
+        rdfs:label "Almirall (Spain)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(10.2488 53.51703)"^^geo:wktLiteral ;
+        schema:addressLocality "Reinbek" ;
+    ] ;
+    schema:url <http://www.almirall.de/de/> ;
+    schema:sameAs <http://isni.org/isni/0000000405516030> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30268794> ;
+             .

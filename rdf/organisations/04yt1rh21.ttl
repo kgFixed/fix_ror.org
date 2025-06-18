@@ -1,0 +1,46 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04yt1rh21> 
+    a org:Organization ;
+    rdfs:label "Lifespan" ;
+    schema:name "Lifespan" ;
+    schema:foundingDate "1994"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02mx8nz45> ;
+        rdfs:label "Bradley Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01xq02v66> ;
+        rdfs:label "Hasbro Children's Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01kakjy62> ;
+        rdfs:label "Newport Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01aw9fv09> ;
+        rdfs:label "Rhode Island Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-71.41283 41.82399)"^^geo:wktLiteral ;
+        schema:addressLocality "Providence" ;
+    ] ;
+    schema:url <http://www.lifespan.org/> ;
+    schema:sameAs <http://isni.org/isni/000000040456871X> ;
+             .

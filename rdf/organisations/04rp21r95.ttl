@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04rp21r95> 
+    a org:Organization ;
+    rdfs:label "Long Island University at Riverhead" ;
+    schema:name "Long Island University at Riverhead" ;
+    org:status "withdrawn" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/0324fzh77> ;
+        rdfs:label "Long Island University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-72.66204 40.91704)"^^geo:wktLiteral ;
+        schema:addressLocality "Riverhead" ;
+    ] ;
+    schema:url <http://liu.edu/Riverhead> ;
+    schema:sameAs <http://isni.org/isni/0000000406321585> ;
+             .

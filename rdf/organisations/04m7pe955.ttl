@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04m7pe955> 
+    a org:Organization ;
+    rdfs:label "Carter BloodCare" ;
+    schema:name "Carter BloodCare" ;
+    schema:foundingDate "1951"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Carter_BloodCare> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-97.14307 32.84402)"^^geo:wktLiteral ;
+        schema:addressLocality "Bedford" ;
+    ] ;
+    schema:url <http://www.carterbloodcare.org/> ;
+    schema:sameAs <http://isni.org/isni/000000040617479X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5047130> ;
+             .

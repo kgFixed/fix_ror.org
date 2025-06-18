@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/051b2q112> 
+    a org:Organization ;
+    rdfs:label "ITT (United States)" ;
+    schema:name "ITT (United States)" ;
+    schema:foundingDate "1920"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/ITT_Corporation> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/028kj2697> ;
+        rdfs:label "ITT (Germany)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/053y02f02> ;
+        rdfs:label "ITT (United Kingdom)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-73.76291 41.03399)"^^geo:wktLiteral ;
+        schema:addressLocality "White Plains" ;
+    ] ;
+    schema:url <http://www.itt.com/Home/> ;
+    schema:sameAs <http://isni.org/isni/0000000122204862> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q582418> ;
+             .

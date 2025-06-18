@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04ykhhw18> 
+    a org:Organization ;
+    rdfs:label "West Virginia State University" ;
+    schema:name "West Virginia State University" ;
+    schema:foundingDate "1891"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/West_Virginia_State_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-81.73735 38.36065)"^^geo:wktLiteral ;
+        schema:addressLocality "Dunbar" ;
+    ] ;
+    schema:url <https://wvstateu.edu> ;
+    schema:sameAs <http://isni.org/isni/0000000123745599> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7986919> ;
+             .

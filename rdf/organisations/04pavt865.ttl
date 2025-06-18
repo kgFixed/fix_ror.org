@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04pavt865> 
+    a org:Organization ;
+    rdfs:label "Bulgarian Ship Hydrodynamics Centre" ;
+    schema:name "Bulgarian Ship Hydrodynamics Centre" ;
+    schema:foundingDate "1966"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01x8hew03> ;
+        rdfs:label "Bulgarian Academy of Sciences" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(27.91667 43.21667)"^^geo:wktLiteral ;
+        schema:addressLocality "Varna" ;
+    ] ;
+    schema:url <http://www.bshc.bg/structure/About_Us.htm> ;
+     .

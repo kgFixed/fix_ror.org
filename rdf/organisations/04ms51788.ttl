@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04ms51788> 
+    a org:Organization ;
+    rdfs:label "Westsächsische Hochschule Zwickau" ;
+    schema:name "Westsächsische Hochschule Zwickau" ;
+    schema:foundingDate "1897"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/West_Saxon_University_of_Applied_Sciences_of_Zwickau> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(12.48839 50.72724)"^^geo:wktLiteral ;
+        schema:addressLocality "Zwickau" ;
+    ] ;
+    schema:url <https://www.fh-zwickau.de> ;
+    schema:sameAs <http://isni.org/isni/0000000105425321> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q884503> ;
+             .

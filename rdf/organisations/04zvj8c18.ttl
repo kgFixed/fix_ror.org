@@ -1,0 +1,138 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04zvj8c18> 
+    a org:Organization ;
+    rdfs:label "Research Centre of the Slovenian Academy of Sciences and Arts" ;
+    schema:name "Research Centre of the Slovenian Academy of Sciences and Arts" ;
+    schema:foundingDate "1981"^^xsd:gYear ;
+    schema:sameAs <https://sl.wikipedia.org/wiki/Znanstvenoraziskovalni_center_Slovenske_akademije_znanosti_in_umetnosti> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02car4a12> ;
+        rdfs:label "Institute of Musicology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01ffqaw45> ;
+        rdfs:label "Karst Research Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00kj76376> ;
+        rdfs:label "Anton Melik Geographical Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04jfcs144> ;
+        rdfs:label "Fran Ramovš Institute of the Slovenian Language" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05h5x3r78> ;
+        rdfs:label "Institute of Anthropological and Spatial Studies" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00gkzs980> ;
+        rdfs:label "Institute of Archaeology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03zexf287> ;
+        rdfs:label "Institute of Cultural History" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04zck7a21> ;
+        rdfs:label "Institute of Culture and Memory Studies" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04ybswa04> ;
+        rdfs:label "Institute of Ethnomusicology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02vt3a358> ;
+        rdfs:label "Institute of Philosophy" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/031d6d035> ;
+        rdfs:label "Institute of Slovenian Ethnology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04wgnd003> ;
+        rdfs:label "Institute of Slovenian Literature and Literary Studies" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03ppt4w11> ;
+        rdfs:label "Jovan Hadži Institute of Biology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01y2yb643> ;
+        rdfs:label "Ivan Rakovec Institute of Palaeontology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0503qew83> ;
+        rdfs:label "Slovenian Migration Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02wd6rd97> ;
+        rdfs:label "Sociomedical Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02qr0r046> ;
+        rdfs:label "France Stele Institute of Art History" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01car3s57> ;
+        rdfs:label "Milko Kos Historical Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04evj0n95> ;
+        rdfs:label "Slovenian Academy of Sciences and Arts" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(14.50513 46.05108)"^^geo:wktLiteral ;
+        schema:addressLocality "Ljubljana" ;
+    ] ;
+    schema:url <https://www.zrc-sazu.si/en> ;
+    schema:sameAs <http://isni.org/isni/0000000121765262> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q15977604> ;
+             .

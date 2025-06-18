@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04zsc3j83> 
+    a org:Organization ;
+    rdfs:label "Ministry of Culture and Tourism" ;
+    schema:name "Ministry of Culture and Tourism" ;
+    schema:foundingDate "2018"^^xsd:gYear ;
+    schema:sameAs <https://tr.wikipedia.org/wiki/T%C3%BCrkiye_Cumhuriyeti_K%C3%BClt%C3%BCr_ve_Turizm_Bakanl%C4%B1%C4%9F%C4%B1> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(32.85427 39.91987)"^^geo:wktLiteral ;
+        schema:addressLocality "Ankara" ;
+    ] ;
+    schema:url <https://www.ktb.gov.tr/> ;
+    schema:sameAs <http://isni.org/isni/0000000117815781> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3136957> ;
+             .

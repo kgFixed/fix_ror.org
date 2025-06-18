@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04sfka033> 
+    a org:Organization ;
+    rdfs:label "Mashhad University of Medical Sciences" ;
+    schema:name "Mashhad University of Medical Sciences" ;
+    schema:foundingDate "1949"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Mashhad_University_of_Medical_Sciences> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05n9fs062> ;
+        rdfs:label "Ghaem Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(59.60567 36.29807)"^^geo:wktLiteral ;
+        schema:addressLocality "Mashhad" ;
+    ] ;
+    schema:url <https://www.mums.ac.ir> ;
+    schema:sameAs <http://isni.org/isni/0000000121986209> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q10854129> ;
+             .

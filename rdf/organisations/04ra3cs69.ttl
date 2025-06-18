@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04ra3cs69> 
+    a org:Organization ;
+    rdfs:label "Saudi Arabia Basic Industries (Netherlands)" ;
+    schema:name "Saudi Arabia Basic Industries (Netherlands)" ;
+    schema:foundingDate "1976"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/SABIC> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03nqwhd11> ;
+        rdfs:label "Saudi Arabia Basic Industries (Saudi Arabia)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(5.86944 50.99833)"^^geo:wktLiteral ;
+        schema:addressLocality "Sittard" ;
+    ] ;
+    schema:url <https://www.sabic.com/europe/en/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q29123930> ;
+             .

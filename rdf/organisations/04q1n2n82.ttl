@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04q1n2n82> 
+    a org:Organization ;
+    rdfs:label "Shizuoka University of Art and Culture" ;
+    schema:name "Shizuoka University of Art and Culture" ;
+    schema:foundingDate "1999"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Shizuoka_University_of_Art_and_Culture> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(137.73333 34.7)"^^geo:wktLiteral ;
+        schema:addressLocality "Hamamatsu" ;
+    ] ;
+    schema:url <https://www.suac.ac.jp> ;
+    schema:sameAs <http://isni.org/isni/0000000403756057> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4981841> ;
+             .

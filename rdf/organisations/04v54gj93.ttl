@@ -1,0 +1,79 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04v54gj93> 
+    a org:Organization ;
+    rdfs:label "Cambridge University Hospitals NHS Foundation Trust" ;
+    schema:name "Cambridge University Hospitals NHS Foundation Trust" ;
+    schema:foundingDate "1998"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Cambridge_University_Hospitals_NHS_Foundation_Trust> ;
+    org:status "active" ;
+    org:classification "Funder" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/055vbxf86> ;
+        rdfs:label "Addenbrooke's Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02d2g0205> ;
+        rdfs:label "NIHR Cambridge Dementia Biomedical Research Unit" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01ncx3917> ;
+        rdfs:label "Rosie Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04d87jn14> ;
+        rdfs:label "Royston Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01t881g83> ;
+        rdfs:label "Saffron Walden Community Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0264dxb48> ;
+        rdfs:label "Wellcome/MRC Institute of Metabolic Science" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05m8dr349> ;
+        rdfs:label "NIHR Cambridge Biomedical Research Centre" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04ssevy49> ;
+        rdfs:label "Addenbrooke's Charitable Trust" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05x3amg60> ;
+        rdfs:label "Cambridge IVF" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(0.11667 52.2)"^^geo:wktLiteral ;
+        schema:addressLocality "Cambridge" ;
+    ] ;
+    schema:url <http://www.cuh.org.uk/> ;
+    schema:sameAs <http://isni.org/isni/0000000403838386> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5025595> ;
+             .

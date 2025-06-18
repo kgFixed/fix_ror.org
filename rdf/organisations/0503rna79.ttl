@@ -1,0 +1,20 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0503rna79> 
+    a org:Organization ;
+    rdfs:label "National Surimi Manufacturers Association" ;
+    schema:name "National Surimi Manufacturers Association" ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(144.26971 44.02127)"^^geo:wktLiteral ;
+        schema:addressLocality "Abashiri" ;
+    ] ;
+    schema:url <https://surimi.org> ;
+     .

@@ -1,0 +1,48 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04kw5s604> 
+    a org:Organization ;
+    rdfs:label "Tektronix (United States)" ;
+    schema:name "Tektronix (United States)" ;
+    schema:foundingDate "1946"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Tektronix> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/023mbkk92> ;
+        rdfs:label "Tektronix (Canada)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02zkwry50> ;
+        rdfs:label "Tektronix (Germany)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04v7gxe28> ;
+        rdfs:label "Tektronix (Japan)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00kheej15> ;
+        rdfs:label "Tektronix (Switzerland)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-122.80371 45.48706)"^^geo:wktLiteral ;
+        schema:addressLocality "Beaverton" ;
+    ] ;
+    schema:url <http://www.tek.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000089386739> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1347679> ;
+             .

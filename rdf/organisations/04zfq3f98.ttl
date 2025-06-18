@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04zfq3f98> 
+    a org:Organization ;
+    rdfs:label "University of Kordofan" ;
+    schema:name "University of Kordofan" ;
+    schema:foundingDate "1990"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/University_of_Kordofan> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(30.21669 13.18421)"^^geo:wktLiteral ;
+        schema:addressLocality "Al-Ubayyid" ;
+    ] ;
+    schema:url <http://kordofan.edu.sd/> ;
+    schema:sameAs <http://isni.org/isni/0000000404476997> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7895609> ;
+             .

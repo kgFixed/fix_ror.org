@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04p162q02> 
+    a org:Organization ;
+    rdfs:label "Hershel Woody Williams VA Medical Center" ;
+    schema:name "Hershel Woody Williams VA Medical Center" ;
+    schema:foundingDate "1932"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01rybzk66> ;
+        rdfs:label "VA Capitol Health Care Network" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-82.44515 38.41925)"^^geo:wktLiteral ;
+        schema:addressLocality "Huntington" ;
+    ] ;
+    schema:url <https://www.huntington.va.gov/> ;
+     .

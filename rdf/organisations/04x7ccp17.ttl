@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04x7ccp17> 
+    a org:Organization ;
+    rdfs:label "Babasaheb Bhimrao Ambedkar University" ;
+    schema:name "Babasaheb Bhimrao Ambedkar University" ;
+    schema:foundingDate "1996"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Babasaheb_Bhimrao_Ambedkar_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00pftgq30> ;
+        rdfs:label "DST Centre for Policy Research" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(80.92313 26.83928)"^^geo:wktLiteral ;
+        schema:addressLocality "Lucknow" ;
+    ] ;
+    schema:url <http://bbauadmissions.in/> ;
+    schema:sameAs <http://isni.org/isni/0000000405065997> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q797585> ;
+             .

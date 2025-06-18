@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04xvhsp09> 
+    a org:Organization ;
+    rdfs:label "Västerbotten County" ;
+    schema:name "Västerbotten County" ;
+    schema:foundingDate "1638"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/V%C3%A4sterbotten_County> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(20.25972 63.82842)"^^geo:wktLiteral ;
+        schema:addressLocality "Umeå" ;
+    ] ;
+    schema:url <https://www.regionvasterbotten.se> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q104877> ;
+             .

@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0536g5z46> 
+    a org:Organization ;
+    rdfs:label "International Network of Health Promoting Hospitals & Health Services" ;
+    schema:name "International Network of Health Promoting Hospitals & Health Services" ;
+    schema:foundingDate "2011"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(14.33333 46.33333)"^^geo:wktLiteral ;
+        schema:addressLocality "Golnik" ;
+    ] ;
+    schema:url <http://www.hphnet.org/index.php?option=com_content&view=article&id=2016:national-network-of-slovenia&catid=152&Itemid=3> ;
+     .

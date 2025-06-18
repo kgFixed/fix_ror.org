@@ -1,0 +1,61 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04ypx8c21> 
+    a org:Organization ;
+    rdfs:label "Zhengzhou University" ;
+    schema:name "Zhengzhou University" ;
+    schema:foundingDate "1956"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Zhengzhou_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01wfgh551> ;
+        rdfs:label "Fifth Affiliated Hospital of Zhengzhou University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/056swr059> ;
+        rdfs:label "First Affiliated Hospital of Zhengzhou University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03f72zw41> ;
+        rdfs:label "Henan Provincial People's Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03cg5ap92> ;
+        rdfs:label "Luoyang Central Hospital Affiliated to Zhengzhou University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/039nw9e11> ;
+        rdfs:label "Third Affiliated Hospital of Zhengzhou University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/041r75465> ;
+        rdfs:label "Zhengzhou Central Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(113.64861 34.75778)"^^geo:wktLiteral ;
+        schema:addressLocality "Zhengzhou" ;
+    ] ;
+    schema:url <https://www.zzu.edu.cn> ;
+    schema:sameAs <http://isni.org/isni/0000000121893846> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q649895> ;
+             .

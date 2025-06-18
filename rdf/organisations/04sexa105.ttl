@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04sexa105> 
+    a org:Organization ;
+    rdfs:label "Qazvin University of Medical Sciences" ;
+    schema:name "Qazvin University of Medical Sciences" ;
+    schema:foundingDate "1984"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Qazvin_University_of_Medical_Sciences> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01rs0ht88> ;
+        rdfs:label "Ministry of Health and Medical Education" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(50.0041 36.26877)"^^geo:wktLiteral ;
+        schema:addressLocality "Qazvin" ;
+    ] ;
+    schema:url <http://www.qums.ac.ir/> ;
+    schema:sameAs <http://isni.org/isni/000000040405433X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5927506> ;
+             .

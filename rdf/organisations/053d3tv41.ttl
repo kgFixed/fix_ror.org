@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/053d3tv41> 
+    a org:Organization ;
+    rdfs:label "International University of Health and Welfare" ;
+    schema:name "International University of Health and Welfare" ;
+    schema:foundingDate "1995"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/International_University_of_Health_and_Welfare> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04ds03q08> ;
+        rdfs:label "Mita Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(140.03333 36.86667)"^^geo:wktLiteral ;
+        schema:addressLocality "Ōtawara" ;
+    ] ;
+    schema:url <http://www.iuhw.ac.jp/en/index.html> ;
+    schema:sameAs <http://isni.org/isni/0000000405313030> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q11422387> ;
+             .

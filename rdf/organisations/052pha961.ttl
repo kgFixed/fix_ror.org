@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/052pha961> 
+    a org:Organization ;
+    rdfs:label "National School of Leadership in Education" ;
+    schema:name "National School of Leadership in Education" ;
+    schema:foundingDate "1995"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(14.35561 46.23887)"^^geo:wktLiteral ;
+        schema:addressLocality "Kranj" ;
+    ] ;
+    schema:url <http://en.solazaravnatelje.si/> ;
+    schema:sameAs <http://isni.org/isni/0000000406326677> ;
+             .

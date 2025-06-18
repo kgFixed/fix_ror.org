@@ -1,0 +1,84 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0517ad239> 
+    a org:Organization ;
+    rdfs:label "Cornwall Partnership NHS Foundation Trust" ;
+    schema:name "Cornwall Partnership NHS Foundation Trust" ;
+    schema:foundingDate "2002"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Cornwall_Partnership_NHS_Foundation_Trust> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02q2vkv24> ;
+        rdfs:label "Bodmin Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03rhw7p81> ;
+        rdfs:label "Camborne Redruth Community Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01m4ay116> ;
+        rdfs:label "Edward Hain Community Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02kkv7f68> ;
+        rdfs:label "Falmouth Community Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01my6jy29> ;
+        rdfs:label "Helston Community Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/057jy1g44> ;
+        rdfs:label "Liskeard Community Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00yb46674> ;
+        rdfs:label "Newquay Community Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05m58vw43> ;
+        rdfs:label "St Austell Community Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/012g3p565> ;
+        rdfs:label "St Barnabas Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04h6jt451> ;
+        rdfs:label "Stratton Community Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-5.05436 50.26526)"^^geo:wktLiteral ;
+        schema:addressLocality "Truro" ;
+    ] ;
+    schema:url <https://www.cornwallft.nhs.uk/> ;
+    schema:sameAs <http://isni.org/isni/000000040466105X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q16988175> ;
+             .

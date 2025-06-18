@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/050nk7b98> 
+    a org:Organization ;
+    rdfs:label "Universitas Ibnu Sina" ;
+    schema:name "Universitas Ibnu Sina" ;
+    schema:foundingDate "2019"^^xsd:gYear ;
+    schema:sameAs <https://id.wikipedia.org/wiki/UNIVERSITAS_IBNU_SINA> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(104.02851 1.05211)"^^geo:wktLiteral ;
+        schema:addressLocality "Kota Batam" ;
+    ] ;
+    schema:url <http://uis.ac.id> ;
+    schema:sameAs <http://isni.org/isni/0000000510899037> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q109913120> ;
+             .

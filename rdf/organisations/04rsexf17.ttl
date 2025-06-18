@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04rsexf17> 
+    a org:Organization ;
+    rdfs:label "Stemcell Technologies" ;
+    schema:name "Stemcell Technologies" ;
+    schema:foundingDate "1993"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Stemcell_Technologies> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-123.11934 49.24966)"^^geo:wktLiteral ;
+        schema:addressLocality "Vancouver" ;
+    ] ;
+    schema:url <http://www.stemcell.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000406409958> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7607309> ;
+             .

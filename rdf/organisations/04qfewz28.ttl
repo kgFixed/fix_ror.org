@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04qfewz28> 
+    a org:Organization ;
+    rdfs:label "Crimea State Medical University named after S. I. Georgievsky" ;
+    schema:name "Crimea State Medical University named after S. I. Georgievsky" ;
+    schema:foundingDate "1931"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Medical_Academy_named_after_S.I._Georgievsky_of_Vernadsky_CFU> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(34.11079 44.95719)"^^geo:wktLiteral ;
+        schema:addressLocality "Simferopol" ;
+    ] ;
+    schema:url <http://www.ma.cfuv.ru/page/show/docid/5047> ;
+    schema:sameAs <http://isni.org/isni/0000000403999438> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2426185> ;
+             .

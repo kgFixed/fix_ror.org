@@ -1,0 +1,20 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04rahxj70> 
+    a org:Organization ;
+    rdfs:label "Arkansas Land and Community Development" ;
+    schema:name "Arkansas Land and Community Development" ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-91.19457 34.88787)"^^geo:wktLiteral ;
+        schema:addressLocality "Brinkley" ;
+    ] ;
+    schema:url <http://alfdc.webs.com/> ;
+     .

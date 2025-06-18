@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/052bnvt46> 
+    a org:Organization ;
+    rdfs:label "Institut National des Postes et Télécommunications" ;
+    schema:name "Institut National des Postes et Télécommunications" ;
+    schema:foundingDate "1961"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05mktfw05> ;
+        rdfs:label "National Telecommunications Regulatory Agency" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-6.83255 34.01325)"^^geo:wktLiteral ;
+        schema:addressLocality "Rabat" ;
+    ] ;
+    schema:url <http://www.inpt.ac.ma/> ;
+    schema:sameAs <http://isni.org/isni/000000011955575X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3152433> ;
+             .

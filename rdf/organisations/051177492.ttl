@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/051177492> 
+    a org:Organization ;
+    rdfs:label "BP (Canada)" ;
+    schema:name "BP (Canada)" ;
+    schema:foundingDate "1908"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01zctcs90> ;
+        rdfs:label "BP (United Kingdom)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-114.08529 51.05011)"^^geo:wktLiteral ;
+        schema:addressLocality "Calgary" ;
+    ] ;
+    schema:url <http://www.bp.com/en/global/corporate/about-bp/bp-worldwide/bp-in-canada.html> ;
+     .

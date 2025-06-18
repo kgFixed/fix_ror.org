@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/051ar9e27> 
+    a org:Organization ;
+    rdfs:label "St Albans City Hospital" ;
+    schema:name "St Albans City Hospital" ;
+    schema:foundingDate "1838"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/St_Albans_City_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03e4g1593> ;
+        rdfs:label "West Hertfordshire Hospitals NHS Trust" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.33333 51.75)"^^geo:wktLiteral ;
+        schema:addressLocality "St Albans" ;
+    ] ;
+    schema:url <https://www.westhertshospitals.nhs.uk/about/stalbanscityhospital.asp> ;
+    schema:sameAs <http://isni.org/isni/0000000477017329> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30292901> ;
+             .

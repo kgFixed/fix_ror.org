@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/050z9fj14> 
+    a org:Organization ;
+    rdfs:label "Hospital São Paulo" ;
+    schema:name "Hospital São Paulo" ;
+    schema:foundingDate "1933"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02k5swt12> ;
+        rdfs:label "Universidade Federal de São Paulo" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-46.63611 -23.5475)"^^geo:wktLiteral ;
+        schema:addressLocality "São Paulo" ;
+    ] ;
+    schema:url <http://www.hospitalsaopaulo.org.br/> ;
+    schema:sameAs <http://isni.org/isni/0000000474071661> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q10298486> ;
+             .

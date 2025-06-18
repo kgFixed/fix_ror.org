@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04pznsd21> 
+    a org:Organization ;
+    rdfs:label "American University of Beirut" ;
+    schema:name "American University of Beirut" ;
+    schema:foundingDate "1866"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/American_University_of_Beirut> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05t3agv77> ;
+        rdfs:label "American University of Beirut New York Office" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00wmm6v75> ;
+        rdfs:label "American University of Beirut Medical Center" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(35.50157 33.89332)"^^geo:wktLiteral ;
+        schema:addressLocality "Beirut" ;
+    ] ;
+    schema:url <https://aub.edu.lb> ;
+    schema:sameAs <http://isni.org/isni/0000000419369801> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q469482> ;
+             .

@@ -1,0 +1,49 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05269d038> 
+    a org:Organization ;
+    rdfs:label "China National Petroleum Corporation (China)" ;
+    schema:name "China National Petroleum Corporation (China)" ;
+    schema:foundingDate "1988"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/China_National_Petroleum_Corporation> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01n1cbn15> ;
+        rdfs:label "Institute of Porous Flow and Fluid Mechanics" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02awe6g05> ;
+        rdfs:label "Research Institute of Petroleum Exploration and Development" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03shhrx95> ;
+        rdfs:label "Daqing Oilfield of CNPC" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02j69wt57> ;
+        rdfs:label "PetroChina Southwest Oil and Gas Field Company (China)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(116.39723 39.9075)"^^geo:wktLiteral ;
+        schema:addressLocality "Beijing" ;
+    ] ;
+    schema:url <http://www.cnpc.com.cn/en/> ;
+    schema:sameAs <http://isni.org/isni/0000000417551650> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q588786> ;
+             .

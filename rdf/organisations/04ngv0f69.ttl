@@ -1,0 +1,33 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04ngv0f69> 
+    a org:Organization ;
+    rdfs:label "Buffalo General Medical Center" ;
+    schema:name "Buffalo General Medical Center" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02sb3pg33> ;
+        rdfs:label "Kaleida Health" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01y64my43> ;
+        rdfs:label "University at Buffalo, State University of New York" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-78.87837 42.88645)"^^geo:wktLiteral ;
+        schema:addressLocality "Buffalo" ;
+    ] ;
+    schema:url <http://www.kaleidahealth.org/bgmc/> ;
+    schema:sameAs <http://isni.org/isni/0000000106624859> ;
+             .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04p549618> 
+    a org:Organization ;
+    rdfs:label "University of South Carolina Union" ;
+    schema:name "University of South Carolina Union" ;
+    schema:foundingDate "1965"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/University_of_South_Carolina_Union> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-81.62371 34.71541)"^^geo:wktLiteral ;
+        schema:addressLocality "Union" ;
+    ] ;
+    schema:url <http://uscunion.sc.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000405777927> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7896323> ;
+             .

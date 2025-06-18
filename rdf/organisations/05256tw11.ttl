@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05256tw11> 
+    a org:Organization ;
+    rdfs:label "Cologne University of Music" ;
+    schema:name "Cologne University of Music" ;
+    schema:foundingDate "1850"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Hochschule_f%C3%BCr_Musik_und_Tanz_K%C3%B6ln> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(6.95 50.93333)"^^geo:wktLiteral ;
+        schema:addressLocality "Cologne" ;
+    ] ;
+    schema:url <https://www.hfmt-koeln.de/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q55021> ;
+             .

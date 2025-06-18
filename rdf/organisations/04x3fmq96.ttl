@@ -1,0 +1,20 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04x3fmq96> 
+    a org:Organization ;
+    rdfs:label "IVI Middle East Fertility Clinic" ;
+    schema:name "IVI Middle East Fertility Clinic" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(54.39696 24.45118)"^^geo:wktLiteral ;
+        schema:addressLocality "Abu Dhabi" ;
+    ] ;
+    schema:url <http://www.ivivf.com/> ;
+     .

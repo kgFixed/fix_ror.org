@@ -1,0 +1,26 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/052f2eb74> 
+    a org:Organization ;
+    rdfs:label "Łukasiewicz Research Network - Institute of Industrial Organic Chemistry, Branch Pszczyna" ;
+    schema:name "Łukasiewicz Research Network - Institute of Industrial Organic Chemistry, Branch Pszczyna" ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/036f4sz05> ;
+        rdfs:label "Łukasiewicz Research Network" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(18.95382 49.98037)"^^geo:wktLiteral ;
+        schema:addressLocality "Pszczyna" ;
+    ] ;
+    schema:url <https://www.ipo-pszczyna.pl/en/about-us> ;
+     .

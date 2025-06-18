@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04r67yj20> 
+    a org:Organization ;
+    rdfs:label "WellSpan York Hospital" ;
+    schema:name "WellSpan York Hospital" ;
+    schema:foundingDate "1880"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01nknep14> ;
+        rdfs:label "WellSpan Health" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-76.72774 39.9626)"^^geo:wktLiteral ;
+        schema:addressLocality "York" ;
+    ] ;
+    schema:url <https://www.wellspan.org/offices-locations/hospitals/wellspan-york-hospital/> ;
+    schema:sameAs <http://isni.org/isni/0000000094195064> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30270655> ;
+             .

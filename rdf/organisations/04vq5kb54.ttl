@@ -1,0 +1,35 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04vq5kb54> 
+    a org:Organization ;
+    rdfs:label "UCLA Medical Center" ;
+    schema:name "UCLA Medical Center" ;
+    schema:foundingDate "1926"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/UCLA_Medical_Center,_Santa_Monica> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01d88se56> ;
+        rdfs:label "UCLA Health" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/046rm7j60> ;
+        rdfs:label "University of California, Los Angeles" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-118.49138 34.01949)"^^geo:wktLiteral ;
+        schema:addressLocality "Santa Monica" ;
+    ] ;
+    schema:url <https://www.uclahealth.org/santa-monica/Pages/default.aspx> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q7864040> ;
+             .

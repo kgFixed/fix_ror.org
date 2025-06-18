@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04n7vez34> 
+    a org:Organization ;
+    rdfs:label "AgroFresh (United States)" ;
+    schema:name "AgroFresh (United States)" ;
+    schema:foundingDate "1999"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-75.45157 40.18566)"^^geo:wktLiteral ;
+        schema:addressLocality "Collegeville" ;
+    ] ;
+    schema:url <http://www.agrofresh.com/> ;
+    schema:sameAs <http://isni.org/isni/000000040628645X> ;
+             .

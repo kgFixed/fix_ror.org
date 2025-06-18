@@ -1,0 +1,44 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/052czxv31> 
+    a org:Organization ;
+    rdfs:label "Massey University" ;
+    schema:name "Massey University" ;
+    schema:foundingDate "1927"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Massey_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02gbgwz87> ;
+        rdfs:label "Allan Wilson Centre" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/053336823> ;
+        rdfs:label "Riddet Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05p61mv27> ;
+        rdfs:label "The Dodd-Walls Centre for Photonic and Quantum Technologies" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(175.61113 -40.35636)"^^geo:wktLiteral ;
+        schema:addressLocality "Palmerston North" ;
+    ] ;
+    schema:url <https://www.massey.ac.nz> ;
+    schema:sameAs <http://isni.org/isni/0000000106969806> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1134606> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q39903983> ;
+             .

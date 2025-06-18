@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04vxjth07> 
+    a org:Organization ;
+    rdfs:label "Museum für Naturkunde Magdeburg" ;
+    schema:name "Museum für Naturkunde Magdeburg" ;
+    schema:foundingDate "1993"^^xsd:gYear ;
+    schema:sameAs <https://de.wikipedia.org/wiki/Museum_f%C3%BCr_Naturkunde_Magdeburg> ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(11.64444 52.14167)"^^geo:wktLiteral ;
+        schema:addressLocality "Landeshauptstadt Magdeburg" ;
+    ] ;
+    schema:url <https://www.naturkundemuseum-magdeburg.de> ;
+    schema:sameAs <http://isni.org/isni/0000000104729868> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1954666> ;
+             .

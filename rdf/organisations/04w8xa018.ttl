@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04w8xa018> 
+    a org:Organization ;
+    rdfs:label "Cadence Design Systems (United States)" ;
+    schema:name "Cadence Design Systems (United States)" ;
+    schema:foundingDate "1988"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Cadence_Design_Systems> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00d9ep044> ;
+        rdfs:label "Cadence Design Systems (Germany)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/027qdw603> ;
+        rdfs:label "Cadence Design Systems (India)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/023pvcn20> ;
+        rdfs:label "Cadence Design Systems (United Kingdom)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-121.89496 37.33939)"^^geo:wktLiteral ;
+        schema:addressLocality "San Jose" ;
+    ] ;
+    schema:url <http://www.cadence.com/en/default.aspx> ;
+    schema:sameAs <http://isni.org/isni/0000000404407975> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q608776> ;
+             .

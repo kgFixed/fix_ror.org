@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04vmpjr08> 
+    a org:Organization ;
+    rdfs:label "Institute of Grassland Research" ;
+    schema:name "Institute of Grassland Research" ;
+    schema:foundingDate "1963"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0313jb750> ;
+        rdfs:label "Chinese Academy of Agricultural Sciences" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(111.65222 40.81056)"^^geo:wktLiteral ;
+        schema:addressLocality "Hohhot" ;
+    ] ;
+    schema:url <http://www.caas.cn/en/administration/research_institutes/research_institutes_out_beijing/77863.html> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30262614> ;
+             .

@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04yxf9085> 
+    a org:Organization ;
+    rdfs:label "Maine Discovery Museum" ;
+    schema:name "Maine Discovery Museum" ;
+    schema:foundingDate "2001"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Maine_Discovery_Museum> ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-68.77265 44.79884)"^^geo:wktLiteral ;
+        schema:addressLocality "Bangor" ;
+    ] ;
+    schema:url <https://www.mainediscoverymuseum.org/> ;
+     .

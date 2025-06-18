@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04mf6js28> 
+    a org:Organization ;
+    rdfs:label "Credit Valley Hospital" ;
+    schema:name "Credit Valley Hospital" ;
+    schema:foundingDate "1985"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Credit_Valley_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03v6a2j28> ;
+        rdfs:label "Trillium Health Centre" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-79.6583 43.5789)"^^geo:wktLiteral ;
+        schema:addressLocality "Mississauga" ;
+    ] ;
+    schema:url <http://trilliumhealthpartners.ca/Pages/default.aspx> ;
+    schema:sameAs <http://isni.org/isni/0000000095379498> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5183760> ;
+             .

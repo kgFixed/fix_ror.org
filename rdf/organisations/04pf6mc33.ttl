@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04pf6mc33> 
+    a org:Organization ;
+    rdfs:label "Maine School Administrative District 1" ;
+    schema:name "Maine School Administrative District 1" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Maine_School_Administrative_District_1> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-68.01586 46.68115)"^^geo:wktLiteral ;
+        schema:addressLocality "Presque Isle" ;
+    ] ;
+    schema:url <https://sad1.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000405308186> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6736432> ;
+             .

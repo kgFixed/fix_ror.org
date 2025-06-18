@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04wh4y985> 
+    a org:Organization ;
+    rdfs:label "St Clements University Higher Education School" ;
+    schema:name "St Clements University Higher Education School" ;
+    schema:foundingDate "2005"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/St._Clements_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-169.91957 -19.05294)"^^geo:wktLiteral ;
+        schema:addressLocality "Alofi" ;
+    ] ;
+    schema:url <http://www.stclements.edu.nu/> ;
+     .

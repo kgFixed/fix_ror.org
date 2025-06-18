@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04wx5ek40> 
+    a org:Organization ;
+    rdfs:label "Tau Beta Pi Association" ;
+    schema:name "Tau Beta Pi Association" ;
+    schema:foundingDate "1885"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Tau_Beta_Pi> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-83.92074 35.96064)"^^geo:wktLiteral ;
+        schema:addressLocality "Knoxville" ;
+    ] ;
+    schema:url <https://www.tbp.org/home.cfm> ;
+    schema:sameAs <http://isni.org/isni/0000000100261882> ;
+             .

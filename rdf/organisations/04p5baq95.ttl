@@ -1,0 +1,34 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04p5baq95> 
+    a org:Organization ;
+    rdfs:label "Mattel Children's Hospital" ;
+    schema:name "Mattel Children's Hospital" ;
+    schema:foundingDate "1980"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01d88se56> ;
+        rdfs:label "UCLA Health" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/046rm7j60> ;
+        rdfs:label "University of California, Los Angeles" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-118.24368 34.05223)"^^geo:wktLiteral ;
+        schema:addressLocality "Los Angeles" ;
+    ] ;
+    schema:url <https://www.uclahealth.org/mattel/Pages/default.aspx> ;
+    schema:sameAs <http://isni.org/isni/0000000404349920> ;
+             .

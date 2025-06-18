@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/051qxpt90> 
+    a org:Organization ;
+    rdfs:label "School Center Novo mesto" ;
+    schema:name "School Center Novo mesto" ;
+    schema:foundingDate "1983"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(15.16886 45.80397)"^^geo:wktLiteral ;
+        schema:addressLocality "Novo Mesto" ;
+    ] ;
+    schema:url <http://www.sc-nm.si/en> ;
+    schema:sameAs <http://isni.org/isni/0000000403985132> ;
+             .

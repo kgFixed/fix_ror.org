@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04xbn6x09> 
+    a org:Organization ;
+    rdfs:label "National Institute for Space Research" ;
+    schema:name "National Institute for Space Research" ;
+    schema:foundingDate "1971"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/National_Institute_for_Space_Research> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/050zdnc69> ;
+        rdfs:label "Ministry of Science, Technology and Innovation" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-45.88694 -23.17944)"^^geo:wktLiteral ;
+        schema:addressLocality "São José dos Campos" ;
+    ] ;
+    schema:url <http://www.inpe.br/> ;
+    schema:sameAs <http://isni.org/isni/0000000121164512> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1108347> ;
+             .

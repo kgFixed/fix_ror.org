@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/051zgra59> 
+    a org:Organization ;
+    rdfs:label "Government College University, Faisalabad" ;
+    schema:name "Government College University, Faisalabad" ;
+    schema:foundingDate "1897"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Government_College_University_(Faisalabad)> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(73.08969 31.41554)"^^geo:wktLiteral ;
+        schema:addressLocality "Faisalabad" ;
+    ] ;
+    schema:url <https://gcuf.edu.pk> ;
+    schema:sameAs <http://isni.org/isni/000000040637891X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5588732> ;
+             .

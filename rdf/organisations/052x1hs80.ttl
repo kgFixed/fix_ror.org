@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/052x1hs80> 
+    a org:Organization ;
+    rdfs:label "Netherlands Environmental Assessment Agency" ;
+    schema:name "Netherlands Environmental Assessment Agency" ;
+    schema:foundingDate "2008"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Netherlands_Environmental_Assessment_Agency> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/056a6x975> ;
+        rdfs:label "Ministry of Infrastructure and the Environment" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(4.29861 52.07667)"^^geo:wktLiteral ;
+        schema:addressLocality "The Hague" ;
+    ] ;
+    schema:url <https://www.pbl.nl> ;
+    schema:sameAs <http://isni.org/isni/0000000106168355> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2367258> ;
+             .

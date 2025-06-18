@@ -1,0 +1,85 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/054225q67> 
+    a org:Organization ;
+    rdfs:label "Cancer Research UK" ;
+    schema:name "Cancer Research UK" ;
+    schema:foundingDate "2002"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Cancer_Research_UK> ;
+    org:status "active" ;
+    org:classification "Funder" ;
+    org:classification "Nonprofit" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/011hz4254> ;
+        rdfs:label "CRUK/MRC Oxford Institute for Radiation Oncology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03pv69j64> ;
+        rdfs:label "Cancer Research UK Scotland Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0068m0j38> ;
+        rdfs:label "Cancer Research UK Cambridge Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03qxptw71> ;
+        rdfs:label "Cancer Research UK Clinical Trials Unit" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05a7t9b67> ;
+        rdfs:label "Edinburgh Cancer Research" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/037405c78> ;
+        rdfs:label "Cancer Research UK Manchester Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05kgg0s20> ;
+        rdfs:label "Cancer Research UK Oxford Centre" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02twrxy18> ;
+        rdfs:label "Cancer Research Horizons" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00fp3ce15> ;
+        rdfs:label "The Gurdon Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/033svsm10> ;
+        rdfs:label "Cancer Research UK Manchester Centre" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.12574 51.50853)"^^geo:wktLiteral ;
+        schema:addressLocality "London" ;
+    ] ;
+    schema:url <http://www.cancerresearchuk.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000404220975> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q326079> ;
+             .

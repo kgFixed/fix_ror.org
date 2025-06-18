@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04y3ze847> 
+    a org:Organization ;
+    rdfs:label "University Hospital Limerick" ;
+    schema:name "University Hospital Limerick" ;
+    schema:foundingDate "1955"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/University_Hospital_Limerick> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04zke5364> ;
+        rdfs:label "Health Service Executive" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00a0n9e72> ;
+        rdfs:label "University of Limerick" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-8.62306 52.66472)"^^geo:wktLiteral ;
+        schema:addressLocality "Limerick" ;
+    ] ;
+    schema:url <http://www.hse.ie/eng/services/list/3/acutehospitals/hospitals/ulh/hospitals/uhl/> ;
+    schema:sameAs <http://isni.org/isni/0000000406176840> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6840848> ;
+             .

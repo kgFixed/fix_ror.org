@@ -1,0 +1,33 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04m3mhq27> 
+    a org:Organization ;
+    rdfs:label "Centre for Advanced Bioenergy Research" ;
+    schema:name "Centre for Advanced Bioenergy Research" ;
+    schema:foundingDate "2011"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03tjsyq23> ;
+        rdfs:label "Department of Biotechnology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02s9tm513> ;
+        rdfs:label "Indian Oil Corporation (India)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(77.31316 28.41124)"^^geo:wktLiteral ;
+        schema:addressLocality "Faridabad" ;
+    ] ;
+    schema:url <http://www.dbtiocberc.org/> ;
+     .

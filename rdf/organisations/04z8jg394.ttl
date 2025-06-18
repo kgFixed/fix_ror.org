@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04z8jg394> 
+    a org:Organization ;
+    rdfs:label "GFZ Helmholtz Centre for Geosciences" ;
+    schema:name "GFZ Helmholtz Centre for Geosciences" ;
+    schema:foundingDate "1992"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/GFZ_Helmholtz_Centre_for_Geosciences> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01vvnmw35> ;
+        rdfs:label "Research Institute for Sustainability at GFZ" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0281dp749> ;
+        rdfs:label "Helmholtz Association of German Research Centres" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(13.06566 52.39886)"^^geo:wktLiteral ;
+        schema:addressLocality "Potsdam" ;
+    ] ;
+    schema:url <https://www.gfz.de> ;
+    schema:sameAs <http://isni.org/isni/0000000091952461> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1205654> ;
+             .

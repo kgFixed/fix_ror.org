@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04p45sn64> 
+    a org:Organization ;
+    rdfs:label "Ducks Unlimited Canada" ;
+    schema:name "Ducks Unlimited Canada" ;
+    schema:foundingDate "1937"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Ducks_Unlimited> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01kdv5654> ;
+        rdfs:label "Ducks Unlimited" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-97.32676 50.13441)"^^geo:wktLiteral ;
+        schema:addressLocality "Stonewall" ;
+    ] ;
+    schema:url <http://www.ducks.ca/> ;
+    schema:sameAs <http://isni.org/isni/0000000098095036> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3040870> ;
+             .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04wd2n987> 
+    a org:Organization ;
+    rdfs:label "Autonomous University of Durango" ;
+    schema:name "Autonomous University of Durango" ;
+    schema:foundingDate "1992"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Universidad_Autónoma_de_Durango> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-104.65756 24.02032)"^^geo:wktLiteral ;
+        schema:addressLocality "Durango" ;
+    ] ;
+    schema:url <http://uad.mx/> ;
+    schema:sameAs <http://isni.org/isni/0000000417639855> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6156357> ;
+             .

@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04t838f48> 
+    a org:Organization ;
+    rdfs:label "Central Norway Regional Health Authority" ;
+    schema:name "Central Norway Regional Health Authority" ;
+    schema:foundingDate "2002"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Central_Norway_Regional_Health_Authority> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05czzgv88> ;
+        rdfs:label "Namsos Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(10.91776 63.46803)"^^geo:wktLiteral ;
+        schema:addressLocality "Stjørdal" ;
+    ] ;
+    schema:url <http://www.helse-midt.no/EN/> ;
+    schema:sameAs <http://isni.org/isni/0000000404678898> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5061531> ;
+             .

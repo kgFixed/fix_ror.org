@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04pke7819> 
+    a org:Organization ;
+    rdfs:label "National Centre for Vocational Education Research" ;
+    schema:name "National Centre for Vocational Education Research" ;
+    schema:foundingDate "1980"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/National_Centre_for_Vocational_Education_Research> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(138.59863 -34.92866)"^^geo:wktLiteral ;
+        schema:addressLocality "Adelaide" ;
+    ] ;
+    schema:url <https://www.ncver.edu.au/wps/portal/vetdataportal/ncverhome/aboutncver/ncverhome/!ut/p/a1/04_Sj9CPykssy0xPLMnMz0vMAfGjzOIDPNzNjJxMDLwsPHwNDDz9goPcfF2DjQ38zYEKIoEKDHAARwNC-sP1o_ArMUNXYGAZ6GLgaW7k5-XhE2Bo4G1KwAQDmAl4HFmQG2GQ6ZmuCABirNLs/dl5/d5/L2dBISEvZ0FBIS9nQSEh/> ;
+    schema:sameAs <http://isni.org/isni/0000000122924456> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q16937977> ;
+             .

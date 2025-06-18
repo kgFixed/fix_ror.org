@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/051rcp357> 
+    a org:Organization ;
+    rdfs:label "Booz Allen Hamilton (United States)" ;
+    schema:name "Booz Allen Hamilton (United States)" ;
+    schema:foundingDate "1914"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Booz_Allen_Hamilton> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04nnnz708> ;
+        rdfs:label "Booz Allen Foundation" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.23109 38.91872)"^^geo:wktLiteral ;
+        schema:addressLocality "Tysons Corner" ;
+    ] ;
+    schema:url <http://www.boozallen.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000123001071> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q893221> ;
+             .

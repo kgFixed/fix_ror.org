@@ -1,0 +1,33 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04rdbcq08> 
+    a org:Organization ;
+    rdfs:label "Mobilités, Aménagement, Transports, Risques et Société" ;
+    schema:name "Mobilités, Aménagement, Transports, Risques et Société" ;
+    schema:foundingDate "2022"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/043htjv09> ;
+        rdfs:label "CY Cergy Paris Université" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05k0nvr25> ;
+        rdfs:label "Centre d'Études et d'Expertise sur les Risques, l'Environnement, la Mobilité et l'Aménagement" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.07805 49.03894)"^^geo:wktLiteral ;
+        schema:addressLocality "Cergy-Pontoise" ;
+    ] ;
+    schema:url <https://matris.cyu.fr> ;
+     .

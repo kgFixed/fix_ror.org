@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04yppq721> 
+    a org:Organization ;
+    rdfs:label "Australasian Institute of Mining and Metallurgy" ;
+    schema:name "Australasian Institute of Mining and Metallurgy" ;
+    schema:foundingDate "1893"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Australasian_Institute_of_Mining_and_Metallurgy> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(144.96667 -37.8)"^^geo:wktLiteral ;
+        schema:addressLocality "Carlton" ;
+    ] ;
+    schema:url <http://www.ausimm.com.au/> ;
+    schema:sameAs <http://isni.org/isni/0000000110873727> ;
+             .

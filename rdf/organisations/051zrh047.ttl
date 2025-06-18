@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/051zrh047> 
+    a org:Organization ;
+    rdfs:label "National University of Tres de Febrero" ;
+    schema:name "National University of Tres de Febrero" ;
+    schema:foundingDate "1995"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/National_University_of_Tres_de_Febrero> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-58.56392 -34.60688)"^^geo:wktLiteral ;
+        schema:addressLocality "Caseros" ;
+    ] ;
+    schema:url <https://www.untref.edu.ar> ;
+    schema:sameAs <http://isni.org/isni/0000000106903540> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6979278> ;
+             .

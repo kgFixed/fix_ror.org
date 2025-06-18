@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04mhtp952> 
+    a org:Organization ;
+    rdfs:label "Japanese Red Cross Akita College of Nursing" ;
+    schema:name "Japanese Red Cross Akita College of Nursing" ;
+    schema:foundingDate "2009"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Japanese_Red_Cross_Akita_College_of_Nursing> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/044s9gr80> ;
+        rdfs:label "Japanese Red Cross Society, Japan" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(140.11667 39.71667)"^^geo:wktLiteral ;
+        schema:addressLocality "Akita" ;
+    ] ;
+    schema:url <http://www.rcakita.ac.jp/#ad-image-3> ;
+    schema:sameAs <http://isni.org/isni/0000000404023533> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q11509188> ;
+             .

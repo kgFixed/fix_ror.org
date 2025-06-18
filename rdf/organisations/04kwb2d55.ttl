@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04kwb2d55> 
+    a org:Organization ;
+    rdfs:label "Czech Proof House for Arms and Ammunition" ;
+    schema:name "Czech Proof House for Arms and Ammunition" ;
+    schema:foundingDate "1891"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03j4eb467> ;
+        rdfs:label "Ministry of Industry and Trade" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(14.6578 49.41441)"^^geo:wktLiteral ;
+        schema:addressLocality "Tábor" ;
+    ] ;
+    schema:url <http://www.cuzzs.cz/en/about-czech-proof-house/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q11379509> ;
+             .

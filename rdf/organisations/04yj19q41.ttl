@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04yj19q41> 
+    a org:Organization ;
+    rdfs:label "Huadong Sanatorium" ;
+    schema:name "Huadong Sanatorium" ;
+    schema:foundingDate "1951"^^xsd:gYear ;
+    schema:sameAs <https://zh.m.wikipedia.org/zh-hans/%E5%8D%8E%E4%B8%9C%E7%96%97%E5%85%BB%E9%99%A2> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(120.28857 31.56887)"^^geo:wktLiteral ;
+        schema:addressLocality "Wuxi" ;
+    ] ;
+    schema:url <http://www.hdlyy.com> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q113962146> ;
+             .

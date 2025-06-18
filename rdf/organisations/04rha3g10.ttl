@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04rha3g10> 
+    a org:Organization ;
+    rdfs:label "Queen Alexandra Hospital" ;
+    schema:name "Queen Alexandra Hospital" ;
+    schema:foundingDate "1904"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Queen_Alexandra_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/009fk3b63> ;
+        rdfs:label "Portsmouth Hospitals NHS Trust" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01ryk1543> ;
+        rdfs:label "University of Southampton" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.09125 50.79899)"^^geo:wktLiteral ;
+        schema:addressLocality "Portsmouth" ;
+    ] ;
+    schema:url <http://www.porthosp.nhs.uk/> ;
+    schema:sameAs <http://isni.org/isni/0000000403920072> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7270183> ;
+             .

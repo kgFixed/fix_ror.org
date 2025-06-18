@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04q08td48> 
+    a org:Organization ;
+    rdfs:label "Republic Klaipeda Hospital" ;
+    schema:name "Republic Klaipeda Hospital" ;
+    schema:foundingDate "1933"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(21.13912 55.7068)"^^geo:wktLiteral ;
+        schema:addressLocality "Klaipėda" ;
+    ] ;
+    schema:url <https://www.rkligonine.lt/en> ;
+     .

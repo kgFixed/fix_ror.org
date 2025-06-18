@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04xgzv028> 
+    a org:Organization ;
+    rdfs:label "Cooperative Institute for Great Lakes Research" ;
+    schema:name "Cooperative Institute for Great Lakes Research" ;
+    schema:foundingDate "1989"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Cooperative_Institute_for_Great_Lakes_Research> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00jmfr291> ;
+        rdfs:label "University of Michigan" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01jeee804> ;
+        rdfs:label "NOAA Great Lakes Environmental Research Laboratory" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-83.74088 42.27756)"^^geo:wktLiteral ;
+        schema:addressLocality "Ann Arbor" ;
+    ] ;
+    schema:url <https://ciglr.seas.umich.edu> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q5167898> ;
+             .

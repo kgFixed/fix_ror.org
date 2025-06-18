@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04se57789> 
+    a org:Organization ;
+    rdfs:label "Rovereto Civic Museum Foundation" ;
+    schema:name "Rovereto Civic Museum Foundation" ;
+    schema:foundingDate "1851"^^xsd:gYear ;
+    schema:sameAs <https://it.wikipedia.org/wiki/Museo_civico_di_Rovereto> ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(11.04053 45.8904)"^^geo:wktLiteral ;
+        schema:addressLocality "Rovereto" ;
+    ] ;
+    schema:url <https://www.fondazionemcr.it> ;
+    schema:sameAs <http://isni.org/isni/0000000122486425> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3867769> ;
+             .

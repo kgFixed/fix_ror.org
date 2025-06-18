@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04m6skt51> 
+    a org:Organization ;
+    rdfs:label "École Supérieure des Metiers Artistiques" ;
+    schema:name "École Supérieure des Metiers Artistiques" ;
+    schema:foundingDate "1993"^^xsd:gYear ;
+    schema:sameAs <https://fr.wikipedia.org/wiki/%C3%89cole_sup%C3%A9rieure_des_m%C3%A9tiers_artistiques> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(3.87635 43.61093)"^^geo:wktLiteral ;
+        schema:addressLocality "Montpellier" ;
+    ] ;
+    schema:url <https://www.esma-artistique.com> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q3578493> ;
+             .

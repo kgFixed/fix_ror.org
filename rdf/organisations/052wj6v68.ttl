@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/052wj6v68> 
+    a org:Organization ;
+    rdfs:label "Griffith College Limerick" ;
+    schema:name "Griffith College Limerick" ;
+    schema:foundingDate "1974"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Griffith_College_Limerick> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0006cvt76> ;
+        rdfs:label "Griffith College" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-8.62306 52.66472)"^^geo:wktLiteral ;
+        schema:addressLocality "Limerick" ;
+    ] ;
+    schema:url <https://www.griffith.ie/locations/limerick> ;
+    schema:sameAs <http://isni.org/isni/0000000403855119> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q285706> ;
+             .

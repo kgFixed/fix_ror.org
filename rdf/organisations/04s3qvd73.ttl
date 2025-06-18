@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04s3qvd73> 
+    a org:Organization ;
+    rdfs:label "Asociación de Industrias Cárnicas" ;
+    schema:name "Asociación de Industrias Cárnicas" ;
+    schema:foundingDate "1977"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-5.70662 43.39364)"^^geo:wktLiteral ;
+        schema:addressLocality "Noreña" ;
+    ] ;
+    schema:url <https://www.asincar.com> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30255135> ;
+             .

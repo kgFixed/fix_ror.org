@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04vz2j713> 
+    a org:Organization ;
+    rdfs:label "Interpolis (Netherlands)" ;
+    schema:name "Interpolis (Netherlands)" ;
+    schema:foundingDate "1969"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Interpolis> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(5.0913 51.55551)"^^geo:wktLiteral ;
+        schema:addressLocality "Tilburg" ;
+    ] ;
+    schema:url <https://www.interpolis.nl/> ;
+    schema:sameAs <http://isni.org/isni/0000000404219026> ;
+             .

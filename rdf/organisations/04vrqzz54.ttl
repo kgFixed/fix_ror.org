@@ -1,0 +1,54 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04vrqzz54> 
+    a org:Organization ;
+    rdfs:label "Unité de catalyse et de chimie du solide de Lille" ;
+    schema:name "Unité de catalyse et de chimie du solide de Lille" ;
+    schema:foundingDate "2006"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Unit%C3%A9_de_catalyse_et_de_chimie_du_solide_de_Lille> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/053x9s498> ;
+        rdfs:label "Université d'Artois" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02cte4b68> ;
+        rdfs:label "Institut de Chimie" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02kzqn938> ;
+        rdfs:label "Université de Lille" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01x441g73> ;
+        rdfs:label "École Centrale de Lille" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/041yg4h55> ;
+        rdfs:label "École Nationale Supérieure de Chimie de Lille" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(3.05858 50.63297)"^^geo:wktLiteral ;
+        schema:addressLocality "Lille" ;
+    ] ;
+    schema:url <http://uccs.univ-lille1.fr/i> ;
+    schema:sameAs <http://isni.org/isni/0000000403683038> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3214445> ;
+             .

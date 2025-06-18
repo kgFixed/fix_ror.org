@@ -1,0 +1,74 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/051qqcg15> 
+    a org:Organization ;
+    rdfs:label "Rajamangala University of Technology" ;
+    schema:name "Rajamangala University of Technology" ;
+    schema:foundingDate "2005"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Rajamangala_University_of_Technology_Thanyaburi> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04a2rz655> ;
+        rdfs:label "Rajamangala University of Technology Isan" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00wcxq223> ;
+        rdfs:label "Rajamangala University of Technology Krungthep" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04synqw60> ;
+        rdfs:label "Rajamangala University of Technology Lanna" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02mg36m74> ;
+        rdfs:label "Rajamangala University of Technology Phra Nakhon" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/003h4kj85> ;
+        rdfs:label "Rajamangala University of Technology Rattanakosin" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02knhje64> ;
+        rdfs:label "Rajamangala University of Technology Srivijaya" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01j1np431> ;
+        rdfs:label "Rajamangala University of Technology Suvarnabhumi" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03cvxzw02> ;
+        rdfs:label "Rajamangala University of Technology Tawan-ok" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(100.73433 14.02114)"^^geo:wktLiteral ;
+        schema:addressLocality "Thanyaburi" ;
+    ] ;
+    schema:url <http://www.eng.rmutt.ac.th/> ;
+    schema:sameAs <http://isni.org/isni/0000000406465810> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6583860> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q181918> ;
+             .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/051j50p12> 
+    a org:Organization ;
+    rdfs:label "The King's College" ;
+    schema:name "The King's College" ;
+    schema:foundingDate "1938"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/The_King%27s_College_(New_York_City)> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-74.00597 40.71427)"^^geo:wktLiteral ;
+        schema:addressLocality "New York" ;
+    ] ;
+    schema:url <https://www.tkc.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000404420571> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3521483> ;
+             .

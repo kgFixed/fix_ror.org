@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0535c3537> 
+    a org:Organization ;
+    rdfs:label "Mitsubishi Chemical Holdings (Japan)" ;
+    schema:name "Mitsubishi Chemical Holdings (Japan)" ;
+    schema:foundingDate "2005"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Mitsubishi_Chemical_Holdings> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/011qgx996> ;
+        rdfs:label "Mitsubishi Chemical Group Science and Technology Research Center (Japan)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00dcjap62> ;
+        rdfs:label "Nitto Chemical Industry (Japan)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0234cd281> ;
+        rdfs:label "Mitsubishi Group (Japan)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(139.69171 35.6895)"^^geo:wktLiteral ;
+        schema:addressLocality "Tokyo" ;
+    ] ;
+    schema:url <http://www.mitsubishichem-hd.co.jp/english/> ;
+    schema:sameAs <http://isni.org/isni/0000000418082657> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3107966> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6883161> ;
+             .

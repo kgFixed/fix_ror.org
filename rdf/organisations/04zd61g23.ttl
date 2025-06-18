@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04zd61g23> 
+    a org:Organization ;
+    rdfs:label "The Urbana Free Library" ;
+    schema:name "The Urbana Free Library" ;
+    schema:foundingDate "2007"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-88.20727 40.11059)"^^geo:wktLiteral ;
+        schema:addressLocality "Urbana" ;
+    ] ;
+    schema:url <https://urbanafreelibrary.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000096798336> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30289550> ;
+             .

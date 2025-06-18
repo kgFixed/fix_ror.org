@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04sbxpy59> 
+    a org:Organization ;
+    rdfs:label "Instituto de Conservação de Animais Silvestres" ;
+    schema:name "Instituto de Conservação de Animais Silvestres" ;
+    schema:foundingDate "1999"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-54.64639 -20.44278)"^^geo:wktLiteral ;
+        schema:addressLocality "Campo Grande" ;
+    ] ;
+    schema:url <https://www.icasconservation.org.br/> ;
+     .

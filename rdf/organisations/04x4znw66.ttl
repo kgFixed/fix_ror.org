@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04x4znw66> 
+    a org:Organization ;
+    rdfs:label "Pierre Auger Observatory" ;
+    schema:name "Pierre Auger Observatory" ;
+    schema:foundingDate "2004"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Pierre_Auger_Observatory> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01b1h1f72> ;
+        rdfs:label "Research Infrastructure AUGER‑CZ" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-69.58521 -35.47791)"^^geo:wktLiteral ;
+        schema:addressLocality "Malargüe" ;
+    ] ;
+    schema:url <https://www.auger.org/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q794886> ;
+             .

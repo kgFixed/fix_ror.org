@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04nb6x947> 
+    a org:Organization ;
+    rdfs:label "Hamamatsu Photonics (United Kingdom)" ;
+    schema:name "Hamamatsu Photonics (United Kingdom)" ;
+    schema:foundingDate "1953"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Hamamatsu_Photonics> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03natb733> ;
+        rdfs:label "Hamamatsu Photonics (Japan)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.20691 51.80174)"^^geo:wktLiteral ;
+        schema:addressLocality "Welwyn Garden City" ;
+    ] ;
+    schema:url <https://www.hamamatsu.com/eu/en/> ;
+    schema:sameAs <http://isni.org/isni/0000000405686718> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30257110> ;
+             .

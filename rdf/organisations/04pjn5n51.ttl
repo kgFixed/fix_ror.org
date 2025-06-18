@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04pjn5n51> 
+    a org:Organization ;
+    rdfs:label "Groupe de recherche d’histoire" ;
+    schema:name "Groupe de recherche d’histoire" ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03nhjew95> ;
+        rdfs:label "Université de Rouen Normandie" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(1.09364 49.46307)"^^geo:wktLiteral ;
+        schema:addressLocality "Mont-Saint-Aignan" ;
+    ] ;
+    schema:url <https://grhis.univ-rouen.fr/grhis/> ;
+    schema:sameAs <http://isni.org/isni/0000000121095609> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q51780149> ;
+             .

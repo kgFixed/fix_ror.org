@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04wty6921> 
+    a org:Organization ;
+    rdfs:label "Sandwell College" ;
+    schema:name "Sandwell College" ;
+    schema:foundingDate "1840"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Sandwell_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.9945 52.51868)"^^geo:wktLiteral ;
+        schema:addressLocality "West Bromwich" ;
+    ] ;
+    schema:url <https://www.sandwell.ac.uk/> ;
+    schema:sameAs <http://isni.org/isni/0000000459014853> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7417039> ;
+             .

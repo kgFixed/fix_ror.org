@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/053gqad93> 
+    a org:Organization ;
+    rdfs:label "Swaffham Community Hospital" ;
+    schema:name "Swaffham Community Hospital" ;
+    schema:foundingDate "1888"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00xkkpn05> ;
+        rdfs:label "Norfolk Community Health and Care NHS Trust" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(0.6857 52.6477)"^^geo:wktLiteral ;
+        schema:addressLocality "Swaffham" ;
+    ] ;
+    schema:url <https://www.norfolkcommunityhealthandcare.nhs.uk/Swaffham-community-hospital/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30292986> ;
+             .

@@ -1,0 +1,41 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04r10g051> 
+    a org:Organization ;
+    rdfs:label "Birmingham Community Healthcare NHS Trust" ;
+    schema:name "Birmingham Community Healthcare NHS Trust" ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Birmingham_Community_Healthcare_NHS_Trust> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01xhmje49> ;
+        rdfs:label "Birmingham Dental Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/037fz4341> ;
+        rdfs:label "Moseley Hall Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04pt7tz26> ;
+        rdfs:label "West Heath Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.89983 52.48142)"^^geo:wktLiteral ;
+        schema:addressLocality "Birmingham" ;
+    ] ;
+    schema:url <http://www.bhamcommunity.nhs.uk/> ;
+    schema:sameAs <http://isni.org/isni/000000040446956X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q16842299> ;
+             .

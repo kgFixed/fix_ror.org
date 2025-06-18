@@ -1,0 +1,33 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04nv7tt16> 
+    a org:Organization ;
+    rdfs:label "Center for Dielectrics & Piezoelectrics" ;
+    schema:name "Center for Dielectrics & Piezoelectrics" ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04tj63d06> ;
+        rdfs:label "North Carolina State University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04p491231> ;
+        rdfs:label "Pennsylvania State University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-78.63861 35.7721)"^^geo:wktLiteral ;
+        schema:addressLocality "Raleigh" ;
+    ] ;
+    schema:url <https://www.cdp.ncsu.edu/> ;
+     .

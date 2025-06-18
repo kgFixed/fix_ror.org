@@ -1,0 +1,26 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04tnbvm40> 
+    a org:Organization ;
+    rdfs:label "Salvation Army" ;
+    schema:name "Salvation Army" ;
+    org:status "withdrawn" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/02wvp2z28> ;
+        rdfs:label "The Salvation Army United States" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-84.21353 33.94121)"^^geo:wktLiteral ;
+        schema:addressLocality "Norcross" ;
+    ] ;
+    schema:url <http://salvationarmygeorgia.org/> ;
+     .

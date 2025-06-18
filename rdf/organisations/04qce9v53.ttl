@@ -1,0 +1,48 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04qce9v53> 
+    a org:Organization ;
+    rdfs:label "Integra LifeSciences (United States)" ;
+    schema:name "Integra LifeSciences (United States)" ;
+    schema:foundingDate "1989"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04rz1y359> ;
+        rdfs:label "Integra LifeSciences (France)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03ybwam46> ;
+        rdfs:label "Integra LifeSciences (Ireland)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05wpf8f91> ;
+        rdfs:label "Integra LifeSciences (Switzerland)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04t8qhn97> ;
+        rdfs:label "Integra LifeSciences (United Kingdom)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-74.5946 40.33177)"^^geo:wktLiteral ;
+        schema:addressLocality "Plainsboro Center" ;
+    ] ;
+    schema:url <http://www.integralife.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000404174200> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30283982> ;
+             .

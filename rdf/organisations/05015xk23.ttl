@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/05015xk23> 
+    a org:Organization ;
+    rdfs:label "Câmara Municipal de Matosinhos" ;
+    schema:name "Câmara Municipal de Matosinhos" ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-8.66743 41.20766)"^^geo:wktLiteral ;
+        schema:addressLocality "Matosinhos" ;
+    ] ;
+    schema:url <https://www.cm-matosinhos.pt> ;
+    schema:sameAs <http://isni.org/isni/000000048033224X> ;
+             .

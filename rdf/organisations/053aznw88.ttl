@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/053aznw88> 
+    a org:Organization ;
+    rdfs:label "FM Global (United States)" ;
+    schema:name "FM Global (United States)" ;
+    schema:foundingDate "1835"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/FM_Global> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-71.50675 41.82186)"^^geo:wktLiteral ;
+        schema:addressLocality "Johnston" ;
+    ] ;
+    schema:url <https://www.fmglobal.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000404401354> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1391731> ;
+             .

@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04qk6pt94> 
+    a org:Organization ;
+    rdfs:label "Wright State University" ;
+    schema:name "Wright State University" ;
+    schema:foundingDate "1967"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Wright_State_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0561zqn56> ;
+        rdfs:label "University System of Ohio" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/02wgt3820> ;
+        rdfs:label "Dayton Children's Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03qjk6p58> ;
+        rdfs:label "Dayton VA Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00n9v4y14> ;
+        rdfs:label "Good Samaritan Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/00mkh7345> ;
+        rdfs:label "Hubbard Brook Long Term Ecological Research" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-84.19161 39.75895)"^^geo:wktLiteral ;
+        schema:addressLocality "Dayton" ;
+    ] ;
+    schema:url <http://www.wright.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000419367937> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2002085> ;
+             .

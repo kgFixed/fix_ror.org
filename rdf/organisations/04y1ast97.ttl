@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04y1ast97> 
+    a org:Organization ;
+    rdfs:label "State Archives of Belgium" ;
+    schema:name "State Archives of Belgium" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/State_Archives_(Belgium)> ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(4.34878 50.85045)"^^geo:wktLiteral ;
+        schema:addressLocality "Brussels" ;
+    ] ;
+    schema:url <http://www.arch.be/index.php?l=en> ;
+    schema:sameAs <http://isni.org/isni/0000000096431219> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2120763> ;
+             .

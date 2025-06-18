@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04ssgxk51> 
+    a org:Organization ;
+    rdfs:label "Ashworth Hospital" ;
+    schema:name "Ashworth Hospital" ;
+    schema:foundingDate "1878"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Ashworth_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03vtyzs10> ;
+        rdfs:label "Mersey Care NHS Trust" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-2.97794 53.41058)"^^geo:wktLiteral ;
+        schema:addressLocality "Liverpool" ;
+    ] ;
+    schema:url <https://www.merseycare.nhs.uk/our-services/a-z-of-services/ashworth-high-secure-hospital/> ;
+    schema:sameAs <http://isni.org/isni/0000000086080320> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4806221> ;
+             .

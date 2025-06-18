@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/052syjz96> 
+    a org:Organization ;
+    rdfs:label "Environmental Remediation Consultants (United States)" ;
+    schema:name "Environmental Remediation Consultants (United States)" ;
+    schema:foundingDate "1993"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-83.72462 35.89064)"^^geo:wktLiteral ;
+        schema:addressLocality "Seymour" ;
+    ] ;
+    schema:url <http://4erc.com/default.htm> ;
+     .

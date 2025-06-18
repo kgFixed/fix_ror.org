@@ -1,0 +1,26 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/052xgjt73> 
+    a org:Organization ;
+    rdfs:label "Airbus Defence and Space GmbH (Germany)" ;
+    schema:name "Airbus Defence and Space GmbH (Germany)" ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02z4rsp10> ;
+        rdfs:label "Airbus (Netherlands)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(12.13202 48.34987)"^^geo:wktLiteral ;
+        schema:addressLocality "Taufkirchen" ;
+    ] ;
+    schema:url <https://www.airbus.com/defence> ;
+     .

@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0503y1475> 
+    a org:Organization ;
+    rdfs:label "Evangelical Presbyterian College of Education, Bimbilla" ;
+    schema:name "Evangelical Presbyterian College of Education, Bimbilla" ;
+    schema:foundingDate "1962"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Evangelical_Presbyterian_College_of_Education%2C_Bimbilla> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(0.05922 8.85488)"^^geo:wktLiteral ;
+        schema:addressLocality "Bimbilla" ;
+    ] ;
+    schema:url <https://epcoebimbilla.edu.gh> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q46996966> ;
+             .

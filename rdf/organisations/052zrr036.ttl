@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/052zrr036> 
+    a org:Organization ;
+    rdfs:label "Canik Başarı University" ;
+    schema:name "Canik Başarı University" ;
+    schema:foundingDate "2008"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Canik_Ba%C5%9Far%C4%B1_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(36.3361 41.27976)"^^geo:wktLiteral ;
+        schema:addressLocality "Samsun" ;
+    ] ;
+    schema:url <http://www.basari.edu.tr/?&changelang=EN> ;
+    schema:sameAs <http://isni.org/isni/0000000404549041> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q13573451> ;
+             .

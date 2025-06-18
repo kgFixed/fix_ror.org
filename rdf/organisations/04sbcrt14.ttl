@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04sbcrt14> 
+    a org:Organization ;
+    rdfs:label "Bhavnagar University" ;
+    schema:name "Bhavnagar University" ;
+    schema:foundingDate "1978"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Bhavnagar_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0015r4831> ;
+        rdfs:label "Government Medical College Bhavnagar" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(72.15331 21.76287)"^^geo:wktLiteral ;
+        schema:addressLocality "Bhavnagar" ;
+    ] ;
+    schema:url <http://www.mkbhavuni.edu.in/> ;
+    schema:sameAs <http://isni.org/isni/0000000098189921> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4901570> ;
+             .

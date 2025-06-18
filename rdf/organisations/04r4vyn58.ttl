@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04r4vyn58> 
+    a org:Organization ;
+    rdfs:label "State Scientific - Research Institute of Chemical Products (Russia)" ;
+    schema:name "State Scientific - Research Institute of Chemical Products (Russia)" ;
+    schema:foundingDate "1985"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(49.12214 55.78874)"^^geo:wktLiteral ;
+        schema:addressLocality "Kazan’" ;
+    ] ;
+    schema:url <http://www.gniihp.ru/> ;
+     .

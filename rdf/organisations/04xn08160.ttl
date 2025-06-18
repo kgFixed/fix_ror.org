@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04xn08160> 
+    a org:Organization ;
+    rdfs:label "Tatra National Park" ;
+    schema:name "Tatra National Park" ;
+    schema:foundingDate "1954"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Tatra_National_Park%2C_Poland> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(19.94885 49.29899)"^^geo:wktLiteral ;
+        schema:addressLocality "Zakopane" ;
+    ] ;
+    schema:url <https://tpn.gov.pl> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q609353> ;
+             .

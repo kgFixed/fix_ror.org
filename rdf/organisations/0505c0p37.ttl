@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0505c0p37> 
+    a org:Organization ;
+    rdfs:label "Icometrix (Belgium)" ;
+    schema:name "Icometrix (Belgium)" ;
+    schema:foundingDate "2011"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(4.70093 50.87959)"^^geo:wktLiteral ;
+        schema:addressLocality "Leuven" ;
+    ] ;
+    schema:url <https://icometrix.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30289998> ;
+             .

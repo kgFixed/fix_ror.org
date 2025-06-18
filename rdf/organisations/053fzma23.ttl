@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/053fzma23> 
+    a org:Organization ;
+    rdfs:label "Sichuan University of Science and Engineering" ;
+    schema:name "Sichuan University of Science and Engineering" ;
+    schema:foundingDate "1965"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Sichuan_University_of_Science_and_Engineering> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(104.77689 29.34162)"^^geo:wktLiteral ;
+        schema:addressLocality "Zigong" ;
+    ] ;
+    schema:url <http://www.suse.edu.cn/> ;
+    schema:sameAs <http://isni.org/isni/0000000417981351> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7507436> ;
+             .

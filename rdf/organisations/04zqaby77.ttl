@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04zqaby77> 
+    a org:Organization ;
+    rdfs:label "Roemmers Laboratories (Argentina)" ;
+    schema:name "Roemmers Laboratories (Argentina)" ;
+    schema:foundingDate "1921"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-58.48026 -34.50872)"^^geo:wktLiteral ;
+        schema:addressLocality "Olivos" ;
+    ] ;
+    schema:url <http://www.roemmers.com.ar/en/> ;
+     .

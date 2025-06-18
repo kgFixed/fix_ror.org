@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04v77td31> 
+    a org:Organization ;
+    rdfs:label "AdTech Systems Research (United States)" ;
+    schema:name "AdTech Systems Research (United States)" ;
+    schema:foundingDate "1984"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-84.06327 39.70923)"^^geo:wktLiteral ;
+        schema:addressLocality "Beavercreek" ;
+    ] ;
+    schema:url <http://www.adtech25.com/> ;
+     .

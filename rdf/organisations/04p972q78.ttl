@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04p972q78> 
+    a org:Organization ;
+    rdfs:label "Procter & Gamble (France)" ;
+    schema:name "Procter & Gamble (France)" ;
+    schema:foundingDate "1837"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Procter_%26_Gamble> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04dkns738> ;
+        rdfs:label "Procter & Gamble (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.28333 48.91667)"^^geo:wktLiteral ;
+        schema:addressLocality "Asnières-sur-Seine" ;
+    ] ;
+    schema:url <https://www.pg.com/fr_FR/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30343799> ;
+             .

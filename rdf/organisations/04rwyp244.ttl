@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04rwyp244> 
+    a org:Organization ;
+    rdfs:label "St. Maria-Hilf-Krankenhaus" ;
+    schema:name "St. Maria-Hilf-Krankenhaus" ;
+    schema:foundingDate "1990"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05k5t2r42> ;
+        rdfs:label "Katholisches Klinikum Bochum" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(7.21648 51.48165)"^^geo:wktLiteral ;
+        schema:addressLocality "Bochum" ;
+    ] ;
+    schema:url <http://maria-hilf-krankenhaus.klinikum-bochum.de/startseite-st-maria-hilf-krankenhaus.html> ;
+     .

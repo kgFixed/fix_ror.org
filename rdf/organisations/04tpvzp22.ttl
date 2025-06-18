@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04tpvzp22> 
+    a org:Organization ;
+    rdfs:label "European Severe Storms Laboratory" ;
+    schema:name "European Severe Storms Laboratory" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/European_Severe_Storms_Laboratory> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01w5pyt41> ;
+        rdfs:label "European Severe Storms Laboratory - Science and Training" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(11.2482 48.07452)"^^geo:wktLiteral ;
+        schema:addressLocality "Weßling" ;
+    ] ;
+    schema:url <https://www.essl.org/cms/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q1376940> ;
+             .

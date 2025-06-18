@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0533jxz69> 
+    a org:Organization ;
+    rdfs:label "Saab (United States)" ;
+    schema:name "Saab (United States)" ;
+    schema:foundingDate "1937"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Saab> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05kyy7d06> ;
+        rdfs:label "Saab (Sweden)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-76.07853 43.06534)"^^geo:wktLiteral ;
+        schema:addressLocality "East Syracuse" ;
+    ] ;
+    schema:url <http://saab.com/region/north-america/USA/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30298502> ;
+             .

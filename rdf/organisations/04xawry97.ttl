@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04xawry97> 
+    a org:Organization ;
+    rdfs:label "Lincolnshire Partnership NHS Foundation Trust" ;
+    schema:name "Lincolnshire Partnership NHS Foundation Trust" ;
+    schema:foundingDate "2002"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Lincolnshire_Partnership_NHS_Foundation_Trust> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.53792 53.22683)"^^geo:wktLiteral ;
+        schema:addressLocality "Lincoln" ;
+    ] ;
+    schema:url <http://www.lpft.nhs.uk/> ;
+    schema:sameAs <http://isni.org/isni/0000000404894451> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q16966028> ;
+             .

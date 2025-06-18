@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04rbss527> 
+    a org:Organization ;
+    rdfs:label "Banco de Germoplasma Vegetal de la UPM "César Gómez Campo"" ;
+    schema:name "Banco de Germoplasma Vegetal de la UPM "César Gómez Campo"" ;
+    schema:foundingDate "1966"^^xsd:gYear ;
+    schema:sameAs <https://es.wikipedia.org/wiki/Banco_de_Germoplasma_Vegetal-UPM> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03n6nwv02> ;
+        rdfs:label "Universidad Politécnica de Madrid" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-3.70256 40.4165)"^^geo:wktLiteral ;
+        schema:addressLocality "Madrid" ;
+    ] ;
+    schema:url <http://www.bancodegermoplasma.upm.es> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q86659742> ;
+             .

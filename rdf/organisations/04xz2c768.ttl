@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04xz2c768> 
+    a org:Organization ;
+    rdfs:label "R. K. Khan Hospital" ;
+    schema:name "R. K. Khan Hospital" ;
+    schema:foundingDate "1969"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04qzfn040> ;
+        rdfs:label "University of KwaZulu-Natal" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(31.0292 -29.8579)"^^geo:wktLiteral ;
+        schema:addressLocality "Durban" ;
+    ] ;
+    schema:url <http://www.kznhealth.gov.za/rkkhanhospital.htm> ;
+    schema:sameAs <http://isni.org/isni/0000000405766654> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30280568> ;
+             .

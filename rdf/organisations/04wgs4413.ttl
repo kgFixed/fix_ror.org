@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/04wgs4413> 
+    a org:Organization ;
+    rdfs:label "Tomorrows Children’s Fund" ;
+    schema:name "Tomorrows Children’s Fund" ;
+    schema:foundingDate "1982"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-74.04347 40.88593)"^^geo:wktLiteral ;
+        schema:addressLocality "Hackensack" ;
+    ] ;
+    schema:url <http://www.tcfkid.org/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30289069> ;
+             .

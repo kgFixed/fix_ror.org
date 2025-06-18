@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/051e84q87> 
+    a org:Organization ;
+    rdfs:label "Citi University" ;
+    schema:name "Citi University" ;
+    schema:foundingDate "1998"^^xsd:gYear ;
+    schema:sameAs <https://mn.wikipedia.org/wiki/%D0%A1%D0%B8%D1%82%D0%B8_%D0%B8%D1%85_%D1%81%D1%83%D1%80%D0%B3%D1%83%D1%83%D0%BB%D1%8C> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(106.88324 47.90771)"^^geo:wktLiteral ;
+        schema:addressLocality "Ulaanbaatar" ;
+    ] ;
+    schema:url <https://citi.edu.mn> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q106506688> ;
+             .

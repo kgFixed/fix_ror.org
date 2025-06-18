@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/050r4h987> 
+    a org:Organization ;
+    rdfs:label "Blue Cross and Blue Shield of Florida Foundation" ;
+    schema:name "Blue Cross and Blue Shield of Florida Foundation" ;
+    schema:foundingDate "2001"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-81.65565 30.33218)"^^geo:wktLiteral ;
+        schema:addressLocality "Jacksonville" ;
+    ] ;
+    schema:url <https://www.floridablue.com/foundation/overview> ;
+    schema:sameAs <http://isni.org/isni/0000000459048367> ;
+             .

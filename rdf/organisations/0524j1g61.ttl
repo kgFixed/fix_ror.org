@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0524j1g61> 
+    a org:Organization ;
+    rdfs:label "Stoke Mandeville Hospital" ;
+    schema:name "Stoke Mandeville Hospital" ;
+    schema:foundingDate "1832"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Stoke_Mandeville_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/037f2xv36> ;
+        rdfs:label "Buckinghamshire Healthcare NHS Trust" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.81458 51.81665)"^^geo:wktLiteral ;
+        schema:addressLocality "Aylesbury" ;
+    ] ;
+    schema:url <http://www.buckshealthcare.nhs.uk/For%20patients%20and%20visitors/stoke-mandeville-hospital.htm> ;
+    schema:sameAs <http://isni.org/isni/0000000099470731> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2741521> ;
+             .
