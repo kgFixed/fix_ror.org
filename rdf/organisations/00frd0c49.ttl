@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00frd0c49> 
+    a org:Organization ;
+    rdfs:label "Thornton and Ross (United Kingdom)" ;
+    schema:name "Thornton and Ross (United Kingdom)" ;
+    schema:foundingDate "1922"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Thornton_%26_Ross> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.78416 53.64904)"^^geo:wktLiteral ;
+        schema:addressLocality "Huddersfield" ;
+    ] ;
+    schema:url <http://www.thorntonross.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000405441745> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30693786> ;
+             .

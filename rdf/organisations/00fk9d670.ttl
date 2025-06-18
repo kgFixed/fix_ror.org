@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00fk9d670> 
+    a org:Organization ;
+    rdfs:label "Taoyuan Chang Gung Memorial Hospital" ;
+    schema:name "Taoyuan Chang Gung Memorial Hospital" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(121.29696 24.99368)"^^geo:wktLiteral ;
+        schema:addressLocality "Taoyuan" ;
+    ] ;
+    schema:url <https://www.cgmh.org.tw/branch/branch_hel.htm> ;
+    schema:sameAs <http://isni.org/isni/0000000417561461> ;
+             .

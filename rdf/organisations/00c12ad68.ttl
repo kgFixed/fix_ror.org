@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00c12ad68> 
+    a org:Organization ;
+    rdfs:label "Opera North (United Kingdom)" ;
+    schema:name "Opera North (United Kingdom)" ;
+    schema:foundingDate "1977"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Opera_North> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.54785 53.79648)"^^geo:wktLiteral ;
+        schema:addressLocality "Leeds" ;
+    ] ;
+    schema:url <https://www.operanorth.co.uk/> ;
+    schema:sameAs <http://isni.org/isni/0000000121533365> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30290988> ;
+             .

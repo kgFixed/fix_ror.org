@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00c2x1j89> 
+    a org:Organization ;
+    rdfs:label "Pakistan Museum of Natural History" ;
+    schema:name "Pakistan Museum of Natural History" ;
+    schema:foundingDate "1976"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Pakistan_Museum_of_Natural_History> ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04srehp09> ;
+        rdfs:label "Pakistan Science Foundation" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(73.04329 33.72148)"^^geo:wktLiteral ;
+        schema:addressLocality "Islamabad" ;
+    ] ;
+    schema:url <https://www.pmnh.gov.pk> ;
+    schema:sameAs <http://isni.org/isni/0000000094841687> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q2046672> ;
+             .

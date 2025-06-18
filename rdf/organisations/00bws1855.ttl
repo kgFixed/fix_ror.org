@@ -1,0 +1,54 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00bws1855> 
+    a org:Organization ;
+    rdfs:label "Executive Office of the President" ;
+    schema:name "Executive Office of the President" ;
+    schema:foundingDate "1939"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Executive_Office_of_the_President_of_the_United_States> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02s4m5j79> ;
+        rdfs:label "Council of Economic Advisers" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05998w930> ;
+        rdfs:label "Council on Environmental Quality" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0351agv44> ;
+        rdfs:label "National Labor Relations Board" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02bjkqr85> ;
+        rdfs:label "Office of Science and Technology Policy" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02rcrvv70> ;
+        rdfs:label "Government of the United States of America" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.03637 38.89511)"^^geo:wktLiteral ;
+        schema:addressLocality "Washington" ;
+    ] ;
+    schema:url <https://www.whitehouse.gov/about-the-white-house/the-executive-branch/#Executive%20Office%20of%20the%20President> ;
+    schema:sameAs <http://isni.org/isni/0000000121559477> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1355327> ;
+             .

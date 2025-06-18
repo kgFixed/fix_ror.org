@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00fgmrc59> 
+    a org:Organization ;
+    rdfs:label "CDI (United States)" ;
+    schema:name "CDI (United States)" ;
+    schema:foundingDate "1950"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/CDI_Corporation> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-75.16362 39.95238)"^^geo:wktLiteral ;
+        schema:addressLocality "Philadelphia" ;
+    ] ;
+    schema:url <http://www.cdicorp.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q5009947> ;
+             .

@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/003c45k89> 
+    a org:Organization ;
+    rdfs:label "Korea Foundation Of Nuclear Safety" ;
+    schema:name "Korea Foundation Of Nuclear Safety" ;
+    org:status "active" ;
+    org:classification "Other" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(127.13778 37.43861)"^^geo:wktLiteral ;
+        schema:addressLocality "Seongnam-si" ;
+    ] ;
+    schema:url <http://www.korsafe.or.kr/> ;
+    schema:sameAs <http://isni.org/isni/0000000458969332> ;
+             .

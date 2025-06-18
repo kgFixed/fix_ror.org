@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/007st8028> 
+    a org:Organization ;
+    rdfs:label "Visuray (Malta)" ;
+    schema:name "Visuray (Malta)" ;
+    schema:foundingDate "2004"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04hdhsf72> ;
+        rdfs:label "Visuray (Norway)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(14.50194 35.9125)"^^geo:wktLiteral ;
+        schema:addressLocality "Sliema" ;
+    ] ;
+    schema:url <http://www.visuray.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30267673> ;
+             .

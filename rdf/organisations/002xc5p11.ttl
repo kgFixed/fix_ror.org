@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/002xc5p11> 
+    a org:Organization ;
+    rdfs:label "Dr. Babasaheb Ambedkar Open University" ;
+    schema:name "Dr. Babasaheb Ambedkar Open University" ;
+    schema:foundingDate "1994"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Dr._Babasaheb_Ambedkar_Open_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(72.58727 23.02579)"^^geo:wktLiteral ;
+        schema:addressLocality "Ahmedabad" ;
+    ] ;
+    schema:url <http://www.baou.edu.in/> ;
+    schema:sameAs <http://isni.org/isni/0000000417733745> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5303979> ;
+             .

@@ -1,0 +1,20 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00g280465> 
+    a org:Organization ;
+    rdfs:label "Gradiant International Holdings Pte Ltd (Singapore)" ;
+    schema:name "Gradiant International Holdings Pte Ltd (Singapore)" ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(103.85007 1.28967)"^^geo:wktLiteral ;
+        schema:addressLocality "Singapore" ;
+    ] ;
+    schema:url <https://www.gradiant.com> ;
+     .

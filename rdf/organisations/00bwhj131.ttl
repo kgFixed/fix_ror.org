@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00bwhj131> 
+    a org:Organization ;
+    rdfs:label "Newark Beth Israel Medical Center" ;
+    schema:name "Newark Beth Israel Medical Center" ;
+    schema:foundingDate "1901"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Newark_Beth_Israel_Medical_Center> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-74.17237 40.73566)"^^geo:wktLiteral ;
+        schema:addressLocality "Newark" ;
+    ] ;
+    schema:url <http://www.barnabashealth.org/Newark-Beth-Israel-Medical-Center.aspx> ;
+    schema:sameAs <http://isni.org/isni/0000000084171093> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7016630> ;
+             .

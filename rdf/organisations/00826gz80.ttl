@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00826gz80> 
+    a org:Organization ;
+    rdfs:label "Deutsche José Carreras Leukämie-Stiftung" ;
+    schema:name "Deutsche José Carreras Leukämie-Stiftung" ;
+    schema:foundingDate "1995"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(11.57549 48.13743)"^^geo:wktLiteral ;
+        schema:addressLocality "Munich" ;
+    ] ;
+    schema:url <https://www.carreras-stiftung.de/> ;
+    schema:sameAs <http://isni.org/isni/0000000459069301> ;
+             .

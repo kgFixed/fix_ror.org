@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00c639s42> 
+    a org:Organization ;
+    rdfs:label "Second People's Hospital of Yunnan Province" ;
+    schema:name "Second People's Hospital of Yunnan Province" ;
+    schema:foundingDate "1928"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/038c3w259> ;
+        rdfs:label "Kunming Medical University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/0040axw97> ;
+        rdfs:label "Yunnan University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(102.71833 25.03889)"^^geo:wktLiteral ;
+        schema:addressLocality "Kunming" ;
+    ] ;
+    schema:url <https://www.ynshhyy.com> ;
+    schema:sameAs <http://isni.org/isni/000000041798611X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30265084> ;
+             .

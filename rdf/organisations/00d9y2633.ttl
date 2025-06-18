@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00d9y2633> 
+    a org:Organization ;
+    rdfs:label "NTT (Italy)" ;
+    schema:name "NTT (Italy)" ;
+    schema:foundingDate "1952"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Nippon_Telegraph_and_Telephone> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00berct97> ;
+        rdfs:label "NTT (Japan)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(9.18951 45.46427)"^^geo:wktLiteral ;
+        schema:addressLocality "Milan" ;
+    ] ;
+    schema:url <http://www.global.ntt/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30254567> ;
+             .

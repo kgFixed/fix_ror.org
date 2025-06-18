@@ -1,0 +1,20 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00bgpxp73> 
+    a org:Organization ;
+    rdfs:label "Robotik Technology (France)" ;
+    schema:name "Robotik Technology (France)" ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.64003 50.52965)"^^geo:wktLiteral ;
+        schema:addressLocality "Béthune" ;
+    ] ;
+    schema:url <http://www.robotiktechnology.com/home> ;
+     .

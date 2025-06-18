@@ -1,0 +1,61 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/005kw6t15> 
+    a org:Organization ;
+    rdfs:label "Infineon Technologies (Germany)" ;
+    schema:name "Infineon Technologies (Germany)" ;
+    schema:foundingDate "1999"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Infineon_Technologies> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03msng824> ;
+        rdfs:label "Infineon Technologies (Austria)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04hbev594> ;
+        rdfs:label "Infineon Technologies (Canada)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04yh74t68> ;
+        rdfs:label "Infineon Technologies (Norway)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0470e9841> ;
+        rdfs:label "Infineon Technologies (Singapore)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/017ptvx95> ;
+        rdfs:label "Infineon Technologies (United Kingdom)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04e4db319> ;
+        rdfs:label "Infineon Technologies (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(11.57549 48.13743)"^^geo:wktLiteral ;
+        schema:addressLocality "Munich" ;
+    ] ;
+    schema:url <https://www.infineon.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000405528752> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q311394> ;
+             .

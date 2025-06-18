@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0095xcq10> 
+    a org:Organization ;
+    rdfs:label "University of Management and Technology" ;
+    schema:name "University of Management and Technology" ;
+    schema:foundingDate "1990"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/University_of_Management_and_Technology_(Lahore)> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(74.35071 31.558)"^^geo:wktLiteral ;
+        schema:addressLocality "Lahore" ;
+    ] ;
+    schema:url <https://www.umt.edu.pk/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q7895663> ;
+             .

@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00gga3b91> 
+    a org:Organization ;
+    rdfs:label "Fisher & Paykel Appliances (New Zealand)" ;
+    schema:name "Fisher & Paykel Appliances (New Zealand)" ;
+    schema:foundingDate "1934"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Fisher_%26_Paykel> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00w1gss13> ;
+        rdfs:label "Haier (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(174.76349 -36.84853)"^^geo:wktLiteral ;
+        schema:addressLocality "Auckland" ;
+    ] ;
+    schema:url <https://www.fisherpaykel.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q3073026> ;
+             .

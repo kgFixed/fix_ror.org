@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00f149504> 
+    a org:Organization ;
+    rdfs:label "Pearlhill Technologies (United States)" ;
+    schema:name "Pearlhill Technologies (United States)" ;
+    schema:foundingDate "2007"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-112.03414 43.46658)"^^geo:wktLiteral ;
+        schema:addressLocality "Idaho Falls" ;
+    ] ;
+    schema:url <https://www.pearlhilltech.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30291092> ;
+             .

@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00bq4rw46> 
+    a org:Organization ;
+    rdfs:label "Hospital Italiano de Buenos Aires" ;
+    schema:name "Hospital Italiano de Buenos Aires" ;
+    schema:foundingDate "1872"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Hospital_Italiano_de_Buenos_Aires> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04c5b8z55> ;
+        rdfs:label "Biomedicine Research Institute of Buenos Aires - CONICET - Partner Institute of the Max Planck Society" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-58.37723 -34.61315)"^^geo:wktLiteral ;
+        schema:addressLocality "Buenos Aires" ;
+    ] ;
+    schema:url <http://www.hospitalitaliano.org.ar/> ;
+    schema:sameAs <http://isni.org/isni/0000000123194408> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1134710> ;
+             .

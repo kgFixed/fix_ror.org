@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/021g17t44> 
+    a org:Organization ;
+    rdfs:label "College of Physicians and Surgeons of Ontario" ;
+    schema:name "College of Physicians and Surgeons of Ontario" ;
+    schema:foundingDate "1867"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/College_of_Physicians_and_Surgeons_of_Ontario> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-79.39864 43.70643)"^^geo:wktLiteral ;
+        schema:addressLocality "Toronto" ;
+    ] ;
+    schema:url <http://www.cpso.on.ca/docsearch/> ;
+    schema:sameAs <http://isni.org/isni/0000000099441447> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5146807> ;
+             .

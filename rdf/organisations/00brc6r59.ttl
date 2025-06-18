@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00brc6r59> 
+    a org:Organization ;
+    rdfs:label "National University of Engineering" ;
+    schema:name "National University of Engineering" ;
+    schema:foundingDate "1983"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/National_University_of_Engineering_(Nicaragua)> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-86.2504 12.13282)"^^geo:wktLiteral ;
+        schema:addressLocality "Managua" ;
+    ] ;
+    schema:url <https://www.uni.edu.ni/> ;
+    schema:sameAs <http://isni.org/isni/000000040381953X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3847544> ;
+             .

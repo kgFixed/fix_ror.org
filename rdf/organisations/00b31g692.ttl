@@ -1,0 +1,67 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00b31g692> 
+    a org:Organization ;
+    rdfs:label "Barts Health NHS Trust" ;
+    schema:name "Barts Health NHS Trust" ;
+    schema:foundingDate "2012"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Barts_Health_NHS_Trust> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03zhk7994> ;
+        rdfs:label "London Chest Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/045n1e339> ;
+        rdfs:label "Mile End Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03m51nf34> ;
+        rdfs:label "NIHR Barts Cardiovascular Biomedical Research Unit" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/045r28721> ;
+        rdfs:label "Newham University Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/019my5047> ;
+        rdfs:label "Royal London Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00nh9x179> ;
+        rdfs:label "St Bartholomew's Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/016vdk046> ;
+        rdfs:label "Whipps Cross University Hospital" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.12574 51.50853)"^^geo:wktLiteral ;
+        schema:addressLocality "London" ;
+    ] ;
+    schema:url <http://www.bartshealth.nhs.uk/> ;
+    schema:sameAs <http://isni.org/isni/0000000103725777> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4865798> ;
+             .

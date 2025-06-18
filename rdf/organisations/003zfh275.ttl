@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/003zfh275> 
+    a org:Organization ;
+    rdfs:label "Hospital Padre Américo" ;
+    schema:name "Hospital Padre Américo" ;
+    schema:foundingDate "2001"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0246qj146> ;
+        rdfs:label "Centro Hospitalar do Tâmega e Sousa" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-8.28285 41.20835)"^^geo:wktLiteral ;
+        schema:addressLocality "Penafiel" ;
+    ] ;
+    schema:url <http://www.chtamegasousa.pt/index.php?option=com_content&task=view&id=10&Itemid=29> ;
+    schema:sameAs <http://isni.org/isni/0000000405744009> ;
+             .

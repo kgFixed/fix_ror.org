@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00engpz63> 
+    a org:Organization ;
+    rdfs:label "University of Sharjah" ;
+    schema:name "University of Sharjah" ;
+    schema:foundingDate "1997"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/University_of_Sharjah> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(55.41206 25.33737)"^^geo:wktLiteral ;
+        schema:addressLocality "Sharjah" ;
+    ] ;
+    schema:url <https://www.sharjah.ac.ae> ;
+    schema:sameAs <http://isni.org/isni/0000000446865317> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7896294> ;
+             .

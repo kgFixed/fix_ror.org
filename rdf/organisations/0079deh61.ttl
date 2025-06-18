@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0079deh61> 
+    a org:Organization ;
+    rdfs:label "Ministry of Defence" ;
+    schema:name "Ministry of Defence" ;
+    schema:foundingDate "1813"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Ministry_of_Defence_(Netherlands)> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00xnymf93> ;
+        rdfs:label "Militaire Geestelijke Gezondheidszorg" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02dnvjf04> ;
+        rdfs:label "Netherlands Defence Academy" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/045vgz384> ;
+        rdfs:label "Government of Netherlands" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(4.29861 52.07667)"^^geo:wktLiteral ;
+        schema:addressLocality "The Hague" ;
+    ] ;
+    schema:url <https://www.defensie.nl/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q2119820> ;
+             .

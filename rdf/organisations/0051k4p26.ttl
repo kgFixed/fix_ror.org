@@ -1,0 +1,20 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0051k4p26> 
+    a org:Organization ;
+    rdfs:label "Sanaag University of Science and Technology" ;
+    schema:name "Sanaag University of Science and Technology" ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(47.36795 10.61616)"^^geo:wktLiteral ;
+        schema:addressLocality "Erigavo" ;
+    ] ;
+    schema:sameAs <http://www.wikidata.org/entity/Q7415442> ;
+             .

@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/007yv1g81> 
+    a org:Organization ;
+    rdfs:label "Teijin (Netherlands)" ;
+    schema:name "Teijin (Netherlands)" ;
+    schema:foundingDate "1982"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Teijin_Aramid> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/038kxkq33> ;
+        rdfs:label "Teijin (Japan)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(5.91111 51.98)"^^geo:wktLiteral ;
+        schema:addressLocality "Arnhem" ;
+    ] ;
+    schema:url <https://www.teijinaramid.com/en/> ;
+    schema:sameAs <http://isni.org/isni/000000041797870X> ;
+             .

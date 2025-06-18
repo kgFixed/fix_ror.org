@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00d36eq66> 
+    a org:Organization ;
+    rdfs:label "National and University Library "St. Kliment of Ohrid"" ;
+    schema:name "National and University Library "St. Kliment of Ohrid"" ;
+    schema:foundingDate "1944"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/National_and_University_Library_%22St._Kliment_of_Ohrid%22> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(21.43141 41.99646)"^^geo:wktLiteral ;
+        schema:addressLocality "Skopje" ;
+    ] ;
+    schema:url <http://nubsk.edu.mk/en/> ;
+     .

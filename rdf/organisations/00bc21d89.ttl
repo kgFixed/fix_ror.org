@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00bc21d89> 
+    a org:Organization ;
+    rdfs:label "Amgen Biofarmaceutica Lda (Portugal)" ;
+    schema:name "Amgen Biofarmaceutica Lda (Portugal)" ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-9.29143 38.69569)"^^geo:wktLiteral ;
+        schema:addressLocality "Paço de Arcos" ;
+    ] ;
+    schema:url <https://www.amgen.pt> ;
+    schema:sameAs <http://isni.org/isni/0000000406310480> ;
+             .

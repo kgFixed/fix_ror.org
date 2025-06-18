@@ -1,0 +1,32 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/002k3wk88> 
+    a org:Organization ;
+    rdfs:label "National Medical Products Administration" ;
+    schema:name "National Medical Products Administration" ;
+    schema:foundingDate "1950"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/National_Medical_Products_Administration> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/041rdq190> ;
+        rdfs:label "National Institutes for Food and Drug Control" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(116.39723 39.9075)"^^geo:wktLiteral ;
+        schema:addressLocality "Beijing" ;
+    ] ;
+    schema:url <http://english.nmpa.gov.cn/> ;
+    schema:sameAs <http://isni.org/isni/0000000101091950> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q50839285> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q10926084> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6144563> ;
+             .

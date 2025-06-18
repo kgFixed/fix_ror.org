@@ -1,0 +1,54 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/008nkqk13> 
+    a org:Organization ;
+    rdfs:label "Ministry of Trade, Industry and Energy" ;
+    schema:name "Ministry of Trade, Industry and Energy" ;
+    schema:foundingDate "1977"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Ministry_of_Trade,_Industry_and_Energy_(South_Korea)> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/039k6f508> ;
+        rdfs:label "Korea Electronics Technology Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03z9cwa38> ;
+        rdfs:label "Korea Evaluation Institute of Industrial Technology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/039fwba89> ;
+        rdfs:label "Korea Research Council for Industrial Science and Technology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/022c4zk48> ;
+        rdfs:label "Small and Medium Business Administration" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/019xm3p48> ;
+        rdfs:label "Government of the Republic of Korea" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(127.29223 36.59245)"^^geo:wktLiteral ;
+        schema:addressLocality "Sejong" ;
+    ] ;
+    schema:url <http://english.motie.go.kr/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q491047> ;
+             .

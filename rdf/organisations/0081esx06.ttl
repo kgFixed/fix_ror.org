@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0081esx06> 
+    a org:Organization ;
+    rdfs:label "Fundación Observatorio Ñuble" ;
+    schema:name "Fundación Observatorio Ñuble" ;
+    schema:foundingDate "2020"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-72.10344 -36.60664)"^^geo:wktLiteral ;
+        schema:addressLocality "Chillán" ;
+    ] ;
+    schema:url <https://www.observatorionuble.cl> ;
+     .

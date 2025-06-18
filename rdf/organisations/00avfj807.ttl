@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00avfj807> 
+    a org:Organization ;
+    rdfs:label "Nanchang Institute of Technology" ;
+    schema:name "Nanchang Institute of Technology" ;
+    schema:foundingDate "1958"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Nanchang_Institute_of_Technology> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(115.85306 28.68396)"^^geo:wktLiteral ;
+        schema:addressLocality "Nanchang" ;
+    ] ;
+    schema:url <http://www.nit.edu.cn/index.htm> ;
+    schema:sameAs <http://isni.org/isni/0000000417593199> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q10908066> ;
+             .

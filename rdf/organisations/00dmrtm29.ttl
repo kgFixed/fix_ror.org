@@ -1,0 +1,67 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00dmrtm29> 
+    a org:Organization ;
+    rdfs:label "New York City Health and Hospitals Corporation" ;
+    schema:name "New York City Health and Hospitals Corporation" ;
+    schema:foundingDate "1969"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/New_York_City_Health_and_Hospitals_Corporation> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01ky34z31> ;
+        rdfs:label "Bellevue Hospital Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03atxgt72> ;
+        rdfs:label "Coney Island Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02emy8e21> ;
+        rdfs:label "Kings County Hospital Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/035a72598> ;
+        rdfs:label "Lincoln Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/005h65c20> ;
+        rdfs:label "Metropolitan Hospital Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/011tz3351> ;
+        rdfs:label "Queens Hospital Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01jtcg420> ;
+        rdfs:label "Woodhull Medical and Mental Health Center" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-74.00597 40.71427)"^^geo:wktLiteral ;
+        schema:addressLocality "New York" ;
+    ] ;
+    schema:url <http://www.nyc.gov/html/hhc/html/home/home.shtml> ;
+    schema:sameAs <http://isni.org/isni/0000000404437226> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7013226> ;
+             .

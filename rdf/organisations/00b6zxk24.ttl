@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00b6zxk24> 
+    a org:Organization ;
+    rdfs:label "Tweed Shire Council" ;
+    schema:name "Tweed Shire Council" ;
+    schema:foundingDate "1947"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0067dvq63> ;
+        rdfs:label "Government of New South Wales" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(153.39339 -28.32732)"^^geo:wktLiteral ;
+        schema:addressLocality "Murwillumbah" ;
+    ] ;
+    schema:url <http://www.tweed.nsw.gov.au/> ;
+    schema:sameAs <http://isni.org/isni/0000000099007536> ;
+             .

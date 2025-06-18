@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00br73y72> 
+    a org:Organization ;
+    rdfs:label "Atlantic School of Theology" ;
+    schema:name "Atlantic School of Theology" ;
+    schema:foundingDate "1971"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Atlantic_School_of_Theology> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-63.57688 44.64269)"^^geo:wktLiteral ;
+        schema:addressLocality "Halifax" ;
+    ] ;
+    schema:url <http://www.astheology.ns.ca/home/welcome.html> ;
+    schema:sameAs <http://isni.org/isni/0000000105537710> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4816532> ;
+             .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0045cz905> 
+    a org:Organization ;
+    rdfs:label "Portobello High School" ;
+    schema:name "Portobello High School" ;
+    schema:foundingDate "2006"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Portobello_High_School> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-3.19648 55.95206)"^^geo:wktLiteral ;
+        schema:addressLocality "Edinburgh" ;
+    ] ;
+    schema:url <http://portobellohighschool.org.uk> ;
+    schema:sameAs <http://isni.org/isni/0000000405258211> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7232186> ;
+             .

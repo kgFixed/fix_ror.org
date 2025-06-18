@@ -1,0 +1,35 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/002atrf55> 
+    a org:Organization ;
+    rdfs:label "Centre Hospitalier Chrétien" ;
+    schema:name "Centre Hospitalier Chrétien" ;
+    schema:foundingDate "1976"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03z222993> ;
+        rdfs:label "Clinic of Hope" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/027sxqf09> ;
+        rdfs:label "Clinique Saint-Joseph" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(5.56749 50.63373)"^^geo:wktLiteral ;
+        schema:addressLocality "Liège" ;
+    ] ;
+    schema:url <http://www.chc.be/Accueil.aspx> ;
+    schema:sameAs <http://isni.org/isni/0000000406088015> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q19950920> ;
+             .

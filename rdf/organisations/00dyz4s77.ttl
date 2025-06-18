@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00dyz4s77> 
+    a org:Organization ;
+    rdfs:label "Acura Pharmaceuticals (United States)" ;
+    schema:name "Acura Pharmaceuticals (United States)" ;
+    schema:foundingDate "1935"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Acura_Pharmaceuticals> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-88.03424 42.1103)"^^geo:wktLiteral ;
+        schema:addressLocality "Palatine" ;
+    ] ;
+    schema:url <http://acurapharm.com/> ;
+    schema:sameAs <http://isni.org/isni/000000040407930X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q16242539> ;
+             .

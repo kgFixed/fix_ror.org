@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00243c192> 
+    a org:Organization ;
+    rdfs:label "Monroe Community Hospital" ;
+    schema:name "Monroe Community Hospital" ;
+    schema:foundingDate "1826"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.61556 43.15478)"^^geo:wktLiteral ;
+        schema:addressLocality "Rochester" ;
+    ] ;
+    schema:url <http://www.monroehosp.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000404359379> ;
+             .

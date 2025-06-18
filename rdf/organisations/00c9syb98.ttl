@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00c9syb98> 
+    a org:Organization ;
+    rdfs:label "Merlin Park University Hospital" ;
+    schema:name "Merlin Park University Hospital" ;
+    schema:foundingDate "1954"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Merlin_Park_Regional_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04zke5364> ;
+        rdfs:label "Health Service Executive" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03w2xw870> ;
+        rdfs:label "Saolta University Health Care Group" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04scgfz75> ;
+        rdfs:label "University Hospital Galway" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-9.05095 53.27245)"^^geo:wktLiteral ;
+        schema:addressLocality "Galway" ;
+    ] ;
+    schema:url <http://www.wnwhg.ie/hospital/merlin-park-university-hospital> ;
+    schema:sameAs <http://isni.org/isni/0000000406176760> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6819786> ;
+             .

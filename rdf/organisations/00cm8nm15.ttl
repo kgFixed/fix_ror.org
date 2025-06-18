@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00cm8nm15> 
+    a org:Organization ;
+    rdfs:label "University of California, Irvine Medical Center" ;
+    schema:name "University of California, Irvine Medical Center" ;
+    schema:foundingDate "1965"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/University_of_California,_Irvine_Medical_Center> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03fgher32> ;
+        rdfs:label "UC Irvine Health" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04gyf1771> ;
+        rdfs:label "University of California, Irvine" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-117.85311 33.78779)"^^geo:wktLiteral ;
+        schema:addressLocality "Orange" ;
+    ] ;
+    schema:url <http://www.ucirvinehealth.org/locations/orange/uc-irvine-medical-center/> ;
+    schema:sameAs <http://isni.org/isni/000000040434883X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q450401> ;
+             .

@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00gkhpw57> 
+    a org:Organization ;
+    rdfs:label "Universidad Autónoma de Bucaramanga" ;
+    schema:name "Universidad Autónoma de Bucaramanga" ;
+    schema:foundingDate "1952"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Autonomous_University_of_Bucaramanga> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-73.1198 7.12539)"^^geo:wktLiteral ;
+        schema:addressLocality "Bucaramanga" ;
+    ] ;
+    schema:url <https://unab.edu.co> ;
+    schema:sameAs <http://isni.org/isni/0000000122968512> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q9091527> ;
+             .

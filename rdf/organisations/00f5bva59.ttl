@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00f5bva59> 
+    a org:Organization ;
+    rdfs:label "Swedish Medical Center" ;
+    schema:name "Swedish Medical Center" ;
+    schema:foundingDate "1905"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Swedish_Medical_Center_(Colorado)> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-104.98776 39.64777)"^^geo:wktLiteral ;
+        schema:addressLocality "Englewood" ;
+    ] ;
+    schema:url <http://swedishhospital.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000105035526> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7654751> ;
+             .

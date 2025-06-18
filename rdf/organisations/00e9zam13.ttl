@@ -1,0 +1,48 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00e9zam13> 
+    a org:Organization ;
+    rdfs:label "Koch Industries (United States)" ;
+    schema:name "Koch Industries (United States)" ;
+    schema:foundingDate "1940"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Koch_Industries> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05j3y0344> ;
+        rdfs:label "Koch Industries (France)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04xxdqj96> ;
+        rdfs:label "Koch Industries (Switzerland)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/001hkv469> ;
+        rdfs:label "Koch Industries (United Kingdom)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/052jw0990> ;
+        rdfs:label "Georgia-Pacific (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-97.33754 37.69224)"^^geo:wktLiteral ;
+        schema:addressLocality "Wichita" ;
+    ] ;
+    schema:url <http://www.kochind.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000404848316> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1496384> ;
+             .

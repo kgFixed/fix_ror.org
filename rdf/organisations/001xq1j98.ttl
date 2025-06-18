@@ -1,0 +1,48 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/001xq1j98> 
+    a org:Organization ;
+    rdfs:label "Covenant Health" ;
+    schema:name "Covenant Health" ;
+    schema:foundingDate "2008"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Covenant_Health_(Alberta)> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/036mbxj57> ;
+        rdfs:label "Banff Mineral Springs Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00wpte173> ;
+        rdfs:label "Grey Nuns Community Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02rsydb28> ;
+        rdfs:label "Misericordia Community Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05e247w35> ;
+        rdfs:label "Morristown Hamblen Hospital Foundation" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-113.46871 53.55014)"^^geo:wktLiteral ;
+        schema:addressLocality "Edmonton" ;
+    ] ;
+    schema:url <http://www.covenanthealth.ca/> ;
+    schema:sameAs <http://isni.org/isni/000000010638826X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5178995> ;
+             .

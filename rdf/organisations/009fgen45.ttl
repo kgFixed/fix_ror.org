@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/009fgen45> 
+    a org:Organization ;
+    rdfs:label "Chitwan Medical College" ;
+    schema:name "Chitwan Medical College" ;
+    schema:foundingDate "2006"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Chitwan_Medical_College> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(84.43589 27.6768)"^^geo:wktLiteral ;
+        schema:addressLocality "Bharatpur" ;
+    ] ;
+    schema:url <http://www.cmc.edu.np/> ;
+    schema:sameAs <http://isni.org/isni/0000000459987153> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5102535> ;
+             .

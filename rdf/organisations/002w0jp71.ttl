@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/002w0jp71> 
+    a org:Organization ;
+    rdfs:label "Space Research Institute" ;
+    schema:name "Space Research Institute" ;
+    schema:foundingDate "1970"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Institut_f%C3%BCr_Weltraumforschung_(Space_Research_Institute)> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03anc3s24> ;
+        rdfs:label "Austrian Academy of Sciences" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(15.45 47.06667)"^^geo:wktLiteral ;
+        schema:addressLocality "Graz" ;
+    ] ;
+    schema:url <https://www.iwf.oeaw.ac.at/en/home/> ;
+    schema:sameAs <http://isni.org/isni/000000011018688X> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6039072> ;
+             .

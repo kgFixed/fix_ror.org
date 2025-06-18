@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/000f7jy90> 
+    a org:Organization ;
+    rdfs:label "Statistics Denmark" ;
+    schema:name "Statistics Denmark" ;
+    schema:foundingDate "1850"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Statistics_Denmark> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(12.56553 55.67594)"^^geo:wktLiteral ;
+        schema:addressLocality "Copenhagen" ;
+    ] ;
+    schema:url <http://www.dst.dk/> ;
+    schema:sameAs <http://isni.org/isni/0000000122486353> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1164337> ;
+             .

@@ -1,0 +1,127 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/003qeh975> 
+    a org:Organization ;
+    rdfs:label "Chinese Academy of Tropical Agricultural Sciences" ;
+    schema:name "Chinese Academy of Tropical Agricultural Sciences" ;
+    schema:foundingDate "1954"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Chinese_Academy_of_Tropical_Agricultural_Sciences> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00g46p143> ;
+        rdfs:label "Agricultural Product Processing Research Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01m9scr97> ;
+        rdfs:label "Analysis and Testing Centre" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00xjqd715> ;
+        rdfs:label "Coconut Research Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00a21fr98> ;
+        rdfs:label "Environment and Plant Protection Research Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00f2c2516> ;
+        rdfs:label "Guangzhou Experimental Station" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03kzpar53> ;
+        rdfs:label "Haikou Experimental Station" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0170b6c09> ;
+        rdfs:label "Institute of Scientific and Technical Information" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01w4k1v53> ;
+        rdfs:label "Rubber Research Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04jeca075> ;
+        rdfs:label "South Subtropical Crops Research Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05c4d7454> ;
+        rdfs:label "Spice and Beverage Research Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05qrpwx06> ;
+        rdfs:label "Tropical Agricultural Machinery Research Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03dkwk174> ;
+        rdfs:label "Tropical Bioscience and Biotechnology Research Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01ye8r794> ;
+        rdfs:label "Tropical Crops Genetic Resources Institute" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05rvyrg53> ;
+        rdfs:label "Zhanjiang Experimental Station" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02tycxw39> ;
+        rdfs:label "State Key Laboratory of Tropical Crop Biotechnology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05ckt8b96> ;
+        rdfs:label "Ministry of Agriculture and Rural Affairs" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03q648j11> ;
+        rdfs:label "Hainan University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(110.34651 20.03421)"^^geo:wktLiteral ;
+        schema:addressLocality "Haikou" ;
+    ] ;
+    schema:url <http://www.catas.cn/> ;
+    schema:sameAs <http://isni.org/isni/0000000098351415> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5100371> ;
+             .

@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/006c4xb83> 
+    a org:Organization ;
+    rdfs:label "Foundation for Agricultural and Rural Resource Management and Sustainability" ;
+    schema:name "Foundation for Agricultural and Rural Resource Management and Sustainability" ;
+    schema:foundingDate "2000"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-99.91594 46.85471)"^^geo:wktLiteral ;
+        schema:addressLocality "Steele" ;
+    ] ;
+    schema:url <http://www.farrms.org/> ;
+     .

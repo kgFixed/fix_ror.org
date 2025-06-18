@@ -1,0 +1,41 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00awr5166> 
+    a org:Organization ;
+    rdfs:label "Benteler (Austria)" ;
+    schema:name "Benteler (Austria)" ;
+    schema:foundingDate "1876"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Benteler_International> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03qs9kr26> ;
+        rdfs:label "Benteler (Czechia)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01gymhc20> ;
+        rdfs:label "Benteler (Germany)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/036wf7b34> ;
+        rdfs:label "Benteler (Norway)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(13.04399 47.79941)"^^geo:wktLiteral ;
+        schema:addressLocality "Salzburg" ;
+    ] ;
+    schema:url <https://www.benteler.com/en/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30255374> ;
+             .

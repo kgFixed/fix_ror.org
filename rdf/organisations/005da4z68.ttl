@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/005da4z68> 
+    a org:Organization ;
+    rdfs:label "Mykolaiv V.O. Sukhomlynskyi National University" ;
+    schema:name "Mykolaiv V.O. Sukhomlynskyi National University" ;
+    schema:foundingDate "1913"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(31.99296 46.97625)"^^geo:wktLiteral ;
+        schema:addressLocality "Mykolaiv" ;
+    ] ;
+    schema:url <http://mdu.edu.ua/> ;
+    schema:sameAs <http://isni.org/isni/0000000453733507> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4320486> ;
+             .

@@ -1,0 +1,72 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/003smky23> 
+    a org:Organization ;
+    rdfs:label "Sanford Health" ;
+    schema:name "Sanford Health" ;
+    schema:foundingDate "1996"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Sanford_Health> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02b6wm085> ;
+        rdfs:label "Sanford Broadway Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/050cc0966> ;
+        rdfs:label "Sanford Children's Specialty Clinic" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05sw8nz16> ;
+        rdfs:label "Sanford Heart Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/037xpb040> ;
+        rdfs:label "Sanford Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03byzcq48> ;
+        rdfs:label "Sanford Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00sfn8y78> ;
+        rdfs:label "Sanford Research" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04wrfcw61> ;
+        rdfs:label "Sanford USD Medical Center" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/03z0rr544> ;
+        rdfs:label "Sanford Health Foundation" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-96.70033 43.54997)"^^geo:wktLiteral ;
+        schema:addressLocality "Sioux Falls" ;
+    ] ;
+    schema:url <http://www.sanfordhealth.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000404256409> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7417625> ;
+             .

@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00cedkn40> 
+    a org:Organization ;
+    rdfs:label "Robert Bosch (China)" ;
+    schema:name "Robert Bosch (China)" ;
+    schema:foundingDate "1886"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Robert_Bosch_GmbH> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01fe0jt45> ;
+        rdfs:label "Robert Bosch (Germany)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(120.16142 30.29365)"^^geo:wktLiteral ;
+        schema:addressLocality "Hangzhou" ;
+    ] ;
+    schema:url <http://www.bosch-pt.com.cn/cn/zh/bosch-power-tools/startpage/power-tools.html> ;
+    schema:sameAs <http://isni.org/isni/0000000404791663> ;
+             .

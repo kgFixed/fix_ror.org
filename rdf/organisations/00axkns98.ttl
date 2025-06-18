@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00axkns98> 
+    a org:Organization ;
+    rdfs:label "Electronics Corporation of India" ;
+    schema:name "Electronics Corporation of India" ;
+    schema:foundingDate "1967"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Electronics_Corporation_of_India_Limited> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(78.45636 17.38405)"^^geo:wktLiteral ;
+        schema:addressLocality "Hyderabad" ;
+    ] ;
+    schema:url <http://www.ecil.co.in/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q5358473> ;
+             .

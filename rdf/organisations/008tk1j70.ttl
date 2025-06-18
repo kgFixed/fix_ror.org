@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/008tk1j70> 
+    a org:Organization ;
+    rdfs:label "Jardín Botánico Nacional de Viña del Mar" ;
+    schema:name "Jardín Botánico Nacional de Viña del Mar" ;
+    schema:foundingDate "1951"^^xsd:gYear ;
+    schema:sameAs <https://es.wikipedia.org/wiki/Jard%C3%ADn_bot%C3%A1nico_Nacional_de_Vi%C3%B1a_del_Mar> ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-71.51593 -33.02878)"^^geo:wktLiteral ;
+        schema:addressLocality "Viña del Mar" ;
+    ] ;
+    schema:url <https://www.jbn.cl> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q5926785> ;
+             .

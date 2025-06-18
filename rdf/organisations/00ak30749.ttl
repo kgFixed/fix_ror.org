@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00ak30749> 
+    a org:Organization ;
+    rdfs:label "Cheadle Community Hospital" ;
+    schema:name "Cheadle Community Hospital" ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01vf6n447> ;
+        rdfs:label "Midlands Partnership NHS Foundation Trust" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-2.18538 53.00415)"^^geo:wktLiteral ;
+        schema:addressLocality "Stoke-on-Trent" ;
+    ] ;
+    schema:url <https://www.mpft.nhs.uk/services/cheadle-community-hospital> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30292809> ;
+             .

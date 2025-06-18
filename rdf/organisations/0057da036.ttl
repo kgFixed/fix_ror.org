@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0057da036> 
+    a org:Organization ;
+    rdfs:label "Mercy San Juan Medical Center" ;
+    schema:name "Mercy San Juan Medical Center" ;
+    schema:foundingDate "1967"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Mercy_San_Juan_Medical_Center> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05c9r4685> ;
+        rdfs:label "Dignity Health" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-121.32828 38.61713)"^^geo:wktLiteral ;
+        schema:addressLocality "Carmichael" ;
+    ] ;
+    schema:url <http://www.dignityhealth.org/sacramento/hospitals/mercy-san-juan-medical-center> ;
+    schema:sameAs <http://isni.org/isni/0000000404404598> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q6818797> ;
+             .

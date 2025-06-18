@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/021mk5n73> 
+    a org:Organization ;
+    rdfs:label "Bonanza High School" ;
+    schema:name "Bonanza High School" ;
+    schema:foundingDate "1976"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Bonanza_High_School> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-115.13722 36.17497)"^^geo:wktLiteral ;
+        schema:addressLocality "Las Vegas" ;
+    ] ;
+    schema:url <https://www.bonanzabengals.org/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q4941153> ;
+             .

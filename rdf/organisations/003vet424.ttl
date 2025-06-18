@@ -1,0 +1,70 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/003vet424> 
+    a org:Organization ;
+    rdfs:label "Centro Científico Tecnológico - Santa Fe" ;
+    schema:name "Centro Científico Tecnológico - Santa Fe" ;
+    schema:foundingDate "1976"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0041aya12> ;
+        rdfs:label "Centro de Investigación de Métodos Computacionales" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/042765079> ;
+        rdfs:label "Instituto Nacional de Limnología" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/057915t59> ;
+        rdfs:label "Instituto de Agrobiotecnología del Litoral" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01kwwh635> ;
+        rdfs:label "Instituto de Desarrollo Tecnológico para la Industria Química" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/058xqms97> ;
+        rdfs:label "Instituto de Física del Litoral" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05et1xd41> ;
+        rdfs:label "Instituto de Ciencia y Tecnología de los Alimentos de Entre Ríos" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03cqe8w59> ;
+        rdfs:label "Consejo Nacional de Investigaciones Científicas y Técnicas" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/01wgfva68> ;
+        rdfs:label "Universidad Nacional de Entre Ríos" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-60.70868 -31.64881)"^^geo:wktLiteral ;
+        schema:addressLocality "Santa Fe" ;
+    ] ;
+    schema:url <https://santafe.conicet.gov.ar/> ;
+    schema:sameAs <http://isni.org/isni/0000000404827451> ;
+             .

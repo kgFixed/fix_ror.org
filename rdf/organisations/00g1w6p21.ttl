@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00g1w6p21> 
+    a org:Organization ;
+    rdfs:label "Youth & Opportunity United" ;
+    schema:name "Youth & Opportunity United" ;
+    schema:foundingDate "1971"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-87.69006 42.04114)"^^geo:wktLiteral ;
+        schema:addressLocality "Evanston" ;
+    ] ;
+    schema:url <https://www.youthopportunity.org/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30289342> ;
+             .

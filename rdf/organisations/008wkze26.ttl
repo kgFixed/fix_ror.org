@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/008wkze26> 
+    a org:Organization ;
+    rdfs:label "Phitsanulok University" ;
+    schema:name "Phitsanulok University" ;
+    schema:foundingDate "2002"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(100.25858 16.82481)"^^geo:wktLiteral ;
+        schema:addressLocality "Phitsanulok" ;
+    ] ;
+    schema:url <https://www.pluniversity.com/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q30294695> ;
+             .

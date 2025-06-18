@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0035bbx08> 
+    a org:Organization ;
+    rdfs:label "Wharton County Junior College" ;
+    schema:name "Wharton County Junior College" ;
+    schema:foundingDate "1946"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Wharton_County_Junior_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-96.10274 29.31164)"^^geo:wktLiteral ;
+        schema:addressLocality "Wharton" ;
+    ] ;
+    schema:url <http://www.wcjc.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000088015418> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7990705> ;
+             .

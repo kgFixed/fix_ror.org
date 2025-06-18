@@ -1,0 +1,46 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00dyt5s15> 
+    a org:Organization ;
+    rdfs:label "Center for Infection and Immunity of Lille" ;
+    schema:name "Center for Infection and Immunity of Lille" ;
+    schema:foundingDate "2010"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00jmxvy70> ;
+        rdfs:label "Délégation Régionale Nord Ouest" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00rydyx93> ;
+        rdfs:label "Institut des Sciences Biologiques" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/05k9skc85> ;
+        rdfs:label "Institut Pasteur de Lille" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02kzqn938> ;
+        rdfs:label "Université de Lille" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(3.05858 50.63297)"^^geo:wktLiteral ;
+        schema:addressLocality "Lille" ;
+    ] ;
+    schema:url <http://u1019.lille.inserm.fr/?lang=en> ;
+    schema:sameAs <http://isni.org/isni/0000000403863856> ;
+             .

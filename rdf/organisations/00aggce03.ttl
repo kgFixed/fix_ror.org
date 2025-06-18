@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00aggce03> 
+    a org:Organization ;
+    rdfs:label "Indian Institute of Packaging" ;
+    schema:name "Indian Institute of Packaging" ;
+    schema:foundingDate "1966"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Indian_Institute_of_Packaging> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(72.88261 19.07283)"^^geo:wktLiteral ;
+        schema:addressLocality "Mumbai" ;
+    ] ;
+    schema:url <https://www.iip-in.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000105977492> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q39048691> ;
+             .

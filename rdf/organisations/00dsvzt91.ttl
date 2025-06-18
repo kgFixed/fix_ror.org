@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00dsvzt91> 
+    a org:Organization ;
+    rdfs:label "Mutabilis (France)" ;
+    schema:name "Mutabilis (France)" ;
+    schema:foundingDate "2001"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.43482 48.8854)"^^geo:wktLiteral ;
+        schema:addressLocality "Romainville" ;
+    ] ;
+    schema:url <https://mutabilis.fr/> ;
+    schema:sameAs <http://isni.org/isni/0000000453736177> ;
+             .

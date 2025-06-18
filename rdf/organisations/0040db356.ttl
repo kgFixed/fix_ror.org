@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0040db356> 
+    a org:Organization ;
+    rdfs:label "Al Fashir University" ;
+    schema:name "Al Fashir University" ;
+    schema:foundingDate "1990"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Al_Fashir_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(25.34936 13.62793)"^^geo:wktLiteral ;
+        schema:addressLocality "Al-Fashir" ;
+    ] ;
+    schema:url <http://www.fashir.edu.sd/> ;
+    schema:sameAs <http://isni.org/isni/0000000404476284> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q4703811> ;
+             .

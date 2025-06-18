@@ -1,0 +1,26 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00d21gf72> 
+    a org:Organization ;
+    rdfs:label "International Oceanographic Data and Information Exchange (IODE)" ;
+    schema:name "International Oceanographic Data and Information Exchange (IODE)" ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01qk7v094> ;
+        rdfs:label "Intergovernmental Oceanographic Commission of UNESCO" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.927 51.21551)"^^geo:wktLiteral ;
+        schema:addressLocality "Ostend" ;
+    ] ;
+    schema:url <https://iode.org> ;
+     .

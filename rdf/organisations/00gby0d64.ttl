@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00gby0d64> 
+    a org:Organization ;
+    rdfs:label "Universidade Municipal de São Caetano do Sul" ;
+    schema:name "Universidade Municipal de São Caetano do Sul" ;
+    schema:foundingDate "1968"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Universidade_Municipal_de_S%C3%A3o_Caetano_do_Sul> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-46.55111 -23.62306)"^^geo:wktLiteral ;
+        schema:addressLocality "São Caetano do Sul" ;
+    ] ;
+    schema:url <http://www.uscs.edu.br/> ;
+    schema:sameAs <http://isni.org/isni/0000000115339232> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7894391> ;
+             .

@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00fnehe27> 
+    a org:Organization ;
+    rdfs:label "Riverside Metropolitan Museum" ;
+    schema:name "Riverside Metropolitan Museum" ;
+    schema:foundingDate "1924"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Riverside_Metropolitan_Museum> ;
+    org:status "active" ;
+    org:classification "Archive" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-117.39616 33.95335)"^^geo:wktLiteral ;
+        schema:addressLocality "Riverside" ;
+    ] ;
+    schema:url <https://www.riversideca.gov/museum/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q7338538> ;
+             .

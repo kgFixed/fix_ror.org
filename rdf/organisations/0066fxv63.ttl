@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0066fxv63> 
+    a org:Organization ;
+    rdfs:label "British University in Egypt" ;
+    schema:name "British University in Egypt" ;
+    schema:foundingDate "2005"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/British_University_in_Egypt> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(31.24967 30.06263)"^^geo:wktLiteral ;
+        schema:addressLocality "Cairo" ;
+    ] ;
+    schema:url <https://www.bue.edu.eg> ;
+    schema:sameAs <http://isni.org/isni/0000000403775514> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3087723> ;
+             .

@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/009wgy438> 
+    a org:Organization ;
+    rdfs:label "Shell (Malaysia)" ;
+    schema:name "Shell (Malaysia)" ;
+    schema:foundingDate "1938"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Royal_Dutch_Shell> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/00b5m4j81> ;
+        rdfs:label "Shell (Netherlands)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(116.0724 5.9749)"^^geo:wktLiteral ;
+        schema:addressLocality "Kota Kinabalu" ;
+    ] ;
+    schema:url <https://www.shell.com.my/> ;
+     .

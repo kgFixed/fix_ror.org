@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/008p8p838> 
+    a org:Organization ;
+    rdfs:label "Ontario County Historical Society" ;
+    schema:name "Ontario County Historical Society" ;
+    schema:foundingDate "1902"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.28804 42.87423)"^^geo:wktLiteral ;
+        schema:addressLocality "Canandaigua" ;
+    ] ;
+    schema:url <http://ochs.org/> ;
+    schema:sameAs <http://isni.org/isni/0000000115350650> ;
+             .

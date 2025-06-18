@@ -1,0 +1,235 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00by1q217> 
+    a org:Organization ;
+    rdfs:label "Roche (Switzerland)" ;
+    schema:name "Roche (Switzerland)" ;
+    schema:foundingDate "1896"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Hoffmann-La_Roche> ;
+    org:status "active" ;
+    org:classification "Company" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03cwbzb16> ;
+        rdfs:label "Roche (Austria)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00e65d634> ;
+        rdfs:label "Roche (Belgium)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05c66m157> ;
+        rdfs:label "Roche (Bolivia)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04gbzz966> ;
+        rdfs:label "Roche (Bosnia-Herzegovina)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/006hrz834> ;
+        rdfs:label "Roche (Canada)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/050q8cm26> ;
+        rdfs:label "Roche (Chile)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02hv5e369> ;
+        rdfs:label "Roche (China)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01hyc1n91> ;
+        rdfs:label "Roche (Czechia)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04seaqh41> ;
+        rdfs:label "Roche (Denmark)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03836m928> ;
+        rdfs:label "Roche (Ecuador)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/013js5t03> ;
+        rdfs:label "Roche (Estonia)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00awvt671> ;
+        rdfs:label "Roche (Finland)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01mqmer16> ;
+        rdfs:label "Roche (France)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/00sh68184> ;
+        rdfs:label "Roche Pharma AG (Germany)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0392c7938> ;
+        rdfs:label "Roche (Greece)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02ta1jp69> ;
+        rdfs:label "Roche (Hungary)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/005bzjd21> ;
+        rdfs:label "Roche (India)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0152gf261> ;
+        rdfs:label "Roche (Ireland)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05sy11p04> ;
+        rdfs:label "Roche (Israel)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01x544h30> ;
+        rdfs:label "Roche (Italy)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01vepzj85> ;
+        rdfs:label "Roche (Japan)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05cpg6260> ;
+        rdfs:label "Roche (Lebanon)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01gcg9888> ;
+        rdfs:label "Roche (Netherlands)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03jg7pr54> ;
+        rdfs:label "Roche (Nicaragua)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05v9ym429> ;
+        rdfs:label "Roche (Norway)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04zt79h83> ;
+        rdfs:label "Roche (Portugal)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04qr62034> ;
+        rdfs:label "Roche (Romania)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/030nky627> ;
+        rdfs:label "Roche (South Korea)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04b8zcj45> ;
+        rdfs:label "Roche (Spain)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/055rf7657> ;
+        rdfs:label "Roche (Sweden)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02tnr6p29> ;
+        rdfs:label "Roche (Tunisia)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05h9m3b45> ;
+        rdfs:label "Roche (Turkey)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/024tgbv41> ;
+        rdfs:label "Roche (United Kingdom)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/011qkaj49> ;
+        rdfs:label "Roche (United States)" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02ackr434> ;
+        rdfs:label "Foundation Medicine (United States)" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(7.57327 47.55839)"^^geo:wktLiteral ;
+        schema:addressLocality "Basel" ;
+    ] ;
+    schema:url <http://www.roche.ch/en/index.htm> ;
+    schema:sameAs <http://isni.org/isni/0000000403741269> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q212646> ;
+             .

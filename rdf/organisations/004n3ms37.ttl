@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/004n3ms37> 
+    a org:Organization ;
+    rdfs:label "European Society for Paediatric Research" ;
+    schema:name "European Society for Paediatric Research" ;
+    schema:foundingDate "1958"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/European_Society_for_Paediatric_Research> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    org:classification "Funder" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(6.03553 46.21462)"^^geo:wktLiteral ;
+        schema:addressLocality "Satigny" ;
+    ] ;
+    schema:url <https://www.espr.eu> ;
+    schema:sameAs <http://isni.org/isni/0000000122970137> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q60763994> ;
+             .

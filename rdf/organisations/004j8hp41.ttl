@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/004j8hp41> 
+    a org:Organization ;
+    rdfs:label "Community Action Tenants Union" ;
+    schema:name "Community Action Tenants Union" ;
+    schema:foundingDate "2019"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Community_Action_Tenants_Union> ;
+    org:status "active" ;
+    org:classification "Other" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-6.24889 53.33306)"^^geo:wktLiteral ;
+        schema:addressLocality "Dublin" ;
+    ] ;
+    schema:url <https://catuireland.org> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q120208949> ;
+             .

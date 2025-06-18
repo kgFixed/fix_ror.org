@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0054f1w39> 
+    a org:Organization ;
+    rdfs:label "Arizona's Public Universities" ;
+    schema:name "Arizona's Public Universities" ;
+    schema:foundingDate "1885"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Arizona_Board_of_Regents> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03efmqc40> ;
+        rdfs:label "Arizona State University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0272j5188> ;
+        rdfs:label "Northern Arizona University" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/03m2x1q45> ;
+        rdfs:label "University of Arizona" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-112.07404 33.44838)"^^geo:wktLiteral ;
+        schema:addressLocality "Phoenix" ;
+    ] ;
+    schema:url <http://www.azregents.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000096761592> ;
+             .

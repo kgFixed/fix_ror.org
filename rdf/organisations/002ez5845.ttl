@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/002ez5845> 
+    a org:Organization ;
+    rdfs:label "University of Theatre and Film Arts" ;
+    schema:name "University of Theatre and Film Arts" ;
+    schema:foundingDate "1865"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Academy_of_Drama_and_Film_in_Budapest> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(19.04045 47.49835)"^^geo:wktLiteral ;
+        schema:addressLocality "Budapest" ;
+    ] ;
+    schema:url <https://szfe.hu> ;
+    schema:sameAs <http://isni.org/isni/0000000104606294> ;
+             .

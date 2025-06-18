@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00d810y44> 
+    a org:Organization ;
+    rdfs:label "Sequoia Sciences (United States)" ;
+    schema:name "Sequoia Sciences (United States)" ;
+    schema:foundingDate "1999"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Company" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-90.19789 38.62727)"^^geo:wktLiteral ;
+        schema:addressLocality "St Louis" ;
+    ] ;
+    schema:url <https://sequoiasciences.com/> ;
+    schema:sameAs <http://isni.org/isni/0000000404168185> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q30292083> ;
+             .

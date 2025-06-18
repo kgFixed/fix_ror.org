@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00067tc54> 
+    a org:Organization ;
+    rdfs:label "NSW Department of Planning and Environment" ;
+    schema:name "NSW Department of Planning and Environment" ;
+    schema:foundingDate "2014"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Department_of_Planning_and_Environment_(New_South_Wales)> ;
+    org:status "inactive" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0067dvq63> ;
+        rdfs:label "Government of New South Wales" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/038pwz535> ;
+        rdfs:label "NSW Department of Climate Change, Energy, the Environment and Water" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Successor" ;
+        org:member <https://ror.org/00a7xgz80> ;
+        rdfs:label "NSW Department of Planning, Housing and Infrastructure" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(151.20732 -33.86785)"^^geo:wktLiteral ;
+        schema:addressLocality "Sydney" ;
+    ] ;
+    schema:url <https://www.planning.nsw.gov.au/> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q65063686> ;
+             .

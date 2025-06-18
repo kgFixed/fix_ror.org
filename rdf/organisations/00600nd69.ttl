@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00600nd69> 
+    a org:Organization ;
+    rdfs:label "Regional Medical Research Centre" ;
+    schema:name "Regional Medical Research Centre" ;
+    schema:foundingDate "1980"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0492wrx28> ;
+        rdfs:label "Indian Council of Medical Research" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(74.50447 15.85212)"^^geo:wktLiteral ;
+        schema:addressLocality "Belagavi" ;
+    ] ;
+    schema:url <http://icmr.nic.in/pinstitute/belgaum/index.htm> ;
+    schema:sameAs <http://isni.org/isni/0000000418030144> ;
+             .

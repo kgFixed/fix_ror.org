@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/021k10z87> 
+    a org:Organization ;
+    rdfs:label "Peace Research Institute Frankfurt" ;
+    schema:name "Peace Research Institute Frankfurt" ;
+    schema:foundingDate "1970"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Peace_Research_Institute_Frankfurt> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/01n6r0e97> ;
+        rdfs:label "Leibniz Association" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(8.68417 50.11552)"^^geo:wktLiteral ;
+        schema:addressLocality "Frankfurt am Main" ;
+    ] ;
+    schema:url <http://www.hsfk.de/index.php?L=1> ;
+    schema:sameAs <http://isni.org/isni/0000000108167305> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q1615908> ;
+             .

@@ -1,0 +1,39 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00fh1dw28> 
+    a org:Organization ;
+    rdfs:label "Laboratoire de Génie Civil et Géo Environnement" ;
+    schema:name "Laboratoire de Génie Civil et Géo Environnement" ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/02kzqn938> ;
+        rdfs:label "Université de Lille" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/053x9s498> ;
+        rdfs:label "Université d'Artois" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/042rh9p26> ;
+        rdfs:label "IMT Nord Europe" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(3.16664 50.61669)"^^geo:wktLiteral ;
+        schema:addressLocality "Villeneuve-d'Ascq" ;
+    ] ;
+    schema:url <https://www.lgcge.fr> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q51784013> ;
+             .

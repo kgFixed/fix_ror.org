@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/002kf8b88> 
+    a org:Organization ;
+    rdfs:label "Paul D. Camp Community College" ;
+    schema:name "Paul D. Camp Community College" ;
+    schema:foundingDate "1970"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Paul_D._Camp_Community_College> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-76.92246 36.67765)"^^geo:wktLiteral ;
+        schema:addressLocality "Franklin" ;
+    ] ;
+    schema:url <http://www.pdc.edu/> ;
+    schema:sameAs <http://isni.org/isni/0000000104445179> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7150086> ;
+             .

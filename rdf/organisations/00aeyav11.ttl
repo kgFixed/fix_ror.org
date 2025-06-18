@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00aeyav11> 
+    a org:Organization ;
+    rdfs:label "Foundation for Biomedical Research" ;
+    schema:name "Foundation for Biomedical Research" ;
+    schema:foundingDate "1981"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Foundation_for_Biomedical_Research> ;
+    org:status "active" ;
+    org:classification "Nonprofit" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.03637 38.89511)"^^geo:wktLiteral ;
+        schema:addressLocality "Washington" ;
+    ] ;
+    schema:url <https://fbresearch.org/dedicated-to-animal-research/> ;
+    schema:sameAs <http://isni.org/isni/0000000094756351> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5474401> ;
+             .

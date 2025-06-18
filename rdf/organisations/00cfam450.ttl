@@ -1,0 +1,61 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00cfam450> 
+    a org:Organization ;
+    rdfs:label "Helmholtz Zentrum München" ;
+    schema:name "Helmholtz Zentrum München" ;
+    schema:foundingDate "1964"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Helmholtz_Zentrum_M%C3%BCnchen> ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04s64z252> ;
+        rdfs:label "Helmholtz Alliance Imaging and Curing Environmental Metabolic Diseases" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0127fwn18> ;
+        rdfs:label "Institute of Bioinformatics and Systems Biology" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05ke5hb07> ;
+        rdfs:label "Paul Langerhans Institute Dresden" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05g95eg64> ;
+        rdfs:label "Institute of Biological and Medical Imaging" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0278hns33> ;
+        rdfs:label "Institute of Diabetes Research" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/0281dp749> ;
+        rdfs:label "Helmholtz Association of German Research Centres" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(11.57549 48.13743)"^^geo:wktLiteral ;
+        schema:addressLocality "Munich" ;
+    ] ;
+    schema:url <http://www.helmholtz-muenchen.de> ;
+    schema:sameAs <http://isni.org/isni/0000000404832525> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q878592> ;
+             .

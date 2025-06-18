@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00dpzx715> 
+    a org:Organization ;
+    rdfs:label "Suleyman Demirel University Research and Education Hospital" ;
+    schema:name "Suleyman Demirel University Research and Education Hospital" ;
+    schema:foundingDate "1994"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/SDU_Research_Hospital> ;
+    org:status "active" ;
+    org:classification "Healthcare" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Related" ;
+        org:member <https://ror.org/04fjtte88> ;
+        rdfs:label "Süleyman Demirel University" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(30.55222 37.76444)"^^geo:wktLiteral ;
+        schema:addressLocality "Isparta" ;
+    ] ;
+    schema:url <http://hastane.sdu.edu.tr/> ;
+    schema:sameAs <http://isni.org/isni/0000000406426168> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q7389495> ;
+             .

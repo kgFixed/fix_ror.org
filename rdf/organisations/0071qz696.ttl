@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/0071qz696> 
+    a org:Organization ;
+    rdfs:label "Can Tho University" ;
+    schema:name "Can Tho University" ;
+    schema:foundingDate "1966"^^xsd:gYear ;
+    schema:sameAs <http://en.wikipedia.org/wiki/Can_Tho_University> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(105.78825 10.03711)"^^geo:wktLiteral ;
+        schema:addressLocality "Can Tho" ;
+    ] ;
+    schema:url <http://www.ctu.edu.vn> ;
+    schema:sameAs <http://isni.org/isni/0000000406430300> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5029090> ;
+             .

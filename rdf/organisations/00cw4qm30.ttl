@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00cw4qm30> 
+    a org:Organization ;
+    rdfs:label "Dynamiques patrimoniales et culturelles" ;
+    schema:name "Dynamiques patrimoniales et culturelles" ;
+    schema:foundingDate "2015"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/03mkjjy25> ;
+        rdfs:label "Université de Versailles Saint-Quentin-en-Yvelines" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.07393 48.77334)"^^geo:wktLiteral ;
+        schema:addressLocality "Guyancourt" ;
+    ] ;
+    schema:url <https://www.dypac.uvsq.fr> ;
+    schema:sameAs <http://isni.org/isni/0000000494304434> ;
+             .

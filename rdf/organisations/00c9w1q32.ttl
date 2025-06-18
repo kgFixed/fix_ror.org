@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00c9w1q32> 
+    a org:Organization ;
+    rdfs:label "Swiss Federal Institute of Sport Magglingen SFISM" ;
+    schema:name "Swiss Federal Institute of Sport Magglingen SFISM" ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(7.21407 47.139)"^^geo:wktLiteral ;
+        schema:addressLocality "Magglingen" ;
+    ] ;
+    schema:url <https://www.ehsm.admin.ch> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q33121317> ;
+             .

@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00c47tk97> 
+    a org:Organization ;
+    rdfs:label "Vereinigung der Denkmalfachämter in den Ländern" ;
+    schema:name "Vereinigung der Denkmalfachämter in den Ländern" ;
+    schema:foundingDate "1951"^^xsd:gYear ;
+    schema:sameAs <https://de.wikipedia.org/wiki/Vereinigung_der_Landesdenkmalpfleger> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(8.24932 50.08258)"^^geo:wktLiteral ;
+        schema:addressLocality "Wiesbaden" ;
+    ] ;
+    schema:url <https://www.vdl-denkmalpflege.de> ;
+    schema:sameAs <http://isni.org/isni/0000000121595208> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q15852621> ;
+             .

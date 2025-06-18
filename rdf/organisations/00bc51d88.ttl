@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00bc51d88> 
+    a org:Organization ;
+    rdfs:label "Istituto di Nanotecnologia" ;
+    schema:name "Istituto di Nanotecnologia" ;
+    org:status "active" ;
+    org:classification "Facility" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/04zaypm56> ;
+        rdfs:label "National Research Council" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(18.17244 40.35481)"^^geo:wktLiteral ;
+        schema:addressLocality "Lecce" ;
+    ] ;
+    schema:url <http://nanotec.cnr.it/#> ;
+    schema:sameAs <http://isni.org/isni/0000000464770549> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q39019595> ;
+             .

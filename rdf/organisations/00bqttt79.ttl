@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00bqttt79> 
+    a org:Organization ;
+    rdfs:label "Islamic Azad University, Marvdasht" ;
+    schema:name "Islamic Azad University, Marvdasht" ;
+    schema:foundingDate "1950"^^xsd:gYear ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(52.8025 29.8742)"^^geo:wktLiteral ;
+        schema:addressLocality "Marvdasht" ;
+    ] ;
+    schema:url <http://www.miau.ac.ir/> ;
+    schema:sameAs <http://isni.org/isni/0000000404941414> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q5956615> ;
+             .

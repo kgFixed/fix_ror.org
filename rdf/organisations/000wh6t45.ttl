@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/000wh6t45> 
+    a org:Organization ;
+    rdfs:label "Welsh Government" ;
+    schema:name "Welsh Government" ;
+    schema:foundingDate "1999"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Welsh_Government> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02n1y8269> ;
+        rdfs:label "Wales Institute of Cognitive Neuroscience" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-3.18 51.48)"^^geo:wktLiteral ;
+        schema:addressLocality "Cardiff" ;
+    ] ;
+    schema:url <http://gov.wales/?skip=1&lang=en> ;
+    schema:sameAs <http://isni.org/isni/0000000417878223> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q3112646> ;
+             .

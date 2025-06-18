@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00dfbms98> 
+    a org:Organization ;
+    rdfs:label "Hamburg University of Music and Drama" ;
+    schema:name "Hamburg University of Music and Drama" ;
+    schema:foundingDate "1950"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Hochschule_f%C3%BCr_Musik_und_Theater_Hamburg> ;
+    org:status "active" ;
+    org:classification "Education" ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(9.99302 53.55073)"^^geo:wktLiteral ;
+        schema:addressLocality "Hamburg" ;
+    ] ;
+    schema:url <https://www.hfmt-hamburg.de> ;
+    schema:sameAs <http://isni.org/isni/0000000123754997> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q700824> ;
+             .

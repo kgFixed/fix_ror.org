@@ -1,0 +1,133 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ror.org/00c1dt378> 
+    a org:Organization ;
+    rdfs:label "Queensland Health" ;
+    schema:name "Queensland Health" ;
+    schema:foundingDate "1901"^^xsd:gYear ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Queensland_Health> ;
+    org:status "active" ;
+    org:classification "Government" ;
+    org:classification "Funder" ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/029s9j634> ;
+        rdfs:label "Cairns Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05eq01d13> ;
+        rdfs:label "Gold Coast Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04dz3w425> ;
+        rdfs:label "Inala Community Health Centre" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/010g47133> ;
+        rdfs:label "Ipswich Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/021x6km63> ;
+        rdfs:label "Kirwan Health Campus" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04frfb960> ;
+        rdfs:label "Mackay Base Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/04wbsx459> ;
+        rdfs:label "Nambour General Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/000qjjz95> ;
+        rdfs:label "Park Centre for Mental Health" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/02cetwy62> ;
+        rdfs:label "Prince Charles Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/017zhda45> ;
+        rdfs:label "Queensland Centre for Mental Health Research" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/0257s2812> ;
+        rdfs:label "Robina Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/05p52kj31> ;
+        rdfs:label "Royal Brisbane and Women's Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/01ftvnv05> ;
+        rdfs:label "Royal Brisbane and Women's Hospital Foundation" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/017ay4a94> ;
+        rdfs:label "Sunshine Coast University Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/048xxxv92> ;
+        rdfs:label "Toowoomba Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/021zqhw10> ;
+        rdfs:label "Townsville Hospital" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Child" ;
+        org:member <https://ror.org/004edqb24> ;
+        rdfs:label "Health and Wellbeing Queensland" ;
+    ] ;
+    org:hasLink [
+        a org:Membership ;
+        org:role "Parent" ;
+        org:member <https://ror.org/037405308> ;
+        rdfs:label "Queensland Government" ;
+    ] ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(153.02809 -27.46794)"^^geo:wktLiteral ;
+        schema:addressLocality "Brisbane" ;
+    ] ;
+    schema:url <https://www.health.qld.gov.au/> ;
+    schema:sameAs <http://isni.org/isni/0000000403800804> ;
+            schema:sameAs <http://www.wikidata.org/entity/Q17006271> ;
+             .
