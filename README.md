@@ -1,83 +1,83 @@
-# But de ce répertoire
+# Purpose of this repository
 
-L'objectif est de traiter les données de l'api ROR, pour les extraire sous forme de json, et ensuite faire un traitement à l'aide de sema.subyt pour passer de json à rdf.
+The aim is to process the data from the ROR api, to extract it in json form, and then process it using sema.subyt to go from json to rdf.
 
-## Adresse de l'api ror.org
+## api ror.org address
 
 ```
     https://api.ror.org/organizations // all the organizations
     https://api.ror.org/organizations?query=vliz // for vliz
 ```
 
-## Limite de l'API
+## Limite of API
 
-Il n'est pas possible via l'API ror.org de récupérer toutes les données des entreprises, il faut passer par ce site, propre à ror, pour y accéder. C'est donc grâce à cela que nous allons peupler la première base de données avec toutes les informations des organisations:
+It is not possible to retrieve all company data via the ror.org API; you have to go through this site, which is specific to ror, to access it. So that's how we're going to populate the first database with all the organisations' information:
 
 ```
     https://zenodo.org/records/15475023
 ```
 
-En effet, en allant sur la documentation de ror, il est bien expliqué qu'il y a des limites à l'utilisation de l'api.
+If you go to the ror documentation, it's clearly explained that there are limits to the use of the api.
 
 ![Limit of data](/assets/limit.png "Limit of data")
 
-De plus, comme depuis l'API je n'ai pas accès à toutes les données, et que dans les documents téléchargeable par ror.org, il n'y a pas de format jsonld, je ne suis pas en capacité de comparé les formats json et jsonld, ou encore jsonld et rdf.
+What's more, as I don't have access to all the data from the API, and there is no jsonld format in the documents that can be downloaded from ror.org, I'm not able to compare json and jsonld formats, or even jsonld and rdf.
 
-## Prochaine étape
+## Next step
 
-Les limites de l'API ne sont pas forcément un problème dans le sens où il n'est pas nécessaire de reprendre toutes les données de l'API à chaque fois, mais seulement les updates. Il faut faire la vérification des updates (journaliers, semaines...). 
+The limits of the API are not necessarily a problem in the sense that it is not necessary to take all the data from the API each time, but only the updates. You need to check the updates (daily, weekly, etc.).
 
-Pour faire simple, une fois toutes les données récupérées, plus qu'à récupérer les updates de la base uniquement, de manière journalière, ou de la manière dont ils le font.
+To put it simply, once all the data has been retrieved, all you have to do is retrieve the database updates only, on a daily basis, or in the way they do it.
 
 ## Updates
 
-Il y a plusieurs méthodes possibles pour acquérir les différents update de la base de données. 
+There are several possible methods for acquiring the various database updates. 
 
-1- Dans un premier temps, dès que des modifications sont ajoutées ou qu'il y a eu des ajouts dans la base, il y a une release sur github : 
+1- In the first instance, as soon as changes are added or additions are made to the database, there is a release on github :
 
 ```
     https://github.com/ror-community/ror-updates/releases
 ```
 
-Il y a à la fois le résumé des changements, le nombre d'organisations ajoutées, le nombre d'organisations modifiées and la liste complète des organisations ajoutées et modifiées.
+There is a summary of the changes, the number of organisations added, the number of organisations modified and the complete list of organisations added and modified.
 
-2- Dans un second temps, il est possible de récupérer de nouveau toute la base de données avec les modifications et les ajouts sur:
+2- Secondly, it is possible to retrieve the entire database with all the changes and additions:
 
 ```
     https://zenodo.org/communities/ror-data/records?q=&l=list&p=1&s=10&sort=newest
 ```
 
-En ce qui concerne le nombre d'update, il y en a **au moins un**, mais souvent il y en a **plutôt deux** par mois.
+As far as the number of updates is concerned, there is **at least one**, but often there are **more like two** per month.
 
 ![Update of data](/assets/update.png "Update of data")
 
-### Problème & Solution potentielles
+### Potential problems & solutions
 
-D'après plusieurs tests et recherche, il semble peu probable de passer par l'API pour récuperer les nouveaux updates. En effet, il y a bien un paramètre 'last_modified', mais il ne serait pas possible de regarder pour chaque organisation ce paramètre, pour le même principe que la récupération des données, qui est limité à 10'000 organisations.
+According to several tests and research, it seems unlikely that the API will be used to retrieve new updates. In fact, there is a “last_modified” parameter, but it would not be possible to look at this parameter for each organisation, for the same reason as data retrieval, which is limited to 10,000 organisations.
 
-La solution la plus probable pour récupérer ces updates serait de passer par le github, qui fournit toutes les modifications ainsi que les ajouts des organisations.
+The most likely solution for retrieving these updates would be to go through the github, which provides all the changes and additions made by the organisations.
 
-Il serait aussi possible de passer par le dump totale de la base, et ensuite de faire une comparaison avec celle que nous avions, mais vu la quantité de données, cela semble compliqué.
+It would also be possible to dump the entire database, and then compare it with the one we had, but given the amount of data, that seems complicated.
 
-## test
+## Test API
 
 https://api.ror.org/v2/organizations?query.advanced=admin.last_modified.date:%5B2025-05-01%20TO%202025-05-16%5D&all_status // entre les dates des dernières releases (01 mai 2O25 - 16 mai 2025).
 
-=> 763 diff selon l'api alors que normalement (github), il y a 172 added et 241 added != 763 au final.
+=> 763 diff according to the api whereas normally (github), there are 172 added and 241 added != 763 in the end.
 
-## Utilisation de subyt
+## Use of subyt
 
-Avant toute chose, pour pouvoir accèder à la librairie sema.subyt, il faut suivre ces étapes:
+First of all, to access the sema.subyt library, you need to follow these steps:
 
 ```
-python -m venv venv // création d'un environnement python
-source venv/Scripts/activate // active le nouvel environnement
-touch requirements.txt // création d'un fichier texte
-git+https://github.com/vliz-be-opsci/py-sema.git // a mettre dans le fichier précédement créé
-pip install -r requirements.txt // installation de la librairie subyt
+python -m venv venv // creating a python environment
+source venv/Scripts/activate // activate the new environment
+touch requirements.txt // create a text file
+git+https://github.com/vliz-be-opsci/py-sema.git // to be placed in the file previously created
+pip install -r requirements.txt // installing the subyt library
 ```
 
-Ensuite pour vérifier la bonne installation:
+Then to check the correct installation:
 
 ```
 from sema.subyt import (
@@ -90,9 +90,9 @@ from sema.subyt import (
     JinjaBasedGenerator,
 )
 ```
-Cela ne devrait pas s'afficher en rouge si les installations ont bien fonctionnées.
+This should not be displayed in red if the installations were working properly.
 
-Au lieu de cela, une autre approche a été abordé et utilisée. En effet voici le code:
+Instead, another approach has been discussed and used. Here is the code:
 
 ```
 from sema.subyt import Subyt
@@ -105,4 +105,4 @@ Subyt(
 ).process()
 ```
 
-C'est l'utilisation de la classe de subyt qui nous évite de nombreuses étapes directement faite par la classe elle même.
+It's the use of the subyt class that saves us many of the steps directly carried out by the class itself.
