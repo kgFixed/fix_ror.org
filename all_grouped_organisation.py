@@ -10,7 +10,7 @@ def json_to_rdf(json_path, template_path, output_path):
     ).process()
 
 json_to_rdf(
-    json_path="data/v1.66-2025-05-20-ror-data.json",
+    json_path="ror_dump_json/v1.66-2025-05-20-ror-data.json",
     template_path="template/template.ttl",
     output_path="rdf/all_organisation.ttl"
 )
