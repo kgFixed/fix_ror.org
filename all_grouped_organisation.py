@@ -1,5 +1,4 @@
 from sema.subyt import Subyt
-from sema.subyt.sources import SourceFactory
 from pathlib import Path
 
 def json_to_rdf(json_path, template_path, output_path):
