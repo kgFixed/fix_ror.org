@@ -29,6 +29,6 @@ def json_to_individual_rdf(json_path, template_path, output_dir):
 
 json_to_individual_rdf(
     json_path="../ror_dump_json/v1.66-2025-05-20-ror-data.json",
-    template_path="../template/template.ttl",
+    template_path="../template/template_1_0.ttl",
     output_dir="../output_rdf"
 )
