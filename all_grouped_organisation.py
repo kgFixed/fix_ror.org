@@ -12,5 +12,5 @@ def json_to_rdf(json_path, template_path, output_path):
 json_to_rdf(
     json_path="ror_dump_json/v1.66-2025-05-20-ror-data.json",
     template_path="template/template.ttl",
-    output_path="rdf/all_organisation.ttl"
+    output_path="output_rdf/all_organisation.ttl"
 )
